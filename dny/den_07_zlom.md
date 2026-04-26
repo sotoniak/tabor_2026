@@ -1,6 +1,6 @@
-# DEN 7 — Čtvrtek 17. 7. 2025: Zlom — videovzkaz
+# DEN 7 — Pátek 17. 7. 2026: Zlom — Markův vzkaz z FN Brno
 
-> **Motto dne**: „Pan Konvička se probudil. A má pro nás vzkaz."
+> **Motto dne**: „Pan Marek se probudil. A má pro nás vzkaz."
 
 ---
 
@@ -9,16 +9,16 @@
 | Čas | Co se děje |
 |---|---|
 | 07:30 – 08:30 | Snídaně |
-| 08:30 – 09:00 | **Mimořádný nástup** — Alena oznámí: Konvička se probudil! |
-| 09:00 – 10:00 | **VIDEOVZKAZ od Konvičky** (promítnutí) |
+| 08:30 – 09:00 | **Mimořádný nástup** — Magdaléna H. oznámí: pan Marek se probudil! |
+| 09:00 – 10:00 | **VZKAZ OD MARKA** (přečtení / poslechnutí / promítnutí) |
 | 10:00 – 11:00 | Týmy diskutují vzkaz, plánují další kroky |
-| 11:00 – 12:00 | **Eliminace Petry** + zhuštění podezření na Petra a Drábka |
+| 11:00 – 12:00 | **Eliminace Magdalény Hamanové + Jendy** |
 | 12:00 – 13:00 | Oběd |
-| 13:00 – 14:00 | Klid |
-| 14:00 – 16:30 | **ETAPOVÁ HRA č. 6: Velké hledání ukrytých indicií** (po celém táboře) |
-| 16:30 – 18:00 | **Lasergame v lese** (sport) |
+| 13:00 – 14:00 | Klid ve stanech |
+| 14:00 – 16:30 | **ETAPOVÁ HRA č. 6: Velké hledání ukrytých indicií** (po celém táboře a okolí) |
+| 16:30 – 18:00 | **Lukostřelba / vzduchovka v lesní mýtině** (sport, uvolnění) |
 | 18:00 – 19:00 | Večeře |
-| 19:30 – 21:30 | **Casino večer (filmový večer)** |
+| 19:30 – 21:30 | **Detektivní filmový večer** (audio dramatizace u ohně, žádné elektřiny — vyprávění) |
 | 21:30 – 22:00 | Volný čas |
 | 22:00 | Večerka |
 
@@ -26,118 +26,147 @@
 
 ## Příběh dne (z pohledu dětí)
 
-Ráno **Alena na nástupišti zazáří**:
+Ráno **Magdaléna Hamanová** přijde z lesní cesty „U lípy" (kde má signál) a na nástupišti zazáří:
 
-> „Týmy! Mám pro vás úžasnou zprávu. **Pan Konvička se v noci probudil!** Lékaři říkají, že je v pořádku — paměť má, mluví, jí. Bude tam ještě týden, než se zotaví zcela. **Ale natočil pro nás vzkaz**. Sledujte."
+> „Týmy! Mám pro vás úžasnou zprávu. **Pan Marek se v noci probudil!** Lékaři ve FN Brno říkají, že je v pořádku — paměť má, mluví, jí. Otřes mozku zvládá. Bude tam ještě 4 dny, než se zotaví zcela. **A natočil pro vás vzkaz**. Přivezla mi ho na flashce zdravotní sestra ráno z Brna. Sledujte."
 
-Promítá se na velkou plachtu (datový projektor) **videovzkaz Konvičky** (předem natočený, max 5 min):
+Karel s Pavlem **přečtou Markův vzkaz** dětem (vzkaz je v dvojí formě: papírový dopis + krátká audio nahrávka, kterou pustí přes přenosný reproduktor na baterky — tábor nemá elektřinu, ale baterky stačí). Některé tábory raději vzkaz **nahlas přečte Karel** — emoce jsou silnější než reproduktor.
 
 ---
 
-### Skript videovzkazu Konvičky
+### Skript Markova vzkazu
 
-> _(Konvička v posteli v nemocnici, opřený o polštáře. Vypadá unaveně, ale klidně.)_
+> _(Markův hlas, lehce unavený, klidný, přerušovaný:)_
 >
-> „Drahé děti, drazí vedoucí, drazí přátelé Staré Lípy.
+> „Drahé děti, drazí vedoucí, drazí přátelé tábora Světlo.
 >
-> Lékaři mě dnes ráno probrali. **Jsem v pořádku.** Bolí mě hlava, ale myšlení mám čisté. Pamatuji si **téměř všechno**.
+> Dnes ráno mě tady ve fakultní nemocnici v Brně lékaři přesunuli z monitorovaného oddělení na běžné. **Jsem v pořádku.** Bolí mě hlava, ale myšlení mám čisté. Pamatuji si **téměř všechno**.
 >
 > _(Zhluboka se nadechne.)_
 >
-> V noci 11. července jsem slyšel hluk dole na velitelství. Šel jsem se podívat. **A někoho jsem potkal — někoho známého.** Někoho, koho znám. Stáli jsme proti sobě. **Já jsem ho oslovil jménem — a v tu chvíli mi udělal něco, co jsem nečekal.** Strčil mě. Spadl jsem. Teď to vidím rozmazaně, ale **byl to někdo z mé rodiny**.
+> V noci 11. července, někdy okolo jedné, jsem se probudil. Měl jsem zlý sen o tábořišti, asi prvotřídní obavy zakladatele. Vstal jsem, vzal baterku, šel ke Šéfce. **Ze Šéfky bylo slyšet šustění papíru.**
 >
-> Tu osobu nechci jmenovat. Ne protože ji chráním — ale protože **chci, abyste vy, naši táborníci, sami zjistili pravdu**. Dejte si práci. Zaslouží si to každá z mých 30 let.
+> Vstoupil jsem dovnitř — a tam stál **muž s červenou složkou v ruce. Otevřená truhla. On mě uviděl, já uviděl jeho.** Já jsem ho oslovil jménem. **Byl to Vladimír Stehlík.** Soused od dětství. Moje srdce se zastavilo: ne ze strachu o mě, ale ze žalu pro něj.
 >
-> A jedna **zásadní věc**: **Pravá závěť není pryč.** Mám své tušení, kam ji **on** schoval. Já jsem ho viděl vyběhnout — měl ji v ruce. Šel směrem k rybníku. **Hledejte u toho, co je tam staré. To, co stálo, když jsem postavil tábor.**
+> Řekl jsem mu, ať to položí. **Vladimír zpanikařil. Strčil mě stranou** — ne s úmyslem ublížit, jen aby utekl. Vyběhl ven se závětí. Já jsem za ním vyběhl do tmy. **Asi 15 metrů za Šéfkou jsem klopýtl o kořen smrku. Spadl jsem na kámen.** Pak už si nepamatuji nic — jen probuzení v sanitce.
 >
-> A poslední věc: **závěť obsahuje překvapení**. § 4. **Až ji najdete, přečtete sami.** Já vám slibuji jedno: **TÁBOR BUDE POKRAČOVAT.**
+> _(Pauza.)_
 >
-> Děkuji vám, děti. Pomáháte mi. Pomáháte tábor. Děkuji.
+> Děti, **Vladimír mě nezbil**. **Já jsem upadl.** Toto je důležité. **Vladimír mě nechtěl zranit, on jen chtěl tu závěť.** Ale na druhou stranu — měl tam být. A vzal něco, co mu nepatřilo.
 >
-> _(Slzy v očích.)_
+> _(Pauza.)_
 >
-> Váš Josef Konvička."
+> A ještě jedna věc: **vyšetřujte také Aleše Tomka.** Aleš měl té noci ‚hlídat ohniště'. Na latrýnu si zašel ve chvíli, kdy Vladimír přicházel. **Já mám tušení, že Aleš věděl. Že mu Vladimír něco slíbil.** Aleš je můj přítel padesát let. **Ale jeho hlídka té noci nemá záznamy.** Zeptejte se Aleše. **Žádný hněv — jen pravdu.**
+>
+> _(Pauza.)_
+>
+> Závěť **má Vladimír**. Nebo ji někde schoval. Vladimír neměl odvahu si ji nechat doma — věděl by, že po něm budou pátrat. **Schoval ji někde po cestě domů.** Lesní cesta vede ze Šéfky kolem **potoka, kolem starého buku**, k samotě. **Hledejte u toho, co je tam staré. U toho, co stálo, když jsem v 1997 postavil první stan.**
+>
+> A poslední: **moje závěť obsahuje překvapení**. § 4 a § 5. Až ji najdete — **přečtu vám ji sám**. Den 21. července, jestli mě ještě budete chtít.
+>
+> Děkuji vám, děti. Pomáháte tábor. Pomáháte mně. **Buďte trpěliví. Pravda chce čas. A láska chce odpuštění.**
+>
+> _(Mlčení.)_
+>
+> Váš Marek Stanislav."
 
 ---
 
-Po videu je **ticho**. Některé děti pláčou. Vedoucí je objímají.
+Po vzkazu je **ticho**. Některé děti pláčou. Vedoucí je objímají.
 
-> **Klíčová zpráva**: Pachatel je z **rodiny Konvičkovy**. Petr je synovec. **Lucie už byla vyloučena**. Petr je tedy **téměř jistý**.
-> 
-> **Druhá klíčová zpráva**: Závěť je **u rybníka, u něčeho starého**. Co je u rybníka staré? **Buk!**
+> **Klíčová zpráva**: Pachatel je **Vladimír Stehlík**. **Aleš mu pomohl.** Závěť je **u něčeho starého u potoka** — **buk!**
 
----
-
-## Klíčový moment dne 1: Eliminace Petry (11:00)
-
-Po videovzkazu Tomáš oznámí: 
-
-> „Týmy, mobilní operátor potvrdil. **Petra Svobodová** měla 11. 7. v 22:30–01:00 telefonát s matkou v FN Bulovka. Navíc Petra **NENÍ z rodiny Konvičkovy**. **Vyřaďujeme.**"
-
-Z 6 podezřelých zbývá **5: Alena, Marie (svědkyně), Drábek, Petr Konvička, Magdaléna** (formálně).
-
-> **Po videu je téměř jisté: Petr je pachatel + Drábek je pomocník.** Děti to vidí. Ale chybí **PEVNÝ DŮKAZ**.
+> **Druhá klíčová zpráva**: Marek **nemluví o vraždě** ani útoku. Klopýtl o kořen. **Stehlík ho strčil v panice, ne s úmyslem.** Tato lidská perspektiva má pro děti morální váhu.
 
 ---
 
-## Klíčový moment dne 2: Hypotéza o buku
+## Klíčový moment dne 1: Eliminace Magdalény Hamanové (11:00)
 
-Tomáš vyhlásí:
+Po vzkazu Karel oznámí:
 
-> „Pan Konvička řekl, že závěť je u rybníka, u něčeho starého. **Co je u rybníka staré?**"
+> „Týmy, **Magdaléna Hamanová** mi dnes ráno doložila svůj **lékařský deník** — papírový, s časovými údaji. Záznam z 11. 7. zaplnila ručně mezi 22:30 a 00:55: pět zápisů, každý s časem, popisem zdravotního stavu dětí (alergii Tomáše K1, drobnou tržnou ránu Anny K2 atd.). Datace je věrná, nepřepisovaná. **Magdaléna celou noc psala v zdravotce.** **Vyloučena.**"
 
-Děti křičí: „**Strážce Lípy! Buk!**"
+> Děti vidí, že **Magdaléna nelhala** — jen chránila zákonem chráněné lékařské zápisy a nechtěla deník otevírat publikem. Den 7 je doložila tedy v zužených podmínkách (Karel + Pavel + Růžičková telefonem).
 
-> Tomáš: „**Správně. Ale nepůjdeme tam dnes.** Petr je v táboře. Pokud je to on, **mohl by to chytit**. Připravíme **past**. Půjdeme tam, **až bude pryč**."
+---
+
+## Klíčový moment dne 2: Eliminace Jendy (11:30)
+
+Karel pokračuje:
+
+> „**Jenda** — náš zásobovač. Den 4 nám ukázal **stopu pneumatiky pickupu** na lesní cestě. Tehdy jsme to brali jako svědectví. Teď se ukazuje, že **stopa byla ze Stehlíkova pickupu, ze dne 11. 7., kdy Stehlík dovezl Alešovi materiál na opravu** (banální logistika, kterou Aleš dokládá). **Jenda je tedy svědek, ne pachatel ani pomocník.** Nemá motiv — Marka znal 18 let, vážil si ho. Spal sám, bez svědků, ale **nemá motiv ani prostředky**. **Vyloučen.**"
+
+Z širšího okruhu zbývají **Aleš Tomek + Vladimír Stehlík**. Stehlík je teď z Markova vzkazu **přímo jmenovaný pachatel**. Aleš je **přímo jmenovaný pomocník** (i když „mám tušení" — ne přiznání).
+
+> **Bilance po dnu 7**: Pachatel = **Vladimír Stehlík** (Markem osobně potvrzen). Pomocník = **Aleš Tomek** (Markem zmíněn jako podezření). **Důkazy proti Stehlíkovi: F04 boty, F09 pickup, F10 vlákno z rukavice, F12 popel z dýmky, Markovo svědectví, Aniččina silueta. Ale chybí MOTIV.** Den 8 přijde motiv (smlouva s univerzitou).
+
+---
+
+## Klíčový moment dne 3: Hypotéza o buku
+
+Karel vyhlásí:
+
+> „Pan Marek řekl: ‚Hledejte u toho, co je tam staré. U toho, co stálo, když jsem v 1997 postavil první stan.' **Co je u potoka staré?**"
+
+Děti křičí: „**Stařík! Starý buk!**"
+
+> Karel: „**Správně. Ale nepůjdeme tam dnes.** Stehlík **se bude vracet** — možná dnes, možná zítra. Pokud je to on, **mohl by se tam vrátit pro závěť**. Připravíme **past**. Půjdeme tam **až po jeho dopadení**. Den 10."
 
 ---
 
 ## Etapová hra č. 6: Velké hledání indicií (14:00–16:30)
 
-> **Tematika**: Konvičkův videovzkaz pomohl, ale potřebujeme **další stopy**, abychom Petra usvědčili pevně. Týmy hledají ve **všech dříve neprozkoumaných koutech** tábora.
+> **Tematika**: Markův vzkaz pomohl, ale potřebujeme **další stopy**, abychom Stehlíka usvědčili pevně. Týmy hledají ve **všech dříve neprozkoumaných koutech** tábora.
 
 ### Stanoviště (10 lokací × 6 týmů — rotace v dvojicích)
 
-1. **Sklad zásob** (kde pracuje Drábek). Tým hledá:
-   - **F11**: V knize zásob za 11. 7. — **chybí stránka**! Drábek vytrhl. **Stopa proti Drábkovi.**
-2. **Drábkův stan** (s jeho povolením, tým ho doprovází). Tým hledá:
-   - **F15**: pod jeho lůžkem **bahno z lesní cesty** (na podlaze). Drábek tam byl v noci. (Možná vysvětlení: byl tam v noci nebo den 1 pracovně. Nepřesvědčivé samo o sobě, ale **plus k F11 už významné**.)
-3. **Hostinský pokoj Petra** (s jeho dovolením — Petr se nebrání, je sebejistý). Tým hledá:
-   - **F03 (potvrzeno)**: Petrovy vlasy v hřebenu. Porovnají s vlasy z trezoru. NEEXISTUJÍ JINÉ — Petr se neuhřebenil, vlasy nejsou na trezoru. *Žádný nový důkaz, ale eliminace falešné stopy.*
-   - **Audi Q7 ve dvoře**: tým si změří pneumatiky. **Pasují F09**.
-4. Penzion Borová (vedoucí cestou s týmy autem) — **NE, to je až zítra**.
-5. **Knihovna velitelství**: tým hledá rodokmen Konvičků (uložený v knize 1995). **Petr Konvička**: synovec. Bez dalších linek. *Děti potvrdí: Petr = jediný blízký synovec.*
-6. **Hřbitov u tábora** (lesní cestou). **PRÁZDNÉ** — žádná stopa, ale tým si rozšiřuje mapu.
-7. **Místo u rybníka** (NIKOLI dutina v buku — ta je tabu): tým hledá **F12** (tužku) — už našli den 2. Najdou ale **otisky bot 44 v měkké hlíně poblíž**.
-8. **Místo u zadní brány**: Tým hledá kabel od kamery. **Najdou — kamera je vyřazená!** Někdo ji vypojil v noci 11. 7. Tomáš to oznámí jako klíčovou stopu — **přerušený kabel u kamery byl proveden ze strany, kterou znal jen Drábek (přímý přístup k zařízení v brašně)**.
-9. **Bývalá vrátnice** (= Pepova budka). Pepa ukáže záznamy: **kamery nezachytily nic mezi 23:30 a 02:00 z toho směru** (vyřazena). Spojení s F11 (rozsekaná kniha) a Drábkem.
-10. **Petrův kufr** (s jeho dovolením v hostinském pokoji): tým hledá **F17 — 300 000 Kč v eurových nebankovních obálkách**. Petr **panikaří**: „**To jsou peníze za prodej zboží! Nesouvisí.**" Ale je to spojený s Drábkem (= pravděpodobně mu chtěl dát).
+1. **Skladový stan** (kde pracuje Jenda). Tým hledá:
+   - **Záznam o dovozu materiálu** od Stehlíka 11. 7. ráno (vyjasňuje stopu pneumatiky). **Aleš dovoz potvrdí.** Toto je **alibi pro F09** — ALE Stehlík mohl být v noci pěšky.
+2. **Přístřešek údržby Aleše** (s jeho povolením, tým ho doprovází). Tým hledá:
+   - **F15a (předzvěst)**: na Alešových pracovních botách (gumovky) — **šedavý jíl, neobvyklý odstín**. Aleš sám vysvětluje: „chodím všude po lese, různé bahno." Tým si vzorek odebere. Skutečný význam vyjde najevo den 8 (porovnání se Stehlíkovou loukou).
+3. **Stan zakladatele vedle Šéfky** (s povolením Karla). Tým hledá:
+   - **Markův osobní deník z červnového pobytu** (Marek si zapisoval dojmy). V deníku zápis z 28. 6. 2026: „**Vladimír mě dnes potkal u plotu samoty. Mluvil o louce. Říkal, že kdyby tábor odešel, on by ji měl. Něco se mu nezdá.**" — **MOTIV — POPRVÉ VYŘČEN**.
+4. **Knihovna Šéfky / nástěnka historie**: tým hledá rodokmen Stanislavových (uložený v matrice 1997). **Marek**: zakladatel, žije sám, žádní přímí dědicové. Klára je vzdálená sestřenice (vyloučena). **Žádný osobní motiv u rodiny.**
+5. **Místo „U lípy" na lesní cestě** (300 m od tábora, kde je signál mobilu). Tým hledá:
+   - **F09 (rozšíření)**: druhý otisk pneumatiky pickupu, ale tentokrát **menší, slabší** — možná z jiné jízdy nebo ze stejné. Tým fotí, měří.
+6. **Ohniště + okolí**: tým hledá vyhořelé větvičky a zbytek. Najde **kousek hořící dýmky** — opálený, ne ze Šéfky. **Stehlík tedy dýmkoval i venku?** Pravděpodobně předevčírem při návštěvě (= 14:00–16:00 den 5). Falešná stopa, ale děti ji zaznamenají.
+7. **Místo u potoka** (NIKOLI dutina v buku — ta je tabu): tým hledá **otisky bot 44 v měkké hlíně poblíž**. **Najdou — silně, čerstvě**. Otisk vede směrem k buku a zase zpět směrem k samotě. **Stehlík tudy šel v noci 11.→12. 7.**
+8. **Místo za zadní stranou Šéfky** (15 m): tým prozkoumá místo pádu Marka. **Najde** zbytky kořene smrku, kámen s drobnou stopou krve (= simulace, např. červené barvy nebo hlína), Markovu baterku odhozenou stranou. Vše potvrzuje **pád, ne útok**.
+9. **Pod přístřeškem Aleše — věci v cestovním vaku**: s dovolením Aleše (Aleš nechce, tým mu to vyloží jako „rutinní"). Tým hledá: pod ručníky **bankovku — 1 000 Kč**. Aleš: „...soukromý úspora." Děti pochybují. **F17 (předzvěst)**: skutečný 30 000 Kč úplatek **najdou až den 9**, dnes jen drobnost — buduje napětí.
+10. **U samoty Stehlíkových (1 km, doprovod 2 vedoucích)**: tým **NEVCHÁZÍ** na pozemek (etika), ale prochází lesní cestou kolem. **Najde otisky pickupu** + **šátek/kapesník** zachycený na trnové větvi (pravděpodobně Stehlíkův — světle modrý, s monogramem „V. S."). Tým ho ofotí, vedoucí ho ponechá na místě (důkaz pro zítra).
 
-> **POZOR — F17 je riziko: pokud Petr peníze schoval moc dobře, děti je nemusí najít. Vedoucí připravil rekvizitu tak, aby byly nalezitelné** (např. v prázdné aktovce, jen lehce zakryté).
+> **POZOR — F17 (skutečné peníze 30 000 Kč) je riziko: pokud Aleš peníze schoval moc dobře, děti je nemusí najít. Vedoucí připravil rekvizitu tak, aby byly nalezitelné** (např. v plechové bedně pod nářadím, jen lehce zakryté). **Den 9** je hlavní moment nálezu.
 
 ---
 
 ## Bilance po dnu 7
 
-| Důkaz proti Petrovi | Důkaz proti Drábkovi |
+| Důkaz proti Stehlíkovi | Důkaz proti Alešovi |
 |---|---|
-| Boty 44 = F04 | F11: vytržená stránka v knize zásob |
-| Audi Q7 = F09 | F15: bahno z lesní cesty pod lůžkem |
-| Tužka PK = F12 | Vypojená kamera u brány |
-| Petr v rodině Konvičků | Drábek měl klíče celou noc |
-| Marie ho viděla v noci | Marie viděla druhou postavu u brány — pasuje |
-| 300 000 Kč v aktovce (F17) | Drábek měl v 2018 problém s benzínem (v knize starých záznamů — Tomáš to objevil) |
+| Boty 44 = F04 | F11: mezera v hlídce 00:30–01:30 |
+| Pickup = F09 | F15a: šedavý jíl na gumovkách (vyjasní se den 8) |
+| Vlákno z kožené rukavice = F10 | Aničkina silueta byla **vyšší než Aleš** = ne Aleš v lese, ale Aleš **někoho pustil** |
+| Popel z dýmky = F12 | Markovo svědectví: „Aleš měl té noci hlídku, opustil ji" |
+| Markovo svědectví: „byl to Vladimír Stehlík" | Markovo tušení: „Vladimír mu něco slíbil" |
+| Otisky bot 44 v měkké hlíně u potoka | Drobný hotovostní obnos pod ručníky (předzvěst) |
+| Šátek s monogramem V. S. na lesní cestě | — |
+| Markův deníkový zápis 28. 6.: motiv — louka | — |
+
+**Shrnutí**: **Stehlík je téměř jistý pachatel. Aleš je téměř jistý pomocník.** Ale **chybí pevný motiv pro Stehlíka** (proč ta louka? jaký zájem?) — to přijde **den 8 v Blansku** (dodatek smlouvy s univerzitou).
 
 ---
 
 ## Materiál pro den 7
 
-- **Datový projektor** + plachta + reproduktor pro videovzkaz
-- **Předem nahraný videovzkaz** (max 5 min, kvalita HD)
-- Vedoucí, který hraje Konvičku ve videu, **NEMUSÍ být** ten, kdo ho hrál v den 1 — může to být dabovaný hlas s detailním záběrem na ruce/postel.
-- **Rekvizity nového hledání**: kniha zásob s vytrženou stránkou (F11), bahno (F15), 300 000 Kč v obálkách (F17), vypojený kabel kamery
-- **Audi Q7** Petra (ve dvoře) — pneumatiky pasují
-- **Lasergame vybavení** (volitelné — alternativa: vodní pistole)
+- **Markův dopis** (papír, podpis) — vytištěný, případně vlastnoručně psaný
+- **Krátká audio nahrávka Markova hlasu** (volitelné — pokud máte mp3 přehrávač na baterky). Pokud ne, **Karel přečte nahlas s emocemi**.
+- **Markův osobní deník** s zápisem 28. 6. (rekvizita předem připravená)
+- **Šátek s monogramem V. S.** (pověšený na trnové větvi u samoty)
+- **Drobná bankovka 1 000 Kč** v Alešově vaku (rekvizita — nepoužívat skutečné peníze, vystačí kopie)
+- **Otisky bot 44** v měkké hlíně u potoka (vedoucí připravil ráno)
+- **Kámen u kořene smrku** (15 m za Šéfkou) — drobné stopy „krve"
+- **Kniha hlídky ohniště** (objevena už den 6)
+- **Lukostřelba / vzduchovka vybavení** (volitelné — alternativa: pétanque, frisbee)
 
 ---
 
@@ -145,12 +174,12 @@ Děti křičí: „**Strážce Lípy! Buk!**"
 
 | Tým | Maximum bodů |
 |---|---|
-| Najde F11 (vytržená stránka) | 30 b. |
-| Najde F15 (bahno) | 20 b. |
-| Najde F17 (peníze) | 30 b. |
-| Najde vypojenou kameru | 30 b. |
-| Spojí F11 + F15 + Drábek | 50 b. |
-| Spojí F17 + Drábek (úplatek) | 50 b. |
+| Najde Markův deníkový zápis (motiv — louka) | 50 b. |
+| Najde otisky bot 44 u potoka | 30 b. |
+| Najde šátek s monogramem V. S. | 30 b. |
+| Najde šedavý jíl na Alešových gumovkách | 20 b. |
+| Spojí Markovo svědectví + důkazy → Stehlík je pachatel | 50 b. |
+| Spojí mezeru v hlídce + ticho Aleše → Aleš je pomocník | 50 b. |
 
 ---
 
@@ -158,13 +187,13 @@ Děti křičí: „**Strážce Lípy! Buk!**"
 
 | Kód | Indicie | Co znamená |
 |---|---|---|
-| **VIDEO** | Konvičkův videovzkaz | Pachatel je z rodiny, závěť je u rybníka |
-| F11 | Vytržená stránka v knize zásob | Drábek něco skrývá |
-| F15 | Bahno z lesa pod Drábkovým lůžkem | Drábek byl v lese v noci |
-| F17 | 300 000 Kč v Petrově aktovce | Pravděpodobně úplatek pro Drábka |
-| Vypojená kamera | Někdo zařízení vyřadil | Drábek (přístup k zařízení) |
-| Audi Q7 — pneumatiky | Pasují F09 | **Petr měl v noci v lese auto** |
-| S17 | Petra eliminována | — |
+| **VZKAZ** | Markův dopis/audio z FN Brno | **Pachatel je Vladimír Stehlík + Aleš mu pomohl** |
+| **MOTIV (předzvěst)** | Markův deníkový zápis 28. 6.: „Vladimír mluvil o louce" | Motiv naznačen — pozemek |
+| F15a | Šedavý jíl na Alešových gumovkách | **Aleš byl v lese na nějaké specifické louce** (vyjasní se den 8) |
+| Otisky bot 44 u potoka | Stehlík tudy šel | Trasa zločinu potvrzena |
+| Šátek V. S. | Stehlíkův kapesník na trnové větvi | Stehlík tudy šel pěšky |
+| Magdaléna eliminována | Lékařský deník | — |
+| Jenda eliminován | Žádný motiv, svědek | — |
 
 ---
 
@@ -172,23 +201,28 @@ Děti křičí: „**Strážce Lípy! Buk!**"
 
 | Postava | Aktivita |
 |---|---|
-| Konvička | **Ve videu** — předem natočeno |
-| Alena, Tomáš | Vedení dne |
-| Drábek | **Tlak silný** — boudě se začíná bránit ostře. Stále tvrdí: „Spal jsem." Ale děti vidí, že je nervózní. |
-| Petr | **Tlak velký** — je obklíčený důkazy. Pokud je pod tlakem, řekne: „Dobrá. Tu noc jsem se ráno odjel z Mladé Boleslavi. Nešel jsem však do tábora. Strýc spí už dlouho. **Neexistuje důkaz, že jsem byl v táboře.**" (LEŽ — kamera benzínky v Mladé Boleslavi to den 8 odhalí) |
+| **Marek Stanislav** | **Ve vzkazu** — předem natočeno (audio) nebo přečteno Karlem |
+| Karel Malík, Pavel Malík | Vedení dne, oznámení o vzkazu |
+| Magdaléna H. | Doloží lékařský deník — eliminována |
+| Anička | V kuchyni, slyšela vzkaz, dojatá |
+| **Aleš Tomek** | **Tlak silný** — drží se. „Bolela mě záda, šel jsem se projít." Děti vidí, že je nervózní. |
+| Jenda | Vyloučen — alibi pro pickup (dovoz materiálu od Stehlíka), normální zásobovací aktivity |
+| Klára | Pomáhá v kuchyni, dnes klidnější (vyloučena včera) |
+| Stehlík | **Není v táboře** — na samotě, „pracuje doma." Děti vědí, že je hlavní podezřelý, ale nesmí mu to dát najevo |
 
 ---
 
 ## Tipy pro vedoucí
 
-1. **Videovzkaz Konvičky musí být kvalitní**. Investujte do natočení — nahrávejte předem několikrát, dejte si pozor na zvuk. Toto je **emoční jádro celé hry**.
-2. **Petrova reakce na nález 300 000 Kč** je důležitá. Vedoucí, který Petra hraje, musí mít připravenou **vyhýbavou reakci** — ne agresivní, ale vyhýbavou. „Nejsou důkaz." 
-3. **Drábek**: drží se. Ale začíná **šeptat se sebou**, posedávat víc na věcech. Děti to musí cítit, ale nesmí zatím přiznat.
-4. **Casino večer / filmový večer**: po vážném dnu lehká zábava. **Casino večer** je herní (papírové žetony, žádné peníze). Pokud raději filmový večer, doporučená dětská detektivka.
-5. **Lasergame v lese**: pokud máte vybavení nebo místní firmu, ideální. Alternativa: vodní pistole.
+1. **Markův vzkaz musí být kvalitní**. Pokud máte technické možnosti, nahrajte audio předem v klidu, několikrát. Pokud ne, **Karel ho přečte nahlas s emocemi** — papírový dopis je v hře plně dostatečný a v jistém smyslu i autentičtější (žádná elektřina). Toto je **emoční jádro celé hry**.
+2. **Aleš pod tlakem**: drží se. Ale začíná **mlčet více, sedět víc stranou**. Děti to musí cítit, ale nesmí zatím přiznat. **Lidská tvář, ne karikatura zlosyna.**
+3. **Stehlík dnes není v táboře** — to je důležité. Pokud by byl, mohl by uvážlivě reagovat. **Den 9** je den konfrontace.
+4. **Detektivní filmový večer**: po vážném dnu lehká zábava. Bez elektřiny — tedy **vyprávění u ohně**. Vedoucí může vyprávět příběh slavného fiktivního detektiva (Sherlock Holmes, Nick Carter), nebo si ho může tým připravit.
+5. **Lukostřelba / vzduchovka v lesní mýtině**: pokud máte vybavení a vedoucí s zbrojním průkazem, ideální. Alternativa: pétanque, vrh oštěpem (vážné, ale bezpečné).
+6. **F15a šedavý jíl**: vedoucí připraví vzorek šedavého jílu (= specifický odstín, který se vyskytuje na Stehlíkově louce — vedoucí si ho předem připraví ze skutečné lokality). Den 8 se ukáže, že **stejný jíl je na Stehlíkově louce**.
 
 ---
 
 ## Co se stane zítra
 
-Den 8: **Výjezd vybraných týmů do Mladé Boleslavi**. Notářka, banka, **kamera benzínky** zaznamenala Petra 11. 7. ve 4:32 — **definitivní důkaz**. **Petr usvědčen, ale nevíme zatím, kde závěť je.** Drábek **stále neví, že byl prozrazen**.
+Den 8: **Výjezd vybraných dětí do Blanska** (notářka). Magdaléna Růžičková ukáže **fragment závěti (§§ 1–2)** + **dodatek o prodloužení smlouvy s Mendelovou univerzitou v Brně o 30 let** = **MOTIV STEHLÍKA ODHALEN**. Bonus pro 2–3 nejstarší kadety: výjezd do Brna na **Mendelovu univerzitu** pro potvrzení dohody Stehlíka s lesníkem. Mezitím v táboře: **Aleš má na botách specifické bahno ze Stehlíkovy louky** (F15 plně). Stehlík **přijede ještě jednou** odpoledne — pod tlakem, ale klidný.

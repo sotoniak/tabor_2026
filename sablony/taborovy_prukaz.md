@@ -11,7 +11,8 @@
 ```
 ┌──────────────────────────────────────────┐
 │                                          │
-│        TÁBOR STARÁ LÍPA — 30 LET         │
+│        TÁBOR SVĚTLO — 30 LET             │
+│              1997 — 2026                 │
 │                                          │
 │   ◆ VYŠETŘOVATELSKÝ PRŮKAZ ◆            │
 │                                          │
@@ -23,11 +24,11 @@
 │  └────────────┘                          │
 │                  Role: __________________│
 │                                          │
-│  Datum vystavení: 12. 7. 2025            │
+│  Datum vystavení: 12. 7. 2026            │
 │                                          │
 │  Podpis hl. vyšetřovatele:               │
 │  ________________________________        │
-│         (Tomáš Veselý)                   │
+│         (Karel Malík)                    │
 │                                          │
 │              Č. PRŮKAZU: ____            │
 │                                          │
@@ -63,11 +64,11 @@
 │                                          │
 │  ─────────────────────────────────       │
 │                                          │
-│  Hlavní vedoucí: Alena Procházková       │
-│  Zástupce: Tomáš Veselý                  │
+│  Hlavní vedoucí: Karel Malík             │
+│  Zástupce: Pavel Malík                   │
 │  Notářka: JUDr. M. Růžičková             │
 │                                          │
-│        TÁBOR 2025 — 30 LET               │
+│        TÁBOR 2026 — 30 LET               │
 │                                          │
 └──────────────────────────────────────────┘
 ```

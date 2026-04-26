@@ -1,4 +1,4 @@
-# DEN 9 — Sobota 19. 7. 2025: Konfrontace, přiznání, útěk
+# DEN 9 — Neděle 19. 7. 2026: Konfrontace, přiznání, útěk
 
 > **Motto dne**: „Pravda nakonec vyjde najevo. Ale co teď udělá vinen?"
 
@@ -9,149 +9,176 @@
 | Čas | Co se děje |
 |---|---|
 | 07:30 – 08:30 | Snídaně |
-| 08:30 – 11:00 | **Příprava konfrontace** — týmy zapisují seznam důkazů |
-| 11:00 – 12:00 | Lukostřelba / vzduchovka (volnější aktivita pro snížení napětí) |
+| 08:30 – 11:00 | **Příprava konfrontace** — týmy zapisují seznam důkazů, hierarchizují |
+| 11:00 – 12:00 | Lukostřelba / pétanque (volnější aktivita pro snížení napětí) |
 | 12:00 – 13:00 | Oběd |
 | 13:00 – 14:00 | Klid — **strategická schůzka vedoucích** |
-| 14:00 – 15:30 | **VELKÁ KONFRONTACE PETRA** v jídelně |
+| 14:00 – 15:30 | **VELKÁ KONFRONTACE STEHLÍKA** v lipovém altánu |
 | 15:30 – 16:00 | Přestávka |
-| 16:00 – 17:00 | **DRÁBEK PŘIZNÁVÁ** |
-| 17:00 – 17:30 | **PETR UTÍKÁ DO LESA** |
-| 17:30 – 18:00 | Krizový brífink — plánování zítřejšího honu |
+| 16:00 – 17:00 | **KONFRONTACE ALEŠE** + Alešovo přiznání |
+| 17:00 – 17:30 | **STEHLÍK UTÍKÁ DO LESA** |
+| 17:30 – 18:00 | Krizový brífink — Karel volá policii z Blanska, plán zítřejšího honu |
 | 18:00 – 19:00 | Večeře |
-| 19:30 – 21:30 | **Stezka odvahy** (večerní hra — bez napojení na linku) |
+| 19:30 – 21:30 | **Stezka odvahy** (večerní hra — BEZ napojení na herní linku!) |
 | 22:00 | Večerka |
 
 ---
 
 ## Příběh dne (z pohledu dětí)
 
-Týmy se ráno schází ve své klubovně. Mají před sebou **karty důkazů**. Tomáš s nimi dělá brífink:
+Týmy se ráno schází u svých stanů. Mají před sebou **karty důkazů**. Karel s nimi dělá brífink:
 
-> „Týmy. Dnes ve 14 hodin v jídelně **Petr Konvička stane před nás všemi**. Já mu předestřu důkazy. Drábek bude vedle. **Vy budete ti, kteří ho budou vyslýchat.** Každý tým zvolí jednoho mluvčího. Ten řekne **klíčový důkaz** a **otázku** Petrovi. Po té přijdou ostatní. Pamatujte: **mluvíte za pravdu, ne proti člověku**. I Petr má svou důstojnost."
+> „Týmy. Dnes ve 14 hodin v lipovém altánu **Vladimír Stehlík stane před nás všemi**. Já mu předestřu důkazy. **Vy budete ti, kteří mu budou klást otázky.** Každý tým zvolí jednoho mluvčího. Ten řekne **klíčový důkaz** a **otázku** Stehlíkovi. Po něm přijdou ostatní. Pamatujte: **mluvíte za pravdu, ne proti člověku**. I Stehlík má svou důstojnost. **Bez křiku, bez pomstychtivosti. Ptejte se a poslouchejte.**"
 
 ---
 
-## Velká konfrontace Petra (14:00–15:30)
+## Velká konfrontace Stehlíka (14:00–15:30)
 
 ### Příprava
-- **Jídelna**: stoly uspořádány do velkého **U** kolem středu. Petr sedí na židli uprostřed. Vedle něj **Drábek**, **Alena**, **Tomáš**, **Magdaléna** (přijela). Týmy v U kolem.
+
+- **Lipový altán** u centrální plochy (= dřevěný přístřešek, slouží i k schůzkám). Lavičky uspořádány do velkého **U** kolem středu. Stehlík sedí na lavici uprostřed. Vedle něj **Aleš**, **Karel**, **Pavel**, **Magdaléna Růžičková** (přijela autem z Blanska speciálně). Týmy v U kolem.
 - Atmosféra je **tichá, vážná**. Žádné zvonění, žádný humor.
+- **Lipový altán** se hodí, protože nemá zdi — všichni vidí všechny, je tam dost vzduchu, ne klaustrofobie.
 
 ### Skript konfrontace
 
-**Tomáš** (zahájí): „Pane Petře Konvičko. Děti vyšetřovaly 9 dní. Mají pro vás otázky. Připraven?"
+**Karel** (zahájí): „Pane Vladimíre Stehlíku. Děti vyšetřovaly 9 dní. Mají pro vás otázky. Připraven?"
 
-**Petr** (klidný, ale napjatý): „Připraven."
+**Stehlík** (klidný, ale sevřený): „Připraven."
 
-**Tým 1 (Jestřábi) — mluvčí**: „Pane Konvičko. Vaše boty velikost 44 přesně pasují na **stopu boty u zadní brány tábora** v noci 11. 7. Vaše Audi Q7 přesně pasuje na **stopu pneumatiky na lesní cestě**. **Tužka s vašimi iniciálami** byla u rybníka. Můžete to vysvětlit?"
+**Tým 1 (Sojky) — mluvčí**: „Pane Stehlíku. Vaše kožené boty velikosti 44 přesně pasují na **stopu boty v rose před Šéfkou** v noci 11. → 12. 7. **Otisky stejných bot jsme našli i v měkké hlíně u potoka — vedoucí směrem k buku a zase zpátky k samotě.** Můžete to vysvětlit?"
 
-**Petr**: „Botky 44 jsou nejběžnější velikost mužských bot v Česku. Audi Q7 mám 5 let, projíždí jich tisíce. Tužku jsem zde ztratil **včera**, když jsem se procházel."
+**Stehlík**: „Botky 44 jsou nejběžnější velikost mužských bot. Stopy mohou být ze dne. Já tudy chodím každý den lesem."
 
-**Tým 2 (Vlci) — mluvčí**: „**Pane Konvičko, my zde máme záznam z kamery benzínky OMV v Mladé Boleslavi**. 12. července, 04:32 ráno. **Tankoval jste**. To znamená, že jste **byl 11. 7. v okolí tábora**. Lhal jste, když jste řekl, že jste byl v Praze. **Proč?**"
+**Tým 2 (Vlci) — mluvčí**: „**Pane Stehlíku, v rohu Šéfky byl nalezen popel z dýmky.** Porovnali jsme ho s vaší dýmkovou směsí — kterou jste den 5 sám popsal jako ‚dovozovou z Brna'. **Popel se shoduje. Vy kouříte tu směs. Personál ne. Cizí kuřáci v táboře nebyli. Vy jste byl v Šéfce.**"
 
-_(Tomáš ukáže záznam na ploše projektoru. Petr ho vidí.)_
+**Stehlík** (chvíli mlčí): „... popel může být starý. Mohl jsem si u Šéfky odpočinout, když jsem den 5 přijel s medem a brambory."
 
-**Petr** (ztiskne pěst, mlčí 5 vteřin): „... 
+**Tým 3 (Lišky) — mluvčí**: „**Pane Stehlíku, na botách Aleše Tomka jsme našli specifický šedavý jíl.** Tento jíl roste **na vaší louce** u samoty. **Aleš v noci 11. → 12. 7. byl u vás na louce. Proč?**"
 
-**Tým 3 (Lišky) — mluvčí**: „**Pane Konvičko, banka v Mladé Boleslavi nám potvrdila, že máte úvěr 12 milionů a jste 2 měsíce v prodlení**. **Pokud zdědíte tábor, můžete ho prodat za 30 milionů a zachránit se. Je to motiv?**"
+_(Stehlík se podívá na Aleše. Aleš svěsí hlavu.)_
 
-**Petr** (hlas se třese): „... To není… **vy jste neměli právo se ptát banky**!"
+**Stehlík**: „... Aleš si dělá sousedské služby. Mohl být na mé louce kdykoliv."
 
-**Tým 4 (Medvědi) — mluvčí**: „**Pane Konvičko, my máme** koncept **§ 4 a § 5 závěti**. Tábor podle § 4 dědí **nadace**. § 5: **Vy nejste v správní radě**. **Tábor jste nikdy neměl zdědit. Ale vy jste si nechal vyrobit padělek závěti, kde jste sám sebe nahradil. Je to pravda?**"
+**Tým 4 (Medvědi) — mluvčí**: „**Pane Stehlíku, my máme** **dodatek smlouvy s Mendelovou univerzitou v Brně**, který pan Marek připravil. Dodatek prodlužuje propůjčení pozemku tábora o dalších 30 let. **Bez něj smlouva 2027 vyprší a univerzita pronajme pozemek vám.** **A na Mendelově univerzitě nám potvrdili: vy jste o tu plochu žádal v dubnu 2026 pro myslivecký revír. Měl jste neformální dohodu s lesníkem Bártou.** Pokud zničíte dodatek + závěť, **dostanete pozemek**. **Toto je váš motiv. Je to pravda?**"
 
-**Petr** (panika, vstává, ruce se třesou): „**Já… já jsem strýce nikdy nechtěl zranit. Jen jsem chtěl tu závěť. Chtěl jsem ji vyměnit. To byl PLÁN. Strýc měl spát, neslyšet. Ale on se vzbudil. Strčil jsem ho. Spadl jsem… **on** spadl. Já jsem chtěl pomoct, ale… nestačil jsem. Utekl jsem. Vzal jsem pravou závěť. Schoval jsem ji. Já… nemám…**"
+_(Karel ukáže kopii dodatku a kopii Bártova rozhovoru. Stehlík je vidí. Mlčí 10 vteřin. Pak vážně, tiše:)_
 
-_(Petr klesá zpět na židli. Třese se. Drábek vedle něho zdřevěněl.)_
+**Stehlík**: „... Ano."
 
-**Tomáš** (vážně): „**Pane Petře Konvičko. Přiznáváte se, že jste 11. července 2025 v noci vstoupil do velitelství tábora Stará Lípa, vyměnil pravou závěť za padělek a způsobil pádu pana Josefa Konvičky?**"
+_(Děti zatají dech.)_
 
-**Petr** (tiše): „**Ano. Přiznávám.**"
+**Stehlík** (pomalu, klidně, bez hysterie):
 
-> **Děti jsou v šoku — i když to čekaly. Reálnost přiznání je drtivá.**
+> „Děti, povím vám pravdu. Já jsem chtěl tu louku. **Pro myslivecký revír.** Tábor mi ‚kazil' zvěř — hluk, lidi v lese, pach. Měli jsme s panem Bártou neformální slovo, že kdyby tábor odešel, dostanu plochu já. Pak jsem se v květnu dověděl, **že Marek chystá dodatek o prodloužení**. Padl mi svět. **Bez dodatku byl tábor v 2027 pryč. S dodatkem zůstával dalších 30 let. Já jsem to nemohl unést.**
+>
+> _(Pauza.)_
+>
+> **Ano. Byl jsem v Šéfce.** Aleš mi rozvázal plachtu. Vzal jsem závěť. Schoval jsem ji **u potoka, v dutině buku — abych si pro ni přišel později, až se prach usadí**. Pak jsem se vracel domů.
+>
+> _(Hlas se třese.)_
+>
+> Marek se vzbudil. Slyšel mě. Vyšel ven. **Já jsem nechtěl ublížit.** **Strčil jsem ho stranou — jen abych mohl utéct, ne aby ho zranil.** Vyběhl za mnou. Klopýtl o kořen smrku. Padl. Já jsem se otočil... viděl jsem ho ležet... **a utekl jsem dál**. Místo abych pomohl. **To je moje největší vina. Ne ta krádež. To, že jsem ho neopustil — odběhl jsem.**
+>
+> _(Slzy v očích, ale klid.)_
+>
+> Marek je můj soused od dětství. Padesát let. **Já jsem mu ublížil pro pár hektarů lesa.** Stydím se."
 
-**Tomáš**: „A poslední otázka. **Měl jste pomocníka? Někdo vás pustil do tábora?**"
+> **Karel** (vážně, tiše): „**Pane Vladimíre Stehlíku. Přiznáváte se, že jste 11. → 12. července 2026 v noci vstoupil do Šéfky tábora Světlo, vyměnil pravou závěť za padělek a způsobil pádu pana Marka Stanislava?**"
 
-_(Petr se podívá na Drábka. Drábek bledý.)_
+**Stehlík** (tiše): „**Ano. Přiznávám.**"
 
-**Petr**: „... ano. Ale **ten člověk to udělal pod nátlakem. Slíbil jsem mu peníze. Já jsem ho zatlačil. Není to jeho vina, je to moje.**"
+> **Děti jsou v šoku — i když to čekaly. Reálnost přiznání je drtivá. Ale Stehlíkův klid a smutek dělá scénu spíše tragickou než triumfální.**
+
+**Karel**: „A Aleš? Jak vám pomohl?"
+
+**Stehlík** (podívá se na Aleše): „... **Aleš mi rozvázal zadní plachtu Šéfky. Předtím — den předtím — mi ukázal, kde Marek závěť uložil. Slíbil jsem mu peníze. 30 000 Kč. Na dluhy. Vydíral jsem ho — měl starou nehodu z 90. let, kdy poražený strom dopadl na kůlnu mého otce. Otec to zatajil, ale Aleš mu zůstal zavázaný. Já jsem na ten závazek udeřil. Aleš to udělal pod tlakem. Není to jeho vina, je to moje.**"
 
 ---
 
-## Drábek přiznává (16:00–17:00)
+## Konfrontace Aleše (16:00–17:00)
 
-Po krátké přestávce Tomáš svolá zase. Drábek sedí teď na židli ve středu.
+Po krátké přestávce Karel svolá zase. Aleš sedí teď na lavici ve středu altánu.
 
-**Tomáš**: „Karle. Co řekneš?"
+**Karel**: „Aleši. Co řekneš?"
 
-**Drábek** (hluboký vzdech, slzy v očích, ruce se třesou):
+**Aleš** (hluboký vzdech, slzy v očích, ruce se třesou):
 
-> „**Já… ano. Já jsem Petrovi otevřel zadní bránu. Já jsem mu řekl kód trezoru.**
+> „**Já... ano. Já jsem Vladimírovi rozvázal plachtu. Já jsem mu ukázal, kde Marek tu složku uložil.**
 >
-> Před třemi týdny mi Petr zavolal. Řekl mi: ‚Karle, vím, že v 2018 jste vzal benzín ze zásob. Mám důkazy. Pokud mi nepomůžete, pověděl bych to panu Konvičkovi.' **Já jsem se bál. Bál jsem se ztráty práce. Po 25 letech.**
+> Před třemi týdny mi Vladimír zavolal. Říkal: ‚Aleši, vzpomeň si na ten strom v 90. letech. Otec se ho ujal, ale ty mi dlužíš. Je čas mi to vrátit. Marek nikdy nebude mít vědomost, že jsi mi pomohl. Nikomu se nic nestane. Jen mě pustíš v noci k Šéfce.' **Já jsem se bál. Ne vězení — bál jsem se ostudy. Padesát let jsem to v sobě nosil.**
 >
-> Pak mi nabídl 300 000 Kč. **Já jsem ty peníze přijal — vám je tady, najdou je v mém pokoji.** Otevřel jsem mu bránu. **Nic víc jsem nevěděl. Nevěděl jsem, že někoho zraní.**
+> Pak mi nabídl 30 000 Kč. **Na dluhy.** Já mám dluhy z lékárny — manželka má cukrovku, léky jsou drahé. **Já jsem ty peníze přijal. Mám je v plechové bedně pod nářadím v přístřešku. Vraťte je Vladimírovi. Já je nechci.**
+>
+> _(Slzy.)_
+>
+> Ale **Marek se vzbudil. Spadl. Já jsem to slyšel — slyšel jsem sten. Šel jsem se podívat. Viděl jsem ho ležet. A místo abych zavolal Karla, místo abych zavolal Magdalénu, **utekl jsem do svého stanu**. Do rána jsem nespal. **To je moje vina. Větší než ta plachta.**
 >
 > _(Pláče.)_
 >
-> Ale nakonec jsem ho zranil **já**. Tím, že jsem mu otevřel bránu. Já jsem zradil pana Konvičku. **A nezasloužím si zůstat v jeho správní radě, ani v táboře.**
->
-> Děkuji, že jste mě dostali ven."
+> Marka znám padesát let. **A já jsem ho zradil pro 30 000 Kč a strach ze stínu mladí.** Nezasloužím si tady být. Nezasloužím si v tomhle táboře už dýchat."
 
-> **Děti jsou znovu v šoku. Drábek je tragický. Ne zlosyn — slabý člověk, který se bál.**
+> **Děti jsou znovu v šoku. Aleš je tragický. Ne zlosyn — slabý člověk, který se bál.**
 
-**Alena** vstane, položí Drábkovi ruku na rameno: „**Karle, jste pod nátlakem. Pan Konvička bude rozhodovat. Nebudeme vás dnes soudit. Pravda je krok první.**"
+**Karel** vstane, položí Alešovi ruku na rameno: „**Aleši, dnes jste řekl pravdu. Pravda je krok první. O zbytku rozhodne pan Marek a pak soud. Ale dnes — vy nás neopouštíte. Sedněte si tam v rohu. Vyřešíme to spolu.**"
 
-> **Tato scéna je emocionální vrchol — déťi se musí naučit, že **viník není totéž co zlosyn**. Drábek je obě i oběť (vydíraný), i pachatel (souhlasil s úplatkem).
+> **Tato scéna je emocionální vrchol — déťi se musí naučit, že **viník není totéž co zlosyn**. Aleš je obě i oběť (vydíraný), i pachatel (souhlasil s úplatkem).
+
+Tým, který hledal v přístřešku, doloží **F17 — 30 000 Kč v plechové bedně pod nářadím**, v třech svazcích po deseti tisících. Aleš peníze vrátí, vedoucí je předá policii zítra.
 
 ---
 
-## Petr utíká (17:00–17:30)
+## Stehlík utíká (17:00–17:30)
 
-Po přestávce, kdy se Drábek odebere s Pepou na ošetřovnu (= je v šoku, zhroutil), **Petr v jídelně náhle vstane**.
+Po přestávce, kdy se Aleš odebere k Magdaléně H. (= je v šoku, zhroutí), **Stehlík v lipovém altánu náhle vstane**.
 
-> **Petr**: „**Já potřebuji vzduch. Půjdu se projít.**"
+> **Stehlík**: „**Já potřebuji vzduch. Půjdu se projít k samotě. Vrátím se za hodinu.**"
 
-**Tomáš**: „Pane Konvičko, prosím zůstaňte..."
+**Karel**: „Pane Stehlíku, prosím zůstaňte..."
 
-**Petr** vyběhne. **Vyběhne z jídelny. Doběhne k autu, ale klíčky **má v Audi**. Ale Magdaléna mu klíčky **vzala** předem (jako prevenci).
+**Stehlík** vyběhne z altánu. Doběhne k pickupu na lesní cestě, ale **klíčky má Pavel** (Pavel je Stehlíkovi den 5 nenápadně vzal — preventivně).
 
-**Petr** zoufale **utíká do lesa**.
+**Stehlík** zoufale **utíká do lesa**, lesní cestou směrem k samotě.
 
-> **Důležité scénografické rozhodnutí**: Petr neuteče autem. Chce, ale klíče má Magdaléna. **Utíká pěšky do lesa. Chce dosáhnout pravé závěti v dutině buku.**
+> **Důležité scénografické rozhodnutí**: Stehlík neuteče autem. Chce, ale klíče má Pavel. **Utíká pěšky lesní cestou. Snaží se dostat domů na samotu — možná se schovat, možná uklidit dodatek smlouvy, který si den předtím odnesl od Aleše domů.**
 
-Tomáš svolá tábor:
+Karel svolá tábor:
 
-> „**Petr utekl do lesa. Nemůže opustit oblast — území je velké, ale nemá auto. Pravděpodobně se snaží dosáhnout pravé závěti — chce ji odnést.** **Volíme policii. Zítra ráno zorganizujeme hon. Dnes večer NIKDO nesmí jít do lesa.**"
+> „**Vladimír Stehlík utekl pěšky lesem směrem k samotě. Nemůže opustit oblast snadno — auto má v parkovišti. Pravděpodobně se snaží dostat domů. Volíme policii do Blanska.** Zítra ráno zorganizujeme společný hon spolu s policisty. **Dnes večer NIKDO nesmí jít do lesa.** Stezka odvahy se koná, ale je to **samostatná hra bez napojení na vyšetřování**."
+
+Karel jde s Pavlem na lesní cestu „U lípy" (signál), volá **kpt. Marka Poláka a por. Lucii Brázdovou z Blanska**. Domluveno: policie přijede ráno v 6:30, společně se zorganizuje hon.
 
 ---
 
 ## Stezka odvahy (večer)
 
-> **Tematické varování**: Stezka odvahy v tu večerní hodinu by mohla být napojena na drama (Petr v lese), ale **NESMÍ být** — to by byl pro mladší děti děsivé. **Stezka odvahy je samostatná hra**, **bez tematického napojení**.
+> **Tematické varování**: Stezka odvahy v tu večerní hodinu by mohla být napojena na drama (Stehlík v lese), ale **NESMÍ být** — to by bylo pro mladší děti děsivé. **Stezka odvahy je samostatná hra**, **bez tematického napojení**.
 
-Klasická forma: vedoucí udělají trasu se svíčkami a překážkami, děti procházejí ve dvojicích. **Žádné spojení s herní linkou.**
+Klasická forma: vedoucí udělají trasu se svíčkami a překážkami **na bezpečné, dříve prozkoumané pěšině** (= ne směrem k samotě!). Děti procházejí ve dvojicích. **Žádné spojení s herní linkou.**
+
+> **Vedoucí výslovně dětem řekne**: „**Stehlík je na druhé straně lesa. My jsme tady, na bezpečné pěšině. Toto je hra.**"
 
 ---
 
 ## Indicie a důkazy předané dnes
 
-Žádné nové **fyzické indicie** — den 9 je o **přiznání**.
+Žádné nové **fyzické indicie zvenku** — den 9 je o **přiznání**. Ale:
 
 | Co | Hodnota |
 |---|---|
-| Petrovo přiznání | Definitivní |
-| Drábkovo přiznání | Definitivní |
-| Petr utíká | Nový dramatický úkol pro den 10 |
-| Pravá závěť stále u rybníka | **Nelza najít dnes večer** — bezpečnostní důvod |
+| Stehlíkovo přiznání | Definitivní |
+| Alešovo přiznání | Definitivní |
+| **F17**: 30 000 Kč v plechové bedně pod Alešovým nářadím | Materiální důkaz úplatku |
+| Stehlík utíká | Nový dramatický úkol pro den 10 |
+| Pravá závěť stále u potoka v dutině buku | **Nesahá se dnes večer** — bezpečnostní důvod, plus Stehlík by ji teoreticky mohl získat |
 
 ---
 
 ## Klíčové body bodování dne 9
 
-- Tým, který položil **rozhodující otázku** (Tým 4 / Medvědi v příkladu): **bonus 50 b.**
+- Tým, který položil **rozhodující otázku** (Tým 4 / Medvědi v příkladu — motiv ze smlouvy): **bonus 50 b.**
 - Týmy, které **měly připraveny skvělé důkazy**: 1–30 b. každý
-- Týmy, které **se chovaly s důstojností** (neposmívaly se Drábkovi, neoslavovaly veřejně Petrovo zlo): **bonus 20 b. — Etika vyšetřování**
+- Týmy, které **se chovaly s důstojností** (neposmívaly se Alešovi, neoslavovaly veřejně Stehlíkovo zlo): **bonus 20 b. — Etika vyšetřování**
 
 > **Kniha 30 let**: každý tým si dnes večer připraví **stránku s reflexí** — „Co jsme se naučili o vyšetřování pravdy?" To je důležitá lekce.
 
@@ -161,37 +188,40 @@ Klasická forma: vedoucí udělají trasu se svíčkami a překážkami, děti p
 
 | Postava | Aktivita |
 |---|---|
-| **Petr** | Konfrontace, přiznání, útěk — **emocionální vrchol** |
-| **Drábek** | Přiznání — **tragický bod hry** |
-| Alena | Vede konfrontaci, drží Drábka |
-| Tomáš | Hlavní vyslýchající |
-| Magdaléna | Přijela k konfrontaci, byla u toho |
-| Marie | V kuchyni, přiznáním šokována |
-| Lucie, Petra, Pepa, Hájek | Pozorují, podporují |
+| **Vladimír Stehlík** | Konfrontace, přiznání, útěk — **emocionální vrchol** |
+| **Aleš Tomek** | Přiznání — **tragický bod hry** |
+| Karel Malík | Vede konfrontaci, pevná ruka |
+| Pavel Malík | Drží klíče od pickupu, organizuje |
+| Magdaléna Růžičková | Přijela z Blanska k konfrontaci, byla u toho |
+| Magdaléna Hamanová | Po Alešově přiznání ho vezme do zdravotky, posedí s ním |
+| Anička | V kuchyni, přiznáním šokována, nakonec přinese Alešovi čaj |
+| Klára, Jenda, Hájek | Pozorují, podporují |
 
 ---
 
 ## Materiál pro den 9
 
-- **Velký jídelní stůl** — uspořádaný do U
-- **Projektor + plachta** — pro záznam kamery
-- **Důkazy v ruce** (papíry, fotky, otisky, atd.) — týmy si přinesou své kartotéky
-- **Klíčky od Audi** — Magdaléna je má (rezerva: vedoucí, pokud Magdaléna nehraje)
-- **Stezka odvahy materiál**: svíčky, překážky, lano
+- **Lipový altán** — uspořádané lavičky do U
+- **Tištěné kopie důkazů** (papíry, fotky, otisky, kopie dodatku smlouvy, kopie Bártova rozhovoru) — týmy si přinesou své kartotéky
+- **Klíčky od pickupu** — Pavel je má (preventivně den 5 vzal)
+- **30 000 Kč** v plechové bedně Aleše (rekvizita — bankovky kopie nebo simulace)
+- **Stezka odvahy materiál**: svíčky v zavařovacích sklenicích (proti větru), překážky, lano, dlouhé bílé prostěradlo (rekvizita pro mlhu, ale nepoužívat strašáky!)
 
 ---
 
 ## Tipy pro vedoucí
 
-1. **Konfrontace je herecky náročná**. Vedoucí, kteří hrají Petra a Drábka, **musí umět hrát emocionálně**. Pokud nejsou na to, **scénář je natolik silný, že stačí vážně přečíst — emoce přijdou samy**.
-2. **Drábkovo přiznání**: jeho slzy musí být **opravdové**. Ne hrané. Pokud vedoucí cítí, že to neumí, **použijte audiozáznam přiznání** předem nahraný.
-3. **Petrův útěk**: je **dramatický, ale ne nebezpečný**. Petr běží do lesa, **ale tam ho čekají vedoucí v rozestavěných pozicích** (pro bezpečnost). **Nikdo se za ním nepouští**. Vedoucí dohlížejí, aby se neztratil mimo bezpečnou zónu.
-4. **Po útěku Petra dejte dětem chvíli** — nesmí se pouštět do lesa za ním. Vyložte to jako „policejní záležitost zítra".
-5. **Drábek po přiznání**: vedoucí, který ho hraje, by se měl po hře **ukázat dětem**, **že je v pořádku**. „Jen jsem hrál." Tím se ulehčí mladším dětem (= K1, 7–9 let), které mohou být zděšené.
-6. **Stezka odvahy se NESMÍ napojit na příběh**. Žádné stínové postavy, žádné „Petr je v lese". Pokud děti spojí, vedoucí jasně řekne: „**Toto je hra. Petr je daleko od trasy stezky.**"
+1. **Konfrontace je herecky náročná**. Vedoucí, kteří hrají Stehlíka a Aleše, **musí umět hrát emocionálně**. Pokud Aleš je skutečný personál (= sám sebe), pak je hloubka přirozená — ale i tak **scénář může být pomalý**, **emoce přijdou samy**.
+2. **Alešovo přiznání**: jeho slzy musí být **opravdové**. Ne hrané. Pokud vedoucí cítí, že to neumí, **scénář může být kratší a tišší** (Aleš mlčí, dvě věty, slzy). To je morálně silnější než dlouhý projev.
+3. **Stehlík musí být klidný, NE hysterický**. Jeho přiznání je **smutek**, ne křik. **Klíčový tón: tragický hospodář, ne kriminálník.** Děti by měly cítit lítost, ne triumf.
+4. **Útěk Stehlíka**: je **dramatický, ale ne nebezpečný**. Stehlík běží lesní cestou, **vedoucí v rozestavěných pozicích pro bezpečnost**. **Nikdo se za ním nepouští**. Vedoucí dohlížejí, aby se neztratil mimo bezpečnou zónu.
+5. **Po útěku Stehlíka dejte dětem chvíli** — nesmí se pouštět do lesa za ním. Vyložte to jako „policejní záležitost zítra".
+6. **Aleš po přiznání**: zůstává v táboře pod neformálním dohledem. **Magdaléna H. ho vezme do zdravotky**, donese mu čaj, sedí s ním. Vedoucí, který Aleše hraje (= sám Aleš), by se měl po skončení scény **ukázat dětem**, **že je v pořádku**. „Děkuji, že jste mě poslouchali. Rád vás vidím." Tím se ulehčí mladším dětem (= nejmladším účastníkům, které mohou být zděšené).
+7. **Stezka odvahy se NESMÍ napojit na příběh**. Žádné stínové postavy, žádné „Stehlík je v lese". Pokud děti spojí, vedoucí jasně řekne: „**Toto je hra. Stehlík je daleko od trasy stezky. My jsme bezpečně.**"
+8. **Volání policie z Blanska**: Karel volá z lesní cesty „U lípy" (signál). Pokud chcete autenticky, vedoucí ve roli kpt. Poláka **odpoví** telefonem (= druhý vedoucí čeká připravený s telefonem ve stanu, předem domluveno). Děti to neuslyší přímo, jen se Karel vrátí a oznámí, že **policie přijde ráno v 6:30**.
 
 ---
 
 ## Co se stane zítra
 
-Den 10: **VELKÝ HON**. Týmy spolu s policisty (= vedoucí v rolích) prohledávají les. **Petra dopadnou** dopoledne. Po obědě týmy **najdou pravou závěť v dutině buku**. Závěť se ale **nečte** — to bude až den 11.
+Den 10: **VELKÝ HON**. 6:30 brzká snídaně. Brífink **2 policistů z Blanska** (kpt. Marek Polák, por. Lucie Brázdová) — rozdělení lesa do 6 kvadrantů. Týmy jdou s policisty. **Stehlík dopaden na lesní cestě** mezi samotou a táborem (vyčerpaný, smířený, bez odporu). Slavnostní průvod **k buku u potoka**. **Tým s nejmladším kadetem** sahá do dutiny — vyndá nepromokavý sáček s **pravou závětí**. Triumfální moment. Aleš zůstává v táboře pod neformálním dohledem, **přijde na finále zítra**.

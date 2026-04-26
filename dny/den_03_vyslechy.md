@@ -1,6 +1,6 @@
-# DEN 3 — Neděle 13. 7. 2025: Výslechy personálu
+# DEN 3 — Pondělí 13. 7. 2026: Výslechy personálu
 
-> **Motto dne**: „Každý ve štábu má svou pravdu. A jednu lež. Najděte je."
+> **Motto dne**: „Každý v táboře má svou pravdu. A někdo má jednu nevyřčenou větu. Najděte ji."
 
 ---
 
@@ -9,48 +9,49 @@
 | Čas | Co se děje |
 |---|---|
 | 07:30 – 08:30 | Snídaně |
-| 08:30 – 09:00 | Ranní brífink — Tomáš představí 7 podezřelých z personálu, rozdá výslechové protokoly |
-| 09:00 – 12:00 | **ETAPOVÁ HRA č. 2: Výslechy** — týmy rotují mezi 6 vyslýchanými |
+| 08:30 – 09:00 | Ranní brífink — Pavel představí 7 podezřelých z personálu, rozdá výslechové protokoly |
+| 09:00 – 12:00 | **ETAPOVÁ HRA č. 2: Výslechy** — týmy rotují mezi 7 vyslýchanými |
 | 12:00 – 13:00 | Oběd |
-| 13:00 – 14:00 | Klid |
+| 13:00 – 14:00 | Klid v stanech |
 | 14:00 – 17:00 | **Fotbalový turnaj — semifinále** (4 týmy hrají, 2 mají odpočinek + dopisují deníky) |
 | 17:00 – 18:00 | Dopisování deníků |
 | 18:00 – 19:00 | Večeře |
-| 19:30 – 20:30 | **Vyhodnocení výslechů** — Tomáš s týmy procházejí, co kdo zjistil |
-| 20:30 – 21:30 | Volný čas / společenské hry |
+| 19:30 – 20:30 | **Vyhodnocení výslechů** — Pavel s týmy procházejí, co kdo zjistil |
+| 20:30 – 21:30 | Volný čas / společenské hry pod plachtou |
 | 22:00 | Večerka |
 
 ---
 
 ## Příběh dne (z pohledu dětí)
 
-Ráno **Tomáš** představí týmům **podezřelé z personálu**. Jeden po druhém je popíše:
+Ráno **Pavel** představí týmům **podezřelé z personálu**. Jeden po druhém je popíše:
 
-1. **Alena Procházková** (50, hlavní vedoucí) — vede vyšetřování, ale technicky je i podezřelá. Bude se vyslýchat sama (stojí čelem k dětem, odpovídá na všechny otázky). Alibi: byla v ředitelně, telefonovala s notářkou Růžičkovou (lze ověřit).
-2. **Tomáš Veselý** (35, zástupce) — pomáhá vést vyšetřování. Ale i on je podezřelý. Alibi: byl s Alenou na konferenčním hovoru s Růžičkovou. **Ovšem** — část noci, přesně 23:00–01:30, **byl mimo tábor a NECHCE říct kde**.
-3. **Marie Hradilová** (60, starší kuchařka) — celou noc spala. Alibi: její pokoj je nad kuchyní, **ale viděla z okna v noci postavy** — to ovšem zatím nikomu neřekla. Důvod: bojí se. **Vyklopí to den 6**.
-4. **Lucie Nováková** (28, mladší kuchařka) — vrátila se ze své rodinné sešlosti v 23:00, šla rovnou spát. Alibi: video z rodinné oslavy v Ostravě (telefon Lucky bratra). **Ale**: její rozená příjmení je **Konvičková** — je vzdálená sestřenice Konvičky. Tato fakt vyplyne den 4–5 a stane se z ní **rudá stopa**.
-5. **MUDr. Petra Svobodová** (40, zdravotnice) — první rok v táboře. Alibi: **dlouhý telefonní hovor** s matkou (FN Bulovka) o její nemocné kolegyni — mobilní operátor potvrdí 22:30–01:00. **Důvod, proč zatím podezřelá**: nikdo z vedoucích ji ještě dobře nezná.
-6. **Pepa Bouček** (45, údržbář) — **jediný, kdo má reálný důkaz**: v 5:30 našel Konvičku. **Před 5:30 byl ve své údržbářské budce** — má videovrátník na vrátnici, kterou každou hodinu kontroluje. Záznamy z 22:00, 23:00, 00:00, 01:00, 02:00, 03:00, 04:00, 05:00 ukazují, že byl ve své budce. **Pepa = první eliminovaný podezřelý**.
-7. **Karel Drábek** (55, zásobovač) — alibi: spal ve svém stanu. Žádné svědky. **Ale**: jeho stan je 50 m od velitelství. Mohl tam zajít. **Nikdo ho neviděl**. Drábek je klidný, zdvořilý, profesionální.
+1. **Karel Malík** (45+, hlavní vedoucí) — vede vyšetřování, ale technicky je i podezřelý. Bude se vyslýchat sám. **Alibi**: byl s Pavlem v Šéfce na poradě 23:30–00:15, pak spal. Pavel to potvrdí.
+2. **Pavel Malík** (40+, zástupce, **bratr Karla**) — pomáhá vést vyšetřování. **Alibi**: porada s Karlem, pak spal. Karel to potvrdí. **Slabé místo**: ráno **odjel autem v 5:45** „pro chleba" — chleba by ještě neměl být k dispozici. Co tam dělal?
+3. **Anička Kellnerová** (50+, starší kuchařka) — ráno objevila Marka v lese. **Alibi**: v noci dělala v polní kuchyni těsto a chystala kávu pro Marka, který si o ni požádal. **Důležité**: z polní kuchyně **vidí na Šéfku**. Něco viděla, ale **dnes to ještě neřekne** — promluví den 6.
+4. **Klára Stanislavová** (28, mladší kuchařka) — pomáhá Aničce. **Alibi**: spala ve stanu kuchařek. **Pikantnost**: její příjmení **Stanislavová**, jako Marek. **Vzdálená sestřenice** — odhalí se den 4.
+5. **Magdaléna Hamanová** (50, zdravotnice) — **alibi**: v zdravotce psala lékařský deník (papírový, datovaný, s časovými údaji). Ráno první ošetřovala Marka. Slabé místo: zatím **nepředkládá deník** (povinnost ochrany lékařských zápisů — den 7 ho ukáže Karlovi pro vyloučení).
+6. **Jenda** (50+, zásobovač) — **alibi**: spal ve svém stanu, žádní svědci. **Slabé místo**: každý den jezdí do Jedovnic. **Něco viděl** v noci na lesní cestě — stopy auta, které tam nemá co dělat. **Dnes to ještě nedá k dobru** (dlouho mu to nedávalo smysl) — řekne to den 5.
+7. **Aleš Tomek** (50+, údržbář) — **alibi**: byl u ohniště, „šlo na latrýnu" kolem 01:00, vrátil se, šel spát. **Bez svědků**. Slabé alibi. Aleš mluví klidně, ale v očích **nervozita**.
 
 ---
 
-## Etapová hra č. 2: Výslechy
+## Etapová hra č. 2: Výslechy (09:00–12:00)
 
 ### Cíl
-6 týmů × 6 výslechů = 36 výslechů. Týmy rotují, každý tým vyslýchá každého podezřelého (kromě Pepy, který je dnes odpoledne mimo — má opravu).
+6 týmů × 7 výslechů = 42 výslechů. Týmy rotují, každý tým vyslýchá každého z personálu.
 
 ### Struktura
-- **6 výslechových místností** (klubovny, koutky):
- 1. Velitelství — Alena
- 2. Klubovna — Tomáš
- 3. Kuchyň — Marie (NE Lucie zatím!)
- 4. Stůl pod stromem — Lucie
- 5. Ošetřovna — Petra
- 6. Sklad — Drábek
+- **7 výslechových míst** (různé části tábora):
+  1. Šéfka — Karel
+  2. Stůl pod altánem u studánky — Pavel
+  3. Polní kuchyně — Anička (NE Klára zatím!)
+  4. Stůl pod plachtou jídelny — Klára
+  5. Stan zdravotnice — Magdaléna Hamanová
+  6. Skladový stan — Jenda
+  7. Přístřešek údržby — Aleš
 
-- **Každý tým má 25 min** s každým podezřelým. 6 výslechů × 25 min = 150 min. + přestávky = 180 min.
+- **Každý tým má 20 min** s každým podezřelým. 7 výslechů × 20 min ≈ 140 min + přestávky = 180 min.
 - **Vyslýchá týmová role „vyslýchatel"**, ostatní zapisují.
 
 ### Výslechový protokol (formulář)
@@ -61,11 +62,11 @@ PODEZŘELÝ: ________________________________
 TÝM: ______________________________________
 DATUM A ČAS VÝSLECHU: ______________________
 
-1. Kde jste byl/a v noci 11. 7. (cca 22:00–06:00)?
+1. Kde jste byl/a v noci 11.→12. 7. (cca 22:00–06:00)?
 2. Kdo to může potvrdit?
-3. Slyšel/a jste něco neobvyklého?
-4. Měl/a jste přístup ke klíčům od velitelství?
-5. Jaký je váš vztah k panu Konvičkovi?
+3. Slyšel/a jste nebo viděl/a něco neobvyklého?
+4. Měl/a jste přístup k Šéfce a truhle s mapami?
+5. Jaký je váš vztah k panu Markovi Stanislavovi?
 6. Vlastní otázka týmu (1–3 vlastní otázky):
    ________________________________________
    ________________________________________
@@ -81,67 +82,80 @@ NÁŠ ZÁVĚR: PODEZŘELÝ / VYLOUČENÝ / NEDOSTATEK INFORMACÍ
 
 > **Důležité**: Každý hrající čte tyto skripty jako šablonu, ale odpovídá v duchu. Klíčové informace musí být sděleny všem 6 týmům **stejně**.
 
-#### Alena Procházková
-**Stálé fakta**:
-- V noci 11. 7. byla v ředitelně 22:00–01:30 — telefonát s notářkou JUDr. Růžičkovou (ověřitelné — Tomáš s ní byl).
-- Klíče od velitelství měla u sebe, ale **dala je Drábkovi** ve 22:30 (Drábek je vrátil ráno 6:00).
-- 01:30 šla spát do svého stanu vedoucích.
-- Žádné podezřelé zvuky neslyšela.
-- Konvička je její mentor — známi se z roku 1996 — žádný motiv.
+#### Karel Malík (hlavní vedoucí)
+**Stálá fakta**:
+- 23:30–00:15 byl s Pavlem v Šéfce na poradě (plánování dalšího dne, oba to potvrdí).
+- 00:15 šel do svého stanu, spal.
+- 05:45 ho vzbudila Anička s nálezem.
+- Volal záchranku ze satelitního telefonu.
+- Nemá důvod ublížit Markovi — je to jeho mentor 20 let.
 
-**Slabé místo (děti by měly přijít)**: Drábek měl klíče celou noc.
+**Slabé místo (děti by měly přijít)**: Po poradě byl sám ve stanu — žádný svědek od 00:15 do 05:45.
 
-#### Tomáš Veselý
-**Stálé fakta**:
-- Byl s Alenou v ředitelně 22:00–23:00.
-- **23:00–01:30 BYL MIMO TÁBOR** — auto, lesní cesta. NECHCE říct kde a proč.
-- 01:30 vrátil se do tábora, šel do svého stanu.
-- Pokud je tlačen, řekne: „Soukromé záležitosti. Slibuji, že to nesouvisí se zločinem. Prosím, věřte mi."
+#### Pavel Malík (zástupce, bratr Karla)
+**Stálá fakta**:
+- 23:30–00:15 byl s Karlem v Šéfce.
+- 00:15 šel do svého stanu, spal.
+- **05:45 odjel autem na lesní cestu „pro chleba" do Jedovnic.** Vrátil se za 30 min s prázdnou. Nechce přesně říct, co tam dělal.
+- Pokud je tlačen: „Soukromá záležitost. Slibuji, že to nesouvisí se zločinem."
 
-**Slabé místo (děti budou tlačit)**: Co tajíš, Tomáši?
+**Slabé místo (děti budou tlačit)**: Co jsi jel dělat v 5:45? Chleba ještě nebyl k dispozici.
 
-> **Pravda Tomáše**: Jezdí v tu hodinu pravidelně do nemocnice za matkou s rakovinou — ona má hodně horší noci, sedí u ní 2 hodiny. Nikomu o tom v táboře neřekl, je soukromá záležitost. **Tato pravda se VYJASNÍ DEN 5–6**, když Marie ho vidí přijíždět autem v 01:30 (= alibi). Děti to ale dnes ještě neví.
+> **Pravda Pavla**: V 5:45 se chtěl dostat k signálu mobilu na lesní cestě „U lípy" (jediné místo s 1 čárkou) **zavolat na pohotovost** — měl chvíli paniku, že záchranka přes satelit nestihne. Když dorazil, zjistil, že záchranka už je na cestě (Karel mezitím dovolal). Vrátil se, ale styděl se přiznat ten zmatek. **Vyjasní se den 4–5** — Anička mu to potvrdí (slyšela odjezd auta brzy ráno).
 
-#### Marie Hradilová
-**Stálé fakta**:
-- 22:00 šla spát.
-- Spala dobře.
-- Neslyšela nic.
-- O Konvičkovi mluví s úctou — pracovala v jeho kuchyni 25 let.
+#### Anička Kellnerová (starší kuchařka, objevitelka)
+**Stálá fakta**:
+- 22:00–01:00 v polní kuchyni dělala těsto na ranní chleba a chystala kávu pro Marka (požádal si ji o ni večer).
+- Po 01:00 si lehla v zadní části kuchyně na lavici (= dělá to často, když má noční přípravu).
+- 05:30 vstala, šla ke studánce pro vodu — našla Marka.
+- Nic neobvyklého neslyšela.
+- O Markovi mluví s úctou — dělá pro něj kuchyni 15 let.
 
-**Slabé místo (děti zatím neodhalí)**: V noci se vzbudila, ale **dnes to neřekne** — bojí se. Vyklopí to **až den 6 ráno**.
+**Slabé místo (děti zatím neodhalí)**: Z polní kuchyně **vidí na Šéfku**. **Něco viděla**, ale dnes to neřekne — chce mít jistotu, není si jistá, **bojí se zbytečně někoho obvinit**. Vyklopí to **až den 6 dopoledne**.
 
-> **Pravda Marie**: 01:00 si šla pro vodu, viděla z okna kuchyně 2 postavy — jednu jak vchází do velitelství, druhou jak stojí venku. Nepoznala je v tmě, ale jeden šel do jistého směru — k zadní bráně. **Bojí se promluvit**, protože ji by mohl pachatel umlčet.
+> **Pravda Aničky**: Kolem **00:30 viděla baterku v Šéfce** (myslela, že je to Marek nebo Karel). Kolem **01:10 viděla siluetu utíkající od Šéfky směrem k lesu** (myslela, že to je Aleš, který šel na latrýnu). Nepoznala v tmě, ale silueta byla **jiná velikost** než Aleš.
 
-#### Lucie Nováková
-**Stálé fakta**:
-- Byla na rodinné oslavě v Ostravě (otcovy 60. narozeniny). Vrátila se 23:00 autem (její bratr ji vezl).
-- 23:00–06:00 spala ve svém stanu kuchařek.
-- Konvičku zná jen pracovně.
-- **NEZMIŇUJE**, že její rozené příjmení je Konvičková (sama se za příbuznou nepovažuje — vzdálená sestřenice po matce).
+#### Klára Stanislavová (mladší kuchařka)
+**Stálá fakta**:
+- 22:00 šla spát do stanu kuchařek (dělila ho s Aničkou, ale Anička v noci pracovala — Klára spala sama).
+- Spala dobře, nic neslyšela.
+- 06:00 ji vzbudila Anička, vařily kávu pro Karla a personál.
+- Marka zná dobře — je to její **vzdálená sestřenice po matce, příjmení Stanislavová** (sama to nezamlčuje, ale ani sama nezačíná o tom mluvit). **Nepovažuje se** za příbuznou v právním smyslu, je vzdálená.
 
-**Slabé místo (děti zjistí den 4–5)**: Příbuzenství s Konvičkou.
+**Slabé místo (děti zjistí den 4)**: Příbuzenství s Markem. = **Rudá stopa**.
 
-#### Petra Svobodová
-**Stálé fakta**:
-- 22:00 byla ve své stanu zdravotnice.
-- 22:30–01:00 telefon s matkou (zdravotní sestra v FN Bulovka, Praha) — společná kolegyně má vážnou diagnózu, řešily.
-- 01:00 šla spát.
-- 06:00 ji vzbudila Alena s žádostí o zdravotní zhodnocení.
-- Konvičku zná jen z pohovoru — jen rok v táboře.
+#### Magdaléna Hamanová (zdravotnice)
+**Stálá fakta**:
+- 22:00–01:00 ve své zdravotce, **psala lékařský deník** (povinný papírový zápis za den).
+- 01:00 šla spát ve stanu zdravotnice.
+- 06:00 ji vzbudila Anička s tím, že **Marek leží v lese**. Magdaléna okamžitě běžela s kufříkem, ošetřila ho do příjezdu záchranky.
+- Marka zná 12 let — pracovala v táboře jako zdravotnice od roku 2014.
+- Na otázku „mohu vidět ten deník": „**Lékařské zápisy chrání zákon. Doložím jejich existenci, pokud bude třeba.**" (den 7 doloží)
 
-**Slabé místo (děti budou pochybovat)**: Mohla telefon „simulovat"? Operátor potvrdí (později — den 4).
+**Slabé místo**: **Zatím nepředkládá deník**. Děti budou pochybovat. Zná Markovy zdravotní problémy (chronické, diskrétní), má přístup k lékům.
 
-#### Karel Drábek
-**Stálé fakta**:
-- 22:30 dostal od Aleny klíče od velitelství — měl si „připravit ranní zásilku".
-- 22:30–02:00 spal v svém stanu (sám, **bez svědků**).
-- 06:00 vstal, šel s Pepou na velitelství.
-- Konvičku zná 25 let. Vážil si ho.
+#### Jenda (zásobovač)
+**Stálá fakta**:
+- 22:30 šel do svého stanu, spal.
+- Žádné svědky.
+- 06:30 vstal, řídil dovoz vody z Jedovnic (po obvyklém ranním rozvrhu — auto bylo v táboře, dnes vyrážel až po snídani kvůli krizi).
+- Marka zná 18 let, vážil si ho.
 
-**Slabé místo**: Žádné svědky. Měl klíče celou noc. Klíče od velitelství = klíče od trezoru? **Ne — jiný klíč**. Trezor odemčen kódem.
+**Slabé místo**: Žádné svědky.
 
-> **Pravda Drábka**: Otevřel zadní bránu Petrovi, dal mu kód trezoru. Hraje obyčejného, klidného člověka. Pokud je dotázán: „Znal jste kód trezoru?", odpoví: „Ne, **kód znali jen pan Konvička, paní Procházková a pan Veselý**." (= LEŽ — kód mu Konvička svěřil před lety, když ho zastupoval, a nikdy ho nezměnili).
+> **Pravda Jendy**: Den 5 přidá informaci, že **viděl na lesní cestě stopy pickupu**, které tam nemají co dělat. Dlouho mu to nedávalo smysl, vzpomene si až po výjezdu hostů.
+
+#### Aleš Tomek (údržbář)
+**Stálá fakta**:
+- 22:00–00:30 hlídal dohořívající ohniště (= výmluva — opravdu byl venku).
+- 00:30 si „šel na latrýnu", vrátil se kolem 01:30, šel do svého stanu.
+- Žádné svědky.
+- 06:00 ho vzbudil zmatek v táboře, šel pomoci.
+- Marka zná 25 let — od dětství. Pracoval u jeho otce.
+
+**Slabé místo**: Žádné svědky. **Mluví klidně, ale občas se zarazí, polkne, podívá stranou.** Vedoucí, který Aleše hraje, **NESMÍ to přehánět** — jemné nervozní detaily, **ne křečovité hraní**.
+
+> **Pravda Aleše**: Rozvázal plachtu Šéfky kolem 00:15. Stehlík přišel kolem 00:30. Aleš šel na latrýnu pro alibi. Vrátil se, slyšel sten, viděl Marka v bezvědomí, **v panice odešel do stanu**. **Demaskování: den 9, kombinací stop + Aničkin svědek + Markův videovzkaz.**
 
 ---
 
@@ -153,33 +167,36 @@ NÁŠ ZÁVĚR: PODEZŘELÝ / VYLOUČENÝ / NEDOSTATEK INFORMACÍ
 
 ---
 
-## Klíčový moment dne: Eliminace Pepy
+## Klíčový moment dne: Eliminace Karla a Pavla (večer 19:30)
 
-V **17:00**, po výsleších, **Tomáš** představí výsledek první eliminace:
+Po vyhodnocení výslechů **Pavel** spustí:
 
-> „Týmy, máme první výsledek. Pan Pepa Bouček nás přesvědčil — má **8 záznamů z videovrátnice**, které prokazují, že byl celou noc ve své budce u brány. Mimo to — kdyby byl pachatel, neoznámil by ráno nález. **Pana Pepu vyškrtáváme z podezřelých.**"
+> „Týmy, máme první vyhodnocení. **Já a Karel jsme vzájemně alibi** — od 23:30 do 00:15 jsme byli spolu v Šéfce. Anička z polní kuchyně potvrzuje, že nás viděla v Šéfce — světlo svítilo, slyšela hlasy. **Karel a Pavel jsou tedy mimo přímou hlavní podezřelou skupinu.** Stále zůstáváme vám k dispozici k vyšetřování — ale **na seznamu hlavních hypotéz nás škrtněte**."
 
-Týmy si do kartotéky podezřelých Pepu **přeškrtnou**. Z 10 podezřelých tedy zbývá 9.
+Týmy si v kartotéce **přeškrtnou Karla i Pavla**. Z 7 podezřelých zbývá **5: Anička, Klára, Magdaléna, Jenda, Aleš**.
+
+> **Důležité**: Pavlovo „pro chleba" 5:45 zůstává otázkou, ale pro vyloučení z hlavního zločinu (00:30–01:30) Karlova porada stačí. **Plné vyjasnění Pavlova ranního výjezdu** přijde den 4–5.
 
 ---
 
 ## Co se zatím nikdo neví
 
 Děti zatím **NEMAJÍ**:
-- Fyzické důkazy spojující Drábka se zločinem (= přijdou den 9)
-- Identitu Petra Konvičky jako synovce (= den 5, kdy Petr přijede)
-- Příbuznost Lucie a Konvičky (= den 4)
-- Tomášovo skutečné alibi (= den 5–6 přes Marii)
-- Mariinu výpověď (= den 6 ráno)
+- Identitu pachatele zvenku (= Vladimír Stehlík, soused — přijede „oficiálně" den 5)
+- Příbuznost Kláry a Marka (= den 4)
+- Jendovo info o stopách pickupu (= den 5)
+- Aničkin nález siluety (= den 6)
+- Magdaléniho deník (= den 7)
+- Markův videovzkaz (= den 7)
 
 ---
 
 ## Materiál pro den 3
 
-- **6 výslechových místností** připravených (židle, stoly, lampičky pro atmosféru)
-- **Výslechové protokoly** (× 6 týmů × 6 podezřelých = 36 ks)
+- **7 výslechových míst** připravených (židle, stoly)
+- **Výslechové protokoly** (× 6 týmů × 7 podezřelých = 42 ks)
 - **Skripty pro vyslýchaný personál** (zalaminované, u každého)
-- **Kartotéka podezřelých** (vyplnit po výsleších)
+- **Kartotéka podezřelých** (aktualizace po výsleších)
 
 ---
 
@@ -187,13 +204,13 @@ Děti zatím **NEMAJÍ**:
 
 | Kód | Indicie | Zdroj | Co znamená |
 |---|---|---|---|
-| S01 | Alena měla klíče → Drábek je převzal 22:30 | Výslech Aleny | **Drábek měl klíče celou noc** — to může otevřít cestu k trezoru |
-| S02 | Tomáš nechce říct, kde byl 23:00–01:30 | Výslech Tomáše | Podezřelé tajemství |
-| S03 | Marie nic neslyšela (= LŽE, ale děti zatím neví) | Výslech Marie | Zatím vypadá jako pravda |
-| S04 | Lucie byla na oslavě v Ostravě | Výslech Lucie | Lze ověřit (telefon bratra) |
-| S05 | Petra měla telefonický hovor s matkou | Výslech Petry | Lze ověřit (operátor) |
-| S06 | Drábek neměl svědky | Výslech Drábka | Slabé alibi |
-| S07 | Pepa měl videovrátník | Záznam Pepy | **VYLOUČENO** ze podezřelých |
+| S01 | Karel + Pavel — vzájemné alibi (porada 23:30–00:15) | Výslech Karla, Pavla | **Vyloučeni z hlavního zločinu** |
+| S02 | Pavel jel ráno v 5:45 „pro chleba" — nedává smysl | Výslech Pavla | Podezřelé tajemství (vyjasní se den 4–5) |
+| S03 | Anička v polní kuchyni — nic neviděla (= LEŽ z opatrnosti) | Výslech Aničky | Zatím vypadá jako pravda |
+| S04 | Klára v noci spala ve stanu kuchařek | Výslech Kláry | Bez svědků, ale nemá motiv (zatím) |
+| S05 | Magdaléna píše deník, ale **nepředkládá** | Výslech Magdalény | Slabé alibi do dne 7 |
+| S06 | Jenda spal sám | Výslech Jendy | Slabé alibi |
+| S07 | Aleš byl u ohně + latrýna, sám | Výslech Aleše | **Slabé alibi, jemně nervozní** |
 
 ---
 
@@ -201,24 +218,24 @@ Děti zatím **NEMAJÍ**:
 
 | Postava | Aktivita |
 |---|---|
-| Alena | Vede ranní brífink, výslech — vlastní výpověď |
-| Tomáš | Koordinuje, výslech — vlastní výpověď |
-| Marie, Lucie, Petra, Pepa, Drábek | Výslechy |
-| Pepa | Po obědě má „opravy v dílně" (vlastně dělá si svou práci) |
+| Karel | Vede ranní brífink, výslech — vlastní výpověď |
+| Pavel | Koordinuje, výslech — vlastní výpověď |
+| Anička, Klára, Magdaléna, Jenda, Aleš | Výslechy |
+| Aleš | Po obědě má opravu zástěny u latrýn |
 
 ---
 
 ## Tipy pro vedoucí
 
-1. **Alena a Tomáš musí být ochotni být vyslýcháni dětmi** — to je krásná lekce. Děti vidí, že **dospělí jsou též pod ohněm pravdy**.
-2. **Skripty hrajte věrně, ale nedejte všechno najevo**. Děti nesmí vidět, že někdo „herničí". Drábek hraje normálního klidného člověka — žádné podezřelé tiky.
-3. **Tomášovo skryté alibi**: Pokud děti hodně tlačí, Tomáš odpoví zdvořilým **„soukromá záležitost"**. NESMÍ to vyzradit dnes — to by zkazilo zlom v den 5–6.
-4. **Marie**: pokud se jí zeptají třikrát „opravdu jste nic neslyšela?", má odpovědět: „Možná… ale… ne. Spala jsem." Tato menší nervozita je správná — je to seedovat pochybnost o ní.
-5. **Eliminace Pepy v 17:00 je důležitá**: Děti vidí, že **vyšetřování opravdu funguje**. To je motivační moment.
+1. **Karel a Pavel musí být ochotni být vyslýcháni dětmi** — to je krásná lekce. Děti vidí, že **dospělí jsou též pod ohněm pravdy**.
+2. **Skripty hrajte věrně, ale nedejte všechno najevo**. Děti nesmí vidět, že někdo „herničí". **Aleš** hraje obyčejného klidného člověka — žádné křečové tiky, jen jemnou, lidskou nervozitu.
+3. **Pavlovo skryté „pro chleba"**: Pokud děti hodně tlačí, Pavel odpoví zdvořilým **„soukromá záležitost, slibuji, že to nesouvisí"**. NESMÍ to vyzradit dnes — vyjasnění příjde den 4–5.
+4. **Anička**: pokud se jí zeptají „opravdu jste nic neviděla?", má odpovědět: „**Nejsem si jistá. Bylo tma.**" Tato menší nervozita je správná — sklízí pochybnost.
+5. **Eliminace Karla + Pavla v 19:30 je důležitá**: Děti vidí, že **vyšetřování opravdu funguje**. To je motivační moment a uzavírá první kruh.
 6. **Po dlouhém vyšetřování dejte dětem úlevu**: fotbalový turnaj odpoledne je perfektní — fyzická aktivita po hlavolamech.
 
 ---
 
 ## Co se stane zítra
 
-Den 4: Týmy začnou kreslit **mapu tábora** a procházejí **forenzní stanoviště** (otisky, vlasy, identikit, stopy bot, grafologie, fotodokumentace). **První rudá stopa**: zjistí se, že Lucie je **Lucie Nováková-Konvičková**.
+Den 4: Týmy začnou kreslit **mapu tábora** a procházejí **forenzní stanoviště** (otisky, vlasy, identikit, stopy bot/pneumatik, grafologie, fotodokumentace). Forenziku odhalí: otisk u truhly **NEPATŘÍ nikomu z personálu**, vlas nalezený na rukavici je z **kožené rukavice** (mimo personál), pneumatika = **pickup**. **Rudá stopa**: Klára Stanislavová má příjmení blízké Markovi. **D01 anonymní dopis Caesar +3**.

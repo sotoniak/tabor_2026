@@ -47,12 +47,14 @@ Kompletní balík materiálů pro **30. ročník tábora Světlo** — celotábo
 
 ## Status
 
-🔄 **Druhá iterace, korekce v běhu.**
+🟢 **Migrace na verzi A dokončena (v0.3.0).**
 
 - ✅ Hrubá struktura všech 33 souborů.
-- 🔧 Probíhající korekce: postavy (Tábor Světlo, Marek Stanislav, Karel/Pavel Malík, Anička Kellnerová, Jenda, Magdaléna Hamanová, Aleš Tomek), místo (Rakovecké údolí, Jedovnice, Mendelova univerzita), motiv pachatele (NE peněžní, hospodář Stehlík + myslivecký revír).
-- ⏳ Otevřené otázky k vyjasnění: viz **01_PRIBEH_setting.md → Otevřené otázky**.
+- ✅ Postavy: Tábor Světlo, Marek Stanislav (zakladatel), Karel/Pavel Malík (hl. ved. + zástupce, bratři), Anička Kellnerová (st. kuchařka), Klára Stanislavová (ml. kuchařka, vzdálená sestřenice Marka), Jenda (zásobovač), Magdaléna Hamanová (zdravotnice), Aleš Tomek (údržbář, pomocník zločinu); Vladimír Stehlík (hlavní pachatel, hospodář ze sousední samoty).
+- ✅ Místo: Rakovecké údolí, 6 km od Jedovnic (okres Blansko), pozemek propůjčený Mendelovou univerzitou v Brně (LDF, ŠLP Křtiny).
+- ✅ Motiv pachatele: pozemkový (NE peněžní) — dodatek smlouvy o prodloužení propůjčení o dalších 30 let.
 - 📋 Změny mezi verzemi viz [`CHANGELOG.md`](CHANGELOG.md).
+- 🗓️ Poslední aktualizace: **2026-04-26**.
 
 ## Jak začít číst
 

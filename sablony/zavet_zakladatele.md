@@ -1,8 +1,8 @@
-# Šablona: Závěť Josefa Konvičky
+# Šablona: Závěť Marka Stanislava
 
 > Tato šablona obsahuje **dvě verze**:
-> 1. **Padělaná závěť** (kterou Petr vložil do trezoru) — má §§ 1, 2, 3 a **změněné §§ 4 a 5**.
-> 2. **Pravá závěť** (kterou děti najdou v dutině buku den 10) — kompletní §§ 1–6.
+> 1. **Padělaná závěť** (kterou Vladimír Stehlík vložil do truhly v Šéfce) — má §§ 1, 2 a **padělaný § 3** + § 5 jen jako vykonavatel; § 4 chybí. **Bez notářské pečeti** (klíčový rozpoznávací znak).
+> 2. **Pravá závěť** (kterou děti najdou v dutině buku u potoka den 10) — kompletní §§ 1–5.
 
 ---
 
@@ -10,7 +10,8 @@
 # 1. PADĚLANÁ ZÁVĚŤ
 # ═══════════════════════════════════════════
 
-> Vytisknout na ozdobný papír 120 g, lehce zažloutnout (čaj), složit, dát do trezoru.
+> Vytisknout na ozdobný papír 120 g, lehce zažloutnout (čaj), složit, vložit do truhly s mapami v Šéfce.
+> Padělek vyrobil **Stehlíkův kamarád z Brna, právník-amatér** (informace vyplyne z výslechu Vladimíra Stehlíka po jeho dopadení).
 
 ---
 
@@ -19,90 +20,78 @@
 │                                                        │
 │           Z Á V Ě Ť                                    │
 │                                                        │
-│           Josef Konvička                               │
-│           nar. 12. 3. 1950                             │
+│           Marek Stanislav                              │
+│           zakladatel Tábora Světlo                     │
 │                                                        │
-│   Sepsáno v Praze dne 15. května 2025                 │
+│   Sepsáno v Brně dne 12. června 2026                   │
 │                                                        │
 └────────────────────────────────────────────────────────┘
 
-JÁ, Josef Konvička, narozený 12. března 1950 v Příboře,
+JÁ, Marek Stanislav, zakladatel Tábora Světlo,
 v plném vědomí a při zdravém rozumu, bez nátlaku a vlivu
 třetích osob, sepisuji tuto svou poslední vůli.
 
 
-§ 1 — IDENTIFIKACE MAJETKU
+§ 1 — POKRAČOVÁNÍ TÁBORA
 
-Předmětem této závěti je můj následující majetek:
-
-(a) pozemek o výměře 15,2 ha v katastrálním území
-    Borová pod Lípou (parcelní číslo 247/1, 247/2, 248);
-(b) všechny stavby na uvedeném pozemku, zejména
-    velitelská budova, jídelna s kuchyní, ošetřovna,
-    klubovna, sklad zásob a stany;
-(c) bankovní účet u České spořitelny, č. ú. 1234567890/0800;
-(d) movitý majetek v hodnotě cca 2 000 000 Kč.
+Tábor Světlo má pokračovat. Pozemky propůjčené Mendelovou
+univerzitou v Brně mají být na základě připojeného dodatku
+prodlouženy o dalších 30 let, propůjčení od rodiny
+Stehlíkových (loučka u centrální plochy) zůstává
+v platnosti dle stávající smlouvy.
 
 
-§ 2 — HODNOTA
+§ 2 — VEDENÍ TÁBORA
 
-Tržní hodnota tábora ke dni 1. ledna 2025 je dle odhadu
-realitního znalce 30 — 40 milionů Kč.
-
-Toto však pro mě není zboží. Tábor není na prodej.
-
-
-§ 3 — ZÁMĚR
-
-Mým záměrem je, aby Tábor Stará Lípa pokračoval ve své
-původní funkci — jako tábor pro děti.
-
-Zakazuji prodej tábora kterémukoli subjektu, jenž by jej
-zamýšlel přebudovat na komerční resort, hotel, soukromé
-sídlo nebo jakoukoli jinou nezávislou činnost.
+Vedení tábora přebírají v dosavadní funkci Karel Malík
+(hlavní vedoucí) a Pavel Malík (zástupce), spolu s celým
+stávajícím personálem. Tábor se má řídit duchem, ve kterém
+vznikl: dobrovolnost, příroda, společenství, žádný zisk.
 
 
-§ 4 — DĚDIC                       ★★★ PADĚLEK! ★★★
+§ 3 — SPRÁVA POZEMKU            ★★★ PADĚLEK! ★★★
 
-Tábor po mé smrti dědí v plné rozsahu můj jediný blízký
-mužský potomek po linii bratra:
+Vzhledem k mému zdravotnímu stavu a v zájmu zachování
+ekosystému okolního lesa je majetek tábora předán do správy
+Vladimírovi Stehlíkovi, soukromému hospodáři ze sousedství,
+který bude pozemek dále spravovat ve prospěch obce a
+místního ekosystému.
 
-   Petr Konvička, nar. 4. 8. 1980, bytem Praha 6.
-
-Synovec Petr je odpovědný za pokračování tábora a může
-podle vlastního uvážení rozhodnout o jeho budoucnosti.
+Pan Stehlík je tímto ustanoven jediným správcem propůjčené
+plochy a zástupcem ve věci jednání s Mendelovou univerzitou
+o budoucím využití pozemku.
 
 
 § 5 — VYKONAVATEL
 
 Vykonavatelem této závěti jmenuji:
 
-   JUDr. Magdalénu Růžičkovou, notářku v Mladé Boleslavi.
+   JUDr. Magdalénu Růžičkovou, notářku v Blansku.
 
 
 
-V Praze dne 15. května 2025
+V Brně dne 12. června 2026
 
 
               ___________________________
-              Josef Konvička
+              Marek Stanislav
+              [podpis vypadá podobný originálu,
+               ale chybí notářská pečeť!]
 
-[razítko notáře]    [razítko notáře]
 
-
-Svědci:
-1. Karel Drábek (PADĚLANÝ podpis)
-2. Pepa Bouček (PADĚLANÝ podpis)
+[razítko notáře — pouze obyčejné kulaté razítko,
+ BEZ červené notářské pečeti]
 ```
 
 ---
 
 ## Klíčové znaky padělku (pro děti k odhalení)
 
-- **§ 4 vůbec nezní jako Konvičkova ústní vůle** — Magdaléna potvrdí, že si Konvička dopisoval § 4 „o dědicích sám doma".
-- **Podpisy svědků jsou padělané** — Karel a Pepa **nikdy** závěť nepodepsali. Pokud děti přijdou na to, že porovnají s vlastním podpisem Drábka — **rukopis nesouhlasí**.
-- **Datum 15. května 2025** — Magdaléna potvrdí, že **závěť skutečně sepisovala 15. května**, ale s jiným textem.
-- **Razítko notářky** — Magdaléna na to ukáže: **moje razítko je trochu jiné**. Padělek je dobrý, ale ne dokonalý.
+- **Chybí notářská pečeť** — Magdaléna Růžičková (notářka) potvrdí: *„Originál byl s pečetí. Tohle je padělek."* **Toto je hlavní rozpoznávací znak.**
+- **§ 4 zcela chybí** — pravá závěť obsahuje § 4 (symbolické dědictví všech táborníků). Padělek § 4 vynechává.
+- **§ 3 je padělaný** — Stehlík se v něm ustanovuje jediným správcem pozemku. Magdaléna potvrdí, že pravá § 3 zřizuje **Radu tábora** (Karel a Pavel Malík, Anička Kellnerová, Magdaléna Hamanová, Jenda, Aleš Tomek), ne Stehlíka.
+- **Datum 12. června 2026** — Magdaléna potvrdí, že **závěť skutečně sepisovala 12. června 2026**, ale s jiným textem.
+- **Podpis Marka** je podobný, ale ne identický — vyrobil ho právník-amatér z Brna, kamarád Stehlíka.
 
 ---
 
@@ -111,140 +100,101 @@ Svědci:
 # ═══════════════════════════════════════════
 
 > Vytisknout na **pergamenový papír** (krásný, krémový), složit, dát do **nepromokavého sáčku**.
-> Vedoucí ji **uloží do dutiny buku** v noci 10. 7. (= před zahájením tábora).
+> Vedoucí ji **uloží do dutiny starého buku u potoka** v noci 10. 7. 2026 (= večer před zahájením tábora).
 
 ---
 
 ```
 ═══════════════════════════════════════════════════════════
                     Z Á V Ě Ť
-                    Josef Konvička
-                    nar. 12. 3. 1950
+                    Marek Stanislav
+                    zakladatel Tábora Světlo
 ═══════════════════════════════════════════════════════════
 
-      Sepsáno v Praze dne 15. května 2025
+      Sepsáno v Brně dne 12. června 2026
       Vlastnoruční dopis. Pevnou rukou.
 
 
 
-JÁ, Josef Konvička, narozený 12. března 1950 v Příboře,
-v plném vědomí a při zdravém rozumu, bez nátlaku a vlivu
-třetích osob, sepisuji tuto svou poslední vůli.
+JÁ, Marek Stanislav, zakladatel Tábora Světlo,
+v plné svobodě své vůle a v plném zdraví, bez nátlaku
+a vlivu třetích osob, ustanovuji následující:
 
 
-§ 1 — IDENTIFIKACE MAJETKU
+§ 1 — POKRAČOVÁNÍ TÁBORA
 
-Předmětem této závěti je můj následující majetek:
-
-(a) pozemek o výměře 15,2 ha v katastrálním území
-    Borová pod Lípou (parcelní číslo 247/1, 247/2, 248);
-(b) všechny stavby na uvedeném pozemku;
-(c) bankovní účet u České spořitelny;
-(d) movitý majetek tábora.
+Tábor Světlo má pokračovat. Pozemky propůjčené Mendelovou
+univerzitou v Brně mají být na základě připojeného dodatku
+prodlouženy o dalších 30 let, propůjčení od rodiny
+Stehlíkových (loučka u centrální plochy) zůstává
+v platnosti dle stávající smlouvy.
 
 
-§ 2 — HODNOTA
+§ 2 — VEDENÍ TÁBORA
 
-Tržní hodnota tábora ke dni 1. ledna 2025 je dle odhadu
-30 — 40 milionů Kč.
-
-Toto však pro mě není zboží. Tábor není na prodej.
-
-
-§ 3 — ZÁMĚR
-
-Tábor Stará Lípa pokračuje ve své původní funkci — jako
-tábor pro děti.
-
-Zakazuji prodej tábora komukoli, kdo by jej zamýšlel
-přebudovat na komerční resort, hotel, soukromé sídlo
-nebo jakoukoli jinou činnost než tábor pro děti.
+Vedení tábora přebírají v dosavadní funkci Karel Malík
+(hlavní vedoucí) a Pavel Malík (zástupce), spolu s celým
+stávajícím personálem. Tábor se má řídit duchem, ve kterém
+vznikl: dobrovolnost, příroda, společenství, žádný zisk.
 
 
-§ 4 — DĚDIC                                ◆◆◆ ★ ◆◆◆
+§ 3 — RADA TÁBORA
 
-Tábor po mé smrti dědí ❰❰ NADACE STARÁ LÍPA ❱❱.
-Nadaci zakládám tímto aktem.
+Pro budoucí rozhodování zřizuji Radu tábora, do níž
+jmenuji:
 
-Cílem nadace je trvale provozovat Tábor Stará Lípa
-pro děti tak dlouho, jak budou děti chtít přijíždět.
+   1. Karla Malíka, hlavního vedoucího.
+   2. Pavla Malíka, zástupce hlavního vedoucího.
+   3. Aničku Kellnerovou, starší kuchařku.
+   4. Magdalénu Hamanovou, zdravotnici.
+   5. Jendu, zásobovače.
+   6. Aleše Tomka, údržbáře.
 
-Členy nadace jsou všichni vedoucí, kteří kdy v táboře
-pracovali alespoň jeden ročník.
-
-A symbolickým dědicem nadace je každé dítě, které kdy
-v táboře strávilo léto. Vy všichni. A všichni, kteří
-přijdou po vás.
-
-Tábor patří všem dětem.
-A platí to do nekonečna.
+Rada má každoročně rozhodovat o směřování tábora a
+přijímat nové členy.
 
 
-§ 5 — SPRÁVNÍ RADA NADACE
+§ 4 — DĚDICOVÉ TÁBORA                       ◆◆◆ ★ ◆◆◆
 
-Členy správní rady jsou tři osoby, které se o tábor
-zasloužily nejvíc:
+Skutečnými dědici tábora — v duchu, ne v právu —
+prohlašuji každého táborníka, který kdy táborem prošel
+a kdo jím projde.
 
-   1. Alena Procházková, hlavní vedoucí.
-      Srdce tábora. Dáma, která drží vedoucí
-      pohromadě. Předsedkyně rady.
+Tábor patří jim, ne mně.
 
-   2. Marie Hradilová, kuchařka.
-      Žena, která krmila 30 ročníků dětí.
-      Duše tábora.
-
-   3. Karel Drábek, zásobovač.
-      Muž, který tábor 25 let bránil před chaosem.
-      Železná páteř tábora.
+Já jsem byl jen ten, kdo otevřel dveře.
 
 
-§ 6 — RITUÁL DUTINY BUKU
+§ 5 — DĚDICKÉ LISTY
 
-Strom Strážce Lípy je 200 let starý. Pamatuje si víc,
-než my všichni dohromady.
-
-Před každým 10. ročníkem tábora má hlavní vedoucí vložit
-do dutiny buku vzkaz pro budoucí generaci. Vzkaz se
-otevře další generací po 10 letech.
-
-První takový vzkaz vložím sám.
-
-
-§ 7 — ZÁVĚREČNÉ SLOVO
-
-Tábor není stavba. Tábor jsou lidé.
-
-A já dnes děkuji všem, kteří kdy přiložili ruku k dílu —
-30 let, tisícům dětí, stovkám vedoucích.
-
-Pamatujte mě dobře.
-
-S láskou.
+Každému současnému účastníkovi i členovi personálu
+nechť je vystaven dědický list, který stvrzuje jeho
+symbolické místo v rodině tábora.
 
 
 
-V Praze dne 15. května 2025
+V Brně dne 12. června 2026
 
 
               ___________________________
-              Josef Konvička
+              Marek Stanislav, m. p.
               [vlastní podpis]
 
 
 Notářské razítko a podpis:
 
               JUDr. Magdaléna Růžičková
-              notářka v Mladé Boleslavi
+              notářka v Blansku
 
 
-              [razítko]
+              [červená notářská pečeť]
 
 
-Svědci podpisu (skutečně viděli pana Konvičku podepsat):
+Svědci podpisu (skutečně viděli pana Stanislava
+podepsat):
 
-   1. Anna Konvičková (manželka, zemřela 2018) — nepřítomna
-   2. Pavel Konvička (bratr, otec Petra)        ___________
-   3. Tomáš Veselý (zástupce hl. vedoucího)     ___________
+   1. Jiří Stanislav (bratr Marka)            ___________
+   2. Pavel Malík (zástupce hl. vedoucího)    ___________
 
 ═══════════════════════════════════════════════════════════
                 Konec závěti.
@@ -255,27 +205,32 @@ Svědci podpisu (skutečně viděli pana Konvičku podepsat):
 
 ## Klíčové znaky pravé závěti
 
-- **§ 4 zní opravdově** — vlastní vůlí Konvičky o dědictví všech.
-- **§ 6 — Rituál dutiny buku** — magický symbol pro budoucnost. **První vzkaz vložen 10. 7. 2025 (= den před zahájením tábora)**.
-- **Svědci skuteční** — Tomáš Veselý ji opravdu **podepsal** (= jeho podpis budou děti znát z protokolů).
-- **Razítko Magdalény Růžičkové** odpovídá tomu, které má Magdaléna na své aktovce.
+- **Notářská pečeť** — červený pečetní vosk s odtiskem razítka Magdalény Růžičkové. **Hlavní rozdíl proti padělku.**
+- **§ 4 — Dědicové tábora** — symbolické dědictví všech táborníků, kteří kdy táborem prošli. Tento paragraf v padělku úplně chybí.
+- **§ 3 — Rada tábora** — Marek jmenuje šest jmen (včetně Aleše Tomka, který se zatím přiznal k pomoci pachateli — **morálně klíčový moment finále**).
+- **Svědci skuteční** — Pavel Malík ji opravdu **podepsal** (= jeho podpis budou děti znát z výslechových protokolů).
 
 ---
 
 ## Pokyny k výrobě
 
 ### Padělaná závěť
+
 - Tisk: A4 (oboustranný), papír 120 g ozdobný
-- Razítka: **levné notářské razítko z internetu** (variabilní podpis, kulatá pečeť)
-- Podpisy: vedoucí (NE ten, kdo hraje Konvičku) napíše „**Josef Konvička**" — ale **trochu nepřirozeně, šikmým pohybem ruky**. Děti to případně poznají.
+- Razítko: **levné notářské razítko z internetu** (kulatá pečeť, ale **bez voskové pečetě**!)
+- Podpis: vedoucí (NE ten, kdo hraje Marka) napíše „**Marek Stanislav**" — ale **trochu nepřirozeně, šikmým pohybem ruky**. Děti to případně poznají při porovnání s pravou závětí.
 - Lehké zažloutnutí: čajový sáček, dotek vody → seschnout
+- **DŮLEŽITÉ: žádná červená vosková pečeť!** To je klíčový rozpoznávací znak.
 
 ### Pravá závěť
+
 - Tisk: A4 (oboustranný), **pergamenový papír** (krémový)
-- Pečeť: **červený pečetní vosk** + razítko s logem
+- Pečeť: **červený pečetní vosk** + razítko notářky
 - Podpis: **kvalitní, přesvědčivý** — vedoucí, který má dobrý rukopis
 - Stuha: **zelená** (= barva tábora) kolem dokumentu
+- Vložit do **nepromokavého sáčku** (zip-lock nebo voskovaný papír)
 
 ### Uložení
-- Padělaná: **trezor** ve velitelství (od dne 1)
-- Pravá: **dutina buku** v nepromokavém sáčku (vedoucí ji tam **vloží v noci 10. 7.**, den před zahájením)
+
+- Padělaná: **truhla s mapami v Šéfce** (od dne 1, jen víkem, bez zámku)
+- Pravá: **dutina starého buku u potoka** v nepromokavém sáčku (vedoucí ji tam **vloží v noci 10. 7. 2026**, večer před zahájením tábora)

@@ -152,11 +152,11 @@ Vedoucí na základě **přihlášek** rozdělí 45 dětí na 6 týmů. **Algori
 
 ### Den 1 odpoledne
 
-**Slavnostní rozdělení do týmů.** Před slavnostním zahájením v 21:00. Alena vyvolá jména týmů, předá šátky:
+**Slavnostní rozdělení do týmů.** Před slavnostním zahájením v 21:00. Karel Malík vyvolá jména týmů, předá šátky:
 
 > *"Tým Jestřábi: Honza, Anička, Petr, Klárka, Marek, Bára, Tomík, Eliška!"*
 
-**Tým si sedne k týmovému stolu** — každý tým má svůj **stůl v jídelně**, na kterém leží:
+**Tým si sedne k týmovému stolu** — každý tým má svůj **stůl pod plachtou jídelny**, na kterém leží:
 - 8× šátek
 - týmový deník
 - týmová vlajka (prázdná, dotvoří se)
@@ -195,7 +195,7 @@ Každý ze 6 týmů má **svého vedoucího** (vedoucí tábora, mladý, 18–25
 | 14:00 | Týmové vyšetřování pokračuje |
 | 17:00 | **Týmová odpolední porada** (15 min) — aktualizace deníku, mapy, kartotéky |
 | 18:00 | Večeře — týmový stůl |
-| 19:30 | **Společná porada všech týmů** (30 min) — Alena moderuje, týmy sdílejí (selektivně!) |
+| 19:30 | **Společná porada všech týmů** (30 min) — Karel Malík moderuje, týmy sdílejí (selektivně!) |
 | 20:30 | **Týmová večerní reflexe** (10 min, dobrovolná) |
 | 21:30 | Večerka |
 
@@ -217,7 +217,7 @@ Každý ze 6 týmů má **svého vedoucího** (vedoucí tábora, mladý, 18–25
 2. **Individuální postřehy** — každý kadet, který přinese důležitou stopu, dostane individuální body (1–10)
 3. **Forenzní stanoviště** — body za přesnost
 4. **Šifry** — body za rychlost a správnost
-5. **Týmová mapa a deník** — body za úplnost (denní hodnocení Alenou)
+5. **Týmová mapa a deník** — body za úplnost (denní hodnocení Karlem)
 6. **Soudní řeč** (= závěrečná) — body za přesvědčivost
 
 ### Čeho NEbodujeme
@@ -234,9 +234,9 @@ Každý ze 6 týmů má **svého vedoucího** (vedoucí tábora, mladý, 18–25
 
 ### Vítězný tým (den 11 večer)
 
-- **Stan Deluxe** (lepší stan, peříčka, lampičky) na **poslední noc** (12. 7. → další den odjezd 22. 7.)
+- **Stan Deluxe** (lepší stan, peříčka, lampičky) na **poslední noc** (21. 7. → další den odjezd 22. 7.)
 - **Týmový pohár** (lze koupit za 500 Kč v sportovce)
-- **Certifikát** "Nejlepší vyšetřovací tým, akademie 2025"
+- **Certifikát** "Nejlepší vyšetřovací tým, Tábor Světlo 2026"
 
 ### Ostatní týmy
 

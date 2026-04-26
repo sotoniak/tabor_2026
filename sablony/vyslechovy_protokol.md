@@ -11,11 +11,11 @@
 ```
 ═══════════════════════════════════════════════════════════
         VÝSLECHOVÝ PROTOKOL
-        Tábor Stará Lípa, vyšetřovací tým
+        Tábor Světlo, vyšetřovací tým
 ═══════════════════════════════════════════════════════════
 
 
-PROTOKOL Č.: ______________   DATUM: ____ . ____ . 2025
+PROTOKOL Č.: ______________   DATUM: ____ . ____ . 2026
 
 
 VYŠETŘOVACÍ TÝM
@@ -40,7 +40,7 @@ Věk:  __________   Trvalé bydliště:  ____________________
 
 ČAS A MÍSTO VÝSLECHU
 ───────────────────────────────────────────────────────
-Datum a čas:    ____ . ____ . 2025  od __:__ do __:__
+Datum a čas:    ____ . ____ . 2026  od __:__ do __:__
 
 Místo:          ________________________________________
 
@@ -71,7 +71,7 @@ ________________________________________________________
 
 
 OTÁZKA 1 (povinná): Kde jste byl/a v noci 11. července
-2025 mezi 22:00 a 06:00? Popište podrobně.
+2026 mezi 22:00 a 06:00? Popište podrobně.
 ───────────────────────────────────────────────────────
 Odpověď:
 ________________________________________________________
@@ -95,15 +95,16 @@ ________________________________________________________
 ________________________________________________________
 
 
-OTÁZKA 4 (povinná): Měl/a jste přístup ke klíčům od
-velitelství / kód od trezoru?
+OTÁZKA 4 (povinná): Měl/a jste přístup do Šéfky
+nebo k truhle s mapami, kde byla uložena závěť?
 ───────────────────────────────────────────────────────
 Odpověď:
 ________________________________________________________
 ________________________________________________________
 
 
-OTÁZKA 5 (povinná): Jaký je váš vztah k panu Konvičkovi?
+OTÁZKA 5 (povinná): Jaký je váš vztah k panu
+Markovi Stanislavovi?
 ───────────────────────────────────────────────────────
 Odpověď:
 ________________________________________________________
@@ -169,23 +170,42 @@ Zapisovatel:   _________________________________________
 
 PROTOKOL ULOŽEN DO TÝMOVÉHO DENÍKU
 ───────────────────────────────────────────────────────
-Datum uložení:  ____ . ____ . 2025
+Datum uložení:  ____ . ____ . 2026
 ```
 
 ---
 
 ## Pokyny k použití
 
+### Seznam podezřelých (10 osob)
+
+**Personál (7 osob):**
+1. Karel Malík — hlavní vedoucí
+2. Pavel Malík — zástupce hlavního vedoucího
+3. Aleš Tomek — údržbář
+4. Anička Kellnerová — starší kuchařka
+5. Klára Stanislavová — mladší kuchařka (vzdálená sestřenice Marka)
+6. Magdaléna Hamanová — zdravotnice
+7. Jenda — zásobovač
+
+**Hosté (3 osoby):**
+8. Vladimír Stehlík — soused-hospodář
+9. JUDr. Magdaléna Růžičková — notářka z Blanska
+10. Bohumil Hájek — starosta Jedovnic
+
 ### Den 3 — Výslechy personálu
-- Každý tým vyplňuje **6 protokolů** (Alena, Tomáš, Marie, Lucie, Petra, Drábek). Pepa je již eliminovaný — protokol s ním NENÍ.
+
+- Každý tým vyplňuje **6 protokolů** (Karel, Pavel, Aleš, Anička, Klára, Magdaléna H., Jenda — vybírá 6 z těchto 7 podle priority týmu).
 - Celkem: 6 týmů × 6 protokolů = **36 ks**.
 
 ### Den 5 — Výslechy hostů
-- Každý tým vyplňuje **3 protokoly** (Petr, Magdaléna, Hájek).
+
+- Každý tým vyplňuje **3 protokoly** (Vladimír Stehlík, Magdaléna Růžičková, Bohumil Hájek).
 - Celkem: 6 týmů × 3 protokoly = **18 ks**.
 
 ### Den 9 — Konfrontace
-- Tým, který vede konfrontaci, vyplňuje **1 sumarizační protokol** za Petra a 1 za Drábka. **Konfrontace je víc týmová akce — protokoly mohou být zjednodušené nebo vynechány**.
+
+- Tým, který vede konfrontaci, vyplňuje **1 sumarizační protokol** za Stehlíka a 1 za Aleše. **Konfrontace je víc týmová akce — protokoly mohou být zjednodušené nebo vynechány**.
 
 ---
 

@@ -1,297 +1,366 @@
 # Podezřelí — kompletní popis
 
-Tento soubor obsahuje **všech 10 osob**, které děti během hry budou považovat za podezřelé. Každá osoba je popsána na 2 stránky: **veřejná stránka** (co děti uvidí) + **skrytá stránka** (co je pravda).
+Tento soubor obsahuje **všech 11 osob**, které děti během hry budou považovat za podezřelé. Každá osoba je popsána na 2 stránky: **veřejná stránka** (co děti uvidí) + **skrytá stránka** (co je pravda).
 
 V hlavičce u každé postavy je napsáno **VINNÝ** / **NEVINNÝ** + **role v zápletce**.
 
+> **Důstojnost postav:** Aleš = **slabý člověk**, ne zlosyn. Stehlík = **člověk s dlouholetou křivdou** a osobním zájmem, ne karikatura padoucha. Vedoucí, kteří hrají vinné, **nikdy nehrají padouchy**.
+
 ---
 
-## 1. Karel DRÁBEK — zásobovač
+## 1. Karel MALÍK — hlavní vedoucí
 
-> **VINNÝ** (pomocník zločinu) | věk 55 | v táboře 25 let
+> **NEVINNÝ** | věk cca 45+ | hraje sám sebe + roli „vedoucí vyšetřování"
 
 ### Veřejná stránka (co děti vidí)
 
-Drábek je **legenda tábora**. Všichni ho znají, všichni ho mají rádi. Nosí pracovní montérky, kožený opasek, vždycky má v kapse pendreky pro děti. **Říká se mu "děda"** i když není tak starý.
-
-- **Bydliště:** sousední obec, Mratín, 7 km od tábora, dům po rodičích
-- **Rodina:** rozvedený, dcera v Brně (nemoluví spolu), žije sám
-- **V táboře dělá:** zásobování, dovoz potravin a materiálu, péče o sklad, technické věci
-- **Charakter:** humorný, dobrácký, vyprávěč historek
-- **Vztah ke Konvičkovi:** "**Pepku znám, jak je tábor — od první lopaty.** Bez něj bych tu nebyl."
+Karel je v táboře **15 let**, posledních **5 let jako hlavní vedoucí**. Děti ho znají, vedoucí ho znají, **autorita s pochopením**. Bratr zástupce Pavla Malíka — **rodinné spojení = pikantní pro vyšetřovatele**.
 
 ### Skrytá stránka (vyšetřovací realita)
 
-- **Drábek dluží 80 000 Kč** za hazardní hraní (v tichosti, nikdo neví)
-- **V roce 2018** ukradl 200 litrů benzínu z táborové cisterny (na vlastní auto a chatu) — Konvička to **tehdy zjistil, ale neřešil**, jen mu to řekl. Drábek se tehdy hrozně styděl. **O tomto incidentu ví jen Konvička, Drábek a Petr** (kterému to Drábek prozradil v opilosti na Vánocích 2024).
-- Petr **použil tuto vědomost k vydírání**: "Pokud nepomůžeš, řeknu policii o krádeži benzínu. Pokud pomůžeš, dostaneš 300 000 Kč hotově."
-- Drábek **váhal 2 týdny**. Pak souhlasil. **Dostal padělek závěti** (vyrobil zaplacený právník, kvalitně), schoval ho do kanceláře několik dní před táborem. Pozoroval Konvičku při ukládání originálu, **zapamatoval si kód sejfu** (4-číselný).
-- V noci 11. → 12. **otevřel zadní bránu** Petrovi (klíče má od údržby), pak se vrátil "do skladu".
-- **Po incidentu Drábek panikaří.** Pochopil, že to **není drobná krádež papíru**, ale **vážný úraz starého kamaráda**.
+- **Nemá co skrývat.** Hraje sebe + ve hře **vede vyšetřování** (zastupuje formální autoritu, kterou děti potřebují, aby hra držela tempo).
+- **Alibi:** noc 11. → 12. seděl s **Pavlem Malíkem** (bratrem) v Šéfce, plánovali další den. Porada do **00:15**, pak oba do svých stanů spát.
+- **Drobné podezření:** některé týmy si všimnou, že **závěť Marka ho potvrzuje ve funkci** — to vypadá jako motiv „udržet pozici". **Ale Karel by tu pozici nikdy nezískal víc krádeží než dobrou prací.**
 
-### Alibi noci 11. → 12.
+### Klíčové stopy proti Karlovi (zdánlivé)
 
-> "Byl jsem ve skladu, prováděl inventuru. Píšu ji vždy v noci, kdy mám klid."
-
-**Slabé.** Sám, bez svědků. **Inventura ze 12. 7.** existuje (Drábek ji ukáže), ale **chybí časové údaje** (jen sumáře). Děti to den 4–5 zaregistrují.
-
-### Klíčové stopy proti Drábkovi
-
-- F03 — **Drábkův klíč od zadní brány** byl použit (otřená patina na zámku)
-- S05 — **Marie Hradilová** viděla z okna kuchyně postavu **podobnou Drábkovi** kráčet ke skladu **ve 23:30** a pak **zase ven** ve 02:30
-- F11 — Mezera v **knize služby** Drábka (23:00–02:00, žádný zápis)
-- S12 — **Drábkovy boty** mají **stopy bahna z lesa** (našel se den 8 v dílně) — odkud bahno z lesa, když "byl ve skladu"?
-
-### Jak se Drábek odhalí (den 9)
-
-Když děti konfrontují Petra a Petr **začne lhát**, Alena (hlavní vedoucí) povolá Drábka k jednání. Drábek vidí, **co se děje**. Děti mu předkládají stopy — **bahno na botách, mezera v knize, Mariino svědectví**. Drábek **mlčí**. Pak **se zhroutí**. Pláče. Přizná **vše**. **Vrátí 300 000 Kč v hotovosti** ze své taštičky (nikdy je nevypral, čekal na to). **Tip pro vedoucí Drábka:** **velmi tichá, hluboká role**. Žádné dramatické "neeeee" — naopak **klidné přiznání jako úleva**.
-
-### Funkce ve finále (den 11)
-
-Drábek **sedí v rohu** během čtení závěti. Když Konvička přečte **§ 3** ("Členem správní rady jmenuji... Karla Drábka..."), **Drábek se rozpláče potichu**. Konvička **vidí**, **přeruší čtení**, jde k Drábkovi: *"Karle... věděl jsem, že máš dluhy. Věděl jsem, že máš slabosti. Ale **byl jsi rodina**. Byl, jsi a budeš. Sedni si vedle mě."* — Drábek si sedne. **Toto je morální vrchol hry.**
-
----
-
-## 2. Petr KONVIČKA — synovec zakladatele
-
-> **VINNÝ** (hlavní pachatel) | věk 45 | žije v Praze, podnikatel
-
-### Veřejná stránka
-
-Petr přijíždí **den 5 (15. 7.)** v drahém SUV. Oblečen do polo + chinos, hodinky, telefon v ruce. **Vůně drahé kolínské.** Říká, že přijel **podpořit strýce v těžkých chvílích** a "převzít dědečkův odkaz" (= tábor).
-
-- **Bydliště:** byt v Praze 6 (140 m², luxus, splácí hypotéku)
-- **Rodina:** rozvedený, dvě malé děti s ex-manželkou, alimenty 35 000 Kč/měsíc
-- **Profese:** "developer realit" — ve skutečnosti několik bankrotů za sebou, ručil za úvěr u start-upu, **dluží 12 milionů Kč**
-- **Vztah ke Konvičkovi:** **napjatý** — Konvička ho má za neserózního, Petr má strýce za "starého snílka, který sedí na 30 milionech a dělá z toho pohádku"
-- **Charakter ve hře:** šarmantní, mluvící spisovně, s dětmi neumí (nejsou jeho klienti), snaží se zaujmout pózou — nakonec to selhává
-
-### Skrytá stránka
-
-- **Petr ví o tom, že strýc sepsal závěť** od **Drábka** (kterého oslovil v dubnu na strýcových narozeninách — jen tak se ho ptal, **co se děje s táborem**, a Drábek prozradil "Pepek prý chystá nějaký zákon o budoucnosti")
-- V květnu 2025 Petr **zaplatí právníka 50 000 Kč** za vyhotovení **přesvědčivého padělku** závěti, ve kterém je **on** napsán jako jediný dědic
-- **Plán Petra:**
-  1. Drábek umístí padělek do sejfu Konvičky
-  2. V noci 11. → 12. Petr přijede, vymění (originál vezme, padělek nechá)
-  3. Originál **zničí** (spálí v krbu doma)
-  4. O několik měsíců později strýc zemře (Petr se jen modlí, aby přirozenou smrtí — **NIKDY** neplánoval násilí)
-  5. Padělek se přečte, Petr zdědí
-  6. Prodá tábor developerovi (rezort, golf, hotel) za 30 milionů
-  7. Splatí dluhy, zbude 18 mil. zisku
-- **NEPLÁN:** strýc se objeví v noci na velitelství. **Konfrontace nebyla v plánu.** Pád je **nehoda v panice** — Petr **strčil**, ale **silně**, vyděšeně. Když strýc spadl, Petr **utekl s vědomím "udělal jsem mu úraz, ale snad přežije"**.
-- **Cestou domů Petr panikaří**, schová závěť v lese (nemůže ji mít doma — exekutor čas od času kontroluje byt). **Plánuje pro ni přijít v září**, kdy bude tábor prázdný.
-
-### Alibi (oficiální)
-
-> "Strýček mi telefonoval ráno 12. července. **Tehdy jsem se dověděl o úrazu.** Hned jsem přijel — byl jsem v Praze. Soustředil jsem se na rodinné záležitosti. **Den 11. večer jsem byl doma s dětmi**, mohu doložit fotku z večeři kolem 22:00."
-
-**Fotka existuje** (Petr ji udělal v 22:00 schválně, jako alibi). **Ale**: cesta z Prahy do tábora trvá **2 hodiny** — fotka v 22:00 ho **nestaví do bezpečí**.
-
-### Klíčové stopy proti Petrovi
-
-- F08 — **Otisk boty** (vel. 44, sportovní) u velitelství — odpovídá Petrovým **běžeckým botám**
-- F09 — **Stopa pneumatiky** v lese — **odpovídá pneumatikám SUV značky Audi Q7** (Petr má Q7, doloženo SPZ na fotce)
-- F12 — **Tužka značky Caran d'Ache** s monogramem "PK" nalezena u rybníka (= u dutiny buku)
-- F15 — **Kamerový záznam z benzínky** "EuroOil Mladá Boleslav" 12. 7. ve **04:32** ráno — Audi Q7, SPZ končící "PK 1234"
-- S15 — **Drábkovo přiznání** (den 9)
-
-### Konfrontace (den 9)
-
-Děti shromáždí důkazy. Komisařskou pozici drží **Alena** (hlavní vedoucí, zaštiťuje práci dětí). Petra svolá k jednání. Petr nejdříve **lže**, **pak je zaskočen kamerou** — **mlčí**, pak **vstává**, jde si pro klíče, **utíká**. Tady je **dynamický zlom**.
-
-### Dopadení (den 10)
-
-Petr běží do lesa, kde má auto. **Lesní hra "obkličování"** — děti tvoří kruh kolem lesa. Petr se snaží projít, ale **na cestě ho zastaví dva členové městské policie** ze sousední obce (vedoucí v rolích, povolaní starostou Hájkem). **Bez násilí**, Petr **se vzdá**.
-
-### Funkce ve finále (den 11)
-
-Petr **NENÍ** přítomen na finále (je v péči policie). Konvička o něm v závěrečné řeči řekne **vážně, ale lidsky**: *"Můj synovec udělal velmi špatně. Ublížil mi i sobě. Ale je to **pořád můj synovec**. Soud rozhodne. Já mu, až to bude správný čas, **podám ruku**."*
-
-**Tip pro vedoucího Petra:** **NIKDY nehrát Petra jako "padoucha".** Vedoucí Petra musí udržet **šarm a chlad**, ale **lidsky**. Ve scéně přiznání **lehká panika**, **lehké slzy**, **prázdný pohled**. Děti odejdou s pocitem, že **i nepřátelé jsou lidé**.
-
----
-
-## 3. Alena PROCHÁZKOVÁ — hlavní vedoucí
-
-> **NEVINNÁ** | věk 50 | hraje sebe + roli "vedoucí vyšetřování"
-
-### Veřejná stránka
-
-Alena je v táboře **15 let**, posledních **5 let jako hlavní vedoucí**. Děti ji znají, vedoucí ji znají, **autorita s pochopením**. Rozvedená, jeden syn (vysokoškolák, na tábor jezdíval).
-
-### Skrytá stránka
-
-- **NEMÁ co skrývat.** Hraje sebe + ve hře **vede vyšetřování** (zastupuje "policejní" autoritu, která reálně chybí — policie z Mladé Boleslavi by přijela jen na pár hodin).
-- **Alibi:** noc 11. → 12. seděla **2,5 hodiny** s Tomášem na verandě velitelství, dělali poradu o programu týdne. Tomáš to potvrdí.
-- **Drobný detail:** mezi 02:30 a 03:00 šla na chvíli do svého stanu si pro nabíječku. **Toto není v alibi** — kdyby chtěla, **mohla** v té chvíli něco udělat. Děti na to **přijdou** den 4 (drobná stopa: telefon Aleny ukazuje použití aplikace v 02:45, **doma ve stanu, ne na velitelství**). Tato stopa **eliminuje** Alenu, ne usvědčuje.
+- Měl klíč ke skladovému stanu, ale **truhla v Šéfce není zamykatelná** (jen víkem).
+- Den 1 večer **viděl, kam Marek závěť uložil**.
 
 ### Funkce ve hře
 
-- **Klíčový spojenec dětí.** Vede ranní porady. Komentuje pokrok. **Nikdy nedává řešení.**
-- **Zastupuje formální autoritu** — bez ní by se hra rozdrobila. Když děti udělají závěr "Drábek to udělal!", Alena **přibrzdí**: *"Důkazy musí být. Ne jen pocity."*
+- **Klíčový spojenec účastníků** od dne 2.
+- **Vede ranní porady.** Komentuje pokrok. **Nikdy nedává řešení.**
+- Když děti udělají závěr „Aleš to udělal!", Karel **přibrzdí**: *„Důkazy musí být. Ne jen pocity."*
 
 ### Vztah k zakladateli
 
-Alena je Konvičkovi **nejbližší kolega**. Po jeho zranění **bere odpovědnost na sebe** — ale **zranitelně, lidsky**. Den 2 ráno kdy oznámí dětem, **má slzy v očích**. Toto je **autentická** — vedoucí, která hraje samu sebe v krizové roli, **má povolenou skutečnou emoci**.
+Marek je Karlovi **nejbližší kolega 20+ let**. Po Markově zranění **bere odpovědnost na sebe** — ale **zranitelně, lidsky**. Den 2 ráno, kdy oznámí dětem, **má slzy v očích**. Toto je **autentická** — vedoucí, který hraje sám sebe v krizové roli, **má povolenou skutečnou emoci**.
+
+> **Tip pro vedoucího hrajícího Karla:** **být sám sebou.** Žádné teatrální "vyšetřovatele". Karel je hlavní vedoucí, který právě prožívá nejhorší noc tábora — a drží to.
 
 ---
 
-## 4. Tomáš VESELÝ — zástupce hlavního vedoucího
+## 2. Pavel MALÍK — zástupce hlavního vedoucího
 
-> **NEVINNÝ** | věk 35 | hraje sebe
+> **NEVINNÝ** | věk cca 40+ | **bratr Karla** | hraje sám sebe
 
 ### Veřejná stránka
 
-Tomáš je **mladý a ambiciózní**, baví ho program, sportovní hry. Na táboře **třetí rok**, ale rychle se proklestil k pozici zástupce. Někdy je **netaktní** — uřízne starší vedoucí, "modernizuje" to, co fungovalo.
+Pavel je **klidnější než Karel**, technický, programátor etap, řidič. Druhý rok jako zástupce. **Bratr** Karla — **rodinné spojení** je viditelné (podobnost ve tváři, podobné gesto).
 
 ### Skrytá stránka
 
-- **Není pachatel.** Den 1 noc měl **alibi** s Alenou.
-- Mezi 02:00 a 03:30 byl **mimo tábor** — odešel "vyřídit telefonní hovor". **Skutečnost:** matka mu volala v noci, **že dostala diagnózu rakoviny**. Tomáš nechtěl přerušovat radost z prvního večera, **šel ven**, mluvil 90 minut s matkou. **Velmi citlivá, soukromá záležitost** — proto se ohradí **emocionálně**, když ho děti v den 3 vyslýchají: *"Já... já jsem byl venku. Matka mi volala. **Detaily nemůžu sdílet.**"*
-- Toto **vypadá** podezřele. **Alena to potvrdí** den 6 — Tomáš jí předem řekl o matce, ona to **potvrdí** dětem (ne detaily, jen "alibi má, je osobní").
-
-### Klíčový moment
-
-Den 5 ráno se **mladá kadetka** Tomáše zeptá: *"Tomáši, máš matku?"* Tomáš **se potlačí**, řekne: *"Ano. Pojď, půjdeme na sport."* — toto **rezonuje** dětem, ony si tu chvíli **pamatují**, později pochopí, **že měl důvod**.
-
----
-
-## 5. Karel DRÁBEK — viz výše (sekce 1)
-
----
-
-## 6. Marie HRADILOVÁ — starší kuchařka
-
-> **NEVINNÁ** | věk 60 | hraje sebe | klíčová svědkyně
-
-### Veřejná stránka
-
-Marie peče v táborové kuchyni **20 let**. **Kralovna těsta**, dělá nejlepší koláče. Drsná, ale srdečná. Říká si **přesně co si myslí**, ale tiše. **Dvojnásobná babička.**
-
-### Skrytá stránka
-
-- **Není pachatel.** Den 1 noc **pekla těsto** v kuchyni od 22:00 do 03:00 (recept na koláče = kynuté těsto, několikrát překládat, pak pec). **Z okénka kuchyně vidí přímo na velitelství a sklady.**
-- **Viděla:**
-  - **23:30** — postavu **podobnou Drábkovi** kráčet od skladu **k zadní bráně** a zpět
-  - **00:30** — v lese **světlomety auta** (Petr přijíždí)
-  - **02:30** — Drábka znovu, **tentokrát zpět do skladu**
-- **Marie to NEŘEKLA** den 2–3, protože:
-  1. **"Mohlo to být cokoliv"** — sama si nebyla jistá
-  2. **Drábek je kamarád** — nechtěla ho obvinit z ničeho
-  3. **Dělala těsto, byla unavená** — možná se jí to zdálo
-- Den 6 ráno (po vnitřním rozhodnutí) **Marie přijde za Alenou**: *"Aleno, asi něco vím. Nevím, jestli je to relevantní..."* Toto je **dramatický moment**.
+- **Není pachatel.** Den 1 noc měl **alibi** s Karlem (porada v Šéfce do 00:15), pak spal ve svém stanu. Alibi částečně potvrzuje **Anička** — viděla z kuchyně světlo lampy v Šéfce.
+- **Důvod podezření:** hned ráno po zločinu **odjíždí terénní dodávkou v 5:45 do Jedovnic** — některé týmy si všimnou, že odjíždí, **kdy by ráno chleba ještě nebyl k dispozici**. (Pavel skutečně jel jen **zavolat na pohotovost ze signálu „U lípy"** na lesní cestě a domluvit záchranku — tehdy nevěděl, že Karel už záchranku zavolal ze satelitu. Komunikační šum při ranní krizi.)
+- **Eliminace den 4–5** — když se to vysvětlí.
 
 ### Funkce ve hře
 
-- **Den 6** — klíčová výpověď **otevírá podezření na Drábka**
-- Den 9 — Marie **konfrontuje Drábka** krátce, soucitně: *"Karle, proč?"*
-- Den 11 — Marie sedí na čestném místě, závěť ji **jmenuje** do správní rady (§ 3) — **velký okamžik pro postavu**
+- **Druhá ruka** Karla.
+- Den 4–5: **podezřelý kus** — odmítá jasně říct, kam ráno odjel a proč („Jel jsem k signálu zavolat. Říct víc nemůžu — bavili jsme se o zdravotním stavu pana Stanislava.")
+- Den 7+: **pomocník vyšetřování**, dělá s týmy plánování dalších dní.
+
+> **Tip pro vedoucího Pavla:** v dni 4–5 hrát **stručně, vyhýbavě** — ne agresivně. Pavel **chrání Markovo soukromí** (lékařské detaily), ne sebe.
 
 ---
 
-## 7. Lucie NOVÁKOVÁ — mladší kuchařka
+## 3. Aleš TOMEK — údržbář (POZOR — KLÍČOVÁ ROLE)
+
+> **VINNÝ (pomocník zločinu)** | věk cca 50+ | v okolí celý život | hraje sám sebe + emocionálně náročnou scénu přiznání
+
+### Veřejná stránka (co děti vidí)
+
+Aleš je **introvertní, manuálně zručný**, „muž od všeho". Opraví, zpevní, postaví. Mluví málo, **smát se umí jen tiše**. Zná les jako vlastní kapsu — **vyrostl na samotě 500 m od dnešní samoty Stehlíkových**, žije v okolí celý život. V táboře dělá **deset let**.
+
+- **Bydliště:** Jedovnice, malý domek po rodičích
+- **Rodina:** rozvedený, dospělé dítě v Brně, žije sám
+- **Vztah k Markovi:** *„Marka znám padesát let. Pomoh mi, když jsem byl mladej a hloupej. Bez něj bych už ani nedýchal."*
+
+### Skrytá stránka (vyšetřovací realita)
+
+- V mládí (kolem **roku 1995**, ještě než tábor vznikl) Aleš při **lesní práci způsobil nehodu** — porazený strom dopadl na **kůlnu otce Vladimíra Stehlíka**. Hospodář škodu zatajil (úřady nezavolal), ale Aleš mu **zůstal „zavázán"** — drobné výpomoci, mlčení o věcech, které Stehlíkovi prováděli (drobné krádeže dřeva, neohlášené kácení). **O této staré nehodě dnes ví už jen Aleš a Vladimír Stehlík.**
+- Vladimír Stehlík (syn) o tom ví od svého otce a po celá léta **lehce manipuluje** Alešem — drobné prosby, „pomoz mi sehnat...", „mlč o tom, že...". Aleš **nikdy se nedokázal vzepřít**.
+- **Když se objevila příležitost (závěť), Stehlík přitvrdil:** *„Aleši, je čas mi to vrátit. Nestane se nic, jen mě pustíš v noci k Šéfce. Markovi neublížíme. Dostaneš třicet tisíc — víš, že potřebuješ na ty dluhy z exekutora."*
+- Aleš **váhal 2 týdny.** Pak souhlasil. **Dostal 30 000 Kč v hotovosti** den před táborem (schoval do plechové bedny v přístřešku). Pozoroval Marka, **kam ukládá závěť** (truhla v Šéfce).
+- V noci 11. → 12. **Aleš rozvázal rohy zadní plachty Šéfky** kolem 00:15. Pak šel „na latrýnu" pro alibi, když Stehlík vstoupil. **Ze stínu lesa** slyšel konfrontaci a pád. Vrátil se z latrýny, viděl Marka v bezvědomí. **V panice se otočil a šel do svého stanu.** Říkal si: „ráno to někdo najde, já jsem tu nebyl."
+- **Když Marek skutečně padl, Aleš to nese těžce.** Den 2–8 dělá, že nic neví, ale **nespí, nejí, je zachmuřený**.
+
+### Alibi noci 11. → 12.
+
+> *„Seděl jsem u svého stanu, hlídal ohniště. Pak jsem si šel na latrýnu, asi tak v jednu, no. Vrátil jsem se do stanu. Marka jsem neviděl."*
+
+**Slabé.** Sám, bez svědků. **Nikdo z personálu Aleše nepamatuje u ohniště** — Aleš tvrdí, že seděl ve stínu mimo světlo lampy.
+
+### Klíčové stopy proti Alešovi
+
+- **F11** — **Mezera v Alešově hlídce** (měl být u ohniště, opustil ho 00:30–01:30)
+- **F15** — **Lesní bahno specifické pro Stehlíkovu louku** (zvláštní šedý jíl) na **Alešových pohorkách** ráno 12. 7. — odkud bahno z té louky, když „byl celou noc u tábora"?
+- **F17** — **30 000 Kč v hotovosti** v plechové bedně v přístřešku + drobný papírek-tahák *„dluh — 28 000 + úroky 2 000 = 30 000"* — den 9 nález při domovní prohlídce (s povolením Karla)
+- **D02** — Druhý anonymní dopis (substituce, klíč LIPA → SVĚTLO): *„PODÍVEJTE SE NA HLÍDKU"* — den 6
+- **S01** — Aničkino svědectví: kolem 01:10 viděla **siluetu utíkající od Šéfky směrem k lesu** (myslela, že je to Aleš na latrýnu — ale „latrýna je opačným směrem")
+- **F07** — **Drobné stopy v plachtě Šéfky** (rozvázané rohy zadní strany, dovnitř bylo vidět) — někdo to udělal **z venku** během večera, kdy už personál byl v stanech
+
+### Jak se Aleš odhalí (den 9)
+
+Když děti konfrontují **Stehlíka** a Stehlík **začne lhát**, Karel povolá **Aleše** k jednání. Aleš vidí, **co se děje**. Děti mu předkládají stopy — **bahno na pohorkách, mezera v hlídce, 30 000 Kč v plechové bedně, Aniččino svědectví**. Aleš **mlčí**. Pak **se zhroutí**. Tichý pláč. Přizná **vše**.
+
+> Aleš (chvějícím hlasem): *„Vladimír… on mi to řek’… nemoh’ jsem… on věděl o tom strom. Já jsem ho jenom pustil k Šéfce. Markovi jsem ublížit nechtěl, prosím vás… když jsem ho viděl ležet, nevěděl jsem, co dělat..."*
+
+**Tip pro vedoucího Aleše:** **velmi tichá, hluboká role**. Žádné dramatické "neeeee" — naopak **klidné přiznání jako úleva**. Slzy ano, ale **tlumené**. Aleš **NENÍ zlosyn** — je **slabý člověk**, který si celý život nosil starou chybu a v rozhodující chvíli selhal. **Ve scéně je smutek, ne zlost.**
+
+### Funkce ve finále (den 11)
+
+Aleš **sedí vedle Marka** během čtení závěti — **propuštěn na slib**, čeká ho výslech a soud, ale **smí být u Marka** (rozhodnutí Karla a starosty Hájka, neoficiální gesto). Když Marek přečte **§ 3** (Rada tábora) a **vysloví Alešovo jméno**, Aleš se **zhroutí potichu**. Marek přeruší čtení, položí mu ruku na rameno:
+
+> *„Aleši, jednu chybu jsi udělal před třiceti lety, druhou minulý týden. Té první ses dopustil jako kluk. Té druhé jako slabý člověk. Já tě znám padesát let — a tohle z tebe nedělá padoucha. Pokud tě soudce odsoudí, ponesu to s tebou. Ale do Rady patříš. Důvěra se zaslouží i návratem."*
+
+**Toto je morální vrchol hry.**
+
+---
+
+## 4. Anička KELLNEROVÁ — starší kuchařka
+
+> **NEVINNÁ** | věk cca 50+ | hraje sebe | klíčová svědkyně
+
+### Veřejná stránka
+
+Anička peče v polní kuchyni tábora **více než 15 let**. **Královna těsta**, dělá nejlepší koláče v Rakoveckém údolí. **Drsná, ale srdečná.** Říká si **přesně co si myslí**, ale tiše. **Babička dvou vnoučat.**
+
+### Skrytá stránka
+
+- **Není pachatel.** Den 1 noc **dělala těsto** v polní kuchyni od 22:00 do 02:30 (recept na koláče = kynuté těsto, několikrát překládat, pak pec). **Z polní kuchyně pod plachtou vidí přímo na Šéfku** přes ohniště.
+- **Viděla:**
+  - **00:30** — **baterku v Šéfce** (myslela, že je to Marek, „přišel se ještě podívat na závěť")
+  - **01:10** — **siluetu utíkající od Šéfky** směrem k lesu (myslela, že je to Aleš na latrýnu — ale později si uvědomila, že **latrýna je opačným směrem**)
+  - **01:25** — Aleše vracejícího se k svému stanu (od latríny správným směrem)
+- **Anička to neřekla** den 2–3, protože:
+  1. **„Mohlo to být cokoliv"** — sama si nebyla jistá
+  2. **„Baterka tam přece mohla být Markova"** — Anička nechtěla nikoho zbytečně obvinit
+  3. **Dělala těsto, byla unavená** — možná se jí to zdálo
+- **Ráno 12. 7. v 5:30** šla ke studánce pro vodu na čaj a **našla Marka** v bezvědomí v lese za Šéfkou. Volala Karla.
+- Den 6 ráno (po vnitřním rozhodnutí) **Anička přijde za Karlem**: *„Karle, asi něco vím. Nevím, jestli je to relevantní..."* **Dramatický moment.**
+
+### Funkce ve hře
+
+- **Den 2 ráno** — **nálezkyně Marka**, alarmuje Karla
+- **Den 6** — klíčová výpověď otevírá podezření na **vnitřního pomocníka** (silueta běžela špatným směrem na latrýnu)
+- Den 9 — Anička **krátká reakce** při Alešově přiznání — *„Aleši... proč jsi nic neřekl?"*
+- Den 11 — Anička sedí na **čestném místě**, závěť ji **jmenuje** do Rady tábora (§ 3)
+
+> **Tip pro vedoucí hrající Aničku:** Anička **mluví málo**. Den 6 ji „přemůže svědomí" — to je **silná, tichá scéna**. Žádné teatrální vzdychání.
+
+---
+
+## 5. Klára STANISLAVOVÁ — mladší kuchařka
 
 > **NEVINNÁ — falešná stopa** | věk 28 | hraje sebe | rudá stopa
 
 ### Veřejná stránka
 
-Lucie je v táboře **třetí sezónu**. Veselá, mladá, **s tetováním na zápěstí**. Pomáhá Marii.
+Klára je v táboře **třetí sezónu**. Veselá, mladá, pomáhá Aničce. Studovala gastronomii, pracuje jako kuchařka v Brně.
 
 ### Skrytá stránka — falešná stopa
 
-Den 4 jeden tým objeví v matrice tábora, že **Lucie se jmenuje "Nováková—Konvičková"** — dvojí příjmení. Děti se ptají. Lucie **zamlčuje** — to vypadá podezřele.
+Den 4 jeden tým objeví v matrice tábora, že **Klára se jmenuje Stanislavová** — stejný kořen jako **Marek Stanislav**. Týmy se ptají. Klára **mluví neochotně, červená se** — to vypadá podezřele.
 
-**Pravda:** Lucie je **vzdálená sestřenice** Konvičky (jejich otcové byli bratranci). Konvička jí pomohl s brigádou v 2023, kdy ji vyhodili z restaurace. Lucie je **velmi vděčná**, ale s Konvičkou **moc nemluví** ze studu (byla jí trapná situace). **O závěti nevěděla**, **dědicky NIC nezíská**.
+**Pravda:** Klára je **vzdálená sestřenice** Marka (otec její matky byl **bratrancem Marka**). Marek jí pomohl s brigádou v 2024, kdy ji vyhodili z restaurace. Klára je **velmi vděčná**, ale s Markem **moc nemluví** ze studu (byla jí trapná situace, **navíc Marek je veřejná autorita**). **O závěti nevěděla**, **dědicky NIC nezíská** (vzdálená pokrevní vazba, navíc po matčině straně přes bratrance — žádné dědické nároky podle občanského zákoníku).
 
-**Eliminace:** den 6 — týmy zjistí, že Lucie nemá **žádnou linii dědictví** (vzdálená příbuzná, navíc po matčině straně). Stopa zhasne.
+**Eliminace:** den 6 — **Magdaléna Hamanová** (která zná rodinné poměry tábora) vysvětlí týmům: *„Klára je Markova vzdálená sestřenice z druhého kolena, po matce. To není motiv. Odhadem 40 lidí v Brně má podobnou vazbu — a žádný z nich není dědic."* Stopa zhasne.
 
 ### Funkce ve hře
 
 - Den 4 — **nadějná falešná stopa** (děti si myslí, že to mají!)
-- Den 5 — Lucie **se rozbrečí** ve výslechu (stud, ne vina) — vedoucí Lucie hraje **nervózně, ne podezřele**
-- Den 6 — eliminace, **omluva dětí Lucii**
-- Den 11 — Lucie sedí v jídelně, **také dostává dědický list** ("ty jsi taky táborník, teprve se učíš")
+- Den 5 — Klára **se rozbrečí** ve výslechu (stud, ne vina) — vedoucí hrající Kláru hraje **nervózně, ne podezřele**
+- Den 6 — eliminace, **omluva dětí Kláře**
+- Den 11 — Klára sedí v jídelně, **také dostává dědický list** („ty jsi taky táborník, teprve se učíš")
+
+> **Tip pro vedoucí hrající Kláru:** rozbrečí se **z trapnosti, ne ze strachu**. „Mně je to tak hloupé... Marek mi pomohl, a teď se na mě dívají, jako bych něco udělala..."
 
 ---
 
-## 8. MUDr. Petra SVOBODOVÁ — zdravotnice
+## 6. Magdaléna HAMANOVÁ — zdravotnice
 
-> **NEVINNÁ** | věk 40 | hraje sebe | první rok v táboře
+> **NEVINNÁ** | věk 50 | dlouholetá zdravotnice tábora | hraje sebe
 
 ### Veřejná stránka
 
-Petra je **nová** — **první rok**. Profesionál, MUDr., interní lékařka v Praze. Klidná, méně mluvná. **Ne všechny vedoucí ji znají.**
+Magdaléna je v táboře **8 let**. Profesionál, **dlouholetá zdravotnice** (i mimo tábor). **Klidná, racionální, méně mluvná.** Dlouholetá zdravotnice s respektem. Děti ji znají, ne všechny vedoucí.
 
 ### Skrytá stránka
 
-- **Není pachatel.** Den 1 noc volala **své matce** (její matka leží v nemocnici v Praze s těžkou pneumonií), **2× hovor mezi 00:30 a 02:00** — doložitelné výpisy hovorů.
-- **Den 2 ráno** byla **první u zraněného Konvičky** — Pepa Bouček ji probudil v 5:45, šla k Josefovi, nechala mu **první pomoc** do příjezdu záchranky.
-- **Lékařské znalosti** = **rudá stopa**. Děti den 3–4 **přemýšlí**, jestli **mohla Konvičkovi něco dát** (uspávací prostředek?). **Ne — Konvička byl jen v bezvědomí z úderu hlavou.**
+- **Není pachatel.** Den 1 noc byla na své zdravotce — **psala lékařský deník** (skutečný papírový deník zdravotnice, povinnost denního zápisu). Časové údaje **23:00, 23:45, 00:30, 01:15** — pravidelné záznamy o stavu dvou dětí s drobnou rýmou + jeden záznam o Markově **chronickém srdečním stavu** (Marek bere léky, Magdaléna o tom ví desetiletí).
+- **Den 2 ráno** byla **první lékařsky kvalifikovaná osoba** u zraněného Marka — Anička ji probudila v 5:35, šla k Markovi, nechala mu **první pomoc** do příjezdu záchranky.
+- **Lékařské znalosti** + **přístup k lékům** = **rudá stopa** dnů 3–6. Děti přemýšlí, jestli **mohla Markovi něco dát** (uspávací prostředek?). **Ne — Marek byl jen v bezvědomí z úderu hlavou o kámen, otřes mozku.**
 
-### Eliminace (den 7)
+### Alibi
 
-Týmy získávají **výpis hovorů zdravotnice** (přes Alenu, formálně). Hovory potvrzeny. Eliminace.
+**Doložka deníkového záznamu** — zápisy s časovými údaji 23:00–01:15 (pravidelné kontroly nemocných dětí + zápis o Markově srdečním stavu). **Eliminace den 7.**
 
 ### Klíčový moment
 
-Den 7 dopoledne **Petra řekne dětem**, že **Josef se probouzí v nemocnici** — má první kontakt přes lékaře. **Nesmí se s ním ještě mluvit, ale Josef pošle vzkaz**. Toto je **dramatický zlom**.
+- **Den 6**: vysvětlí týmům **Klářiny rodinné vazby** — eliminuje Kláru.
+- **Den 7**: přináší zprávu z FN Brno: *„Pan Stanislav se probudil. Mluvil. Pamatuje si ten večer. Posílá vám vzkaz."* **Dramatický zlom.**
+- **Den 11**: **doprovází Marka** zpět do tábora na finále.
+
+> **Tip pro vedoucí hrající Magdalénu:** **klidná, věcná**. Žádné teatrální emoce. „Zdravotnice mluví fakta, ne dojmy." Když děti naléhají, řekne: *„Důkazy mám v deníku. Pokud chcete kopii, dám ji Karlovi."*
 
 ---
 
-## 9. Pepa BOUČEK — údržbář / správce
+## 7. Jenda — zásobovač
 
-> **NEVINNÝ** | věk 45 | hraje sebe | ten, kdo našel Josefa
+> **NEVINNÝ** | věk cca 50+ | hraje sebe | klíčový svědek pohybu po cestě
 
 ### Veřejná stránka
 
-Pepa je v táboře **10 let**. **Muž od všeho** — opraví, zalije, přesune. Mluví málo, smát se umí.
+Jenda je v táboře **dlouhodobě**. **Dobrácký, šikovný řidič**, „muž s autem", který každý den jezdí terénní dodávkou do Jedovnic pro chleba, mléko, ovoce. **Mluví málo, smát se umí.** Mlčenlivý, ale když má co říct, řekne to rovně.
 
 ### Skrytá stránka
 
-- **Není pachatel.** Den 1 noc spal ve své dílně (často tam přespává, je tam pohovka).
-- **Den 2 ráno 5:30** — šel zalévat květiny, **našel Josefa** v bezvědomí.
-- **Klíčový svědek:** poloha těla, **mokré stopy v rose** kolem Josefa (ne jen jeho — **další pár stop** vedle, vedoucích od velitelství k zadní bráně). Pepa to **fotil mobilem** předtím, než přišla záchranka. **Tyto fotky** jsou nejlepší stopa hry.
+- **Není pachatel.** Den 1 noc spal ve svém stanu vedle skladového stanu (občas tam přespává, je tam blízko k autu).
+- **Klíčový svědek pohybu po cestě:** den 11. odpoledne když odjížděl pro poslední zásoby na večerní táborák, **viděl na měkké hlíně lesní cesty čerstvý otisk pneumatiky pickupu** — pickup, který **na lesní cestě nemá co dělat** (cesta vede jen k samotě Stehlíkových a do tábora). Den 12 ráno cestou pro chleba **viděl ten samý otisk znovu, čerstvější**, vedoucí směrem od tábora k samotě.
+- **Jenda to nezmiňoval** den 2–4, protože **„Stehlík má pickup, Stehlík tam jezdí"** — teprve den 5 si uvědomí, že **Stehlík oficiálně přijel až den 5 odpoledne**, takže pickup tam neměl co dělat noc 11.→12.
 
-### Eliminace (den 3)
+### Eliminace (den 5–6)
 
-Po výslechu — Pepa **mluví prostě a čestně**. Nemá motiv, byl spící, fotky jsou autentické. Děti ho rychle eliminují, **vrátí se k jeho fotkám** v dni 4 (forenzika).
+- Den 5: Jenda **zmíní stopy pneumatiky** Karlovi
+- Den 5–6: výslech, Jenda mluví prostě a čestně. Nemá motiv. **Eliminace.**
+
+### Funkce ve hře
+
+- **Den 5–6** — klíčové svědectví: **stopy pickupu na lesní cestě** = otevírá podezření na Stehlíka
+- Den 8 — pomáhá s technickou stránkou výjezdu do Blanska (dodávka)
+- Den 11 — sedí na **čestném místě**, závěť ho **jmenuje** do Rady tábora (§ 3)
+
+> **Tip pro vedoucí hrající Jendu:** **mluví prostě, krátkými větami**. Když děti naléhají, řekne: *„Já vím, co jsem viděl. Pickup tam projel dvakrát v noci. Říkám to teď, protože se mi to nelíbí."*
 
 ---
 
-## 10. JUDr. Magdaléna RŮŽIČKOVÁ — notářka
+## 8. Vladimír STEHLÍK — soused-hospodář (HLAVNÍ PACHATEL)
 
-> **NEVINNÁ** | věk 52 | hraje vedoucí v roli | klíčová informátorka
+> **VINNÝ (hlavní pachatel)** | věk cca 55 | hospodaří na samotě 1 km od tábora | hraje vedoucí v roli
 
 ### Veřejná stránka
 
-Notářka přijíždí **den 5**. Konvičkova notářka 20 let. **Profesionální, klidná, formální**. Kostým, kufřík, brýle.
+Stehlík přijíždí **den 5 (15. 7.)** odpoledne svým **starším pickupem** (Toyota Hilux nebo Mitsubishi L200, dřevěná korba). **Kostkovaná košile, kalhoty s laclem, kožené boty, vousy.** Říká, že přijel **gratulovat ke 30. ročníku** a přivezl **trochu medu a brambor ze samoty**.
+
+- **Bydliště:** **samota 1 km od tábora**, v Rakoveckém údolí
+- **Hospodářství:** chov koní (4 koně), drobné polnosti (3 ha), louka
+- **Myslivecký zájem:** povolenka k lovu v okolním revíru, **člen mysliveckého spolku Jedovnice**
+- **Charakter ve hře:** zpočátku **vlídný, vesnický typ** („Pojďte si dát medu, děcka"), ale když děti začnou klást konkrétní otázky o **jeho dohodě s lesníkem**, je **odměřený, vyhýbavý**
+
+### Skrytá stránka
+
+- **Stehlík dlouhodobě usiluje, aby kus lesa, kde stojí tábor, byl součástí jeho mysliveckého revíru a hospodářské plochy.** Tábor mu „kazí" zvěř, „dělá hluk", „kazí klid". Léta to s lesníkem z Mendelovy univerzity **neformálně domlouvá**: kdyby propůjčení tábora skončilo (smlouva vyprší **2027**), univerzita **pronajme tu plochu jemu**.
+- **Květen 2026:** Stehlík se od **neopatrného pracovníka univerzity** dovídá, že **Marek Stanislav připravil dodatek ke smlouvě o prodloužení propůjčení tábora o dalších 30 let**, a tento dodatek je **přílohou závěti**. Pokud závěť projde, smlouva 2027 se obnoví — **Stehlík plochu nedostane nikdy.**
+- **Plán Stehlíka:**
+  1. **Vydírat Aleše Tomka** starou nehodou z 90. let („tvůj otec krýval, já vím všechno")
+  2. **Nechat si vyrobit padělek závěti** (kamarád z Brna, **právník-amatér**) — bez pečeti, ale na pohled identický
+  3. V noci 11. → 12. přijít lesem ze samoty, **Aleš nechá zadní plachtu Šéfky rozvázanou**
+  4. Vyměnit závěť za padělek
+  5. Originál **zničit nebo ukrýt** (až zájem opadne)
+  6. Smlouva 2027 vyprší, univerzita pronajme plochu Stehlíkovi
+- **NEPLÁN:** Marek se objeví v noci u Šéfky. **Konfrontace nebyla v plánu.** Pád je **nehoda v panice** — Stehlík **strčil**, ale **silně**, vyděšeně. Když Marek běžel za ním a klopýtl přes kořen, Stehlík **utekl s vědomím „přežije"**. Cestou panikaří, **schová závěť v dutině starého buku u potoka** (200 m od tábora) — **nemůže ji mít doma**, kdyby se to provalilo.
+- Stehlík **je člověk s dlouholetou křivdou**: les „byl odjakživa" hospodářů Stehlíkových (jeho děd v něm pracoval), univerzita ho v 90. letech vyvlastnila, tábor přišel v 1997 — **subjektivně** to vnímá jako pokračující ústrk. **Není zlosyn**, je to **zatrpklý hospodář**, který v rozhodující chvíli sáhl po nečistém prostředku.
+
+### Alibi (oficiální)
+
+> *„Den 5? To jsem přijel poprvý. Předtím jsem byl doma na samotě, krmil koně, večer šel spát s ženou. Žena to potvrdí."*
+
+**Žena (rovněž vedoucí v roli, drobná) potvrdí** — ale na otázku „Kde byl mezi 23:00 a 02:30 noc 11.→12.?" odpoví vyhýbavě: *„Spala jsem. Předpokládám, že byl doma."*
+
+### Klíčové stopy proti Stehlíkovi
+
+- **F03** — **Otisk ruky** u truhly v Šéfce (otisk Stehlíkův, lab. analýza den 4)
+- **F04** — **Otisk kožené boty velikosti 44** v rose před Šéfkou
+- **F05** — Aniččino pozorování (2 páry stop v rose, jeden Markův, druhý cizí)
+- **F09** — **Stopa pneumatiky pickupu** na měkké hlíně lesní cesty (Jenda viděl) — odpovídá pneumatikám staršího Hilux/L200
+- **F10** — **Vlas z kožené rukavice** zachycený o roh truhly (ruka v rukavici není otisk, ale vlas z ovčí kůže rukavice ano)
+- **F12** — **Popel z dýmky** v rohu Šéfky (Stehlík kouří **specifickou směs „Kapitán Černý" — místní směs z brnenské tabákové fabriky**, identifikovatelná)
+- **F14** — **Kopie smlouvy s Mendelovou univerzitou + dodatek o prodloužení o 30 let** = **MOTIV** (přivezeno z Brna nejstaršími kadety den 8)
+- **S15** — **Alešovo přiznání** (den 9)
+- **S16** — Stehlíkovo přiznání po dopadení (den 10)
+
+### Konfrontace (den 9)
+
+Děti shromáždí důkazy. Karel zaštituje práci dětí, **Stehlíka svolá k jednání pod plachtou jídelny**. Stehlík nejdříve **lže** („to bahno mám i z vlastní louky, popel z dýmky? Tak to já nevím..."), pak je **zaskočen kopií smlouvy** — **mlčí**, pak **vstává**, jde si pro klíčky od pickupu, **utíká do lesa** směrem k samotě. **Dynamický zlom.**
+
+### Dopadení (den 10)
+
+Stehlík běží lesní cestou k samotě, kde má pickup. **Lesní hra „obkličování"** — děti tvoří kruh kolem dutiny u potoka (kde najdou závěť) a kolem části lesa. Stehlík se snaží projít k samotě, ale **na cestě ho zastaví dva policisté z Blanska** (Kpt. Mgr. Marek Polák a por. Bc. Lucie Brázdová, vedoucí v rolích, povolaní starostou Hájkem). **Bez násilí**, Stehlík **se vzdá**.
+
+### Funkce ve finále (den 11)
+
+Stehlík **NENÍ** přítomen na finále (je v péči policie v Blansku). Marek o něm v závěrečné řeči řekne **vážně, ale lidsky**: *„Vladimíra znám čtyřicet let. Soused. Hospodář. Udělal špatnou věc — ale já vím, z čeho rostla. Soud rozhodne. Já mu, až přijde čas, podám ruku."*
+
+> **Tip pro vedoucího Stehlíka:** **NIKDY nehrát Stehlíka jako padoucha.** Vedoucí Stehlíka musí udržet **vesnický klid a chlad**, ale **lidsky**. Ve scéně útěku **lehká panika**, **prázdný pohled**. Děti odejdou s pocitem, že **i nepřátelé jsou lidé s historií**.
+
+---
+
+## 9. JUDr. Magdaléna RŮŽIČKOVÁ — notářka
+
+> **NEVINNÁ** | věk cca 50 | notářka v Blansku | hraje vedoucí v roli | klíčová informátorka
+
+### Veřejná stránka
+
+Notářka přijíždí **den 5**. Markova notářka **20 let**, sepsala s ním závěť měsíc před táborem. **Profesionální, klidná, formální.** Kostým, kufřík, brýle.
 
 ### Skrytá stránka
 
 - **Není pachatel.**
-- **Měla originál závěti** dostat zpět den 11. 7. večer od Konvičky **po čtení**, aby ho uložila do trezoru kanceláře. **Místo toho** přišla zpráva o úrazu.
-- Má v notářské kanceláři **dvojí ověřenou kopii**. Není identická s originálem (originál byl jednorázový, podepsaný před 3 svědky), ale **obsah je zachycen**.
+- **Měla závěť přečíst** den 1 večer, ale Marek trval, že **on osobně ji otevře a zveřejní** — proto ležela v truhle v Šéfce. Po incidentu ji policie požádala, ať počká.
+- Má v notářské kanceláři **v Blansku ověřenou kopii**. Není identická s originálem (originál byl jednorázový, podepsaný před 3 svědky), ale **obsah je zachycen + dodatek smlouvy s Mendelovou univerzitou**.
 
 ### Funkce ve hře
 
 - Den 5 — příjezd, výslech, eliminace jako podezřelá
-- Den 8 — týmy **k ní jezdí** do města (notářské kanceláře v Mladé Boleslavi). **Ukáže fragment závěti** dětem ("celé to neuvidíte do návratu pana Konvičky") — fragment obsahuje **§ 1 a § 2** (nadace, zákaz prodeje), ale **ne § 4 a § 5** (dědicové = všichni táborníci). **Tajemství finále zůstává.**
+- Den 8 — týmy **k ní jezdí** do Blanska (notářské kanceláře). **Ukáže fragment závěti** dětem (§§ 1–2 + dodatek smlouvy) — celý text musí přečíst Marek osobně až na finále. **Tajemství §§ 3–5 zůstává.**
+- Den 11 — **přítomna na finále**, oficiálně **stvrzuje** závěť po čtení
 
 ---
 
-## 11. Bohumil HÁJEK — starosta sousední obce
+## 10. Bohumil HÁJEK — starosta Jedovnic
 
-> **NEVINNÝ** | věk 60 | hraje vedoucí v roli | krátký rudý směr + spojenec
+> **NEVINNÝ** | věk cca 60 | starosta sousední obce, dlouholetý přítel Marka | hraje vedoucí v roli | krátká rudá stopa + spojenec
 
 ### Veřejná stránka
 
-Starosta vedlejší obce, kamarád Konvičky. Přijíždí **den 5** blahopřát k 30. výročí. Vesnický typ, otevřený.
+Starosta **Jedovnic**, kamarád Marka 30+ let. Přijíždí **den 5** poblahopřát ke 30. ročníku. **Vesnický typ**, otevřený, tričko + kalhoty + vesta s logem obce, čepice.
 
 ### Skrytá stránka
 
 - **Není pachatel.**
-- Den 5–6 ho děti **chvíli podezírají** — *"Co když obec chce pozemek?"* Hájek to vyvrátí: **"Naše obec si tábor váží jako kulturního pokladu. Nikdy bychom ho nechtěli mít na úkor dětí."**
-- Den 10 **mobilizuje policii** — když Petr utíká, Hájek **volá** kolegovi z Mladé Boleslavi: *"Kolego, malej případ, mladý muž v Audi se nám tady ztrácí."* Policisté zachytí Petra na výjezdu z lesa.
+- Den 5–6 ho děti **chvíli podezírají** — *„Co když obec chce pozemek?"* Hájek to vyvrátí: *„Naše obec si tábor váží jako kulturního pokladu. Nikdy bychom ho nechtěli mít na úkor dětí. A my ten les ani nevlastníme — to je univerzita."*
+- Den 10 **mobilizuje policii z Blanska** — když Stehlík utíká, Hájek **volá** kpt. Polákovi: *„Marku, máme tu utíkajícího hospodáře v pickupu. Jedovnice — Rakovecké údolí — potřebujeme rychlou reakci."* Policie zachytí Stehlíka na lesní cestě.
+
+### Funkce ve hře
+
+- Den 5 — příjezd, krátká přítomnost
+- Den 6 — eliminace
+- Den 10 — **klíčový moment**: telefonát policii
+- Den 11 — krátký pozdrav na finále
+
+---
+
+## 11. Pavel KONEČNÝ — vedoucí skautského tábora Borovice
+
+> **NEVINNÝ — krátká rudá stopa** | věk 45 | vede sousední skautský tábor | hraje vedoucí v roli
+
+### Veřejná stránka
+
+Pavel Konečný vede **skautský tábor Borovice** (~70 dětí), který stojí asi 1,5 km od Tábora Světlo v Rakoveckém údelí. Skauting dělá 25 let, **dobrý kamarád Marka** — vzájemně se navštěvují.
+
+### Skrytá stránka — krátká rudá stopa
+
+Den 5–6 si týmy **vzpomenou**, že před lety (kolem 2018) Konečný navrhl Markovi **„sloučení obou táborů pod jednu organizaci"** — Marek odmítl. Děti to zachytí ve výpovědi některého starého vedoucího. Krátké podezření: *„Co když Konečný stále vidí příležitost?"*
+
+**Eliminace den 6:** Konečný má pevné alibi — noc 11. → 12. byl **na poradě s vedoucími tábora Údolí** kvůli společnému výletu (telefonicky doložené, několik svědků). Návrh sloučení byl **vstřícný, ne nepřátelský** — Konečný a Marek to pak v klidu vyřešili.
+
+### Funkce ve hře
+
+- Den 5 — krátká návštěva (gratulace)
+- Den 6 — eliminace s krátkým rozhovorem dětí: *„Já mám rád pana Stanislava. Naše tábory jsou spojenci, ne soupeři."*
+- Den 11 — případně přítomen na finále jako host (krátce)
 
 ---
 
@@ -299,13 +368,14 @@ Starosta vedlejší obce, kamarád Konvičky. Přijíždí **den 5** blahopřát
 
 | # | Jméno | Věk | Vinný? | Den eliminace / odhalení |
 |---|---|---|---|---|
-| 1 | Alena Procházková | 50 | ne | den 4 (alibi telefonem) |
-| 2 | Tomáš Veselý | 35 | ne | den 5–6 (alibi přes Alenu) |
-| 3 | **Karel Drábek** | 55 | **ANO (pomocník)** | **den 9 (přiznání)** |
-| 4 | Marie Hradilová | 60 | ne (svědkyně) | den 4 |
-| 5 | Lucie Nováková | 28 | ne (rudá stopa) | den 6 |
-| 6 | MUDr. Petra Svobodová | 40 | ne | den 7 (telefonáty) |
-| 7 | Pepa Bouček | 45 | ne (svědek) | den 3 |
-| 8 | **Petr Konvička** | 45 | **ANO (pachatel)** | **den 9 (kamera) / den 10 (dopadení)** |
-| 9 | Magdaléna Růžičková | 52 | ne (informátorka) | den 5 |
+| 1 | Karel Malík | 45+ | ne | den 4 (alibi s Pavlem) |
+| 2 | Pavel Malík (bratr Karla) | 40+ | ne | den 4–5 (vysvětlení ranního výjezdu) |
+| 3 | **Aleš Tomek** | 50+ | **ANO (pomocník)** | **den 9 (přiznání)** |
+| 4 | Anička Kellnerová | 50+ | ne (svědkyně) | den 4 |
+| 5 | Klára Stanislavová | 28 | ne (rudá stopa) | den 6 |
+| 6 | Magdaléna Hamanová | 50 | ne | den 7 (lékařský deník) |
+| 7 | Jenda | 50+ | ne (svědek) | den 5–6 |
+| 8 | **Vladimír Stehlík** | 55 | **ANO (hl. pachatel)** | **den 9 (konfrontace) / den 10 (dopadení)** |
+| 9 | JUDr. Magdaléna Růžičková | 50 | ne (informátorka) | den 5 |
 | 10 | Bohumil Hájek | 60 | ne (spojenec) | den 6 |
+| 11 | Pavel Konečný | 45 | ne (rudá stopa) | den 6 |

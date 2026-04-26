@@ -7,7 +7,7 @@
 ## Použití
 
 Mapa je **pracovní nástroj** vyšetřování. Týmy do ní zaznamenávají:
-- Budovy a objekty tábora (= kreslí na podklad)
+- Stany a objekty tábora (= kreslí na podklad)
 - Místa činu (červené X)
 - Stopy (zelené tečky)
 - Trasy podezřelých (přerušované čáry s šipkou)
@@ -33,9 +33,9 @@ Mapa **roste s vyšetřováním**. Den 4 je prázdná — den 11 je plná zápis
 
 ```
 ┌────────────────────────────────────────────────────────────┐
-│  TÝMOVÁ MAPA TÁBORA STARÁ LÍPA                             │
+│  TÝMOVÁ MAPA TÁBORA SVĚTLO                                 │
 │                                                            │
-│  Tým: ______________________   Datum: ____ . ____ . 2025   │
+│  Tým: ______________________   Datum: ____ . ____ . 2026   │
 │                                                            │
 │  ┌────────────────────────────────────────────────────────┐│
 │  │                                                        ││
@@ -60,9 +60,9 @@ Mapa **roste s vyšetřováním**. Den 4 je prázdná — den 11 je plná zápis
 │                                                            │
 │  LEGENDA — VYPLŇTE:                                        │
 │  ┌──────────────────────────────────────────────────────┐  │
-│  │ ▢ Budova  △ Strom  ✕ Místo činu  ● Stopa             │  │
+│  │ ▢ Stan/objekt  △ Strom  ✕ Místo činu  ● Stopa        │  │
 │  │ ━━━ Cesta  ┄┄┄ Trasa podezřelého  Ⓜ Výslech         │  │
-│  │ ✦ Klíčové místo                                      │  │
+│  │ ✦ Klíčové místo  ≈ Voda (potok/studánka)             │  │
 │  └──────────────────────────────────────────────────────┘  │
 │                                                            │
 │  SEVER ↑   (velká šipka v pravém horním rohu)              │
@@ -77,47 +77,58 @@ Mapa **roste s vyšetřováním**. Den 4 je prázdná — den 11 je plná zápis
 ## Postupné vyplnění mapy podle dnů
 
 ### Den 4 (dopoledne) — Začátek mapování
+
 **Co se zaznamenává**:
-- Budovy: velitelství, jídelna, klubovna, ošetřovna, sklad, stany dětí, stany vedoucích, vrátnice
-- Stromy: starý buk u rybníka, jiné výrazné stromy
-- Cesty: hlavní cesta, lesní pěšiny
-- Brány: přední (= hlavní vchod), zadní (= servisní)
-- Vodní plochy: rybník, potok
-- Speciální místa: ohniště, hřiště, **tábořiště (= seznam místností činu)**
+- Stany a objekty: **Šéfka** (velitelský stan), stan zakladatele, teepee, stany účastníků v půlkruhu, **polní kuchyně pod plachtou**, **jídelna pod plachtou**, **stan zdravotnice**, **skladový stan**, latrýny, altán u studánky
+- Stromy: **starý buk u potoka**, jiné výrazné stromy
+- Cesty: hlavní lesní cesta, vyšlapané pěšiny, **lesní cesta k samotě Stehlíkových (1 km)**
+- Voda: **studánka** (≈ 80 m od tábora), **potok**
+- Speciální místa: **ohniště** (centrální, kameny obložený kruh)
+
+> **Pozor:** Tábor Světlo je **plně lesní stanový tábor** — žádné brány, žádné budovy, žádné ploty.
 
 ### Den 4 (odpoledne) — Doplnění o stopy ze dnů 1–3
-- ✕ velitelství (= místo činu — kde Konvička spadl)
-- ● zadní brána (= stopa boty F04)
-- ● lesní cesta 1,5 km (= F09 stopa pneu)
-- ● rybník + buk (= F12 tužka, NE dutina)
+
+- ✕ **Šéfka** (= místo činu — kde Marek přistihl Stehlíka)
+- ● **kořen smrku 15 m za Šéfkou** (= místo Markova pádu, krev na kameni)
+- ● **lesní cesta k samotě Stehlíkových** (= stopa pneumatik pickupu)
+- ● **studánka + buk u potoka** (= stopy bot a kapky vosku — ale **zatím nesahat do dutiny!**)
 
 ### Den 5 — Doplnění o hosty
-- Audi Q7 ve dvoře (= Petrovo auto)
-- Vůz Magdalény v jiném místě
-- Vůz Hájka
+
+- **Pickup Stehlíka** (Toyota Hilux / Mitsubishi L200) — zaparkovaný u kraje lesní cesty
+- **Auto Magdalény Růžičkové** (notářky) — u centrální plochy
+- **Auto Hájka** (starosty) — u centrální plochy
 
 ### Den 6 — Doplnění o nové důkazy
-- Místo, kam Marie pohlíží z okna kuchyně
-- Trasa Petra v noci 11. 7. (= ┄┄┄ od auta na lesní cestě → zadní brána → velitelství → rybník → buk → zpět k autu)
-- Trasa Drábka (= od stanu → zadní brána → zpět)
 
-### Den 7 — Doplnění po videovzkazu
-- ✦ buk (= klíčové místo) — "TADY?"
+- Místo, kam **Anička pohlíží z polní kuchyně** (čára pohledu na Šéfku)
+- ┄┄┄ **Trasa Stehlíka v noci 11. → 12. 7.** (= od samoty → lesní cesta → Šéfka → potok/buk → zpět k samotě)
+- ┄┄┄ **Trasa Aleše Tomka** (= od svého stanu → ohniště → „latrýna" = lesní výmluva → zpět)
+
+### Den 7 — Doplnění po vzkazu z nemocnice
+
+- ✦ **buk u potoka** (= klíčové místo) — „TADY?"
 
 ### Den 8 — Doplnění z výjezdu
-- Pumpa OMV v Mladé Boleslavi (= vně mapy, do okraje šipka)
-- Banka v Mladé Boleslavi (= vně mapy)
+
+- **Magdaléna Růžičková v Blansku** (notářská kancelář) — vně mapy, šipka v okraji
+- **Mendelova univerzita v Brně** (LDF, ŠLP Křtiny) — vně mapy, šipka v okraji
+- ❌ Žádná pumpa OMV, žádná banka — výjezd se týká notářky a univerzity
 
 ### Den 9 — Doplnění o konfrontaci
-- ✦ jídelna (= místo konfrontace)
-- ┄┄┄ Petrova trasa útěku do lesa
+
+- ✦ **jídelna pod plachtou / altán u studánky** (= místo konfrontace — 14:00)
+- ┄┄┄ **Stehlíkova trasa útěku** (do lesa směrem k samotě)
 
 ### Den 10 — Finalizace
-- ✦ kvadrant lesa, kde tým hledá Petra
-- ✦ buk (= konečné místo nálezu závěti)
+
+- ✦ **kvadrant lesa**, kde tým hledá Stehlíka (policie ho zachytí na lesní cestě)
+- ✦ **buk u potoka** (= konečné místo nálezu pravé závěti v dutině)
 
 ### Den 11 — Slavnostní mapa
-- Tým **přepíše mapu načisto** (= slavnostní verze pro Knihu 30 let)
+
+- Tým **přepíše mapu načisto** (= slavnostní verze pro Knihu 30 let Tábora Světlo)
 
 ---
 
@@ -128,7 +139,7 @@ Mapa se hodnotí **2× během tábora**:
 ### Hodnocení dne 6 (mid-camp review)
 | Kritérium | Body |
 |---|---|
-| Úplnost budov a objektů | 1–15 b. |
+| Úplnost stanů a objektů | 1–15 b. |
 | Měřítko a proporce | 1–10 b. |
 | Legenda správně vyplněná | 1–5 b. |
 | Aktuálnost (zaznamenaná místa činu, stopy) | 1–15 b. |
@@ -166,7 +177,7 @@ Mapa se hodnotí **2× během tábora**:
 
 ## Variace pro různé věkové skupiny
 
-- **K1 (7–9 let)**: zjednodušená mapa s předkreslenými budovami (= jen vyplnění detailů)
+- **K1 (7–9 let)**: zjednodušená mapa s předkreslenými stany a objekty (= jen vyplnění detailů)
 - **K2 (10–12 let)**: standardní mapa
 - **K3 (13–15 let)**: prázdný podklad — rýsují vše sami od základu
 

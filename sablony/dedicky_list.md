@@ -1,6 +1,6 @@
 # Šablona: Dědický list — KLÍČOVÝ ARTEFAKT
 
-> **Toto je nejdůležitější výtvor celého tábora.** Každé dítě dostane vlastní dědický list s vlastním jménem, slavnostně předaný panem Konvičkou v finále den 11.
+> **Toto je nejdůležitější výtvor celého tábora.** Každé dítě dostane vlastní dědický list s vlastním jménem, slavnostně předaný Markem Stanislavem ve finále den 11.
 
 ---
 
@@ -9,7 +9,7 @@
 - **Velikost**: A4 (210 × 297 mm)
 - **Papír**: ozdobný, krémový nebo zlatavý, gramáž **120–160 g**
 - **Tisk**: kvalitní, černobílý nebo s jemným zlatým akcentem
-- **Pečeť**: červený vosk + razítko (logo Stará Lípa)
+- **Pečeť**: červený vosk + razítko (logo Tábora Světlo)
 - **Stuha**: zlatá nebo zelená, 30 cm dlouhá, převázaná
 - **Připraveno**: vyrobit **45 ks pro děti + 10 ks rezerva + 8 ks pro personál** = 53–55 ks celkem
 - **Personalizace**: každý list má **rukou napsané jméno dítěte**
@@ -22,14 +22,14 @@
 ═══════════════════════════════════════════════════════════
             ◆  DĚDICKÝ LIST  ◆
 
-         T Á B O R   S T A R Á   L Í P A
-                30 LET — 1995–2025
+              T Á B O R   S V Ě T L O
+            30. ROČNÍK — 1997–2026
 ═══════════════════════════════════════════════════════════
 
 
 
-Já, Josef Konvička, zakladatel Tábora Stará Lípa,
-v souladu s § 4 mé poslední vůle ze dne 15. května 2025,
+Já, Marek Stanislav, zakladatel Tábora Světlo,
+v souladu s § 4 a § 5 mé poslední vůle ze dne 12. června 2026,
 tímto stvrzuji a slavnostně prohlašuji,
 
 
@@ -39,11 +39,11 @@ tímto stvrzuji a slavnostně prohlašuji,
 
 
   ____________________________________________________
-                         (jméno dítěte)
+                       (jméno dítěte)
 
 
 
-JE SYMBOLICKÝM DĚDICEM TÁBORA STARÁ LÍPA.
+JE SYMBOLICKÝM DĚDICEM TÁBORA SVĚTLO.
 
 
 
@@ -70,13 +70,7 @@ Jako dědic tábora se zavazuješ:
 § 3 — TVOJE JMÉNO
 
 Tvoje jméno je nyní zapsáno v Knize 30 let
-Tábora Stará Lípa.
-
-Pod tvým jménem stojí — symbolicky — celý tábor.
-Patnáct hektarů lesa, dva rybníky, jeden buk,
-třicet generací smíchu.
-
-Patří Ti.
+Tábora Světlo. Patří Ti.
 
 
 § 4 — TVŮJ PODPIS
@@ -88,22 +82,22 @@ podpisem. Tím přijímáš dědictví.
   Tvůj podpis: _____________________________________
 
 
-  Datum:       ____ . _____ . 2025
+  Datum:       21. července 2026
 
-  Místo:       Tábor Stará Lípa, u ohně
+  Místo:       Tábor Světlo, Rakovecké údolí
 
 
 
 ═══════════════════════════════════════════════════════════
 
-  Slavnostně předáno dne 21. července 2025
-  ve 30. ročníku Tábora Stará Lípa.
+  Slavnostně předáno dne 21. července 2026
+  ve 30. ročníku Tábora Světlo.
 
 
 
               ___________________________
-              Josef Konvička
-              zakladatel Tábora Stará Lípa
+              Marek Stanislav
+              zakladatel Tábora Světlo
               [vlastní podpis]
 
 
@@ -122,7 +116,7 @@ podpisem. Tím přijímáš dědictví.
     Tobě. I mně. I těm, kdo přijdou po nás.
     Po dalších třicet let."
 
-                  — Josef Konvička, 21. 7. 2025
+                  — Marek Stanislav, 21. 7. 2026
 ═══════════════════════════════════════════════════════════
 ```
 
@@ -141,7 +135,7 @@ podpisem. Tím přijímáš dědictví.
 6. Pokud kaligrafie není dostupná, **psát rukou v jedné barvě** (černý nebo zlatý fix).
 
 ### Krok 3 — Pečeť (1 den před)
-7. **Pečeť**: rozehřátý červený vosk → razítko (logo Stará Lípa, ideálně vyrobené z odlitku, jinak kovové razítko z internetu).
+7. **Pečeť**: rozehřátý červený vosk → razítko (logo Tábora Světlo, ideálně vyrobené z odlitku, jinak kovové razítko z internetu).
 8. Umístění pečetí: **vlevo dole**, vedle podpisu Magdalény.
 
 ### Krok 4 — Stuha (den před nebo ráno před finále)
@@ -156,19 +150,19 @@ podpisem. Tím přijímáš dědictví.
 
 ## Pokyny pro slavnostní předávání
 
-V finále den 11 (17:00 – 18:00):
+Ve finále den 11 (17:00 – 18:00):
 
-1. **Konvička sedí ve středu jídelny** v křesle.
-2. Vedle něho **stološ** se zlatou krabicí. V krabici jsou všechny dědické listy (rolované, převázané) **podle abecedy**.
-3. **Vedoucí týmu Sojky** asistuje, podává Konvičkovi list po listu.
-4. **Konvička** vezme list, **pohlédne na dítě**, **osloví je jménem**:
+1. **Marek Stanislav sedí ve středu jídelny** v křesle.
+2. Vedle něho **stolek** se zlatou krabicí. V krabici jsou všechny dědické listy (rolované, převázané) **podle abecedy**.
+3. **Vedoucí týmu Sojky** asistuje, podává Markovi list po listu.
+4. **Marek** vezme list, **pohlédne na dítě**, **osloví je jménem**:
 
-   > „**Jan Novák. Tábor 2025. Ty jsi dědicem Staré Lípy. Tvé jméno je v knize. Jednoho dne tě tábor pošle dál.**"
+   > „**Jan Novák. Tábor 2026. Ty jsi dědicem Tábora Světlo. Tvé jméno je v knize. Jednoho dne tě tábor pošle dál.**"
 
 5. Předá list **do rukou dítěte**.
 6. Dítě **podepíše list** rovnou (na poskytnutém stolku) a **uloží do svého tubusu**.
 7. **Tlesknutí**.
-8. Dítě **dostane také pamětní minci** (= druhá osoba — Marie nebo Tomáš).
+8. Dítě **dostane také pamětní minci** (= druhá osoba — Anička nebo Pavel Malík).
 9. Další dítě v pořadí.
 
 ---
@@ -178,21 +172,22 @@ V finále den 11 (17:00 – 18:00):
 - 45 dětí × 30 sekund = **23 minut** + 7 minut na odsazení = **cca 30 minut**.
 - Pokud je rytmus dobrý, plus pár minut na pauzy = **45 minut maximum**.
 - Po dětech **vedoucí týmů** dostanou své listy (6 ks).
-- Personál: Alena, Tomáš, Marie, Lucie, Petra, Pepa, Magdaléna (7 ks).
-- **Drábek dostane svůj list samostatně** — Konvička za ním zítra dorazí domů.
+- Personál: Karel Malík, Pavel Malík, Anička Kellnerová, Klára Stanislavová, Magdaléna Hamanová, Jenda, Aleš Tomek (7 ks).
 - Celkem: 45 + 6 + 7 = **58 listů** předáno za cca 60 min.
+
+> **Poznámka k Aleši Tomkovi:** v tuto chvíli (den 11) se již přiznal a je v rukou policie. Jeho dědický list mu Marek osobně předá samostatně po návratu z policejní stanice — viz `01_PRIBEH_setting.md`, scéna § 3 závěti („Aleši, do Rady patříš. Důvěra se zaslouží i návratem.").
 
 ---
 
 ## Variace pro skupiny
 
 ### Pokud máte více dětí (50+)
-- Předávat **po týmech** — Konvička dá list **kapitánu týmu**, ten ho předá dál v týmu.
+- Předávat **po týmech** — Marek dá list **kapitánu týmu**, ten ho předá dál v týmu.
 - Krátší (15–20 min), méně osobní, ale stále silné.
 - **Doporučujeme jednotlivé předávání** — emocionální dopad je vyšší.
 
 ### Pokud máte méně dětí (20–30)
-- **Mlížší proslovy** ke každému — Konvička může každému říct **osobní větu** (= připravenou předem na základě týmových deníků).
+- **Delší proslovy** ke každému — Marek může každému říct **osobní větu** (= připravenou předem na základě týmových deníků).
 
 ---
 
@@ -213,6 +208,6 @@ V finále den 11 (17:00 – 18:00):
 
 ## Důležité
 
-> **Dědický list je nejdůležitější artefakt celého tábora.** Pokud na něj nezbude rozpočet jinde — **nezkouškejte tento**. Pamětní mince i jiné věci lze vynechat. Ale **list každé dítě musí dostat**. Bez toho neexistuje § 4 závěti, neexistuje finále, neexistuje hra.
+> **Dědický list je nejdůležitější artefakt celého tábora.** Pokud na něj nezbude rozpočet jinde — **nezkouškejte tento**. Pamětní mince i jiné věci lze vynechat. Ale **list každé dítě musí dostat**. Bez toho neexistuje § 4 a § 5 závěti, neexistuje finále, neexistuje hra.
 
 > **Investice 1 300 Kč na 45 dětí** = **30 Kč na dítě** za **doživotní vzpomínku**. Nelze přeplatit.
