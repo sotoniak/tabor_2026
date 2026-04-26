@@ -67,7 +67,7 @@ Pavel je **klidnější než Karel**, technický, programátor etap, řidič. Dr
 
 ## 3. Aleš TOMEK — údržbář (POZOR — KLÍČOVÁ ROLE)
 
-> **VINNÝ (pomocník zločinu)** | věk cca 50+ | v okolí celý život | hraje sám sebe + emocionálně náročnou scénu přiznání
+> **VINNÝ (pomocník zločinu)** | věk cca 18+ | v okolí celý život | hraje sám sebe + emocionálně náročnou scénu přiznání
 
 ### Veřejná stránka (co děti vidí)
 

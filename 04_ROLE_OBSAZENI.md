@@ -28,7 +28,7 @@ Tento soubor je **návod pro obsazování**. Personál tábora hraje **sám sebe
 
 **Vztah ke Markovi:** **nejbližší kolega 20+ let**. Po Markově zranění **bere odpovědnost na sebe** — ale **lidsky**. Den 2 ráno, kdy oznámí dětem, **má slzy v očích**. Toto je **autentická scéna** — hraje sám sebe v krizi a má povolenou skutečnou emoci.
 
-**Kostym:** **vlastní oblečení** — žádný kostým
+**Kostým:** **vlastní oblečení** — žádný kostým
 
 **Příprava před táborem:** přečíst kompletně 01, 02, 03, 04, 12 + denní soubory
 
@@ -36,9 +36,9 @@ Tento soubor je **návod pro obsazování**. Personál tábora hraje **sám sebe
 
 ---
 
-### A2. Pavel Malík — zástupce hlavního vedoucího (bratr Karla)
+### A2. Pavel Malík — zástupce hlavního vedoucího (není to bratr Karla, ale může být?)
 
-**Hraje:** **skutečný zástupce / programový vedoucí** (muž, 40+, **bratr Karla** — rodinné spojení je viditelné)
+**Hraje:** **skutečný zástupce / programový vedoucí** (muž, 40+,  **možná bratr Karla** — rodinné spojení je viditelné, ale...?)
 
 **Reálný úkol:** programové aktivity, technika, koordinace s mladými vedoucími, řidič
 
@@ -49,7 +49,7 @@ Tento soubor je **návod pro obsazování**. Personál tábora hraje **sám sebe
 - Den 4–5: **eliminace** — Karel s Aničkou potvrdí porady alibi
 - Den 7+: **pomocník vyšetřování**, dělá s týmy plánování
 
-**Kostym:** vlastní
+**Kostým:** vlastní
 
 **Příprava:** 03 (sekce Pavel Malík), 04, denní soubory
 
@@ -59,7 +59,7 @@ Tento soubor je **návod pro obsazování**. Personál tábora hraje **sám sebe
 
 ### A3. Aleš Tomek — údržbář (POZOR — KLÍČOVÁ ROLE)
 
-**Hraje:** **skutečný údržbář / správce tábora**, pokud je to muž 50+, dlouholetý zaměstnanec, **a má potenciál na hraní emocionálně náročné scény** (přiznání den 9). Pokud skutečný údržbář **nemá hereckou kapacitu** nebo by to bylo příliš nepříjemné, **roli přebere jiný starší vedoucí v civilu**, kterého děti znají.
+**Hraje:** **skutečný údržbář / správce tábora**, pokud je to mladý 18 letý muž , dlouholetý táborník, **a má potenciál na hraní emocionálně náročné scény** (přiznání den 9). Pokud skutečný údržbář **nemá hereckou kapacitu** nebo by to bylo příliš nepříjemné, **roli přebere jiný starší vedoucí v civilu**, kterého děti znají.
 
 **Reálný úkol:** údržba (fakticky), drobné opravy, dříví, dohled nad tábořištěm
 
@@ -70,7 +70,7 @@ Tento soubor je **návod pro obsazování**. Personál tábora hraje **sám sebe
 - Den 9 odpoledne: **scéna přiznání** — emocionálně náročná, **velký herecký výkon** (tichý pláč, přiznání jako úleva, ne dramatický křik)
 - Dny 10–11: **stále v táboře**, ale „v péči" (čeká na výslech, sedí stranou). **Marek mu na finále podá ruku a posadí ho vedle sebe** — § 3 závěti ho jmenuje do Rady tábora.
 
-**Kostym:** **vlastní pracovní oblečení** — nic nepřidávat (montérky, pohorky)
+**Kostým:** **vlastní pracovní oblečení** — nic nepřidávat (montérky, pohorky)
 
 **Příprava před táborem:** **pečlivě** přečíst 03 (sekce Aleš Tomek). **Zkušební scéna přiznání s Karlem** den nebo dva před táborem.
 
@@ -92,7 +92,7 @@ Tento soubor je **návod pro obsazování**. Personál tábora hraje **sám sebe
 - Den 9: krátká reakce při Alešově přiznání — *„Aleši... proč jsi nic neřekl?"*
 - Den 11: **sedí na čestném místě**, závěť ji jmenuje do Rady tábora (§ 3)
 
-**Kostym:** **vlastní (kuchyňská zástěra)**
+**Kostým:** **vlastní (kuchyňská zástěra)**
 
 **Příprava:** 03 (sekce Anička), 04, hlavně **scénář dne 6** (`dny/den_06_klid_udrzba.md`)
 
@@ -113,7 +113,7 @@ Tento soubor je **návod pro obsazování**. Personál tábora hraje **sám sebe
 - Den 6: **eliminace** s omluvou dětí (Magdaléna H. vysvětlí rodinné poměry: vzdálená sestřenice po matčině straně, žádné dědické nároky)
 - Den 11: dostává dědický list („ty jsi taky táborník, teprve se učíš")
 
-**Kostym:** vlastní (zástěra)
+**Kostým:** vlastní (zástěra)
 
 **Příprava:** 03 (sekce Klára), 04 — naučit se „rozpláče se z trapnosti, ne ze strachu"
 
@@ -135,7 +135,7 @@ Tento soubor je **návod pro obsazování**. Personál tábora hraje **sám sebe
 - Den 7: **eliminace** (lékařský deník) + **velmi důležitá role** — **přináší zprávu z FN Brno**, že Marek je vzhůru. **Klíčová věta hry:** *„Pan Stanislav se probudil. Mluvil. Pamatuje si ten večer. Posílá vám vzkaz."*
 - Den 11: **doprovází Marka** zpět do tábora na finále (posledních 200 m pěšky od parkoviště)
 
-**Kostym:** vlastní (zdravotnický plášť, pokud nosí)
+**Kostým:** vlastní (zdravotnický plášť, pokud nosí)
 
 **Příprava:** 03 (sekce Magdaléna H.), 04, hlavně `dny/den_07_zlom.md` a `dny/den_11_finale.md`
 
@@ -157,7 +157,7 @@ Tento soubor je **návod pro obsazování**. Personál tábora hraje **sám sebe
 - Den 4 dále: **pomocník dětí** — pomáhá s mapováním, technickou stránkou stop, jezdí s týmy do Blanska den 8
 - Den 11: **sedí na čestném místě**, závěť ho jmenuje do Rady tábora (§ 3)
 
-**Kostym:** vlastní (pracovní oblečení, kšiltovka)
+**Kostým:** vlastní (pracovní oblečení, kšiltovka)
 
 **Příprava:** 03 (sekce Jenda), 04, **scénář dne 2 a dne 5**
 
@@ -183,7 +183,7 @@ Tento soubor je **návod pro obsazování**. Personál tábora hraje **sám sebe
 - Den 7: **vzkaz** z nemocnice — **dopis nebo audio** (NE video — bez elektřiny). Dopis přivezený autem nebo audio na satelitním telefonu.
 - **Den 11 odpoledne:** **návrat do tábora** — auto zaparkuje na parkovišti pod lesní cestou, **Magdaléna H. ho doprovází pěšky** posledních 200 m. Čte závěť osobně, **odpouští Alešovi a posadí ho vedle sebe**.
 
-**Kostym:** vlastní (sako, košile, pohodlné venkovní kalhoty, čepice, **vycházková hůl**). **Bez kostýmů!** Civilní oblečení 60letého pána.
+**Kostým:** vlastní (sako, košile, pohodlné venkovní kalhoty, čepice, **vycházková hůl**). **Bez kostýmů!** Civilní oblečení 60letého pána.
 
 **Příprava před táborem:**
 - Přečíst 01 + 02 + 12
@@ -217,7 +217,7 @@ Tento soubor je **návod pro obsazování**. Personál tábora hraje **sám sebe
 - **Den 10 odpoledne:** **dopaden 2 policisty z Blanska** na lesní cestě, scéna zatčení **bez násilí**
 - Den 11: **NENÍ na finále** (v péči policie v Blansku)
 
-**Kostym:** **kostkovaná košile, kalhoty s laclem, kožené boty (vel. 44 — klíčová stopa!), vousy** (lepené, pokud vedoucí vousy nemá), **kožené rukavice** (pro noční scénu), **dýmka**, čelovka. Pickup (zapůjčený nebo vlastní).
+**Kostým:** **kostkovaná košile, kalhoty s laclem, kožené boty (vel. 44 — klíčová stopa!), vousy** (lepené, pokud vedoucí vousy nemá), **kožené rukavice** (pro noční scénu), **dýmka**, čelovka. Pickup (zapůjčený nebo vlastní).
 
 **Příprava:** přečíst 03 (sekce Stehlík), 04, **klíčově dny 1, 5, 9, 10**. Zkušební scéna konfrontace. **Naučit se neprohrávat lidský element** — Stehlík je **člověk s dlouholetou křivdou a osobním zájmem**, ne karikatura padoucha.
 
@@ -234,7 +234,7 @@ Tento soubor je **návod pro obsazování**. Personál tábora hraje **sám sebe
 - **Den 8:** týmy **k ní jezdí** do Blanska (notářská kancelář, ~20 km — výjezd autem). **Ukazuje fragment závěti** (§§ 1–2 + dodatek o prodloužení smlouvy s Mendelovou univerzitou), vede formální rozhovor.
 - Den 11: **přítomna na finále**, oficiálně **stvrzuje** závěť po čtení Markem
 
-**Kostym:** **kostým** (sako + sukně), kufřík, brýle. **Trošku formální, ne přehnaně.**
+**Kostým:** **kostým** (sako + sukně), kufřík, brýle. **Trošku formální, ne přehnaně.**
 
 **Příprava:** přečíst 03 (sekce Růžičková), 04, **dny/den_05 a den_08**
 
@@ -250,7 +250,7 @@ Tento soubor je **návod pro obsazování**. Personál tábora hraje **sám sebe
 - **Den 10:** **mobilizuje policii z Blanska** — telefonát kpt. Polákovi: *„Marku, máme tu utíkajícího hospodáře v pickupu. Jedovnice — Rakovecké údolí — potřebujeme rychlou reakci."* Krátká, ale klíčová scéna.
 - Den 11: **přítomen na finále**, krátký pozdrav
 
-**Kostym:** **civilní vesnický** — tričko + kalhoty + vesta, čepice s logem obce
+**Kostým:** **civilní vesnický** — tričko + kalhoty + vesta, čepice s logem obce
 
 **Příprava:** 03, 04, **dny 5, 10, 11**
 
@@ -267,7 +267,7 @@ Tento soubor je **návod pro obsazování**. Personál tábora hraje **sám sebe
 
 **Funkce:** „dospělý oficiální rámec" — když přijdou, je hra opravdu vážná. Účastníky **nevyslýchají** (to dělá Karel s týmy), jen **přijímají hlášení**.
 
-**Kostym:** **reflexní vesta** + uniformované tmavé tričko/triko. Blok, kufřík s formuláři. (Jediný kostýmový prvek hry kromě notářky, Stehlíka, Hájka a Marka.)
+**Kostým:** **reflexní vesta** + uniformované tmavé tričko/triko. Blok, kufřík s formuláři. (Jediný kostýmový prvek hry kromě notářky, Stehlíka, Hájka a Marka.)
 
 **Příprava:** stačí scénář **dne 2, 9, 10**
 
@@ -282,7 +282,7 @@ Tento soubor je **návod pro obsazování**. Personál tábora hraje **sám sebe
 - Den 6: **eliminace** — alibi (porada s vedoucími tábora Údolí v noci 11.→12., několik svědků), vstřícný rozhovor: *„Já mám rád pana Stanislava. Naše tábory jsou spojenci, ne soupeři."*
 - Den 11: případně přítomen na finále jako host (krátce)
 
-**Kostym:** vlastní (skautský šátek volitelně)
+**Kostým:** vlastní (skautský šátek volitelně)
 
 **Příprava:** 03 (sekce Pavel Konečný), 04, **den 5–6**
 
@@ -320,21 +320,21 @@ Tento soubor je **návod pro obsazování**. Personál tábora hraje **sám sebe
 
 ## Souhrnná tabulka
 
-| Role | Hraje | Den příchodu | Den odhalení / eliminace |
-|---|---|---|---|
-| Karel Malík | hl. vedoucí | každý den | (nevinný) |
-| Pavel Malík (bratr) | zástupce | každý den | den 4–5 |
-| **Aleš Tomek** | údržbář | každý den | **den 9 (přiznání)** |
-| Anička | st. kuchařka | každý den | den 4 (svědkyně) |
-| Klára Stanislavová | ml. kuchařka | každý den | den 6 |
-| Magdaléna H. | zdravotnice | každý den | den 7 |
-| Jenda | zásobovač | každý den | den 3 (svědek den 5) |
-| **Marek Stanislav** | mimořádný host | **den 1 + den 11** | (oběť, ne podezřelý) |
-| **Vladimír Stehlík** | host. vedoucí | **den 5–10** (skrytě den 1 noc) | **den 9 (konfrontace) / den 10 (dopadení)** |
-| JUDr. Růžičková | host. vedoucí | **den 5 + den 8** | den 5 |
-| Hájek | host. vedoucí | **dny 5–10** | den 6 |
-| Pavel Konečný (volitelně) | host. vedoucí | den 5 | den 6 |
-| 2× policisté | 2 vedoucí | **den 2, 9, 10** | — |
+| Role                      | Hraje          | Den příchodu                    | Den odhalení / eliminace                    |
+| ------------------------- | -------------- | ------------------------------- | ------------------------------------------- |
+| Karel Malík               | hl. vedoucí    | každý den                       | (nevinný)                                   |
+| Pavel Malík               | zástupce       | každý den                       | den 4–5                                     |
+| **Aleš Tomek**            | údržbář        | každý den                       | **den 9 (přiznání)**                        |
+| Anička                    | st. kuchařka   | každý den                       | den 4 (svědkyně)                            |
+| Klára Stanislavová        | ml. kuchařka   | každý den                       | den 6                                       |
+| Magdaléna H.              | zdravotnice    | každý den                       | den 7                                       |
+| Jenda                     | zásobovač      | každý den                       | den 3 (svědek den 5)                        |
+| **Marek Stanislav**       | mimořádný host | **den 1 + den 11**              | (oběť, ne podezřelý)                        |
+| **Vladimír Stehlík**      | host. vedoucí  | **den 5–10** (skrytě den 1 noc) | **den 9 (konfrontace) / den 10 (dopadení)** |
+| JUDr. Růžičková           | host. vedoucí  | **den 5 + den 8**               | den 5                                       |
+| Hájek                     | host. vedoucí  | **dny 5–10**                    | den 6                                       |
+| Pavel Konečný (volitelně) | host. vedoucí  | den 5                           | den 6                                       |
+| 2× policisté              | 2 vedoucí      | **den 2, 9, 10**                | —                                           |
 
 ---
 

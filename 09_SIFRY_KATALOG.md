@@ -6,7 +6,7 @@ Tento soubor obsahuje **5 šifer** použitých během hry. Pro každou: **popis,
 
 Šifry jsou **pomocné**, ne hlavní prvek hry. **Většina mladších dětí nepotřebuje umět všechny šifry** — vždy je v týmu starší kadet, který šifru rozluští.
 
-Šifry se objevují v **anonymních dopisech**, které někdo (= "anonymní svědek", ve skutečnosti vedoucí) podstrkuje týmům přes různé kanály (poštou pod dveřmi velitelství, vložené do výslechového protokolu).
+Šifry se objevují v **anonymních dopisech**, které někdo (= "anonymní svědek", ve skutečnosti vedoucí) podstrkuje týmům přes různé kanály (vložením pod plachtu Šéfky, vložené do výslechového protokolu).
 
 ---
 

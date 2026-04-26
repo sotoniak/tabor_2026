@@ -53,7 +53,7 @@ Max **360 bodů** z forenziky.
 | Šifra | První tým | Druhý | Třetí |
 |---|---|---|---|
 | Caesar (D01) | 30 | 20 | 10 |
-| LIPA (D02) | 50 | 30 | 15 |
+| Substituce klíč SVĚTLO (D02) | 50 | 30 | 15 |
 | Číselná (D03) | 30 | 20 | 10 |
 
 Max ~110 bodů (jen pokud první ze všech).
@@ -77,13 +77,13 @@ Max ~60 bodů z výslechů.
 
 ### 6. Soudní řeč (den 11 dopoledne)
 
-Tým má **5 minut** na **závěrečnou shrnující řeč** před celým táborem (= před čtením závěti). Hodnotí Alena, Magdaléna, Konvička.
+Tým má **5 minut** na **závěrečnou shrnující řeč** před celým táborem (= před čtením závěti). Hodnotí Karel Malík, Magdaléna Růžičková, Marek Stanislav.
 
 Max **100 bodů**.
 
 ### 7. Speciální postřehy (individuální body)
 
-Každé dítě, které **přinese důležitý postřeh**, dostane **1–10 individuálních bodů**. (Vedoucí týmu hlásí Aleně.) Tyto body **se zapíší týmu i kategorii dítěte**.
+Každé dítě, které **přinese důležitý postřeh**, dostane **1–10 individuálních bodů**. (Vedoucí týmu hlásí Karlu Malíkovi.) Tyto body **se zapíší týmu i kategorii dítěte**.
 
 Max ~50 bodů na dítě + týmu.
 
@@ -106,11 +106,11 @@ Max ~50 bodů na dítě + týmu.
 
 ## Bodovací tabule (centrální)
 
-V jídelně visí **velká tabule** (papír A1, fixy):
+V altánu nebo v jídelně pod plachtou visí **velká tabule** (papír A1, fixy):
 
 ```
 ═══════════════════════════════════════════════════════════
-   AKADEMIE STARÁ LÍPA — BODOVACÍ TABULE
+   AKADEMIE TÁBORA SVĚTLO — BODOVACÍ TABULE
 ═══════════════════════════════════════════════════════════
                               D2  D3  D4  D5  D6  D7  D8  D9  D10  D11  TOTAL
    ───────────────────────────────────────────────────────
@@ -142,7 +142,7 @@ V jídelně visí **velká tabule** (papír A1, fixy):
 ═══════════════════════════════════════════
    DEN  POSTŘEH/STOPA              BODY
    ───  ─────────────────────────  ────
-   D2  všimla si rosy na schodech  +5
+   D2  všimla si rosy na zemi      +5
    D4  rozluštila Caesar šifru     +30
    D6  ...
 ═══════════════════════════════════════════
@@ -195,7 +195,7 @@ Pro **velitele týmu** (= obvykle K3), který **vedl tým nejlépe** (klima, koo
 Tým s **nejvíc body celkově** vyhrává:
 - **Stan Deluxe** na poslední noc (lepší stan, peříčka, lampičky, malý dárek za chýši)
 - **Týmový pohár** (lze vyrobit nebo koupit)
-- **Týmový certifikát**: "Nejlepší vyšetřovací tým, akademie 2025"
+- **Týmový certifikát**: "Nejlepší vyšetřovací tým, akademie 2026"
 
 ### Speciální týmové ceny (5–6)
 
@@ -257,7 +257,7 @@ Tichý, soustředěný tým má **stejnou šanci**. Hluk a křik **NESOUVISÍ s 
 
 ### 3. Konkrétní viny pachatele
 
-Kdo "uhádl" Drábka první, **nemá víc bodů**. Po dni 9 to **každý ví**.
+Kdo "uhádl" Aleše první, **nemá víc bodů**. Po dni 9 to **každý ví**.
 
 ### 4. Vztahy mezi kadety mimo hru
 
@@ -269,7 +269,7 @@ Kdo "uhádl" Drábka první, **nemá víc bodů**. Po dni 9 to **každý ví**.
 
 ### Denní
 
-Každý den po **odpolední poradě** (17:00) **vedoucí redakce** zapíše body. **Nezveřejňuje se**, dokud tabule není **podepsaná Alenou** (ta to potvrdí).
+Každý den po **odpolední poradě** (17:00) **vedoucí redakce** zapíše body. **Nezveřejňuje se**, dokud tabule není **podepsaná Karlem Malíkem** (ten to potvrdí).
 
 ### Po dni 6
 
@@ -289,7 +289,7 @@ V **16:00** kompletní vyhlášení podle tohoto souboru (= sekce "Týmové ceny
 
 ### Tip 1: Pomocná tabulka pro hodnotitele
 
-Vedoucí stanoviště nebo výslechového kola **má předem tabulku** s **kategoriemi 1–10**, do kterých zapisuje. Po skončení **secretary** body sumuje a předá Aleně.
+Vedoucí stanoviště nebo výslechového kola **má předem tabulku** s **kategoriemi 1–10**, do kterých zapisuje. Po skončení **secretary** body sumuje a předá Karlu Malíkovi.
 
 ### Tip 2: Diskrétní bodování
 
@@ -315,4 +315,4 @@ Při vyhlašování **každé cenu jmenovat zvlášť**, **pauza, potlesk**. **S
 
 **Nikdy v finále nezapomenout:** **každý kadet dostává dědický list**. **To je jeho cena za týden vyšetřování.**
 
-**Body jsou jen pro motivaci.** Skutečná odměna je **být součástí Tábora Stará Lípa**.
+**Body jsou jen pro motivaci.** Skutečná odměna je **být součástí Tábora Světlo**.

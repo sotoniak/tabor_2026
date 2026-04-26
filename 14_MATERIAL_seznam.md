@@ -28,10 +28,10 @@ Kompletní seznam materiálu pro celotáborovou hru "30 let: Případ ztracené 
 |---|---|---|---|---|
 | Táborový průkaz vyšetřovatele (A6, laminát) | 45 | 8 Kč | 360 Kč | Šablona v `sablony/` |
 | Šňůrka na krk | 45 | 10 Kč | 450 Kč | |
-| **Dědický list** (A4, ozdobný papír 120 g) | 50 | 12 Kč | 600 Kč | KLÍČOVÝ ARTEFAKT, +rezerva 5 |
+| **Dědický list** (A4, ozdobný papír 120 g) | 60 | 12 Kč | 720 Kč | KLÍČOVÝ ARTEFAKT, +rezerva |
 | Pečetní vosk + razítko (logo tábora) | 1 sada | 350 Kč | 350 Kč | Použití u dědických listů |
-| Stuha k dědickému listu (zlatá, 30 cm) | 50 | 4 Kč | 200 Kč | |
-| **Mezisoučet individuální** | | | **1 960 Kč** | |
+| Stuha k dědickému listu (zlatá, 30 cm) | 60 | 4 Kč | 240 Kč | |
+| **Mezisoučet individuální** | | | **2 120 Kč** | |
 
 ---
 
@@ -41,14 +41,15 @@ Kompletní seznam materiálu pro celotáborovou hru "30 let: Případ ztracené 
 |---|---|---|---|
 | Razítkovací polštářek černý | 2 | 60 Kč | 120 Kč |
 | Karty na otisky (čtverečkovaný papír A6) | 100 | 1 Kč | 100 Kč |
-| Vlasy z paruky (vzorky) | 1 sada | 100 Kč | 100 Kč |
-| Mikroskop / lupa s LED | 2 | 200 Kč | 400 Kč |
-| Identikit — listy s rysy obličeje (oči, nos, ústa, vlasy) | 1 sada | 150 Kč | 150 Kč |
+| Vlasy / vlákna z paruky a kožené rukavice (vzorky) | 1 sada | 100 Kč | 100 Kč |
+| Mikroskop / lupa s LED (na baterky) | 2 | 200 Kč | 400 Kč |
+| Identikit — listy s rysy obličeje (oči, nos, ústa, vlasy, vousy) | 1 sada | 150 Kč | 150 Kč |
 | Sádrový prášek (na odlitky stop) | 2 kg | 80 Kč | 160 Kč |
 | Vzorky bot (3 různé podrážky — papírové otisky) | 1 sada | 50 Kč | 50 Kč |
 | Listy s rukopisem (8 vzorků grafologie) | 1 sada | 30 Kč | 30 Kč |
 | Fotoaparát / mobil pro fotodokumentaci | táborový | 0 Kč | 0 Kč |
-| **Mezisoučet forenzika** | | | **1 110 Kč** |
+| Roušky pro děti (proti sádrovému prachu) | 50 | 2 Kč | 100 Kč |
+| **Mezisoučet forenzika** | | | **1 210 Kč** |
 
 ---
 
@@ -56,20 +57,20 @@ Kompletní seznam materiálu pro celotáborovou hru "30 let: Případ ztracené 
 
 | Položka | Počet | Cena | Poznámka |
 |---|---|---|---|
-| Falešná závěť (padělek) — formulář, razítka, podpisy | 1 | 50 Kč | Tisk na ozdobný papír, viz `sablony/zavet_zakladatele.md` |
-| **Pravá závěť** — pergamenový papír, pečeť, šňůra | 1 | 200 Kč | Hlavní artefakt |
-| Trezor (lze nahradit uzamykatelnou plechovou krabicí) | 1 | 800 Kč | Nebo táborová pokladna |
-| Klíče (3 ks — kopie, jeden „ztracený") | 3 | 50 Kč | |
-| Rukavice (otisky pro kuchařku Marii — alibi) | 1 | 30 Kč | |
-| Páčidlo (rekvizita, plastové) | 1 | 100 Kč | |
-| Bota velikost 44 (stará, na otisk v hlíně) | 1 | 0 Kč | Z táborových zásob |
-| Vzorek hlíny + lesní bahno (Drábkovy boty den 9) | — | 0 Kč | Příroda |
-| Tužka s nápisem „PK" | 1 | 20 Kč | Klíčová stopa F12 |
-| Vlas blond (z paruky) | — | 50 Kč | Falešná stopa F10 |
-| 300 000 Kč v dobových obálkách (papírové „peníze") | 1 | 50 Kč | Drábkův úplatek (rekvizita) |
-| Obálka s razítkem „K rukám pana Konvičky" | 1 | 10 Kč | |
-| Mobil — videovzkaz nahraný předem | táborový | 0 Kč | Ráno den 7 |
-| **Mezisoučet rekvizity** | | | **1 360 Kč** |
+| Falešná závěť (padělek) — formulář, razítka, podpisy | 1 | 50 Kč | Tisk na ozdobný papír, viz `sablony/zavet_zakladatele.md`. **BEZ pečetního vosku** (klíčový rozdíl) |
+| **Pravá závěť** — pergamenový papír, červený pečetní vosk, zelená stuha | 1 | 200 Kč | Hlavní artefakt |
+| **Dodatek smlouvy s Mendelovou univerzitou** (rekvizita) | 1 | 50 Kč | Příloha pravé závěti — 2 strany A4, formálně psané, datum 12. 6. 2026 |
+| **Dřevěná truhla s mapami** (rekvizita) | 1 | 0 Kč (z táborových zásob) | Šéfka — bez zámku, jen víkem |
+| Klíče k Šéfce (3 ks — symbolicky) | 3 | 50 Kč | Plachta Šéfky se rozvazuje, ne odemyká |
+| **Kožené rukavice** (Stehlíkovy — rekvizita) | 1 pár | 100 Kč | Z nich F10 vlákno |
+| **Bota velikost 44 — kožená** (stará, na otisk v rose) | 1 | 0 Kč | Z táborových zásob nebo bazaru |
+| **Dýmka + zvláštní směs tabáku** (rekvizita F12) | 1 | 200 Kč | Pipe tobacco s rozeznatelnou vůní |
+| Vzorek lesního bahna ze Stehlíkovy louky (jíl, šedý odstín) | — | 0 Kč | Příroda |
+| **30 000 Kč v dobových obálkách** (papírové „peníze") | 1 | 30 Kč | Stehlíkův úplatek pro Aleše (rekvizita) |
+| Obálka „Pro Marka Stanislava" | 1 | 10 Kč | |
+| Mobil — audio/dopis vzkaz nahraný předem | táborový | 0 Kč | Den 7 — bez elektřiny v táboře, přehrávač na baterky |
+| Pickup Stehlíka (Toyota Hilux nebo Mitsubishi L200) | 1 | — | Auto vedoucího v roli, ne třeba kupovat |
+| **Mezisoučet rekvizity** | | | **1 040 Kč** |
 
 ---
 
@@ -79,7 +80,7 @@ Kompletní seznam materiálu pro celotáborovou hru "30 let: Případ ztracené 
 |---|---|---|---|
 | Tisky šifer (laminované karty A6) | 30 | 5 Kč | 150 Kč |
 | Caesarovy disky (papírové, lze i z kartonu) | 6 | 15 Kč | 90 Kč |
-| Klíčový list LIPA (substituční tabulka) | 6 | 5 Kč | 30 Kč |
+| Klíčový list SVĚTLO (substituční tabulka) | 6 | 5 Kč | 30 Kč |
 | Morseovka — referenční karta | 6 | 5 Kč | 30 Kč |
 | **Mezisoučet šifry** | | | **300 Kč** |
 
@@ -102,11 +103,11 @@ Kompletní seznam materiálu pro celotáborovou hru "30 let: Případ ztracené 
 |---|---|---|---|
 | Slavnostní stuhy (modrá, červená — finalisté) | 6 | 30 Kč | 180 Kč |
 | Diplomy (A4 ozdobné) | 50 | 8 Kč | 400 Kč |
-| **Pamětní mince „30 let Stará Lípa"** | 50 | 25 Kč | 1 250 Kč |
+| **Pamětní mince „30 let Tábora Světlo"** | 60 | 25 Kč | 1 500 Kč |
 | Stan Deluxe — putovní cena (samolepka/cedule) | 1 | 100 Kč | 100 Kč |
 | Občerstvení slavnostní oheň (špekáčky, chleba) | — | táborové | 0 Kč |
 | Zápis do **Knihy 30 let** (kožená kniha A4) | 1 | 600 Kč | 600 Kč — ZÁSTAVA pro tábor |
-| **Mezisoučet finále** | | | **2 530 Kč** |
+| **Mezisoučet finále** | | | **2 780 Kč** |
 
 ---
 
@@ -127,17 +128,17 @@ Kompletní seznam materiálu pro celotáborovou hru "30 let: Případ ztracené 
 | Kategorie | Cena |
 |---|---|
 | A. Týmový materiál | 3 150 Kč |
-| B. Individuální (vč. dědických listů) | 1 960 Kč |
-| C. Forenziku | 1 110 Kč |
-| D. Rekvizity | 1 360 Kč |
+| B. Individuální (vč. dědických listů) | 2 120 Kč |
+| C. Forenzika | 1 210 Kč |
+| D. Rekvizity | 1 040 Kč |
 | E. Šifry | 300 Kč |
 | F. Noviny | 232 Kč |
-| G. Finále | 2 530 Kč |
+| G. Finále | 2 780 Kč |
 | H. Rezerva | 750 Kč |
-| **CELKEM** | **11 392 Kč** |
+| **CELKEM** | **11 582 Kč** |
 
-> **Reálný rozpočet po využití táborových zásob:** cca **8 000 – 9 000 Kč**.
-> Klíčové investice (které neuškrtit): **dědické listy (600 Kč)**, **pečetní vosk + razítko (350 Kč)**, **pamětní mince (1 250 Kč)**, **pravá závěť (200 Kč)** a **Kniha 30 let (600 Kč)** — to jsou artefakty, které dělají z hry zážitek.
+> **Reálný rozpočet po využití táborových zásob:** cca **8 500 – 9 500 Kč**.
+> Klíčové investice (které neuškrtit): **dědické listy (720 Kč)**, **pečetní vosk + razítko (350 Kč)**, **pamětní mince (1 500 Kč)**, **pravá závěť + dodatek (250 Kč)** a **Kniha 30 let (600 Kč)** — to jsou artefakty, které dělají z hry zážitek.
 
 ---
 
@@ -159,14 +160,16 @@ Kompletní seznam materiálu pro celotáborovou hru "30 let: Případ ztracené 
 | 2 týdny předem | Forenzní pomůcky, lupa, sádra, mikroskop |
 | 1 týden předem | Tisk šifer, podezřelí (kartičky), průkazy |
 | 3 dny předem | Občerstvení, baterie, drobnosti |
-| Den 1 dopoledne | Závěrečné finišování — pečeť na pravou závěť |
+| Den 1 dopoledne | Závěrečné finišování — pečeť na pravou závěť, příprava dodatku smlouvy |
 
 ---
 
 ## Logistika a uskladnění
 
-- **Trezor s falešnou závětí**: na velitelství, viditelné, klíče u Aleny.
-- **Pravá závěť**: ukrytá v dutině buku u rybníka — vodotěsný sáček, vloží zde vedoucí v noci před zahájením tábora (NE Drábek!).
-- **Dědické listy**: zamčené ve skříni hlavního vedoucího, vyndávají se až den 11 dopoledne.
-- **Rekvizity zločinu (pneumatika, bota, tužka)**: v krabici „NEOTVÍRAT — DEN 1" v kanceláři.
+- **Dřevěná truhla s mapami v Šéfce**: viditelná, bez zámku — Marek do ní den 1 večer před dětmi uloží červenou složku se závětí.
+- **Padělaná závěť**: do truhly se podstrčí v noci (Stehlík během krádeže). **Bez pečetního vosku** = klíčový rozpoznávací znak.
+- **Pravá závěť**: ukrytá v dutině starého buku u potoka — vodotěsný sáček, vloží zde vedoucí **odpoledne 10. 7. 2026** (NE Aleš, NE v noci!).
+- **Dědické listy**: zamčené ve skříňce hl. vedoucího (Karel Malík), vyndávají se až den 11 dopoledne.
+- **Rekvizity zločinu (kožená bota, kožené rukavice, dýmka, popel, 30 000 Kč obálka)**: v krabici „NEOTVÍRAT — DEN 1" v Šéfce.
 - **Pamětní mince**: bezpečně uloženy, vydávají se až při čtení závěti.
+- **Dodatek smlouvy s univerzitou**: u Magdalény Růžičkové v kufříku, den 8 ho ukáže výjezdové skupině v Blansku.
