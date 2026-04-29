@@ -121,7 +121,7 @@ V táboře vycházejí **denní noviny „Lipový list"**. Vydává je **redakč
    lampy v Šéfce.
 
    Stále nejasné jsou alibi některých
-   členů personálu. Zástupce Pavel Malík
+   členů personálu. Zástupce SoTo
    ráno po incidentu odjel terénní dodávkou
    v 5:45 do Jedovnic „pro chleba", ale
    odmítl říci, kam přesně a proč.
@@ -245,7 +245,7 @@ V táboře vycházejí **denní noviny „Lipový list"**. Vydává je **redakč
 
    ───────────────────────────────────────
    ELIMINACE DNES:
-   Pavel Malík — Karel s Aničkou potvrdili
+   SoTo — Karel s Aničkou potvrdili
    poradu v Šéfce + ranní telefonát
    na pohotovost ze signálu „U lípy".
 
@@ -290,7 +290,7 @@ V táboře vycházejí **denní noviny „Lipový list"**. Vydává je **redakč
    být Markova."
 
    ELIMINACE DNES:
-   • Klára Stanislavová — vzdálená
+   • Anežka Kellnerová — vzdálená
      sestřenice po matce, bez dědických
      nároků. NENÍ podezřelá. Magdaléna
      Hamanová vysvětlila rodinné poměry.
@@ -325,7 +325,7 @@ V táboře vycházejí **denní noviny „Lipový list"**. Vydává je **redakč
    ZLOM! MAREK SE PROBUDIL!
 
    Brzy ráno přinesla zdravotnice
-   Magdaléna Hamanová z FN Brno
+   Magda Hamanová z FN Brno
    velkou zprávu:
 
    „PAN STANISLAV SE PROBRAL.
@@ -351,7 +351,7 @@ V táboře vycházejí **denní noviny „Lipový list"**. Vydává je **redakč
    Kdo mu rozvázal zadní rohy plachty?
 
    ELIMINACE DNES:
-   • Magdaléna Hamanová — lékařský
+   • Magda Hamanová — lékařský
      deník s časovými zápisy 23:00,
      23:45, 00:30, 01:15 potvrzuje
      alibi (psala v zdravotce).
@@ -394,7 +394,7 @@ V táboře vycházejí **denní noviny „Lipový list"**. Vydává je **redakč
     DODATKU prodlouženy o dalších 30 let..."
 
    „§ 2. Vedení přebírají Karel Malík
-    a Pavel Malík se stávajícím personálem.
+    a SoTo se stávajícím personálem.
     Tábor se má řídit duchem dobrovolnosti,
     přírody, společenství, žádný zisk."
 
@@ -573,13 +573,14 @@ V táboře vycházejí **denní noviny „Lipový list"**. Vydává je **redakč
    § 1: Tábor pokračuje. Dodatek smlouvy
         s Mendelovou univerzitou prodlužuje
         propůjčení o 30 let.
-   § 2: Vedení přebírají Karel a Pavel
-        Malík + stávající personál.
+   § 2: Vedení přebírají Karel Malík
+        a Tomáš Sotoniak + stávající
+        personál.
         Dobrovolnost. Příroda. Společenství.
         Žádný zisk.
    § 3: Rada tábora — Karel Malík,
-        Pavel Malík, Anička Kellnerová,
-        Magdaléna Hamanová, Jenda,
+        SoTo, Anička Kellnerová,
+        Magda Hamanová, Jenda,
         ALEŠ TOMEK.
 
    Aleš zhroutil se v slzách. Pan Marek

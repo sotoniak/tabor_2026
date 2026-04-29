@@ -20,14 +20,14 @@ Týmy se **NEMĚNÍ** během 11 dní. Toto je **bratrstvo / sesterství** — so
 
 ## 6 týmů (jména a barvy)
 
-| # | Název týmu | Barva | Symbol | Atmosféra |
-|---|---|---|---|---|
-| 1 | **JESTŘÁBI** | modrá | jestřáb | rychlí, ostří |
-| 2 | **VLCI** | šedá | vlk | tichý postup, smečka |
-| 3 | **LIŠKY** | oranžová | liška | chytří, kličkují |
-| 4 | **MEDVĚDI** | hnědá | medvěd | silní, vážní |
-| 5 | **JEZEVCI** | černá | jezevec | důkladní, tvrdošíjní |
-| 6 | **SOJKY** | zelená | sojka | hluční, všímaví |
+| #   | Název týmu   | Barva    | Symbol  | Atmosféra            |
+| --- | ------------ | -------- | ------- | -------------------- |
+| 1   | **JESTŘÁBI** | modrá    | jestřáb | rychlí, ostří        |
+| 2   | **VLCI**     | šedá     | vlk     | tichý postup, smečka |
+| 3   | **LIŠKY**    | oranžová | liška   | chytří, kličkují     |
+| 4   | **MEDVĚDI**  | hnědá    | medvěd  | silní, vážní         |
+| 5   | **JEZEVCI**  | černá    | jezevec | důkladní, tvrdošíjní |
+| 6   | **SOJKY**    | zelená   | sojka   | hluční, všímaví      |
 
 (Lze použít i jiná jména podle tradice tábora — např. družiny tábora, atd.)
 
@@ -168,20 +168,32 @@ Vedoucí na základě **přihlášek** rozdělí 45 dětí na 6 týmů. **Algori
 
 ---
 
-## Vedoucí týmů
+## Vedoucí týmů — konkrétní obsazení
 
-Každý ze 6 týmů má **svého vedoucího** (vedoucí tábora, mladý, 18–25). Vedoucí týmu je **trenér, ne velitel** — **nikdy** neříká dětem řešení, jen **navádí**:
+Každý ze 6 týmů má **svého vedoucího + asistenta** (kromě nejstaršího týmu Sojek). Vedoucí týmu je **trenér, ne velitel** — **nikdy** neříká dětem řešení, jen **navádí**:
 
 - Podporuje **diskusi** v týmu (mladší se nestydí)
 - Zajišťuje, že **rotace rolí funguje** (mladší taky musí být velitel jednou)
 - **Nezasahuje** do vyšetřování — to je dílo dětí
 - **Dohlíží na bezpečnost** — pokud někdo **chce odejít** ze hry, **respektuje to**
 
+### Konkrétní obsazení 6 týmů
+
+| Tým | Barva | Vedoucí týmu | Asistent | Specifika role |
+|---|---|---|---|---|
+| **Jestřábi** | modrá | **Klárka Malíková** (18) | **Vája** (18) | Klárka má rodinný insider info (dcera Karla); Vája jako sociální tmel |
+| **Vlci** | šedá | **Lucka Malíková** (18) | **Lucka Ravasová** (18) | Lucka M. konfrontuje SoTa; Lucka R. analyticky luští šifry |
+| **Lišky** | oranžová | **Alča** (18) | **Jeník** (18) | Alča vede mladší kadety (7–9); Jeník přinese stopu pneumatiky z turistiky |
+| **Medvědi** | hnědá | **Martin** (18) | **Martina** (18) | Martin "v oblacích" — uvědomí si později; Martina drží disciplínu |
+| **Jezevci** | černá | **Pavel „Preclík" Malík** (28) | **Ondra** (18) | Preclík veselý + komická stopa s koláčem; Ondra v honičce simuluje zranění |
+| **Sojky** | zelená | **Tom Buchta** (28) | (sám) | Nejstarší kadeti, samostatní; Tom v honičce + housle ve finále |
+
 ### Předem připravit pro vedoucí týmů
 
 - Každý si **přečte 03 (suspekti) + 02 (linie)** PŘED táborem, aby věděl
 - Naučit se **odpovídat "nevím" / "to je tvůj úkol"** dětem
 - **Nezdráhat se podpořit slabší kadety** soukromě (mladší, kteří mají strach mluvit)
+- Vedoucí, kteří mají vlastní stopu (Klárka — S22, Lucka R. — S23, Jeník — S24, Adriana — R02), si **přečtou svou exkluzivní stopu** a vědí, **kdy ji do týmu vnesou**
 
 ---
 

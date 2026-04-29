@@ -9,10 +9,11 @@
 | Čas | Co se děje |
 |---|---|
 | 07:30 – 08:30 | Snídaně |
-| 08:30 – 09:00 | **Mimořádný nástup** — Magdaléna H. oznámí: pan Marek se probudil! |
+| 08:30 – 09:00 | **Mimořádný nástup** — Magda oznámí: pan Marek se probudil! |
 | 09:00 – 10:00 | **VZKAZ OD MARKA** (přečtení / poslechnutí / promítnutí) |
 | 10:00 – 11:00 | Týmy diskutují vzkaz, plánují další kroky |
-| 11:00 – 12:00 | **Eliminace Magdalény Hamanové + Jendy** |
+| 11:00 – 11:30 | **Eliminace Magdy + Jendy + Adriany** |
+| 11:30 – 12:00 | **SoTo začne mluvit** — vysvětlí noční misi do Brna (S13). Páter Lacina potvrdí Santanu v 3:30 (S20). |
 | 12:00 – 13:00 | Oběd |
 | 13:00 – 14:00 | Klid ve stanech |
 | 14:00 – 16:30 | **ETAPOVÁ HRA č. 6: Velké hledání ukrytých indicií** (po celém táboře a okolí) |
@@ -26,11 +27,11 @@
 
 ## Příběh dne (z pohledu dětí)
 
-Ráno **Magdaléna Hamanová** přijde z lesní cesty „U lípy" (kde má signál) a na nástupišti zazáří:
+Ráno **Magda Hamanová** přijde z lesní cesty „U lípy" (kde má signál) a na nástupišti zazáří:
 
 > „Týmy! Mám pro vás úžasnou zprávu. **Pan Marek se v noci probudil!** Lékaři ve FN Brno říkají, že je v pořádku — paměť má, mluví, jí. Otřes mozku zvládá. Bude tam ještě 4 dny, než se zotaví zcela. **A natočil pro vás vzkaz**. Přivezla mi ho na flashce zdravotní sestra ráno z Brna. Sledujte."
 
-Karel s Pavlem **přečtou Markův vzkaz** dětem (vzkaz je v dvojí formě: papírový dopis + krátká audio nahrávka, kterou pustí přes přenosný reproduktor na baterky — tábor nemá elektřinu, ale baterky stačí). Některé tábory raději vzkaz **nahlas přečte Karel** — emoce jsou silnější než reproduktor.
+**Karel přečte Markův vzkaz nahlas dětem** (papírový dopis přivezený autem ráno z FN Brno). Karel vystupuje **jako sám sebe** — bez kostýmu Marka. Děti to přijmou: „Karel nám čte, co napsal pan Marek." Volitelně: krátká audio nahrávka Markova hlasu (Karel se nahraje předem v jiné intonaci) přes přenosný reproduktor na baterky. Doporučená varianta — **papírový dopis čtený Karlem** — je v hře plně dostatečná a emocionálně silnější.
 
 ---
 
@@ -62,6 +63,8 @@ Karel s Pavlem **přečtou Markův vzkaz** dětem (vzkaz je v dvojí formě: pap
 >
 > Závěť **má Vladimír**. Nebo ji někde schoval. Vladimír neměl odvahu si ji nechat doma — věděl by, že po něm budou pátrat. **Schoval ji někde po cestě domů.** Lesní cesta vede ze Šéfky kolem **potoka, kolem starého buku**, k samotě. **Hledejte u toho, co je tam staré. U toho, co stálo, když jsem v 1997 postavil první stan.**
 >
+> A ještě jeden zvláštní vzkaz, prosím vás. **Pro Tomáše Sotoniaka.** Tomáši — **můžeš to říct**. Já ti to dovoluji. Já to ráno všem vysvětlím sám, ale teď je čas. **Promluv s nimi.** Vy, děti, **se Tomáše ptejte. On vám odpoví.** Křivdili jste mu — nebylo to vaše vina, ale teď je to napravené.
+>
 > A poslední: **moje závěť obsahuje překvapení**. § 4 a § 5. Až ji najdete — **přečtu vám ji sám**. Den 21. července, jestli mě ještě budete chtít.
 >
 > Děkuji vám, děti. Pomáháte tábor. Pomáháte mně. **Buďte trpěliví. Pravda chce čas. A láska chce odpuštění.**
@@ -80,21 +83,44 @@ Po vzkazu je **ticho**. Některé děti pláčou. Vedoucí je objímají.
 
 ---
 
-## Klíčový moment dne 1: Eliminace Magdalény Hamanové (11:00)
+## Klíčový moment dne 1: Eliminace Magdy Hamanové (11:00)
 
 Po vzkazu Karel oznámí:
 
-> „Týmy, **Magdaléna Hamanová** mi dnes ráno doložila svůj **lékařský deník** — papírový, s časovými údaji. Záznam z 11. 7. zaplnila ručně mezi 22:30 a 00:55: pět zápisů, každý s časem, popisem zdravotního stavu dětí (alergii Tomáše K1, drobnou tržnou ránu Anny K2 atd.). Datace je věrná, nepřepisovaná. **Magdaléna celou noc psala v zdravotce.** **Vyloučena.**"
+> „Týmy, **Magda Hamanová** mi dnes ráno doložila svůj **lékařský deník** — papírový, s časovými údaji. Záznam z 11. 7. zaplnila ručně mezi 22:30 a 00:55: pět zápisů, každý s časem, popisem zdravotního stavu dětí (alergii Tomáše K1, drobnou tržnou ránu Anny K2 atd.). Datace je věrná, nepřepisovaná. **Magdaléna celou noc psala v zdravotce.** **Vyloučena.**"
 
-> Děti vidí, že **Magdaléna nelhala** — jen chránila zákonem chráněné lékařské zápisy a nechtěla deník otevírat publikem. Den 7 je doložila tedy v zužených podmínkách (Karel + Pavel + Růžičková telefonem).
+> Děti vidí, že **Magda nelhala** — jen chránila zákonem chráněné lékařské zápisy a nechtěla deník otevírat publikem. Den 7 je doložila tedy v zužených podmínkách (Karel + SoTo + Růžičková telefonem).
 
 ---
 
-## Klíčový moment dne 2: Eliminace Jendy (11:30)
+## Klíčový moment dne 2: Eliminace Jendy + Adriany (11:15)
 
 Karel pokračuje:
 
-> „**Jenda** — náš zásobovač. Den 4 nám ukázal **stopu pneumatiky pickupu** na lesní cestě. Tehdy jsme to brali jako svědectví. Teď se ukazuje, že **stopa byla ze Stehlíkova pickupu, ze dne 11. 7., kdy Stehlík dovezl Alešovi materiál na opravu** (banální logistika, kterou Aleš dokládá). **Jenda je tedy svědek, ne pachatel ani pomocník.** Nemá motiv — Marka znal 18 let, vážil si ho. Spal sám, bez svědků, ale **nemá motiv ani prostředky**. **Vyloučen.**"
+> „**Jenda + Adriana** — zásobovači. Den 4 nám ukázali **stopu pneumatiky pickupu** na lesní cestě. Teď víme, že to byl **Stehlíkův pickup z noci 11.→12. 7.** (Markovo svědectví potvrzuje). **Spali společně ve stanu** — vzájemná alibi. Žádný motiv. **Oba vyloučeni.**"
+
+## Klíčový moment dne 2b: SoTo konečně mluví (11:30)
+
+Karel se obrátí k SoTovi:
+
+> **Karel**: „Tomáši, slyšel jsi Marka. ‚Můžeš to říct.' Tak nám to řekni."
+>
+> **SoTo** (zhluboka se nadechne): „Děti. Marek mě den 1 odpoledne, krátce před zahájením, vzal stranou. **Požádal mě, abych mu v noci tajně dovezl z jeho pracovny v Brně kopii dodatku smlouvy s Mendelovou univerzitou — s podpisem.** Notářka Růžičková ji potřebovala pro archiv. Marek mi kladl mlčet, dokud ji nemá v rukou.
+> **Vyrazil jsem v 0:45 Santanou**. V Brně jsem byl ve 2:30. Vyzvedl dodatek z Markova bytu (klíče mám). Vrátil jsem se v 5:00. **Auto stálo na jiném místě**, protože jsem přejížděl, abych nevyrušil Adrianu a Jendu. Ráno přicházím — a Marek leží v lese, závěť zmizela. **Nemohl jsem ho zeptat, jestli můžu mluvit. Tak jsem mlčel. Vám se to musí jevit jako přiznání. Mně se to po těch dnech jevilo jako vězení.** Dnes Marek řekl: ‚Můžeš to říct.' **Tak vám to říkám.**"
+
+> **SoTo dále:** „**Dodatek mám v Santanu v aktovce.** Můžete ho vidět. Notářka v Blansku ho má od ráno 12. 7. **Pokud nevěříte mně, věřte jí — den 8 ji navštívíte a ona to potvrdí.**"
+
+Některé děti **prohledají Santana** s SoTovou pomocí. **Najdou aktovku s dokumentem** — ofotí, opíší. **Klíčový důkaz S13.**
+
+## Klíčový moment dne 2c: Páter Lacina potvrdí (11:45)
+
+V téže chvíli **Páter Lacina** (telefonem ze své farnosti — odpoledne 12. 7. byl v táboře, dnes telefonuje):
+
+> **Páter Lacina**: „Karle, já to ještě připomenu, vy ráno o tom nevíte. **Já jsem v noci z 11. na 12. 7. jel z Jedovnic do Vyškova na pohřební obřad. Cestou v Brně, na Olomoucké ulici, asi v 3:30, mě míjela Santana s českou poznávačkou. Já jsem si všiml, protože jsem viděl Tomáše Sotoniaka za volantem — známe se ze sboru, pozdravili jsme se očima. Šel směrem od Brna**. Říkám to teď, když mi to Karel ráno vysvětlil."
+
+> **S20** zaznamenáno: **Páter potvrdil Santanu ve směru z Brna v 3:30 ráno**. Poslední puzzle před kompletní eliminací den 8.
+
+> **Děti reagují různě:** některé okamžitě SoTovi věří, jiné ho dál podezírají („pořád to může být lež, jen lépe vyprávěná"). **Karel říká:** „Definitivní eliminace přijde **až den 8 v Blansku**, kdy paní notářka osobně potvrdí. **Do té doby Tomáš zůstává v širším okruhu, ale s vážně oslabeným podezřením.**"
 
 Z širšího okruhu zbývají **Aleš Tomek + Vladimír Stehlík**. Stehlík je teď z Markova vzkazu **přímo jmenovaný pachatel**. Aleš je **přímo jmenovaný pomocník** (i když „mám tušení" — ne přiznání).
 
@@ -126,7 +152,7 @@ Děti křičí: „**Stařík! Starý buk!**"
    - **F15a (předzvěst)**: na Alešových pracovních botách (gumovky) — **šedavý jíl, neobvyklý odstín**. Aleš sám vysvětluje: „chodím všude po lese, různé bahno." Tým si vzorek odebere. Skutečný význam vyjde najevo den 8 (porovnání se Stehlíkovou loukou).
 3. **Stan zakladatele vedle Šéfky** (s povolením Karla). Tým hledá:
    - **Markův osobní deník z červnového pobytu** (Marek si zapisoval dojmy). V deníku zápis z 28. 6. 2026: „**Vladimír mě dnes potkal u plotu samoty. Mluvil o louce. Říkal, že kdyby tábor odešel, on by ji měl. Něco se mu nezdá.**" — **MOTIV — POPRVÉ VYŘČEN**.
-4. **Knihovna Šéfky / nástěnka historie**: tým hledá rodokmen Stanislavových (uložený v matrice 1997). **Marek**: zakladatel, žije sám, žádní přímí dědicové. Klára je vzdálená sestřenice (vyloučena). **Žádný osobní motiv u rodiny.**
+4. **Knihovna Šéfky / nástěnka historie**: tým hledá rodokmen Stanislavových (uložený v matrice 1997). **Marek**: zakladatel, žije sám, žádní přímí dědicové. SoTo je vzdálený synovec (krevní pouto, ale závěť jde mimo rodinu — eliminace pokračuje den 8). **Žádný osobní motiv u rodiny.**
 5. **Místo „U lípy" na lesní cestě** (300 m od tábora, kde je signál mobilu). Tým hledá:
    - **F09 (rozšíření)**: druhý otisk pneumatiky pickupu, ale tentokrát **menší, slabší** — možná z jiné jízdy nebo ze stejné. Tým fotí, měří.
 6. **Ohniště + okolí**: tým hledá vyhořelé větvičky a zbytek. Najde **kousek hořící dýmky** — opálený, ne ze Šéfky. **Stehlík tedy dýmkoval i venku?** Pravděpodobně předevčírem při návštěvě (= 14:00–16:00 den 5). Falešná stopa, ale děti ji zaznamenají.
@@ -192,8 +218,11 @@ Děti křičí: „**Stařík! Starý buk!**"
 | F15a | Šedavý jíl na Alešových gumovkách | **Aleš byl v lese na nějaké specifické louce** (vyjasní se den 8) |
 | Otisky bot 44 u potoka | Stehlík tudy šel | Trasa zločinu potvrzena |
 | Šátek V. S. | Stehlíkův kapesník na trnové větvi | Stehlík tudy šel pěšky |
-| Magdaléna eliminována | Lékařský deník | — |
-| Jenda eliminován | Žádný motiv, svědek | — |
+| Magda eliminována | Lékařský deník | — |
+| Jenda + Adriana eliminováni | Vzájemná alibi, žádný motiv | — |
+| **S13** | SoTův příběh o noční misi do Brna | Hlavní rudá stopa značně oslabena |
+| **S20** | Páter Lacina viděl Santanu v 3:30 v Brně | Podpora SoTova příběhu |
+| **Dodatek smlouvy v Santanu** | Hmotný důkaz SoTova příběhu | Připravuje eliminaci den 8 |
 
 ---
 
@@ -202,12 +231,14 @@ Děti křičí: „**Stařík! Starý buk!**"
 | Postava | Aktivita |
 |---|---|
 | **Marek Stanislav** | **Ve vzkazu** — předem natočeno (audio) nebo přečteno Karlem |
-| Karel Malík, Pavel Malík | Vedení dne, oznámení o vzkazu |
-| Magdaléna H. | Doloží lékařský deník — eliminována |
-| Anička | V kuchyni, slyšela vzkaz, dojatá |
+| Karel Malík | Vedení dne, oznámení o vzkazu |
+| **SoTo** | **Konečně mluví o noční misi** — emocionální moment uvolnění |
+| Magda | Doloží lékařský deník — eliminována |
+| Anička, Anežka | V kuchyni, slyšely vzkaz, dojaté |
 | **Aleš Tomek** | **Tlak silný** — drží se. „Bolela mě záda, šel jsem se projít." Děti vidí, že je nervózní. |
-| Jenda | Vyloučen — alibi pro pickup (dovoz materiálu od Stehlíka), normální zásobovací aktivity |
-| Klára | Pomáhá v kuchyni, dnes klidnější (vyloučena včera) |
+| Jenda + Adriana | Vyloučeni — vzájemná alibi |
+| Preclík, Tom Buchta, instruktoři | Vedení oddílů, podpora vyšetřování |
+| **Páter Lacina** | Telefonát s potvrzením Santany v 3:30 |
 | Stehlík | **Není v táboře** — na samotě, „pracuje doma." Děti vědí, že je hlavní podezřelý, ale nesmí mu to dát najevo |
 
 ---

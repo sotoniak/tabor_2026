@@ -61,7 +61,7 @@ V Rakoveckém údolí jsou letos **tři další tábory**:
 
 ### Marek Stanislav — zakladatel tábora (cca 60+)
 
-**Hraje:** **skutečný zakladatel tábora**, pokud žije a souhlasí, **nebo** **důstojný host** — ideálně někdo, kdo s táborem dlouhodobě souvisí (rodič dlouholetého účastníka, bývalý vedoucí, vážený přítel tábora) a má autoritu i hereckou schopnost.
+**Hraje:** **Karel Malík v dvojí roli** — Karel kostýmovou změnou (sako, čepice, vycházková hůl, šedavé vousy lepené, pomalejší tempo, hlubší klidný hlas) přechází mezi sebou samým (hl. vedoucí, dny 1–12) a Markem Stanislavem (zakladatel, **jen den 1 večer + den 11 odpoledne**). Detail v `04_ROLE_OBSAZENI.md` sekce „Logistika dvojí role Karel/Marek".
 
 - **Vzhled:** podle skutečnosti; pro hru si nechte „autentický look" — pohodlné venkovní oblečení, čepice, hůl ne, ale přírodní vzhled.
 - **Charakter:** klidný, vlídný, ale zásadový. Mluví pomalu, vážně, s úctou k lesu a táboru.
@@ -72,23 +72,26 @@ V Rakoveckém údolí jsou letos **tři další tábory**:
   - **Den 11** — návrat na finále, čte závěť osobně.
 - **Funkce v příběhu:** **oběť útoku/pádu** + **autor závěti** + **finálová klíčová postava**.
 
-### Karel Malík — hlavní vedoucí (cca 45+)
+### Karel Malík — hlavní vedoucí (44) + DVOJÍ ROLE: Marek Stanislav
 
-**Hraje:** **skutečný hlavní vedoucí**, hraje sám sebe + drobné dramatické rozšíření.
+**Hraje:** **skutečný hlavní vedoucí Karel**, hraje sám sebe + **také hraje zakladatele Marka Stanislava** v dvojí roli (kostýmovou změnou jen den 1 večer + den 11 odpoledne). Mezi den 1 a den 11 je Marek „v FN Brno" — Karel hraje pouze sám sebe. Detail viz `04_ROLE_OBSAZENI.md` sekce „Logistika dvojí role Karel/Marek".
 
 - **Charakter:** jak v reálu — autoritativní, ale přístupný, organizátor.
-- **Ve hře:** **NEvinný**. V noci 11. → 12. má **alibi** (po slavnostním zahájení byl s Pavlem Malíkem v Šéfce na poradě, plánovali další den; pak spal ve svém stanu). Alibi není vidět hned — vyplyne z výslechů Pavla a kuchařky Aničky, která je viděla ze své stanice.
+- **Rodina:** otec dvou dospívajících dcer (Klárka a Lucka Malíkovy, obě 18, instruktorky). S Pavlem „Preclíkem" Malíkem (vedoucí oddílu) sdílí pouze příjmení — žádný příbuzenský vztah.
+- **Ve hře:** **NEvinný**. V noci 11. → 12. má **alibi** (po slavnostním zahájení byl se SoTou v Šéfce na poradě, plánovali další den; pak spal ve svém stanu). Alibi částečně potvrzuje Anička.
 - **V první polovině hry** je **podezřelý** — jakožto budoucí potenciální správce tábora by mohl mít motiv. Účastníci ho prošetří.
 - **Klíčový spojenec účastníků** od dne 5 dále — koordinuje vyšetřování, svolává nástupy, komunikuje s policií.
 
-### Pavel Malík — zástupce hlavního vedoucího (cca 40+)
+### Tomáš „Tony" Sotoniak — zástupce hlavního vedoucího (42, HLAVNÍ rudá stopa)
 
-**Hraje:** **skutečný zástupce**, hraje sám sebe.
+**Hraje:** **skutečný zástupce SoTo**, hraje sám sebe.
 
-- **Vztah ke Karlu Malíkovi:** **bratr** (rodinné spojení = pikantní pro vyšetřovatele).
-- **Charakter:** klidnější než Karel, technický, programátor etap, řidič.
-- **Ve hře:** **NEvinný**. V noci 11. → 12. spal ve svém stanu po poradě s Karlem. Alibi částečně potvrzuje Anička.
-- **Důvod podezření:** hned ráno po zločinu jezdí autem do Jedovnic „pro chleba" — některé týmy si všimnou, že **odjíždí v 5:45**, kdy by ráno chleba ještě nebyl k dispozici. (Pavel skutečně jel jen k signálu zavolat na pohotovost a domluvit záchranku — tehdy ještě nikdo nevěděl, že záchranka už dorazila Aleninou rukou. Komunikační šum při ranní krizi.) **Eliminace den 4–5.**
+- **Vztah k Markovi:** **vzdálený synovec** — Markova mladší sestřenice byla SoTova matka. SoTo Marka znal odjakživa.
+- **Charakter:** suchý ironický humor, drsnější autorita, mlčenlivý k vlastním plánům.
+- **Ve hře:** **NEvinný, ale 7 dní hlavní podezřelý**. Marek ho 1. den odpoledne soukromě požádal o **noční misi do Brna** pro kopii dodatku smlouvy s podpisem (notářka ji potřebovala). SoTo plnil přání mlčet.
+- **Stopy proti SoTovi (rudé):** krevní pouto s Markem, klíče od všeho, Santana ráno na jiném místě (R02), motor v 0:45 (zaslechli Jenda + Adriana), vyhýbavé odpovědi, Klárka pamatuje vážný rozhovor s Markem den 1.
+- **Eliminace den 8** — notářka Růžičková v Blansku potvrdí, že SoTo k ní přišel ráno 12. 7. v 6:30 s podepsaným dodatkem (S21).
+- **Den 11 finále:** Marek osobně řekne dětem: *„Tomáši, omluv se mi. Tomáši, ti se omluv. Křivdili jste mu — to se v dobrém vyšetřování stává."*
 
 ### Jenda — zásobovač (cca 50+)
 
@@ -111,7 +114,7 @@ V Rakoveckém údolí jsou letos **tři další tábory**:
 >
 > Pokud zachováme: navrhuji ji udělat **NEvinnou rudou stopu** (například má příjmení blízké Stanislavovi, účastníci to chvíli interpretují jako motiv). Eliminace den 6.
 
-### Magdaléna Hamanová — zdravotnice (50 let)
+### Magda Hamanová — zdravotnice (50 let)
 
 **Hraje:** **skutečná zdravotnice** tábora.
 
@@ -188,9 +191,11 @@ Aleš v mládí (kolem roku 1995, ještě než tábor vznikl) **při lesní prá
 
 **22:00** — táborák, písničky, děti jdou postupně spát.
 
-**23:30** — všichni v stanech. Karel Malík + Pavel Malík sedí v Šéfce u stolu, plánují další den (porada, alibi pro oba). Anička v polní kuchyni dělá těsto na ráno. Magdaléna Hamanová ve své zdravotce píše denní zápis. **Aleš Tomek** sedí u svého stanu, dělá, že hlídá ohniště — **ve skutečnosti čeká na Stehlíka**.
+**23:30** — všichni v stanech. Karel Malík + SoTo sedí v Šéfce u stolu, plánují další den (porada, alibi pro oba). Anička v polní kuchyni dělá těsto na ráno. Magda Hamanová ve své zdravotce píše denní zápis. **Aleš Tomek** sedí u svého stanu, dělá, že hlídá ohniště — **ve skutečnosti čeká na Stehlíka**.
 
-**00:15** — Karel a Pavel jdou spát. Šéfka prázdná. Aleš jde k Šéfce, **rozváže rohy plachty na zadní straně**, aby šly tiše rozhrnout.
+**00:15** — Karel jde spát. SoTo zůstává v Šéfce, „srovnává papíry". Aleš jde k Šéfce, **rozváže rohy plachty na zadní straně**, aby šly tiše rozhrnout.
+
+**00:45** — SoTo nepozorovaně opouští Šéfku, jde k Santanu zaparkované u lesní cesty, **odjíždí směrem k Brnu** plnit Markovo tajné přání (vyzvednout kopii dodatku smlouvy z Markova bytu). Jenda + Adriana zaslechnou motor.
 
 **00:30** — **Vladimír Stehlík** přichází lesem ze samoty, čelovkou si svítí pod nohy. V boční kapse **kožené rukavice** (klíčové!). U Šéfky se převlékne — sundá batoh, v ruce drží **prázdnou plátěnou tašku**. Aleš na něj kývne ze stínu, jde „na latrýnu" pro alibi. Stehlík vchází do Šéfky, otevře truhlu, **bere červenou složku**, dává místo ní **padělek** (vyrobený předem — bez pečetě). Žádá si ještě obhlédnout, jestli něco nezůstalo (kontrola).
 
@@ -206,9 +211,9 @@ Stehlík panikaří. **Strčí Marka stranou**, vyběhne ze Šéfky se závětí
 
 **Aleš** se vrací z latrýny, **slyší tichý sten** z lesa za Šéfkou, jde tam, vidí Marka v bezvědomí. **V panice se otočí a jde do svého stanu**. Říká si: „ráno to někdo najde, já jsem tu nebyl."
 
-**05:30** — **Aleš Tomek (paradoxně)** vstává jako první, jde k ohništi. Když nemůže najít zápalky, **„najde" Marka**, který stále leží. **Volá Karla.** Karel se zavolaným satelitním telefonem (jediným v táboře, používá se jen v krizi) **kontaktuje záchranku** — auto z Blanska dorazí za 35 minut.
+**05:30** — **Anička Kellnerová** cestou ke studánce pro vodu na ranní čaj **najde Marka** v lese 15 m za Šéfkou. **Volá Karla.** Karel zavolá záchranku ze satelitního telefonu (jediného v táboře, používaného jen v krizi) — auto z Blanska dorazí za 35 minut. Magda Hamanová (zdravotnice) ošetří Marka do příjezdu sanitky. **Současně SoTo parkuje Santanu pod tábořištěm** (vrací se ze své noční mise z Brna), zajde do svého stanu na krátký odpočinek.
 
-**06:30** — Marek je odvezen do nemocnice v Brně (otřes mozku, podezření na intrakraniální krvácení; po vyšetření jen lehčí zranění, hospitalizace 6 dní). Karel svolává personál v 7:00. Otevřou kufr v Šéfce — **složka tam je**, ale...
+**06:30** — Marek je odvezen do nemocnice v Brně (otřes mozku; po vyšetření lehčí zranění, hospitalizace ~9 dní — do dne slavnostního finále, kdy se vrací do tábora). Karel svolává personál v 7:00. Otevřou kufr v Šéfce — **složka tam je**, ale...
 
 > Karel (rozvine složku): *„Magda, tahle závěť mi nesedí. Měla mít notářskou pečeť — má jen razítko."*
 
@@ -230,9 +235,9 @@ Volají notářce. Magdaléna potvrzuje: *„Karle, originál byl s pečetí. To
 >
 > *§ 1. Tábor Světlo má pokračovat. Pozemky propůjčené Mendelovou univerzitou v Brně mají být na základě připojeného dodatku **prodlouženy o dalších 30 let**, a propůjčení od rodiny hospodářů Stehlíkových (loučka u centrální plochy) zůstává v platnosti dle stávající smlouvy.*
 >
-> *§ 2. Vedení tábora přebírají v dosavadní funkci Karel Malík (hlavní vedoucí) a Pavel Malík (zástupce), spolu s celým stávajícím personálem. Tábor se má řídit duchem, ve kterém vznikl: **dobrovolnost, příroda, společenství, žádný zisk.***
+> *§ 2. Vedení tábora přebírají v dosavadní funkci Karel Malík (hlavní vedoucí) a SoTo (zástupce), spolu s celým stávajícím personálem. Tábor se má řídit duchem, ve kterém vznikl: **dobrovolnost, příroda, společenství, žádný zisk.***
 >
-> *§ 3. Pro budoucí rozhodování zřizuji **Radu tábora**, do níž jmenuji: Karla Malíka, Pavla Malíka, Aničku Kellnerovou, Magdalénu Hamanovou, Jendu, Aleše Tomka. Rada má každoročně rozhodovat o směřování tábora a přijímat nové členy.*
+> *§ 3. Pro budoucí rozhodování zřizuji **Radu tábora**, do níž jmenuji: Karla Malíka, Tomáše Sotoniaka, Aničku Kellnerovou, Magdu Hamanovou, Jendu a Adrianu, Aleše Tomka. Rada má každoročně rozhodovat o směřování tábora a přijímat nové členy.*
 >
 > *§ 4. Skutečnými dědici tábora — v duchu, ne v právu — prohlašuji **každého táborníka, který kdy táborem prošel a kdo jím projde**. Tábor patří jim, ne mně. Já jsem byl jen ten, kdo otevřel dveře.*
 >

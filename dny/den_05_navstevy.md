@@ -40,7 +40,7 @@ Všichni budou dnes **vyslýcháni**. Pamatujte: **kdokoli z nich může být pa
 
 ## Klíčový moment dne 1: Magdaléna Růžičková (cca 09:30)
 
-Magdaléna přijede **služební Škodou Octavií** ze směru od Jedovnic. Vystoupí v kostýmu, kufřík v ruce, brýle. Děti ji vítají v půlkruhu u centrální plochy.
+Magdaléna přijede **služební Škodou Santanou** ze směru od Jedovnic. Vystoupí v kostýmu, kufřík v ruce, brýle. Děti ji vítají v půlkruhu u centrální plochy.
 
 > **Magdaléna**: „Dobrý den, dětí, dobrý den. Jsem advokátka pana Marka Stanislava z Blanska. **Měla jsem tu být už den po incidentu**, ale policie požádala, abychom počkali. Pan Marek je teď ve fakultní nemocnici v Brně, lékaři ho dnes ráno převedli ze sledování na běžné oddělení. **Vede se mu lépe.** Sepisovala jsem s ním v červnu závěť. Kopii mám v kanceláři v Blansku, ale **plný text musí přečíst pan Marek osobně** — to bylo jeho výslovné přání. Dnes vám potvrdím něco, co je důležité: **závěť obsahuje dodatek o pokračování smlouvy s Mendelovou univerzitou v Brně** — pozemek tábora se má prodloužit o dalších 30 let. **Bez tohoto dodatku stávající smlouva 2027 vyprší.** To je první důležitá zpráva. Detail (přesný text dodatku) přivezu vám den 8, pokud přijedete do mé kanceláře."
 
@@ -200,9 +200,9 @@ Děti zaznamenávají do kartotéky. Stehlík se nyní stává **podezřelým č
 | **Magdaléna Růžičková** | Informátorka |
 | **Bohumil Hájek** | Informátor + alibi pro budoucí výjezd |
 | **Pavel Konečný** (volitelně) | Návštěva, krátká rudá stopa |
-| Karel Malík, Pavel Malík | Koordinace, výslechy |
+| Karel Malík, SoTo | Koordinace, výslechy |
 | Aleš Tomek | Klidný, **stále nepodezřelý plně** (= pomocník zločinu — drží roli) |
-| Anička, Magdaléna H., Klára, Jenda | Normální táborové aktivity, kuchyně, údržba |
+| Anička, Anežka, Magda, Jenda + Adriana | Normální táborové aktivity, kuchyně, údržba |
 
 ---
 

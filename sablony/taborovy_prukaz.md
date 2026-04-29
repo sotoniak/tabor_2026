@@ -65,7 +65,7 @@
 │  ─────────────────────────────────       │
 │                                          │
 │  Hlavní vedoucí: Karel Malík             │
-│  Zástupce: Pavel Malík                   │
+│  Zástupce: SoTo                   │
 │  Notářka: JUDr. M. Růžičková             │
 │                                          │
 │        TÁBOR 2026 — 30 LET               │

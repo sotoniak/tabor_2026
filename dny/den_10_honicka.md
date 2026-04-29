@@ -17,7 +17,7 @@
 | 12:00 – 13:00 | Oběd (atmosféra — úleva, ale ještě ne radost) |
 | 13:00 – 14:00 | Klid ve stanech |
 | 14:00 – 15:30 | **NÁLEZ ZÁVĚTI V DUTINĚ BUKU U POTOKA** (slavnostní moment) |
-| 15:30 – 16:30 | **Závěť se nečte** — Magdaléna Růžičková ji potvrdí jako pravou, uloží do dřevěné truhly |
+| 15:30 – 16:30 | **Závěť se nečte** — JUDr. Růžičková ji potvrdí jako pravou, uloží do dřevěné truhly |
 | 16:30 – 18:00 | **Příprava na finále zítra** — týmy dokončují Knihu 30 let, Strom 30 let |
 | 18:00 – 19:00 | Slavnostní večeře |
 | 19:30 – 21:30 | **Pohádkový večer u ohně** (vyprávění, klid) |
@@ -86,7 +86,7 @@ Policisté Stehlíka **odvedou** zpět do tábora. **Por. Brázdová** ho vezme 
 
 ## Etapová hra č. 7: Nález závěti (14:00 – 15:30)
 
-Po obědě tábor svolá **slavnostní průvod k potoku**. Všichni jdou — vedoucí, děti, kuchařky, Magdaléna H., Magdaléna Růžičková. Anička nese Knihu 30 let. **Aleš jde také** — Karel ho vezme s sebou (bezpečné, pod neformálním dohledem; navíc to je gesto: Aleš patří k tomuto okamžiku).
+Po obědě tábor svolá **slavnostní průvod k potoku**. Všichni jdou — vedoucí, děti, kuchařky, Magda, JUDr. Růžičková. Anička nese Knihu 30 let. **Aleš jde také** — Karel ho vezme s sebou (bezpečné, pod neformálním dohledem; navíc to je gesto: Aleš patří k tomuto okamžiku).
 
 U starého **buku Staříka** Karel slavnostně vyhlásí:
 
@@ -104,7 +104,7 @@ Nejmladší kadet (s pomocí staršího ze svého týmu, aby dosáhl) **sahá ru
 
 Děti **tleskají, pláčou**. Někteří objímají vedoucí. Aleš stojí stranou, slzy v očích. Anička jde k němu, položí mu ruku na rameno.
 
-> **Magdaléna Růžičková** přejde závěť: „**Závěť je pravá. Pečeť je celá. Můj podpis je celý. Dodatek smlouvy s Mendelovou univerzitou je přiložen. Vše je v pořádku.**"
+> **JUDr. Růžičková** přejde závěť: „**Závěť je pravá. Pečeť je celá. Můj podpis je celý. Dodatek smlouvy s Mendelovou univerzitou je přiložen. Vše je v pořádku.**"
 
 Karel se obrátí k dětem:
 
@@ -175,12 +175,12 @@ Jenda s Klárou **připraví slavnostní stůl** v jídelní plachtě:
 | **Kpt. Marek Polák** (vedoucí v roli) | Vedení honu, dopadení, převzetí |
 | **Por. Lucie Brázdová** (vedoucí v roli) | Spolupráce v honu, doprovod ze samoty do Blanska |
 | Karel Malík | Velký dirigent dne |
-| Pavel Malík | Koordinace tábora, hlídka u Šéfky |
-| Magdaléna Růžičková | Slavnostní moment u buku, potvrdí pravost závěti |
+| SoTo | Koordinace tábora, hlídka u Šéfky |
+| JUDr. Růžičková | Slavnostní moment u buku, potvrdí pravost závěti |
 | Anička | Nese Knihu 30 let, slavnostní příprava |
 | **Aleš Tomek** | **Zůstává v táboře pod neformálním dohledem**. Účastní se nálezu závěti, slzy v očích. **Přijde na finále zítra.** Pak se sám dostaví k policii. |
-| Magdaléna H. | V zdravotce, sleduje Aleše |
-| Klára, Jenda | Slavnostní příprava |
+| Magda | V zdravotce, sleduje Aleše |
+| Anežka, Jenda + Adriana | Slavnostní příprava |
 | Hájek | Pomáhá s organizací honu, mobilizoval policii (telefonicky včera) |
 
 ---
@@ -190,8 +190,8 @@ Jenda s Klárou **připraví slavnostní stůl** v jídelní plachtě:
 1. **Bezpečnost honu — absolutní priorita**. Děti **nesmí** opustit svého vedoucího ani na minutu. Kvadranty **musí být bezpečné** (žádné srázy, hluboká voda, divoká zvěř). Tým s policistou má vždy **vedoucího navíc** (= 1 policista + 1 vedoucí + 6–8 dětí).
 2. **Stehlíkovo dopadení musí být klidné**. Žádný hon, žádný útěk při dopadení. Stehlík je vyčerpaný, smířený. Děti se to musí naučit: **konec hry pravdy je vykoupení, ne mstění**.
 3. **Slavnostní nález závěti** je **emoční vrchol** den 10. Vedoucí musí mít předem připravený sáček v dutině — pokud se „nepodaří" najít hned, vedoucí stanoviště pomůže rukou nebo nasměruje pohled.
-4. **Magdaléna Růžičková NEČTE závěť** — to je klíčové. Pokud ji někdo tlačí, řekne: „**Pan Marek si to přeje sám. Respektujme jeho přání.**"
-5. **Aleš zůstává v táboře**: tichý a důstojný. **Žádné dramatické scény**. Vedoucí, který Aleše hraje (= sám Aleš), by měl ukázat dětem, **že hra pokračuje pro něj klidně**. Anička, Magdaléna H. a Karel jsou s ním v běžném kontaktu — nejsou na něj zlí, ale ani nepředstírají, že nic nebylo.
+4. **JUDr. Růžičková NEČTE závěť** — to je klíčové. Pokud ji někdo tlačí, řekne: „**Pan Marek si to přeje sám. Respektujme jeho přání.**"
+5. **Aleš zůstává v táboře**: tichý a důstojný. **Žádné dramatické scény**. Vedoucí, který Aleše hraje (= sám Aleš), by měl ukázat dětem, **že hra pokračuje pro něj klidně**. Anička, Magda a Karel jsou s ním v běžném kontaktu — nejsou na něj zlí, ale ani nepředstírají, že nic nebylo.
 6. **Pohádkový večer u ohně**: lehký, bez detektivního napojení. Klasické pohádky vyprávěné nahlas, písničky u ohně, případně vyprávění o historii tábora. Děti potřebují uvolnění před zítřejším vrcholem.
 7. **Volitelně, pokud máte vedoucí navíc**: jeden vedoucí v roli **kpt. Poláka zůstává v táboře přes oběd** a jí s dětmi (= autentičnost — policejní práce se prolíná s životem). Děti vidí, že **policista je obyčejný člověk, ne strašák**.
 
@@ -199,4 +199,4 @@ Jenda s Klárou **připraví slavnostní stůl** v jídelní plachtě:
 
 ## Co se stane zítra
 
-**FINÁLE**. Marek Stanislav přijíždí z FN Brno (auto, opřený o hůl, doprovod Magdalény Hamanové). **Slavnostní shromáždění** v lipovém altánu nebo pod nejstarší lípou v údolí. Magdaléna Růžičková otevírá akt. **Marek čte závěť**: § 1 dodatek smlouvy o 30 let, § 2 vedení Karel + Pavel + personál, § 3 **Rada tábora** (Karel, Pavel, Anička, Magdaléna H., Jenda, **Aleš Tomek**) — Aleš se zhroutí, **Marek mu odpustí slovně**, § 4 dědicové = **každý táborník**. § 5 dědický list. **Předání 45 dědických listů + pamětních mincí** každému dítěti (Marek osobně, oslovuje jménem). Slavnostní oběd. **Slavnostní táborák** večer. **Stehlík NENÍ na finále** (v péči policie z Blanska).
+**FINÁLE**. Marek Stanislav přijíždí z FN Brno (auto, opřený o hůl, doprovod Magdy Hamanové). **Slavnostní shromáždění** v lipovém altánu nebo pod nejstarší lípou v údolí. JUDr. Růžičková otevírá akt. **Marek čte závěť**: § 1 dodatek smlouvy o 30 let, § 2 vedení Karel + SoTo + personál, § 3 **Rada tábora** (Karel, SoTo, Anička, Magda, Jenda, Adriana, **Aleš Tomek**) — Aleš se zhroutí, **Marek mu odpustí slovně**, § 4 dědicové = **každý táborník**. § 5 dědický list. **Předání 45 dědických listů + pamětních mincí** každému dítěti (Marek osobně, oslovuje jménem). Slavnostní oběd. **Slavnostní táborák** večer. **Stehlík NENÍ na finále** (v péči policie z Blanska). **Marek také před dětmi rehabilituje SoTa.** Tom Buchta hraje na housle.

@@ -24,7 +24,7 @@
 
 ### Snídaně (08:00)
 
-Anička ráno chystá speciální snídani — **kakao, koláče, palačinky**. Klára pomáhá. Aleš, který dnes po obědě odjíždí na policii, je v kuchyni s nimi (= jeho gesto: chce naposled pomáhat). Děti jsou unavené (slavnost končila ve 23:30), ale **šťastné**. Mezi dětmi vlají rozhovory:
+Anička ráno chystá speciální snídani — **kakao, koláče, palačinky**. Anežka pomáhá. Aleš, který dnes po obědě odjíždí na policii, je v kuchyni s nimi (= jeho gesto: chce naposled pomáhat). Děti jsou unavené (slavnost končila ve 23:30), ale **šťastné**. Mezi dětmi vlají rozhovory:
 
 > „Pamatuješ, jak jsme našli tu dýmkovou popel?"
 > „A jak Aleš přiznal s těmi 30 000 Kč?"
@@ -39,7 +39,7 @@ Stany se pomalu skládají. Půda zametená, žádný odpad. **Tábor odchází 
 
 ### Velký úklid (10:30 – 11:00)
 
-Vedoucí + děti uklízejí centrální plochu, polní kuchyni, jídelní plachtu. **Tábor odchází jako přišel — čistý**. Anička si bere svou utěrku, Magdaléna H. balí lékárničku, Jenda nakládá do dodávky první sklady na cestu zpět.
+Vedoucí + děti uklízejí centrální plochu, polní kuchyni, jídelní plachtu. **Tábor odchází jako přišel — čistý**. Anička si bere svou utěrku, Magda balí lékárničku, Jenda nakládá do dodávky první sklady na cestu zpět.
 
 ### Slavnostní rozloučení (11:00)
 
@@ -75,7 +75,7 @@ V 15:00 odjíždí poslední auto. **Tábor je téměř prázdný**. Vedoucí st
 
 > **Tradice § 6 závěti — bonus, lze zachovat z původní hry.**
 
-**Karel + Aleš + jeden vybraný vedoucí** (Pavel) jdou pěšky k buku Staříkovi u potoka. Nesou **list pergamenu** s vzkazem pro budoucí generaci. Před vložením list nahlas přečtou:
+**Karel + Aleš + jeden vybraný vedoucí** (SoTo) jdou pěšky k buku Staříkovi u potoka. Nesou **list pergamenu** s vzkazem pro budoucí generaci. Před vložením list nahlas přečtou:
 
 > „**Tábor Světlo, 30. ročník — léto 2026.**
 >
@@ -91,11 +91,11 @@ V 15:00 odjíždí poslední auto. **Tábor je téměř prázdný**. Vedoucí st
 >
 > Děti tábora 2026"
 
-Aleš (jako gesto návratu) **vloží sám list do nepromokavého sáčku a do dutiny**. Karel a Pavel sledují. Klid. **Tichý moment.**
+Aleš (jako gesto návratu) **vloží sám list do nepromokavého sáčku a do dutiny**. Karel a SoTo sledují. Klid. **Tichý moment.**
 
 > **Aleš** (tiše): „Děkuji."
 
-Pak se vrátí do tábora. **Aleš si bere svou tašku, sedne si do dodávky s Pavlem** (Pavel ho odveze do Blanska na policii). **Aleš odjíždí sám, dobrovolně, smířený.**
+Pak se vrátí do tábora. **Aleš si bere svou tašku, sedne si do dodávky s Karlem** (Karel ho odveze do Blanska na policii). **Aleš odjíždí sám, dobrovolně, smířený.**
 
 ---
 
@@ -106,7 +106,7 @@ Vedoucí balí materiál:
 - **Strom 30 let** se sundá ze stanu lipového altánu, **zarámuje** (= úkol pro Jendu po táboře). Bude pověšen na nejstarší lípu v centrální ploše každý rok.
 - **Pamětní mince** — zbylé jdou do truhly pro budoucnost.
 - **Materiály detektivní hry** — uskladnění (pro budoucí ročníky? — možná opakování v jiné variaci, ale **ne za 5 let, aby se nezdevalvovala emocionální váha**).
-- **Závěť** — originál s pečetí předá Magdaléna Růžičková Markovi do FN Brno (Marek si ji odveze domů). Kopie zůstává v notářské kanceláři v Blansku.
+- **Závěť** — originál s pečetí předá JUDr. Růžičková Markovi do FN Brno (Marek si ji odveze domů). Kopie zůstává v notářské kanceláři v Blansku.
 
 > **Symbolický akt**: Vzkaz pro budoucnost už **JE v dutině** (Aleš vložil v 15:00). To je dnes hotovo.
 
@@ -120,7 +120,7 @@ Vedoucí balí materiál:
 4. **Rodičům lze poslat e-mailem fotky a krátké video** ze finále. To je dárek, který se nevyprovodí.
 5. **Vedoucí mají právo na slzy** — to je tábor, kde to bylo opravdu emocionální. Přiznání. Zradu. Odpuštění. Vyšetřování. Třicet let. **Smutek z konce je krásný.**
 6. **Vložení vzkazu do dutiny buku**: tradice, kterou založíte. **Za 10 let** (= 2036, **40. výročí**) se vzkaz vyndá. **To bude obrovský moment.**
-7. **Aleš odjíždí sám**. Pavel ho doprovází jen do Blanska, formálně ho předá kpt. Polákovi. Aleš se má vrátit do tábora **příští rok** jako údržbář — pokud ho soud nepošle za mříže (drobnější trest se očekává: účast na trestném činu jako pomocník, polehčující okolnosti = vydírání + spolupráce při vyšetřování). To zůstává otevřené pro hru.
+7. **Aleš odjíždí sám**. Karel ho doprovází jen do Blanska, formálně ho předá kpt. Polákovi. Aleš se má vrátit do tábora **příští rok** jako údržbář — pokud ho soud nepošle za mříže (drobnější trest se očekává: účast na trestném činu jako pomocník, polehčující okolnosti = vydírání + spolupráce při vyšetřování). To zůstává otevřené pro hru.
 
 ---
 

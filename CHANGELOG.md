@@ -5,6 +5,80 @@ Všechny významné změny tohoto projektu jsou zachycovány v tomto souboru.
 Formát: založeno na [Keep a Changelog](https://keepachangelog.com/cs/1.1.0/),
 verzování dle [SemVer](https://semver.org/lang/cs/).
 
+## [0.5.1] – 2026-04-29 — *Konzistenční oprava: F03, F09, časová osa*
+
+### Opraveno
+
+- **F03 — otisk u truhly**: sjednoceno napříč soubory (02, 03, 08, 16) — otisk je **dlaně přes rukavici** (neúplný, deformovaný), ne přímý otisk Stehlíka. Stehlíka konkrétně usvědčí až F10 (vlas z rukavice) + F12 (popel z dýmky).
+- **F09 — pickup vs. pěšky**: vyřešen rozpor mezi *„Stehlík přichází lesem pěšky"* a *„F09 stopa pickupu na lesní cestě"*. **Stehlík nyní v 00:25 zaparkuje pickup u zatáčky 200 m od tábora**, dál pokračuje pěšky. Po zločinu pěšky zpět k pickupu, pickupem na samotu. Tím vznikají dvě stopy F09 (příjezd + odjezd). Aktualizováno v 02_HLAVNI a dny/den_01.
+- **SoTův návrat 5:00 → 5:30**: posunut na 5:30, aby seděl s Tomášem Kellnerovým svědectvím S19 (Tomáš Kellner viděl Santanu v 5:30 cestou k Jedovnicím). SoTo má krátký odpočinek 20 min ve stanu, pak v 6:00 vyjíždí znovu do Blanska, je tam v 6:30 u notářky.
+- **Hospitalizace 6 dní → ~9 dní**: opraveno v 02 a 01_PRIBEH (Marek se vrací den 11, tedy 9 dní v nemocnici).
+- **07_CASOVA_OSA**: přepracována časová osa zločinu (00:25 Stehlík parkuje pickup, 00:40 SoTo opouští Šéfku, 00:45 Stehlík vstupuje, atd.) + den 2 timetable (07:30 SoTo se vrací, 07:45 mimořádný nástup, Páter Lacina ve 14:00).
+- **01_PRIBEH ř. 214**: opraveno *„Aleš Tomek vstává a najde Marka"* → *„Anička Kellnerová cestou ke studánce najde Marka"* (sedí s aktualizovanou zápletkou).
+- **Herecký tip pro Karla**: doplněn v 04_ROLE_OBSAZENI — Karel-postava ve hře neví o Markově pověření SoTa, i když Karel-herec to ví (dvojí role i v tomto smyslu).
+
+### Bez dopadů
+
+- Žádné změny v hlavní zápletce, charakterech postav ani v rozdělení rolí.
+
+## [0.5.0] – 2026-04-29 — *Korekce: Karel hraje Marka, Preclík bez příbuzenství, Santana*
+
+### Změněno
+
+- **Karel Malík hraje Marka Stanislava (dvojí role)** — uživatel nemá k dispozici staršího herce na roli zakladatele. Karel (real, 44) hraje **dvě postavy ve hře**: Karla Malíka (hl. vedoucí, dny 1–12, vlastní oblečení) a Marka Stanislava (zakladatel, **jen den 1 večer + den 11 odpoledne**) s výrazně odlišným kostýmem (sako, čepice, vycházková hůl, šedavé vousy lepené, pomalejší tempo, hlubší klidný hlas). V herní rovině zůstávají postavy Marek a Karel **rozdílné**. Nová sekce „Logistika dvojí role Karel/Marek" v `04_ROLE_OBSAZENI.md` s detailním scénářem kostýmové změny v 3 scénách (den 1 zahájení, den 11 odpoledne, den 7 vzkaz). **Klíčové:** Marek u večerního ohně den 11 NEZŮSTÁVÁ — po čtení závěti odjíždí zpět do FN Brno, večer pak vede Karel sám za sebe. Karlovo alibi (porada se SoTou 23:30–00:15) se nemění — v herní rovině jsou Karel a Marek dva lidé.
+- **Pavel „Preclík" Malík NENÍ synovec Karla** — v 0.4.0 jsem omylem zavedl příbuzenskou vazbu (synovec Karla, bratranec Klárky a Lucky). Příjmení Malík je shoda jmen, žádný příbuzenský vztah. Opraveno na 8 výskytů (03_PODEZRELI, 04_ROLE_OBSAZENI, README, sablony, dny/den_03).
+- **Vůz SoTa: Octavia → Santana** — kosmetická úprava (Volkswagen Santana — méně obvyklé, dramaticky zajímavější). Nahrazení napříč ~15 výskyty bez dopadů na herní logiku.
+
+### Záměrně NEZAŘAZENO
+
+- **Spor Marek↔SoTo o Aleše (R11)** — uživatel rozhodl příběh **NEPŘIDÁVAT další vrstvu**. Existující rudá stopa proti SoTovi (5 kusů) je dostatečně silná. Mladší kadety chrání rámování instruktorek. Komplikovanost příběhu pro 1.–4. třídu zůstává v rozumných mezích.
+
+### Migrace souborů
+
+- ✅ Korekce 1 (Preclík): 03, 04, README, sablony, dny/den_03 (8 výskytů)
+- ✅ Korekce 2 (Karel→Marek): 04 (A1+D1+nová sekce „Logistika dvojí role"), dny/den_01 (kostýmová změna v ceremoniálu), dny/den_07 (Markův vzkaz čte Karel papírově), dny/den_11 (kostýmová logistika + Markův odjezd po čtení závěti, večerní oheň vede Karel), 01, 12, README
+- ✅ Korekce 3 (Santana): napříč 16 soubory globální nahrazení
+
+## [0.4.0] – 2026-04-29 — *Obsazení reálného personálu, hlavní rudá stopa SoTo*
+
+### Přidáno
+
+- **Tomáš „Tony" Sotoniak (SoTo, 42)** jako **zástupce hlavního vedoucího + vzdálený synovec Marka + HLAVNÍ rudá stopa**. Drží se podezření 7 dní (krevní pouto, klíče, zmizelá Santana v noci, vyhýbavé odpovědi). Eliminace den 8 — notářka v Blansku potvrdí, že SoTo plnil **tajné Markovo přání** (noční mise do Brna pro kopii dodatku smlouvy s podpisem). Den 11 finále: **veřejná omluva před dětmi**.
+- **Adriana (30)** — partnerka Jendy, **klíčový postřeh den 4** o Octavii na jiném místě (R02).
+- **Pavel „Preclík" Malík (28)** — vedoucí oddílu Jezevci, **drobná komická rudá stopa den 4** (krádež koláče v noci). _(V 0.5.0 opraveno: shoda příjmení s Karlem, žádný příbuzenský vztah.)_
+- **Tom Buchta (28)** — vedoucí oddílu Sojky, atletická pomoc v honičce den 10, **housle při čtení závěti den 11**.
+- **9 mladých instruktorů (~18 let)**: Klárka Malíková a Lucka Malíková (dcery Karla), Martin, Martina, Alča, Jeník, Lucka Ravasová, Vája, Ondra. Vedoucí 5 ze 6 týmů (+ Preclík vede Jezevce, Tom Buchta vede Sojky).
+- **Tomáš Kellner** — řezník z Jedovnic, **bratr Aničky a Anežky**, drobné návštěvy den 2 (přiveze maso) a den 6 (drobná stopa S19 — viděl Octavii v 5:30).
+- **Páter Lacina** — kněz z Jedovnic, drobná návštěva den 2 (modlitba za Marka), telefonát den 7 (potvrzení S20 — viděl Octavii v 3:30 v Brně).
+- **Exkluzivní stopy mladých instruktorů**: S22 (Klárka — pamatuje Marka mluvícího se SoTou), S23 (Lucka R. — analýza otisku 44), S24 (Jeník — turistická stopa pneumatiky).
+- **Komická drobnost den 4** — Preclík přizná noční nájezd na koláč (R07).
+
+### Změněno
+
+- **Pavel Malík (zástupce, bratr Karla, 40+)** — **odstraněn**. Funkci zástupce přebírá **SoTo** (NENÍ Malík). Karel přestává být něčí bratr; má dvě dcery (Klárka, Lucka).
+- **Klára Stanislavová (ml. kuchařka, vzdálená sestřenice Marka, 28)** — **odstraněna**. Funkci ml. kuchařky přebírá **Anežka Kellnerová** (sous-chef, **mladší sestra Aničky**, bez příbuzenství s Markem). Rudou stopu „vzdálený příbuzný Marka" přebírá **SoTo** (silnější, déle drží napětí).
+- **Magdaléna Hamanová (zdravotnice, 50)** → **Magda Hamanová (25, zasnoubená)** — omlazení role, mladá energická persona, lehká sebe-ironie o „kmetovství". Ostatní funkce zachovány (lékařský deník alibi, Markův vzkaz den 7).
+- **Aleš Tomek (50+)** → **Aleš Tomek (19, mladý správce/údržbář)** — backstory předělána. Místo vlastní nehody z 90. let nyní **otcův dluh** Stehlíkovým z 2010 (otec zemřel 2018, Vladimír drží papír nad mladým Alešem a matkou-vdovou). Úplatek 30 000 Kč → na exekuce matky.
+- **Pavlův původní „ranní výjezd v 5:45 pro chleba"** se přepisuje na **SoTův noční výjezd Octavií 0:45 → 5:00 do Brna a zpět** (Markova mise). To drží rudou stopu proti SoTovi soudržně.
+
+### Příběhové důsledky
+
+- **Hlavní rudá stopa se přesouvá** z Kláry (dny 4–6, slabá) na SoTa (dny 3–8, silná). Děti několikrát mění hlavního podezřelého: SoTo → Stehlík → Aleš.
+- **Den 7 vzkaz Marka** přidává klíčové slovo: *„...a Tomáši, můžeš to říct."* Otevírá SoTovo přiznání.
+- **Den 8 v Blansku** notářka definitivně eliminuje SoTa (S21).
+- **Den 11 finále** přidává **veřejnou omluvu** SoTem před dětmi — morální lekce „omluva je odvaha".
+- **Strom rodinných vazeb v táboře:** Karel (44) ↔ dcery Klárka & Lucka (18). Anička ↔ sestra Anežka ↔ bratr Tomáš Kellner. SoTo ↔ vzdálený synovec Marka. _(V 0.5.0 opraveno: Preclík NENÍ Karlův synovec, jen shoda příjmení.)_
+
+### Migrace souborů
+
+- ✅ 02_HLAVNI_LINIE.md, 03_PODEZRELI_kompletni.md, 04_ROLE_OBSAZENI.md, 08_INDICIE_MATICE.md (kompletní přepis)
+- ✅ 16_STOPY_VIZUAL.md (kompletní přepis vizualizací)
+- ✅ dny/den_01–07 (kompletní přepis nebo cílené úpravy)
+- ✅ dny/den_08–12 (cílené úpravy: jména, role SoTa, eliminace, finále)
+- ✅ 05_VYSETROVACI_TYMY.md (přidáno konkrétní obsazení 6 týmů)
+- ✅ 06_VOLITELNE_ROLE_HOSTI.md (přidáni Tomáš Kellner + Páter Lacina jako pevné role)
+- ✅ Šablony, README, ostatní soubory (cílené úpravy jmen)
+
 ## [0.3.0] – 2026-04-26 — *Dokončená migrace na verzi A*
 
 ### Změněno (sjednocení napříč všemi 33 soubory)

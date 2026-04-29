@@ -12,7 +12,7 @@
 | 07:00 – 07:30 | **Odjezd výjezdové skupiny** (mikrobus, 6 dětí + 2 vedoucí) — z parkoviště u lesní cesty |
 | 08:00 – 09:00 | Snídaně pro zbylé děti (cca 39 dětí) |
 | 09:00 – 12:00 | **PROGRAM V TÁBORĚ** (zbylé děti) — hlavolamy + hledání + sport |
-| 09:30 – 11:00 | **Notářka Růžičková v Blansku** (výjezd) |
+| 09:30 – 11:00 | **Notářka Růžičková v Blansku** (výjezd) — **definitivní eliminace SoTa** |
 | 11:30 – 13:00 | **Mendelova univerzita v Brně — Lesnická a dřevařská fakulta, ŠLP Křtiny** (bonus: 2–3 nejstarší kadeti) |
 | 12:00 – 13:00 | Oběd v táboře |
 | 13:00 – 14:00 | Klid v táboře |
@@ -39,7 +39,17 @@ Skupina se vybere takto: **z každého ze 6 týmů 1 dítě** (= které tým zvo
 
 Skupina dorazí do kanceláře JUDr. Magdalény Růžičkové v Blansku (cca 20 km, pohotovost a notářské kanceláře jsou v Blansku, nejbližší okresní město). Magdaléna je tam, čeká.
 
-> **Magdaléna**: „Děti, dobrý den. Mám pro vás **dvě podstatné věci**:
+> **Magdaléna**: „Děti, dobrý den. Mám pro vás **tři podstatné věci**:
+
+##### Věc nultá: Eliminace Tomáše Sotoniaka (S21)
+
+> _(První věc, kterou paní Růžičková řekne — okamžitě, jak děti vejdou.)_
+>
+> „Předem než přejdeme k závěti, jednu věc uzavřu. **Tomáš Sotoniak ke mně přišel ráno 12. července v 6:30** — zaparkoval Santanu před kanceláří, počkal na otevření, předal **dodatek smlouvy s podpisem pana Marka**. Já jsem mu napsala krátké potvrzení o předání. Tady je kopie." _(Vyndá list se svým podpisem a razítkem, datum 12. 7. 2026, čas 6:30.)_
+>
+> „Tomáš plnil přání pana Marka. Ráno mi to potvrdil i pan Marek telefonicky z nemocnice — den 7 odpoledne. **Tomáš tedy NENÍ pachatel ani pomocník. Plně eliminován.**"
+
+Děti **přijmou** definitivní eliminaci SoTa. Některé si uvědomí, **jak mu křivdily**, a rozhodnou se mu **omluvit** po návratu.
 
 ##### Věc první: Fragment závěti (§§ 1–2)
 
@@ -47,7 +57,7 @@ Skupina dorazí do kanceláře JUDr. Magdalény Růžičkové v Blansku (cca 20 
 >
 > „**§ 1. Tábor Světlo má pokračovat. Pozemky propůjčené Mendelovou univerzitou v Brně mají být na základě připojeného dodatku prodlouženy o dalších 30 let, a propůjčení od rodiny hospodářů Stehlíkových (loučka u centrální plochy) zůstává v platnosti dle stávající smlouvy.**
 >
-> **§ 2. Vedení tábora přebírají v dosavadní funkci Karel Malík (hlavní vedoucí) a Pavel Malík (zástupce), spolu s celým stávajícím personálem. Tábor se má řídit duchem, ve kterém vznikl: dobrovolnost, příroda, společenství, žádný zisk.**"
+> **§ 2. Vedení tábora přebírají v dosavadní funkci Karel Malík (hlavní vedoucí) a SoTo (zástupce), spolu s celým stávajícím personálem. Tábor se má řídit duchem, ve kterém vznikl: dobrovolnost, příroda, společenství, žádný zisk.**"
 
 > **Magdaléna**: „**§ 3, § 4 a § 5 obsahuje plný originál závěti.** Pan Marek si je přeje zveřejnit osobně — to bylo jeho výslovné přání. Já vám je dnes neukážu. Ale věřte: jsou tam **velmi krásná překvapení**."
 
@@ -130,6 +140,7 @@ Karel dále:
 
 | Kód | Indicie | Co znamená |
 |---|---|---|
+| **S21** | Notářka potvrdí SoTův příchod 12. 7. v 6:30 | **DEFINITIVNÍ eliminace SoTa** |
 | **§§ 1–2 (kopie závěti)** | Tábor pokračuje + pozemek se prodlužuje o 30 let | **Pravá závěť obsahuje dodatek** |
 | **F13 (= D04 dodatek)** | Kopie dodatku smlouvy s Mendelovou univerzitou | **Bez dodatku smlouva 2027 vyprší** |
 | **F14 (= D04b)** | Záznam rozhovoru Bárty se Stehlíkem | **MOTIV PEVNÝ — Stehlík chce pozemek pro revír** |
@@ -144,11 +155,11 @@ Karel dále:
 | **JUDr. Magdaléna Růžičková** | V kanceláři Blansko — ukáže fragment závěti + dodatek smlouvy |
 | **Ing. Tomáš Bárta** (vedoucí v roli) | Mendelova univerzita Brno — potvrdí Stehlíkův zájem |
 | Karel Malík | V táboře koordinuje, vede prezentaci výjezdu |
-| Pavel Malík | Vedoucí výjezdu (= s mikrobusem do Blanska a Brna) |
-| Vedoucí výjezdu (1 další) | S 6 dětmi v mikrobusu, doprovází 2–3 starší kadety do Brna |
+| **SoTo** | **NEjede do Blanska** — zůstává v táboře (aby ho děti nekonfrontovaly v notářské kanceláři). Pomáhá s programem v táboře. **Definitivní eliminaci přijímá s drobnou poznámkou**: *„Doufám, že jste se to naučili — i drsný strejda může být na vaší straně."* |
+| Vedoucí výjezdu (2 jiní) | S 6 dětmi v mikrobusu, doprovází 2–3 starší kadety do Brna |
 | Aleš Tomek | V táboře, **pod stále silnějším tlakem**. Šedavý jíl na botách ho začíná dostávat. |
 | Stehlík | **Přijde ještě jednou odpoledne** (cca 16:00) — Karel ho pozve „na pohovor zítra ve 14:00 v lipovém altánu". Stehlík souhlasí klidně, nevypadá nervózní. **Naoko klidný — uvnitř už začíná tušit.** |
-| Magdaléna H., Anička, Klára, Jenda | Normální aktivity, podpora dětí |
+| Magda, Anička, Anežka, Jenda, Adriana | Normální aktivity, podpora dětí |
 
 ---
 

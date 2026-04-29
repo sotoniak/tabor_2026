@@ -162,7 +162,7 @@ Ve finále den 11 (17:00 – 18:00):
 5. Předá list **do rukou dítěte**.
 6. Dítě **podepíše list** rovnou (na poskytnutém stolku) a **uloží do svého tubusu**.
 7. **Tlesknutí**.
-8. Dítě **dostane také pamětní minci** (= druhá osoba — Anička nebo Pavel Malík).
+8. Dítě **dostane také pamětní minci** (= druhá osoba — Anička nebo SoTo).
 9. Další dítě v pořadí.
 
 ---
@@ -172,7 +172,7 @@ Ve finále den 11 (17:00 – 18:00):
 - 45 dětí × 30 sekund = **23 minut** + 7 minut na odsazení = **cca 30 minut**.
 - Pokud je rytmus dobrý, plus pár minut na pauzy = **45 minut maximum**.
 - Po dětech **vedoucí týmů** dostanou své listy (6 ks).
-- Personál: Karel Malík, Pavel Malík, Anička Kellnerová, Klára Stanislavová, Magdaléna Hamanová, Jenda, Aleš Tomek (7 ks).
+- Personál: Karel Malík, SoTo, Anička Kellnerová, Anežka Kellnerová, Magda Hamanová, Jenda, Aleš Tomek (7 ks).
 - Celkem: 45 + 6 + 7 = **58 listů** předáno za cca 60 min.
 
 > **Poznámka k Aleši Tomkovi:** v tuto chvíli (den 11) se již přiznal a je v rukou policie. Jeho dědický list mu Marek osobně předá samostatně po návratu z policejní stanice — viz `01_PRIBEH_setting.md`, scéna § 3 závěti („Aleši, do Rady patříš. Důvěra se zaslouží i návratem.").

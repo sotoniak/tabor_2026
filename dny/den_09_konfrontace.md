@@ -36,7 +36,7 @@ Týmy se ráno schází u svých stanů. Mají před sebou **karty důkazů**. K
 
 ### Příprava
 
-- **Lipový altán** u centrální plochy (= dřevěný přístřešek, slouží i k schůzkám). Lavičky uspořádány do velkého **U** kolem středu. Stehlík sedí na lavici uprostřed. Vedle něj **Aleš**, **Karel**, **Pavel**, **Magdaléna Růžičková** (přijela autem z Blanska speciálně). Týmy v U kolem.
+- **Lipový altán** u centrální plochy (= dřevěný přístřešek, slouží i k schůzkám). Lavičky uspořádány do velkého **U** kolem středu. Stehlík sedí na lavici uprostřed. Vedle něj **Aleš**, **Karel**, **SoTo**, **JUDr. Růžičková** (přijela autem z Blanska speciálně). Týmy v U kolem.
 - Atmosféra je **tichá, vážná**. Žádné zvonění, žádný humor.
 - **Lipový altán** se hodí, protože nemá zdi — všichni vidí všechny, je tam dost vzduchu, ne klaustrofobie.
 
@@ -130,17 +130,17 @@ Tým, který hledal v přístřešku, doloží **F17 — 30 000 Kč v plechové 
 
 ## Stehlík utíká (17:00–17:30)
 
-Po přestávce, kdy se Aleš odebere k Magdaléně H. (= je v šoku, zhroutí), **Stehlík v lipovém altánu náhle vstane**.
+Po přestávce, kdy se Aleš odebere k Magdě (= je v šoku, zhroutí), **Stehlík v lipovém altánu náhle vstane**.
 
 > **Stehlík**: „**Já potřebuji vzduch. Půjdu se projít k samotě. Vrátím se za hodinu.**"
 
 **Karel**: „Pane Stehlíku, prosím zůstaňte..."
 
-**Stehlík** vyběhne z altánu. Doběhne k pickupu na lesní cestě, ale **klíčky má Pavel** (Pavel je Stehlíkovi den 5 nenápadně vzal — preventivně).
+**Stehlík** vyběhne z altánu. Doběhne k pickupu na lesní cestě, ale **klíčky má SoTo** (SoTo je Stehlíkovi den 5 nenápadně vzal — preventivně).
 
 **Stehlík** zoufale **utíká do lesa**, lesní cestou směrem k samotě.
 
-> **Důležité scénografické rozhodnutí**: Stehlík neuteče autem. Chce, ale klíče má Pavel. **Utíká pěšky lesní cestou. Snaží se dostat domů na samotu — možná se schovat, možná uklidit dodatek smlouvy, který si den předtím odnesl od Aleše domů.**
+> **Důležité scénografické rozhodnutí**: Stehlík neuteče autem. Chce, ale klíče má SoTo. **Utíká pěšky lesní cestou. Snaží se dostat domů na samotu — možná se schovat, možná uklidit dodatek smlouvy, který si den předtím odnesl od Aleše domů.**
 
 Karel svolá tábor:
 
@@ -191,11 +191,11 @@ Klasická forma: vedoucí udělají trasu se svíčkami a překážkami **na bez
 | **Vladimír Stehlík** | Konfrontace, přiznání, útěk — **emocionální vrchol** |
 | **Aleš Tomek** | Přiznání — **tragický bod hry** |
 | Karel Malík | Vede konfrontaci, pevná ruka |
-| Pavel Malík | Drží klíče od pickupu, organizuje |
-| Magdaléna Růžičková | Přijela z Blanska k konfrontaci, byla u toho |
-| Magdaléna Hamanová | Po Alešově přiznání ho vezme do zdravotky, posedí s ním |
+| SoTo | Drží klíče od pickupu, organizuje |
+| JUDr. Růžičková | Přijela z Blanska k konfrontaci, byla u toho |
+| Magda Hamanová | Po Alešově přiznání ho vezme do zdravotky, posedí s ním |
 | Anička | V kuchyni, přiznáním šokována, nakonec přinese Alešovi čaj |
-| Klára, Jenda, Hájek | Pozorují, podporují |
+| Anežka, Adriana, Hájek | Pozorují, podporují |
 
 ---
 
@@ -203,7 +203,7 @@ Klasická forma: vedoucí udělají trasu se svíčkami a překážkami **na bez
 
 - **Lipový altán** — uspořádané lavičky do U
 - **Tištěné kopie důkazů** (papíry, fotky, otisky, kopie dodatku smlouvy, kopie Bártova rozhovoru) — týmy si přinesou své kartotéky
-- **Klíčky od pickupu** — Pavel je má (preventivně den 5 vzal)
+- **Klíčky od pickupu** — SoTo je má (preventivně den 5 vzal)
 - **30 000 Kč** v plechové bedně Aleše (rekvizita — bankovky kopie nebo simulace)
 - **Stezka odvahy materiál**: svíčky v zavařovacích sklenicích (proti větru), překážky, lano, dlouhé bílé prostěradlo (rekvizita pro mlhu, ale nepoužívat strašáky!)
 
@@ -216,7 +216,7 @@ Klasická forma: vedoucí udělají trasu se svíčkami a překážkami **na bez
 3. **Stehlík musí být klidný, NE hysterický**. Jeho přiznání je **smutek**, ne křik. **Klíčový tón: tragický hospodář, ne kriminálník.** Děti by měly cítit lítost, ne triumf.
 4. **Útěk Stehlíka**: je **dramatický, ale ne nebezpečný**. Stehlík běží lesní cestou, **vedoucí v rozestavěných pozicích pro bezpečnost**. **Nikdo se za ním nepouští**. Vedoucí dohlížejí, aby se neztratil mimo bezpečnou zónu.
 5. **Po útěku Stehlíka dejte dětem chvíli** — nesmí se pouštět do lesa za ním. Vyložte to jako „policejní záležitost zítra".
-6. **Aleš po přiznání**: zůstává v táboře pod neformálním dohledem. **Magdaléna H. ho vezme do zdravotky**, donese mu čaj, sedí s ním. Vedoucí, který Aleše hraje (= sám Aleš), by se měl po skončení scény **ukázat dětem**, **že je v pořádku**. „Děkuji, že jste mě poslouchali. Rád vás vidím." Tím se ulehčí mladším dětem (= nejmladším účastníkům, které mohou být zděšené).
+6. **Aleš po přiznání**: zůstává v táboře pod neformálním dohledem. **Magda ho vezme do zdravotky**, donese mu čaj, sedí s ním. Vedoucí, který Aleše hraje (= sám Aleš), by se měl po skončení scény **ukázat dětem**, **že je v pořádku**. „Děkuji, že jste mě poslouchali. Rád vás vidím." Tím se ulehčí mladším dětem (= nejmladším účastníkům, které mohou být zděšené).
 7. **Stezka odvahy se NESMÍ napojit na příběh**. Žádné stínové postavy, žádné „Stehlík je v lese". Pokud děti spojí, vedoucí jasně řekne: „**Toto je hra. Stehlík je daleko od trasy stezky. My jsme bezpečně.**"
 8. **Volání policie z Blanska**: Karel volá z lesní cesty „U lípy" (signál). Pokud chcete autenticky, vedoucí ve roli kpt. Poláka **odpoví** telefonem (= druhý vedoucí čeká připravený s telefonem ve stanu, předem domluveno). Děti to neuslyší přímo, jen se Karel vrátí a oznámí, že **policie přijde ráno v 6:30**.
 

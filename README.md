@@ -47,14 +47,16 @@ Kompletní balík materiálů pro **30. ročník tábora Světlo** — celotábo
 
 ## Status
 
-🟢 **Migrace na verzi A dokončena (v0.3.0).**
+🟢 **Obsazení reálného personálu (v0.4.0).**
 
 - ✅ Hrubá struktura všech 33 souborů.
-- ✅ Postavy: Tábor Světlo, Marek Stanislav (zakladatel), Karel/Pavel Malík (hl. ved. + zástupce, bratři), Anička Kellnerová (st. kuchařka), Klára Stanislavová (ml. kuchařka, vzdálená sestřenice Marka), Jenda (zásobovač), Magdaléna Hamanová (zdravotnice), Aleš Tomek (údržbář, pomocník zločinu); Vladimír Stehlík (hlavní pachatel, hospodář ze sousední samoty).
+- ✅ Postavy: Tábor Světlo, **Marek Stanislav** (zakladatel, oběť — **hraje Karel Malík v dvojí roli**, kostýmová změna jen den 1 + den 11), Karel Malík (hl. vedoucí, dny 1–12), **Tomáš „Tony" Sotoniak** (zástupce, vzdálený synovec Marka, **HLAVNÍ rudá stopa**), Anička Kellnerová (šéfkuchařka, klíčová svědkyně), Anežka Kellnerová (sous-chef, ml. sestra Aničky), Magda Hamanová (zdravotnice, 25), Jenda + Adriana (zásobovač + partnerka), Pavel „Preclík" Malík (vedoucí oddílu, shoda příjmení s Karlem, komická drobná stopa), Tom Buchta (vedoucí oddílu, atletika + housle), Aleš Tomek (mladý správce 19, **pomocník zločinu**); Vladimír Stehlík (**hlavní pachatel**, hospodář ze sousední samoty).
+- ✅ Mladí instruktoři: Klárka Malíková, Lucka Malíková (dcery Karla), Martin, Martina, Alča, Jeník, Lucka Ravasová, Vája, Ondra.
+- ✅ Hosté: JUDr. Magdaléna Růžičková (notářka), Bohumil Hájek (starosta), 2× policisté z Blanska, **Tomáš Kellner** (řezník, bratr Aničky a Anežky, drobná návštěva den 2), **Páter Lacina** (kněz z Jedovnic, drobná návštěva den 2).
 - ✅ Místo: Rakovecké údolí, 6 km od Jedovnic (okres Blansko), pozemek propůjčený Mendelovou univerzitou v Brně (LDF, ŠLP Křtiny).
 - ✅ Motiv pachatele: pozemkový (NE peněžní) — dodatek smlouvy o prodloužení propůjčení o dalších 30 let.
 - 📋 Změny mezi verzemi viz [`CHANGELOG.md`](CHANGELOG.md).
-- 🗓️ Poslední aktualizace: **2026-04-26**.
+- 🗓️ Poslední aktualizace: **2026-04-29**.
 
 ## Jak začít číst
 

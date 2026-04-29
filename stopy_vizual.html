@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tábor Světlo — Přehled indicií vizuálně</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <style>
+        :root {
+            --color-perp: #d63031;
+            --color-perp-bg: #fadbd8;
+            --color-helper: #e67e22;
+            --color-helper-bg: #fdebd0;
+            --color-motive: #f39c12;
+            --color-motive-bg: #fef5e7;
+            --color-support: #2980b9;
+            --color-support-bg: #d6eaf8;
+            --color-red-herring: #95a5a6;
+            --color-red-herring-bg: #ecf0f1;
+            --color-trophy: #27ae60;
+            --color-trophy-bg: #d5f5e3;
+            --color-bg: #fafbfc;
+            --color-card: #ffffff;
+            --color-text: #2c3e50;
+            --color-muted: #7f8c8d;
+            --color-border: #e1e4e8;
+            --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.04);
+            --shadow-hover: 0 2px 6px rgba(0,0,0,0.08), 0 8px 24px rgba(0,0,0,0.06);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.65;
+            color: var(--color-text);
+            background: var(--color-bg);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 24px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 48px;
+            padding-bottom: 32px;
+            border-bottom: 2px solid var(--color-border);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0 0 8px;
+            color: var(--color-text);
+            letter-spacing: -0.02em;
+        }
+
+        header .subtitle {
+            font-size: 1.15em;
+            color: var(--color-muted);
+            margin: 0;
+        }
+
+        header .meta {
+            margin-top: 16px;
+            font-size: 0.9em;
+            color: var(--color-muted);
+        }
+
+        .toc {
+            background: var(--color-card);
+            border: 1px solid var(--color-border);
+            border-radius: 12px;
+            padding: 20px 28px;
+            margin-bottom: 48px;
+            box-shadow: var(--shadow);
+        }
+
+        .toc h2 {
+            margin: 0 0 12px;
+            font-size: 1.1em;
+            color: var(--color-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .toc ol {
+            margin: 0;
+            padding-left: 24px;
+            columns: 2;
+            column-gap: 32px;
+        }
+
+        .toc a {
+            color: var(--color-text);
+            text-decoration: none;
+            line-height: 1.9;
+        }
+
+        .toc a:hover {
+            color: var(--color-support);
+            text-decoration: underline;
+        }
+
+        .legend {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 12px;
+            margin-bottom: 48px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 16px;
+            background: var(--color-card);
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            font-size: 0.9em;
+        }
+
+        .legend-color {
+            width: 16px;
+            height: 16px;
+            border-radius: 4px;
+            flex-shrink: 0;
+        }
+
+        .legend-color.perp { background: var(--color-perp); }
+        .legend-color.helper { background: var(--color-helper); }
+        .legend-color.motive { background: var(--color-motive); }
+        .legend-color.support { background: var(--color-support); }
+        .legend-color.red-herring { background: var(--color-red-herring); }
+        .legend-color.trophy { background: var(--color-trophy); }
+
+        section {
+            margin-bottom: 56px;
+            background: var(--color-card);
+            border: 1px solid var(--color-border);
+            border-radius: 12px;
+            padding: 32px;
+            box-shadow: var(--shadow);
+        }
+
+        section h2 {
+            margin: 0 0 8px;
+            font-size: 1.6em;
+            color: var(--color-text);
+            scroll-margin-top: 20px;
+        }
+
+        section .section-num {
+            color: var(--color-support);
+            font-weight: 600;
+            font-size: 0.85em;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 4px;
+        }
+
+        section p.lead {
+            color: var(--color-muted);
+            font-size: 1.05em;
+            margin: 0 0 24px;
+        }
+
+        .mermaid {
+            text-align: center;
+            margin: 24px 0;
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0;
+            font-size: 0.92em;
+        }
+
+        thead {
+            background: linear-gradient(180deg, #f8f9fa 0%, #f1f3f5 100%);
+        }
+
+        th, td {
+            padding: 12px 14px;
+            text-align: left;
+            border-bottom: 1px solid var(--color-border);
+            vertical-align: top;
+        }
+
+        th {
+            font-weight: 600;
+            color: var(--color-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            font-size: 0.82em;
+            border-bottom: 2px solid var(--color-border);
+        }
+
+        tbody tr:hover {
+            background: #f8f9fa;
+        }
+
+        .day-cell {
+            font-weight: 600;
+            color: var(--color-support);
+            white-space: nowrap;
+        }
+
+        .code-cell {
+            font-family: "SF Mono", Monaco, Menlo, monospace;
+            font-size: 0.88em;
+            font-weight: 600;
+            color: var(--color-text);
+        }
+
+        .code-cell.key {
+            background: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 12px;
+            font-size: 0.78em;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .badge-perp {
+            background: var(--color-perp-bg);
+            color: var(--color-perp);
+        }
+
+        .badge-helper {
+            background: var(--color-helper-bg);
+            color: var(--color-helper);
+        }
+
+        .badge-motive {
+            background: var(--color-motive-bg);
+            color: #b9770e;
+        }
+
+        .badge-support {
+            background: var(--color-support-bg);
+            color: var(--color-support);
+        }
+
+        .badge-red-herring {
+            background: var(--color-red-herring-bg);
+            color: var(--color-red-herring);
+        }
+
+        .badge-trophy {
+            background: var(--color-trophy-bg);
+            color: var(--color-trophy);
+        }
+
+        .badge-key {
+            background: #fff3cd;
+            color: #856404;
+            border: 1px solid #ffeaa7;
+        }
+
+        .turning-points {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 24px;
+        }
+
+        .turning-point {
+            background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+            border: 2px solid #f39c12;
+            border-radius: 12px;
+            padding: 20px 24px;
+            box-shadow: var(--shadow);
+        }
+
+        .turning-point .day {
+            display: inline-block;
+            background: #f39c12;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .turning-point h3 {
+            margin: 0 0 12px;
+            font-size: 1.15em;
+            color: #5d4e1f;
+        }
+
+        .turning-point p {
+            margin: 0 0 8px;
+            font-size: 0.95em;
+            color: #5d4e1f;
+        }
+
+        .turning-point .clues {
+            font-family: "SF Mono", Monaco, monospace;
+            font-size: 0.82em;
+            color: #856404;
+            margin-top: 12px;
+            font-weight: 600;
+        }
+
+        .info-box {
+            border-left: 4px solid var(--color-support);
+            background: var(--color-support-bg);
+            padding: 16px 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 20px 0;
+        }
+
+        .info-box.tip {
+            border-left-color: var(--color-trophy);
+            background: var(--color-trophy-bg);
+        }
+
+        .info-box.warn {
+            border-left-color: var(--color-helper);
+            background: var(--color-helper-bg);
+        }
+
+        .info-box strong {
+            display: block;
+            margin-bottom: 4px;
+            color: var(--color-text);
+        }
+
+        footer {
+            margin-top: 80px;
+            padding-top: 32px;
+            border-top: 1px solid var(--color-border);
+            text-align: center;
+            color: var(--color-muted);
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            .container { padding: 20px 16px; }
+            header h1 { font-size: 1.8em; }
+            section { padding: 20px; }
+            .toc ol { columns: 1; }
+            table { font-size: 0.85em; }
+            th, td { padding: 8px 10px; }
+        }
+
+        @media print {
+            body { background: white; }
+            section { box-shadow: none; page-break-inside: avoid; }
+            .toc { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tábor Světlo — Případ ztracené závěti</h1>
+            <p class="subtitle">Přehled indicií vizuálně · 30. ročník · 11.–22. 7. 2026</p>
+            <p class="meta">Doplněk k <code>08_INDICIE_MATICE.md</code> · Rakovecké údolí, Jedovnice</p>
+        </header>
+
+        <nav class="toc">
+            <h2>Obsah</h2>
+            <ol>
+                <li><a href="#timeline">Časová osa získávání indicií</a></li>
+                <li><a href="#convergence">Diagram konvergence na pachatele</a></li>
+                <li><a href="#elimination">Diagram eliminace rudých stop</a></li>
+                <li><a href="#table">Souhrnná tabulka indicií</a></li>
+                <li><a href="#turning-points">Tři klíčové momenty zlomu</a></li>
+                <li><a href="#distribution">Distribuce indicií týmům</a></li>
+                <li><a href="#usage">Jak diagram použít</a></li>
+            </ol>
+        </nav>
+
+        <div class="legend">
+            <div class="legend-item">
+                <span class="legend-color perp"></span>
+                <span><strong>Pachatel</strong> — Stehlík</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-color helper"></span>
+                <span><strong>Pomocník</strong> — Aleš</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-color motive"></span>
+                <span><strong>Motiv</strong> — pozemek</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-color support"></span>
+                <span><strong>Podpůrné</strong> — svědectví</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-color red-herring"></span>
+                <span><strong>Rudá stopa</strong> — eliminace</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-color trophy"></span>
+                <span><strong>Triumf</strong> — finále</span>
+            </div>
+        </div>
+
+        <section id="timeline">
+            <div class="section-num">1.</div>
+            <h2>Časová osa získávání indicií</h2>
+            <p class="lead">Všech ~25 stop seřazených chronologicky podle dne, kdy je děti získají.</p>
+
+            <div class="mermaid">
+timeline
+    title Indicie po dnech (11.–22. 7. 2026)
+    Den 1 (11.7.) — zahájení
+        : Marek uloží červenou složku do truhly v Šéfce
+        : Aleš v noci rozváže rohy plachty
+        : Stehlík přichází lesem ze samoty
+        : 01:00 konfrontace, Marek padá v lese o kořen
+    Den 2 (12.7.) — objev
+        : F01 padělek bez notářské pečetě
+        : F02 originál chybí
+        : F03 otisk u truhly
+        : F04 otisk kožené boty 44 v rose
+        : F05 2 páry stop v rose
+        : F07 rozvázané rohy plachty Šéfky
+    Den 3 (13.7.) — výslechy
+        : S02 Karel a Pavel — porada (alibi)
+        : S03 Pavel — proč ranní výjezd v 5:45?
+        : S04 Aleš — latrýna (slabé alibi)
+        : S07 Magdaléna H. — lékařský deník
+        : S08 Jenda alibi
+    Den 4 (14.7.) — forenzika
+        : F08 lab. otisku odpovídá CIZÍ osobě
+        : F09 stopa pneumatiky pickupu
+        : F10 vlákno z kožené rukavice
+        : F12 popel z dýmky v rohu Šéfky
+        : D01 Caesar — POMOHL VLASTNÍ
+        : Klára Stanislavová (rudá stopa)
+    Den 5 (15.7.) — návštěvy
+        : F11 mezera v Alešově hlídce
+        : Stehlík přijíždí — boty 44, pickup, dýmka
+        : S09 Magdaléna R. — závěť má dodatek
+        : S10 Stehlík alibi (samota)
+    Den 6 (16.7.) — zlom
+        : S01 Anička — baterka 00:30, silueta 01:10
+        : D02 substituce — PODÍVEJTE SE NA HLÍDKU
+        : Eliminace Kláry, Hájka, Konečného
+    Den 7 (17.7.) — Markův vzkaz
+        : D03 dopis z FN Brno
+        : Marek jmenuje Stehlíka i Aleše
+        : Eliminace Magdalény H. a Jendy
+    Den 8 (18.7.) — výjezd Blansko
+        : D04 fragment závěti
+        : F13 DODATEK smlouvy s univerzitou
+        : F14 Stehlíkova dohoda s lesníkem
+        : F15 lesní bahno na Alešových botách
+    Den 9 (19.7.) — konfrontace
+        : F17 30 000 Kč u Aleše
+        : S15 Alešovo PŘIZNÁNÍ
+        : Stehlík utíká do lesa
+    Den 10 (20.7.) — hon
+        : Stehlík dopaden policií
+        : S16 Stehlíkovo PŘIZNÁNÍ
+        : F16 PRAVÁ ZÁVĚŤ v dutině buku
+    Den 11 (21.7.) — finále
+        : Marek čte závěť
+        : Aleš v Radě tábora
+        : 45 dědických listů
+            </div>
+        </section>
+
+        <section id="convergence">
+            <div class="section-num">2.</div>
+            <h2>Diagram konvergence na pachatele</h2>
+            <p class="lead">Které stopy směřují kam — a jak se „smyčka utáhne".</p>
+
+            <div class="mermaid">
+flowchart LR
+    F03["F03 otisk u truhly<br/>📅 den 2"]:::phys
+    F04["F04 kožená bota 44<br/>📅 den 2"]:::phys
+    F05["F05 2 páry stop v rose<br/>📅 den 2"]:::phys
+    F08["F08 lab. = CIZÍ osoba<br/>📅 den 4"]:::phys
+    F09["F09 stopa pneumatiky pickupu<br/>📅 den 4"]:::phys
+    F10["F10 vlákno z kožené rukavice<br/>📅 den 4"]:::phys
+    F12["F12 popel z dýmky<br/>📅 den 4"]:::phys
+    S01["S01 Anička viděla siluetu<br/>📅 den 6"]:::phys
+    D03S["D03 Marek jmenuje Stehlíka<br/>📅 den 7"]:::ciph
+    F13["F13 DODATEK smlouvy s univerzitou<br/>📅 den 8"]:::motive
+    F14["F14 Stehlíkova dohoda s lesníkem<br/>📅 den 8"]:::motive
+    S16["S16 Stehlíkovo přiznání<br/>📅 den 10"]:::perp
+
+    STEHLIK[("🟥 VLADIMÍR STEHLÍK<br/>hlavní pachatel")]:::perp
+
+    F03 --> STEHLIK
+    F04 --> STEHLIK
+    F05 --> STEHLIK
+    F08 --> STEHLIK
+    F09 --> STEHLIK
+    F10 --> STEHLIK
+    F12 --> STEHLIK
+    S01 --> STEHLIK
+    D03S --> STEHLIK
+    F13 --> STEHLIK
+    F14 --> STEHLIK
+    S16 --> STEHLIK
+
+    F07["F07 rozvázané rohy plachty<br/>📅 den 2"]:::phys
+    F11["F11 mezera v Alešově hlídce<br/>📅 den 5"]:::phys
+    D01["D01 POMOHL VLASTNÍ<br/>📅 den 4"]:::ciph
+    D02["D02 PODÍVEJTE SE NA HLÍDKU<br/>📅 den 6"]:::ciph
+    D03A["D03 Marek jmenuje Aleše<br/>📅 den 7"]:::ciph
+    F15["F15 bahno ze Stehlíkovy louky<br/>📅 den 8"]:::phys
+    F17["F17 30 000 Kč u Aleše<br/>📅 den 9"]:::phys
+    S15["S15 Alešovo přiznání<br/>📅 den 9"]:::helper
+
+    ALES[("🟧 ALEŠ TOMEK<br/>pomocník zločinu")]:::helper
+
+    F07 --> ALES
+    F11 --> ALES
+    D01 --> ALES
+    D02 --> ALES
+    D03A --> ALES
+    F15 --> ALES
+    F17 --> ALES
+    S15 --> ALES
+
+    F16["🏆 F16 PRAVÁ ZÁVĚŤ<br/>v dutině buku<br/>📅 den 10"]:::trophy
+    STEHLIK -.uvedl, kde je.-> F16
+    F16 --> FINALE([🎉 Den 11 — finále])
+    FINALE:::trophy
+
+    classDef perp fill:#fadbd8,stroke:#d63031,stroke-width:2px,color:#000
+    classDef helper fill:#fdebd0,stroke:#e67e22,stroke-width:2px,color:#000
+    classDef motive fill:#fef5e7,stroke:#f39c12,stroke-width:2px,color:#000
+    classDef phys fill:#d6eaf8,stroke:#2980b9,color:#000
+    classDef ciph fill:#e8d5f2,stroke:#8e44ad,color:#000
+    classDef trophy fill:#d5f5e3,stroke:#27ae60,stroke-width:3px,color:#000
+            </div>
+        </section>
+
+        <section id="elimination">
+            <div class="section-num">3.</div>
+            <h2>Diagram eliminace rudých stop</h2>
+            <p class="lead">Děti několik dnů sledují rudé stopy, které je svedou na špatnou cestu. Tady je přehled, kdy se eliminují.</p>
+
+            <div class="mermaid">
+flowchart TB
+    subgraph DEN3["📅 Den 3"]
+        E_KAREL["✅ Karel Malík<br/>alibi: porada"]:::cleared
+        E_PAVEL_1["⚠️ Pavel Malík<br/>(podezřelý — 5:45)"]:::pending
+    end
+
+    subgraph DEN45["📅 Den 4–5"]
+        E_PAVEL_2["✅ Pavel Malík<br/>jel pro signál pohotovosti"]:::cleared
+        E_KLARA_1["⚠️ Klára Stanislavová<br/>(vzdálená sestřenice)"]:::pending
+    end
+
+    subgraph DEN6["📅 Den 6"]
+        E_KLARA_2["✅ Klára — žádné dědictví"]:::cleared
+        E_HAJEK["✅ Hájek<br/>obecní zasedání"]:::cleared
+        E_KONECNY["✅ Pavel Konečný (Borovice)<br/>porada s Údolím"]:::cleared
+    end
+
+    subgraph DEN7["📅 Den 7"]
+        E_MAGDA["✅ Magdaléna Hamanová<br/>lékařský deník"]:::cleared
+        E_JENDA["✅ Jenda<br/>klíčový svědek pohybu"]:::cleared
+    end
+
+    E_PAVEL_1 -.den 4.-> E_PAVEL_2
+    E_KLARA_1 -.den 6.-> E_KLARA_2
+
+    classDef cleared fill:#d5f5e3,stroke:#27ae60,color:#000
+    classDef pending fill:#fdebd0,stroke:#e67e22,stroke-dasharray: 5 5,color:#000
+            </div>
+        </section>
+
+        <section id="table">
+            <div class="section-num">4.</div>
+            <h2>Souhrnná tabulka indicií</h2>
+            <p class="lead">Všechny stopy se značkami důležitosti a směru.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Den</th>
+                        <th>Kód</th>
+                        <th>Indicie</th>
+                        <th>Kam vede</th>
+                        <th>Hodnota</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td class="day-cell">2</td><td class="code-cell key">F01</td><td>Padělek závěti bez pečetě</td><td>Krádež je jistá</td><td><span class="badge badge-perp">🟥 zlomová</span></td></tr>
+                    <tr><td class="day-cell">2</td><td class="code-cell">F02</td><td>Originál chybí</td><td>Krádež je jistá</td><td><span class="badge badge-perp">🟥 zlomová</span></td></tr>
+                    <tr><td class="day-cell">2</td><td class="code-cell key">F03</td><td>Otisk ruky u truhly</td><td>→ Stehlík (analýza den 4)</td><td><span class="badge badge-perp">🟥</span></td></tr>
+                    <tr><td class="day-cell">2</td><td class="code-cell key">F04</td><td>Otisk kožené boty 44 v rose</td><td>→ Stehlík (porovnání den 5)</td><td><span class="badge badge-perp">🟥</span></td></tr>
+                    <tr><td class="day-cell">2</td><td class="code-cell">F05</td><td>2 páry stop v rose</td><td>→ cizí osoba</td><td><span class="badge badge-perp">🟥</span></td></tr>
+                    <tr><td class="day-cell">2</td><td class="code-cell">F06</td><td>Fotky z mobilu Karla/Pavla</td><td>Důkazní archiv</td><td><span class="badge badge-support">🟦</span></td></tr>
+                    <tr><td class="day-cell">2</td><td class="code-cell key">F07</td><td>Rozvázané rohy plachty Šéfky</td><td>→ vnitřní pomocník</td><td><span class="badge badge-helper">🟧 zlomová</span></td></tr>
+                    <tr><td class="day-cell">3</td><td class="code-cell">S02</td><td>Alibi Karel + Pavel</td><td>Karel eliminován</td><td><span class="badge badge-red-herring">⬜</span></td></tr>
+                    <tr><td class="day-cell">3</td><td class="code-cell">S03</td><td>Pavlův výjezd v 5:45</td><td>Rudá stopa, vyřešena den 4–5</td><td><span class="badge badge-red-herring">⬜</span></td></tr>
+                    <tr><td class="day-cell">3</td><td class="code-cell">S04</td><td>Alešova „latrýna"</td><td>Slabé alibi</td><td><span class="badge badge-helper">🟧</span></td></tr>
+                    <tr><td class="day-cell">3</td><td class="code-cell">S07</td><td>Magdaléna H. — deník</td><td>Rudá stopa</td><td><span class="badge badge-red-herring">⬜</span></td></tr>
+                    <tr><td class="day-cell">3</td><td class="code-cell">S08</td><td>Jenda alibi</td><td>Svědek pohybu</td><td><span class="badge badge-support">🟦</span></td></tr>
+                    <tr><td class="day-cell">4</td><td class="code-cell key">F08</td><td>Lab. otisk = CIZÍ osoba</td><td>→ pachatel je z venku</td><td><span class="badge badge-perp">🟥 zlomová</span></td></tr>
+                    <tr><td class="day-cell">4</td><td class="code-cell key">F09</td><td>Stopa pneumatiky pickupu</td><td>→ Stehlík (den 5)</td><td><span class="badge badge-perp">🟥</span></td></tr>
+                    <tr><td class="day-cell">4</td><td class="code-cell">F10</td><td>Vlákno z kožené rukavice</td><td>→ Stehlík (rukavice)</td><td><span class="badge badge-perp">🟥</span></td></tr>
+                    <tr><td class="day-cell">4</td><td class="code-cell key">F12</td><td>Popel z dýmky (zvláštní směs)</td><td>→ Stehlík (kuřácký zvyk)</td><td><span class="badge badge-perp">🟥 KLÍČOVÁ</span></td></tr>
+                    <tr><td class="day-cell">4</td><td class="code-cell">D01</td><td>Caesar — „POMOHL VLASTNÍ"</td><td>→ vnitřní pomocník</td><td><span class="badge badge-helper">🟧</span></td></tr>
+                    <tr><td class="day-cell">4</td><td class="code-cell">matrika</td><td>Klára = vzdálená sestřenice</td><td>Rudá stopa</td><td><span class="badge badge-red-herring">⬜</span></td></tr>
+                    <tr><td class="day-cell">5</td><td class="code-cell key">F11</td><td>Mezera v Alešově hlídce</td><td>→ Aleš</td><td><span class="badge badge-helper">🟧 zlomová</span></td></tr>
+                    <tr><td class="day-cell">5</td><td class="code-cell">Stehlík</td><td>Boty 44, pickup, dýmka — VŠECHNO sedí</td><td>Dramatická shoda</td><td><span class="badge badge-perp">🟥</span></td></tr>
+                    <tr><td class="day-cell">5</td><td class="code-cell">S09</td><td>Závěť má DODATEK</td><td>→ motiv Stehlíka</td><td><span class="badge badge-motive">🟨</span></td></tr>
+                    <tr><td class="day-cell">5</td><td class="code-cell">S10</td><td>Stehlík tvrdí „byl jsem doma"</td><td>LEŽ</td><td><span class="badge badge-perp">🟥</span></td></tr>
+                    <tr><td class="day-cell">5</td><td class="code-cell">S11</td><td>Hájek alibi</td><td>Rudá stopa</td><td><span class="badge badge-red-herring">⬜</span></td></tr>
+                    <tr><td class="day-cell">6</td><td class="code-cell key">S01</td><td>Anička — baterka 00:30 + silueta 01:10</td><td>→ cizí + vnitřní</td><td><span class="badge badge-perp">🟥</span> <span class="badge badge-helper">🟧 zlomová</span></td></tr>
+                    <tr><td class="day-cell">6</td><td class="code-cell">D02</td><td>Substituce — „PODÍVEJTE SE NA HLÍDKU"</td><td>→ Aleš</td><td><span class="badge badge-helper">🟧</span></td></tr>
+                    <tr><td class="day-cell">6</td><td class="code-cell">elim.</td><td>Klára, Hájek, Konečný eliminováni</td><td>Rudé stopy uzavřeny</td><td><span class="badge badge-red-herring">⬜</span></td></tr>
+                    <tr><td class="day-cell">7</td><td class="code-cell key">D03</td><td>Markův vzkaz — jmenuje Stehlíka i Aleše</td><td>→ oba</td><td><span class="badge badge-perp">🟥</span> <span class="badge badge-helper">🟧 zlomová</span></td></tr>
+                    <tr><td class="day-cell">7</td><td class="code-cell">elim.</td><td>Magdaléna H., Jenda</td><td>Rudé stopy uzavřeny</td><td><span class="badge badge-red-herring">⬜</span></td></tr>
+                    <tr><td class="day-cell">8</td><td class="code-cell">D04</td><td>Fragment závěti (§§ 1–2)</td><td>Kontext</td><td><span class="badge badge-support">🟦</span></td></tr>
+                    <tr><td class="day-cell">8</td><td class="code-cell key">F13</td><td>DODATEK smlouvy s univerzitou</td><td>→ MOTIV Stehlíka</td><td><span class="badge badge-motive">🟨 KLÍČOVÝ MOTIV</span></td></tr>
+                    <tr><td class="day-cell">8</td><td class="code-cell">F14</td><td>Stehlíkova dohoda s lesníkem</td><td>→ motiv</td><td><span class="badge badge-motive">🟨</span></td></tr>
+                    <tr><td class="day-cell">8</td><td class="code-cell">F15</td><td>Bahno ze Stehlíkovy louky na Alešových botách</td><td>→ Aleš tam byl</td><td><span class="badge badge-helper">🟧</span></td></tr>
+                    <tr><td class="day-cell">9</td><td class="code-cell key">F17</td><td>30 000 Kč u Aleše</td><td>Úplatek od Stehlíka</td><td><span class="badge badge-helper">🟧 zlomová</span></td></tr>
+                    <tr><td class="day-cell">9</td><td class="code-cell key">S15</td><td>Alešovo přiznání</td><td>DEFINITIVNÍ</td><td><span class="badge badge-helper">🟧 finální</span></td></tr>
+                    <tr><td class="day-cell">10</td><td class="code-cell key">S16</td><td>Stehlíkovo přiznání</td><td>DEFINITIVNÍ</td><td><span class="badge badge-perp">🟥 finální</span></td></tr>
+                    <tr><td class="day-cell">10</td><td class="code-cell key">F16</td><td>PRAVÁ ZÁVĚŤ v dutině buku</td><td>Triumfální moment</td><td><span class="badge badge-trophy">🏆</span></td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="turning-points">
+            <div class="section-num">5.</div>
+            <h2>Tři klíčové momenty zlomu</h2>
+            <p class="lead">Tři okamžiky, kdy se vyšetřování posune o velký krok vpřed.</p>
+
+            <div class="turning-points">
+                <div class="turning-point">
+                    <span class="day">Den 4</span>
+                    <h3>🔑 ZLOM 1: Pachatel je CIZÍ</h3>
+                    <p>Forenzní stanoviště odhalí, že otisk ruky a vlákno z rukavice <strong>NEPATŘÍ nikomu z personálu</strong>.</p>
+                    <p>Vzniká nová otázka: <em>kdo ho pustil dovnitř?</em></p>
+                    <div class="clues">F08 + F10 + F07</div>
+                </div>
+
+                <div class="turning-point">
+                    <span class="day">Den 6</span>
+                    <h3>🔑 ZLOM 2: Aleš pomáhá zevnitř</h3>
+                    <p>Anička přizná, co viděla z polní kuchyně. Anonymní dopis nasměruje na hlídku ohniště. Mezera v Alešově službě 00:30–01:30.</p>
+                    <p>Boty 44, pickup, dýmka — <strong>Stehlík sedí jako pachatel</strong>.</p>
+                    <div class="clues">S01 + D02 + F11 + F12 + F04</div>
+                </div>
+
+                <div class="turning-point">
+                    <span class="day">Den 8</span>
+                    <h3>🔑 ZLOM 3: Motiv = pozemek</h3>
+                    <p>Magdaléna Růžičková v Blansku ukáže <strong>dodatek smlouvy s Mendelovou univerzitou</strong> o prodloužení propůjčení o 30 let.</p>
+                    <p>Bez dodatku by smlouva 2027 vypršela a univerzita pronajala plochu Stehlíkovi.</p>
+                    <div class="clues">F13 + F14</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="distribution">
+            <div class="section-num">6.</div>
+            <h2>Distribuce indicií týmům</h2>
+            <p class="lead">Některé stopy dostane každý tým, jiné jdou jen 1–2 týmům — to drží napětí a podporuje vzájemné sdílení.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Stopa</th>
+                        <th>Distribuce</th>
+                        <th>Poznámka</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td class="code-cell">F01–F07, F08, F09, F10, F12</td><td><span class="badge badge-support">všechny týmy</span></td><td>Místo činu, forenzní stanoviště</td></tr>
+                    <tr><td class="code-cell">D01, D02, D03</td><td><span class="badge badge-support">všechny týmy</span></td><td>Dešifrovává nejrychlejší tým, obsah dostanou všichni</td></tr>
+                    <tr><td class="code-cell key">F11 mezera v hlídce</td><td><span class="badge badge-helper">1–2 týmy</span></td><td>Kdo den 5 pracuje s Alešem</td></tr>
+                    <tr><td class="code-cell key">F13/F14 dodatek + dohoda s lesníkem</td><td><span class="badge badge-motive">výjezdová skupina den 8</span></td><td>1 dítě z týmu, sdílí se po návratu</td></tr>
+                    <tr><td class="code-cell key">F15 bahno na botách</td><td><span class="badge badge-helper">1 tým</span></td><td>Kdo den 8 zkoumá Aleše</td></tr>
+                    <tr><td class="code-cell">Klára matrika</td><td><span class="badge badge-red-herring">1 tým den 4</span></td><td>Exkluzivní rudá stopa</td></tr>
+                </tbody>
+            </table>
+
+            <div class="info-box tip">
+                <strong>💡 Tip pro vedoucího</strong>
+                Pokud nějaký tým výrazně zaostává, prohoďte exkluzivní stopu — nedostane ji „přední" tým, dostane ji „zadní". Není to o body, je to o zážitku.
+            </div>
+        </section>
+
+        <section id="usage">
+            <div class="section-num">7.</div>
+            <h2>Jak diagram použít</h2>
+
+            <div class="info-box">
+                <strong>Pro vedoucího hry</strong>
+                Tato vizualizace ukazuje, <strong>kdy která stopa přijde do hry</strong> — pomáhá držet tempo. Pokud tým je v dni 7 ještě bez podezření na Stehlíka, stopa F13 (dodatek smlouvy) den 8 to napraví.
+            </div>
+
+            <div class="info-box warn">
+                <strong>⚠️ Pro děti</strong>
+                <strong>NEUKAZUJTE jim tento přehled.</strong> Stopy mají objevovat. Lze ale pověsit „šifrovou tabuli" v jídelně, na kterou se postupně přilepuje <em>pouze to, co děti samy našly</em> (kontextová tabule).
+            </div>
+
+            <div class="info-box tip">
+                <strong>📚 Pro Knihu 30 let</strong>
+                Na konci tábora lze do knihy vlepit zjednodušenou verzi tohoto diagramu — jako dokumentaci, jak děti pravdu rozkrývaly.
+            </div>
+        </section>
+
+        <footer>
+            <p>Tábor Světlo · 30. ročník · Případ ztracené závěti<br>
+            <em>Vygenerováno z <code>16_STOPY_VIZUAL.md</code> · 2026-04-26</em></p>
+        </footer>
+    </div>
+
+    <script>
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'default',
+            themeVariables: {
+                fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+                primaryColor: '#fff3cd',
+                primaryTextColor: '#2c3e50',
+                lineColor: '#7f8c8d',
+                secondaryColor: '#d6eaf8',
+                tertiaryColor: '#d5f5e3'
+            },
+            timeline: {
+                useMaxWidth: true
+            },
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis'
+            }
+        });
+    </script>
+</body>
+</html>

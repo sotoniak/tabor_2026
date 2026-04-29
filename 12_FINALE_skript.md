@@ -2,6 +2,8 @@
 
 **Den 11 je emocionální vrchol celé hry.** Tento soubor obsahuje **detailní skript** závěrečné slavnosti — od příjezdu Marka Stanislava z FN Brno až po závěrečný táborák.
 
+> ⚠️ **POZOR — Karel hraje Marka.** Marek Stanislav (zakladatel) je hrán **Karlem Malíkem** v dvojí roli (kostýmová změna). Detailní logistika viz `04_ROLE_OBSAZENI.md` sekce „Logistika dvojí role Karel/Marek". **Klíčové:** Marek u večerního ohně NEZŮSTÁVÁ — po čtení závěti odjíždí zpět do FN Brno, večer pak vede Karel sám za sebe.
+
 ## Klíčový princip finále
 
 **Ne show, ale rituál.** Nemá to být teatrální představení. **Má to být** **slavnostní, opravdový moment**, ve kterém **45 dětí, 15 vedoucích, 7 členů personálu, 3–4 hosté** stojí nebo sedí spolu, a **něco se mění**.
@@ -18,7 +20,7 @@
 | 08:00 | Rituální snídaně (slavnostní, lepší jídlo) |
 | 09:00 | Týmová příprava — uklid stanů, šátky, čištění, výzdoba |
 | 11:00 | Dokončení Knihy 30 let, Stromu 30 let, výzdoba lipového altánu |
-| 12:00 | Slavnostní oběd (Anička s Klárou napekly speciální menu) |
+| 12:00 | Slavnostní oběd (Anička s Anežkou napekly speciální menu) |
 | 13:00 | Klid + převléknutí do svátečního (čisté tričko, čisté kalhoty) |
 | 14:00 | NÁSTUP NA SLAVNOSTNÍ ČTENÍ v lipovém altánu / pod nejstarší lípou |
 | **14:30** | **PŘÍJEZD MARKA STANISLAVA Z FN BRNO** |
@@ -37,9 +39,9 @@
 
 ### Příprava
 
-- **Auto** (vlastní nebo zapůjčené, ideálně **starší škoda Octavia kombi** — vážně, lidsky) parkuje **na parkovišti pod lesní cestou** (auta nesmí dál do tábora)
-- **Magdaléna Hamanová** doprovází Marka pěšky **posledních 200 m** k centrální ploše
-- **Před lipovým altánem stojí** všech 45 dětí seřazených v polokruhu, vedoucí na okrajích, **personál v čele** (Karel, Pavel Malík, Anička, Klára, Magdaléna H., Jenda)
+- **Auto** (vlastní nebo zapůjčené, ideálně **starší škoda Santana kombi** — vážně, lidsky) parkuje **na parkovišti pod lesní cestou** (auta nesmí dál do tábora)
+- **Magda Hamanová** doprovází Marka pěšky **posledních 200 m** k centrální ploše
+- **Před lipovým altánem stojí** všech 45 dětí seřazených v polokruhu, vedoucí na okrajích, **personál v čele** (Karel, SoTo, Anička, Anežka, Magda, Jenda, Adriana)
 - **Aleš stojí stranou** — přítomen, ale ne v čele, čeká na Markovo gesto
 - **Notářka Růžičková** v čele s úřední aktovkou
 - **Hájek** vedle ní (krátký pozdrav)
@@ -47,13 +49,13 @@
 
 ### Marek přichází
 
-Auto zastaví na parkovišti. **Z auta vystoupí Marek Stanislav** + **Magdaléna Hamanová** (zdravotnice, doprovází ho z FN Brno). Marek **má drobnou bandage na hlavě** (ne dramatickou) a **opírá se o hůl**.
+Auto zastaví na parkovišti. **Z auta vystoupí Marek Stanislav** + **Magda Hamanová** (zdravotnice, doprovází ho z FN Brno). Marek **má drobnou bandage na hlavě** (ne dramatickou) a **opírá se o hůl**.
 
-**Posledních 200 m** jde Marek pěšky lesní pěšinou. **Magdaléna H. jde vedle**, drží mu druhou ruku, ale ne těsně — Marek **chce jít sám, jak jen to půjde**.
+**Posledních 200 m** jde Marek pěšky lesní pěšinou. **Magda jde vedle**, drží mu druhou ruku, ale ne těsně — Marek **chce jít sám, jak jen to půjde**.
 
 Když vejde do polokruhu u lipového altánu — **mlčení**. Pak **drobné zatleskání** od mladších kadetů. Pak **silné** — od starších, vedoucích. **Marek zvedne ruku, mírně, k poděkování.**
 
-**Karel** k němu jde, **objímá** (autenticky — vedoucí Karel, který hraje sebe, **má povolenou skutečnou emoci**). Marek pomalu kráčí na **vyhrazené místo** ve středu altánu. Vedle něho stojí Karel, Pavel Malík, Růžičková, Anička, Magdaléna H., Jenda, Klára, Pavel Malík. **Aleš stojí stranou** — Marek si ho hledá pohledem, **kývne mu**, pak pokračuje.
+**Karel** k němu jde, **objímá** (autenticky — vedoucí Karel, který hraje sebe, **má povolenou skutečnou emoci**). Marek pomalu kráčí na **vyhrazené místo** ve středu altánu. Vedle něho stojí Karel, SoTo, Růžičková, Anička, Anežka, Magda, Jenda, Adriana. **Aleš stojí stranou** — Marek si ho hledá pohledem, **kývne mu**, pak pokračuje.
 
 ### Markův úvod (1 min)
 
@@ -86,9 +88,9 @@ Marek **stojí, opřený o hůl**. Mluví **klidně, ne moc nahlas** — všichn
 - **Marek** sedí (**židle, ne pódium**) **uprostřed**
 - **Notářka Růžičková** vedle něj (s aktovkou a tabulemi)
 - **Karel** druhá strana
-- **Pavel Malík** vedle Karla
+- **SoTo** vedle Karla
 - **Aleš stojí stranou** — mlčky, **se sklopenou hlavou** (čeká na § 3)
-- Anička, Klára, Magdaléna H., Jenda — **rozesazeni mezi dětmi** (ne odděleně!)
+- Anička, Anežka, Magda, Jenda, Adriana — **rozesazeni mezi dětmi** (ne odděleně!)
 - **Hájek a Růžičková** — u stolu Marka
 - **45 dětí** — sedí v **polokruhu** (na lavicích, dekách, kmenu lípy)
 - **Vedoucí** — stojí v zadu nebo sedí na zemi (vedle dětí)
@@ -121,7 +123,7 @@ Marek otevře červenou složku. Prozradí **3–4 vteřiny ticha** — **dramat
 
 **Pauza. 3 vteřiny.** Děti se po sobě dívají — **„třicet let?"**
 
-> *„§ 2. Vedení tábora přebírají v dosavadní funkci **Karel Malík** (hlavní vedoucí) a **Pavel Malík** (zástupce), spolu s celým stávajícím personálem. Tábor se má řídit duchem, ve kterém vznikl: **dobrovolnost, příroda, společenství, žádný zisk**."*
+> *„§ 2. Vedení tábora přebírají v dosavadní funkci **Karel Malík** (hlavní vedoucí) a **SoTo** (zástupce), spolu s celým stávajícím personálem. Tábor se má řídit duchem, ve kterém vznikl: **dobrovolnost, příroda, společenství, žádný zisk**."*
 
 **Pauza. Děti reagují tichým „to je dobře!"**
 
@@ -309,7 +311,7 @@ Všichni stojí, zpívají hymnu (5 slok).
 
 #### Bod 6: Dort se 30 svíčkami (22:30)
 
-Anička a Klára přinášejí **dort se 30 svíčkami** (recept Anička — pamětní). Marek **rozfoukne svíčky** (s pomocí dětí). Všichni mají kousek.
+Anička a Anežka přinášejí **dort se 30 svíčkami** (recept Anička — pamětní). Marek **rozfoukne svíčky** (s pomocí dětí). Všichni mají kousek.
 
 #### Bod 7: Závěrečné slovo (22:50)
 
@@ -331,7 +333,7 @@ Všichni se rozejdou. Konec slavnosti.
 
 ### Personál sedí u dohasínajícího ohně
 
-Marek, Karel, Pavel Malík, Anička, Klára, Magdaléna H., Jenda, Aleš, Růžičková, Hájek — **sedí spolu** u ohně. **Tichá rozmluva** o dnešku.
+Marek, Karel, SoTo, Anička, Anežka, Magda, Jenda, Adriana, Aleš, Růžičková, Hájek — **sedí spolu** u ohně. **Tichá rozmluva** o dnešku.
 
 **Aleš mlčí.** Marek **k němu sedne**: *„Aleši, zítra ti hned po snídani zařídíme advokáta v Blansku. Trest se nedá obejít, ale **nebude tě to ničit**.*"
 
@@ -363,7 +365,7 @@ Stehlík není přítomen na finále (je v péči policie v Blansku). **NIKDO ho
 
 Role Marka je **fyzicky a emočně náročná**. Vedoucí:
 - **musí mít předem schválen** veškerý text (žádné improvizace)
-- **musí mít doprovod** (zdravotnice Magdaléna H., která hraje sebe — pomáhá, pokud má Marek starší stav)
+- **musí mít doprovod** (zdravotnice Magda, která hraje sebe — pomáhá, pokud má Marek starší stav)
 - **musí umět „podržet" emoci** (slzy se mohou objevit — to je v pořádku, ale **vedoucí ovládá situaci**, ne situace jeho)
 
 ### 6. Marek nesmí být v roli zranitelný k dětem
@@ -378,7 +380,7 @@ Je opřen o hůl, ale **mluví pevně, klidně, vážně**. Žádné „chudák 
 
 - **Vytisknout 45 dědických listů** (vyhotovené šablony v `sablony/dedicky_list.md`)
 - **Marek** zkontroluje text závěti, **2× ho přečte nahlas** (včetně Alešovy chvíle)
-- **Karel, Pavel Malík, Anička, Aleš** zkontrolují svou roli ve scéně
+- **Karel, SoTo, Anička, Aleš** zkontrolují svou roli ve scéně
 - **Růžičková** zkontroluje text úvodního prologu
 - **Pamětní mince** objednat (laser-cutting dřevěné kotouče s logem)
 

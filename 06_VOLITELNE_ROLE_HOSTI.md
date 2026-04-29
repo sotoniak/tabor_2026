@@ -10,9 +10,55 @@ Role jsou **drobné, neblokující**. Hostu se předá **letáček s rolí** (= 
 
 ## Kdy které role použít
 
-Některé role jsou **pevně součástí příběhu** (Vladimír Stehlík, Magdaléna Růžičková, Hájek — viz `04_ROLE_OBSAZENI.md`). Tyto **MUSÍ být obsazené**.
+Některé role jsou **pevně součástí příběhu** (Vladimír Stehlík, JUDr. Růžičková, Hájek, **Tomáš Kellner**, **Páter Lacina** — viz `04_ROLE_OBSAZENI.md`). Tyto **MUSÍ být obsazené**.
 
 **Volitelné role v tomto souboru** jsou **navíc** — pokud se objeví neplánovaný host, dostane jednu z těchto rolí.
+
+---
+
+## ROLE PEVNÉ — drobní hosté pro den 2
+
+### Tomáš Kellner — řezník z Jedovnic, bratr Aničky a Anežky (DEN 2 RÁNO)
+
+**Den příchodu:** **12. 7. (den 2) v 6:00 ráno** + krátká návštěva **den 6 v 14:00**
+
+**Pozadí:**
+- Jméno: **Tomáš Kellner**, 35+, řezník v Jedovnicích
+- **Bratr Aničky a Anežky Kellnerových** (kuchařek tábora)
+- Pravidelně přiváží do tábora maso (objednané týden dopředu)
+
+**Role pro hosta (letáček):**
+
+> *„Vy jste Tomáš Kellner, řezník z Jedovnic, bratr Aničky a Anežky. **Den 2 ráno** v 6:00 přijíždíte přivézt objednané maso. Zastihne vás **ranní chaos po nálezu Marka**. Zareagujte krátce, srdečně: ‚Sestro, co se děje? Marek?? — Já tu složím maso a hned jedu, nezdržuju vás. Drž se.‘ Krátké objetí sester. Odjíždíte dál do Boskovic.*
+> *Den 6 ve 14:00 přijdete znovu — přivezete dotázanou vepřovou plec. Krátká návštěva. Pokud se vás děti ptají, zda jste v noci viděl něco neobvyklého: ‚Hele, já jsem **toho rána, co jsem sem vezl maso, v 5:30 míjel na silnici k Jedovnicům Santanu Tomáše Sotoniaka**. Jel směrem k tábořišti odsud. Nic jsem si nemyslel. Jenom to říkám, ať to víte.'*
+> *Nikdy: lhát, vymýšlet si, mluvit s dětmi o pachateli."*
+
+**Doba:** 2× krátké návštěvy, dohromady cca 30 min
+
+**Kostým:** vlastní (řeznický plášť přes obyčejné oblečení; bílá zástěra s logem řeznictví Kellner — volitelně)
+
+---
+
+### Páter Lacina — kněz z farnosti Jedovnice (DEN 2 ODPOLEDNE)
+
+**Den příchodu:** **12. 7. (den 2) ve 14:00** + telefon **den 7 odpoledne**
+
+**Pozadí:**
+- Jméno: **Páter Lacina**, 50+, kněz farnosti Jedovnice
+- Dlouholetý kamarád pana Marka
+- Měl požehnat slavnostní zahájení 30. ročníku, ale neměl čas
+
+**Role pro hosta (letáček):**
+
+> *„Vy jste Páter Lacina, kněz z Jedovnic. Ráno 12. 7. vám Karel volal, že je pan Marek v nemocnici. **Přijdete ve 14:00 do tábora** se pomodlit za Marka. Krátká scéna v jídelně — tichá modlitba (3 min, decentní, NE jako misionář — jen tichá podpora). Krátké pozdravy s personálem, odjíždíte.*
+> *Den 7 odpoledne (telefonicky) potvrdíte: ‚Já jsem v noci z 11. na 12. 7. jel z Jedovnic do Vyškova na pohřební obřad. Cestou v Brně, na Olomoucké ulici, asi v 3:30, mě míjela Santana s českou poznávačkou. Já jsem si všiml, protože jsem viděl Tomáše Sotoniaka za volantem — známe se ze sboru, pozdravili jsme se očima. Šel směrem od Brna.'*
+> *Nikdy: moralizovat, vyšetřovat za děti, mluvit o pachateli."*
+
+**Doba:** den 2 cca 15 min návštěva, den 7 telefonát
+
+**Kostým:** vlastní (kolárek, černé košilové oblečení) — drobné označení duchovního stavu
+
+> **Funkce ve hře:** Tomáš Kellner i Páter Lacina **podporují eliminaci SoTa** (oba viděli Santanu v noci/ráno). Bez nich by děti měly slabší důkazy proti definitivnímu vyloučení SoTa den 8.
 
 ---
 
@@ -134,7 +180,7 @@ Některé role jsou **pevně součástí příběhu** (Vladimír Stehlík, Magda
 
 **Role:**
 - **Není podezřelý**, ale **legrace** — kontroluje teploty kotlů, kanystry s pitnou vodou, latrýny, stěžuje si na drobnosti
-- Anička a Klára ho **berou s nadhledem**
+- Anička a Anežka ho **berou s nadhledem**
 - **Děti ho mohou vyšetřovat** (jako "cizí osoba"), eliminují den 7
 - **Ve výslechu zazní vtipné momenty**: *"A vy jste tu noc, kdy se to stalo, byl kde?"* — *"V Brně, na semináři o teploměrech v polních kuchyních. Mám potvrzení."*
 

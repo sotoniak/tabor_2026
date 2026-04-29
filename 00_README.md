@@ -10,7 +10,7 @@
 
 Tábor **Světlo** slaví **30. ročník**. Zakladatel **Marek Stanislav** (založil v roce 1997) přijíždí přečíst slavnostní závěť, ve které rozhoduje, **co se s táborem stane dál — komu připadne a jak bude pokračovat**. První večer dojde k **dramatické události**: Marek Stanislav je nalezen zraněný v Šéfce (velitelský stan), závěť **zmizí z kufru**, kde byla uložena.
 
-Účastníci — rozdělení do **6 vyšetřovacích týmů** — pátrají 10 dní po pachateli, motivu a zejména po **pravé závěti**. Vyšetřují **personál tábora** (obě kuchařky, zdravotnice, zásobovač, údržbář, hlavní vedoucí a jeho zástupce) i **další účastníky tábora** i **návštěvníky**, kteří během akce přijíždějí. Podezřelými mohou být i **vedoucí ze tří sousedních táborů** v údolí.
+Účastníci — rozdělení do **6 vyšetřovacích týmů** — pátrají 10 dní po pachateli, motivu a zejména po **pravé závěti**. Vyšetřují **personál tábora** (obě kuchařky-sestry, zdravotnice, zásobovač s partnerkou, mladý správce, hlavní vedoucí a **jeho zástupce — vzdálený synovec Marka**, který drží podezření 7 dní) i **další účastníky tábora** i **návštěvníky**, kteří během akce přijíždějí. Podezřelými mohou být i **vedoucí ze tří sousedních táborů** v údolí.
 
 > **Důležitý princip:** v této hře **NIKDO není automaticky vyloučen z podezření**. Ani vedoucí, ani jiné týmy účastníků, ani hosté. Tábor je dobrovolnická akce — všichni se znají, všichni si věří — a právě to dělá zradu palčivější.
 

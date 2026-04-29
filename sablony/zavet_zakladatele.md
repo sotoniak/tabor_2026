@@ -44,7 +44,7 @@ v platnosti dle stávající smlouvy.
 § 2 — VEDENÍ TÁBORA
 
 Vedení tábora přebírají v dosavadní funkci Karel Malík
-(hlavní vedoucí) a Pavel Malík (zástupce), spolu s celým
+(hlavní vedoucí) a SoTo (zástupce), spolu s celým
 stávajícím personálem. Tábor se má řídit duchem, ve kterém
 vznikl: dobrovolnost, příroda, společenství, žádný zisk.
 
@@ -89,7 +89,7 @@ V Brně dne 12. června 2026
 
 - **Chybí notářská pečeť** — Magdaléna Růžičková (notářka) potvrdí: *„Originál byl s pečetí. Tohle je padělek."* **Toto je hlavní rozpoznávací znak.**
 - **§ 4 zcela chybí** — pravá závěť obsahuje § 4 (symbolické dědictví všech táborníků). Padělek § 4 vynechává.
-- **§ 3 je padělaný** — Stehlík se v něm ustanovuje jediným správcem pozemku. Magdaléna potvrdí, že pravá § 3 zřizuje **Radu tábora** (Karel a Pavel Malík, Anička Kellnerová, Magdaléna Hamanová, Jenda, Aleš Tomek), ne Stehlíka.
+- **§ 3 je padělaný** — Stehlík se v něm ustanovuje jediným správcem pozemku. Magdaléna potvrdí, že pravá § 3 zřizuje **Radu tábora** (Karel a SoTo, Anička Kellnerová, Magda Hamanová, Jenda, Aleš Tomek), ne Stehlíka.
 - **Datum 12. června 2026** — Magdaléna potvrdí, že **závěť skutečně sepisovala 12. června 2026**, ale s jiným textem.
 - **Podpis Marka** je podobný, ale ne identický — vyrobil ho právník-amatér z Brna, kamarád Stehlíka.
 
@@ -133,7 +133,7 @@ v platnosti dle stávající smlouvy.
 § 2 — VEDENÍ TÁBORA
 
 Vedení tábora přebírají v dosavadní funkci Karel Malík
-(hlavní vedoucí) a Pavel Malík (zástupce), spolu s celým
+(hlavní vedoucí) a SoTo (zástupce), spolu s celým
 stávajícím personálem. Tábor se má řídit duchem, ve kterém
 vznikl: dobrovolnost, příroda, společenství, žádný zisk.
 
@@ -194,7 +194,7 @@ Svědci podpisu (skutečně viděli pana Stanislava
 podepsat):
 
    1. Jiří Stanislav (bratr Marka)            ___________
-   2. Pavel Malík (zástupce hl. vedoucího)    ___________
+   2. SoTo (zástupce hl. vedoucího)    ___________
 
 ═══════════════════════════════════════════════════════════
                 Konec závěti.
@@ -208,7 +208,7 @@ podepsat):
 - **Notářská pečeť** — červený pečetní vosk s odtiskem razítka Magdalény Růžičkové. **Hlavní rozdíl proti padělku.**
 - **§ 4 — Dědicové tábora** — symbolické dědictví všech táborníků, kteří kdy táborem prošli. Tento paragraf v padělku úplně chybí.
 - **§ 3 — Rada tábora** — Marek jmenuje šest jmen (včetně Aleše Tomka, který se zatím přiznal k pomoci pachateli — **morálně klíčový moment finále**).
-- **Svědci skuteční** — Pavel Malík ji opravdu **podepsal** (= jeho podpis budou děti znát z výslechových protokolů).
+- **Svědci skuteční** — SoTo ji opravdu **podepsal** (= jeho podpis budou děti znát z výslechových protokolů).
 
 ---
 

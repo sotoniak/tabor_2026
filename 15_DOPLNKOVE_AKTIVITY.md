@@ -32,7 +32,7 @@ Vedle hlavní detektivní linky probíhají standardní táborové aktivity. Ten
 ### A4. Plavání u studánky / koupání v potoce
 - **Kdy**: dle počasí, ideálně dny 2, 5, 8
 - **Aktivita**: hra „Žralok" (jeden chytač), závody s plavákem
-- **Doprovod**: Magdaléna Hamanová (zdravotnice) + 2 vedoucí, povinně
+- **Doprovod**: Magda Hamanová (zdravotnice) + 2 vedoucí, povinně
 - **Bezpečnost**: potok je mělký, zkontrolovat hloubku před každým koupáním
 
 ### A5. Velký orientační běh „Stopy v lese"
@@ -152,7 +152,7 @@ Vedle hlavní detektivní linky probíhají standardní táborové aktivity. Ten
 - **Propojení s linkou**: mapa tábora
 
 ### E4. Workshop: První pomoc (den 6 — den klidu)
-- Vedení: zdravotnice **Magdaléna Hamanová** (která už je „očištěna z podezření")
+- Vedení: zdravotnice **Magda Hamanová** (která už je „očištěna z podezření")
 - Resuscitace na figuríně, obvazy, krvácení
 - 60 min, dobrovolné
 

@@ -39,29 +39,46 @@ DEN  DATUM    NÁZEV                              HRA   ETAPA
 | 14:30 | **Sestavení vyšetřovacích týmů** | hra začíná |
 | 16:00 | Týmové aktivity — vyrobení vlajky, šátky | hra |
 | 18:00 | Večeře | běžné |
-| 21:00 | **Slavnostní zahájení 30. ročníku** | hra |
-| 21:15 | **Projev Marka Stanislava + uložení závěti do truhly** | klíč |
-| 22:00 | Slavnostní táborák | běžné |
+| 21:00 | **Slavnostní zahájení 30. ročníku** — Karel přivítá, pak kostýmová změna (~10 min) | hra |
+| 21:15 | **Projev Marka Stanislava (= Karel v kostýmu) + uložení závěti do truhly** | klíč |
+| 21:35 | Karel se vrátí jako sám sebe, krátké uzavření večera | hra |
+| 22:00 | Slavnostní táborák, dort se 30 svíčkami | běžné |
 | 23:00 | Večerka | běžné |
-| **00:30** | **NOČNÍ KRÁDEŽ** (děti spí) | **!! KRITICKÉ** |
-| 01:00 | Konfrontace Marek × Stehlík, pád u kamene | mimo |
-| 05:30 | Aleš nachází Marka (děti spí) | mimo |
-| 06:00 | Záchranka, vedoucí mobilizace | mimo |
+| 23:30 | Karel + SoTo porada v Šéfce (alibi pro Karla) | klíč |
+| 00:15 | Karel jde spát; SoTo zůstává v Šéfce; Aleš rozváže zadní plachtu | klíč |
+| 00:25 | Stehlík parkuje pickup u zatáčky 200 m od tábora, jde pěšky | mimo |
+| 00:30 | Stehlík přichází k zadní plachtě, čeká | klíč |
+| 00:40 | SoTo opouští Šéfku přední vchodem (mizí směrem k autu) | klíč |
+| **00:45** | **NOČNÍ KRÁDEŽ** (Stehlík vstupuje, vyměňuje závěť) | **!! KRITICKÉ** |
+| 00:45 | SoTo nasedá do Santany a odjíždí směrem k Brnu | mimo |
+| 01:00 | Marek se probudí, konfrontace Marek × Stehlík, pád u kamene | mimo |
+| 01:15 | Stehlík schová závěť v dutině buku, vrací se k pickupu, odjíždí | mimo |
+| 01:30 | Aleš se vrací z latrýny, najde Marka, panika, jde do stanu | mimo |
+| 02:30 | SoTo v Brně, vyzvedne dodatek z Markovy pracovny | mimo |
+| 03:30 | Cestou zpět míjí Pátera Lacinu na Olomoucké v Brně (S20) | mimo |
+| 05:30 | SoTo se vrací do tábora, parkuje, krátký odpočinek 20 min; **Anička najde Marka v lese**, volá Karla | mimo |
+| 06:00 | SoTo vyjíždí do Blanska; **Tomáš Kellner** přiváží maso | mimo |
+| 06:30 | Záchranka odveze Marka do FN Brno; **SoTo u notářky v Blansku předává dodatek** | mimo |
 
 ### Den 2 — neděle 12. 7. — OBJEV
 
 | Čas | Akce |
 |---|---|
-| 06:30 | **MIMOŘÁDNÝ NÁSTUP** — oznámení |
-| 07:00 | Snídaně (krátká, vážná atmosféra) |
-| 08:00 | Týmy navštěvují **místo činu — Šéfku** (rotace, 30 min/tým) |
-| 10:00 | Aleš vykládá nález (jako svědek), Karel ukazuje fotky z mobilu |
-| 11:00 | Týmy dostávají **vyšetřovací složky** |
-| 12:30 | Oběd |
-| 14:00 | **Etapa 1: "Místo činu — protokol"** (60 min) |
-| 15:30 | Týmové aktivity, deníky |
+| 05:30 | Anička nachází Marka, volá Karla |
+| 06:00 | Tomáš Kellner přiváží maso (krátká návštěva) |
+| 06:30 | Záchranka odveze Marka do FN Brno |
+| 07:30 | SoTo se vrací do tábora ze své noční mise (mlčí) |
+| 07:45 | **MIMOŘÁDNÝ NÁSTUP** — oznámení dětem |
+| 08:00 | Snídaně + rozdělování vyšetřovacích materiálů |
+| 08:45 | Krátká návštěva 2 policistů z Blanska |
+| 09:15 | **ETAPOVÁ HRA č. 1: Místo činu** (4 stanoviště, rotace) |
+| 12:00 | Oběd |
+| 13:00 | Klid v stanech |
+| 14:00 | **Páter Lacina** přijíždí — krátká modlitba za Marka |
+| 14:30 | Koupání u studánky, klidné aktivity |
+| 16:30 | Týmy zaznamenávají do deníků |
 | 18:00 | Večeře |
-| 19:30 | Společná porada — co víme |
+| 19:30 | Workshop šifer (volitelně) |
 | 20:30 | Klidný večer, sport |
 | 21:30 | Večerka |
 
@@ -93,7 +110,7 @@ DEN  DATUM    NÁZEV                              HRA   ETAPA
 | 12:30 | Oběd |
 | 14:00 | **Etapa 3: "Mapa tábora"** — týmy doplňují své mapy |
 | 16:30 | **Anonymní dopis #1 (Caesar +3)** v týmovém deníku |
-| 17:00 | **Tým objevuje vzdálenou rodinnou linku — Klára Stanislavová** (rudá stopa) |
+| 17:00 | **Tým objevuje vzdálenou rodinnou linku — Anežka Kellnerová** (rudá stopa) |
 | 17:30 | **Eliminace Pavla Malíka** (jeho ranní jízda v 5:45 vysvětlena: jel hledat signál pro pohotovost) |
 | 18:30 | Večeře |
 | 19:30 | Porada |
@@ -142,11 +159,11 @@ DEN  DATUM    NÁZEV                              HRA   ETAPA
 |---|---|
 | 07:00 | Budíček |
 | 08:00 | Snídaně |
-| 09:00 | **Magdaléna Hamanová (zdravotnice) přináší zprávu z FN Brno** + ukazuje **lékařský deník** s časovými záznamy z noci 11.→12. (alibi) |
+| 09:00 | **Magda Hamanová (zdravotnice) přináší zprávu z FN Brno** + ukazuje **lékařský deník** s časovými záznamy z noci 11.→12. (alibi) |
 | 09:30 | **Videovzkaz / dopis Marka** z FN Brno — projekce / čtení nahlas |
 | 10:00 | **Etapa 6: "Týmové hypotézy"** — každý tým píše svou teorii |
 | 12:30 | Oběd |
-| 14:00 | **Eliminace Magdalény Hamanové** (lékařský deník) |
+| 14:00 | **Eliminace Magdy Hamanové** (lékařský deník) |
 | 15:00 | Týmové porady, deníky |
 | 16:30 | Sport |
 | 18:30 | Večeře |
@@ -291,18 +308,26 @@ DEN  DATUM    NÁZEV                              HRA   ETAPA
 
 ### Den 1 (11. 7.) — kritická noc
 
-| Čas | Stehlík | Aleš | Marek |
-|---|---|---|---|
-| 21:00 | doma na samotě | běžně, na zahájení | projev, ukáže složku |
-| 22:00 | sleduje táborák z dálky | táborák | táborák |
-| 23:00 | převléká se | sedí u svého stanu | ulehl ve stanu zakladatele |
-| 23:30 | chystá baterku, kožené rukavice | „hlídá ohniště" | spí lehce |
-| 00:15 | pěšky lesem k táboru | jde k Šéfce, **rozváže rohy plachty** | spí |
-| 00:30 | u Šéfky, vchází dovnitř | jde "na latrýnu" — alibi | nespí, něco slyší |
-| 01:00 | KONFRONTACE u Šéfky | slyší ze stanu | KONFRONTACE → pád u kamene |
-| 01:15 | schová závěť v dutině buku u potoka | vrací se z latrýny, slyší sten — vidí Marka — zpanikaří | bezvědomí |
-| 01:30 | utíká lesem na samotu | zpět do svého stanu | bezvědomí |
-| 05:30 | doma, čistí boty | „nachází" Marka, volá Karla | bezvědomí |
+| Čas | Stehlík | Aleš | SoTo | Marek |
+|---|---|---|---|---|
+| 21:00 | doma na samotě | běžně, na zahájení | porada s Karlem, zahájení | projev, ukáže složku |
+| 22:00 | sleduje táborák z dálky | táborák | táborák | táborák, pak ulehne |
+| 23:00 | převléká se | sedí u svého stanu | porada s Karlem v Šéfce | spí ve stanu zakladatele |
+| 23:30 | chystá baterku, kožené rukavice | „hlídá ohniště" | porada do 00:15 | spí lehce |
+| 00:15 | jede pickupem k zatáčce | jde k Šéfce, **rozváže rohy plachty** | sám v Šéfce, „srovnává papíry" | spí |
+| 00:25 | parkuje pickup u zatáčky 200 m, dál pěšky | u svého stanu | sám v Šéfce | spí |
+| 00:30 | u zadní plachty Šéfky, čeká | jde „na latrýnu" — alibi | sám v Šéfce | spí |
+| 00:40 | čeká | latrýna | **opouští Šéfku, jde k Santaně** | spí |
+| 00:45 | **vstupuje do Šéfky, vyměňuje závěť** | latrýna | **odjíždí Santanou směrem k Brnu** | spí |
+| 01:00 | KONFRONTACE u Šéfky | slyší ze stanu | jede k Brnu | KONFRONTACE → pád u kamene |
+| 01:15 | schová závěť v dutině buku, vrací se k pickupu | vrací se z latrýny, slyší sten — vidí Marka — zpanikaří | jede k Brnu | bezvědomí |
+| 01:20 | nasedá do pickupu, odjíždí na samotu | zpět do svého stanu | jede k Brnu | bezvědomí |
+| 02:30 | doma, čistí boty | spí, neklidně | v Brně, vyzvedává dodatek | bezvědomí |
+| 03:30 | spí | spí, neklidně | cestou zpět z Brna, míjí Pátera Lacinu | bezvědomí |
+| 05:30 | spí | spí, neklidně | parkuje Santanu, krátký odpočinek 20 min; **Anička nachází Marka, volá Karla** | bezvědomí |
+| 06:00 | spí | šel se převléct | vyjíždí do Blanska | bezvědomí |
+| 06:30 | spí | u snídaně | u notářky v Blansku, předává dodatek | odvezen do FN Brno |
+| 07:30 | spí | u snídaně | vrací se do tábora, mlčí o noci | ve FN Brno |
 
 ### Dny 2–4 — Stehlík na samotě, Aleš v táboře
 

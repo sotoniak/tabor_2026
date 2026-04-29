@@ -177,26 +177,28 @@ Datum uložení:  ____ . ____ . 2026
 
 ## Pokyny k použití
 
-### Seznam podezřelých (10 osob)
+### Seznam podezřelých (12 osob)
 
-**Personál (7 osob):**
+**Personál a vedení (9 osob):**
 1. Karel Malík — hlavní vedoucí
-2. Pavel Malík — zástupce hlavního vedoucího
-3. Aleš Tomek — údržbář
-4. Anička Kellnerová — starší kuchařka
-5. Klára Stanislavová — mladší kuchařka (vzdálená sestřenice Marka)
-6. Magdaléna Hamanová — zdravotnice
+2. Tomáš „Tony" Sotoniak — zástupce hlavního vedoucího (vzdálený synovec Marka)
+3. Aleš Tomek — mladý správce/údržbář
+4. Anička Kellnerová — šéfkuchařka
+5. Anežka Kellnerová — sous-chef (mladší sestra Aničky)
+6. Magda Hamanová — zdravotnice
 7. Jenda — zásobovač
+8. Adriana — partnerka Jendy, pomocnice zásobování
+9. Pavel „Preclík" Malík — vedoucí oddílu (shoda příjmení s Karlem)
 
 **Hosté (3 osoby):**
-8. Vladimír Stehlík — soused-hospodář
-9. JUDr. Magdaléna Růžičková — notářka z Blanska
-10. Bohumil Hájek — starosta Jedovnic
+10. Vladimír Stehlík — soused-hospodář
+11. JUDr. Magdaléna Růžičková — notářka z Blanska
+12. Bohumil Hájek — starosta Jedovnic
 
 ### Den 3 — Výslechy personálu
 
-- Každý tým vyplňuje **6 protokolů** (Karel, Pavel, Aleš, Anička, Klára, Magdaléna H., Jenda — vybírá 6 z těchto 7 podle priority týmu).
-- Celkem: 6 týmů × 6 protokolů = **36 ks**.
+- Každý tým vyplňuje **7 protokolů** (Karel, SoTo, Aleš, Anička, Magda, Jenda + Adriana, Preclík). Anežka má jen krátkou výpověď, není potřeba samostatný protokol.
+- Celkem: 6 týmů × 7 protokolů = **42 ks**.
 
 ### Den 5 — Výslechy hostů
 
