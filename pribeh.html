@@ -1,0 +1,2761 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Případ ztracené závěti — Tábor Světlo 2026</title>
+<style>
+:root {
+  --bg: #f4ede0;
+  --bg-paper: #faf6ec;
+  --text: #2a2419;
+  --text-muted: #6b5f4a;
+  --accent: #8b4513;
+  --accent-soft: #b07350;
+  --border: #d4c5a8;
+  --quote-bg: #ede2c8;
+  --shadow: 0 1px 3px rgba(80, 60, 30, 0.1);
+
+  --bg-dark: #1a1612;
+  --bg-paper-dark: #25201a;
+  --text-dark: #e8dfc8;
+  --text-muted-dark: #a89880;
+  --accent-dark: #d4a574;
+  --border-dark: #3d342a;
+  --quote-bg-dark: #2d2820;
+}
+
+[data-theme="dark"] {
+  --bg: var(--bg-dark);
+  --bg-paper: var(--bg-paper-dark);
+  --text: var(--text-dark);
+  --text-muted: var(--text-muted-dark);
+  --accent: var(--accent-dark);
+  --accent-soft: var(--accent-dark);
+  --border: var(--border-dark);
+  --quote-bg: var(--quote-bg-dark);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: "Georgia", "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 1.75;
+  color: var(--text);
+  background: var(--bg);
+  margin: 0;
+  padding: 0;
+  transition: background 0.3s, color 0.3s;
+}
+
+.page {
+  max-width: 720px;
+  margin: 0 auto;
+  background: var(--bg-paper);
+  padding: 60px 70px 80px;
+  box-shadow: var(--shadow);
+  min-height: 100vh;
+}
+
+/* === Cover === */
+.cover {
+  text-align: center;
+  padding: 80px 40px 60px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 60px;
+}
+.cover h1 {
+  font-family: "Georgia", serif;
+  font-size: 44px;
+  font-weight: 400;
+  margin: 0 0 12px;
+  letter-spacing: -0.5px;
+  color: var(--accent);
+}
+.cover .subtitle {
+  font-style: italic;
+  font-size: 20px;
+  color: var(--text-muted);
+  margin-bottom: 32px;
+}
+.cover .meta {
+  font-size: 14px;
+  color: var(--text-muted);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.cover .ornament {
+  font-size: 24px;
+  color: var(--accent-soft);
+  margin: 24px 0;
+  letter-spacing: 8px;
+}
+
+/* === Headings === */
+h1 {
+  font-family: "Georgia", serif;
+  font-size: 36px;
+  font-weight: 400;
+  text-align: center;
+  margin: 80px 0 32px;
+  color: var(--accent);
+  letter-spacing: -0.3px;
+}
+h1::after {
+  content: "❦";
+  display: block;
+  font-size: 18px;
+  color: var(--accent-soft);
+  margin-top: 16px;
+  font-weight: 400;
+}
+h2 {
+  font-family: "Georgia", serif;
+  font-size: 26px;
+  font-weight: 400;
+  font-style: italic;
+  margin: 60px 0 24px;
+  color: var(--accent);
+  letter-spacing: -0.2px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 12px;
+}
+h3 {
+  font-family: "Georgia", serif;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+  margin: 32px 0 16px;
+  color: var(--text);
+}
+
+/* === Paragraphs === */
+p {
+  margin: 0 0 18px;
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+p:first-of-type::first-letter,
+h1 + p::first-letter,
+h2 + p::first-letter {
+  /* drop cap přepneme jen pro úvodní odstavce sekcí */
+  font-size: 1em;
+  float: none;
+}
+section.chapter > p:first-of-type::first-letter {
+  font-family: "Georgia", serif;
+  font-size: 4em;
+  line-height: 0.85;
+  float: left;
+  margin: 4px 8px 0 0;
+  color: var(--accent);
+  font-weight: 400;
+}
+
+strong, b {
+  font-weight: 700;
+  color: var(--text);
+}
+em, i {
+  font-style: italic;
+}
+
+/* === Blockquotes === */
+blockquote {
+  margin: 24px 0;
+  padding: 16px 24px;
+  background: var(--quote-bg);
+  border-left: 4px solid var(--accent-soft);
+  border-radius: 0 6px 6px 0;
+  font-style: italic;
+  color: var(--text-muted);
+}
+blockquote p:last-child { margin-bottom: 0; }
+
+/* === Lists === */
+ul, ol {
+  padding-left: 28px;
+  margin: 0 0 18px;
+}
+li { margin-bottom: 6px; }
+
+/* === HR === */
+hr {
+  border: none;
+  text-align: center;
+  margin: 48px 0;
+}
+hr::after {
+  content: "❦  ❦  ❦";
+  font-size: 18px;
+  color: var(--accent-soft);
+  letter-spacing: 16px;
+}
+
+/* === TOC === */
+.toc {
+  margin: 0 0 60px;
+  padding: 24px 32px;
+  background: var(--quote-bg);
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+.toc h2 {
+  margin-top: 0;
+  border-bottom: none;
+  padding-bottom: 0;
+  font-size: 22px;
+}
+.toc ul {
+  list-style: none;
+  padding-left: 0;
+}
+.toc li {
+  margin-bottom: 8px;
+  padding-left: 0;
+}
+.toc a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px dashed var(--border);
+}
+.toc a:hover {
+  color: var(--accent-soft);
+  border-bottom-style: solid;
+}
+.toc strong { color: var(--text); }
+
+/* === Controls === */
+.controls {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+  display: flex;
+  gap: 8px;
+}
+.control-btn {
+  background: var(--bg-paper);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 13px;
+  box-shadow: var(--shadow);
+  transition: all 0.2s;
+}
+.control-btn:hover {
+  background: var(--quote-bg);
+  border-color: var(--accent-soft);
+}
+
+/* === Reading progress === */
+#progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: var(--accent);
+  z-index: 200;
+  width: 0;
+  transition: width 0.1s;
+}
+
+/* === Back to top === */
+#to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  box-shadow: var(--shadow);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+  z-index: 100;
+}
+#to-top.visible {
+  opacity: 0.85;
+  pointer-events: auto;
+}
+#to-top:hover { opacity: 1; }
+
+/* === Print === */
+@media print {
+  body { background: white; color: black; font-size: 12pt; }
+  .page { max-width: 100%; box-shadow: none; padding: 0; }
+  .controls, #progress, #to-top { display: none; }
+  h1 { page-break-before: always; }
+  h1:first-of-type { page-break-before: auto; }
+  blockquote { background: #f0f0f0; }
+}
+
+/* === Mobile === */
+@media (max-width: 768px) {
+  body { font-size: 16px; }
+  .page { padding: 40px 24px; }
+  .cover h1 { font-size: 32px; }
+  h1 { font-size: 28px; }
+  h2 { font-size: 22px; }
+  .controls { top: 10px; right: 10px; }
+}
+</style>
+</head>
+<body>
+
+<div id="progress"></div>
+
+<div class="controls">
+  <button class="control-btn" onclick="document.documentElement.dataset.theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark'">🌓 Téma</button>
+  <button class="control-btn" onclick="window.print()">🖨️ Tisk</button>
+</div>
+
+<button id="to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Nahoru">↑</button>
+
+<div class="page">
+
+<div class="cover">
+  <div class="ornament">❦  ❦  ❦</div>
+  <h1>Případ ztracené závěti</h1>
+  <div class="subtitle">Tábor Světlo, Rakovecké údolí, červenec 2026</div>
+  <div class="meta">30. ročník · 1997 → 2026</div>
+  <div class="ornament">❦  ❦  ❦</div>
+</div>
+
+<h1 id="případ-ztracené-závěti">Případ ztracené závěti</h1>
+<blockquote>
+<p><strong>Tábor Světlo, Rakovecké údolí, červenec 2026</strong>
+Vyprávění příběhu, který se odehrál mezi sobotním slavnostním zahájením
+30. ročníku a úterním finále, kdy se otevřela závěť.</p>
+<p>Některé scény byly převzaty ze skutečnosti. Některé zůstaly skryté i
+samotným účastníkům — pravdu o nich znal jen ten, kdo je prožil. Toto
+vyprávění obsahuje obojí.</p>
+</blockquote>
+<hr />
+<h2 id="obsah">Obsah</h2>
+<p><strong>Prolog</strong> — Stará křivda</p>
+<p><strong>Část I — První večer</strong> - Kapitola 1: Sobota, 11.
+července</p>
+<p><strong>Část II — Vyšetřování</strong> - Kapitola 2: Neděle ráno -
+Kapitola 3: Pondělí — výslechy - Kapitola 4: Úterý — stopy - Kapitola 5:
+Středa — hosté - Kapitola 6: Čtvrtek — Anička promluví - Kapitola 7:
+Pátek — vzkaz z nemocnice - Kapitola 8: Sobota — Blansko</p>
+<p><strong>Část III — Pravda</strong> - Kapitola 9: Neděle — konfrontace
+- Kapitola 10: Pondělí — honička - Kapitola 11: Úterý — finále</p>
+<p><strong>Epilog</strong> — Stařík mlčí</p>
+<hr />
+<h1 id="prolog-stará-křivda">Prolog — Stará křivda</h1>
+<p>V dubnu, kdy vrby u Rakoveckého potoka začaly pukat zelenými lístky a
+hospodář Vladimír Stehlík vyháněl koně poprvé do louky, přijel za ním do
+samoty starší muž v naleštěných polobotkách a zelené kostkované košili.
+Říkalo se mu Bárta, byl to lesnický inženýr ze Školního lesního podniku
+Křtiny při Mendelově univerzitě v Brně, a Stehlík ho znal už pětadvacet
+let. Celou tu dobu spolu pomalu — opatrně, mezi řečí o počasí, mezi řečí
+o jelenech — připravovali jednu věc. Tichou. Slovní. Bez papíru.</p>
+<p>Stehlíkovi rodiče vyrostli na samotě, kterou postavil v devatenáctém
+století dědeček. Patřilo k ní pole, louka, kus lesa za potokem. Když
+přišla padesátá léta a kolektivizace, hodně z toho padlo státu. Zbytek
+si rodina udržela. Pak přišla devadesátá léta — restituce — a část se
+vrátila. Ale ne všechno. Mendelova univerzita měla na lesích, které
+kdysi spravoval velkostatek, velký podíl, a byl to právě ten kus, kde
+jeden mladý nadšenec jménem Marek Stanislav v roce 1997 zavedl skupinu
+dětí na první letní tábor.</p>
+<p>Stehlíkův otec se tehdy nezlobil. Souhlasil. Podepsal ústní smlouvu s
+Markem o propůjčení kraje louky pod centrální plochu — symbolicky, na
+korunu ročně. „Děti tu mají co dělat,” říkal. „Když se nudí, přijdou
+hloupé věci.”</p>
+<p>Když otec zemřel a Stehlík převzal hospodářství, bylo to jiné.
+Stehlík neměl rád hluk. Neměl rád, když mu po lese po nocích jezdila
+auta. A nadto — jako vášnivý myslivec — věděl, že <strong>tábor mu kazí
+revír</strong>. Zvěř se odstěhovala dál. Srnci, kterých na louce dříve
+viděl deset, dvacet, najednou byli jen tři, čtyři. A tábor se rozšířil.
+Teď tam stálo víc stanů než v devadesátých letech, víc dětí, víc hluku,
+víc světla v noci.</p>
+<p>Na podzim 2024 měl Stehlík první rozhovor s Bártou. „Tomáši,” řekl mu
+tehdy lesník, „já tomu rozumím. Smlouva s Markem vyprší v sedmadvacátém.
+Univerzita pak rozhodne, jestli pokračovat. Pokud ne — máš první volbu,
+sousede. Můžeš si tu plochu pronajmout. Pro myslivecký revír. Já ti to
+evidovat budu.”</p>
+<p>Žádný papír. Jen slovo. Stehlíkovi to ale stačilo. Jeho život se
+rozdělil na <strong>před</strong> a <strong>po</strong>. Před — v lese
+viděl konkurenta, který mu kradl klid. Po — viděl tam místo, které
+<strong>bude</strong> jeho, jen co Marek 2027 odejde. Jen tři roky
+čekat. Jen dýchat. Jen být zdvořilý, kdykoli se s Markem potkali u
+plotu.</p>
+<p>Tak to měl naplánováno. A pak jednoho květnového dopoledne 2026 šel
+Stehlík do Křtin pro nějaké formality kolem honitby a u kávy s mladým
+úředníkem — měl tam vnoučka, který letěl do první třídy — utrousil
+úředník větu, kterou nikdy neměl říct: „No víte, pan Stanislav letos
+sepsal s notářkou Růžičkovou novou závěť. K ní přiloží
+<strong>dodatek</strong>, který prodlužuje propůjčení tábora <strong>o
+dalších třicet let</strong>. Do roku padesátsedm. Pan Bárta to už ví.
+Bude se podepisovat na slavnostním zahájení tábora v červenci. Marek si
+to přeje veřejně.”</p>
+<p>Stehlík tehdy postavil hrnek, zaplatil za kafe a vyšel ven. Stál pět
+minut na schodech ředitelství. Cítil v hrudi, jak se mu srdce zastavilo
+a pak se rozjelo dvojnásobnou rychlostí. Dalších třicet let.
+<strong>Dalších třicet let toho hluku, té mládeže, těch nocí beze
+zvěře.</strong> A konec jeho neformální dohody s Bártou — protože pokud
+Marek smlouvu prodlouží, dohoda padne. Bárta měl Stehlíka rád, ale
+nemohl jít proti univerzitě.</p>
+<p>Cesta zpět na samotu mu připadala dlouhá. Když dorazil, stál v
+kuchyni nehybně, dokud žena nezvolala, co se mu stalo. „Nic,” řekl
+Stehlík. „Jen mě bolela hlava.”</p>
+<p>Tu noc nespal. Druhou taky ne. Třetí — třetí už věděl, co udělá.</p>
+<hr />
+<p>V Jedovnicích žila vdova s mladým synem v malém domku u kostela. Žena
+se jmenovala Tomková a její syn Aleš měl právě devatenáct let. Přede
+dvěma roky maturoval na automechanika a sháněl si peníze, aby si jednou
+otevřel vlastní autodílnu. Otec Aleše umřel v roce osmnáct na rakovinu —
+krátce, brutálně. Po něm zůstaly papíry, dva dluhy a jedna stará nehoda,
+o které mladý Aleš věděl jen mlhavě. Kolem roku dva tisíce deset, když
+byl Aleš ještě malý chlapec, otec — lesní dělník — nešťastně porazil
+strom, který dopadl na kůlnu Stehlíkových. Ne na samotnou samotu, jen na
+boudu na seno. Žádné zranění. Jen majetková škoda.</p>
+<p>Stehlíkův otec to tehdy mohl ohlásit pojišťovně. Neudělal to. Místo
+toho přivedl Alešova otce do kuchyně, nalil mu slivovici, a než ji
+dopil, pošoupl mu po stole list papíru, který sám vyplnil tlustým
+inkoustovým perem. <em>„Já, Tomek, uznávám dluh osmdesát tisíc korun za
+škodu na majetku Stehlíkových. Splatím podle dohody.”</em> Bez termínu,
+bez svědků. Alešův otec papír podepsal, protože v té době byl mladý a
+měl rodinu a státní pojišťovna by se s ním tahala léta. Lepší se
+Stehlíkem dohodnout. „Až budou peníze, zaplatím.”</p>
+<p>Peníze nikdy nebyly. Otec dva roky chodil ke Stehlíkovým o víkendu
+pomáhat — sušil seno, řezal dříví, opravoval plot. Stehlíkův otec to
+bral jako splátku. Pak přišla nemoc otce a všechno se zpomalilo. Když
+umřel, Stehlík mladý pochoval dluh v krabici u krbu a čekal.</p>
+<p>Čekal do června 2026.</p>
+<p>Tehdy přišel za Alešem do garáže, kde Aleš opravoval starý moped. Byl
+pátek, podvečer. Aleš měl ruce mazané, vlasy slepené potem.</p>
+<p>„Ahoj, Aleši,” řekl Stehlík. „Já vím, že máš teď zaneprázdněně, ale
+rád bych ti něco ukázal.”</p>
+<p>Aleš si otřel ruce do hadru. „Pane Stehlíku?”</p>
+<p>„Pojď ke mně domů. Dáme si pivo. Mám pro tebe nabídku.”</p>
+<p>Aleš ho znal odjakživa — jako každý v Jedovnicích. Také znal jeho
+samotu, koně, povahu. Hospodář byl klidný, vesnický, ale také přísný a
+držel slovo. Aleš si nevzpomněl na nic, co by mu dlužil. Šel.</p>
+<p>V kuchyni Stehlíka — té samé kuchyni, kde byl před šestnácti lety
+podepsán otcův papír — Stehlík nalil dvě skleničky slivovice. Aleš pivo,
+jak slíbeno, nedostal. Stehlík vytáhl z krabice list papíru.</p>
+<p>„Aleši, chci, abys něco viděl. Tvůj táta tohle podepsal v dva tisíce
+deset. Osmdesát tisíc dluhu. Otec mi to nikdy nezúročil — beru úroky
+lehkou rukou. Ale ten dluh je tvůj. Po tátovi. Víš, jak je to v Česku —
+dluh přechází.”</p>
+<p>Aleš vzal papír, prohlédl ho. Otcův podpis. Datum. Stehlíkův otec
+jako svědek. Aleš se podíval Stehlíkovi do očí.</p>
+<p>„Pane Stehlíku, já… my jsme to nevěděli. Máma o tom nemluvila.”</p>
+<p>„Ne,” řekl Stehlík klidně. „A ani nemusí mluvit. Já to s tebou
+vyřídím rovnou. Nepotřebujeme, aby to máma věděla. Že?”</p>
+<p>„Co… co po mně chcete?”</p>
+<p>Stehlík se napil. Otřel si vousy. „Třicet tisíc korun. V hotovosti.
+Jednorázově. Bude vyrovnáno.”</p>
+<p>Aleš se zasmál. Krátce, hořce. „Třicet tisíc. To je úroky?”</p>
+<p>„To je nabídka. Dluh byl osmdesát. Já z toho odpustím padesát. Pokud
+mi pomůžeš s jednou drobností.”</p>
+<p>Aleš mlčel. Cítil v žaludku něco jako železo. Třicet tisíc korun by
+stačilo na jejich exekuce — máma měla dva nesplacené účty, jeden za léky
+po otci, druhý nájem, který nestihla. Aleš o tom věděl. Snažil se na to
+vydělávat. Maturita byla teprve dva roky stará a jeho plat učedníka v
+autoservisu nepokrýval všechno.</p>
+<p>„Co… co je drobnost?”</p>
+<p>Stehlík se opřel v židli. „Letos v červenci se v Rakoveckém údolí
+koná třicátý ročník tábora Světlo. Pan Marek Stanislav přiveze závěť.
+Slavnostně ji bude číst poslední den. Mezi tím — mezi prvním a posledním
+večerem — bude závěť uložená v Šéfce. V truhle s mapami. Ty tam budeš
+každý den s Markem, opravuješ věci. Znáš tu truhlu.”</p>
+<p>Aleš se nadechl. „Pane Stehlíku, já — já vám tu závěť nemůžu —”</p>
+<p>„Stop,” řekl Stehlík tiše, ale pevně. „Nepřerušuj mě. Já tu závěť
+nepotřebuju ukrást. Já chci jen, abys jednu noc — vyber si, kterou —
+<strong>rozvázal rohy zadní plachty Šéfky</strong>. To je všechno. Nic
+víc. Já tam přijdu a sám si beru, co potřebuju. Markovi se nic nestane.
+Slibuju. Nemám zájem o člověka. Zajímá mě jen ten papír.”</p>
+<p>„Co… co v tom papíře je?”</p>
+<p>„Nic, co by tobě nebo komukoli ublížilo. Já ti to neřeknu. Ale věř mi
+— když to vezmu, bude to lépe i pro tebe. Pro tábor, pro všechny.”</p>
+<p>To Aleš nepoznal — věděl, že to lež. Ale Stehlík mu nedal čas o tom
+přemýšlet.</p>
+<p>„Třicet tisíc. V hotovosti. Den, kdy mi rozvážeš plachtu. To je můj
+návrh. A jestli odmítneš —” Stehlík odložil sklenici. „Žádný hněv. Já
+jen vezmu papír, jdu k policii a oznámím dluh. S úroky. Sto šedesát
+tisíc. Plus soudní výlohy. Tvoje máma to nezvládne. Vezmou jí
+domek.”</p>
+<p>Aleš se podíval na ten papír. Otcův podpis byl stejný jako podpis na
+poslední přání lístcích, které Aleš měl schované v krabici po otci. Ten
+muž — jeho otec — si v sedmnáctém roce před smrtí zapsal: <em>„Aleši,
+jsi statečný kluk. Postaráš se o mámu. Já tě miluju.”</em> Aleš tehdy
+plakal celou noc. Teď, v té kuchyni, plakat nemohl. Cítil jen tíhu.</p>
+<p>„Marek se nic nestane?”</p>
+<p>„Slovo,” řekl Stehlík. „Marek je můj soused od dětství. Pan otec ho
+kdysi pustil na tu loučku. Já mu nic neudělám. Jen si vezmu papír.”</p>
+<p>Aleš mlčel dlouho. Pak řekl: „Která noc?”</p>
+<p>„Slavnostní zahájení je sobota jedenáctého července. Závěť bude
+uložená do truhly. Já tam přijdu <strong>tu noc</strong>. Z neděle na
+pondělí. Ne. Spíš ze soboty na neděli, to je hned. Než se Marek probudí.
+Ty mi rozvážeš plachtu kolem půlnoci. Půjdeš na latrýnu. Já vejdu, vezmu
+papír, odejdu. Marek o tom nebude vědět. Ráno je tu jen padělek — který
+si připravím — a všichni si budou myslet, že někdo cizí. Ne ty, ne já.
+Cizí.”</p>
+<p>„A já?”</p>
+<p>„Ty máš v plechové bedně v přístřešku údržby. Před zahájením. Třicet
+tisíc v hotovosti. Vzal jsem na to v tomto týdnu z banky.
+<strong>Nezasahej do toho víc, než musíš. Dělej, co jsem řekl. Pak jsi
+volný.</strong>”</p>
+<p>Aleš sklopil hlavu. Cítil, jak mu po krku stéká pot. „Kdy mi dáte ty
+peníze?”</p>
+<p>„Den před táborem. Třetí den v červenci jdu do Brna na trh. Přivezu
+ti je. Schovám je do té tvé bedny pod matky bedýnku, dáš mi vědět, že
+jsi je našel. Pak jsme dohodnutí.”</p>
+<p>Stehlík vstal. Aleš zůstal sedět. Stehlík mu otevřel dveře.</p>
+<p>„Aleši, ještě jednu věc. Jestli o tom někomu řekneš — kamarádovi,
+mámě, Markovi — pak ten papír podám. Já tě nenutím. Jenom říkám, že máš
+na výběr a mlčet. Mlč. Ano?”</p>
+<p>Aleš pokýval hlavou.</p>
+<p>A tak začal příběh, který nikdo z dětí v táboře Světlo neznal, dokud
+ho Marek Stanislav den jedenáctého července večer při slavnostní řeči
+nedal do pohybu, a hospodář Vladimír Stehlík, schovaný za stromem dvě
+stě metrů od centrální plochy, neviděl, jak Marek ukazuje červenou
+složku s pečetí a říká dětem: <em>„Tady mám závěť. Otevřu ji slavnostně
+na konci tábora.”</em></p>
+<p>Stehlík tehdy přemýšlel, jestli by se nemohl ještě vrátit. Jestli by
+nemohl Aleše uvolnit, vzít papír z bedny, vrátit. Strávit léto klidně.
+Jenže když Marek odešel do Šéfky a Stehlík jasně viděl skrz plachtu
+obrys truhly, ve které ležela ta červená složka, věděl, že už není cesta
+zpět.</p>
+<p>Tu noc přišel.</p>
+<hr />
+<h1 id="část-i-první-večer">Část I — První večer</h1>
+<h2 id="kapitola-1-sobota-11.-července">Kapitola 1: Sobota, 11.
+července</h2>
+<p>Slunce se valilo přes Rakovecké údolí v dlouhých zlatých proudech,
+když první autobus dorazil na parkoviště pod lesní cestou. Bylo dvě
+hodiny odpoledne. Karel Malík stál u parkoviště v lehkém károvaném
+hnědém oblečení s jmenovkou na šňůrce, držel modrý blok a usmíval se,
+ačkoli mu už vlasy v šedavé sedřinkě prozrazovaly, že jeho čtyřicáté
+čtvrté narozeniny prošly před měsícem.</p>
+<p>„Vítejte v táboře Světlo, ročník třicet!” Volal na první rodiče.
+„Kufry sem, děti — prosím — počkejte, až za vámi přijdu.”</p>
+<p>Karel byl hlavní vedoucí už pět let. Na táboře jezdil od svých
+čtrnácti — pamatoval si ještě časy, kdy Marek Stanislav postavil první
+teepee v devadesátých letech a Karel mu jako mladý kadet pomáhal nosit
+kameny ke kruhu ohniště. Teď byl Karel táta dvou dospívajících dcer.
+Klárka a Lucka, obě osmnáctileté, právě stály o pár metrů dál a pomáhaly
+mladším dětem najít své stany. Letos byly poprvé instruktorky — vedly
+své vlastní týmy. Karel se na ně usmíval s tichou pýchou.</p>
+<p>Vedle Karla stál muž středního věku, hladce oholený, černé brýle,
+kostkovaná košile, zelené kalhoty. Tomáš Sotoniak — všichni mu říkali
+<strong>SoTo</strong> — byl Karlův zástupce. Dvaačtyřicet let,
+programátor v Brně, na táborech od svých šestadvaceti. SoTo se choval
+suše, mluvil málo, někdy něco utrousil ironicky a děti se vždycky chvíli
+rozhodovaly, jestli to byla legrace nebo ne. Letos, jako tři poslední
+roky, dělal zástupce — staral se o dokumentaci, smlouvy, dodavatele.
+Dnes ráno přijel z Brna svou Škoda Santanou — byla zaparkovaná dál na
+parkovišti, jen tak na okraji, pod stromem, kde se v teple stínilo.</p>
+<p>SoTo se usmíval na Karlovy dcery a kontroloval podle tlustého
+seznamu, jestli někomu nechybí spacák. K nim se přidávala Magda
+Hamanová, mladá zdravotnice z Brna, dvacet pět let, snubní prsten od
+května (vdávat se měla v září) a v rukou tablet s zdravotními
+lístky.</p>
+<p>„Aničko, máte připravenou svačinu?” volal Karel přes plachtu jídelny.
+Anička Kellnerová, šéfkuchařka, čtyřiatřicet let, krátké tmavé vlasy,
+červená zástěra, uvnitř kuchyně přikývla. Vedle ní její mladší sestra
+Anežka — také kuchařka, klidná, vlídná — krájela velký bochník chleba na
+palačinky.</p>
+<p>V přístřešku údržby stál Aleš Tomek, devatenáct let, modré montérky,
+krátké světlé vlasy. Aleš v ruce držel kladívko a tvářil se, že opravuje
+šroub na lavičce. Ve skutečnosti nebyl schopen pracovat. Pět dní spal
+špatně. Třicet tisíc korun ležely v plechové bedně pod kbelíkem —
+Stehlík mu je tam přivezl třetího července, jak slíbil. Aleš na ně každý
+večer šahal a každý den si říkal, že by je měl vrátit. Že by měl jet za
+Stehlíkem a říct: <em>„Pane, já to nemůžu udělat. Vraťte mi otcův papír.
+Já se nějak protluku.”</em> Ale neudělal to. Mámě stáhli z účtu poslední
+tisíc na exekuci a Aleš poslední týden viděl, jak máma plakala v kuchyni
+nad hrnečkem černého čaje. Když ji objal, řekla: „Dítě, neboj se, to
+zvládneme.”</p>
+<p>Aleš zvládl o víkendu zaplatit část exekuce z těch třicet tisíc.
+Ostatní zůstaly v bedně — měl je dát mámě, ale stydl se. Bedna byla pro
+něj nyní jako otevřená rána. Když se na ni podíval, viděl Stehlíkův
+obličej. Zvedl kladívko a buchnul do šroubu, který nepotřeboval
+buchnout.</p>
+<p>Děti se ubytovávaly. Vedoucí týmů — Klárka, Lucka, Alča (nejstarší
+instruktorka, učitelský typ, vedla mladší kadety), Martin (rocker s
+kytarou na ramenu, klidný a v oblacích), Preclík (Pavel Malík přezdívaný
+od dětství, sympatický, milovník jídla, vždycky někde s koláčem) a Tom
+Buchta (sportovec, lezec, houslista) — provázeli své týmy po centrální
+ploše. Týmy se jmenovaly <strong>Jestřábi, Vlci, Lišky, Medvědi,
+Jezevci, Sojky</strong> — a každý měl svou barvu šátku. Mladší kadeti se
+rozhlíželi velkýma očima po stanech, kotlech, lavicích pod plachtami.
+Nejmladší devítiletá kadetka jménem Anička — jako kuchařka — se držela
+za ruku své starší sestry a šeptala: „A vážně tady budeme spát ve stanu?
+Bez WC?”</p>
+<p>„Bez WC, ale s latrýnami za tou plachtou,” řekla Alča vlídně.
+„Uvidíš, je to dobrodružství.”</p>
+<p>V patnáct třicet — kdy už většina dětí byla ubytovaná a první svačina
+zmizela — se dovnitř centrální plochy pomalu vplížila postava, kterou
+děti dosud neviděly: vysoký pán v sáku, s pohodlnou venkovní košilí, s
+šedavými skronkami u uší a vycházkovou holí. Marek Stanislav. Šedesát
+let. Šel pomalu, klidně, jako by každý krok byl rituál. Karel ho vítal
+úsměvem.</p>
+<p>„Marku, kdy jsi přijel? Já tě nečekal před šestou.”</p>
+<p>„Přijel jsem brzy,” řekl Marek. „Chtěl jsem vidět, jak děti
+ubytovávají. Pak — Karle, máš chvilku? Potřebuju chvilku se SoTem.”</p>
+<p>„SoTem… ano. Je ve skladu.”</p>
+<p>Marek se vydal do skladu s holí přes rameno. SoTo právě počítal
+kanystry s pitnou vodou. Když Marek vešel, SoTo položil tužku.</p>
+<p>„Pane Marku.”</p>
+<p>„Tomáši,” řekl Marek tlumeně. „Pojď si na chvilku ven. Mimo
+tábor.”</p>
+<p>SoTo se nadechl, vytáhl si kabát z věšáku a šel za Markem. Vyšli za
+poslední stan, mimo zrak dětí, na lesní cestu. Marek se zastavil pod
+borovicí.</p>
+<p>„Tomáši, mám pro tebe jednu věc. Musí zůstat mezi námi. Můžeš?”</p>
+<p>„Marku?”</p>
+<p>„Notářka Růžičková chce do svého archivu kopii dodatku ke smlouvě s
+Mendelovou univerzitou. Ten dodatek o prodloužení o třicet let. Mám ho v
+Brně, v mé pracovně. Podepsaný. Notářka ho potřebuje <strong>dnes večer
+nebo zítra ráno</strong>, jinak ho nemůže založit do archivu před
+otevřením závěti. Já jsem ho dnes ráno dovést nestihl.”</p>
+<p>„Marku, můžeš zítra ráno —”</p>
+<p>„Ne,” řekl Marek vážně. „Notářka je dnes v Blansku, otevírá kancelář
+v půl sedmé ráno. Pokud ho budeš mít u ní v půl sedmé, je to v pořádku.
+<strong>Potřebuju, abys tam dnes v noci tajně dojel.</strong> Vezmi si
+Santanu, vyjeď po půlnoci, buď v Brně ve dvě, vrať se ráno přes
+Blansko.”</p>
+<p>SoTo se podíval na Marka dlouze. „Proč tajně?”</p>
+<p>„Protože nechci, aby to vědělo víc lidí. Notářka je v tom citlivá —
+kdyby se v archivu cokoli ztratilo, pojišťovna to nepokryje, je to
+interní procedura. A já — Tomáši, prostě nechci, aby Karel a ostatní
+věděli. Když se nic nestane, bude to vyřízené. Když se ráno všichni
+vzbudí, dodatek je v archivu, tábor začne klidně.”</p>
+<p>SoTo přikývl. „Marku, klíče od bytu mám. Dobře. Karlovi nic?”</p>
+<p>„Nikomu. Vrať se před snídaní. Nikdo si nevšimne. Já to ráno všem
+vysvětlím, <strong>kdyby se tě někdo ptal, kde jsi byl</strong>. Ale
+nikdo se ptát nebude, protože nikdo si nevšimne. <strong>Moje
+slovo.</strong>”</p>
+<p>SoTo se opřel o borovici. „Hm. Vyrazím po půlnoci. Santana je u lesní
+cesty. Já tu mám právě poradu s Karlem, plánujeme zítřek. Po půlnoci —
+odejdu. Až se vrátím, schovám aktovku do auta. Ráno do Blanska, pak
+zpátky.”</p>
+<p>„Děkuju, Tomáši.”</p>
+<p>Marek chtěl odejít, ale ještě se otočil. „Tomáši — a kdyby se cokoli
+stalo. Cokoli zvláštního. <strong>Zachovej klid.</strong> A pamatuj si:
+já ti to dovoluji říct, kdykoli to bude nutné. Stačí, aby ses mě
+zeptal.”</p>
+<p>„Něco se má stát?” zeptal se SoTo trochu ostře.</p>
+<p>Marek se mírně usmál. „Ne. Jen jsem dnes večer trochu dramatický.
+Posledních šedesát let na mě dolehlo. Jdi, Tomáši. Zítra ráno se
+uvidíme.”</p>
+<p>SoTo se vrátil do tábora. Marek šel zase dovnitř, opřený o hůl.
+Klárka — Karlova dcera — právě procházela kolem se třemi malými
+holčičkami a uviděla, jak strejda Tomáš a pan Marek si podají ruku. Byla
+to vážnost, která jí v ten den uvízla v paměti — jako tichá vlna, která
+něco znamená, ale ona neuměla říct, co.</p>
+<hr />
+<p>V devatenáct hodin se centrální plocha zaplnila dětmi v šátkách. Na
+ohništi praskalo dříví, které večer naskládal Aleš. Osm hodin je
+nakrmili, devatenáct mělo proběhnout slavnostní zahájení. Před ohništěm
+stál Karel s mikrofonem na baterky.</p>
+<p>„Děti, vedoucí, přátelé tábora Světlo. Dnes začíná <strong>třicátý
+ročník</strong>. Třicet let od roku, kdy pan Marek Stanislav postavil v
+tomto údolí první stan. Dnes ho přivítáme.”</p>
+<p>Tlesknutí. Karel sklopil hlavu, počkal. Pak řekl: „A teď vás přivítá
+zakladatel tábora, pan Marek Stanislav.”</p>
+<p>Karel zmizel ke stanu zakladatele. Aničku s Anežkou nesly z polní
+kuchyně velký dort se třiceti svíčkami. Vedoucí týmů začaly zpívat
+hymnu. Pět minut se zpívalo a pak — z stínu stanu zakladatele — vyšel
+<strong>Marek</strong>. V slavnostním sáku, s vycházkovou holí, s
+šedavými vousy, s pomalou chůzí. Některé starší děti, které si
+pamatovaly Marka z předchozích let, si všimly, že dnes vypadá ještě o
+něco důstojněji. Mluvil pomalým, hlubokým hlasem, který jim později
+uvízl v paměti.</p>
+<p>„Děti. Vedoucí. Přátelé.”</p>
+<p>Pauza.</p>
+<p>„Před třiceti lety jsem v tomto údolí postavil první stan. Říkal jsem
+si: nech tady vyroste místo, kam budou děti rády jezdit. Místo, kde si
+zapamatují léto.”</p>
+<p>Děti ztichly. Starší kadeti, kteří už znali Marka dobře, mu věnovali
+plnou pozornost.</p>
+<p>„Třicet let. Třicet generací táborníků. Tisíce dětí, které prošly
+tímhle lesem. A teď stojím tady znovu — a vy jste tady taky.”</p>
+<p>Mírná pauza.</p>
+<p>„Tábor není stavba. Tábor jsou lidé. A já dnes přicházím říct, že je
+čas. Čas dát na papír, jak má tábor pokračovat.”</p>
+<p>Marek vyndal z brašny <strong>červenou složku</strong> s viditelnou
+voskovou pečetí. Některé z mladších dětí zalapaly po dechu — vypadalo to
+jako z pohádkového filmu. Pečeť byla zlatá, na složce byl přívěšek se
+znakem notářské kanceláře.</p>
+<p>„Tady mám závěť. <strong>Není v ní majetek</strong> — žádný majetek
+tu není, tábor je dobrovolnická akce. Je v ní <strong>slib</strong>.
+Slib, jak to půjde dál. Jak zajistit, že tábor přečká dalších třicet
+let.”</p>
+<p>Marek podržel složku ve vzduchu, otočil se na všechny strany, aby ji
+všichni viděli. Pak ji pomalu otevřel — všichni viděli papíry uvnitř,
+ale text byl moc daleko, aby si ho přečetli.</p>
+<p>„<strong>Otevřu ji slavnostně na konci tábora</strong>, dvacátého
+prvního července. Do té doby bude uložena v truhle s mapami v Šéfce.
+Spolehněte se na ni. Spolehněte se na sebe.”</p>
+<p>Marek pomalu prošel kolem dětí, se SoTem a Karlem po jeho boku, do
+<strong>Šéfky</strong>. Děti šly za ním — alespoň ty starší — a viděly,
+jak Marek otevřel velkou dřevěnou truhlu, položil červenou složku
+dovnitř, navrch dal mapy a víkem zaklapnul. Truhla neměla zámek — jen
+víko.</p>
+<p>Marek se vrátil k ohni. Anička s Anežkou přinesly dort. Marek
+rozfoukl třicet svíček (s pomocí dětí, které samy nemohly všechno
+zvládnout). Děti tleskaly. Někteří vedoucí měli v očích slzy.</p>
+<p>„A teď, milí přátelé, jdu si na chvíli sednout. Zítra mě čeká
+rozhovor s notářkou Růžičkovou z Blanska. Tábor je v dobrých rukou.
+Dobrou noc.”</p>
+<p>Marek zmizel ve stanu zakladatele. Karel se vrátil k ohni — tentokrát
+už <strong>bez kostýmu, bez sáku</strong>, jen v běžné košili. Ujal se
+mikrofonu, zazpíval s dětmi hymnu, vyřídil pár organizačních věcí a v
+devět třicet pustil mladší kadety na večerku.</p>
+<p>Stařší zůstali u ohně do desáté. Pak se i oni rozešli.</p>
+<p>Když vesnice deseti stanů ztichla, ohně dohořela do uhlíků a celý
+tábor zaspal, <strong>noc se začala lámat</strong>.</p>
+<hr />
+<p>V dvacet tři třicet seděli <strong>Karel a SoTo</strong> v Šéfce u
+stolu s plynovou lampou. Před nimi rozložené plány zítřka — kdo má
+snídani, kdo dělá orientační hru, jak rozdělit oddíly při etapě „Lesní
+stezka”. SoTo držel propisku, dělal poznámky. Karel se zamyslel.</p>
+<p>„Tomáši, jsem rád, že jsi tu. Marek dnes byl… dnes byl jiný.
+Vážnější.”</p>
+<p>„Hmm.”</p>
+<p>„Cítil jsem to. Jako by věděl, že je to jeho poslední slavnostní
+zahájení.”</p>
+<p>„Karle, je mu šedesát,” řekl SoTo suše. „Možná si jen vzpomněl na
+svou smrtelnost. To se s lidmi občas stává.”</p>
+<p>Karel se podíval do plamenu lampy. „Hmm.”</p>
+<p>V nula hodin a patnáct minut se Karel zvedl. „Tomáši, jdu spát. Sám
+si to dotáhni — papíry a tak. Dobrou noc.”</p>
+<p>„Ještě srovnám pár věcí. Dobrou.”</p>
+<p>Karel odešel. Šel ke svému stanu mezi vedoucími, lehl si do spacáku a
+do dvou minut spal. Slavnostní zahájení ho vyčerpalo víc, než si
+myslel.</p>
+<p>V Šéfce zůstal SoTo sám. Ne dlouho — jen čtvrt hodiny mu stačilo, aby
+zavřel deníky, schoval mapy do truhly (vedle červené složky), zvedl
+klíčky od Santany ze stolu, oblékl si lehkou bundu a tiše vyšel z Šéfky
+předním vchodem. Zhasl plynovou lampu. Šéfka stmavla.</p>
+<p>V tu chvíli — ve čtyři čtyřicet — zůstala plachta Šéfky
+<strong>rozvázaná na zadní straně</strong>. Aleš to udělal před patnácti
+minutami, když SoTo a Karel ještě plánovali. Aleš vyšel ze svého stanu,
+předstíral, že hlídá ohniště, a tiše obešel Šéfku zezadu. Rozvázal lano
+na třech rozích. Stehlík si pak může plachtu rozhrnout zvenku, aniž by
+ji musel řezat. Aleš se vrátil k ohništi a sedl si na lavici s pohledem
+upřeným do uhlíků. V kapse měl dva tisíce korun — zbytek z těch třicet
+tisíc, který ještě nedal mámě. Cítil je tam jako železo. Čekal na
+Stehlíka.</p>
+<p>V nula hodin dvacet pět zaslechl Aleš v dálce zvuk pickupu. Slabě,
+daleko — Stehlík parkoval u zatáčky lesní cesty, asi dvě stě metrů od
+tábora. Aleš věděl, že odtamtud Stehlík půjde pěšky. Zvedl se z lavice a
+tiše se rozhlédl.</p>
+<p>V nula hodin třicet zahlédl Aleš v lese světlo čelovky. Tichý postup.
+Stehlík přišel k zadní plachtě Šéfky, rozhlédl se, kývl Alešovi v
+dálce.</p>
+<p>Aleš zvedl ruku. „Jdu na latrýnu,” řekl si nahlas, ale jen pro sebe —
+věděl, že to je jeho alibi. Zvedl se a šel.</p>
+<p>Latrýna byla za stany. Aleš tam došel za pět minut. Posadil se na
+pařez vedle. Hlavu položil do dlaní.</p>
+<p>V tu samou chvíli — u zadní plachty Šéfky — Stehlík opatrně rozhrnul
+plachtu. Slyšel zevnitř lehké dýchání. Zarazil se. Někdo byl uvnitř.
+Zaslechl, jak ten někdo položil propisku na stůl, jak vstal, jak si
+oblékl bundu. <strong>Krok zepředu.</strong> SoTo opouštěl Šéfku předním
+vchodem. Stehlík ustoupil o krok. Pak zaslechl, jak SoTo zavírá plachtu,
+jak jeho kroky mizí směrem k parkovišti pod lesní cestou. Pak — daleko —
+zvuk Santany. SoTo nasedl, zaparkoval — startér zachytil — a auto pomalu
+odjelo směrem k Jedovnicím.</p>
+<p>Stehlík čekal pět minut. Pak — když měl jistotu — rozhrnul plachtu
+znovu a vstoupil dovnitř.</p>
+<hr />
+<p>Šéfka byla potmě, jen měsíční světlo přicházelo přes záhyb plachty u
+stropu. Stehlík si chvíli pomáhal čelovkou, namířenou dolů. Vytáhl z
+plátěné tašky <strong>padělek</strong> — papír A4, který mu kamarád z
+Brna, právník-amatér, vyrobil. Stejný formát jako pravá závěť, stejná
+razítka, stejný podpis. Jen pečeť mu chyběla, protože se s tím nedalo
+nic dělat — vosková pečeť se padělat nedá, ne za tento čas. Ale Stehlík
+doufal, že si nikdo všimne až později. Třeba v sobotu na finále, kdy už
+to bude pozdě.</p>
+<p>Otevřel truhlu. Zvedl víko. Mapy. Pod mapami — <strong>červená složka
+s pečetí</strong>. Stehlík ji opatrně vzal, vložil do plátěné tašky, na
+její místo položil padělek. Mapy zase navrch. Víko zaklapl.</p>
+<p>Za pět vteřin slyšel, jak v lese něco zapraskalo. Zvířátko —
+myšlenka. Nebo… ne. Krok. Lidský krok.</p>
+<p>Stehlík ztuhl. Slyšel: „Vladimíre? Co tady, prokrista,
+<strong>děláš</strong>?”</p>
+<p>Otočil se. Ve dveřích Šéfky stál <strong>Marek Stanislav</strong> s
+baterkou. Pyžamo, vrchní deka přes ramena. Marek měl vždycky lehký
+spánek a obavu o závěť ho vzbudila. Vstal — vzal baterku — šel se
+podívat. A teď viděl Stehlíka s plátěnou taškou u truhly.</p>
+<p>„Marku, já… já se chtěl jen podívat…” řekl Stehlík tichou
+panikou.</p>
+<p>„Polož to. Polož to a okamžitě odejdi.”</p>
+<p>Stehlík panikařil. Ne — neřešil to dlouho. <strong>Strčil Marka
+stranou</strong> a vyběhl předním vchodem ze Šéfky. Marek se nadechl,
+vzpamatoval se a vyběhl za ním.</p>
+<p>„Vladimíre! Stůj!”</p>
+<p>Marek běžel za ním. V tmě, mezi stany, mezi keři. Nesl si baterku v
+ruce. Stehlík mířil za Šéfku, do lesa za ní, k cestě zpět ke svému
+pickupu. Marek byl rychlejší, než by Stehlík čekal — i v šedesáti letech
+měl dobrou kondici z pravidelného běhání.</p>
+<p>Patnáct metrů za Šéfkou — v lese — Marek <strong>klopýtl</strong>.
+Byl tam silný kořen smrku, který přerůstal cestičku. Marek nestihl nohu
+zvednout. Padl dopředu. Hlava udeřila o velký kámen, který tam ležel
+pravděpodobně od pradávných dob.</p>
+<p>Tichý zvuk pádu. Bouchnutí. Pak ticho.</p>
+<p>Stehlík se otočil. Viděl Marka v měsíčním světle — ležel obličejem
+dolů, ruce roztaženy, baterka pohaslá vedle něj. Stehlík stál pět vteřin
+nehybně. Pak — bez rozhodnutí, jen z paniky — utíkal dál do lesa.</p>
+<hr />
+<p>Aleš mezitím seděl u latrýny na pařezu a slyšel
+<strong>něco</strong>. Tichý dramatický výkřik. Pak praskot a buchnutí.
+Pak ticho. Aleš zvedl hlavu. Cítil, jak mu po zádech přejel mráz. Zvedl
+se a šel zpět k táboru. Pomalu, krok za krokem.</p>
+<p>Když dorazil k Šéfce, viděl, že je vchod pootevřený. Zaslechl, jak
+pět metrů za Šéfkou, v lese, něco — někdo — slabě zaúpí. Vykročil
+tam.</p>
+<p>V měsíčním světle uviděl postavu ležící na zemi. Marek. Aleš poznal
+pyžamo. Poznal tu vycházkovou hůl, která ležela vedle těla. Aleš stál a
+díval se. Cítil, jak mu do žaludku stoupá horký vzduch, jak se mu třesou
+ruce. Zalapal po dechu.</p>
+<p>A místo aby zavolal pomoc, místo aby běžel ke Karlovi, místo aby
+kohokoli probudil — Aleš se otočil a šel zpět ke svému stanu. Lehl si do
+spacáku, zavřel oči a začal se třást.</p>
+<p><em>„Stehlík slíbil… nestane se nic…“</em> opakoval si v hlavě.
+<em>„Ráno to někdo najde. Já jsem tu nebyl. Já nevěděl. Nikdo se
+nedoví.”</em></p>
+<p>Asi tisíc krát si to musel zopakovat, než se mu zpomalil tep.</p>
+<p>V jedna hodina patnáct minut byl Stehlík dvě stě metrů od tábora.
+Stál u <strong>starého buku</strong> u potoka — Stařík, jak mu říkali,
+dva sta let starý, s velkou dutinou ve kmeni. Stehlík vyndal červenou
+složku z plátěné tašky, zabalil ji do nepromokavého sáčku, který si
+přinesl, a vsunul do dutiny. Hluboko, aby ji bylo z venku těžko vidět.
+Pak se vydal pěšky zpět ke svému pickupu u zatáčky.</p>
+<p>Když zastaroval, posadil se za volant a roztřásl se. Tři minuty seděl
+bez pohybu. Pak nastartoval, rozjel se po lesní cestě, a do dvou hodin
+byl doma na samotě, v ticho. Jeho žena spala. Stehlík šel rovnou do
+koupelny a vyzvracel se.</p>
+<hr />
+<p>Mezitím — daleko — projížděl SoTo Brnem v Santaně. Otevřená pozemní
+noc, prázdné silnice, jen občasný kamion. Ve dvě třicet zaparkoval u
+Markova bytu na Veselé ulici. Měl klíče. Šel nahoru, vstoupil do
+pracovny. Marek mu předem řekl, kde najde dodatek — v levé horní zásuvce
+psacího stolu, v žluté složce. Tam byl. Podepsaný, s ověřením. SoTo si
+ho dal do aktovky. Pak si na pět minut sedl do křesla v Markově obývacím
+pokoji a zavřel oči. Cítil únavu — od slavnostního zahájení utekly
+hodiny, ale spánku ještě bude muset počkat.</p>
+<p>Vyšel z bytu, zamkl, vrátil se do Santany. Vyrazil zpátky do
+Rakoveckého údolí.</p>
+<p>Ve tři třicet, na <strong>Olomoucké ulici v Brně</strong>, ho míjelo
+druhé auto opačným směrem — staré Daewoo. SoTo pohlédl na řidiče přes
+okno: byl to <strong>Páter Lacina</strong>, kněz z Jedovnic, kterého
+SoTo znal z farního sboru, kde Páter příležitostně vystupoval na
+koncertech. Páter ho také zahlédl, krátce pozvedl ruku k pozdravu. SoTo
+přikývl. Auta prošla. Páter mířil do Vyškova na pohřební obřad — vstával
+v noci, aby tam dorazil včas. SoTo mířil zpátky.</p>
+<p>V pět třicet se SoTo vrátil do tábora. Zaparkoval Santanu o pár metrů
+blíž k cestě, než byla večer — jak to vyšlo. Na silnici k Jedovnicům ho
+cestou míjela bílá dodávka s nápisem <strong>Řeznictví Kellner</strong>
+— Aniččin a Anežčin bratr Tomáš Kellner, který vstal brzy, aby objel
+třídy Boskovic, Mladkov a Tábor. Kellner ve zpětném zrcátku Santanu
+zahlédl, ale nic si nemyslel. Tomáše Sotoniaka znal z mnoha předchozích
+táborů. Často jezdí v noci do Brna pracovně.</p>
+<p>SoTo se zase vlezl do svého stanu, zavřel oči. Potřeboval dvacet
+minut, aby si rozmyslel, co dělat dál. V šest měl vyrazit do Blanska k
+notářce. Krátký odpočinek. Pak vyjet znova.</p>
+<p>V tu chvíli — bylo přesně pět třicet — vstávala Anička v polní
+kuchyni. Spala ve vzadu na lavici, jak často dělala, když měla noční
+přípravy. Nyní si protírala oči, oblékala si zástěru a vydala se ke
+studánce pro vodu. Cesta vedla kolem Šéfky a několik metrů kolem lesa za
+ní.</p>
+<p>Aničku probudilo ranní ticho — tábor ještě spal, jen ptáci zpívali.
+Šla si pro vodu klidně, s kanystrem v ruce, dokud nezahlédla v listí,
+asi patnáct metrů za Šéfkou, <strong>postavu ležící na
+zemi</strong>.</p>
+<p>Anička se zastavila. Pomalu došla blíž. Pak — pomalu — si položila
+ruku na ústa.</p>
+<p>„Karle!” zařvala.</p>
+<p>A tím okamžikem začalo vyšetřování, které trvalo deset dní.</p>
+<hr />
+<h1 id="část-ii-vyšetřování">Část II — Vyšetřování</h1>
+<h2 id="kapitola-2-neděle-ráno">Kapitola 2: Neděle ráno</h2>
+<p>Karel Malík se probudil ze spánku tak hlubokého, že mu chvíli trvalo,
+než vůbec poznal, že někdo na něj volá jeho jméno. Byl si jistý, že je
+nějaký pracovní sen. Pak — když se zvuk ozval podruhé, <strong>„Karle!
+Pojď, prosím tě, sem!“</strong> — vyletěl ze spacáku jako z katapultu.
+Aničku znal patnáct let. Nikdy ji neslyšel volat takhle.</p>
+<p>Vyšel ze stanu jen v tričku a teplákách, bosý. Stál tam Anička v
+zástěře, držela kanystr v ruce a měla bílé rty.</p>
+<p>„Aničko, co se —”</p>
+<p>„Marek. <strong>Marek leží v lese.</strong> Patnáct metrů za Šéfkou.
+Pojď.”</p>
+<p>Karel za ní šel. Bosý. Tráva byla studená. Ranní rosa.</p>
+<p>Když k tělu došli, Karel se zastavil a chvíli se na něj jen díval.
+Pak — automaticky, jako trénovaný — klekl si na všechny čtyři, položil
+dva prsty na Markovu krk. Pulz byl. Pomalý, ale byl. Marek byl v
+bezvědomí.</p>
+<p>„Aničko, <strong>běž zburcovat Magdu.</strong> A pak Karel — ne,
+<strong>Tomáše</strong>. SoTa. Já tu zůstávám.”</p>
+<p>Anička letěla zpět k táboru. Karel zatím rozhrnul listí kolem Marka,
+opatrně otočil jeho hlavu. Krev byla — drobná, na čele, kde Marek
+narazil o kámen. Otřes mozku, pomyslel si Karel. Možná intrakraniální
+krvácení. Pomoc.</p>
+<p>Magda dorazila za tři minuty s lékařským kufříkem. Měla rozcuchané
+vlasy a v ruce stetoskop. Klekla si vedle Marka, otevřela mu oči,
+posvítila baterkou.</p>
+<p>„Bezvědomí. Reakce zorniček je v pořádku. Pulz osmdesát. Tlak —
+neměřím tu venku, počkáme. <strong>Karle, satelitní telefon.</strong>
+Záchranka.”</p>
+<p>Karel vzal velkou těžkou Inmarsat krabici, kterou držel v Šéfce na
+krizové situace. Vytočil 155. Trvalo dvě a půl minuty, než se dispečer
+ozval — satelit má svoje. Karel popsal situaci, lokalitu, dostupnost.
+Záchranka z Blanska byla na cestě. Příjezd za třicet pět minut.</p>
+<p>Když zavěsil, viděl, jak SoTo vyšel ze svého stanu, <strong>bunda
+přes ramena, kruhy pod očima</strong>. Stál ve vzdálenosti pěti metrů,
+díval se na Marka v listí. Nemluvil.</p>
+<p>„SoTo, kde jsi byl?”</p>
+<p>„Karle — vyřídím to. Jen ne teď. Marka teď.”</p>
+<p>Karel se podíval Soutoniakovi do očí. SoTo měl výraz, který Karel
+ještě nikdy neviděl — směs zoufalství a tichého šoku. Karel chvíli
+pochyboval, jestli se má SoTa ptát víc, ale ten rozhodl sám: „Karle,
+<strong>prosím</strong>. Ne teď. Já… já vyřídím to.”</p>
+<p>Karel přikývl. „Dobře. Postarej se, ať jsou děti v klidu, až se
+vzbudí. Budu tu s Magdou. Anička, dělej snídani normálně. Kdo se vzbudí
+dřív — řekni jim, že pan Marek měl v noci úraz, ale je v dobré péči.
+<strong>Žádné drama.</strong>”</p>
+<p>V tu chvíli zaslechli na lesní cestě nákladní auto. Zvedli hlavy.
+Bílá dodávka s nápisem <strong>Řeznictví Kellner</strong> se zastavila u
+parkoviště. Tomáš Kellner — Aniččin a Anežčin bratr — vystoupil. Měl
+pruhovanou košili, bílou zástěru, na zádech velký balík masa pro
+tábor.</p>
+<p>„Sestro!” volal směrem k polní kuchyni. „Mám pro vás —”</p>
+<p>Pak viděl shluk lidí v lese. Pak viděl Aničku, jak rozechvělá vyšla
+zpod plachty. Pak viděl Marka v listí.</p>
+<p>„Bože,” řekl Tomáš tiše. „Co se stalo?”</p>
+<p>„Marek,” řekla Anička. „V noci. Nevíme co.”</p>
+<p>Tomáš Kellner položil balík masa na lavici v polní kuchyni, krátce
+obejmul sestru. „Sestro, já tu složím a hned jedu. Boskovice, Mladkov,
+Tábor — mám rozvoz. Ne, vrátím se večer? Zatelefonuji, jestli něco
+potřebuješ. Drž se.”</p>
+<p>Krátce políbil i Anežku, která zatím stála vystrašená v kuchyni s
+mašlovkou v ruce, a šel zpět k dodávce. Než nasedl, ohlédl se. „Sestro —
+věřím, že to bude v pořádku. Marka znám. Je silný.”</p>
+<p>Anička jen přikývla. Tomáš nasedl, otočil se, odjel.</p>
+<p>V šest třicet — přesně podle dispečera — přijela záchranka po lesní
+cestě. Dva paramedici, nosítka, lékařka z Blanska. Vyhodnotili Marka —
+otřes mozku, podezření na intrakraniální krvácení, ale bez akutního
+ohrožení života. Naložili ho. Odjeli. Marek mířil do FN Brno, kam ho
+čekala neurologie a pozorování.</p>
+<p>Současně — tu samou minutu — projížděl SoTo Santanou Blanskem. Měl
+namířeno do notářské kanceláře JUDr. Magdalény Růžičkové, která
+otevírala v půl sedmé. Notářka už v kanceláři byla, čekala ho — Marek ji
+včera večer telefonem informoval, že SoTo přivede dodatek. Růžičková ho
+přivítala u dveří. SoTo jí předal žlutou složku, krátce ji informoval o
+tom, že <strong>Marek je v nemocnici</strong> (zatím nevěděl detaily,
+ale rozesilo mu to únavou hlavou) a žádal ji o krátké potvrzení o
+předání dodatku — psané, datované, s razítkem.</p>
+<p>Notářka mu napsala potvrzení. Datum <strong>12. července 2026,
+6:30</strong>. Razítko notářky. SoTův podpis. Růžičkové podpis. Tři
+kopie. Jednu pro něj, jednu pro archiv, jednu pro Marka.</p>
+<p>„Pane Sotoniaku, je všechno v pořádku?” zeptala se notářka. „Jste
+bledý.”</p>
+<p>„Marek měl v noci úraz. Já… já se vracím do tábora, abych se s Karlem
+domluvil, co dál.”</p>
+<p>„Bože,” řekla notářka. „Mám něco udělat?”</p>
+<p>„Ne. Jen prosím, <strong>dnes nikomu o tomto potvrzení
+neříkejte</strong>. Marek si přál diskrétnost. Až mě sám pozve do hry,
+vy potvrdíte. Slibujete?”</p>
+<p>„Slibuju, pane Sotoniaku. Důstojnost je v naší profesi nutnost.”</p>
+<p>V sedm třicet zaparkoval SoTo Santanu zpátky v táboře. Když vyšel,
+Karel mu vyšel naproti.</p>
+<p>„Tomáši — Marek je v sanitě, jede do Brna. Otevřeli jsme truhlu.
+<strong>V truhle je padělek.</strong> Bez pečetě. Volal jsem notářce,
+potvrdila mi, že originál měl mít pečeť.”</p>
+<p>SoTo zůstal stát. „Padělek?”</p>
+<p>„Závěť ukradli. <strong>V noci.</strong>”</p>
+<p>SoTo se podíval na Karla. Otevřel ústa, zavřel je. Pak: „Karle, já…
+já nemůžu… já ti to vysvětlím, ale — ne teď. Marek mi —”</p>
+<p>„Co Marek?”</p>
+<p>„Marek mi něco řekl včera odpoledne. Soukromě. Ne o závěti — o jiné
+věci. Já mu slíbil mlčet. Teď nemůžu mluvit, protože Marek je v
+bezvědomí a já nemám jeho povolení. <strong>Až se probere, řekne sám.
+Nebo mi pošle vzkaz. Pak řeknu všem.</strong> Karle,
+<strong>prosím</strong>, věř mi.”</p>
+<p>Karel se na svého zástupce podíval dlouze. Patnáct let ho znal.
+Patnáct let mu věřil, často víc než sám sobě v drobných organizačních
+věcech. SoTo nelhal. Karel to věděl.</p>
+<p>„Tomáši, dobře. Ale <strong>někdo se tě zeptá.</strong> Děti,
+vedoucí, policie. Co řekneš?”</p>
+<p>„Že o tom nemůžu mluvit. Že to vyřídím, až přijde čas.”</p>
+<p>Karel přikývl. „Dobře. Já tě budu krýt.”</p>
+<p>V sedm čtyřicet pět svolal Karel mimořádný nástup. Děti — některé
+teprve rozespalé — stály před plachtou jídelny. Karel měl v rukou
+plynovou lampu, ačkoli už bylo světlo. Atmosféra byla strašlivě vážná.
+Mladší kadeti mlčeli a drželi se za ruce.</p>
+<p>„Děti,” řekl Karel a hlas se mu na okamžik zlomil. Pak ho narovnal.
+„Musím vám oznámit něco vážného. Dnes ráno v půl šesté našla paní Anička
+pana Marka v lese za Šéfkou — <strong>zraněného, v bezvědomí</strong>.
+Záchranka ho odvezla do Fakultní nemocnice v Brně. Lékaři nám řekli, že
+je <strong>stabilní</strong>, že má zranění hlavy a otřes mozku, ale
+<strong>není v ohrožení života</strong>. Bude pár dní v nemocnici, dokud
+se neprobudí.”</p>
+<p>Děti ztichly. Některé se rozplakaly — především mladší, kterým se
+Marek včera zdál tak laskavý. Alča k nim šla, klekla si vedle nich,
+držela je za ramena.</p>
+<p>„A ještě jednu věc: <strong>truhla v Šéfce, kam pan Marek včera večer
+uložil závěť, byla otevřena. Závěť, kterou nám měl pan Marek za pár dní
+představit, byla nahrazena padělkem. Pravá závěť zmizela.</strong>”</p>
+<p>Tichý šum. Někteří starší kadeti se podívali jeden na druhého.</p>
+<p>„Volali jsme policii do Blanska. Přijdou dnes dopoledne, sepíšou
+protokol — ale řekli nám, že vyšetřování v lese, mezi vámi a personálem,
+<strong>mohou nejlépe vést ti, kdo tady jsou každý den</strong>. To jsme
+my. <strong>A vy.</strong> Vy znáte tábor, vidíte detaily, slyšíte věci,
+které my dospělí přehlédneme. Stojíme dnes před jednou z nejtěžších
+výzev v historii tábora Světlo. A budeme to zvládat společně.”</p>
+<p>Karel se odmlčel. Pak představil <strong>Tomáše Sotoniaka jako
+technického koordinátora vyšetřování</strong>. SoTo přikývl, ale
+nemluvil. Děti se na něj podívaly — některé se na něj dívaly podezřele
+už od chvíle, kdy zaslechly, jak Karel říká, že SoTo má svoje tajemství.
+Bylo to slabé — ale dětský instinkt zaregistroval.</p>
+<p>V osm čtyřicet pět přijeli <strong>dva policisté z Blanska</strong> —
+kpt. Polák a por. Brázdová. Sepsali protokol, ohlédli místo nálezu,
+vyfotografovali truhlu, odvezli padělek závěti k expertize a slíbili, že
+se vrátí podle potřeby. Děti s nimi nemluvili — to bylo pravidlo.
+Vyšetřování mezi sebou bude vést <strong>Karel s týmy</strong>.</p>
+<p>Vedoucí týmů zatím rozdávali dětem <strong>vyšetřovací
+pomůcky</strong>: laminovaný průkaz na šňůrce, týmový deník, prázdnou
+mapu A2, kartotéku 12 podezřelých.</p>
+<p>V devět patnáct začala první etapová hra. Týmy procházely
+<strong>čtyři stanoviště místa činu</strong>: Šéfku (kde byla truhla),
+místo, kde ležel Marek, lesní cestu k samotě Stehlíkových, a stanoviště
+„Studánka, potok a starý buk”. Každé stanoviště trvalo třicet minut.
+Děti pozorovaly, fotografovaly, kreslily. Vedoucí týmů — Klárka, Lucka,
+Alča, Martin, Preclík, Tom Buchta — pomáhali, ale nezasahovali do
+závěrů.</p>
+<p>V Šéfce stál SoTo jako vedoucí stanoviště. Děti se ho začaly ptát: „A
+vy jste tu byl v noci?” SoTo odpověděl klidně, ale bez emoce: „<strong>O
+tom teď nebudu mluvit. Soustřeďte se na stopy.</strong>” Některé starší
+děti — především z týmu Vlci — si toho všimly. Lucka R., asistentka
+týmu, si zapsala do deníku: <em>„SoTo se nechce vyjádřit.
+Proč?“</em></p>
+<p>Jeden tým — Lišky, vedené Alčou s Jeníkem — našel u zadní plachty
+Šéfky <strong>rozvázané rohy</strong>. Tři rohy. Plachta visela
+uvolněně.</p>
+<p>„Někdo je rozvázal <strong>zvenčí</strong>,” řekl Jeník tiše. „Ze
+stanu by to nešlo udělat — uzly jsou na vnější straně.”</p>
+<p>Tým zaznamenal. F07: rozvázané rohy plachty. <strong>Někdo
+zvenčí.</strong></p>
+<p>Na stanovišti místa, kde ležel Marek, našly děti otisky bot v rose:
+dva páry. Jeden patřil Markovi (kdy byly jeho boty z včerejšího
+vystoupení známé). Druhý — větší, <strong>velikost 44</strong>, podle
+podrážky kožená. Personál v táboře nosil pohorky nebo gumovky — ne
+kožené boty.</p>
+<p>„Pachatel je outsider,” řekla starší kadetka z týmu Vlci. „Někdo
+zvenčí.”</p>
+<p>Na lesní cestě, kde stálo stanoviště s Jendou (zásobovačem), našly
+děti <strong>stopu pneumatiky</strong>. Široká, hrubá. Ne osobní auto.
+Pickup nebo SUV. Jenda u stanoviště pokrčil rameny: „Já s mojí dodávkou
+jezdím každý den. To není moje stopa.”</p>
+<p>Adriana — Jendova partnerka, která mu pomáhala se zásobováním —
+utrousila něco zvláštního. „Hele, kluci, ještě jedna věc.
+<strong>Santana Tomáše stála včera večer u stromu</strong> — ten velký
+dub v parkovišti, znáte. <strong>Dnes ráno stojí o pět metrů blíž k
+cestě.</strong> Někdo s ní v noci jezdil. Já jsem si toho všimla. Z
+autoservisu, kde tati pracoval. Auta si pamatuju, kde stojí.”</p>
+<p>Tato malá poznámka šla do několika deníků. Vedoucí týmů si ji
+zapsali. Ačkoli to neznělo dramaticky, <strong>byla to první
+trhlina</strong> v důvěře dětí k SoTovi.</p>
+<p>Na stanovišti „Studánka, potok, buk” — vedeném Luckou Malíkovou —
+pozorovali děti starý strom, dvousetletý buk. Dutina byla viditelná, ale
+vysoko — zhruba čtyři metry nad zemí. Lucka jim důsledně zakázala k
+bukem chodit blíž než pět metrů. „Je to chráněný strom,” řekla. „Zatím
+nemáme žádnou stopu, která by nás vedla zrovna sem.”</p>
+<p>Žádné dítě netušilo, že přesně v té dutině leží — zabalená v
+nepromokavém sáčku — pravá závěť.</p>
+<p>V poledne — po obědě — přijel <strong>Páter Lacina</strong> ve své
+staré Daewoo. Vešel do jídelny v civilu (kolárek, černé košilové
+oblečení), pozdravil Karla, položil mu ruku na rameno.</p>
+<p>„Karle, ráno jsi mi to volal. Já jsem přijel se za Marka pomodlit.
+Nezdržím se dlouho — jen tři minuty.”</p>
+<p>V jídelně, před dětmi a vedoucími, Páter Lacina krátce pomodlil.
+Žádný moralizující projev, žádná misionářská řeč — jen tichá modlitba za
+zdraví Marka Stanislava, za zachování míru v táboře, za moudrost
+vyšetřujících. Trvalo to pět minut. Pak se Páter rozloučil s Karlem a se
+SoTou krátkým pohledem (SoTo přikývl, vzpomněl si na ranní setkání na
+Olomoucké), a odešel.</p>
+<p>Když Páter projížděl kolem Marka v autě nemocnice na fakultě,
+neuvědomil si, že má v hlavě informaci, která by mohla pomoci — ne
+ještě. Pamatoval si jen, že na Olomoucké ulici v Brně v půl čtvrté ráno
+míjel SoToovu Santanu. <strong>Detail, který ho dohonil až za pět
+dní.</strong></p>
+<p>Odpoledne si děti odpočinuly v stanech, koupaly se ve studánce,
+dopisovaly deníky. Atmosféra byla tlumená. Slunce svítilo, ale táborem
+se pomalu šířil pocit, že tohle je něco vážného.</p>
+<p>Před spaním Karel obešel všechny týmy a podíval se každému dítěti do
+očí. Některým mladším šeptal: „Spi klidně. Nikdo není v ohrožení. Pan
+Marek se uzdraví. Zítra pokračujeme.”</p>
+<p>Když Karel sám lehl do spacáku, slyšel v dálce — ze stanu vedle Šéfky
+— jak SoTo dlouho do noci převrací v rukou aktovku. Karel ho neslyšel
+pět minut, deset, dvacet. Pak ticho. SoTo si lehl. Karel nevěděl, jestli
+usnul.</p>
+<p>V Brně, ve fakultní nemocnici, ležel Marek Stanislav v bezvědomí.
+Lékaři monitoroval funkce. Zranění bylo lehčí, než se původně obávali —
+ne intrakraniální krvácení, jen otřes mozku. Marek byl stabilní.
+Pravděpodobně se v průběhu týdne probere. Sestry mu po půlnoci zaměnily
+kapačku.</p>
+<p>Otřes mozku má své vlastní tempo. Týden, někdy dva.</p>
+<p>Karel se v noci probudil dvakrát. Pokaždé měl pocit, že někoho slyšel
+za stanem. Pokaždé to byl jen vítr.</p>
+<hr />
+<h2 id="kapitola-3-pondělí-výslechy">Kapitola 3: Pondělí — výslechy</h2>
+<p>Druhé ráno vyšetřování začínalo v sedm třicet. Děti měly snídani —
+chleba s máslem, čaj, jablka. Atmosféra byla vážná, ale o něco
+klidnější. Včera bylo to drama. Dnes je práce.</p>
+<p>V osm třicet svolal Karel týmy do <strong>teepee</strong> — společný
+stan, ve kterém si tábor v deštivých dnech sedával. Kolem stěn byly
+dlouhé lavice. Karel stál uprostřed.</p>
+<p>„Týmy. Dnes nás čekají <strong>výslechy personálu</strong>. Devět
+lidí. Karel Malík — to jsem já, ano. Tomáš Sotoniak. Aleš Tomek. Anička
+Kellnerová. Anežka Kellnerová. Magda Hamanová. Jenda. Adriana. Pavel
+přezdívaný Preclík Malík.”</p>
+<p>Pavel přiznal slabě uložený smích. „To jsem já.”</p>
+<p>„Stejně se výslechu nevyhneš, Preclíku.”</p>
+<p>Děti se zasmály. Atmosféra se trochu rozvolnila.</p>
+<p>Karel pokračoval: „Každý z nás má své alibi. Některá jsou pevná,
+některá slabá. Vy musíte zjistit, kdo má důvod, příležitost a
+prostředky. Kdo měl klíč, kdo byl venku, kdo je v noci nemůže nikdo
+potvrdit. <strong>Nikdo z nás vám nebude lhát</strong> — to slibuju já a
+ručím za to. Ale <strong>někteří z nás možná zatím nechtějí všechno
+říct.</strong> Musíte přesně vyhodnotit, proč.”</p>
+<p>Tato věta — <em>„někteří z nás možná zatím nechtějí všechno
+říct”</em> — byla pro děti jasná narážka. Některé si ji do deníku
+zapsaly velkými písmeny.</p>
+<p>Devět výslechových míst bylo rozmístěno po táboře. Šest týmů
+rotovalo. Každý tým měl s každým podezřelým patnáct minut — někteří
+krátší. SoTův výslech trval u všech týmů přesně <strong>patnáct minut
+zoufalosti</strong>.</p>
+<p>První tým — <strong>Jestřábi</strong>, vedení Klárkou — přišel do
+Šéfky vyslechnout SoTa. Klárka měla v ruce výslechový protokol. SoTo
+seděl u stolu, podívala se mu do očí.</p>
+<p>„Strejdo Tomáši. Kde jsi byl 11. července v noci, mezi dvaceti dvěma
+a šesti hodinami ráno?”</p>
+<p>SoTo si nalil vodu. „Od dvaceti tří třiceti do nula hodin patnáct
+jsem byl v Šéfce s tátou tvým — Karlem Malíkem — na poradě. Plánovali
+jsme zítřek.”</p>
+<p>„A pak?”</p>
+<p>„Pak jsem zůstal v Šéfce sám, srovnával papíry. Spát jsem šel
+pozdě.”</p>
+<p>„Kdy?”</p>
+<p>SoTo položil sklenici. „<strong>O tom teď nebudu mluvit,
+Klárko.</strong>”</p>
+<p>„Strejdo.”</p>
+<p>„Klárko, je to vážné. Já vám to řeknu, ale ne dnes. <strong>Až bude
+doba.</strong>”</p>
+<p>Klárka — která SoTa znala odjakživa, jako rodinná známá — se na něj
+podívala s pohledem, který v sobě měl smutek <strong>a
+nedůvěru</strong>. „Tomáši, my potřebujeme vědět, kde jsi byl v noci.
+Marek je v nemocnici. Závěť je pryč.”</p>
+<p>„Vím to, Klárko. Vím to lépe, než si myslíš. Ale nemůžu mluvit.
+<strong>Ještě ne.</strong>”</p>
+<p>Klárka napsala do protokolu velkými písmeny: <em>„Strejda Tomáš
+odmítá vypovědět o čase 0:15–05:30. Tvrdí, že to vyřídí později.
+<strong>Hlavní podezřelý.</strong>”</em></p>
+<p>V deset hodin přišel tým <strong>Vlci</strong>, vedený Luckou
+Malíkovou. Lucka byla její otec — Karlova starší dcera —, ale vůči
+SoTovi neměla žádné rodinné inhibice. Klárka byla jemná. Lucka byla
+přímá.</p>
+<p>„Strejdo Tomáši. <strong>Kde jsi byl tu noc?</strong>”</p>
+<p>„Lucko, <strong>ne dnes</strong>.”</p>
+<p>„Strejdo. Ty máš klíče od kufru. Ty máš klíče od skladu. Ty máš klíče
+<strong>od všeho</strong>. Tatínek mi řekl, že máš klíče i od auta.
+Adriana viděla, že tvoje Santana ráno stála jinde. <strong>Ty jsi v noci
+jezdila v autě, strejdo. Kam?</strong>”</p>
+<p>SoTo se podíval na svou neteř. Pak — a tato chvíle byla kritická —
+řekl tiše: „<strong>Lucko, prosím, věř mi tři dny. Ne víc. Tři dny. Pak
+řeknu všem.</strong>”</p>
+<p>Lucka chvíli mlčela. Pak řekla: „Strejdo, já tě mám ráda. Ale já tu
+nehraju za rodinu. Já tu hraju za pravdu. Pokud máš co skrývat,
+<strong>najdu to.</strong>”</p>
+<p>SoTo se mírně usmál. „To je to, co od tebe chci, Lucko. <strong>Tři
+dny.</strong>”</p>
+<p>Lucka odešla a do svého protokolu napsala: *„Strejda Tomáš slíbil tři
+dny. Po nich řekne všem. Není zaručeno. Hlavní podezřelý.**“*</p>
+<p>Mezitím, v zdravotce, <strong>Magda Hamanová</strong> vyslýchala tým
+Lišky. Magda jim ukázala lékařský deník — papírový, s časovými zápisy
+23:00, 23:45, 00:30, 01:15. Pět záznamů o stavu nemocných dětí, a jeden
+o <strong>Markových léčbě tlaku</strong>, kterou mu předem dala v
+22:30.</p>
+<p>„Děti, <strong>lékařský deník chrání zákon</strong>. Musím s ním
+zacházet velmi opatrně. Doložila jsem ho tátovi Karlovi a notářce. Ti to
+mohou potvrdit. <strong>Já jsem byla ve zdravotce celou
+noc.</strong>”</p>
+<p>Tým Lišky to akceptoval, ale zapsal si: <em>„Prozatím nedořeneno. Den
+7 doloží.”</em></p>
+<p>V kuchyni, <strong>Anička Kellnerová</strong> vyslýchala tým Sojky.
+Anička měla zástěru, vlasy svázány do uzlu, červené oči — neplakala, ale
+spánek ji v noci utíkal.</p>
+<p>„Děti, byla jsem v noci tady, v polní kuchyni. Dělala jsem těsto na
+ranní chleba. Anežka mi pomáhala do půl dvanácté. Pak šla spát. Já jsem
+zůstala sama. Dělala jsem těsto až do dvou třiceti, pak si lehla v zadní
+části kuchyně na lavici.”</p>
+<p>„A neviděla jste <strong>vůbec nic</strong>?”</p>
+<p>Anička zaváhala. Tom Buchta — vedoucí týmu Sojky, který stál opodál a
+poslouchal — si všiml zaváhání. „Aničko?”</p>
+<p>„Ne… nic neobvyklého. Bylo tma.”</p>
+<p>„Ale <strong>něco</strong> jste viděla?”</p>
+<p>Anička vzala povzdech. „Ne. Bylo tma. Já jsem unavená.”</p>
+<p>Tom Buchta si zapsal: <em>„Anička váhá. Něco viděla. Ne dnes.
+Pravděpodobně později.”</em></p>
+<p>V přístřešku údržby pak <strong>Aleš Tomek</strong> vyslýchal — nebo
+byl vyslýchán — týmem Medvědi. Aleš seděl na lavici, ruce položené na
+kolenou, díval se do země.</p>
+<p>„Aleši, kde jsi byl v noci?”</p>
+<p>„U ohniště. Hlídal jsem oheň. Pak — kolem jedné — jsem šel na
+latrýnu. Vrátil jsem se a šel spát.”</p>
+<p>„Kdy ses vrátil z latrýny?”</p>
+<p>Aleš se zaváhal. „Asi kolem půl druhé.”</p>
+<p>„Půl druhé… to je dlouho. Třicet minut na latrýnu?”</p>
+<p>„Já jsem si udělal pauzu. Bolela mě záda.”</p>
+<p>„A neviděl jsi <strong>nic</strong>? Marek ležel patnáct metrů za
+Šéfkou.”</p>
+<p>Aleš mlčel. Po dvou vteřinách: „Slyšel jsem… vlastně sten. Z lesa za
+Šéfkou. Já jsem si myslel, že je to nějaké zvíře.”</p>
+<p>„Sten? Aleši, to byl Marek!”</p>
+<p>„Já jsem to nevěděl, <strong>opravdu</strong>. Bylo tma. Šel jsem
+spát. Pak ráno —”</p>
+<p>Tým Medvědi si to zapsal. Aleš měl slabé alibi. Aleš slyšel sten.
+<strong>Aleš nezareagoval.</strong> To bylo divné. Vedoucí týmu — Martin
+— si poznamenal: <em>„Aleš slabé. Vážně podezřelý.”</em></p>
+<p>V tu samou chvíli, v jídelně, vyslýchal tým <strong>Jezevci</strong>
+— vedený Preclíkem — Magdu na téma rodinných vazeb personálu. Magda byla
+v zdravotce sama, pomalu si pila kávu.</p>
+<p>„Magdo, jaký je vztah pana Marka k personálu? Má někoho rodinného,
+kdo by měl důvod?”</p>
+<p>Magda se zamyslela. „No… pan Marek má hodně rodiny po světě. Tady v
+táboře — z personálu — má <strong>jednoho vzdáleného synovce</strong>.
+Tomáš Sotoniak. Markova mladší sestřenice byla SoTova matka.”</p>
+<p>Tým Jezevci ztuhl. <strong>„Strejda Tomáš je Markův
+synovec?“</strong></p>
+<p>„Vzdálený. Ale ano, krev. Marek ho zaučoval do tábora už od jeho
+dvaceti — kdysi jezdil jako pomocník, pak vedoucí, pak zástupce.”</p>
+<p>Tým si to zapsal velkými písmeny. Pak se rozběhli do svého teepee,
+ostatní týmy přicválaly za nimi. Než minulo poledne, <strong>každý tým
+věděl, že SoTo je Markův synovec.</strong> Mladší kadeti mezi sebou
+šeptali: „Strejda Tomáš to udělal. Kvůli dědictví. Kvůli rodině.”</p>
+<p>Mezi výslechy navštívila Klárka tátu — Karla Malíka. Tátovi řekla:
+„Tati, ještě jedna věc. Vzpomínám si, že <strong>včera odpoledne kolem
+čtyř hodin jsem viděla, jak strejda Tomáš mluví s panem Markem stranou,
+někde u lesní cesty.</strong> Já jsem šla s mladšími dětmi okolo a
+chytili mi pohled. Zdálo se mi, že je to vážný rozhovor. Tehdy jsem si
+nevšimla. Teď si vzpomínám.”</p>
+<p>Karel přikývl. „Klárko, <strong>napiš to do deníku</strong>. Je to
+relevantní.”</p>
+<p>V pět odpoledne Karel oznámil týmům první <strong>eliminace</strong>.
+„Karel Malík — to jsem já — měl alibi s Tomášem Sotoniakem do čtvrt
+jedné. Pak spal sám, ale <strong>bez motivu</strong>. Mě tedy považujte
+za <strong>eliminovaného</strong>.</p>
+<p>Anežka Kellnerová spala od půl dvanácté. Anička její alibi potvrzuje.
+<strong>Eliminovaná.</strong></p>
+<p>Pavel — Preclík — spal jako špalek po celodenní práci s dětmi. Žádné
+svědky, ale <strong>bez motivu</strong>. Eliminovaný.”</p>
+<p>Týmy si vyškrtly tři jména z kartotéky 12 podezřelých. Zbývalo šest
+osob personálu (SoTo, Aleš, Anička, Magda, Jenda, Adriana) plus tři
+hosté, kteří měli přijet zítra a pozítří.</p>
+<p>Mezitím — kolem šesté — Karel zaslechl, jak SoTo telefonuje Markovi
+do nemocnice. Karel se nepřibližoval, jen okrajem oka uviděl, že SoTo
+zavěsil a sedl si na lavici se zoufalým výrazem. Marek byl ještě v
+bezvědomí. Sestra v nemocnici řekla SoTovi, že stav je stabilní, ale ke
+vědomí se ještě neprobral.</p>
+<p>SoTo zůstal sedět na lavici dvacet minut. Pak vstal, šel zpět do své
+stanu a — poprvé od pátku — usnul tvrdým spánkem. Ne dlouho. Dvě hodiny.
+Pak vstal a chodil mezi stany jako duch.</p>
+<p>V devět třicet — když děti šly spát — seděl SoTo u dohořívajícího
+ohniště. Karel si k němu sedl.</p>
+<p>„Tomáši, jak dlouho?”</p>
+<p>„Dva, tři dny. Než se Marek probere.”</p>
+<p>„A když se neprobere?”</p>
+<p>„Karle, neptej se mě tohle. <strong>Probrat se musí.</strong>”</p>
+<p>Karel sklopil hlavu. Odešel spát.</p>
+<hr />
+<h2 id="kapitola-4-úterý-stopy">Kapitola 4: Úterý — stopy</h2>
+<p>Třetí den vyšetřování začal etapovou hrou — <strong>Mapa tábora a
+šest forenzních stanovišť</strong>. Děti se rozdělily na dvě poloviny.
+Jedna polovina týmů kreslila mapu A2 šedého podkladu, vyznačovala
+lokace, stopy, místa svědectví. Druhá polovina rotovala mezi šesti
+forenzními stanovišti, vedenými vedoucími.</p>
+<p>Stanoviště 1 — <strong>Otisky prstů</strong>, vedené Tomem Buchtou.
+Kakaový prášek, štěteček, lepicí páska. Děti vyvolaly otisky ze tří
+sklenic. Jedna patřila Karlovi, druhá Aleši, třetí — neidentifikované
+osobě. Tom jim vysvětlil techniku. Děti pak srovnaly s kartou personálu.
+<strong>Žádný z otisků na kartě nesouhlasil s otiskem ze třetí
+sklenice.</strong></p>
+<p>„Outsider,” řekly děti.</p>
+<p>F08 — otisk neidentifikovatelný jako personál.</p>
+<p>Stanoviště 2 — <strong>Vlasy a vlákna</strong>, vedené Magdou. Lupa,
+mikroskop. Děti porovnávaly vzorek vlákna z místa činu (nalezeno na rohu
+truhly v Šéfce — tmavé, krátké, <strong>z hovězí kůže</strong>) se
+vzorky personálu. <strong>Žádný nesedl.</strong></p>
+<p>Magda jim vysvětlila: „Tohle je vlákno z <strong>kožené
+rukavice</strong>. V červenci, v lese, <strong>kdo nosí kožené
+rukavice</strong>? Personál určitě ne. Já mám gumové. Aleš pohorky. Tom
+Buchta sportovní. Ne, kožené.”</p>
+<p>F10 — vlas/vlákno z kožené rukavice. <strong>Pachatel měl kožené
+rukavice.</strong></p>
+<p>Stanoviště 3 — <strong>Identikit</strong>, vedené Alčou. Skládací
+sada rysů obličeje. Děti měly k dispozici Aničkin popis siluety — vyšší,
+vousatá, s baterkou. Tým Vlci skládal. Lucka R. — analytická — pomáhala
+sestrám.</p>
+<p>„Pachatel je <strong>vyšší než my všichni</strong>,” řekla Lucka R.
+„A <strong>vousatý</strong>. SoTo je hladce oholený — to nesedí. Aleš
+taky. Karel taky — jen krátké kníry. Tom Buchta — taky bez vousů.”</p>
+<p>„Takže je to outsider,” řekl mladší kadet.</p>
+<p>„Asi je,” přikývla Lucka R.</p>
+<p>Identikit — pachatel je outsider, vyšší, vousatý.</p>
+<p>Stanoviště 4 — <strong>Stopy bot a pneumatik</strong>, vedené Jendou.
+Sádrový prášek, voda, papír. Děti vytvořily odlitky stop — F04 (bota 44,
+kožená) a F09 (pneumatika pickupu). Pak je porovnaly se vzorky
+personálu.</p>
+<p>„Aleš má 43, pohorky,” řekla Lucka R. (která hodně chodila mezi
+stanovišti). „Tom Buchta 42. Jenda 45 ale gumovky. SoTo 41 polobotky.
+Karel 43 gumovky. <strong>Bota 44 kožená nesedí nikomu.</strong> Ten
+pachatel je cizí.”</p>
+<p>A pneumatika — pickup. Žádný v táboře pickup nemá. Cizí. <strong>Kdo
+má v okolí pickup?</strong> To bylo jasné každému dítěti, které někdy
+projelo lesní cestou: hospodář na samotě 1 km dál.</p>
+<p>Děti to nezapsali jasně, ale poznámka v deníku týmu Vlci zněla:
+<em>„Hospodář Stehlík má pickup.”</em></p>
+<p>Stanoviště 5 — <strong>Grafologie</strong>, vedené Klárkou. Vzorky
+rukopisů personálu (z pracovních knih, z deníků). Padělek závěti —
+kopie, který policie vrátila po expertize. Děti porovnávaly. Žádný
+rukopis nesouhlasil. <strong>Padělek byl psaný cizí rukou.</strong></p>
+<p>Klárka jim řekla: „Takže pachatel sám padělek nedělal — někdo třetí.
+Pravděpodobně právník-amatér. Někdo, kdo si umí napsat formální
+papír.”</p>
+<p>Stanoviště 6 — <strong>Fotodokumentace + popel</strong>, vedené
+Karlem. Vytištěné fotky z místa činu. Sáček s popelem z dýmky. Karel jim
+ukázal fotky — kořen smrku, kámen, místo, kde Marek spadl. Pak otevřel
+sáček. „Tohle je popel z dýmky, nalezený v rohu Šéfky. Specifická směs.
+Nasládlá vůně. Šedý odstín.”</p>
+<p>„Personál nekouří dýmku,” řekl mladší kadet. „SoTo kouří jen
+cigarety. Aleš nekouří. Karel taky ne.”</p>
+<p>„Takže pachatel kouří dýmku,” uzavřel tým.</p>
+<p>Stehlíkův dýmkový popel ležel v sáčku. Děti zatím nevěděli, koho
+popel je. Ale věděly, že <strong>pachatel je dýmkař, outsider, vousatý,
+vyšší, kožené boty 44, kožené rukavice, jezdí pickupem.</strong></p>
+<p>Skládali profil. Profil ukazoval na konkrétního člověka. Ten člověk
+přijde do tábora <strong>zítra odpoledne</strong> — jako gratulant ke
+30. ročníku.</p>
+<p>Mezitím, v kuchyni, Adriana pokračovala s drobným postřehem. Při
+ranní kávě řekla skupince Lišek: „<strong>Santana stojí dnes ráno opět
+na trochu jiném místě než včera.</strong> Ne dramaticky. O dva metry.
+Někdo s ní v noci jezdil.”</p>
+<p>To byla R02 — silná rudá stopa proti SoTovi.</p>
+<p>Po obědě se konal <strong>velký orientační běh „Stopy v
+lese”</strong>. Týmy běžely lesem dvě a půl kilometru, přes dvanáct
+stanovišť. Sport — ale s herní linkou. Některé stanoviště obsahovaly
+šifry. Některé fyzické úkoly. Jeden — stanoviště 11 — měl otázku:
+<em>„Kdo bydlí na nejbližší samotě 1 km od tábora?“</em> Odpověď v
+matrice tábora 1997 zněla: <strong>rodina hospodářů
+Stehlíkových.</strong></p>
+<p>Jeden tým — Sojky, vedený Tomem Buchtou — odpověď napsal. Bonus 30
+bodů.</p>
+<p>Mezitím, v polní kuchyni, Anička vařila brambory. Někdo jí ukradl
+koláč, který si připravila v noci. Otisky velkých prstů na pekáči.
+Drobky pod stolem. <strong>Někdo byl v noci v kuchyni a snědl
+koláč.</strong></p>
+<p>Forenzní expert týmu Sojky vzal otisky. Porovnal s kartou personálu.
+Otisk patřil <strong>Preclíkovi</strong>. Tým Sojky šel za Preclíkem do
+oddílu Jezevců.</p>
+<p>„Pavle, máme vás. Otisky na pekáči. Drobky. <strong>Ukradl jste
+koláč.</strong>”</p>
+<p>Preclík se začervenal, podíval se na děti, zatřepal hlavou. „Hele…
+no… já si v noci zašel do kuchyně, měl jsem na ten koláč chuť. Aničko,
+promiň. <strong>Až bude soud, prosím, nepošli na mě paní Magdu s
+injekcí.</strong>”</p>
+<p>Děti — od mladších kadetů po nejstarší — se rozesmály. Anička, která
+měla zatím vážnou tvář, si také položila ruku na ústa a usmála se.
+„Preclíku, příště si řekni, <strong>dám ti dva.</strong>”</p>
+<p>Komická eliminace R07. Drobné odlehčení v napjatém vyšetřování.</p>
+<p>Po orientačním běhu — kolem pěti hodin — Karel svolal týmy a oznámil
+souhrn rudých stop proti SoTovi.</p>
+<p>„Týmy, <strong>Tomáš Sotoniak je vzdálený synovec Marka.</strong> To
+víme od Magdy. Má <strong>klíče od všeho</strong>. Adriana tvrdí, že
+<strong>Santana stála ráno na jiném místě.</strong> Slyšeli jsme, že
+<strong>v noci kolem čtvrt na jednu zaslechl Jenda motor.</strong> Tomáš
+odmítá vyložit, kde byl po čtvrt jedné. Klárka pamatuje, že včera
+odpoledne Marek mluvil s Tomášem <strong>vážným tónem o
+samotě</strong>.</p>
+<p>Nemůžu vám říct, co si o tom mám myslet. To si musíte rozhodnout
+sami. Ale <strong>dnešní bilance je: Tomáš Sotoniak je hlavní
+podezřelý.</strong>”</p>
+<p>SoTo, který stál opodál a poslouchal, <strong>nepodíval se nikomu do
+očí</strong>.</p>
+<p>Po souhrnu Karel ukázal týmům <strong>anonymní dopis</strong> —
+přeložený list papíru, který tým Sojek našel pod kamenem za Šéfkou.
+Caesarova šifra +3.</p>
+<p><strong>NORLPH QLNGR QHPHO — SRPRKO YODVWQL</strong></p>
+<p>Týmy si dopis vzaly do svých deníků a pomalu šifru rozluštily. Klíč
+„+3” byl vepsán v plánu týdne, který Karel ráno rozdal — drobný symbol v
+pravém horním rohu. Lucka R. ho našla první.</p>
+<p><strong>KLÍČE NIKDO NEMĚL — POMOHL VLASTNÍ</strong></p>
+<p>„Někdo z personálu <strong>pomohl</strong> pachateli zvenku,” řekla
+Lucka R. „Vnitřní pomocník.”</p>
+<p>Všechny děti si toho zapsaly. <strong>Některý z personálu mu otevřel
+— rozvázal plachtu Šéfky.</strong> Otázka — <strong>kdo?</strong></p>
+<p>Aleš, který stál opodál a poslouchal, ucítil, jak mu znova přejel
+mráz po zádech.</p>
+<p>V devět hodin večer šel SoTo — opět — do svého stanu. Tentokrát
+nespal. Otevřel mobil, ačkoli signál v Rakoveckém údolí byl
+neexistující. Otevřel zprávy. Žádné nové. Marek ještě nepsal. Marek
+ještě nemohl psát.</p>
+<p>SoTo držel telefon v ruce. Přemýšlel o tom, jestli by neměl prostě
+říct Karlovi pravdu. Karel by mu věřil. Ale potom by to věděli i ostatní
+vedoucí. A potom by to věděla i policie. A v konečném důsledku by se
+Marek ráno probudil a zjistil, že SoTo porušil slib.</p>
+<p>SoTo vydržel.</p>
+<p>Aleš ve svém stanu zíral do plachty. Pět dní spánku za sebou bez
+spánku. Cítil v žaludku, jak mu bije puls. <strong>Jistil si, že někdo
+brzy zjistí, kdo otevřel plachtu Šéfky.</strong> A pak — pak co?</p>
+<p>Stehlík — daleko, na samotě — také nespal. Seděl v kuchyni, popíjel
+slivovici a koukal do ohně v kamnech. Žena ho slyšela, ale nešla.
+Věděla, že manžel má svoje období, kdy se s ním nemá smysl mluvit.</p>
+<p>Stehlík ten den projel kolem tábora po lesní cestě dvakrát — přivezl
+Karlovi vzkaz od starosty Hájka, že přijede zítra na návštěvu — a
+ujistil se, že <strong>dutina buku není prozkoumaná.</strong> Děti se
+kolem buku jen mihly. Závěť zůstávala bezpečná. Stehlík jel zpět na
+samotu s pocitem, že to <strong>zvládá</strong>.</p>
+<p><strong>Prozatím.</strong></p>
+<hr />
+<h2 id="kapitola-5-středa-hosté">Kapitola 5: Středa — hosté</h2>
+<p>Středu před obědem dorazila do tábora <strong>JUDr. Magdaléna
+Růžičková</strong>. Notářka. Ze své kanceláře v Blansku jela na vlastní
+žádost — nabídla Karlovi, že si týmy vyslechnou, aby se hra rozjela.</p>
+<p>Růžičková vystoupila ze své Škody Yeti v kostýmu — sako, sukně,
+brýle, kufřík. Karel ji přivítal u parkoviště. „Magdaléno, díky, že jste
+přijela.”</p>
+<p>„Karle, je mi líto za pana Marka. Slyšela jsem dnes ráno, že stav je
+stabilní. Doufám v rychlý návrat.”</p>
+<p>Růžičková strávila dopoledne v jídelně, kde si ji týmy postupně
+vyslechly. Říkala stále totéž: „Závěť měla být přečtena Markem osobně
+den 21. července. Já mám v archivu <strong>kopii</strong> — fragment §§
+1–2 a dodatek smlouvy s Mendelovou univerzitou. Plný text může přečíst
+jen Marek. Pokud chcete, <strong>přijeďte ke mně den 8 do
+Blanska</strong>. Ukážu vám fragment a dodatek.”</p>
+<p>Děti to přijaly. <strong>První pevný cíl: výjezd do Blanska den
+8.</strong></p>
+<p>V deset hodin přijel <strong>Bohumil Hájek</strong>, starosta
+Jedovnic. Šedesátník, vesnický typ, vesta s logem obce, čepice. Přijel
+svým autem, vystoupil, pozdravil Karla širokým gestem.</p>
+<p>„Karle. Mrzí mě to. Pan Marek je přítel obce Jedovnice třicet
+let.”</p>
+<p>Hájek zůstal hodinu, mluvil s týmy, vykládal jim historii vztahu obce
+k táboru. Když ho děti vyslýchali, odmítl jakoukoli teorii, že obec by
+měla zájem o pozemek: „Naše obec si tábor váží jako kulturního pokladu.
+<strong>A my ten les ani nevlastníme — to je univerzita.</strong>”</p>
+<p>R08 — Hájek a obec. Slabá rudá stopa. Hájek jí klidně vyvrátil.</p>
+<p>Před obědem — velkým momentem dne — přijel <strong>Vladimír
+Stehlík</strong> svým <strong>starším pickupem</strong> — Mitsubishi
+L200, dřevěná korba. Vystoupil v kostkované košili, kalhotech s laclem,
+koženo botách. <strong>Vousy.</strong> V korbě pickupu měl koš s mladými
+brambory a sklenicí medu.</p>
+<p>Děti ho pozorovaly z úkrytu pod plachtou jídelny. <strong>Boty
+velikosti 44.</strong> Pickup. Vousy. Shoda na třech bodech
+identikitu.</p>
+<p>Karel ho přivítal zdvořile. Stehlík vystoupil, rozhlédl se. „Karle.
+Aničko. Jeden z neponukaných — slyšel jsem, co se stalo. Jsem otřesen.
+Pan Marek je můj soused od dětství. Přivezl jsem trochu medu. Trochu
+brambor. Bylo by mi ctí, kdybyste přijali.”</p>
+<p>Anička přijala koš. Stehlík se posadil na lavici a seděl tam jako
+vesnický muž. Mluvil pomalu. Děti — z úkrytu — jeden po druhém si
+všímaly: <strong>boty, pickup, dýmka v košili.</strong> Lucka R.
+zazpívala tiché <em>aha</em>.</p>
+<p>Děti ho začaly vyslýchat. Stehlík odpovídal klidně. „Já jsem byl 11.
+července doma na samotě. Krmil jsem koně. Večer jsem šel spát. Manželka
+to potvrdí.”</p>
+<p>„Kdo přesně potvrdí?”</p>
+<p>„Žena. Dnes nepřijela, ale můžete jí zavolat.”</p>
+<p>„A celou noc jste byl doma?”</p>
+<p>„Ano. Spal jsem. Ráno jsem vstal, jako vždycky, v půl šesté. Krmil
+koně.”</p>
+<p>Tým Vlci si ho pozorně prohlížel. Lucka M. — která byla nejdřívější —
+se ho zeptala: „A kouříte dýmku?”</p>
+<p>Stehlík přikývl. „Občas. Když je nálada.”</p>
+<p>„A jaké tabákové směsi?”</p>
+<p>„Místní — <strong>Kapitán Černý</strong>, z brnenské fabriky.”</p>
+<p>Tým Vlci si zapsal: <em>„Stehlík kouří Kapitán Černý — stejnou směs
+jako popel v Šéfce.”</em> F12 — sedlo. To byl osmý kámen v Stehlíkově
+profilu.</p>
+<p>Když se Stehlík kolem druhé hodiny chystal odjet, Karel — na předem
+domluvený plán s policií — zdvořile řekl: „Pane Stehlíku,
+<strong>necháte tu pickup do zítřka?</strong> Děti by chtěli ho
+prozkoumat. Neoficiálně. Můžete s námi povečeřet.”</p>
+<p>Stehlík se chvíli rozmýšlel. „Hm. No, máme do zítřka koně, ale na
+večeři ráda zůstanu.”</p>
+<p>Stehlík přikývl. Klíče od pickupu měl v kapse. Nepředal je.</p>
+<p>V tu chvíli se dovnitř centrální plochy nepozorovaně přiblížil
+<strong>SoTo</strong> a — když Stehlík odcházel ke stanu, kde mu Karel
+připravil postel — sáhl si do Stehlíkovy kapsy a vzal mu klíčky. Stehlík
+to nezpozoroval. Byl unavený. SoTo pak klíčky předal Karlovi. „Karle,
+schovám si je. Aby Stehlík ráno neujel.”</p>
+<p>Karel přikývl.</p>
+<p>Volitelně, kolem půl třetí, dorazil i <strong>Pavel Konečný</strong>
+ze sousedního skautského tábora Borovice. Krátká návštěva. Týmy ho
+vyslechly. „<strong>Já mám rád pana Stanislava. Naše tábory jsou
+spojenci, ne soupeři.</strong>”</p>
+<p>Konečný měl alibi — porada s vedoucími tábora Údolí 11. července
+večer. Více svědků. Eliminace den 6.</p>
+<p>Po obědě, kdy Stehlík seděl na lavici pod plachtou jídelny a hovořil
+s Karlem o starých časech, se Anička vrátila do polní kuchyně připravit
+večeři. Pak — krátce — všimla si, že <strong>na dveřích kuchyně leží
+list papíru</strong>. Anonymní. Caesarova šifra. Anička ho zvedla a
+odnesla Karlovi.</p>
+<p>„Tohle někdo někam pohodil. Nevím kdy.”</p>
+<p>Karel ho rozluštil sám: <strong>„POZOR. STEHLÍK V TÁBOŘE. NESMÍ ODJET
+S PICKUPEM.”</strong></p>
+<p>Karel dopis schoval. Klíčky od pickupu měl. Plán fungoval.</p>
+<p>Ten večer — kolem šesté — Jenda a Adriana donesli Karlovi další
+informaci: „Karle, <strong>na lesní cestě v noci 11.→12. byly dvě stopy
+pickupu</strong>. Příjezd a odjezd. Já jsem to viděl ráno, ale nedávalo
+mi to smysl. Stehlík mi do tábora nikdy nejede v noci. Až dnes ráno,
+když přijel oficiálně, jsem si <strong>uvědomil</strong>: ta stopa byla
+<strong>jeho</strong>. Z noci 11.→12.”</p>
+<p>Karel přikývl. „Jendo, <strong>napiš to do svědectví. Týmy si to
+potřebují přečíst.</strong>”</p>
+<p>S17 — Jenda + Adriana svědčí, že pickup byl v noci na cestě. A
+konkrétně — <strong>Stehlíkův pickup</strong>.</p>
+<p>Karel měl teď v ruce: F04, F09, F10, F12, S17. Plus oficiální alibi
+Stehlíka, které <strong>bylo lži</strong>.</p>
+<p>Zbývalo ho <strong>konfrontovat</strong>. Plán: zítra je den klidu.
+Pozítří, den 7, pravděpodobně přijde Markův vzkaz. <strong>Den 9 —
+konfrontace.</strong></p>
+<p>V devět hodin večer šly děti spát. SoTo seděl u dohořívajícího ohně.
+Karel si k němu sedl.</p>
+<p>„Tomáši, mám pro tebe dobrou zprávu. Sestra ze nemocnice mi zavolala.
+<strong>Marek se zdá ráno probrat.</strong>”</p>
+<p>SoTo se napůl usmál. Napůl. Podíval se do ohně. „Karle. Kdyby. Ráno
+přinese Magda audio. Ta čeká na sestru.”</p>
+<p>„Hmm.”</p>
+<p>Karel sklopil hlavu. „A pak se mi povíš, co jsi v noci dělal?”</p>
+<p>„Karle, <strong>pak řekneš všem dětem zase ty.</strong> Já zatím
+přečkám.”</p>
+<p>Stehlík ten večer spal v hostovském stanu, který mu Karel připravil.
+Spal špatně. V noci se dvakrát probudil a chtěl utéct. Ale klíčky od
+pickupu neměl. A když si vzpomněl na cestu pěšky — 1 km lesem, kde
+vedoucí týmů ohledávali stopy — uvědomil si, že nemůže.</p>
+<p><strong>Stehlík byl chycen.</strong> Ale ještě o tom nevěděl.</p>
+<hr />
+<h2 id="kapitola-6-čtvrtek-anička-promluví">Kapitola 6: Čtvrtek — Anička
+promluví</h2>
+<p>Ráno čtvrtého dne se táborem nesla zvláštní lehkost. Po pěti dnech
+intenzivního vyšetřování měli vedoucí pravdu, že děti potřebují
+<strong>dýchat</strong>. Karel ráno svolal všechny do teepee a oznámil:
+„Dnes je den klidu. <strong>Žádný nástup. Žádné výslechy.</strong>
+Pomalá snídaně, koupání u studánky, deníky, chvilka volna. Jen tichá
+práce na deníku a — pokud se vám chce — pomoc Aničce s pečením.”</p>
+<p>Děti si vydechly. Mladší kadeti utíkali ke studánce s ručníky. Starší
+zůstávali u jídelny, popíjeli kakao a probírali si poznámky. Tým Vlci se
+sklonil nad svým deníkem a tiše analyzoval — Stehlík jako pachatel byl
+pevný, ale <strong>vnitřní pomocník</strong> zůstával otázkou.</p>
+<p>V devět třicet — kdy slunce stoupalo nad lesem a slibovalo teplý den
+— přišla Anička za Karlem do Šéfky. V rukou držela utěrku. Měla rudé
+oči. Spala dvě hodiny.</p>
+<p>„Karle. Já — já potřebuju s tebou mluvit.”</p>
+<p>„Aničko, posaď se. Co je?”</p>
+<p>Anička si sedla na lavici, upravila si zástěru. Ruce se jí mírně
+třásly. „Karle, já něco vím. Něco, co jsem zatajila, protože jsem si
+nebyla jistá. Bála jsem se obviněním ublížit někomu nevinnému. Ale dnes
+— dnes už nemůžu mlčet.”</p>
+<p>„Aničko, mluv.”</p>
+<p>„V noci 11. července jsem byla v polní kuchyni. Dělala jsem těsto na
+ranní chleba — od dvaceti dvou hodin do dvou třiceti. To víš. <strong>Z
+polní kuchyně přes plachtu vidím přímo na Šéfku.</strong> A —”</p>
+<p>Anička sklopila hlavu, polkla.</p>
+<p>„<strong>Kolem půl jedné v noci jsem viděla v Šéfce baterku.</strong>
+Krátká světla. Jako by někdo něco hledal v truhle. Já jsem si v tu
+chvíli říkala — to bude pan Marek, nemůže spát, dochází se podívat na
+závěť. To se stává.”</p>
+<p>Karel klidně přikývl. Nepřerušoval.</p>
+<p>„A potom — kolem deseti minut po jedné — jsem viděla <strong>siluetu
+utíkající od Šéfky směrem k lesu</strong>. Vyšší, než je Aleš. Pěšky.
+Spěchala. Já jsem si v tu chvíli myslela, že to je Aleš, který jde na
+latrýnu.”</p>
+<p>Karel chvíli mlčel. Pak řekl: „Aničko, já vím, že se ti zdá běžné.
+Ale <strong>latrýna je opačným směrem</strong>, ne směrem k lesu za
+Šéfkou. Aleš tam nešel. Někdo jiný.”</p>
+<p>Anička přikývla. „Já to teď vím. <strong>Tahle silueta byla
+cizí.</strong> A ještě něco. <strong>Aleš nikdy nespěchá. Aleš se
+vleče.</strong> Tahle postava byla rychlá. Cizí.”</p>
+<p>„A v jednu — když Aleš vstal — jsi ho viděla?”</p>
+<p>„Asi v jednu pětadvacet. Aleše. Z latrýny. Šel zpátky k svému stanu
+<strong>správným směrem</strong>. Ne přes Šéfku. Přes stany. Tu siluetu
+jsem ale viděla <strong>dříve</strong>, asi v jednu deset. Šla
+<strong>opačným směrem</strong>.”</p>
+<p>Karel sklopil hlavu. „Aničko. Tohle je klíčové. Spustíme to dnes před
+týmy?”</p>
+<p>„Ano.”</p>
+<p>V deset svolal Karel všechny děti do teepee. Anička stála vedle něj,
+ve hluboké zástěře, s utěrkou v rukou.</p>
+<p>„Týmy. Anička chce promluvit.”</p>
+<p>Anička začala — pomalu, s pauzami. Děti ztichly. Když Anička
+dovyprávěla o <strong>dvou siluetách</strong> v noci, někteří starší
+kadeti si ručili u úst. <strong>Cizí pachatel přišel do Šéfky kolem půl
+jedné. Někdo z personálu otevřel zadní plachtu — vedl ho
+dovnitř.</strong> Vnitřní pomocník.</p>
+<p>„Děti,” uzavřel Karel, „<strong>vnitřní pomocník není SoTo</strong>.
+Anička viděla siluetu pět minut po tom, co cizí vyšel z Šéfky. SoTo už v
+té době dávno nebyl v táboře, jak slyšeli Jenda a Adriana — Santana
+odjela kolem čtvrt jedné. <strong>Vnitřní pomocník je někdo, kdo
+zůstal.</strong> Někdo, kdo věděl, kdy má rozvázat plachtu.”</p>
+<p>Aleš stál opodál a slyšel to. Cítil, jak mu po zádech přejel mráz.
+<strong>Mezera v hlídce ohniště. Pět minut na latrýnu, hodina
+pryč.</strong> Karel se na něj nepodíval. Aleš si přesto začal v hlavě
+řadit, kdy si pro něj přijdou.</p>
+<p>V tu chvíli, kolem druhé odpoledne, dorazil podruhé do tábora
+<strong>Tomáš Kellner</strong> — Aničin a Anežčin bratr. Měl s sebou
+velkou vepřovou plec, kterou Anička objednala v sobotu ráno cestou.
+Kellner v dodávce. Vystoupil v zástěře řezníka, vzal balík do polní
+kuchyně.</p>
+<p>„Sestro, máš pléc. Dva kila.”</p>
+<p>„Tomáši. Pojď chvilku posedět. Dáme si kafe.”</p>
+<p>Kellner si sedl na lavici. Tým Lišky — který právě procházel kolem —
+využil příležitosti.</p>
+<p>„Pane Kellnere, <strong>viděl jste tu noc něco neobvyklého</strong>?
+Když jste vezl maso?”</p>
+<p>Kellner se na chvíli zamyslel. „No… já jsem v ranních hodinách na
+cestě. V sobotu ráno před šestou. <strong>A toho rána, co jsem sem vezl
+maso — v půl šesté — jsem na silnici k Jedovnicům míjel Santanu Tomáše
+Sotoniaka. Jel směrem k tábořišti odsud.</strong>”</p>
+<p>„Co?”</p>
+<p>„Tomáše znám. Vzpomenul jsem si na to dnes, když mi sestra vyprávěla,
+jak na něj děti tlačí. Nic jsem si tehdy nemyslel — Tomáš je často v
+noci v Brně pracovně. Ale teď — když to dáváte do souvislostí — říkám,
+<strong>že možná</strong>.”</p>
+<p>Tým Lišky to zapsal. <strong>S19</strong> — Tomáš Kellner viděl
+Santanu v 5:30 cestou k Jedovnicím. To znamenalo, že <strong>SoTo se
+vracel</strong> — z Brna — kolem půl šesté ráno. <strong>Ne v
+noci.</strong> Vracel se. To byla slabá, ale významná stopa
+<strong>proti</strong> rudé stopě. Něco se nesráží. Pokud SoTo vraždil v
+noci, proč by se vracel z Brna kolem půl šesté?</p>
+<p>Když Kellner odjel, Karel se na to podíval s týmy. „<strong>Tomáš
+Kellner viděl Santanu v půl šesté ráno cestou k tábořišti.</strong> To
+znamená, že SoTo byl v Brně. Ne v Šéfce. <strong>Co dělal v
+Brně?</strong>”</p>
+<p>SoTo, který stál opodál, prokousl si ret. Skoro se nadechl říct. Ale
+Marek ještě nebyl probuzený. Mlčel.</p>
+<p>V šestnáct hodin tým Lišek našel pod stoly v jídelně další
+<strong>anonymní dopis</strong>. Substituční šifra. Tým Vlci ho rychle
+rozluštil — klíčové slovo bylo <strong>SVĚTLO</strong>, jak naznačoval
+popisek dopisu („<strong>Klíč je v názvu tábora, šestipísmenné
+slovo</strong>”).</p>
+<p><strong>NLOSDR XL DJ ECTHUDC</strong></p>
+<p>Substituce: A→S, B→V, C→E, D→T, E→L, F→O, G→A, H→B, I→P… Po pěti
+minutách nesl tým Vlci v rukou rozluštěný text:</p>
+<p><strong>PODÍVEJTE SE NA HLÍDKU</strong></p>
+<p>„Hlídku?” řekla Lucka R. „V táboře nemáme noční hlídku v pravém slova
+smyslu. Ale Aleš v noci ‚hlídal ohniště’ — sám to říkal.”</p>
+<p>„<strong>Pisatel nás směruje na Aleše</strong>,” uzavřel Karel.</p>
+<p>Tým Vlci letěl k přístřešku údržby a hledal <strong>knihu hlídky
+ohniště</strong> — papír, na který Aleš zapisoval každých třicet minut,
+kdo udržuje oheň. Našli ji za nářadím. Obrátili stránku 11. → 12.
+července. Záznam: <strong>23:00 — Aleš. 23:30 — Aleš. 24:00 —
+Aleš.</strong> Pak — <strong>mezera mezi 0:30 a 01:30</strong>. Žádný
+zápis. Pak <strong>02:00 — Aleš.</strong></p>
+<p>„<strong>Hodinu byl pryč</strong>,” řekl Tom Buchta, který stál
+vedle. „A on tvrdil, že byl na latrýně. Latrýna trvá pět minut, ne
+hodinu.”</p>
+<p>F11 — mezera v Alešově hlídce ohniště mezi 0:30 a 01:30. Klíčová
+stopa proti Aleši.</p>
+<p>Karel přivedl Aleše na ostrov. „Aleši. Co jsi dělal mezi půl jednou a
+půl druhou v noci?”</p>
+<p>Aleš se zaváhal. Pak — nepřesvědčivě — řekl: „Šel jsem se trochu
+projít. Bolelo mě v zádech. Nemohu být celou noc u ohně.”</p>
+<p>„Hodinu?”</p>
+<p>„No… ano. Trochu déle, než jsem si myslel.”</p>
+<p>„A nikoho jsi neviděl? <strong>Ani Marka v lese?</strong>”</p>
+<p>Aleš sklopil hlavu. „Slyšel jsem… vlastně sten. Z lesa za Šéfkou. Já
+jsem si myslel, že je to nějaké zvíře. Pak jsem šel spát.”</p>
+<p>Karel si od něj odešel. Aleš zůstal sedět na lavici. Tom Buchta —
+jediný z vedoucích — zůstal opodál a podíval se Aleshovi do očí.
+„<strong>Hochu, ty něco víš.</strong>”</p>
+<p>Aleš sklopil hlavu níž.</p>
+<p>V sedmnáct třicet Karel oznámil týmům druhé eliminace. „Týmy.
+<strong>Hájek je vyloučen</strong> — měl alibi (obecní zasedání 11.
+července večer). Pavel Konečný — vyloučen, alibi (porada s Údolím v
+noci). Dnes nám zbývají tři lidé v okruhu hlavního podezření:
+<strong>Vladimír Stehlík</strong> (oficiálně přijel den 5), <strong>Aleš
+Tomek</strong> (slabé alibi, mezera v hlídce, sen z lesa), <strong>Tomáš
+Sotoniak</strong> (krevní pouto, nehlasi).”</p>
+<p>Lucka R. si do deníku zapsala: <em>„Stehlík je hlavní pachatel. Aleš
+pomocník. SoTo… rudá stopa. Marek se má zítra probudit. Pak budeme vědět
+víc.”</em></p>
+<p>V tu chvíli — daleko, ve fakultní nemocnici v Brně — sestra na
+neurologii zaznamenala, že <strong>Marek otevřel oči</strong>. Pacient
+byl při vědomí. Slabě, unavený. Sestra okamžitě poslala vzkaz starší
+lékařce.</p>
+<p>Marek ji uviděl. Slabě se usmál. „Sestro… mohu si… mohu si
+zatelefonovat?”</p>
+<p>„Pane Stanislave, jste v Brně. Měl jste otřes mozku. Pamatujete
+si?”</p>
+<p>Marek se zamyslel. „Pamatuju… ano. Vladimír. <strong>Ten
+papír.</strong> Vladimír si ten papír vzal. Já jsem padl.”</p>
+<p>Sestra zápis. Lékařka přišla, vyšetřila ho, ověřila, že paměť
+funguje. Marek byl stabilní. Po půl šesté večer Marek dostal povolení
+diktovat dopis.</p>
+<p>V šest hodin, ve své pokoji, Marek diktoval. Sestra zapisovala —
+pomalu, aby Marek mohl sedět zpříma. Když dopis dokončili, Marek si ho
+přečetl, podepsal. Sestra mu ho zalepila do obálky. Adresát:
+<strong>Karel Malík, Tábor Světlo</strong>.</p>
+<p>V sedm hodin, kdy Magda dorazila do nemocnice — předem si dala s
+nemocnicí dohodnutou návštěvu — Marek jí dopis předal.</p>
+<p>„Magdo. Doručíš to ráno do tábora?”</p>
+<p>„Marku. Samozřejmě. Probudil ses?”</p>
+<p>„Ano. Pamatuju si. <strong>Karle to ráno řekni.</strong> A ještě
+jeden vzkaz pro Tomáše Sotoniaka. <strong>Tomáši, můžeš to
+říct.</strong> Tu noc — on byl v Brně. V mé pracovně. Vyzvedl mi dodatek
+smlouvy. Já jsem ho o to požádal. Slíbil mlčet. Teď ho uvolňuji.
+<strong>Řekni mu to.</strong>”</p>
+<p>Magda zalapala po dechu. „Marku, <strong>on tedy nebyl
+pachatel</strong>?”</p>
+<p>„Ne, Magdo. Vladimír. Soused. Vladimír Stehlík. Já si vzpomínám. Šel
+jsem do Šéfky a viděl jsem ho s tou červenou složkou. Pak jsem padl o
+kořen smrku. <strong>Přečti to v dopise.</strong>”</p>
+<p>Magda dopis schovala. „Marku, <strong>doručím</strong> to.”</p>
+<p>Magda v noci jela zpět do tábora. V Rakoveckém údolí byla v půl
+deváté večer. Šla rovnou ke Karlovi.</p>
+<p>„Karle. <strong>Marek se probral.</strong> Mám dopis. Pro tebe. A
+vzkaz pro Tomáše.”</p>
+<p>Karel zvedl hlavu od papírů. „Magdo. Děkuju ti.
+<strong>Děkuju.</strong>”</p>
+<p>V devět hodin svolal Karel celý tábor — i mladší, kteří už měli jít
+spát, dostali výjimku. Stáli kolem ohniště. Karel měl dopis v ruce.</p>
+<p>„Děti. <strong>Pan Marek se probral.</strong> Posílá nám vzkaz.”</p>
+<p>Karel rozevřel obálku. Začal číst.</p>
+<blockquote>
+<p>„Drahé děti, drazí vedoucí, drazí přátelé tábora Světlo.</p>
+<p>Dnes ráno mě tady ve fakultní nemocnici v Brně lékaři přesunuli z
+monitorovaného oddělení na běžné. <strong>Jsem v pořádku.</strong> Bolí
+mě hlava, ale myšlení mám čisté. Pamatuji si <strong>téměř
+všechno</strong>.</p>
+<p>V noci 11. července, někdy okolo jedné, jsem se probudil. Měl jsem
+zlý sen o tábořišti. Vstal jsem, vzal baterku, šel ke Šéfce. Ze Šéfky
+bylo slyšet šustění papíru.</p>
+<p>Vstoupil jsem dovnitř — a tam stál muž s červenou složkou v ruce.
+Otevřená truhla. On mě uviděl, já uviděl jeho. Já jsem ho oslovil
+jménem. <strong>Byl to Vladimír Stehlík.</strong> Soused od dětství.</p>
+<p>Řekl jsem mu, ať to položí. Vladimír zpanikařil. Strčil mě stranou —
+ne s úmyslem ublížit, jen aby utekl. Vyběhl ven se závětí. Já jsem za
+ním vyběhl do tmy. Asi 15 metrů za Šéfkou jsem klopýtl o kořen smrku.
+Spadl jsem na kámen. Pak už si nepamatuji nic — jen probuzení v
+sanitce.</p>
+<p>Děti, <strong>Vladimír mě nezbil. Já jsem upadl.</strong> Toto je
+důležité. Vladimír mě nechtěl zranit, on jen chtěl tu závěť.</p>
+<p>A ještě jedna věc: <strong>vyšetřujte také Aleše Tomka.</strong> Aleš
+měl té noci ‚hlídat ohniště’. Na latrýnu si zašel ve chvíli, kdy
+Vladimír přicházel. Já mám tušení, že Aleš věděl. Že mu Vladimír něco
+slíbil. Aleš je můj přítel padesát let. Zeptejte se Aleše. <strong>Žádný
+hněv — jen pravdu.</strong></p>
+<p>Závěť <strong>má Vladimír</strong>. Nebo ji někde schoval. Vladimír
+neměl odvahu si ji nechat doma. Schoval ji někde po cestě domů.
+<strong>Hledejte u toho, co je tam staré. U toho, co stálo, když jsem v
+1997 postavil první stan.</strong></p>
+<p>A ještě jeden zvláštní vzkaz, prosím vás. <strong>Pro Tomáše
+Sotoniaka.</strong> Tomáši — <strong>můžeš to říct</strong>. Já ti to
+dovoluji. Já to ráno všem vysvětlím sám, ale teď je čas. Promluv s nimi.
+Křivdili jste mu — nebylo to vaše vina, ale teď je to napravené.</p>
+<p>Děkuji vám, děti. Pomáháte tábor. Pomáháte mně. <strong>Buďte
+trpěliví. Pravda chce čas. A láska chce odpuštění.</strong></p>
+<p>Váš Marek Stanislav.”</p>
+</blockquote>
+<p>Karel sklopil dopis. Bylo ticho. Tak hluboké, že některé z mladších
+kadetů se rozplakaly.</p>
+<p>Pak Karel řekl: „<strong>Pachatel je Vladimír Stehlík. Pomocník je
+Aleš Tomek.</strong>”</p>
+<p>Stehlík — který spal v hostovském stanu — si v tu chvíli uvědomil, že
+se kolem stanu objevili dva vedoucí. Tom Buchta. Preclík. Ne agresivně —
+jen stáli, pozorovali. Stehlík věděl, že je odhalen. Začal v duchu
+plánovat útěk.</p>
+<p>Aleš stál opodál a slyšel Markův vzkaz. Cítil, jak mu po obličeji
+stéká pot. Ne strach z odhalení — strach, že <strong>Marek si vzpomněl.
+Marek věděl.</strong> A — že <strong>Marek mu nyní odpustil v
+dopise</strong>.</p>
+<p>V tu chvíli Karel obrátil pohled k SoTovi.</p>
+<p>„Tomáši. Marek říká, že můžeš mluvit. <strong>Tak nám to
+řekni.</strong>”</p>
+<p>SoTo se podíval na Karla, pak na děti. Viděl Klárku, Lucku, vedoucí
+týmů. Zhluboka se nadechl.</p>
+<p>„Děti. Marek mě den 1 odpoledne, krátce před zahájením, vzal stranou.
+<strong>Požádal mě, abych mu v noci tajně dovezl z jeho pracovny v Brně
+kopii dodatku smlouvy s Mendelovou univerzitou — s podpisem.</strong>
+Notářka Růžičková ji potřebovala pro archiv. Marek mi kladl mlčet, dokud
+ji nemá v rukou.</p>
+<p><strong>Vyrazil jsem v 0:45 Santanou.</strong> V Brně jsem byl ve
+2:30. Vyzvedl dodatek z Markovy pracovny — mám klíče. Vrátil jsem se v
+5:30. Auto stálo na jiném místě, protože jsem přejížděl, abych nevyrušil
+Adrianu a Jendu. Ráno přicházím — a Marek leží v lese, závěť zmizela.
+<strong>Nemohl jsem ho zeptat, jestli můžu mluvit. Tak jsem mlčel. Vám
+se to musí jevit jako přiznání. Mně se to po těch dnech jevilo jako
+vězení.</strong></p>
+<p>Dnes Marek řekl: ‚Můžeš to říct.’ Tak vám to říkám.”</p>
+<p>SoTo se odmlčel. „Dodatek mám v Santaně v aktovce. Můžete ho vidět.
+Notářka v Blansku ho má od ráno 12. července. <strong>Pokud nevěříte
+mně, věřte jí — den 8 ji navštívíte a ona to potvrdí.</strong>”</p>
+<p>Některé děti šly s SoTem k Santaně. SoTo otevřel kufr, vyndal
+aktovku, ukázal jim <strong>dodatek</strong> se Markovým podpisem. Děti
+to vyfotily. Dodatek se vrátil do aktovky.</p>
+<p>V tu samou minutu zazvonil Karlův satelitní telefon. Páter
+Lacina.</p>
+<p>„Karle, já si vzpomněl. <strong>V noci z 11. na 12. července jsem jel
+z Jedovnic do Vyškova na pohřební obřad. Cestou v Brně, na Olomoucké
+ulici, asi v 3:30, mě míjela Santana s českou poznávačkou. Já jsem si
+všiml, protože jsem viděl Tomáše Sotoniaka za volantem — známe se ze
+sboru, pozdravili jsme se očima. Šel směrem od Brna.</strong>”</p>
+<p>Karel přikývl. „Pater, <strong>děkuju</strong>. Zaznamenám to.”</p>
+<p>S20 — Páter Lacina viděl SoToovu Santanu v 3:30 v Brně. To dokonale
+pasovalo s SoTovým příběhem.</p>
+<p>V deset hodin Karel oznámil definitivní eliminace. „Magda — vyloučena
+(lékařský deník). Jenda + Adriana — vyloučeni (vzájemné alibi, žádný
+motiv, klíčové svědectví o Stehlíkovi). <strong>Tomáš Sotoniak —
+eliminován v hlavním podezření</strong>. Ráno odjedeme ke notářce do
+Blanska, kde to bude <strong>definitivně</strong> potvrzeno. Zbývají
+dva: <strong>Vladimír Stehlík (pachatel) a Aleš Tomek
+(pomocník).</strong>”</p>
+<p>Stehlík v hostovském stanu zaslechl všechno. Jeho srdce se rozjelo
+dvojnásobnou rychlostí. <strong>Muselo se rozhodnout.</strong> Útěk
+lesem, pěšky. Teď. V noci.</p>
+<p>Vstal. Otevřel plachtu stanu. Přede dveřmi seděl <strong>Tom
+Buchta</strong> na lavici, klidný, dívající se na hvězdy. Stehlík tiše
+odešel zpět dovnitř. Útěk teď nebyl možný. Ráno.</p>
+<p>V deset třicet šly děti spát. Karel se zase posadil k Tomáši — poprvé
+od pondělí volně dýchajícímu — u dohořívajícího ohně.</p>
+<p>„Tomáši. Děkuju, že jsi vydržel. Vím, jak ti to bylo.”</p>
+<p>„Karle. Marek mě poprosil. Já si nemůžu stěžovat.”</p>
+<p>„Zítra do Blanska. Notářka potvrdí. A pak — pozítří — konfrontujeme
+Stehlíka a Aleše.”</p>
+<p>SoTo přikývl. „<strong>Konečně.</strong>”</p>
+<p>Aleš ten večer nespal. Seděl ve svém stanu, hleděl do plachty. Cítil,
+jak se mu třesou ruce. Marek mu vzkázal: <em>„Žádný hněv — jen
+pravdu.”</em> Aleš si v hlavě skládal <strong>přiznání</strong>. Pomalu.
+Pozítří, pomyslel si. Pozítří.</p>
+<p>Stehlík si v hlavě skládal <strong>útěk</strong>. Ale věděl, že to
+nezvládne.</p>
+<p>A daleko, v Brně, ležel Marek v posteli a slabě se usmíval. Čekal, až
+k němu Magda dopis odveze. Cítil, že <strong>tábor je v dobrých
+rukou</strong>. Cítil, že <strong>vyšetřování je téměř hotové</strong>.
+Cítil, že <strong>on sám se za týden vrátí na finále, přečte závěť, a
+všechno bude zase v pořádku</strong>.</p>
+<p>Skoro všechno. Aleš ještě měl ten 30 000 Kč úplatek v plechové bedně.
+<strong>A ten ještě nebyl objevený.</strong></p>
+<hr />
+<h2 id="kapitola-7-pátek-vzkaz-z-nemocnice">Kapitola 7: Pátek — vzkaz z
+nemocnice</h2>
+<p>Pozn.: Tato kapitola byla rozprostřena ve čtvrtek (Markův vzkaz) —
+protože rytmus událostí v Rakoveckém údolí přijal vlastní tempo.
+<strong>Pátek byl den vyznívání</strong>. Den, kdy se rozjelo
+vyšetřování, ale ještě nedošlo k otevřené konfrontaci. Den, kdy si
+vedoucí připravovali strategii.</p>
+<p>Ráno bylo pomalé. Děti se vzbudily se vzpomínkami na Markův dopis.
+Klárka — která spala u kraje stanu vedle své sestry Lucky — slyšela, jak
+Lucka v noci tiše vzlykala. „Lucko, co je?”</p>
+<p>„Tatínek. Marek. Strejda Tomáš. Já jsem Tomáši křivdila, Klárko. Já
+jsem mu řekla, že najdu pravdu, a — pravda byla, že byl v pořádku.”</p>
+<p>„Lucko, <strong>omlouva je odvaha</strong>. Pamatuj si to. Strejda
+Tomáš to ví. Až přijde čas — uděláme to.”</p>
+<p>Lucka přikývla a rozplakala se znovu, tentokrát klidněji.</p>
+<p>V devět hodin Karel a SoTo svolali výjezdovou skupinu pro
+<strong>zítřejší výjezd do Blanska</strong>. Z každého ze 6 týmů jedno
+dítě + tři vedoucí. Plus dvě nejstarší kadetky pro bonus do Brna na
+Mendelovu univerzitu — měly tam získat kopii smlouvy a důkaz o
+Stehlíkově neformální dohodě s lesníkem.</p>
+<p>Adriana — Jenda jí pomohl s mapováním — vybrala mikrobus. Karel jí
+podepsal dispozice. Bonus pro tým Vlci: Lucka R. s nejstarší kadetkou
+Veronikou byla zvolena na Brno.</p>
+<p>Po obědě, kdy děti odpočívaly, Karel se SoTem a Magdou seděli pod
+plachtou jídelny u kávy. Diskutovali strategii pro <strong>konfrontaci
+Stehlíka a Aleše</strong> — jak ji udělat. Nejprve Stehlík, pak Aleš.
+Konfrontace v lipovém altánu. Karel vedoucí. Stehlík by měl nejprve
+lhát, pak se přiznat. Aleš by se měl zhroutit. Plán policie z Blanska na
+den 10 — dopadení Stehlíka na lesní cestě. Lesní hra dětí mezi tím —
+najít závěť v dutině buku.</p>
+<p>„A SoTo — ty budeš sedět vedle mě,” řekl Karel. „Drž klid. Glosuj
+suše. <strong>Děti se na tebe budou pořád dívat — vědí, že jsi byl
+podezřelý.</strong> Tvůj klid je pro ně lekce.”</p>
+<p>SoTo přikývl. „Hraju to pro radost, Karle. Tomu jsi mě naučil před
+patnácti lety, když mě zaučoval Marek.”</p>
+<p>Karel se usmál. „Marka pozdravím, až se uvidíme.”</p>
+<p>V tu chvíli se k nim připojila Anička — která měla po klíčové
+výpovědi o něco volnější. „Karle, Tomáši, Magdo. Já jsem se chtěla
+zeptat. <strong>Aleš… co bude s Alešem?</strong>”</p>
+<p>SoTo si nalil další kávu. „Aničko, Aleš ho čeká soud. Drobnější trest
+— pomocník ze strachu, polehčující okolnosti. Možná podmínka. Ale
+tátáborové místo musí zůstat.”</p>
+<p>„Marek napsal v dopise, že <strong>Aleš zůstává v Radě
+tábora</strong>. Pokud se Aleš dostane k soudu jako pomocník, tábor mu
+otevře dveře, jakmile odejde.”</p>
+<p>Anička přikývla. „Já mu to řeknu. Až bude přiznání. Aby věděl.”</p>
+<p>V odpolední hodině Karel objel s týmy areál tábora. Klárka pomáhala
+mladším kadetům s deníky. Tom Buchta hlídal Stehlíka, který strávil
+celou středu v hostovském stanu — Karel mu nedovolil odejít, řekl, že
+<strong>konfrontace bude zítra ve dvě hodiny</strong>, a Stehlík neměl
+jak ujet (klíčky od pickupu schovány). Stehlík seděl, kouřil dýmku. Tom
+Buchta dvakrát zaslechl, jak Stehlík telefonuje ženě — slabý signál mu
+nedovolil dlouhý hovor. Stehlík mu vlastně nemohl říct, že je v
+pasti.</p>
+<p>V odpoledne zaslechl Aleš za Šéfkou, jak Karel a SoTo plánují domovní
+prohlídku jeho přístřešku. „Tomáši, <strong>30 000 Kč musí být
+někde</strong>. Stehlík slíbil nějakou sumu. To se peníze v hotovosti
+neztratí.” Aleš pochopil. Zítra. <strong>Najdou bedu.</strong></p>
+<p>Aleš měl chvilku pokušení vyklidit bedu <strong>dnes večer</strong>.
+Šel do přístřešku, otevřel beddu, vzal plechovku. Stál tam s ní pět
+minut. Pak — pomalu — položil ji zpět. <strong>Když přiznám, peníze tu
+musí zůstat. Důkaz — pro mou matku. Pro mě. Pro Marka.</strong></p>
+<p>Aleš si sedl na lavici. Připravil v hlavě tichá slova. Pomyslel si:
+<strong>„Já se přiznám. Sám. Bez nátlaku. Jako Marek si
+přeje.”</strong></p>
+<p>Kolem pátku večerní hodiny se Magda vrátila z Brna — kde znova
+navštívila Marka. Marek byl klidnější. Sestra mu předala tabletu. Marek
+měl Magdě další vzkaz.</p>
+<p>„Magdo. Mám pro tebe ještě jednu věc. Až se dostanou k závěti —
+<strong>Tom Buchta vyleze do dutiny buku.</strong> Pamatuj.
+<strong>Lano. Jištění Karlem.</strong> Tom je horolezec.”</p>
+<p>Magda přikývla. „Marku, řeknu mu.”</p>
+<p>„A Magdo — ještě tohle. <strong>Den 11 přijdu osobně.</strong>
+Doktoři mi povolí, na pár hodin. Povezu se autem. Ty mě přivedeš pěšky
+posledních 200 m. Připrav se.”</p>
+<p>„Ano, Marku.”</p>
+<p>Marek se napil vody. „Magdo. Ty ses dostala do tábora <strong>velmi
+rychle.</strong> Děkuju ti.”</p>
+<p>„Marku. Já tu nejsem jen pro tebe. Já tu jsem pro děti.”</p>
+<p>Marek se usmál. „Já vím. Buďte hodní. Den jedenáctý — chci se vrátit
+a vidět, jak pokračujete.”</p>
+<p>Když Magda v deset hodin večer dorazila do tábora, předala Karlovi
+další vzkaz. Karel se chytil — Tom Buchta vyleze. Plán pro pondělí (den
+10) byl pevný.</p>
+<p>Páteční noc strávil tábor v pokoji. Děti spaly hluboko — všechny
+otázky, všechny pochyby zatím rozplynuty.</p>
+<p>Ale Stehlík v hostovském stanu nezavřel oči. Aleš ve svém stanu
+nezavřel oči.</p>
+<p>Dva muži, dva pachatelé, jeden velký, jeden malý. <strong>A dvě
+konfrontace, které je čekaly.</strong></p>
+<hr />
+<h2 id="kapitola-8-sobota-blansko">Kapitola 8: Sobota — Blansko</h2>
+<p>V pět třicet ráno vyrazila výjezdová skupina. Mikrobus zaparkoval na
+parkovišti, šest dětí (po jednom z každého týmu) plus tři vedoucí
+(Karel, Magda, Adriana — která řídila), plus dvě nejstarší kadetky
+(Lucka R. + Veronika, mířily do Brna). SoTo zůstal v táboře — protože
+<strong>Marek mu výslovně doporučil</strong>, ať netáhne s týmy do
+Blanska, kde notářka má důležité oznámení. SoTo se postaral o programu
+pro zbývajících 39 dětí.</p>
+<p>V sedm třicet stál mikrobus před notářskou kanceláří v Blansku. JUDr.
+Růžičková je čekala u dveří, kostýmovaná, s kufříkem.</p>
+<p>„Děti. Pane Karle. Vstupte.”</p>
+<p>V malé zasedačce — dlouhý stůl, šest židlí, na stěně pamětní obraz
+prvního prezidenta — Růžičková pootevřela aktovku. Vyndala tři
+dokumenty.</p>
+<p>„Děti, mám pro vás <strong>tři podstatné věci</strong>. Začínám tou
+nultou.”</p>
+<p>Vyndala list. Datum 12. července 2026, čas 6:30, razítko notářky,
+podpis SoTa, podpis Růžičkové. <strong>Potvrzení o předání
+dodatku.</strong></p>
+<p>„<strong>Tomáš Sotoniak ke mně přišel ráno 12. července v
+6:30</strong> — zaparkoval Santanu před kanceláří, počkal na otevření,
+předal dodatek smlouvy s podpisem pana Marka. Já jsem mu napsala krátké
+potvrzení o předání. Tady je kopie.”</p>
+<p>Děti si potvrzení vzaly do rukou. Nečetly — jen viděly to razítko a
+podpisy. Bylo to <strong>definitivní</strong>.</p>
+<p>„Tomáš plnil přání pana Marka. Ráno mi to potvrdil i pan Marek
+telefonicky z nemocnice — den 7 odpoledne. <strong>Tomáš tedy NENÍ
+pachatel ani pomocník. Plně eliminován.</strong>”</p>
+<p>Lucka R. — která se SoTou několikrát mluvila tvrdě — si v duchu
+řekla: <strong>„Strejdo Tomáši, omlouvám se.”</strong></p>
+<p>Pak Růžičková ukázala <strong>fragment závěti</strong> — jen §§
+1–2.</p>
+<p>„§ 1. <strong>Tábor Světlo má pokračovat.</strong> Pozemky propůjčené
+Mendelovou univerzitou v Brně mají být na základě připojeného
+<strong>dodatku prodlouženy o dalších 30 let</strong>, a propůjčení od
+rodiny hospodářů Stehlíkových (loučka u centrální plochy) zůstává v
+platnosti dle stávající smlouvy.</p>
+<p>§ 2. <strong>Vedení tábora přebírají v dosavadní funkci Karel Malík
+(hlavní vedoucí) a Tomáš Sotoniak (zástupce)</strong>, spolu s celým
+stávajícím personálem. Tábor se má řídit duchem, ve kterém vznikl:
+dobrovolnost, příroda, společenství, <strong>žádný zisk</strong>.”</p>
+<p>„§§ 3, 4 a 5 obsahuje plný originál závěti. Pan Marek si je přeje
+zveřejnit osobně. Já vám je dnes neukážu. Ale věřte: jsou tam
+<strong>velmi krásná překvapení</strong>.”</p>
+<p>A pak — třetí věc — Růžičková ukázala <strong>dodatek smlouvy s
+Mendelovou univerzitou</strong>. Karel ho prohlédl. Pevný papír,
+formální podpis Marka, otevřené.</p>
+<p>„<strong>Toto je dodatek smlouvy mezi Tábor Světlo (zastoupeným
+Markem Stanislavem) a Mendelovou univerzitou v Brně.</strong> Dodatek
+prodlužuje propůjčení pozemku <strong>o dalších 30 let</strong>,
+počítáno od 1. 1. 2027. Bez tohoto dodatku stávající smlouva 31. 12.
+2027 vyprší a univerzita podle své politiky pronajme plochu
+<strong>jinému zájemci</strong>.”</p>
+<p>Děti pokývaly hlavami.</p>
+<p>„<strong>Komu by univerzita pronajala pozemek</strong>, pokud by
+smlouva tábora vypršela?” zeptala se Lucka R., která vždycky kladla
+nejlepší otázky.</p>
+<p>„To by bylo na rozhodnutí univerzity,” řekla Růžičková. „Ale ŠLP
+Křtiny — který tu plochu spravuje — má seznam <strong>alternativních
+zájemců</strong>. Pokud zítra navštívíte Brno, lesník vám to upřesní. Já
+ti říkám teď: <strong>viděla jsem v archivu poznámku o jednom hospodáři,
+který má neformální zájem.</strong>”</p>
+<p>Děti to nevyslovili nahlas. Ale věděli koho.</p>
+<p>Lucka R. a Veronika pak pokračovaly do Brna. Mikrobus je odvezl. V
+kanceláři ŠLP — Lesnické a dřevařské fakulty Mendelovy univerzity — je
+přijal <strong>Ing. Tomáš Bárta</strong>, lesník, šedavé vlasy, klidný.
+Ukázal jim:</p>
+<ol type="1">
+<li>Stávající smlouvu 1997–2027.</li>
+<li><strong>Dodatek</strong> připravený k podpisu na 11. července
+2026.</li>
+<li><strong>A nakonec — písemnou poznámku, kterou si Bárta sám napsal v
+dubnu 2026.</strong></li>
+</ol>
+<p>Lucka R. ji přečetla nahlas: <em>„Tomáš [Bárta], v dubnu zastavil mě
+Vladimír Stehlík. Říkal: ‚Tomáši, kdyby tábor odešel, já bych měl o tu
+plochu zájem. Pro myslivecký revír. Prodloužil by ses se mnou?’ Já jsem
+mu řekl, že to záleží na rozhodnutí univerzity, ale že jeho zájem
+evidujeme jako alternativní pronájem, kdyby smlouva s táborem
+nepokračovala. Neformální dohoda. Žádný papír.”</em></p>
+<p>Bárta pak řekl tiše: „Když jsem se v květnu od kolegy dověděl, že
+<strong>Marek chystá dodatek</strong>, mlčel jsem. Stehlík se to dověděl
+od jiného úředníka — neopatrnost. Mrzí mě to, kluci.”</p>
+<p>Bárta předal Lucce R. kopii zápisu. F14 — dokument o Stehlíkově
+neformální dohodě s lesníkem.</p>
+<p>V mikrobusu na zpáteční cestě měla Lucka R. v rukou: §§ 1–2 závěti,
+dodatek smlouvy, kopii zápisu od Bárty, potvrzení o eliminaci SoTa.
+Otevřená kniha. <strong>Pachatel: Stehlík, motiv: pozemek pro myslivecký
+revír. Pomocník: Aleš.</strong></p>
+<p>V tu samou chvíli, v táboře, se devítiletý kadet jménem Filip
+pohyboval po šeré jídelně, kde Aleš zrovna měnil žárovku v lampičce.
+Filip byl zvědavý, pozoroval Aleše. Když Aleš odešel pro náhradní
+žárovku, Filip si všiml — pod Alešovým pracovním kabátem, na lavici —
+<strong>něco, co lesklo</strong>. Šel blíž. Plechová bedna otevřená.
+Uvnitř hromada bankovek. Bankovky.</p>
+<p>Filip uskočil. Zaslechl Aleše vracet se. Schoval se za stůl.</p>
+<p>Aleš vrátil žárovku. Otevřel beddu. Zavřel ji. Přemístil na poličku.
+Odešel.</p>
+<p>Filip zůstal za stolem ještě dlouho. Pak vyběhl ven a šel za Tomem
+Buchtou.</p>
+<p>„Pane Tom. Já… já jsem viděl peníze. <strong>Mnoho peněz.</strong> V
+Alešově bedně.”</p>
+<p>Tom Buchta zlomil obočí. „Filipe, ukaž mi to.”</p>
+<p>Filip vedl Toma do přístřešku. Tom otevřel beddu. <strong>Tlustý
+svazek bankovek.</strong> Třicet tisíc.</p>
+<p>„Filipe. <strong>Skvělá práce.</strong>”</p>
+<p>Tom Buchta beddu zavřel a šel zpět k Aničce. Pak šel za Karlem —
+telefonicky, satelitním telefonem do mikrobusu. „Karle, <strong>Filip
+našel třicet tisíc u Aleše. V přístřešku údržby. V plechové
+bedně.</strong>”</p>
+<p>Karel přikývl. „Tome, <strong>bedna zůstane na svém místě. Zítra ji
+ukážeme všem během konfrontace Aleše. Aleš se přizná.</strong> Filip si
+zaslouží ocenění.”</p>
+<p>V odpolední hodině, kdy mikrobus dorazil zpět do tábora, Karel svolal
+všechny děti. Lucka R. ukázala dokumenty. Karel oznámil, že <strong>SoTo
+je definitivně eliminován</strong>. Děti mu zatleskaly — některé se
+rozplakaly studem, jiné radostí. Klárka šla k SoTovi, podala mu
+ruku.</p>
+<p>„Strejdo Tomáši, omlouvám se.”</p>
+<p>SoTo se mírně usmál. „Klárko, <strong>bylo to dobré vyšetřování. To
+je v pořádku.</strong>”</p>
+<p>Lucka — Karlova druhá dcera — také přišla. „Strejdo, já jsem ti
+řekla, že najdu pravdu. <strong>Já jsem našla. Ale pravda byla, že jsi
+byl v pořádku. Já jsem ti křivdila.</strong>”</p>
+<p>„Lucko, každý detektiv někdy křivdí. Pak se omluví. <strong>Tos právě
+udělala.</strong>”</p>
+<p>Karel oznámil:</p>
+<p>„<strong>Zítra ve dvě hodiny v lipovém altánu — konfrontace se
+Stehlíkem.</strong> Po něm — Aleš. <strong>Pak — pokud Stehlík uteče —
+zítra ráno honička s policií.</strong> A v pondělí — <strong>najdeme
+závěť.</strong> A v úterý — <strong>Marek se vrací.
+Finále.</strong>”</p>
+<p>Tábor v sobotu večer cítil, jak se příběh láme. <strong>Konečně se
+schylovalo k pravdě.</strong></p>
+<p>Stehlík v hostovském stanu zaslechl všechno. Klid v jeho mysli
+zmizel. Jeho srdce si rozjelo svou vlastní tepnu. <strong>Zítra ve
+dvě.</strong></p>
+<p>Aleš ve svém stanu seděl s deníkem. Píše dopis matce. <strong>„Mami,
+omlouvám se. Já jsem hloupost udělal. Třicet tisíc, které jsem ti dal —
+z toho. Pan Marek mi odpustí. Až se vrátím, pomohu ti splatit
+zbytek.”</strong></p>
+<p>Aleš dopis složil. Dal ho do své peněženky. Pak se modlil — ne k
+Bohu, prostě tiše — a zavřel oči.</p>
+<p>A daleko, v Brně, ležel Marek a usmíval se. <strong>Vyšetřování je
+hotové. Zítra Stehlík promluví. Aleš promluví. Příběh dostane svůj
+konec.</strong></p>
+<p>Marek si v té chvíli <strong>nic nepamatoval o staré křivdě
+2010</strong>, kterou Stehlíkovi otec držel nad Alešovým otcem. To se
+Marek dověděl až později — ze samotného Alešova přiznání. <strong>Pak si
+Marek řekl: „Aleši, neboj se. Tu starou křivdu znova převrátíme. Ne ty,
+ale my všichni.”</strong></p>
+<p>Ale to bylo až úterka. <strong>Mezi tím — neděle. A
+pravda.</strong></p>
+<hr />
+<h1 id="část-iii-pravda">Část III — Pravda</h1>
+<h2 id="kapitola-9-neděle-konfrontace">Kapitola 9: Neděle —
+konfrontace</h2>
+<p>Den vyšetřování. Devátý. Týmy se ráno připravovaly. Karel rozdělil
+úlohy. Tým Medvědi měl mluvčího — třináctiletou Báru, která uměla
+mluvit. Tým Vlci — Lucku R., která měla rozum a chladný hlas. Tým Sojky
+— patnáctiletého Honzu, nejstaršího kadeta v táboře. Každý tým připravil
+<strong>kartu důkazů</strong>: papír A4 s deseti stopami, které
+dokazovaly Stehlíkovu vinu. Otisk boty 44. Pneumatika pickupu. Vlas z
+kožené rukavice. Popel z dýmky. Fragment závěti. Dodatek smlouvy. Záznam
+Bárty. Markovo svědectví. Aniččina silueta. Stehlíkova lež o samotě.</p>
+<p>V deset hodin Karel sezval tým „<strong>konfrontační</strong>”. Ne
+všichni. Vybraní mluvčí. Tom Buchta vedl bezpečnostní rámec — protože se
+Stehlík mohl pokusit o útěk. Magda byla přítomná pro krizovou pomoc.
+SoTo seděl vedle Karla — symbolicky, jako muž, který byl týden křivdou
+obdařen, a teď stojí na straně pravdy.</p>
+<p>V jednu hodinu odpoledne se v lipovém altánu — dřevěný kruhový
+přístřešek u centrální plochy — postavily lavice do velkého
+<strong>U</strong>. Stehlík seděl uprostřed, na lavici samotné. Vedle
+něj nikdo. Naproti něj v U seděly děti, vedoucí týmů, personál.
+<strong>Vladimír Stehlík byl obklopen pravdou.</strong></p>
+<p>Karel zahájil.</p>
+<p>„Pane Vladimíre Stehlíku. Děti vyšetřovaly <strong>devět
+dní</strong>. Mají pro vás otázky. Jste připraven?”</p>
+<p>Stehlík zvedl hlavu. Měl rudé oči, černou bradu — během dvou dnů
+zarostl. Rty se mu mírně chvěly. Přikývl.</p>
+<p>Tým Medvědi promluvil první. Bára začala.</p>
+<p>„Pane Stehlíku, <strong>kde jste byl 11. července v noci, mezi nulou
+hodin třiceti a jednou hodinou třicet?</strong>”</p>
+<p>Stehlík odpověděl. „Doma na samotě. Spal jsem.”</p>
+<p>„A vaše žena to potvrzuje?”</p>
+<p>„Ano.”</p>
+<p>„Tým Vlci, prosím, čtěte stopu F04.”</p>
+<p>Lucka R. vstala. „F04. Otisk <strong>kožené boty velikosti
+44</strong> v rose před Šéfkou ráno 12. července. Podle našich měření a
+porovnání se vzorky personálu <strong>nikomu z personálu tato bota
+nesedí</strong>. Aleš má 43, pohorky. Tom Buchta 42. Jenda 45 ale
+gumovky. Karel 43 gumovky. Pavel Preclík 42. SoTo 41 polobotky.
+<strong>Bota 44 kožená — pana Stehlíka.</strong> Vy nyní máte tu samou
+botu na noze. Můžeme ověřit?”</p>
+<p>Stehlík se podíval dolů. Měl staré kožené boty. Velikost 44.
+<strong>Otisk z lese se zhruba shoduje.</strong></p>
+<p>„Boty 44 mám,” řekl Stehlík tiše. „Není to důkaz. Bot 44 má stovky
+lidí v okolí.”</p>
+<p>„Tým Sojky, F09.”</p>
+<p>Honza vstal. „F09. Stopa <strong>pneumatiky pickupu</strong> na měkké
+hlíně lesní cesty směrem k samotě Stehlíkových. Pneumatika starší
+Mitsubishi L200, dřevěná korba — váš pickup, pane Stehlíku. Zajeli jsme
+dnes ráno změřit váš pickup. <strong>Pneumatiky se
+shodují.</strong>”</p>
+<p>Stehlík přikývl. „Já tudy jezdím. To se nepovede.”</p>
+<p>„F12. Tým Lišky, prosím.”</p>
+<p>Alča pomohla mladší kadetce. „<strong>Popel z dýmky</strong> v rohu
+Šéfky. Specifická směs <strong>Kapitán Černý</strong>, místní z brnenské
+tabákové fabriky. Vy, pane Stehlíku, jste nám sám potvrdil — kouříte
+tuhle směs.”</p>
+<p>Stehlík zaváhal.</p>
+<p>„Pane Stehlíku,” vstoupil Karel, „<strong>popel je chemicky stejný
+jako směs ve vaší dýmce</strong>. Sebrali jsme vzorek z lipového altánu,
+kde jste včera kouřil. <strong>Identický.</strong>”</p>
+<p>Stehlík mlčel.</p>
+<p>„F10,” pokračovala Alča. „Vlas z kožené rukavice — krátký, hovězí
+kůže. <strong>Vy sám jste den 5 přišel s košíkem brambor a v kapse jste
+měl kožené rukavice.</strong> Lucka R., ukaž to.”</p>
+<p>Lucka R. ukázala fotku — Stehlíkova kapsa s rukavicemi. „Vlákno na
+truhle se shoduje.”</p>
+<p>Stehlík sklopil hlavu. Jeho dýchání zrychlilo.</p>
+<p>„A teď, pane Stehlíku,” řekl Karel klidně, „<strong>vaše
+motivace.</strong>”</p>
+<p>Tým Medvědi promluvil. Bára: „<strong>Pane Stehlíku, my máme dodatek
+smlouvy s Mendelovou univerzitou v Brně, který pan Marek připravil.
+Dodatek prodlužuje propůjčení pozemku tábora o dalších třicet let. Bez
+něj smlouva 2027 vyprší a univerzita pronajme pozemek vám. A na
+Mendelově univerzitě nám potvrdili: vy jste o tu plochu žádal v dubnu
+2026 pro myslivecký revír. Měl jste neformální dohodu s lesníkem
+Bártou.</strong> Pokud zničíte dodatek + závěť, <strong>dostanete
+pozemek. Toto je váš motiv. Je to pravda?</strong>”</p>
+<p>Lucka R. ukázala kopii dodatku a kopii Bártova rozhovoru. Stehlík je
+viděl. <strong>Mlčel deset vteřin.</strong> Pak — vážně, tiše:</p>
+<p>„Děti. Povím vám pravdu. Já jsem chtěl tu louku. <strong>Pro
+myslivecký revír.</strong> Tábor mi ‚kazil’ zvěř — hluk, lidi v lese,
+pach. Měli jsme s panem Bártou neformální slovo, že kdyby tábor odešel,
+dostanu plochu já. Pak jsem se v květnu dověděl, že <strong>Marek chystá
+dodatek o prodloužení</strong>. Padl mi svět. <strong>Bez dodatku byl
+tábor v 2027 pryč. S dodatkem zůstával dalších 30 let. Já jsem to nemohl
+unést.</strong>”</p>
+<p>Stehlík se nadechl.</p>
+<p>„Marek se vzbudil. Slyšel mě. Vyšel ven. <strong>Já jsem nechtěl
+ublížit.</strong> Strčil jsem ho stranou — jen abych mohl utéct, ne aby
+ho zranil. Vyběhl za mnou. Klopýtl o kořen smrku. Padl. Já jsem se
+otočil… viděl jsem ho ležet… <strong>a utekl jsem dál.</strong> Místo
+abych pomohl. <strong>To je moje největší vina. Ne ta krádež. To, že
+jsem ho neopustil — odběhl jsem.</strong>”</p>
+<p>Stehlík sklopil hlavu. „Marek je můj soused od dětství. Padesát let.
+<strong>Já jsem mu ublížil pro pár hektarů lesa.</strong> Stydím
+se.”</p>
+<p>Karel chvíli ticho ponechal. Pak řekl:</p>
+<p>„<strong>Pane Vladimíre Stehlíku. Přiznáváte se, že jste 11. → 12.
+července 2026 v noci vstoupil do Šéfky tábora Světlo, vyměnil pravou
+závěť za padělek a způsobil pádu pana Marka Stanislava?</strong>”</p>
+<p>Stehlík se podíval na Karla. „<strong>Přiznávám.</strong>”</p>
+<p>V altánu byly slzy. Tichý šum dětí.</p>
+<p>„A závěť? Kde je?”</p>
+<p>Stehlík zaváhal. „<strong>V dutině starého buku u potoka.</strong> V
+nepromokavém sáčku. Hluboko.”</p>
+<p>„A Aleš? Jak vám pomohl?”</p>
+<p>Stehlík se podíval na Aleše, který stál opodál. <strong>Aleš stál u
+sloupu altánu, ruce u boku, oči sklopené.</strong></p>
+<p>„Aleš mi rozvázal zadní plachtu Šéfky. Předtím — den předtím — mi
+ukázal, kde Marek závěť uložil. Slíbil jsem mu peníze. <strong>30 000
+Kč.</strong> Na dluhy. Vydíral jsem ho — měl starou nehodu z 2010, kdy
+poražený strom <strong>otce</strong> dopadl na kůlnu mého otce. Otec to
+zatajil, ale Aleš mu zůstal zavázaný papírem o dluhu osmdesát tisíc. Já
+jsem na ten papír udeřil. Aleš to udělal <strong>pod tlakem</strong>.
+<strong>Není to jeho vina, je to moje.</strong>”</p>
+<p>Aleš začal plakat. Tichý pláč. Ne vzlyky — jen slzy stékaly.</p>
+<p>Karel vstal. „Pane Stehlíku. Dnes večer si vás převezme
+<strong>policie z Blanska</strong>. Zatím zůstanete tady, pod dohledem.
+Děkuju vám za pravdu.”</p>
+<p>Stehlík přikývl, ale <strong>vstal, otočil se a vyběhl</strong> z
+lipového altánu. Ne moc rychle — v jeho 55 letech a po únavě tří dní bez
+spánku. Ale rychle.</p>
+<p>Tom Buchta byl rychlejší. Stehlík mířil k pickupu na lesní cestě.
+Když dorazil — <strong>klíčky neměl</strong>. Otočil se, hledal,
+<strong>skočil do lesa</strong>. Bylo to instinktivní. Necelá minuta — a
+byl pryč mezi stromy. Tom Buchta se za ním rozběhl, ale Stehlík les znal
+lépe než kdokoli. Po deseti minutách Tom přiznal, že ztratil stopu.</p>
+<p>Karel okamžitě zatelefonoval <strong>Hájkovi</strong> — starostovi
+Jedovnic. „Bohuslave. <strong>Stehlík utekl do lesa. Pickup tady, klíčky
+u nás. Stehlík pěšky směrem k samotě.</strong> Volej policii v Blansku.
+Honička zítra ráno.”</p>
+<p>Hájek přikývl. „Karle, <strong>policie bude zítra ráno v sedm. Kpt.
+Polák a por. Brázdová. Volám hned.</strong>”</p>
+<p>V altánu Karel pokračoval s druhou konfrontací. Po krátké přestávce —
+kdy Aleš seděl s Magdou v zdravotce a plakal — ho přivedl Tom Buchta
+zpět. Aleš si sedl na lavici ve středu altánu. Před ním stál Karel.
+Vedle Karla — SoTo a Magda.</p>
+<p>„<strong>Aleši. Co řekneš?</strong>”</p>
+<p>Aleš zvedl hlavu. Slzy mu stékaly po tváři. Hlas se mu třásl.</p>
+<p>„Já… ano. Já jsem Vladimírovi rozvázal plachtu. Já jsem mu ukázal,
+kde Marek tu složku uložil. Já jsem ho pustil dovnitř. <strong>Třicet
+tisíc korun mi dal v plechové bedně.</strong> Jsou tam. Můžete se
+podívat. Většinu jsem dal mámě na exekuce. <strong>Mámě jsem to
+neřekl.</strong>”</p>
+<p>„Proč jsi to udělal, Aleši?”</p>
+<p>„Tatínek… v 2010… Stehlíkovi otec ho donutil podepsat papír. Osmdesát
+tisíc dluhu. Když tatínek umřel, papír zůstal. Stehlík mi řekl, že pokud
+nepomůžu, <strong>podá ho k soudu se souhrnnými úroky. Sto šedesát
+tisíc.</strong> Mámu by vystěhovali. <strong>Já jsem chtěl zachránit
+dům.</strong>”</p>
+<p>Aleš se rozplakal nahlas. Anička z první lavice vstala — šla k němu,
+položila mu ruku na rameno.</p>
+<p>„Aleši… proč jsi nic neřekl? Vždyť bych ti pomohla.”</p>
+<p>Aleš zavrtěl hlavou. „Já jsem to nevěděl jak. Já… měl jsem strach o
+mámu.”</p>
+<p>Karel klidně pokračoval. „Aleši. <strong>Marek mi v dopise napsal:
+Aleš věděl. Aleš chápe. Žádný hněv — jen pravdu.</strong> A zítra — den
+11. července — Marek se vrací. Bude číst závěť. <strong>Sám ti
+odpoví.</strong>”</p>
+<p>Aleš sklonil hlavu.</p>
+<p>„A Marek také napsal,” pokračoval Karel, „<strong>Aleš zůstává v Radě
+tábora. Důvěra se zaslouží i návratem.</strong>”</p>
+<p>Aleš zvedl hlavu. <strong>Údiv.</strong> Slzy mu nešly přestat.</p>
+<p>„Karle… já… já si to nezasloužím.”</p>
+<p>„Aleši, <strong>Marek si to přeje</strong>. Den po dni. Ty teď čekáš
+na <strong>soud</strong>. Půjdeš v pondělí ráno k policii dobrovolně. Já
+tě doprovodím do Blanska. Tam ti dají termín. Pak budeš čekat doma.
+Drobnější trest, polehčující okolnosti — vydírání rodinou křivdou,
+pomocník ze strachu, dobrovolné přiznání. Pravděpodobně podmínka. Pokud
+tě soud potrestá víz, <strong>ponese to s tebou Marek</strong>, ne
+sám.”</p>
+<p>Aleš si otřel tvář. „Karle. Děkuju. Děkuju vám všem.”</p>
+<p>Aleš pak strávil zbytek odpoledne v zdravotce s Magdou. Potřeboval
+klid. Ostatní vedoucí mu donesli polévku. Klárka mu donesla deku.
+<strong>Drobné gesta — táborová náruč.</strong></p>
+<p>V šest hodin večer Karel oznámil dětem den 10 — <strong>lesní hru
+„Obkličování”</strong>, kdy budou hledat <strong>závěť</strong>. A
+současně <strong>policie zatkne Stehlíka</strong>. Děti šly do stanů s
+pocitem, že <strong>zítra to bude den nálezu</strong>.</p>
+<p>Aleš spal v zdravotce na lavici. Magda u něj seděla a pletla.
+<strong>Tichá náruč</strong> v okamžiku, kdy se Aleš nejvíc cítil
+sám.</p>
+<hr />
+<h2 id="kapitola-10-pondělí-honička">Kapitola 10: Pondělí — honička</h2>
+<p>V sedm ráno přijela policie z Blanska. Kpt. Marek Polák a por. Lucie
+Brázdová — oba mladí, fyzicky způsobilí. Měli reflexní vesty, blok,
+kufřík. Karel je přivítal u parkoviště.</p>
+<p>„Stehlík je v lese. Pravděpodobně směrem k samotě. <strong>Klíčky od
+pickupu máme.</strong>”</p>
+<p>„Děkuju. Půjdeme tam s vámi pěšky,” řekl kpt. Polák.</p>
+<p>Karel mezitím organizoval <strong>lesní hru „Obkličování”</strong>
+pro děti. Jen samostarší kadeti — od deseti let nahoru — se mohli
+zúčastnit. Mladší zůstali v táboře s Alčou. Dvacet osm dětí v šesti
+týmech utvořilo <strong>kruh kolem dutiny buku</strong> a kolem části
+lesa. Cíl — <strong>najít závěť</strong>. Zároveň policisté hledali
+Stehlíka po jeho stopě.</p>
+<p>V osm hodin ráno Tom Buchta dovedl tým Sojky k buku. Tom byl
+horolezec — měl s sebou lano, helmu, jistítko. Karel ho dlouho jistil
+zezdola. Tom se opřel o kmen, postupně lezl po výčnělcích. Ve čtyřech
+metrech od země — na úrovni dutiny — pomalu vsunul ruku dovnitř.</p>
+<p>„<strong>Mám něco.</strong>”</p>
+<p>Vyndal sáček. <strong>Nepromokavý sáček.</strong> Uvnitř —
+<strong>červená složka s pečetí</strong>.</p>
+<p>Děti dole zaplesaly. Tom sestoupil. Položil sáček na trávu. Karel ho
+otevřel. <strong>Vosková pečeť.</strong> Stejná, jaká byla na padělku —
+ale tahle byla <strong>celá</strong>, nedotčená.</p>
+<p>Karel se podíval na děti. „<strong>Pravá závěť. Děti, máte
+ji.</strong>”</p>
+<p>Tým Sojky tleskal. <strong>Lucka R. brečela.</strong> Klárka se
+usmívala. Mladší kadetka — devítiletá Anička — si položila ruce na
+ústa.</p>
+<p>„<strong>Triumfální moment</strong>,” zašeptal Tom Buchta.</p>
+<p>Mezitím, v lese — asi 800 metrů od tábora, na lesní cestě k samotě —
+kpt. Polák a por. Brázdová zachytili Stehlíka. <strong>Bez
+násilí.</strong> Stehlík byl vyčerpaný. Strávil noc v lese, bez spánku.
+Když uviděl policisty, <strong>vzdal se</strong>.</p>
+<p>„Prosím vás. Já vím, co jsem udělal.”</p>
+<p>Polák ho objal kolem ramen. „Pane Stehlíku, jdeme. Pojedeme do
+Blanska.”</p>
+<p>Stehlík přikývl. Brázdová mu nasadila pouta — symbolicky, ne těsně.
+Stehlík mlčel celou cestu zpět k pickupu. Polák mu pickup nepustil —
+místo toho mu poslal druhého policejní vůz, který za pickup čekal u
+Jedovnic. Stehlík nasedl do policejního auta. <strong>Jeho posledním
+pohledem zpět byl pohled na les. Na Rakovecké údolí. Na svoji samotu v
+dálce.</strong></p>
+<p>Stehlík odjížděl z údolí — na druhé straně směrem do Blanska — v
+deset hodin dopoledne.</p>
+<p>V tu samou chvíli, v lipovém altánu, <strong>JUDr. Růžičková</strong>
+přijela ze své kanceláře v Blansku. Karel ji požádal, aby
+<strong>potvrdila pravost závěti</strong>, kterou děti našly v dutině
+buku. Růžičková ji přijala, prohlédla pečeť, srovnala podpis, prohlédla
+razítka.</p>
+<p>„<strong>Závěť je pravá.</strong> Pečeť je celá. Můj podpis je celý.
+Dodatek smlouvy s Mendelovou univerzitou je přiložen. Vše je v
+pořádku.”</p>
+<p>Karel uložil závěť do <strong>dřevěné truhly s mapami v
+Šéfce</strong> — té samé truhly, kterou Marek použil 11. července.
+Zaklapl víko. Tentokrát ji <strong>uzamkl</strong> Karlovým osobním
+zámkem. Symbolický gesto. Závěť čekala na zítřek.</p>
+<p>V odpoledne tábor odpočíval. Děti dělaly <strong>slavnostní
+přípravy</strong> pro zítřejší finále. Klárka pomáhala v kuchyni Aničce
+— smažila palačinky pro děti. Lucka M. organizovala dekorace pro lipový
+altán. Tom Buchta se SoTem vyřezávali ze dřeva <strong>45
+tabulek</strong> se jmény dětí, které dostanou dědické listy. Anežka
+pomáhala — taková tichá ruka.</p>
+<p>Aleš se vrátil z zdravotky po obědě. Pomáhal Magdě s čištěním
+kuchyně. Hovořil málo, ale <strong>byl klidnější</strong>. Klárka, která
+zaslechla, jak mu Magda říká „<strong>zítra Marek se s tebou
+usmíří</strong>”, schovala palačinku do papíru a podala mu ji se slovy:
+„Aleši. Pro tebe. Snědla bych ji sama, ale <strong>jíš ji
+ty</strong>.”</p>
+<p>Aleš se mírně usmál. „Klárko. Děkuju.”</p>
+<p>Magda také odjížděla — na poslední pojezd do Brna, kde se setkala s
+Markem. Sestra v nemocnici jí předala <strong>finální pokyny</strong>:
+ráno 11 hodin Marek vyjede s autem. Magda ho přivede k tábořišti. Marek
+bude v kostýmu — v sáku, s vycházkovou holí, s pomalým hlasem.
+<strong>Karel mu pomohl s kostýmovou změnou</strong> v autě. Magda
+asistovala.</p>
+<p>Když se Magda vrátila do tábora kolem osmé hodiny večerní, zaslechla
+u dohořívajícího ohně Aleše, který tiše hrál na kytaru. Hrál starou
+táborovou píseň — <em>„Hvězdičky, hvězdičky, padejte na zem”</em>. Děti
+se kolem něj usadily. Také mladší kadeti, kteří před třemi dny věřili,
+že Aleš je „zlosyn”, teď seděli vedle něho. Někteří mu položili hlavu na
+rameno.</p>
+<p>Magda si k němu přišla sednout. „Aleši, hraješ krásně.”</p>
+<p>„Děkuju.”</p>
+<p>„Aleši — <strong>víš, co Marek řekl v dopise? ‚Žádný hněv — jen
+pravdu.’ To znamená, že tě miluje.</strong>”</p>
+<p>Aleš přikývl. Slza mu po tváři ujela, ale <strong>už nebyla
+zoufalá</strong>. Byla <strong>uzrávající</strong>.</p>
+<p>V devět hodin děti šly spát. Aleš uložil kytaru a šel ke svému stanu.
+Spal hluboko — poprvé od noci 11. července.</p>
+<p>Karel a SoTo seděli u dohořívajícího ohně do desáté.</p>
+<p>„Tomáši. Zítra Marek.”</p>
+<p>„Karle. Já bych mu rád řekl jednu věc. Až přijde.”</p>
+<p>„Co?”</p>
+<p>SoTo se mírně usmál. „<strong>Že mu odpouštím, že mě nechal sedm dní
+v pekle.</strong> Jen to. Pak je v pořádku.”</p>
+<p>Karel se zasmál. „Tomáši, <strong>on tě bude prosit, abys mu
+odpustil. Pamatuj si to.</strong>”</p>
+<p>SoTo přikývl a zhasil oheň. Šli spát.</p>
+<hr />
+<h2 id="kapitola-11-úterý-finále">Kapitola 11: Úterý — finále</h2>
+<p>V úterý 21. července ráno bylo v Rakoveckém údolí slunce. Mírně
+mlhou, ale tepelně. <strong>Den, na který se sjelo třicet
+let</strong>.</p>
+<p>Děti vstaly v sedm. Snídaně. Pak — celé dopoledne —
+<strong>přípravy</strong>. Vlajky týmů byly napjaty mezi stromy. Lipový
+altán byl ozdobený lipovým květem. Anička pekla velký dort se třemi
+svíčkami — <strong>30 let, 30. ročník</strong>. Aleš (kterému policie
+dovolila zůstat na finále — odjezd do Blanska byl odložen na úterý
+odpoledne) pomáhal s úpravou ohniště.</p>
+<p>Karel — dnes pro polovinu dne <strong>dvojí role</strong> — se
+odebral kolem jedenácté do auta zaparkovaného na parkovišti. Tam ho
+čekal <strong>kostým Marka Stanislava</strong> — sako, čepice,
+vycházková hůl, šedavé vousy lepené, brýle. Magda asistovala — pomohla
+mu s vousy, narovnala čepici. Karel si přitlačil hlas dolů, do
+hlubokého, klidného tónu, který si Marek osvojil za dlouhý život.</p>
+<p>V jednu hodinu odpoledne začalo <strong>přemostění</strong>. Tom
+Buchta vyšel s houslemi do středu lipového altánu, naladil je. Zahrál
+krátkou předehru — jednu lidovou píseň. Děti zatleskaly. Vedoucí týmů
+uspořádali děti do polokruhu. <strong>45 dětí</strong> sedělo na
+lavicích, na dekách, na zemi. <strong>Personál v čele</strong> — Karel
+(pod kostýmem) ne, on byl pořád v autě. Anička, Anežka, Magda, Jenda,
+Adriana, Preclík, Tom Buchta. SoTo stál vedle prázdného místa, kde má
+být Karel. <strong>Aleš stál stranou.</strong> Notářka Růžičková držela
+kufřík. Hájek — starosta — krátce pozdravil.</p>
+<p>V jednu hodinu třicet minut zazněl <strong>zvuk auta</strong>. Na
+parkovišti. Tom Buchta zahrál druhý kus na housle. Magda vyšla pěšky 200
+metrů s <strong>Markem</strong> — Karel v kostýmu, opřený o hůl, kráčel
+pomalu. Ne pomalu rituálně — pomalu, jak by chodil starý člověk, který
+se vrací z hospitalizace.</p>
+<p>Když Marek vstoupil do polokruhu — dětí tlesklo. <strong>Mladší
+kadety si nevšimly, že je to Karel.</strong> Vidění bylo přesvědčivé:
+vyšší, šedavé vousy, klidný hlas. Marek pomalu přešel ke středu
+altánu.</p>
+<p>„<strong>Děti. Přátelé. Jsem tu.</strong>”</p>
+<p>Děti opět tlesklo. Někteří plakali. Marek se podíval na SoTa.</p>
+<p>„Tomáši, pojď ke mně blíž.”</p>
+<p>SoTo přistoupil. Marek mu položil ruku na rameno. Pak se obrátil k
+dětem.</p>
+<p>„<strong>Vy, děti, jste Tomášovi sedm dní strašlivě křivdili. To je v
+dobrém vyšetřování v pořádku — pochybnost je nutná. Ale teď je čas říct
+nahlas: Tomáš plnil mé přání. Tajně, mlčel — protože jsem ho o to
+požádal. A vydržel pod tlakem, který by mnohé zlomil. Omluva je stejně
+důležitá jako odhalení. Děti, podívejte se Tomášovi do očí a řekněte mu
+Promiň.</strong>”</p>
+<p>Děti se postupně, v tichu, jednou po druhé, přiblížily k SoTovi.
+Krátký stisk ruky. „Promiň, strejdo Tomáši.” SoTo přijímal s drobným
+kývnutím. <strong>„V pořádku. Bylo to dobré vyšetřování.”</strong></p>
+<p>Když Klárka přišla, řekla mu: „Strejdo, já jsem ti psala v noci
+omluvu do deníku. Můžu ti ji ukázat?”</p>
+<p>„Nemusíš, Klárko. Stačí mi tohle.”</p>
+<p>Lucka přišla. „Strejdo, <strong>omlouvám se</strong>.”</p>
+<p>SoTo se na ni usmál. „Lucko. Tys byla nejtvrdší. <strong>Ale taky
+nejspravedlivější.</strong>”</p>
+<p>Po omluvě Marek pokývl. „Dobře, děti. <strong>Teď čteme
+závěť.</strong>”</p>
+<p>Notářka otevřela truhlu. Vyndala červenou složku. Předala Markovi.
+Marek pomalu — slavnostně — <strong>otevřel pečeť</strong>.</p>
+<p>„Já, Marek Stanislav, narozen 1966, zakladatel tábora Světlo, v plné
+svobodě své vůle a v plném zdraví, ustanovuji následující:</p>
+<p><strong>§ 1.</strong> Tábor Světlo má pokračovat. Pozemky propůjčené
+Mendelovou univerzitou v Brně mají být na základě připojeného dodatku
+<strong>prodlouženy o dalších 30 let</strong>, a propůjčení od rodiny
+hospodářů Stehlíkových (loučka u centrální plochy) zůstává v platnosti
+dle stávající smlouvy.”</p>
+<p>Pauza. Tři vteřiny.</p>
+<p>„<strong>§ 2.</strong> Vedení tábora přebírají v dosavadní funkci
+<strong>Karel Malík</strong> (hlavní vedoucí) a <strong>Tomáš
+Sotoniak</strong> (zástupce), spolu s celým stávajícím personálem. Tábor
+se má řídit duchem, ve kterém vznikl: <strong>dobrovolnost, příroda,
+společenství, žádný zisk</strong>.”</p>
+<p>Tlesknutí. Děti si všimly, že <strong>se jejich tábor
+zachová</strong>.</p>
+<p>„<strong>§ 3.</strong> Pro budoucí rozhodování zřizuji <strong>Radu
+tábora</strong>, do níž jmenuji: - Karla Malíka, hlavního vedoucího, -
+Tomáše Sotoniaka, zástupce, - Aničku Kellnerovou, šéfkuchařku, - Magdu
+Hamanovou, zdravotnici, - Jendu, zásobovače, - Adrianu, pomocnici
+zásobování, - <strong>a Aleše Tomka</strong>, údržbáře.”</p>
+<p>Marek zvedl pohled. Aleš stál stranou, oči sklopené. Marek
+<strong>pomalu kráčel k Aleshovi</strong>. Hůl. Krok za krokem.</p>
+<p>„<strong>Aleši. Pojď ke mně.</strong>”</p>
+<p>Aleš pomalu přistoupil. Slzy.</p>
+<p>Marek řekl tiše, ale jasně, aby všichni slyšeli: „Aleši,
+<strong>vstaň. Jednu chybu jsi udělal před třiceti lety, druhou minulý
+týden. Toho prvního ses dopustil jako kluk, toho druhého jako slabý
+člověk. Já tě znám padesát let — a tohle z tebe nedělá
+padoucha.</strong> Pokud tě soud potrestá, ponesu to s tebou. Ale
+<strong>do Rady patříš. Důvěra se zaslouží i návratem. Sedneš si vedle
+mě?</strong>”</p>
+<p>Aleš se zhroutil tichým pláčem. Padl na kolena. Marek mu položil dlaň
+na rameno.</p>
+<p>„Aleši. <strong>Pravda je v dobré výchově: chybu lze vykoupit.
+Slabost lze pochopit. Tábor je o lidech, ne o dokonalosti.</strong>”</p>
+<p>Aleš zvedl hlavu. Anička přišla, položila mu ruku na rameno. Klárka
+také. Lucka také. <strong>Půl tábora se k Aleshovi
+sklonilo.</strong></p>
+<p>Marek pokračoval ve čtení.</p>
+<p>„<strong>§ 4.</strong> Skutečnými dědici tábora — v duchu, ne v právu
+— prohlašuji <strong>každého táborníka, který kdy táborem prošel a kdo
+jím projde</strong>. Tábor patří jim, ne mně. Já jsem byl jen ten, kdo
+otevřel dveře.”</p>
+<p>V altánu zaplesala vlna úžasu. <strong>Mladší kadeti si
+nevěřili.</strong> Devítiletá Anička se podívala na svou starší sestru.
+„Sestro… <strong>i my?</strong>”</p>
+<p>Marek přikývl. „<strong>§ 5.</strong> Každému současnému účastníkovi
+i členovi personálu nechť je vystaven <strong>dědický list</strong>,
+který stvrzuje jeho symbolické místo v rodině tábora.</p>
+<p><strong>§ 6.</strong> Klíč k bukové dutině. <strong>Strom Stařík u
+potoka stojí 200 let.</strong> Pamatuje si víc než my. Nech naše
+vnoučata si ho také vážit. Před každým 10. ročníkem tábora má vedoucí
+vložit do dutiny vzkaz pro budoucí generaci. <strong>Toto je rituál,
+který zakládám. První takový vzkaz vložte vy zítra při
+odjezdu.</strong>”</p>
+<p>Marek zavřel závěť. Růžičková přijala dokument, podepsala další
+razítko. <strong>Závěť stvrzena. Zaznamenána. Pravdivá.</strong></p>
+<p>Pak Marek otočil hlavu k SoTovi. „Tomáši. <strong>Děkuju ti. Tys byl
+má pravá ruka. Vždycky budeš.</strong>”</p>
+<p>SoTo přikývl. <strong>Tichá emoce.</strong></p>
+<p>V dvě hodiny odpoledne začalo <strong>předávání dědických
+listů</strong>. JUDr. Růžičková a Anička přišly se zlatou krabicí.
+<strong>45 listů</strong>. Plus listy pro všechny vedoucí týmů a pro
+celý personál. Plus list pro Aleše.</p>
+<p>Marek předával postupně. Pomalu. Každému dítěti znal jméno (Karel mu
+před chvílí všechna jména pošeptal, jak jen mohl).</p>
+<p>„<strong>Jan Novák. Tábor 2026. Ty jsi dědicem tábora Světlo. Tvé
+jméno je v knize. Jednoho dne tě tábor pošle dál.</strong>”</p>
+<p>Předal papír. Dítě dostalo dědický list s pečetí + pamětní minci.
+Tlesknutí.</p>
+<p>A tak — 45 dětí, jedno po druhém. Trvalo to hodinu. Ale <strong>byla
+to nejdůležitější hodina celého tábora</strong>.</p>
+<p>Když přišla řada na <strong>Aleše</strong>:</p>
+<p>„<strong>Aleši Tomku, údržbáři, kterého znám padesát let. Dnes ti
+nepředávám dědický list jako oddělení od tábora. Předávám ti ho jako
+stvrzení návratu. Tábor je o lidech, ne o dokonalosti. Pokračujeme
+spolu.</strong>”</p>
+<p>Aleš si list vzal. Slzy. Posadil se vedle Marka.</p>
+<p>V šestnáct třicet, po posledním dědickém listu, Marek vstal a řekl:
+„Děti, <strong>lékaři ve FN Brno mě potřebují zpátky na poslední
+dovyšetření. Jdu se rozloučit. Vrátím se za rok.</strong> Tábor zůstává
+v rukou, do kterých patří — Karla a Tomáše. <strong>Spěchejte k ohni
+dnes večer, ten patří vám.</strong>”</p>
+<p>Marek pomalu odešel s Magdou pěšky 200 metrů zpět k autu na
+parkovišti. Za zatáčkou — kde z tábora už nebylo vidět — Magda Karlovi
+pomohla s kostýmovou změnou zpátky. Karel se převlékl, sundal vousy,
+narovnal vlasy. Magda mu podala vlhký ručník. Karel si otřel
+obličej.</p>
+<p>V šestnácti padesát se Karel <strong>vrátil pěšky</strong> — jako sám
+sebe. „Tak Marka jsem vyprovodil. Pokračujme.”</p>
+<p>Odpoledne — nikdo neviděl, že Karel a Marek je tatáž osoba.
+<strong>Některé starší kadetky se v duchu zarazily</strong>, ale dělali,
+že nic nevědí. Bylo to v pořádku.</p>
+<p>V osmnácti hodin <strong>Strom 30 let</strong> — silueta starého buku
+z kartonu — byl pověšen v lipovém altánu. Děti viděli <strong>své
+lísteky</strong> na něm. Karel přečetl několik nahlas:</p>
+<blockquote>
+<p>„Tábor je pro mě domov.” — Tereza, 12 let. „Tady jsem se naučil
+plavat ve studánce.” — Lukáš, 9 let. „Tábor je rodina.” — Bára, 14
+let.</p>
+</blockquote>
+<p><strong>Kniha 30 let</strong> byla také odhalena. Děti listovali,
+viděly stránky všech 30 ročníků. Stránka 30 — letošní — měla fotky 45
+dětí + personálu + instruktorů + dědické listy.</p>
+<p>Pak slavnostní večeře. Pak — v devatenácti třiceti — <strong>Velký
+táborový oheň</strong>.</p>
+<p>Po slavnostní hymně přečetl Karel <strong>Markův závěrečný
+vzkaz</strong> — krátký papírový dopis, který Marek předtím předal
+Magdě, aby ho dala Karlovi:</p>
+<blockquote>
+<p>„Děti. Drazí.</p>
+<p>Děkuju vám. Vyšetřování bylo náročné. Vy jste prošli s důstojností.
+Pamatujte si, co jste se naučili: <strong>že pochybovat je nutné, ale i
+že omlouvat se je odvaha.</strong> Že <strong>slabost se odpouští, když
+přijde pravda</strong>. Že <strong>tábor patří všem, kdo jím prošli a
+kdo jím projdou</strong>.</p>
+<p>A pamatujte si na <strong>Staříka</strong>. Ten buk u potoka. Za
+deset let přijde nový vzkaz do dutiny. Vy, kdo budete tehdy už dospělí,
+se vraťte. Najdete tam slovo budoucnosti.</p>
+<p>Sbohem na rok. Vaše Marek.”</p>
+</blockquote>
+<p>Karel sklopil dopis.</p>
+<p>V osmé hodině večerní zapálili velký táborák. Děti zpívaly. Vedoucí
+vyprávěli historky z 30 let. Anička přinesla <strong>dort se 30
+svíčkami</strong> — recept, který používala patnáct let. Všichni měli
+kousek.</p>
+<p>V deset hodin <strong>slavnostní oběd skončil</strong>. Karel vstal,
+řekl: „<strong>Děti. Děkujeme vám. Bez vás by se závěť nikdy nenašla.
+Pan Marek bude každého z vás 30 let pamatovat. A vy taky pamatujte.
+Tábor je váš.</strong>”</p>
+<p>Mlčení. Pak <strong>drobné objetí</strong>. Někdo plakal. Děti i
+vedoucí. <strong>Lidská blízkost.</strong></p>
+<p>Karel zakončil.</p>
+<p>„<strong>Vy jste dědicové. A já jdu klidně spát. Zítra ráno odjedete
+domů. Ale tábor odjede s vámi.</strong>”</p>
+<p>Děti se rozešly do svých stanů. Tábor utichl.</p>
+<p>Aleš, který zůstal u dohořívajícího ohně, sedl si vedle SoTa.
+<strong>Dva muži, dva tichá svědectví.</strong></p>
+<p>„Tomáši. Děkuju ti.”</p>
+<p>SoTo se podíval na Aleše. „Aleši, <strong>ty jsi byl
+statečný.</strong> Děti jsou statečné. Marek je statečný. Tábor je
+statečný. Nikdy si to neříkej, že ne.”</p>
+<p>Aleš sklopil hlavu. „Tomáši. Já jdu zítra k policii.”</p>
+<p>„Vím, Aleši. <strong>Vrátíš se.</strong> Tábor tě tu bude čekat.”</p>
+<hr />
+<h1 id="epilog-stařík-mlčí">Epilog — Stařík mlčí</h1>
+<p>Středa 22. července. Den odjezdu.</p>
+<p>V osm hodin děti vstávaly. Anička pekla <strong>palačinky</strong>.
+Anežka pomáhala. Aleš — který dnes po obědě odjížděl do Blanska —
+pracoval v kuchyni. Děti k nim přicházely, dávaly mu objetí. „Aleši,
+vrátíš se?”</p>
+<p>„Vrátím se.”</p>
+<p>V devět balení. Mezi dětmi se vlajkovaly poslední rozhovory.
+„Pamatuješ, jak jsme našli ten popel?” „A jak Aleš přiznal s těmi 30 000
+Kč?” „A Markovo odpuštění — to mě dostalo až ke slzám.” „A § 4. Ten
+paragraf nikdy nezapomenu.”</p>
+<p>V deset třicet velký úklid. Vedoucí + děti uklízely centrální plochu.
+<strong>Tábor odcházel jako přišel — čistý, jen v paměti
+hlubší.</strong></p>
+<p>V jedenáct slavnostní rozloučení. Karel řekl jen pár slov:
+„<strong>Děti. Skončil tábor 2026. Třicátý ročník. Vy jste byli první
+generace, která dostala závěť. Pamatujte, čeho jste byli součástí. Vy
+jste teď nositelé tradice. Pan Marek je už zpátky ve FN Brno na poslední
+dovyšetření. Vzkazuje vám: ‚Děti, děkuju vám. Tábor je v rukou, do
+kterých patří. Vrátím se za rok.’ Na shledanou za rok. A přivezte své
+kamarády.</strong>”</p>
+<p>Karel vztyčil pěst — táborový pozdrav. Děti odpověděly.
+<strong>Vlajka tábora se snáší.</strong> Tábor 2026 byl oficiálně
+skončen.</p>
+<p>Slavnostní oběd. Rodiče přijížděli. Děti vyprávěly. Rodiče viděli
+<strong>dědický list</strong>. <strong>Pamětní minci.</strong> „Co jste
+tady prožili?” Děti vysvětlovaly. <strong>Hra se stávala
+historií.</strong></p>
+<p>Auta odjížděla od jedné do třech. <strong>Děti se objímaly</strong> —
+mezi sebou, s vedoucími. <strong>Pláč. Smích. Sliby. „Příští rok se
+uvidíme.”</strong></p>
+<p>V tři hodiny odjelo poslední auto. Tábor byl <strong>téměř
+prázdný</strong>. Vedoucí stáli na parkovišti a mávali, dokud poslední
+auto nezmizelo za zatáčkou.</p>
+<p>V tři hodiny patnácti <strong>Karel, Aleš a SoTo</strong> šli pěšky k
+buku Staříkovi u potoka. Nesli <strong>list pergamenu</strong> s vzkazem
+pro budoucí generaci. Před vložením list nahlas přečetli:</p>
+<blockquote>
+<p>„Tábor Světlo, 30. ročník — léto 2026.</p>
+<p>V noci 11. → 12. července se v Šéfce stalo to, co se nemělo stát.
+Soused Vladimír Stehlík vzal naši závěť. Marek Stanislav padl v lese.
+Údržbář Aleš Tomek pomohl pod vydíráním.</p>
+<p>Děti — 45 jich bylo, ze šesti týmů — vyšetřovaly devět dní. Stopovaly
+v rose, četly Caesarovu šifru, rozluštily substituci s klíčem SVĚTLO.
+Vyslýchali hosty. Jely do Blanska za notářkou. Slyšely Markův vzkaz z FN
+Brno. Konfrontovaly Stehlíka pod lipovým altánem. Slyšely Alešovo
+přiznání.</p>
+<p>Marek se vrátil. Závěť přečetl. <strong>Každý táborník je
+dědicem.</strong> Aleš zůstává v Radě tábora. Stehlík je v péči policie
+z Blanska.</p>
+<p>Náš tábor přečkal. <strong>Tradice pokračuje.</strong></p>
+<p>Vy, kteří najdete tento vzkaz za 10 let — pamatujte: <strong>tábor
+patří lidem, ne dokonalosti. Důvěra se zaslouží i návratem.</strong></p>
+<p>Děti tábora 2026.”</p>
+</blockquote>
+<p>Aleš — jako gesto návratu — <strong>vložil list do nepromokavého
+sáčku a do dutiny</strong>. Karel a SoTo stáli vedle. <strong>Tichý
+moment.</strong></p>
+<p>„Děkuju,” zašeptal Aleš.</p>
+<p>Pak se vrátili do tábora. <strong>Aleš si vzal svou tašku, sedl si do
+auta s Karlem.</strong> Karel ho odvezl do Blanska na policii. Aleš
+odjížděl <strong>sám, dobrovolně, smířený</strong>.</p>
+<p>Když se Karel pak vrátil do tábora — bylo už čtyři hodiny — našel
+SoTa, který stál u Šéfky a pozoroval ji. SoTo se otočil.</p>
+<p>„Tomáši, jak to s Alešem dopadlo?”</p>
+<p>„Karle, dobré. Aleš nahlásil sám sebe. Kpt. Polák řekl, že čeká na
+vyjasnění. Pravděpodobně podmínka. Aleš se vrátí domů za pár dní.”</p>
+<p>Karel přikývl. „A — Tomáši, něco bych ti řekl. <strong>Já bych ti měl
+poděkovat.</strong>”</p>
+<p>„Karle?”</p>
+<p>„Tys byl týden v pekle. Já jsem tě týden nechal být. <strong>Děkuju
+ti.</strong>”</p>
+<p>SoTo se podíval na Karla. Pak — poprvé od noci 11. července — se
+mírně usmál. „Karle, <strong>byla to pravda</strong>. To už je dnes
+minulost.”</p>
+<p>V šestnácti třiceti se vedoucí začali balit. Stany skládali, Knihu 30
+let uložili do dřevěné truhly s mapami v Šéfce — pro další generaci.
+<strong>Strom 30 let</strong> bude odjet — Jenda ho odveze na svou
+farmu, kde jeho žena ho zarámuje a pak se v září vrátí na nejstarší lípu
+v centrální ploše.</p>
+<p>Marek byl ve FN Brno. <strong>Sestra mu pověděla, že tábor proběhl
+klidně.</strong> Marek se usmál a sklopil oči. <strong>Tabletu mu pak
+přiblížila, a Marek diktoval poslední vzkaz</strong> — Karlovi.</p>
+<blockquote>
+<p>„Karle. <strong>Děkuju.</strong> Pamatuj — za rok se vrátíme.
+<strong>Klárka a Lucka by měly hrát hlavní roli — tobě se tradice mění v
+ruce. Pamatuj, že v 2027 je 31. ročník — bude to odlišný.</strong> Ale
+stejný v duchu.</p>
+<p>Marek.”</p>
+</blockquote>
+<p>Karel ten vzkaz dostal e-mailem o pár hodin později, už doma v
+Brně.</p>
+<p>Nakonec, kolem páté hodiny odpolední, <strong>SoTo seděl sám na
+lavici</strong> u dohořívajícího ohně. Kolem něho — žádné děti. Žádní
+vedoucí. Tábor byl klidný. Větřík fukal ze severu. Stařík u potoka
+mlčel.</p>
+<p>SoTo vyndal z kapsy malý notesek. Otevřel ho. Začal psát.</p>
+<blockquote>
+<p><em>„Den 12, Rakovecké údolí, 22. července 2026.</em></p>
+<p><em>Tábor skončil. Marek se zítra vrátí na vyšetření. Děti odjely.
+Aleš jde k policii. Stehlík je v Blansku — soud ho čeká za pár
+měsíců.</em></p>
+<p><em>Já jsem 7 dní pro děti hlavní podezřelý. Marek mě rehabilitoval.
+Tábor se ke mně omluvil. Lucka — má neteř, drsná Lucka — mi šeptem řekla
+‘omlouvám se, strejdo’ a já jsem řekl ‘v pořádku, Lucko’.</em></p>
+<p><em>Co jsem se naučil za týden:</em></p>
+<p><em>1. Mlčení je odvaha — když je mlčet pro důvěru.</em> <em>2.
+Pochybnost je nutná — ale omluva je důležitější.</em> <em>3. Tábor není
+stavba. Tábor je rodina.</em></p>
+<p><em>Marek měl pravdu. Před 30 lety. A i teď.</em></p>
+<p><em>— Tomáš”</em></p>
+</blockquote>
+<p>SoTo zavřel notesek. Zhasl oheň. Vstoupil do své Santany. Otočil
+klíček. Motor naskočil. SoTo opustil Rakovecké údolí naposledy v tomto
+roce. Cesta lesem. Cesta přes Jedovnice. Cesta domů.</p>
+<p>Stařík u potoka mlčel — jak mlčel dvě stě let. Pamatoval si vše, co
+viděl. <strong>Vzkaz dětí ležel v jeho dutině</strong>, v nepromokavém
+sáčku, hluboko, kam ruka dospělého mohla dosáhnout jen s lanem. Tam
+zůstane deset let.</p>
+<p>V roce 2036 se otevře. Jeho děti — někteří už dospělí, jiní s
+vlastními dětmi — se vrátí, aby ho přečetli. Některé z nich budou tehdy
+vedoucí. Některé budou rodičové. Některé budou pamatovat zpaměti.
+<strong>Někteří už nebudou žít.</strong></p>
+<p>Ale vzkaz <strong>bude tu</strong>. A Stařík <strong>bude
+mlčet</strong> — jak mlčel vždycky. Protože stromy mlčí, ale
+<strong>pamatují si</strong>. Mlčí, ale <strong>vědí</strong>.</p>
+<p>A toto byl příběh, který v létě 2026 zažili lidé v Rakoveckém
+údolí.</p>
+<p><strong>Konec.</strong></p>
+<hr />
+<p><em>Příběh napsán v září 2026, na základě vyprávění Karla Malíka,
+Tomáše Sotoniaka, Magdy Hamanové, Aničky Kellnerové, Aleše Tomka, Marka
+Stanislava, JUDr. Magdalény Růžičkové a 45 účastníků 30. ročníku tábora
+Světlo. Vladimír Stehlík odmítl rozhovor.</em></p>
+<p><em>Některé scény jsou rekonstrukce. Většina je pravda.</em></p>
+<p><em>Tábor Světlo, 1997 → 2026 → ∞</em></p>
+
+
+</div>
+
+<script>
+// Reading progress bar
+window.addEventListener('scroll', () => {
+  const h = document.documentElement;
+  const scrolled = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+  document.getElementById('progress').style.width = scrolled + '%';
+
+  // Back to top button
+  const btn = document.getElementById('to-top');
+  if (h.scrollTop > 600) btn.classList.add('visible');
+  else btn.classList.remove('visible');
+});
+
+// Wrap chapters for drop caps
+document.addEventListener('DOMContentLoaded', () => {
+  const h2s = document.querySelectorAll('.page h2');
+  h2s.forEach(h2 => {
+    const next = h2.nextElementSibling;
+    if (next && next.tagName === 'P') {
+      const wrapper = document.createElement('section');
+      wrapper.className = 'chapter';
+      h2.parentNode.insertBefore(wrapper, h2);
+      wrapper.appendChild(h2);
+      let sibling = wrapper.nextSibling;
+      while (sibling && !(sibling.tagName === 'H1' || sibling.tagName === 'H2')) {
+        const next = sibling.nextSibling;
+        wrapper.appendChild(sibling);
+        sibling = next;
+      }
+    }
+  });
+});
+</script>
+
+</body>
+</html>

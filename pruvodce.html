@@ -60,6 +60,28 @@ header.hero::before {
   display: inline-block; padding: 4px 12px; background: rgba(255,255,255,0.18);
   border-radius: 16px; font-size: 13px; margin-bottom: 16px; letter-spacing: 0.3px;
 }
+.hero-cta {
+  display: inline-block; margin-top: 24px;
+  padding: 12px 24px; background: #fbbf24; color: #1e3a5f;
+  font-weight: 600; font-size: 15px; text-decoration: none; border-radius: 8px;
+  transition: all 0.2s; letter-spacing: 0.3px;
+}
+.hero-cta:hover { background: #fcd34d; transform: translateY(-1px); box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
+.hero-cta-icon { margin-right: 8px; font-size: 18px; vertical-align: -2px; }
+.book-banner {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  border: 1px solid #fbbf24; border-radius: 12px;
+  padding: 20px 24px; margin: 32px 0;
+  display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap;
+}
+.book-banner .book-text { flex: 1; min-width: 260px; }
+.book-banner h4 { margin: 0 0 4px; color: #78350f; font-size: 17px; }
+.book-banner p { margin: 0; font-size: 14px; color: #713f12; }
+.book-banner a {
+  background: #1e3a5f; color: white; padding: 10px 20px; border-radius: 6px;
+  text-decoration: none; font-weight: 600; font-size: 14px; white-space: nowrap;
+}
+.book-banner a:hover { background: #2c5282; }
 
 nav.sticky {
   position: sticky; top: 0; z-index: 100;
@@ -302,6 +324,7 @@ footer a { color: #fbbf24; }
       <div><strong>👥 ~45 účastníků</strong> (7–15 let)</div>
       <div><strong>🔍 6 vyšetřovacích týmů</strong></div>
     </div>
+    <a href="pribeh.html" class="hero-cta"><span class="hero-cta-icon">📖</span>Číst příběh jako knihu (~2 hodiny)</a>
   </div>
 </header>
 
@@ -316,6 +339,7 @@ footer a { color: #fbbf24; }
     <a href="#sifry">Šifry</a>
     <a href="#forenziku">Forenziku</a>
     <a href="#mapa">Mapa</a>
+    <a href="pribeh.html" style="margin-left: auto; color: #fbbf24; font-weight: 600;">📖 Příběh (kniha)</a>
   </div>
 </nav>
 
@@ -323,6 +347,14 @@ footer a { color: #fbbf24; }
   <div class="container">
     <h2 class="section-title">Úvod do hry</h2>
     <p class="section-subtitle">Co se stane v tom táboře a proč by tě to mělo zajímat</p>
+
+    <div class="book-banner">
+      <div class="book-text">
+        <h4>📖 Příběh jako kniha</h4>
+        <p>Tento průvodce je <strong>scénář pro vedoucí</strong>. Pokud chceš zažít hru <strong>jako čtenář</strong> — od první noci po slavnostní finále — máme pro tebe i naratívní verzi. ~20 000 slov, 12 kapitol, ~2 hodiny čtení.</p>
+      </div>
+      <a href="pribeh.html">Otevřít knihu →</a>
+    </div>
 
     <div class="card-grid-2">
       <div class="card">
