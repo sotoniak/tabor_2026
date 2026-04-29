@@ -126,7 +126,7 @@ Karel svolá tábor:
 > 2. **SoTo má klíče od všeho** — Šéfky, kufru, skladu, dodávky.
 > 3. **Santana stála ráno na jiném místě než večer** — někdo s ní jezdil.
 > 4. **Jenda a Adriana slyšeli motor v 0:45** — mohlo to být tedy SoTův.
-> 5. **Klárka pamatuje, jak Marek se SoTou mluvili vážně den 1 odpoledne** — o čem?
+> 5. **Klárka pamatuje, jak Marek se SoTem mluvili vážně den 1 odpoledne** — o čem?
 > 6. **SoTo odpovídá vyhýbavě** na všechny otázky o noci.
 >
 > **Tomáš zatím tedy zůstává podezřelým č. 1.**"

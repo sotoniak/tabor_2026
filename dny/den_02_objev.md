@@ -16,7 +16,7 @@
 | 07:00 – 07:30 | Karel + personál otevřou truhlu v Šéfce — **padělek!** Volají notářku                                                                            | Karel                     |
 | 07:30 – 07:45 | **SoTo se vrací do tábora** Santanou ze své noční mise. Vidí ranní chaos. **Mlčí** o své nepřítomnosti — Marek je v bezvědomí, nemůže ho zeptat. | SoTo                      |
 | 07:45 – 08:00 | **MIMOŘÁDNÝ NÁSTUP** — Karel oznámí situaci dětem                                                                                                | Karel, SoTo               |
-| 08:00 – 08:45 | Snídaně, Karel se SoTou rozdávají vyšetřovací materiály                                                                                          | Vedoucí týmů              |
+| 08:00 – 08:45 | Snídaně, Karel se SoTem rozdávají vyšetřovací materiály                                                                                          | Vedoucí týmů              |
 | 08:45 – 09:15 | Krátká návštěva 2 policistů z Blanska — sepíšou protokol, nechají vyšetřování dětem                                                              | kpt. Polák, por. Brázdová |
 | 09:15 – 12:00 | **ETAPOVÁ HRA č. 1: Místo činu** (4 stanoviště × 6 týmů, rotace)                                                                                 | Vedoucí týmů              |
 | 12:00 – 13:00 | Oběd                                                                                                                                             | Anička + Anežka           |
@@ -208,7 +208,7 @@ Děti **nemají** spojení s konkrétní osobou. **Stehlík není v táboře** (
 | Postava | Aktivita |
 |---|---|
 | **Karel Malík** | Vedení mimořádného nástupu, koordinace, satelitní telefon |
-| **Tomáš „Tony" Sotoniak** | Vrací se z noční mise v 7:30, mlčí o cestě. Stanoviště A — drsná, vyhýbavá persona. **Klíčový den pro otevření rudé stopy.** |
+| **Tomáš „SoTo" Sotoniak** | Vrací se z noční mise v 7:30, mlčí o cestě. Stanoviště A — drsná, vyhýbavá persona. **Klíčový den pro otevření rudé stopy.** |
 | **Anička Kellnerová** | Ráno **objevitelka** — viditelně otřesena, ale udržuje provoz kuchyně. Klíčový moment dne. |
 | **Anežka Kellnerová** | Polní kuchyně — vaří s Aničkou, drobně dojatá z Markova zranění |
 | **Magda Hamanová** | Ošetřovala Marka do příjezdu záchranky, nyní zdravotnická služba pro děti, koupání odpoledne |
@@ -239,4 +239,4 @@ Děti **nemají** spojení s konkrétní osobou. **Stehlík není v táboře** (
 
 ## Co se stane zítra
 
-Den 3: Začátek **výslechů personálu**. Týmy se rozdělí, vyslýchají Karla, SoTa, Aničku, Anežku, Magdu, Jendu, Adrianu, Aleše, Preclíka. **Karel a SoTo** mají vzájemné alibi (porada do 00:15). **SoTo se začíná stávat hlavním podezřelým** — Magda zmíní krevní pouto se Markem, Klárka pamatuje vážný rozhovor Marka se SoTou den 1 odpoledne. **Aleš** má slabé alibi (latrýna, sám).
+Den 3: Začátek **výslechů personálu**. Týmy se rozdělí, vyslýchají Karla, SoTa, Aničku, Anežku, Magdu, Jendu, Adrianu, Aleše, Preclíka. **Karel a SoTo** mají vzájemné alibi (porada do 00:15). **SoTo se začíná stávat hlavním podezřelým** — Magda zmíní krevní pouto se Markem, Klárka pamatuje vážný rozhovor Marka se SoTem den 1 odpoledne. **Aleš** má slabé alibi (latrýna, sám).

@@ -25,7 +25,7 @@ verzování dle [SemVer](https://semver.org/lang/cs/).
 
 ### Změněno
 
-- **Karel Malík hraje Marka Stanislava (dvojí role)** — uživatel nemá k dispozici staršího herce na roli zakladatele. Karel (real, 44) hraje **dvě postavy ve hře**: Karla Malíka (hl. vedoucí, dny 1–12, vlastní oblečení) a Marka Stanislava (zakladatel, **jen den 1 večer + den 11 odpoledne**) s výrazně odlišným kostýmem (sako, čepice, vycházková hůl, šedavé vousy lepené, pomalejší tempo, hlubší klidný hlas). V herní rovině zůstávají postavy Marek a Karel **rozdílné**. Nová sekce „Logistika dvojí role Karel/Marek" v `04_ROLE_OBSAZENI.md` s detailním scénářem kostýmové změny v 3 scénách (den 1 zahájení, den 11 odpoledne, den 7 vzkaz). **Klíčové:** Marek u večerního ohně den 11 NEZŮSTÁVÁ — po čtení závěti odjíždí zpět do FN Brno, večer pak vede Karel sám za sebe. Karlovo alibi (porada se SoTou 23:30–00:15) se nemění — v herní rovině jsou Karel a Marek dva lidé.
+- **Karel Malík hraje Marka Stanislava (dvojí role)** — uživatel nemá k dispozici staršího herce na roli zakladatele. Karel (real, 44) hraje **dvě postavy ve hře**: Karla Malíka (hl. vedoucí, dny 1–12, vlastní oblečení) a Marka Stanislava (zakladatel, **jen den 1 večer + den 11 odpoledne**) s výrazně odlišným kostýmem (sako, čepice, vycházková hůl, šedavé vousy lepené, pomalejší tempo, hlubší klidný hlas). V herní rovině zůstávají postavy Marek a Karel **rozdílné**. Nová sekce „Logistika dvojí role Karel/Marek" v `04_ROLE_OBSAZENI.md` s detailním scénářem kostýmové změny v 3 scénách (den 1 zahájení, den 11 odpoledne, den 7 vzkaz). **Klíčové:** Marek u večerního ohně den 11 NEZŮSTÁVÁ — po čtení závěti odjíždí zpět do FN Brno, večer pak vede Karel sám za sebe. Karlovo alibi (porada se SoTem 23:30–00:15) se nemění — v herní rovině jsou Karel a Marek dva lidé.
 - **Pavel „Preclík" Malík NENÍ synovec Karla** — v 0.4.0 jsem omylem zavedl příbuzenskou vazbu (synovec Karla, bratranec Klárky a Lucky). Příjmení Malík je shoda jmen, žádný příbuzenský vztah. Opraveno na 8 výskytů (03_PODEZRELI, 04_ROLE_OBSAZENI, README, sablony, dny/den_03).
 - **Vůz SoTa: Octavia → Santana** — kosmetická úprava (Volkswagen Santana — méně obvyklé, dramaticky zajímavější). Nahrazení napříč ~15 výskyty bez dopadů na herní logiku.
 
@@ -43,14 +43,14 @@ verzování dle [SemVer](https://semver.org/lang/cs/).
 
 ### Přidáno
 
-- **Tomáš „Tony" Sotoniak (SoTo, 42)** jako **zástupce hlavního vedoucího + vzdálený synovec Marka + HLAVNÍ rudá stopa**. Drží se podezření 7 dní (krevní pouto, klíče, zmizelá Santana v noci, vyhýbavé odpovědi). Eliminace den 8 — notářka v Blansku potvrdí, že SoTo plnil **tajné Markovo přání** (noční mise do Brna pro kopii dodatku smlouvy s podpisem). Den 11 finále: **veřejná omluva před dětmi**.
+- **Tomáš „SoTo" Sotoniak (SoTo, 42)** jako **zástupce hlavního vedoucího + vzdálený synovec Marka + HLAVNÍ rudá stopa**. Drží se podezření 7 dní (krevní pouto, klíče, zmizelá Santana v noci, vyhýbavé odpovědi). Eliminace den 8 — notářka v Blansku potvrdí, že SoTo plnil **tajné Markovo přání** (noční mise do Brna pro kopii dodatku smlouvy s podpisem). Den 11 finále: **veřejná omluva před dětmi**.
 - **Adriana (30)** — partnerka Jendy, **klíčový postřeh den 4** o Octavii na jiném místě (R02).
 - **Pavel „Preclík" Malík (28)** — vedoucí oddílu Jezevci, **drobná komická rudá stopa den 4** (krádež koláče v noci). _(V 0.5.0 opraveno: shoda příjmení s Karlem, žádný příbuzenský vztah.)_
 - **Tom Buchta (28)** — vedoucí oddílu Sojky, atletická pomoc v honičce den 10, **housle při čtení závěti den 11**.
 - **9 mladých instruktorů (~18 let)**: Klárka Malíková a Lucka Malíková (dcery Karla), Martin, Martina, Alča, Jeník, Lucka Ravasová, Vája, Ondra. Vedoucí 5 ze 6 týmů (+ Preclík vede Jezevce, Tom Buchta vede Sojky).
 - **Tomáš Kellner** — řezník z Jedovnic, **bratr Aničky a Anežky**, drobné návštěvy den 2 (přiveze maso) a den 6 (drobná stopa S19 — viděl Octavii v 5:30).
 - **Páter Lacina** — kněz z Jedovnic, drobná návštěva den 2 (modlitba za Marka), telefonát den 7 (potvrzení S20 — viděl Octavii v 3:30 v Brně).
-- **Exkluzivní stopy mladých instruktorů**: S22 (Klárka — pamatuje Marka mluvícího se SoTou), S23 (Lucka R. — analýza otisku 44), S24 (Jeník — turistická stopa pneumatiky).
+- **Exkluzivní stopy mladých instruktorů**: S22 (Klárka — pamatuje Marka mluvícího se SoTem), S23 (Lucka R. — analýza otisku 44), S24 (Jeník — turistická stopa pneumatiky).
 - **Komická drobnost den 4** — Preclík přizná noční nájezd na koláč (R07).
 
 ### Změněno

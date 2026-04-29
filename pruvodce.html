@@ -1,0 +1,1449 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tábor Světlo 2026 — Případ ztracené závěti · Průvodce hrou</title>
+<style>
+:root {
+  --color-primary: #1e3a5f;
+  --color-primary-light: #2c5282;
+  --color-accent: #d63031;
+  --color-accent-bg: #fadbd8;
+  --color-helper: #e67e22;
+  --color-helper-bg: #fdebd0;
+  --color-motive: #f39c12;
+  --color-motive-bg: #fef5e7;
+  --color-support: #2980b9;
+  --color-support-bg: #d6eaf8;
+  --color-redherring: #95a5a6;
+  --color-redherring-bg: #ecf0f1;
+  --color-success: #27ae60;
+  --color-success-bg: #d5f5e3;
+  --color-victim: #8e44ad;
+  --color-victim-bg: #e8daef;
+  --color-bg: #f8fafc;
+  --color-card: #ffffff;
+  --color-text: #1e293b;
+  --color-muted: #64748b;
+  --color-border: #e2e8f0;
+  --color-nav-bg: #1e3a5f;
+  --color-nav-text: #f1f5f9;
+  --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.04);
+  --shadow-hover: 0 2px 6px rgba(0,0,0,0.08), 0 8px 24px rgba(0,0,0,0.08);
+  --shadow-strong: 0 8px 24px rgba(30,58,95,0.15);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", Roboto, sans-serif;
+  line-height: 1.65; color: var(--color-text); background: var(--color-bg); margin: 0;
+}
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+header.hero {
+  background: linear-gradient(135deg, #1e3a5f 0%, #2c5282 100%);
+  color: white; padding: 80px 0 60px; position: relative; overflow: hidden;
+}
+header.hero::before {
+  content: ""; position: absolute; inset: 0;
+  background-image: radial-gradient(circle at 20% 30%, rgba(255,255,255,0.08) 0, transparent 50%),
+                    radial-gradient(circle at 80% 70%, rgba(255,255,255,0.05) 0, transparent 50%);
+  pointer-events: none;
+}
+.hero-content { position: relative; }
+.hero h1 { font-size: 48px; margin: 0 0 8px; font-weight: 700; letter-spacing: -0.5px; }
+.hero h2 { font-size: 22px; margin: 0 0 24px; font-weight: 400; opacity: 0.9; }
+.hero-meta { display: flex; gap: 32px; flex-wrap: wrap; font-size: 14px; opacity: 0.85; }
+.hero-meta strong { color: white; opacity: 1; }
+.hero-pill {
+  display: inline-block; padding: 4px 12px; background: rgba(255,255,255,0.18);
+  border-radius: 16px; font-size: 13px; margin-bottom: 16px; letter-spacing: 0.3px;
+}
+
+nav.sticky {
+  position: sticky; top: 0; z-index: 100;
+  background: var(--color-nav-bg); color: var(--color-nav-text);
+  border-bottom: 1px solid #2c5282; box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+nav.sticky .container { display: flex; gap: 4px; padding: 0 24px; overflow-x: auto; }
+nav.sticky a {
+  color: var(--color-nav-text); text-decoration: none; padding: 14px 16px;
+  font-size: 14px; font-weight: 500; white-space: nowrap;
+  border-bottom: 2px solid transparent; transition: all 0.2s;
+}
+nav.sticky a:hover { background: rgba(255,255,255,0.08); }
+nav.sticky a.active { border-bottom-color: #fbbf24; color: #fbbf24; }
+
+section { padding: 56px 0; border-bottom: 1px solid var(--color-border); }
+section:last-of-type { border-bottom: none; }
+section h2.section-title {
+  font-size: 32px; margin: 0 0 8px; color: var(--color-primary); letter-spacing: -0.3px;
+}
+section .section-subtitle { color: var(--color-muted); margin: 0 0 32px; font-size: 16px; }
+
+.card {
+  background: var(--color-card); border: 1px solid var(--color-border);
+  border-radius: 12px; padding: 24px; box-shadow: var(--shadow); transition: all 0.2s;
+}
+.card:hover { box-shadow: var(--shadow-hover); }
+.card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px; }
+.card-grid-2 { display: grid; grid-template-columns: 2fr 1fr; gap: 20px; }
+.card-grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.card-grid-2col { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+
+.character-card { position: relative; display: flex; flex-direction: column; cursor: pointer; }
+.character-card .role-band {
+  position: absolute; top: 0; right: 0; padding: 4px 12px;
+  border-radius: 0 12px 0 12px; font-size: 12px; font-weight: 600;
+  letter-spacing: 0.3px; text-transform: uppercase;
+}
+.role-vinny { background: var(--color-accent-bg); color: var(--color-accent); }
+.role-pomocnik { background: var(--color-helper-bg); color: var(--color-helper); }
+.role-rudastopa { background: var(--color-redherring-bg); color: #475569; }
+.role-svedek { background: var(--color-support-bg); color: var(--color-support); }
+.role-obet { background: var(--color-victim-bg); color: var(--color-victim); }
+.role-nevinny { background: var(--color-success-bg); color: var(--color-success); }
+.role-host { background: #fef9c3; color: #854d0e; }
+
+.character-card .avatar {
+  width: 64px; height: 64px; border-radius: 50%;
+  background: var(--color-primary); color: white;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 22px; font-weight: 700; margin-bottom: 12px;
+}
+.character-card h3 { margin: 0 0 4px; font-size: 18px; color: var(--color-primary); }
+.character-card .meta { color: var(--color-muted); font-size: 13px; margin-bottom: 12px; }
+.character-card .charakter { font-size: 14px; line-height: 1.5; color: #334155; margin: 0; }
+.character-card .charakter b, .character-card .charakter strong { color: var(--color-primary); }
+.character-card .show-more {
+  margin-top: auto; padding-top: 12px; font-size: 13px;
+  color: var(--color-primary-light); font-weight: 500;
+  border-top: 1px solid var(--color-border); margin-top: 16px; padding-top: 12px;
+}
+.character-detail { display: none; }
+.character-card.expanded .character-detail { display: block; }
+.character-card.expanded { box-shadow: var(--shadow-strong); }
+.character-detail h4 {
+  font-size: 14px; margin: 16px 0 6px;
+  color: var(--color-primary); text-transform: uppercase; letter-spacing: 0.5px;
+}
+.character-detail ul { padding-left: 20px; margin: 0 0 8px; font-size: 14px; }
+.character-detail li { margin-bottom: 4px; }
+.character-detail p { font-size: 14px; margin: 0 0 8px; }
+
+.filter-bar { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 24px; }
+.filter-btn {
+  padding: 6px 14px; border-radius: 16px; border: 1px solid var(--color-border);
+  background: white; cursor: pointer; font-size: 13px; color: var(--color-muted);
+  transition: all 0.15s;
+}
+.filter-btn:hover { border-color: var(--color-primary-light); color: var(--color-primary); }
+.filter-btn.active { background: var(--color-primary); color: white; border-color: var(--color-primary); }
+
+.timeline { position: relative; padding-left: 32px; margin: 0; list-style: none; }
+.timeline::before {
+  content: ""; position: absolute; left: 12px; top: 0; bottom: 0;
+  width: 2px; background: var(--color-border);
+}
+.timeline-item { position: relative; margin-bottom: 28px; }
+.timeline-item::before {
+  content: ""; position: absolute; left: -28px; top: 6px;
+  width: 12px; height: 12px; border-radius: 50%;
+  background: var(--color-primary); box-shadow: 0 0 0 4px var(--color-bg);
+}
+.timeline-item.crime::before { background: var(--color-accent); }
+.timeline-item.twist::before { background: var(--color-motive); }
+.timeline-item.finale::before { background: var(--color-success); }
+.timeline-item .time { font-weight: 600; color: var(--color-primary); font-size: 14px; }
+.timeline-item .what { font-size: 15px; margin: 4px 0 4px; }
+.timeline-item .who { font-size: 12px; color: var(--color-muted); font-style: italic; }
+
+table {
+  width: 100%; border-collapse: collapse; background: white;
+  border-radius: 12px; overflow: hidden; box-shadow: var(--shadow);
+}
+th {
+  background: var(--color-primary); color: white;
+  padding: 12px 14px; text-align: left;
+  font-size: 13px; text-transform: uppercase; letter-spacing: 0.3px; font-weight: 600;
+}
+td {
+  padding: 12px 14px; border-top: 1px solid var(--color-border);
+  font-size: 14px; vertical-align: top;
+}
+tr:hover td { background: #f8fafc; }
+.evidence-code {
+  display: inline-block; padding: 2px 8px; border-radius: 4px;
+  font-family: "JetBrains Mono", "Courier New", monospace;
+  font-size: 12px; font-weight: 600;
+}
+.code-F { background: var(--color-accent-bg); color: var(--color-accent); }
+.code-S { background: var(--color-support-bg); color: var(--color-support); }
+.code-R { background: var(--color-redherring-bg); color: #475569; }
+.code-D { background: #e9d8fd; color: #6b21a8; }
+
+.badge {
+  display: inline-block; padding: 2px 8px; border-radius: 10px;
+  font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.3px;
+}
+.badge-stehlik { background: var(--color-accent-bg); color: var(--color-accent); }
+.badge-ales { background: var(--color-helper-bg); color: var(--color-helper); }
+.badge-soto { background: var(--color-redherring-bg); color: #475569; }
+.badge-motive { background: var(--color-motive-bg); color: var(--color-motive); }
+.badge-other { background: var(--color-support-bg); color: var(--color-support); }
+
+.day-card {
+  background: white; border: 1px solid var(--color-border);
+  border-radius: 12px; margin-bottom: 16px; overflow: hidden; box-shadow: var(--shadow);
+}
+.day-header {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+  color: white; padding: 16px 24px; cursor: pointer;
+  display: flex; align-items: center; justify-content: space-between; user-select: none;
+}
+.day-header h3 { margin: 0; font-size: 18px; font-weight: 600; }
+.day-header .day-num { font-size: 13px; opacity: 0.85; margin-bottom: 2px; }
+.day-header .toggle { font-size: 24px; transition: transform 0.2s; }
+.day-card.open .day-header .toggle { transform: rotate(180deg); }
+.day-content { display: none; padding: 24px; }
+.day-card.open .day-content { display: block; }
+.day-motto {
+  font-style: italic; color: var(--color-muted);
+  border-left: 3px solid var(--color-primary-light);
+  padding: 8px 14px; margin: 0 0 20px; background: #f8fafc; border-radius: 0 6px 6px 0;
+}
+.day-section h4 {
+  color: var(--color-primary); margin: 16px 0 8px;
+  font-size: 14px; text-transform: uppercase; letter-spacing: 0.3px;
+}
+.day-section ul { padding-left: 20px; margin: 0 0 12px; }
+.day-section li { margin-bottom: 6px; font-size: 14px; }
+.timetable { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 8px; }
+.timetable td { padding: 6px 10px; border-top: 1px solid var(--color-border); }
+.timetable td:first-child {
+  white-space: nowrap; color: var(--color-primary); font-weight: 600;
+  width: 110px; font-family: "JetBrains Mono", monospace;
+}
+.indicie-list { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0; }
+.indicie-tag {
+  font-family: "JetBrains Mono", monospace; font-size: 11px;
+  padding: 2px 8px; border-radius: 4px;
+  background: var(--color-bg); border: 1px solid var(--color-border);
+}
+
+.role-tip {
+  background: white; border: 1px solid var(--color-border);
+  border-left: 4px solid var(--color-primary);
+  border-radius: 0 8px 8px 0; padding: 16px 20px; margin-bottom: 16px;
+}
+.role-tip.warning { border-left-color: var(--color-accent); background: var(--color-accent-bg); }
+.role-tip.tip { border-left-color: var(--color-success); background: var(--color-success-bg); }
+.role-tip.info { border-left-color: var(--color-support); background: var(--color-support-bg); }
+.role-tip h4 { margin: 0 0 6px; color: var(--color-primary); font-size: 15px; }
+.role-tip p { margin: 6px 0; font-size: 14px; }
+
+.cipher-card {
+  background: white; border: 1px solid var(--color-border);
+  border-radius: 12px; padding: 20px; margin-bottom: 16px; box-shadow: var(--shadow);
+}
+.cipher-card pre {
+  background: #1e293b; color: #f1f5f9;
+  padding: 12px 16px; border-radius: 6px;
+  font-family: "JetBrains Mono", "Courier New", monospace;
+  font-size: 13px; overflow-x: auto;
+}
+.cipher-card .solution {
+  background: var(--color-success-bg); color: var(--color-success);
+  padding: 8px 14px; border-radius: 6px; font-weight: 600; margin-top: 8px;
+}
+
+.map-ascii {
+  background: #1e293b; color: #f1f5f9;
+  padding: 24px; border-radius: 12px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12px; line-height: 1.4;
+  overflow-x: auto; white-space: pre;
+}
+
+footer {
+  background: #1e3a5f; color: #cbd5e1;
+  padding: 32px 0; text-align: center; font-size: 14px;
+}
+footer a { color: #fbbf24; }
+
+@media (max-width: 768px) {
+  .hero h1 { font-size: 32px; }
+  .hero h2 { font-size: 18px; }
+  .hero-meta { gap: 16px; font-size: 13px; }
+  section { padding: 40px 0; }
+  section h2.section-title { font-size: 24px; }
+  .card-grid, .card-grid-2, .card-grid-3, .card-grid-2col { grid-template-columns: 1fr; }
+}
+[id] { scroll-margin-top: 70px; }
+@media print {
+  nav.sticky, .filter-bar, .day-header .toggle { display: none; }
+  .day-content { display: block !important; }
+  .character-detail { display: block !important; }
+  section { page-break-inside: avoid; }
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="container hero-content">
+    <span class="hero-pill">30. ročník · 1997–2026</span>
+    <h1>Tábor Světlo 2026</h1>
+    <h2>Případ ztracené závěti — kompletní průvodce hrou</h2>
+    <div class="hero-meta">
+      <div><strong>📅 11. — 22. července 2026</strong> (12 kalendářních dnů, 10 herních)</div>
+      <div><strong>🌲 Rakovecké údolí</strong>, 6 km od Jedovnic (Blansko)</div>
+      <div><strong>👥 ~45 účastníků</strong> (7–15 let)</div>
+      <div><strong>🔍 6 vyšetřovacích týmů</strong></div>
+    </div>
+  </div>
+</header>
+
+<nav class="sticky">
+  <div class="container">
+    <a href="#uvod" class="active">Úvod</a>
+    <a href="#postavy">Postavy</a>
+    <a href="#pribeh">Příběh</a>
+    <a href="#dukazy">Důkazy</a>
+    <a href="#dny">Dny hry</a>
+    <a href="#vedouci">Pro vedoucí</a>
+    <a href="#sifry">Šifry</a>
+    <a href="#forenziku">Forenziku</a>
+    <a href="#mapa">Mapa</a>
+  </div>
+</nav>
+
+<section id="uvod">
+  <div class="container">
+    <h2 class="section-title">Úvod do hry</h2>
+    <p class="section-subtitle">Co se stane v tom táboře a proč by tě to mělo zajímat</p>
+
+    <div class="card-grid-2">
+      <div class="card">
+        <h3 style="margin-top:0; color: var(--color-primary);">O čem to je</h3>
+        <p>Tábor <strong>Světlo</strong> slaví <strong>30. ročník</strong>. Zakladatel <strong>Marek Stanislav</strong> přijíždí přečíst slavnostní závěť, ve které rozhoduje, <strong>co se s táborem stane dál</strong>. První večer je v noci v Šéfce nalezen zraněný — závěť zmizela z truhly, kde byla uložena.</p>
+        <p>Účastníci, rozdělení do <strong>6 vyšetřovacích týmů</strong>, pátrají 10 dní po pachateli, motivu a pravé závěti. Vyšetřují personál tábora, hosty, kteří přijíždějí, i vedoucí ze sousedních táborů.</p>
+        <p><strong>Vrchol hry:</strong> 21. 7. večer se podaří závěť získat zpět a slavnostně přečíst. Závěť odhalí netušený obrat — <strong>dědicem tábora je každý táborník, který kdy táborem prošel a projde</strong>. Každé dítě dostane personalizovaný dědický list.</p>
+      </div>
+      <div class="card" style="background: var(--color-primary); color: white;">
+        <h3 style="margin-top:0; color: white;">Klíčové principy</h3>
+        <ul style="padding-left: 18px;">
+          <li>Bez kostýmů, plně moderní setting</li>
+          <li>Všichni jsou potenciálně podezřelí</li>
+          <li>Dobrovolnická akce, vyrovnané finance</li>
+          <li>Motiv NENÍ peníze — je osobní</li>
+          <li>Konec patří VŠEM (= dědicové)</li>
+          <li>Důstojnost a empatie i k pachatelům</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card-grid-3" style="margin-top: 24px;">
+      <div class="card">
+        <h4 style="margin: 0 0 8px; color: var(--color-accent);">🎭 Role-play</h4>
+        <p style="font-size: 14px; margin: 0;">Personál hraje sám sebe + drobnou herní vrstvu. Hosté = vedoucí v rolích. <strong>Bez teatrality</strong>, plně realisticky.</p>
+      </div>
+      <div class="card">
+        <h4 style="margin: 0 0 8px; color: var(--color-helper);">🧒 Tři věkové kategorie</h4>
+        <p style="font-size: 14px; margin: 0;">K1 (7–9), K2 (10–12), K3 (13–15). Bodování se počítá zvlášť pro každou kategorii — mladší mají šanci.</p>
+      </div>
+      <div class="card">
+        <h4 style="margin: 0 0 8px; color: var(--color-success);">🏆 Konec patří všem</h4>
+        <p style="font-size: 14px; margin: 0;">Závěrečné odhalení: <strong>každý táborník je dědicem</strong>. Všichni dostanou dědický list. Hra není o triumfu jednoho týmu, je o oslavě komunity.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="postavy">
+  <div class="container">
+    <h2 class="section-title">Postavy hry</h2>
+    <p class="section-subtitle">12 podezřelých + hosté + 9 mladých instruktorů. Klikni na kartu pro detail.</p>
+
+    <div class="filter-bar" id="character-filters">
+      <button class="filter-btn active" data-filter="all">Všichni</button>
+      <button class="filter-btn" data-filter="vedeni">Vedení</button>
+      <button class="filter-btn" data-filter="personal">Personál</button>
+      <button class="filter-btn" data-filter="instruktor">Instruktoři</button>
+      <button class="filter-btn" data-filter="host">Hosté</button>
+      <button class="filter-btn" data-filter="vinny">VINNÍ</button>
+      <button class="filter-btn" data-filter="rudastopa">Rudé stopy</button>
+    </div>
+
+    <div class="card-grid" id="character-grid"></div>
+  </div>
+</section>
+
+<section id="pribeh">
+  <div class="container">
+    <h2 class="section-title">Dějová linie</h2>
+    <p class="section-subtitle">Co se opravdu stalo, od jara 2026 po slavnostní finále</p>
+
+    <div class="card-grid-2" style="margin-bottom: 32px;">
+      <div class="card">
+        <h3 style="margin-top: 0; color: var(--color-primary);">3 fáze hry</h3>
+        <ul>
+          <li><strong>Fáze 1: Rozsah a chaos (dny 1–4)</strong> — porozumět co se stalo, mapování místa činu, formování týmů. <em>Hlavní pocit: chaos.</em></li>
+          <li><strong>Fáze 2: Stahování smyčky (dny 5–8)</strong> — zúžení podezřelých, návštěvy hostů, výjezd do Blanska. <em>Hlavní pocit: šachy, promyšlenost.</em></li>
+          <li><strong>Fáze 3: Konfrontace a smíření (dny 9–11)</strong> — pojmenovat pachatele, dopadnout, rehabilitovat. <em>Hlavní pocit: drama, pak emocionální závěr.</em></li>
+        </ul>
+      </div>
+      <div class="card" style="background: var(--color-accent-bg);">
+        <h3 style="margin-top: 0; color: var(--color-accent);">⚠️ Spoiler — kdo a proč</h3>
+        <p style="font-size: 14px;"><strong>Hl. pachatel:</strong> Vladimír Stehlík (soused-hospodář). <strong>Motiv:</strong> pozemek pro myslivecký revír.</p>
+        <p style="font-size: 14px;"><strong>Pomocník:</strong> Aleš Tomek (mladý správce). <strong>Důvod:</strong> vydírán starým otcovým dluhem + 30 000 Kč na exekuce matky.</p>
+        <p style="font-size: 14px;"><strong>Hlavní rudá stopa 7 dní:</strong> Tomáš „SoTo" Sotoniak (zástupce, vzdálený synovec Marka).</p>
+      </div>
+    </div>
+
+    <h3 style="color: var(--color-primary);">Časová osa zločinu (noc 11.→12. 7.)</h3>
+    <ul class="timeline" id="story-timeline"></ul>
+
+    <h3 style="color: var(--color-primary); margin-top: 40px;">5 klíčových obratů</h3>
+    <div class="card-grid">
+      <div class="card">
+        <h4 style="color: var(--color-primary); margin-top: 0;">Obrat 1: SoTo není pachatel (den 7–8)</h4>
+        <p>Po 7 dní byl SoTo hlavním podezřelým. Krevní pouto, klíče, zmizelá Santana — vše mluvilo proti němu. Markův vzkaz <em>„Tomáši, můžeš to říct"</em> ho uvolní. Den 8 notářka definitivně potvrdí jeho příběh.</p>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--color-helper); margin-top: 0;">Obrat 2: Aleš je pomocník (den 9)</h4>
+        <p>Aleš v okolí vyrostl, zná les jako vlastní kapsu, „kluk od všeho". A přesto. <strong>Lekce:</strong> podezření i u milovaných lidí. Lidé selhávají z lidských důvodů (rodinný dluh, slabost), ne ze zlobychtivosti.</p>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--color-accent); margin-top: 0;">Obrat 3: Stehlík byl v noci v táboře (den 8)</h4>
+        <p>Dlouho se zdá, že Stehlík přijel až den 5 jako gratulant. Ale popel z dýmky, lesní bahno, kopie smlouvy s univerzitou rozpadají alibi. Stehlík parkoval pickup u zatáčky, dál šel pěšky.</p>
+      </div>
+      <div class="card">
+        <h4 style="color: var(--color-motive); margin-top: 0;">Obrat 4: Závěť v dutině buku (den 10)</h4>
+        <p>Stehlík se musel závěti zbavit. Schoval ji v dutině starého buku Staříka 200 m od tábora. Děti najdou Stehlíkovu rukavici v ostružinách + otisk podrážky 44. <strong>Triumfální moment.</strong></p>
+      </div>
+      <div class="card" style="grid-column: span 2; background: var(--color-success-bg);">
+        <h4 style="color: var(--color-success); margin-top: 0;">Obrat 5: Závěť dědí každého (den 11)</h4>
+        <p>Děti čekají, že závěť řekne, kdo dostane tábor. Místo toho dává tábor každému z nich. <strong>Lekce:</strong> majetek a hodnota nejsou totéž. Tábor patří lidem, kteří ho dělají. <strong>Aleš je přesto jmenován do Rady tábora.</strong> „Důvěra se zaslouží i návratem."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="dukazy">
+  <div class="container">
+    <h2 class="section-title">Důkazy a vodítka</h2>
+    <p class="section-subtitle">~50 indicií rozdělených do kategorií. Filtruj podle typu nebo cíle.</p>
+
+    <div class="filter-bar" id="evidence-filters">
+      <button class="filter-btn active" data-filter="all">Všechny</button>
+      <button class="filter-btn" data-filter="F">Fyzické (F)</button>
+      <button class="filter-btn" data-filter="S">Svědectví (S)</button>
+      <button class="filter-btn" data-filter="R">Rudé stopy (R)</button>
+      <button class="filter-btn" data-filter="D">Šifry/zprávy (D)</button>
+      <button class="filter-btn" data-filter="proti-stehlikovi">Proti Stehlíkovi</button>
+      <button class="filter-btn" data-filter="proti-alesovi">Proti Alešovi</button>
+      <button class="filter-btn" data-filter="proti-sotovi">Proti SoTovi (rudá)</button>
+    </div>
+
+    <div style="overflow-x: auto;">
+      <table id="evidence-table">
+        <thead>
+          <tr>
+            <th>Kód</th>
+            <th>Indicie</th>
+            <th>Den</th>
+            <th>Cíl</th>
+            <th>Hodnota</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="dny">
+  <div class="container">
+    <h2 class="section-title">Dny hry</h2>
+    <p class="section-subtitle">Co se který den děje, kdo přijíždí, jaké indicie se odhalí. Klikni na kartu dne pro detail.</p>
+    <div id="days-list"></div>
+  </div>
+</section>
+
+<section id="vedouci">
+  <div class="container">
+    <h2 class="section-title">Pro vedoucí a instruktory</h2>
+    <p class="section-subtitle">Speciální tipy podle role + obecná pravidla hraní</p>
+
+    <div class="card-grid">
+      <div class="role-tip warning">
+        <h4>⚠️ Karel Malík (44) — DVOJÍ ROLE</h4>
+        <p>Karel hraje <strong>dvě postavy ve hře</strong>: sám sebe (hl. vedoucí, dny 1–12) <strong>+ Marka Stanislava</strong> (zakladatel, jen den 1 večer + den 11 odpoledne) s výrazně odlišným kostýmem (sako, čepice, vycházková hůl, šedavé vousy lepené).</p>
+        <p>Děti nemusí spojit, že obě postavy hraje stejný člověk — kostým a chování se liší. Detailní logistika kostýmové změny v <code>04_ROLE_OBSAZENI.md</code>.</p>
+      </div>
+
+      <div class="role-tip">
+        <h4>🎭 SoTo (Tomáš Sotoniak, 42) — HLAVNÍ rudá stopa</h4>
+        <p><strong>Hraj to pro radost.</strong> Po 7 dní budeš pro děti hlavní podezřelý. <strong>Drsná, mlčenlivá, sarkastická autorita.</strong> Když ti dítě nadběhne, zvedni obočí, krátce řekni „nemůžu o tom mluvit" a odejdi.</p>
+        <p>Den 7 začni postupně tát. Den 8 přijmi eliminaci s nadhledem: <em>„Děkuji, že jste se ke mně chovali jako k podezřelému. Tak to být mělo."</em> Den 11 buď otevřený, lidský — moment omluvy je tvůj zasloužený moment.</p>
+      </div>
+
+      <div class="role-tip warning">
+        <h4>💔 Aleš Tomek (19) — pomocník zločinu</h4>
+        <p>Role <strong>těžká psychicky</strong>. Aleš NENÍ zlosyn — je <strong>mladý vystrašený kluk</strong>, který si na ramena vzal rodinný dluh a v rozhodující chvíli selhal.</p>
+        <p>Ve scéně přiznání den 9: <strong>velmi tichá, hluboká role</strong>. Žádné dramatické „neeeee" — naopak klidné přiznání jako úleva. Slzy ano, ale tlumené. <strong>Smutek a hanba, ne zlost.</strong></p>
+      </div>
+
+      <div class="role-tip warning">
+        <h4>🌾 Vladimír Stehlík (55) — hl. pachatel</h4>
+        <p><strong>NIKDY nehrát Stehlíka jako padoucha.</strong> Vesnický klid a chlad, ale lidsky. Stehlík je člověk s dlouholetou křivdou (les „byl odjakživa" hospodářů, univerzita ho v 90. letech vyvlastnila).</p>
+        <p>Ve scéně útěku lehká panika, prázdný pohled. Děti odejdou s pocitem, že <strong>i nepřátelé jsou lidé s historií</strong>.</p>
+      </div>
+
+      <div class="role-tip info">
+        <h4>👨‍🍳 Anička Kellnerová (35+) — klíčová svědkyně</h4>
+        <p>Mluví <strong>málo</strong>. Den 6 ji „přemůže svědomí" — je to silná, tichá scéna. Žádné teatrální vzdychání. Jinak <strong>kuchyně je tvůj hlavní úkol</strong>, hra je vedlejší.</p>
+      </div>
+
+      <div class="role-tip info">
+        <h4>👩‍⚕️ Magda Hamanová (25) — zdravotnice</h4>
+        <p>Rychlá, ostrá, vtipná, ale v lékařských věcech vážná. Občas drobná sebe-ironie o své svatbě / „kmetovství". Den 7 nese Markův vzkaz včetně <em>„a Tomáši, můžeš to říct"</em>.</p>
+      </div>
+
+      <div class="role-tip info">
+        <h4>🔪 Anežka Kellnerová (35+) — sous-chef</h4>
+        <p><strong>Minimální zapojení do hry.</strong> Vaříš, peče. Pokud k tobě dítě přijde s otázkou, krátce a jasně. <strong>Anežka je kotva</strong> — když má dítě smutno, jde k Anežce.</p>
+      </div>
+
+      <div class="role-tip info">
+        <h4>🚗 Jenda + Adriana — zásobovači</h4>
+        <p>Mluví prostě, krátkými větami. Den 4 Adriana zmíní postřeh o Santanu na jiném místě (rudá stopa proti SoTovi). Den 5–6 spolu se podělí o stopách pickupu.</p>
+      </div>
+
+      <div class="role-tip tip">
+        <h4>🥨 Pavel „Preclík" Malík (28) — komika</h4>
+        <p>Drž humor i ve scéně přiznání ke koláči. Drobné odlehčení tábora — neukrást celou pozornost, ale zasmát se s dětmi. Po komické scéně vraťte se k vážné hře.</p>
+      </div>
+
+      <div class="role-tip tip">
+        <h4>🎻 Tom Buchta (28) — atletika + housle</h4>
+        <p>Den 9–10: atletická pomoc v honičce (bezpečně). Den 10: vyleze do dutiny buku (s lanem, jištění Karlem). Den 11 finále: doprovod hudbou — krátké houslové sólo k Markově řeči.</p>
+      </div>
+
+      <div class="role-tip">
+        <h4>👥 9 mladých instruktorů (~18 let)</h4>
+        <p>Vedoucí 6 vyšetřovacích týmů + asistenti. Každý vede přiřazený tým, navádí, ne říká řešení.</p>
+        <ul style="font-size: 13px;">
+          <li><strong>Klárka Malíková</strong> + Vája — Jestřábi (modrá)</li>
+          <li><strong>Lucka Malíková</strong> + Lucka Ravasová — Vlci (šedá)</li>
+          <li><strong>Alča</strong> + Jeník — Lišky (oranžová) — mladší kadety</li>
+          <li><strong>Martin</strong> + Martina — Medvědi (hnědá)</li>
+          <li><strong>Preclík</strong> + Ondra — Jezevci (černá)</li>
+          <li><strong>Tom Buchta</strong> (sám) — Sojky (zelená) — nejstarší</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 style="margin-top: 48px; color: var(--color-primary);">Pravidla hraní rolí</h3>
+    <div class="card-grid-2col">
+      <div class="card">
+        <h4 style="margin-top: 0;">1. Žádné kostýmy (kromě 6 výjimek)</h4>
+        <p>Personál hraje sám sebe. Kostým mají jen: Marek (= Karel v dvojí roli), notářka, starosta, 2× policisté, Stehlík, Páter Lacina.</p>
+      </div>
+      <div class="card">
+        <h4 style="margin-top: 0;">2. Bez teatrální mluvy</h4>
+        <p>Vedoucí mluví jako sami v sobě. Žádné „drahá kolegyně, dovolte mi…" — místo toho „hele, Karle, podívej…".</p>
+      </div>
+      <div class="card">
+        <h4 style="margin-top: 0;">3. Hra nepřerušuje běžný chod</h4>
+        <p>Anička peče i ve hře. Aleš opravuje i ve hře. Jenda jezdí pro chleba i ve hře. Děti vidí autentické pozadí.</p>
+      </div>
+      <div class="card">
+        <h4 style="margin-top: 0;">4. Bezpečnost před hrou</h4>
+        <p>Pokud se v reálu něco děje (zranění, nemoc), hra se přeruší okamžitě. Personál je především v reálných rolích.</p>
+      </div>
+      <div class="card">
+        <h4 style="margin-top: 0;">5. Hraní je dobrovolné</h4>
+        <p>Pokud někdo nechce hrát, neutíkat ho. Místo něj zahraje vedoucí v roli. Nikdy nikoho do hry nenutit.</p>
+      </div>
+      <div class="card">
+        <h4 style="margin-top: 0;">6. Konec hry = návrat do reálu</h4>
+        <p>Den 11 večer po finále všichni vystoupí z rolí. Aleš dětem řekne: „Já samozřejmě nikomu neotevřel plachtu Šéfky. To byla hra. Ale pamatujte si emoci — to bylo skutečné."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sifry">
+  <div class="container">
+    <h2 class="section-title">Šifry</h2>
+    <p class="section-subtitle">Anonymní dopisy, šifrované zprávy, řešení</p>
+
+    <div class="cipher-card">
+      <h3 style="margin-top: 0; color: var(--color-primary);">D01 — Caesarova šifra (+3) <span style="font-weight: normal; color: var(--color-muted); font-size: 14px;">· Den 4</span></h3>
+      <p>Posun každého písmene o 3 pozice doprava. A→D, B→E, C→F…</p>
+      <p><strong>Šifrovaný text:</strong></p>
+      <pre>NORLPH QLNGR QHPHO — SRPRKO YODVWQL</pre>
+      <div class="solution">🔓 KLÍČE NIKDO NEMĚL — POMOHL VLASTNÍ</div>
+      <p style="font-size: 13px; color: var(--color-muted); margin-top: 12px;">Smysl: pachatel zná tábor zevnitř, někdo z personálu mu pomohl. = naznačuje vnitřního pomocníka (Aleše).</p>
+    </div>
+
+    <div class="cipher-card">
+      <h3 style="margin-top: 0; color: var(--color-primary);">D02 — Substituční šifra, klíč SVĚTLO <span style="font-weight: normal; color: var(--color-muted); font-size: 14px;">· Den 6</span></h3>
+      <p>Klíčové slovo SVĚTLO se vepíše na začátek nové abecedy, pak zbývající písmena bez SVĚTLA.</p>
+      <pre>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z   ← originál
+S V E T L O A B C D F G H I J K M N P Q R U W X Y Z   ← šifra</pre>
+      <p><strong>Šifrovaný text:</strong></p>
+      <pre>NLOSDR XL DJ ECTHUDC</pre>
+      <div class="solution">🔓 PODÍVEJTE SE NA HLÍDKU</div>
+      <p style="font-size: 13px; color: var(--color-muted); margin-top: 12px;">Smysl: nasměruje na knihu hlídky ohniště → mezera v Alešově hlídce 00:30–01:30.</p>
+    </div>
+
+    <div class="cipher-card">
+      <h3 style="margin-top: 0; color: var(--color-primary);">D03 — Markův vzkaz z FN Brno <span style="font-weight: normal; color: var(--color-muted); font-size: 14px;">· Den 7</span></h3>
+      <p>Není šifra — papírový dopis čtený nahlas Karlem (nebo audio nahrávka).</p>
+      <p style="font-size: 14px;"><strong>Klíčové věty:</strong></p>
+      <ul>
+        <li><em>„Byl to Vladimír Stehlík. Soused od dětství."</em> → identifikace pachatele</li>
+        <li><em>„Vyšetřujte také Aleše Tomka… Já mám tušení, že Aleš věděl."</em> → naznačuje pomocníka</li>
+        <li><em>„Hledejte u toho, co je tam staré."</em> → buk u potoka</li>
+        <li><em>„A ještě, prosím, pro Tomáše Sotoniaka: Tomáši — můžeš to říct."</em> → uvolní SoTa</li>
+      </ul>
+    </div>
+
+    <div class="cipher-card">
+      <h3 style="margin-top: 0; color: var(--color-primary);">D04 — Fragment závěti (§§ 1–2) <span style="font-weight: normal; color: var(--color-muted); font-size: 14px;">· Den 8 (notářka v Blansku)</span></h3>
+      <p>Není šifra — formální dokument předkládaný notářkou.</p>
+      <p style="font-size: 14px;"><strong>§ 1:</strong> Tábor pokračuje, dodatek o prodloužení smlouvy s Mendelovou univerzitou o 30 let.</p>
+      <p style="font-size: 14px;"><strong>§ 2:</strong> Vedení přebírají Karel Malík + SoTo + stávající personál.</p>
+      <p style="font-size: 14px;">§§ 3–5 zůstávají tajné — přečte je Marek osobně na finále den 11.</p>
+    </div>
+  </div>
+</section>
+
+<section id="forenziku">
+  <div class="container">
+    <h2 class="section-title">Forenzní stanoviště</h2>
+    <p class="section-subtitle">Den 4: 6 stanovišť rotačním systémem (každý tým 30 min)</p>
+
+    <div class="card-grid">
+      <div class="card">
+        <h4 style="margin-top: 0; color: var(--color-primary);">1. Otisky prstů</h4>
+        <p>Kakaový prášek nebo grafit, štěteček, lepicí páska. Děti vyvolají otisky ze 3 sklenic, porovnají s kartou personálu.</p>
+        <p><strong>Klíčový výstup:</strong> F08 — otisk z místa činu nepatří nikomu z personálu = pachatel je outsider.</p>
+      </div>
+      <div class="card">
+        <h4 style="margin-top: 0; color: var(--color-primary);">2. Vlasy a vlákna</h4>
+        <p>Lupa, mikroskop (nebo silná lupa), vzorky vlasů a vláken personálu. Porovnají se vzorkem z místa činu.</p>
+        <p><strong>Klíčový výstup:</strong> F10 — vlákno z kožené rukavice (personál nenosí).</p>
+      </div>
+      <div class="card">
+        <h4 style="margin-top: 0; color: var(--color-primary);">3. Identikit</h4>
+        <p>Skládací sada rysů obličeje (papírová). Děti složí siluetu na základě Aničkina popisu.</p>
+        <p><strong>Klíčový výstup:</strong> Vyšší, vousatá silueta s baterkou. NEODPOVÍDÁ SoTovi (hladce oholený, štíhlý) = první kámen v jeho budoucí eliminaci.</p>
+      </div>
+      <div class="card">
+        <h4 style="margin-top: 0; color: var(--color-primary);">4. Stopy bot a pneumatik</h4>
+        <p>Sádrový prášek, voda, papír. Děti vytvoří odlitky stop, změří velikost, identifikují typ podrážky.</p>
+        <p><strong>Klíčový výstup:</strong> F04 — kožená bota velikosti 44 (Stehlík). F09 — pickup pneumatiky.</p>
+      </div>
+      <div class="card">
+        <h4 style="margin-top: 0; color: var(--color-primary);">5. Grafologie a podpisy</h4>
+        <p>Vzorky rukopisů personálu (z pracovních knih). Porovnání s padělkem závěti.</p>
+        <p><strong>Klíčový výstup:</strong> Rukopis padělku nepatří personálu. Vyrobil ho Stehlíkův kamarád z Brna.</p>
+      </div>
+      <div class="card">
+        <h4 style="margin-top: 0; color: var(--color-primary);">6. Fotodokumentace + popel</h4>
+        <p>Vytištěné fotky z místa činu. Vzorek popela ze dýmky v sáčku.</p>
+        <p><strong>Klíčový výstup:</strong> F12 — popel ze zvláštní směsi „Kapitán Černý" (Stehlík kouří dýmku, identifikovatelné).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="mapa">
+  <div class="container">
+    <h2 class="section-title">Mapa tábora</h2>
+    <p class="section-subtitle">Klíčové body a noční trasy zločinu</p>
+
+    <div class="map-ascii">                  [LES — DUTINA STARÉHO BUKU U POTOKA]
+                              ↑
+                    cca 200 m od tábora
+                              ↑
+                  potok, studánka (80 m od tábora)
+                              ↑
+                    pěšina od centrální plochy
+                              ↑
+              ─── stanový tábor v půlkruhu ───
+                              ↓
+        [ŠÉFKA — velitelský stan]
+          • truhla s mapami (dřevěná, NEZAMČENÁ)
+          • plachta — zadní strana (Aleš rozvázal rohy)
+          • prkenný stůl, plynová lampa
+                       ↘                      ↙
+        [STAN MARKA]          [POLNÍ KUCHYNĚ POD PLACHTOU]
+          • malý                 • Anička v noci pekla těsto
+          • vedle Šéfky            • výhled na Šéfku
+                       ↘                      ↙
+        [STANY ÚČASTNÍKŮ — půlkruh kolem ohniště]
+          • oddíly K1, K2, K3
+                              ↓
+        [OHNIŠTĚ centrální]    [DLOUHÉ STOLY POD PLACHTOU = jídelna]
+                              ↓
+        [STAN ZDRAVOTKY]       [PŘÍSTŘEŠEK ÚDRŽBY (Aleš)]
+          • Magda Hamanová       • nářadí, plechové bedny
+                              ↓
+        [SKLADOVÝ STAN + STAN JENDY a ADRIANY]
+                              ↓
+        [LATRÝNY (kopané, zástěna)]
+                              ↓
+              ─── lesní cesta ───
+                              ↓
+        [PARKOVIŠTĚ POD LESNÍ CESTOU]
+          • Santana SoTa, dodávka Jendy
+                              ↓
+                       (200 m lesem)
+                              ↓
+        [ZATÁČKA — kde Stehlík parkoval pickup v noci]
+                              ↓
+                       (1 km lesem)
+                              ↓
+                  [SAMOTA STEHLÍKOVÝCH]
+                  • pickup v dřevěném přístřešku
+                  • koně, drobné hospodářství</div>
+
+    <div class="card" style="margin-top: 24px;">
+      <h3 style="margin-top: 0; color: var(--color-primary);">Klíčové trasy v noci 11.→12. 7.</h3>
+      <ul>
+        <li><strong>🟥 Stehlík:</strong> samota → pickupem → parkování u zatáčky 200 m → pěšky k zadní plachtě Šéfky → vyběhnout dopředu → k buku u potoka → schovat závěť → pěšky zpět k pickupu → na samotu</li>
+        <li><strong>⬜ SoTo:</strong> Šéfka (porada s Karlem do 00:15) → sám v Šéfce do 0:40 → parkoviště → Santana → Jedovnice → Brno (Markův byt) 2:30 → cesta zpět → tábor 5:30 → krátký odpočinek → 6:00 odjezd do Blanska → notářka 6:30 → návrat 7:30</li>
+        <li><strong>🟧 Aleš:</strong> stan → 00:15 zadní plachta Šéfky (rozvázat rohy) → odejít „na latrýnu" → 01:30 návrat → najde Marka → panika → stan</li>
+        <li><strong>🟪 Marek:</strong> stan zakladatele → 01:00 vstává, baterka → ke Šéfce → konfrontace → 15 m za Šéfkou pád přes kořen smrku</li>
+        <li><strong>🟦 Anička:</strong> polní kuchyně (těsto 22:00–02:30) → 05:30 ke studánce pro vodu → najde Marka → volá Karla</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>Tábor Světlo · 1997 → 2026 → ∞</p>
+    <p>Zdrojové soubory: <a href="https://github.com/sotoniak/tabor_2026">github.com/sotoniak/tabor_2026</a></p>
+  </div>
+</footer>
+
+<script>
+// =====================================
+// Helper: bezpečné vytváření DOM elementů
+// =====================================
+// Důvod: data v tomto skriptu jsou hardcoded (ne user input), ale pro
+// bezpečnost používáme createElement + textContent (žádné innerHTML).
+// Když je potřeba bold/italic uvnitř textu, použije se rich-text wrapper:
+// rt('Text ', { strong: 'tučně' }, ' a dále.') → vrací DocumentFragment
+//
+function el(tag, attrs, ...children) {
+  const e = document.createElement(tag);
+  if (attrs) {
+    for (const [k, v] of Object.entries(attrs)) {
+      if (k === 'class') e.className = v;
+      else if (k === 'data') { for (const [dk, dv] of Object.entries(v)) e.dataset[dk] = dv; }
+      else if (k === 'style') e.setAttribute('style', v);
+      else if (k.startsWith('on') && typeof v === 'function') e.addEventListener(k.slice(2), v);
+      else e.setAttribute(k, v);
+    }
+  }
+  for (const c of children) {
+    if (c == null || c === false) continue;
+    if (typeof c === 'string' || typeof c === 'number') e.appendChild(document.createTextNode(String(c)));
+    else if (Array.isArray(c)) c.forEach(ci => { if (ci != null) e.appendChild(typeof ci === 'string' ? document.createTextNode(ci) : ci); });
+    else e.appendChild(c);
+  }
+  return e;
+}
+
+// rich-text: parsuje text se značkami <b>, <em>, <code> bezpečně
+// (= split + manuální append, žádný innerHTML)
+function rt(text) {
+  const frag = document.createDocumentFragment();
+  if (!text) return frag;
+  // Podporuje <b>...</b>, <strong>...</strong>, <em>...</em>, <code>...</code>
+  const parts = text.split(/(<\/?(?:b|strong|em|i|code)>)/g);
+  let stack = [frag];
+  for (const part of parts) {
+    if (!part) continue;
+    const m = part.match(/^<(\/?)(b|strong|em|i|code)>$/);
+    if (m) {
+      if (m[1]) { stack.pop(); }
+      else {
+        const tag = m[2] === 'b' ? 'strong' : m[2];
+        const elem = document.createElement(tag);
+        stack[stack.length - 1].appendChild(elem);
+        stack.push(elem);
+      }
+    } else {
+      stack[stack.length - 1].appendChild(document.createTextNode(part));
+    }
+  }
+  return frag;
+}
+
+// =====================================
+// DATA
+// =====================================
+const characters = [
+  { id: 'karel', name: 'Karel Malík', age: 44, role: 'hlavní vedoucí',
+    cat: 'vedeni', tag: 'NEVINNÝ', tagClass: 'role-nevinny', avatar: 'KM',
+    charakter: 'Autoritativní, ale přístupný. Otec Klárky a Lucky Malíkových. <b>DVOJÍ ROLE:</b> hraje i Marka Stanislava (kostýmová změna jen den 1 + den 11).',
+    detail: {
+      'Alibi v noci': 'Porada se SoTem v Šéfce 23:30–00:15, pak spal ve svém stanu',
+      'Klíčové momenty': [
+        'Den 1: představuje Marka Stanislava (= sám sebe v kostýmu)',
+        'Den 2: mimořádný nástup, oznámení události',
+        'Den 9: vede konfrontaci se Stehlíkem',
+        'Den 11: čte závěť v kostýmu Marka, večerní oheň jako sám sebe'
+      ],
+      'Vztah ke Markovi': 'Nejbližší kolega 20+ let. Den 2 ráno má slzy v očích.'
+    } },
+  { id: 'soto', name: 'Tomáš „SoTo" Sotoniak', age: 42, role: 'zástupce hl. vedoucího',
+    cat: 'vedeni', tag: 'HLAVNÍ rudá stopa', tagClass: 'role-rudastopa', avatar: 'TS',
+    charakter: 'Suchý ironický humor, drsnější autorita, mlčenlivý. <b>Vzdálený synovec Marka.</b> 7 dní hlavní podezřelý — mlčí, protože plní Markovo přání (tajná noční mise do Brna).',
+    detail: {
+      'Klíče k truhle': 'Ano (jediný kromě Marka)',
+      'Co skutečně dělal': [
+        'Den 1: Marek ho stranou požádal o noční misi do Brna pro dodatek smlouvy s podpisem',
+        'Den 1 noc 0:45: odjíždí Santanou do Brna',
+        'Den 2 ráno 5:30: vrací se do tábora, mlčí',
+        'Den 2 6:30: u notářky v Blansku předává dodatek',
+        'Den 7: Markův vzkaz „Tomáši, můžeš to říct" → SoTo začne mluvit',
+        'Den 8: notářka v Blansku potvrdí příchod 6:30 → DEFINITIVNÍ ELIMINACE'
+      ],
+      'Stopy proti němu (rudé)': [
+        'R01: Krevní pouto (synovec Marka)',
+        'R02: Santana ráno na jiném místě',
+        'R03: Klíče od všeho',
+        'R04: Vyhýbavé odpovědi',
+        'R05: Motor v noci 0:45'
+      ],
+      'Den 11 finále': 'Marek dětem: „Tomáši, ti se omluv. Plnil mé přání." — veřejná omluva.'
+    } },
+  { id: 'marek', name: 'Marek Stanislav', age: 60, role: 'zakladatel tábora (oběť)',
+    cat: 'vedeni', tag: 'OBĚŤ', tagClass: 'role-obet', avatar: 'MS',
+    charakter: 'Klidný, vážný, zásadový. Zakladatel tábora 1997. <b>Hraje Karel Malík v dvojí roli</b> — kostýmovou změnou jen den 1 večer (zahájení) + den 11 odpoledne (čtení závěti).',
+    detail: {
+      'Funkce v příběhu': 'Oběť útoku/pádu + autor závěti + finálová klíčová postava',
+      'Den 1': 'Soukromý rozhovor se SoTem (15:30) → noční mise do Brna. Slavnostní zahájení 21:00 + uložení závěti.',
+      'Den 1 noc 01:00': 'Konfrontace se Stehlíkem v Šéfce, vyběhne za ním, klopýtne přes kořen smrku, padá, otřes mozku',
+      'Dny 2–10': 'V FN Brno (mimo tábor)',
+      'Den 7': 'Vzkaz z FN Brno (papírový dopis čte Karel nahlas) — jmenuje Stehlíka, naznačuje Aleše, povoluje SoTovi mluvit',
+      'Den 11': 'Návrat do tábora, čte závěť, odpouští Alešovi, omluva SoTem před dětmi'
+    } },
+  { id: 'ales', name: 'Aleš Tomek', age: 19, role: 'mladý správce/údržbář',
+    cat: 'personal', tag: 'VINNÝ (pomocník)', tagClass: 'role-pomocnik', avatar: 'AT',
+    charakter: 'Introvertní, manuálně zručný, „kluk od všeho". Žije s matkou-vdovou v Jedovnicích. Po smrti otce Marek byl pro něj otcovskou figurou — zrada o to bolavější.',
+    detail: {
+      'Pravda': 'Stehlík ho vydíral starým otcovým dluhem (otec Aleše způsobil v 2010 nehodu na pozemku Stehlíkových). Stehlík slíbil 30 000 Kč na exekuce matky.',
+      'Co udělal': [
+        'Den 1 noc 00:15: rozvázal zadní plachtu Šéfky',
+        '00:30: kývnul Stehlíkovi, šel „na latrýnu" pro alibi',
+        '01:30: vrátil se, slyšel sten, viděl Marka v bezvědomí, V PANICE odešel do stanu',
+        'Dny 2–8: nespí, nejí, je zachmuřený'
+      ],
+      'Klíčové stopy proti němu': [
+        'F11: Mezera v hlídce 00:30–01:30',
+        'F15: Šedavý jíl ze Stehlíkovy louky na pohorkách',
+        'F17: 30 000 Kč v plechové bedně + papírek o exekucích matky',
+        'S01: Aniččina silueta utíkající špatným směrem',
+        'D02: anonymní dopis „PODÍVEJTE SE NA HLÍDKU"'
+      ],
+      'Den 9 přiznání': 'Tichý pláč, klidné přiznání jako úleva. Smutek a hanba, ne zlost.',
+      'Den 11 finále': 'Marek mu odpustí, posadí ho vedle sebe, jmenuje do Rady tábora. „Důvěra se zaslouží i návratem."'
+    } },
+  { id: 'anicka', name: 'Anička Kellnerová', age: 35, role: 'šéfkuchařka',
+    cat: 'personal', tag: 'KLÍČOVÁ SVĚDKYNĚ', tagClass: 'role-svedek', avatar: 'AK',
+    charakter: 'Drsná, ale srdečná. „Královna těsta", nejlepší koláče v údolí. Starší sestra Anežky a Tomáše Kellnera (řezníka).',
+    detail: {
+      'Alibi': '22:00–02:30 v polní kuchyni dělala těsto na ranní chleba (Anežka pomáhala do 23:30). Z polní kuchyně VIDÍ na Šéfku.',
+      'Co viděla (řekne až den 6)': [
+        '00:30: baterku v Šéfce (myslela, že je to Marek)',
+        '01:10: silueta utíkající od Šéfky směrem k LESU (vyšší než Aleš, špatným směrem na latrýnu)',
+        '01:25: Aleš se vrací k svému stanu od latríny správným směrem'
+      ],
+      'Den 2 ráno 5:30': 'Cestou ke studánce pro vodu najde Marka v bezvědomí. Volá Karla.',
+      'Den 6 dopoledne': 'Klíčová výpověď. Tichá, emocionální scéna — bála se obviněním ublížit. <b>Zlomový moment hry.</b>'
+    } },
+  { id: 'anezka', name: 'Anežka Kellnerová', age: 35, role: 'sous-chef, ml. sestra Aničky',
+    cat: 'personal', tag: 'NEVINNÁ', tagClass: 'role-nevinny', avatar: 'AK',
+    charakter: 'Klidnější než Anička, vlídná. <b>Minimální zapojení do hry</b> — vaří, peče, žije v provozu kuchyně.',
+    detail: {
+      'Alibi': '22:00–23:30 pomáhala Aničce s těstem, pak spát. Spala tvrdě.',
+      'Funkce ve hře': 'Kotva — když má dítě smutno, jde k Anežce. Drží reálnou atmosféru tábora.',
+      'Den 11': 'Dostává dědický list spolu s Aničkou.'
+    } },
+  { id: 'magda', name: 'Magda Hamanová', age: 25, role: 'zdravotnice',
+    cat: 'personal', tag: 'NEVINNÁ', tagClass: 'role-nevinny', avatar: 'MH',
+    charakter: 'Mladá, energická, zasnoubená (svatba za 3 měsíce). Občasná sebe-ironie o „kmetovství". Profesionální zdravotní sestra v Brně.',
+    detail: {
+      'Alibi': 'Noc 22:00–01:15 ve zdravotce psala lékařský deník. Časové údaje 23:00, 23:45, 00:30, 01:15.',
+      'Den 2 ráno': 'První lékařsky kvalifikovaná osoba u Marka. Ošetřuje do příjezdu záchranky.',
+      'Den 6 (klíčový moment)': 'Vysvětlí týmům krevní pouto SoTa s Markem (vzdálený synovec) — ALE závěť jde mimo rodinu, takže to NENÍ motiv.',
+      'Den 7 (klíčový moment)': 'Přináší Markův vzkaz z FN Brno: „Pan Stanislav se probudil… Tomáši, můžeš to říct."',
+      'Den 11': 'Doprovází Marka pěšky 200 m do tábora na finále.'
+    } },
+  { id: 'jenda', name: 'Jenda', age: 44, role: 'zásobovač',
+    cat: 'personal', tag: 'NEVINNÝ', tagClass: 'role-nevinny', avatar: 'J',
+    charakter: 'Dobrácký, šikovný řidič, „muž s autem". Letos s ním Adriana, jeho přítelkyně.',
+    detail: {
+      'Alibi': 'Spal s Adrianou ve stanu vedle skladu. Slyšeli motor v 0:45 (mysleli, že je to Stehlík/lesník) — ve skutečnosti SoTo s Santanou.',
+      'Klíčové svědectví den 5': 'Stopy pneumatiky pickupu na lesní cestě k samotě. Pickup tam neměl co dělat.',
+      'Den 11': 'Sedí na čestném místě, závěť ho jmenuje do Rady tábora.'
+    } },
+  { id: 'adriana', name: 'Adriana', age: 30, role: 'partnerka Jendy, pomocnice zásobování',
+    cat: 'personal', tag: 'NEVINNÁ', tagClass: 'role-nevinny', avatar: 'A',
+    charakter: 'Pohotová, organizovaná. Letos poprvé v táboře. Tata pracoval v autosalonu — pamatuje si auta.',
+    detail: {
+      'Klíčový postřeh den 4': '„Santana Tomáše stála večer u stromu, ráno o 5 metrů blíž k cestě. Někdo s ní jezdil." — otevírá silnou rudou stopu R02 proti SoTovi.',
+      'Spolusvědkyně Jendy': 'O motoru v noci a stopách pickupu na cestě.',
+      'Den 11': 'Dostává společný dědický list s Jendou.'
+    } },
+  { id: 'preclik', name: 'Pavel „Preclík" Malík', age: 28, role: 'vedoucí oddílu Jezevci',
+    cat: 'personal', tag: 'KOMICKÁ STOPA', tagClass: 'role-svedek', avatar: 'PM',
+    charakter: 'Veselý, milovník jídla, šprýmař. Příjmení Malík je <b>shoda jmen</b> s Karlem — žádný příbuzenský vztah.',
+    detail: {
+      'Alibi': 'Spal po celodenní práci s dětmi, žádné svědky.',
+      'Den 4 komická stopa (R07)': 'Tým Sojek najde otisky velkých rukou na pekáči, drobky, chybějící koláč. Otisky odpovídají Preclíkovi. Konfrontace komická, eliminace v té samé minutě.',
+      'Den 9–10': 'Atletický pomocník při konfrontaci a honičce.'
+    } },
+  { id: 'tom', name: 'Tom Buchta', age: 28, role: 'vedoucí oddílu Sojky',
+    cat: 'personal', tag: 'NEVINNÝ', tagClass: 'role-nevinny', avatar: 'TB',
+    charakter: 'Sportovní typ, hudebník. Vede tým nejstarších kadetů.',
+    detail: {
+      'Den 9–10': 'Atletický pomocník v honičce — bezpečně udržuje kruh kolem části lesa',
+      'Den 10': 'Vyleze do dutiny buku (s lanem, jištění Karlem) a vyzvedne pravou závěť — TRIUMFÁLNÍ MOMENT',
+      'Den 11 finále': 'Doprovod hudbou — krátké houslové sólo k Markově řeči'
+    } },
+  { id: 'klarka', name: 'Klárka Malíková', age: 18, role: 'instruktorka, vedoucí týmu Jestřábi',
+    cat: 'instruktor', tag: 'NEVINNÁ', tagClass: 'role-nevinny', avatar: 'KM',
+    charakter: 'Dcera Karla Malíka. Insider info o vedení tábora.',
+    detail: {
+      'Klíčový postřeh den 3 (S22)': '„Den 1 odpoledne jsem viděla, jak strejda Tomáš mluví s panem Markem stranou. Zdálo se mi, že je to vážné." → posiluje rudou stopu proti SoTovi'
+    } },
+  { id: 'lucka-m', name: 'Lucka Malíková', age: 18, role: 'instruktorka, vedoucí týmu Vlci',
+    cat: 'instruktor', tag: 'NEVINNÁ', tagClass: 'role-nevinny', avatar: 'LM',
+    charakter: 'Dcera Karla Malíka. Občas zpupná vůči autoritě, ale milá. Drzá přímost je její síla.',
+    detail: {
+      'Den 5–7': 'Občasně konfrontuje SoTa: „Strejdo Tomáši, kde jsi byl tu noc?" SoTo: „Lucko, ne dnes." — drobné napětí, ale bez hrubosti.'
+    } },
+  { id: 'martin', name: 'Martin', age: 18, role: 'instruktor, vedoucí týmu Medvědi',
+    cat: 'instruktor', tag: 'NEVINNÝ', tagClass: 'role-nevinny', avatar: 'M',
+    charakter: 'Klidný, hudební typ. „V oblacích" — uvědomí si později.',
+    detail: {
+      'Den 5': '„Dlouho jsem se díval na hvězdy v noci 1.→2." Když mu dítě připomene, uvědomí si, že viděl Santanu odjíždět kolem 0:45.'
+    } },
+  { id: 'martina', name: 'Martina', age: 18, role: 'instruktorka, asistentka týmu Medvědi',
+    cat: 'instruktor', tag: 'NEVINNÁ', tagClass: 'role-nevinny', avatar: 'M',
+    charakter: 'Hudební talent, kamarádka Lucky M. Drží disciplínu týmu.' },
+  { id: 'alca', name: 'Alča', age: 18, role: 'instruktorka, vedoucí týmu Lišky (mladší kadety)',
+    cat: 'instruktor', tag: 'NEVINNÁ', tagClass: 'role-nevinny', avatar: 'A',
+    charakter: 'Klidná, mateřská, učitelský typ. Klíčová pro rámování hry mladším dětem.',
+    detail: {
+      'Funkce ve hře': 'Když má některé dítě v noci strach, jde za ním. Emocionální záchranná síť tábora.'
+    } },
+  { id: 'jenik', name: 'Jeník', age: 18, role: 'instruktor, asistent týmu Lišky',
+    cat: 'instruktor', tag: 'NEVINNÝ', tagClass: 'role-nevinny', avatar: 'J',
+    charakter: 'Tichý, milovník turistiky.',
+    detail: {
+      'Klíčová stopa den 4 (S24)': 'Jeník vstal v 6:00 na lesní výlet, na lesní cestě k samotě viděl čerstvou stopu pneumatiky pickupu + otisky bot 44. Klidně to řekne týmu Lišky — zlomová stopa.'
+    } },
+  { id: 'lucka-r', name: 'Lucka Ravasová', age: 18, role: 'instruktorka, asistentka týmu Vlci',
+    cat: 'instruktor', tag: 'NEVINNÁ', tagClass: 'role-nevinny', avatar: 'LR',
+    charakter: 'Chytrá, analytická. „Mladý detektiv".',
+    detail: {
+      'Den 5 (S23)': 'Analýza otisku 44: „Aleš má 43, Tom 42, Jenda 45 ale gumovky… nikdo z personálu. Pachatel je cizí." → klíčový odlučující postřeh.'
+    } },
+  { id: 'vaja', name: 'Vája', age: 18, role: 'instruktorka, asistentka týmu Jestřábi',
+    cat: 'instruktor', tag: 'NEVINNÁ', tagClass: 'role-nevinny', avatar: 'V',
+    charakter: 'Sociální tmel. Drží lidi pohromadě.' },
+  { id: 'ondra', name: 'Ondra', age: 18, role: 'instruktor, asistent týmu Jezevci',
+    cat: 'instruktor', tag: 'NEVINNÝ', tagClass: 'role-nevinny', avatar: 'O',
+    charakter: 'Sportovec, fotbalista, občasný simulant.',
+    detail: {
+      'Den 10 honička': 'Simuluje zranění kotníku — komický prvek. Po chvíli se uzdraví, děti se zasmějí.'
+    } },
+  { id: 'stehlik', name: 'Vladimír Stehlík', age: 55, role: 'soused-hospodář',
+    cat: 'host', tag: 'VINNÝ (HL. PACHATEL)', tagClass: 'role-vinny', avatar: 'VS',
+    charakter: 'Vesnický typ, vyhýbavý. Hospodaří na samotě 1 km od tábora. <b>Hraje vedoucí v roli</b> (kostkovaná košile, kalhoty s laclem, kožené boty 44, vousy, dýmka, čelovka, kožené rukavice).',
+    detail: {
+      'Motiv': 'Pozemek tábora pro myslivecký revír. Bez Markova dodatku smlouvy s univerzitou by 2027 vypršela stávající smlouva a univerzita by pronajala plochu Stehlíkovi.',
+      'Co udělal': [
+        '00:25: parkuje pickup u zatáčky 200 m od tábora',
+        '00:30: pěšky k zadní plachtě Šéfky',
+        '00:45: vstupuje, vyměňuje závěť za padělek',
+        '01:00: konfrontace s probouzejícím se Markem, strčí ho stranou',
+        '01:05: Marek klopýtne přes kořen smrku, padá. Stehlík utíká dál',
+        '01:15: schová červenou složku v dutině buku u potoka',
+        '01:20: pickup na samotu'
+      ],
+      'Den 5': 'Přijíždí pickupem oficiálně jako gratulant ke 30. ročníku.',
+      'Den 9 konfrontace': 'Lhe, pak je zaskočen kopií dodatku smlouvy. Mlčí. Vstane, utíká do lesa.',
+      'Den 10 dopadení': 'Policie z Blanska ho zachytí na lesní cestě. Bez násilí.',
+      'Důstojnost': 'NIKDY hrát jako padoucha. Vesnický klid a chlad, ale lidsky. Člověk s dlouholetou křivdou.'
+    } },
+  { id: 'ruzickova', name: 'JUDr. Magdaléna Růžičková', age: 50, role: 'notářka z Blanska',
+    cat: 'host', tag: 'INFORMÁTORKA', tagClass: 'role-host', avatar: 'JR',
+    charakter: 'Profesionální, klidná, formální. Markova notářka 20 let. Hraje vedoucí v roli (kostým, kufřík, brýle).',
+    detail: {
+      'Den 5': 'Příjezd ze své kanceláře v Blansku, krátké představení, eliminace jako podezřelá.',
+      'Den 8': '<b>Potvrdí SoTův příchod 12. 7. v 6:30 → DEFINITIVNÍ ELIMINACE SoTa.</b> Ukáže fragment závěti + dodatek smlouvy.',
+      'Den 11': 'Přítomna na finále, oficiálně stvrzuje závěť po čtení Markem.'
+    } },
+  { id: 'hajek', name: 'Bohumil Hájek', age: 60, role: 'starosta Jedovnic',
+    cat: 'host', tag: 'SPOJENEC', tagClass: 'role-host', avatar: 'BH',
+    charakter: 'Vesnický typ, otevřený. Kamarád Marka 30+ let. Hraje vedoucí v roli (vesta s logem obce, čepice).',
+    detail: {
+      'Den 5–6': 'Krátká rudá stopa („obec chce pozemek?"), pak vyvráceno: „obec ten les ani nevlastní."',
+      'Den 10': '<b>Mobilizuje policii z Blanska</b> — telefonuje kpt. Polákovi.',
+      'Den 11': 'Krátký pozdrav na finále.'
+    } },
+  { id: 'kellner', name: 'Tomáš Kellner', age: 35, role: 'řezník z Jedovnic',
+    cat: 'host', tag: 'BRATR KUCHAŘEK', tagClass: 'role-host', avatar: 'TK',
+    charakter: 'Bratr Aničky a Anežky Kellnerových. Pravidelně přiváží do tábora maso.',
+    detail: {
+      'Den 2 ráno 6:00': 'Přiváží objednané maso. Zastihne ranní chaos po nálezu Marka. Krátké objetí sester, odjíždí.',
+      'Den 6 odpoledne (S19)': 'Vrací se s plecí. „V 5:30 ráno jsem na silnici k Jedovnicům míjel Santanu Tomáše Sotoniaka." → podpoří eliminaci SoTa.'
+    } },
+  { id: 'lacina', name: 'Páter Lacina', age: 55, role: 'kněz z farnosti Jedovnice',
+    cat: 'host', tag: 'INFORMÁTOR', tagClass: 'role-host', avatar: 'PL',
+    charakter: 'Klidný, moudrý. Dlouholetý kamarád Marka. Hraje vedoucí v civilu (kolárek).',
+    detail: {
+      'Den 2 odpoledne 14:00': 'Přijíždí z Jedovnic na krátkou modlitbu za Marka v jídelně (3 min, decentní).',
+      'Den 7 telefonát (S20)': '„V 3:30 ráno jsem na Olomoucké ulici v Brně míjel Santanu, viděl jsem Tomáše za volantem." → potvrzuje SoTův příběh.'
+    } },
+  { id: 'policiste', name: '2× policisté z Blanska', age: 0, role: 'kpt. Polák + por. Brázdová',
+    cat: 'host', tag: 'OFICIÁLNÍ RÁMEC', tagClass: 'role-host', avatar: 'PB',
+    charakter: 'Hrají 2 fyzicky způsobilí vedoucí. Reflexní vesta + uniformované tmavé tričko, blok, kufřík.',
+    detail: {
+      'Den 2 ráno': 'Krátký výjezd, ohledání místa, sepsání protokolu. Děti nevyslýchají.',
+      'Den 9–10': 'Scéna zatčení Stehlíka na lesní cestě. Bez násilí, Stehlík se vzdá.',
+      'Den 12 ráno': 'Předání Aleše (jde k policii dobrovolně, sám)'
+    } },
+  { id: 'konecny', name: 'Pavel Konečný', age: 45, role: 'vedoucí skautského tábora Borovice (volitelně)',
+    cat: 'host', tag: 'RUDÁ STOPA', tagClass: 'role-rudastopa', avatar: 'PK',
+    charakter: 'Skauting 25 let, dobrý kamarád Marka. Volitelná role.',
+    detail: {
+      'Den 5': 'Krátká návštěva, gratulace ke 30. ročníku.',
+      'Krátká rudá stopa': 'V 2018 nabídl Markovi sloučení obou táborů, Marek odmítl.',
+      'Eliminace den 6': 'Pevné alibi — porada s vedoucími tábora Údolí v noci 11.→12.'
+    } }
+];
+
+const evidence = [
+  { code: 'F01', type: 'F', name: 'Padělek závěti v truhle (chybí pečeť)', day: 2, target: 'krádež', value: '🟥 zlomová' },
+  { code: 'F02', type: 'F', name: 'Originál závěti chybí', day: 2, target: 'krádež', value: '🟥 zlomová' },
+  { code: 'F03', type: 'F', name: 'Otisk dlaně přes rukavici (neúplný)', day: 2, target: 'outsider', value: '🟥' },
+  { code: 'F04', type: 'F', name: 'Otisk kožené boty 44 v rose', day: 2, target: 'stehlik', value: '🟥' },
+  { code: 'F05', type: 'F', name: '2 páry stop v rose', day: 2, target: 'stehlik', value: '🟥' },
+  { code: 'F06', type: 'F', name: 'Fotky Karla z mobilu', day: 2, target: 'archív', value: '🟦' },
+  { code: 'F07', type: 'F', name: 'Rozvázané rohy plachty Šéfky', day: 2, target: 'ales', value: '🟧 zlomová' },
+  { code: 'F08', type: 'F', name: 'Lab. otisk = NIKDO Z PERSONÁLU', day: 4, target: 'outsider', value: '🟥 zlomová' },
+  { code: 'F09', type: 'F', name: 'Stopa pneumatiky pickupu na lesní cestě', day: 4, target: 'stehlik', value: '🟥' },
+  { code: 'F10', type: 'F', name: 'Vlas/vlákno z kožené rukavice', day: 4, target: 'stehlik', value: '🟥' },
+  { code: 'F11', type: 'F', name: 'Mezera v Alešově hlídce 00:30–01:30', day: 5, target: 'ales', value: '🟧 zlomová' },
+  { code: 'F12', type: 'F', name: 'Popel z dýmky („Kapitán Černý")', day: 4, target: 'stehlik', value: '🟥 KLÍČOVÁ' },
+  { code: 'F13', type: 'F', name: 'Dodatek smlouvy s Mendelovou univerzitou', day: 8, target: 'motiv', value: '🟨 KLÍČOVÝ MOTIV' },
+  { code: 'F14', type: 'F', name: 'Stehlíkova dohoda s lesníkem Bártou', day: 8, target: 'motiv', value: '🟨' },
+  { code: 'F15', type: 'F', name: 'Šedavý jíl ze Stehlíkovy louky na Alešových botách', day: 8, target: 'ales', value: '🟧' },
+  { code: 'F16', type: 'F', name: 'PRAVÁ ZÁVĚŤ v dutině buku u potoka', day: 10, target: 'finale', value: '🏆' },
+  { code: 'F17', type: 'F', name: '30 000 Kč v plechové bedně u Aleše', day: 9, target: 'ales', value: '🟧 zlomová' },
+  { code: 'S01', type: 'S', name: 'Anička: baterka 00:30 + silueta 01:10 (vyšší než Aleš)', day: 6, target: 'stehlik+ales', value: '🟥🟧 zlomová' },
+  { code: 'S02', type: 'S', name: 'Karel + SoTo — porada 23:30–00:15 (alibi pro Karla)', day: 3, target: 'karel', value: '⬜' },
+  { code: 'S03', type: 'S', name: 'Adriana: Santana ráno na jiném místě', day: 4, target: 'soto', value: '⬜' },
+  { code: 'S04', type: 'S', name: 'Aleš: latrýna sám (slabé alibi)', day: 3, target: 'ales', value: '🟧' },
+  { code: 'S05', type: 'S', name: 'Anička: ráno našla Marka', day: 2, target: 'archív', value: '🟦' },
+  { code: 'S07', type: 'S', name: 'Magda: lékařský deník s časovými zápisy', day: 3, target: 'magda', value: '⬜' },
+  { code: 'S08', type: 'S', name: 'Jenda + Adriana: spali, slyšeli motor v 0:45', day: 3, target: 'soto', value: '🟦' },
+  { code: 'S09', type: 'S', name: 'Růžičková: závěť má dodatek (Blansko)', day: 5, target: 'motiv', value: '🟨' },
+  { code: 'S10', type: 'S', name: 'Stehlík: alibi „byl jsem na samotě"', day: 5, target: 'stehlik', value: '🟥 lež' },
+  { code: 'S12', type: 'S', name: 'Magda vysvětlí: krevní pouto SoTa NENÍ motiv', day: 6, target: 'soto', value: '⬜' },
+  { code: 'S13', type: 'S', name: 'SoTo přizná: noční mise do Brna pro dodatek', day: 7, target: 'soto', value: '⬜' },
+  { code: 'S15', type: 'S', name: 'Alešovo PŘIZNÁNÍ', day: 9, target: 'ales', value: '🟧 finální' },
+  { code: 'S16', type: 'S', name: 'Stehlíkovo přiznání po dopadení', day: 10, target: 'stehlik', value: '🟥 finální' },
+  { code: 'S17', type: 'S', name: 'Jenda + Adriana: stopa pneumatiky pickupu (2× v noci)', day: 5, target: 'stehlik', value: '🟥' },
+  { code: 'S19', type: 'S', name: 'Tomáš Kellner: viděl Santanu v 5:30 cestou k Jedovnicím', day: 6, target: 'soto', value: '⬜' },
+  { code: 'S20', type: 'S', name: 'Páter Lacina: viděl Santanu v 3:30 v Brně', day: 7, target: 'soto', value: '⬜' },
+  { code: 'S21', type: 'S', name: 'Notářka potvrdí SoTův příchod 6:30 = ELIMINACE', day: 8, target: 'soto', value: '⬜' },
+  { code: 'S22', type: 'S', name: 'Klárka pamatuje Marka mluvícího se SoTem den 1', day: 3, target: 'soto', value: '⬜' },
+  { code: 'S23', type: 'S', name: 'Lucka R.: otisk 44 nikomu z personálu nesedí', day: 5, target: 'outsider', value: '🟥' },
+  { code: 'S24', type: 'S', name: 'Jeník: turistická stopa pneumatiky pickupu', day: 4, target: 'stehlik', value: '🟦' },
+  { code: 'S25', type: 'S', name: 'Preclík přizná noční nájezd na koláč', day: 4, target: 'preclik', value: '⬜ komika' },
+  { code: 'R01', type: 'R', name: 'Krevní pouto SoTa s Markem (synovec)', day: 3, target: 'soto', value: '⬜' },
+  { code: 'R02', type: 'R', name: 'Adriana: Santana ráno na jiném místě', day: 4, target: 'soto', value: '⬜' },
+  { code: 'R03', type: 'R', name: 'SoTo má klíče od všeho', day: 3, target: 'soto', value: '⬜' },
+  { code: 'R04', type: 'R', name: 'Vyhýbavé odpovědi SoTa', day: 3, target: 'soto', value: '⬜' },
+  { code: 'R05', type: 'R', name: 'Motor v noci 0:45', day: 5, target: 'soto', value: '⬜' },
+  { code: 'R06', type: 'R', name: 'Klárka pamatuje vážný rozhovor', day: 3, target: 'soto', value: '⬜' },
+  { code: 'R07', type: 'R', name: 'Preclík — koláč v noci (komická)', day: 4, target: 'preclik', value: '⬜' },
+  { code: 'R08', type: 'R', name: 'Hájek a obec Jedovnice', day: 5, target: 'hajek', value: '⬜' },
+  { code: 'R09', type: 'R', name: 'Pavel Konečný (skauti) — sloučení 2018', day: 5, target: 'konecny', value: '⬜' },
+  { code: 'R10', type: 'R', name: 'Magda — přístup k lékům', day: 3, target: 'magda', value: '⬜' },
+  { code: 'D01', type: 'D', name: 'Caesar +3: KLÍČE NIKDO NEMĚL — POMOHL VLASTNÍ', day: 4, target: 'ales', value: '🟧' },
+  { code: 'D02', type: 'D', name: 'Substituce SVĚTLO: PODÍVEJTE SE NA HLÍDKU', day: 6, target: 'ales', value: '🟧' },
+  { code: 'D03', type: 'D', name: 'Markův vzkaz z FN Brno (jmenuje Stehlíka i Aleše)', day: 7, target: 'stehlik+ales', value: '🟥🟧 zlomová' },
+  { code: 'D04', type: 'D', name: 'Fragment závěti §§ 1–2 (Blansko)', day: 8, target: 'kontext', value: '🟦' }
+];
+
+const days = [
+  { num: 1, date: '11. 7. (sobota)', title: 'Příjezd, zahájení, noční zločin',
+    motto: '„Tábor Světlo slaví třicet let. Za pár hodin začne třicátý ročník — a nikdo ještě netuší, co tahle noc přinese."',
+    timetable: [
+      ['14:00–16:00', 'Příjezd dětí, ubytování'],
+      ['15:30', 'Soukromý rozhovor Marka se SoTem — Marek pověřuje SoTa noční misí'],
+      ['16:00–18:00', 'Prohlídka tábora, tvorba vlajek'],
+      ['21:00–22:00', 'SLAVNOSTNÍ ZAHÁJENÍ — Karel přivítá → kostýmová změna → Marek projev → Karel zpět'],
+      ['23:30–00:15', 'Karel + SoTo porada v Šéfce (alibi pro Karla)'],
+      ['00:25', 'Stehlík parkuje pickup u zatáčky 200 m, dál pěšky'],
+      ['00:40', 'SoTo opouští Šéfku, jde k Santanu'],
+      ['00:45', 'NOČNÍ ZLOČIN — Stehlík vstupuje, vyměňuje závěť. SoTo odjíždí do Brna.'],
+      ['01:00', 'Marek se probudí, konfrontace, pád přes kořen smrku'],
+      ['01:15', 'Stehlík schová závěť v dutině buku, pickupem domů'],
+      ['01:30', 'Aleš najde Marka, panika, do stanu']
+    ],
+    indicie: [],
+    vedouci: 'Karel hraje obě postavy (Karel + Marek) — kostýmová změna v zákulisí mezi Markovým projevem a uložením závěti. Marek u večerního táboráku NENÍ — odešel „spát do stanu zakladatele".' },
+  { num: 2, date: '12. 7. (neděle)', title: 'Objev a místo činu',
+    motto: '„Něco se stalo. Marek je v nemocnici. Závěť zmizela. A my musíme zjistit, kdo to udělal."',
+    timetable: [
+      ['05:30', 'Anička najde Marka v lese 15 m za Šéfkou. Volá Karla.'],
+      ['05:30', 'SoTo se vrací do tábora Santanou (mlčí)'],
+      ['06:00', 'Tomáš Kellner přiváží maso, krátké objetí sester'],
+      ['06:30', 'Záchranka odveze Marka do FN Brno. SoTo u notářky v Blansku.'],
+      ['07:00', 'Karel otevře truhlu — padělek!'],
+      ['07:45', 'MIMOŘÁDNÝ NÁSTUP. Karel oznámí dětem.'],
+      ['08:45–09:15', 'Krátká návštěva 2 policistů z Blanska'],
+      ['09:15–12:00', 'ETAPOVÁ HRA: Místo činu (4 stanoviště, rotace)'],
+      ['14:00', 'Páter Lacina krátká modlitba za Marka'],
+      ['14:30–18:00', 'Klidové aktivity, deníky']
+    ],
+    indicie: ['F01', 'F02', 'F03', 'F04', 'F05', 'F06', 'F07', 'F12', 'S05'],
+    vedouci: 'Karel autenticky emocionální (může mít slzy v očích). Anička: „někoho jsem viděla, ale nevím, jestli relevantní" — drží to do dne 6.' },
+  { num: 3, date: '13. 7. (pondělí)', title: 'Výslechy personálu',
+    motto: '„Každý v táboře má svou pravdu. A někdo má jednu nevyřčenou větu. Najděte ji."',
+    timetable: [
+      ['07:30–08:30', 'Snídaně'],
+      ['08:30–09:00', 'Karel představí 9 podezřelých z personálu'],
+      ['09:00–12:00', 'ETAPOVÁ HRA: Výslechy (rotace mezi 9 vyslýchanými)'],
+      ['14:00–17:00', 'Fotbalový turnaj — semifinále'],
+      ['19:30–20:30', 'Vyhodnocení výslechů'],
+      ['20:30', 'ELIMINACE: Karel, Anežka, Preclík']
+    ],
+    indicie: ['S02', 'S04', 'S07', 'S08', 'R01', 'R03', 'R04', 'S22'],
+    vedouci: 'Magda v rozhovoru zmíní krevní pouto SoTa s Markem → otevírá hlavní rudou stopu. Klárka přidá vzpomínku na vážný rozhovor Marka se SoTem den 1.' },
+  { num: 4, date: '14. 7. (úterý)', title: 'Mapa tábora a forenziku',
+    motto: '„Stopy mluví. Ale jen tomu, kdo je umí číst."',
+    timetable: [
+      ['08:30–08:45', 'Adriana zmíní postřeh o Santanu na jiném místě (R02)'],
+      ['08:45–12:00', 'ETAPOVÁ HRA: Mapa + 6 forenzních stanovišť'],
+      ['14:00–16:00', 'Orientační běh „Stopy v lese"'],
+      ['16:00–16:30', 'Komická drobnost: Preclík a koláč (R07)'],
+      ['16:30–17:00', 'Souhrn rudých stop proti SoTovi'],
+      ['17:00–17:30', 'Anonymní dopis D01 (Caesar +3)']
+    ],
+    indicie: ['F08', 'F09', 'F10', 'F12', 'D01', 'R02', 'R07', 'S03', 'S24', 'S25'],
+    vedouci: 'Bombshell: SoTo je vzdálený synovec Marka, klíče od všeho, Santana ráno jinde, vyhýbavé odpovědi → SoTo se stává hlavním podezřelým.' },
+  { num: 5, date: '15. 7. (středa)', title: 'Příjezd hostů',
+    motto: '„Tři hosté přijdou ze světa za lesem. Jeden z nich přivedl s sebou popel."',
+    timetable: [
+      ['09:30', 'Příjezd JUDr. Růžičkové (notářka z Blanska)'],
+      ['11:00', 'Příjezd Bohumila Hájka (starosta)'],
+      ['14:00', 'Příjezd Vladimíra Stehlíka (soused) — boty 44, pickup, dýmka'],
+      ['14:30', 'Volitelně: Pavel Konečný (skauti Borovice)'],
+      ['15:00–17:30', 'ETAPOVÁ HRA: Výslechy hostů (rotace)'],
+      ['17:30–18:00', 'Bombshell: Stehlíkovy boty 44 + jeho pickup']
+    ],
+    indicie: ['F11', 'S09', 'S10', 'S11', 'S17', 'S23', 'R05', 'R08', 'R09'],
+    vedouci: 'Týmy si všimnou: Stehlíkovy boty 44 odpovídají F04, jeho pickup odpovídá F09, kouří dýmku (F12). Lucka R. analyticky uzavře: pachatel je cizí.' },
+  { num: 6, date: '16. 7. (čtvrtek)', title: 'Den klidu, údržby a Aniččina výpověď',
+    motto: '„Ticho. Ale i ticho mluví. Anička se konečně odhodlá."',
+    timetable: [
+      ['09:30–11:00', 'ANIČKINA VÝPOVĚĎ — klíčový moment dne'],
+      ['14:00', 'Tomáš Kellner se vrací s plecí + drobná stopa S19'],
+      ['14:30–16:00', 'Příprava talentové show + Strom 30 let'],
+      ['16:00–16:30', 'Anonymní dopis D02 (substituce SVĚTLO)'],
+      ['16:30–17:30', 'Magda vysvětlí krevní pouto SoTa + ELIMINACE Hájka, Konečného'],
+      ['19:30–21:30', 'TALENTOVÁ SHOW']
+    ],
+    indicie: ['S01', 'S11', 'S12', 'S18', 'S19', 'D02'],
+    vedouci: 'Anička: silueta 01:10 utíkala SPATNÝM SMĚREM na latrýnu = vnitřní pomocník. F11 (mezera v Alešově hlídce) odhalena.' },
+  { num: 7, date: '17. 7. (pátek)', title: 'Zlom — Markův vzkaz z FN Brno',
+    motto: '„Pan Marek se probudil. A má pro nás vzkaz."',
+    timetable: [
+      ['08:30–09:00', 'Mimořádný nástup — Magda oznámí: pan Marek se probudil!'],
+      ['09:00–10:00', 'VZKAZ OD MARKA (Karel přečte papírový dopis)'],
+      ['11:00–11:30', 'ELIMINACE Magdy + Jendy + Adriany'],
+      ['11:30–12:00', 'SoTo začne mluvit — vysvětlí noční misi do Brna (S13). Páter Lacina potvrdí Santanu v 3:30 (S20).'],
+      ['14:00–16:30', 'ETAPOVÁ HRA: Velké hledání skrytých indicií']
+    ],
+    indicie: ['D03', 'S13', 'S14', 'S20'],
+    vedouci: 'Markův vzkaz: „Byl to Vladimír Stehlík… vyšetřujte také Aleše… a Tomáši, můžeš to říct." → Stehlík = potvrzený pachatel. Aleš = naznačený pomocník. SoTo začne mluvit.' },
+  { num: 8, date: '18. 7. (sobota)', title: 'Výjezd do Blanska',
+    motto: '„Někde mezi notářkou a univerzitou je motiv. Najdeme ho."',
+    timetable: [
+      ['07:00–07:30', 'Odjezd výjezdové skupiny'],
+      ['09:30–11:00', 'Notářka Růžičková v Blansku — DEFINITIVNÍ ELIMINACE SoTa (S21)'],
+      ['11:30–13:00', 'Mendelova univerzita v Brně (bonus pro nejstarší kadety)'],
+      ['14:00–16:00', 'V táboře: F15 — bahno ze Stehlíkovy louky na Alešových botách'],
+      ['16:30–17:30', 'Návrat výjezdové skupiny — prezentace zjištěného']
+    ],
+    indicie: ['F13', 'F14', 'F15', 'D04', 'S21'],
+    vedouci: 'Notářka POTVRDÍ SoTův příchod 12. 7. v 6:30 → SoTo PLNĚ ELIMINOVÁN. Zbývají Stehlík + Aleš. Motiv jasný.' },
+  { num: 9, date: '19. 7. (neděle)', title: 'Konfrontace Stehlíka, přiznání Aleše',
+    motto: '„Den, kdy se rozpadne lež a začne pravda."',
+    timetable: [
+      ['14:00–15:30', 'KONFRONTACE STEHLÍKA v lipovém altánu'],
+      ['15:30–16:00', 'PŘIZNÁNÍ ALEŠE — emocionální moment'],
+      ['16:00', 'Stehlík vstává, utíká do lesa směrem k samotě'],
+      ['17:30–18:00', 'Karel volá policii do Blanska — plán zítřejšího honu']
+    ],
+    indicie: ['F17', 'S15'],
+    vedouci: 'Aleš se zhroutí, klidné přiznání. Tichý pláč, ne dramatický křik.' },
+  { num: 10, date: '20. 7. (pondělí)', title: 'Honička v lese, nález závěti',
+    motto: '„Závěť čeká v dutině starého buku. A Stehlík čeká na cestě."',
+    timetable: [
+      ['09:00–12:00', 'LESNÍ HRA „Obkličování" + dopadení Stehlíka policií'],
+      ['13:00–14:00', 'Slavnostní průvod k potoku'],
+      ['14:00', 'NÁLEZ PRAVÉ ZÁVĚTI v dutině buku (Tom Buchta vyleze)'],
+      ['15:30–16:30', 'JUDr. Růžičková potvrdí pravost závěti'],
+      ['19:30–22:00', 'Pohádkový večer u ohně']
+    ],
+    indicie: ['F16', 'S16'],
+    vedouci: 'Hájek mobilizuje policii z Blanska. Stehlík se vzdá bez násilí. Tom Buchta vyleze do dutiny s lanem (jištění Karlem) — TRIUMFÁLNÍ MOMENT.' },
+  { num: 11, date: '21. 7. (úterý)', title: 'FINÁLE — čtení závěti',
+    motto: '„Děti, vy jste dědicové. Vy všichni."',
+    timetable: [
+      ['14:00', 'Karel jde k autu (kostýmová změna na Marka)'],
+      ['14:25', 'Marek přichází pěšky s Magdou (200 m)'],
+      ['14:30', 'Marek vchází do altánu — tlesknutí'],
+      ['14:30–15:00', 'OMLUVA SoTem před dětmi'],
+      ['15:00–16:30', 'ČTENÍ ZÁVĚTI (§§ 1–6)'],
+      ['16:30–17:00', 'Alešova chvíle — Markovo slovní odpuštění'],
+      ['17:00–18:00', 'PŘEDÁNÍ 45 DĚDICKÝCH LISTŮ + pamětních mincí'],
+      ['18:00', 'Marek odjíždí zpět do FN Brno doléčit'],
+      ['19:30–23:00', 'VELKÝ TÁBOROVÝ OHEŇ (Karel sám sebe)']
+    ],
+    indicie: [],
+    vedouci: 'Karel hraje Marka jen do 18:00 (čtení závěti + dědické listy). Pak Marek odjíždí, večerní oheň vede Karel jako sám sebe. Tom Buchta houslové sólo. Veřejná omluva SoTem.' },
+  { num: 12, date: '22. 7. (středa)', title: 'Odjezd a vložení vzkazu do dutiny buku',
+    motto: '„Tábor odchází jako přišel — čistý, jen v paměti hlubší."',
+    timetable: [
+      ['08:00', 'Slavnostní snídaně'],
+      ['09:00–10:30', 'Balení'],
+      ['10:30–11:00', 'Velký úklid'],
+      ['11:00', 'Slavnostní rozloučení'],
+      ['12:00', 'Slavnostní oběd'],
+      ['13:00–15:00', 'Odjezd dětí'],
+      ['15:00–16:00', 'Vložení vzkazu pro budoucnost do dutiny buku'],
+      ['16:00', 'Aleš odjíždí dobrovolně k policii do Blanska']
+    ],
+    indicie: [],
+    vedouci: 'Tradice § 6 závěti — vzkaz pro budoucí generaci za 10 let. Aleš sám vloží list do dutiny — gesto návratu.' }
+];
+
+const timelineItems = [
+  { time: '15:30 (11. 7.)', what: 'Marek soukromě pověřuje SoTa noční misí do Brna pro dodatek smlouvy', who: 'Marek + SoTo' },
+  { time: '21:00', what: 'Slavnostní zahájení 30. ročníku, Marek uloží závěť do truhly v Šéfce', who: 'všichni' },
+  { time: '23:30–00:15', what: 'Karel + SoTo porada v Šéfce (alibi pro Karla)', who: 'Karel + SoTo' },
+  { time: '00:15', what: 'Karel jde spát. SoTo zůstává v Šéfce „srovnat papíry". Aleš rozváže rohy zadní plachty.', who: 'SoTo, Aleš' },
+  { time: '00:25', what: 'Stehlík parkuje pickup u zatáčky 200 m od tábora, dál pěšky lesem', who: 'Stehlík', cls: 'crime' },
+  { time: '00:30', what: 'Stehlík přichází k zadní plachtě Šéfky. Aleš odchází „na latrýnu" pro alibi.', who: 'Stehlík + Aleš', cls: 'crime' },
+  { time: '00:40', what: 'SoTo opouští Šéfku, jde k Santanu na parkovišti', who: 'SoTo' },
+  { time: '00:45', what: 'NOČNÍ KRÁDEŽ: Stehlík vstupuje do prázdné Šéfky, vyměňuje závěť za padělek. SoTo nasedá do Santany a odjíždí směrem k Brnu.', who: 'Stehlík, SoTo', cls: 'crime' },
+  { time: '01:00', what: 'Marek se probudí, slyší šustění. Konfrontace v Šéfce. Stehlík strčí Marka stranou, vyběhne.', who: 'Marek + Stehlík', cls: 'crime' },
+  { time: '01:05', what: 'Marek pronásleduje, klopýtne přes kořen smrku 15 m za Šéfkou, padá, otřes mozku', who: 'Marek', cls: 'crime' },
+  { time: '01:15', what: 'Stehlík schová červenou složku v dutině starého buku u potoka. Pěšky zpět k pickupu, na samotu.', who: 'Stehlík', cls: 'crime' },
+  { time: '01:30', what: 'Aleš se vrací z latrýny, najde Marka v bezvědomí, V PANICE odejde do stanu', who: 'Aleš', cls: 'crime' },
+  { time: '02:30', what: 'SoTo v Brně, vyzvedne dodatek z Markovy pracovny', who: 'SoTo' },
+  { time: '03:30', what: 'SoTo cestou zpět míjí Pátera Lacinu na Olomoucké ulici v Brně', who: 'SoTo' },
+  { time: '05:30 (12. 7.)', what: 'Anička jde ke studánce pro vodu, najde Marka. Volá Karla. Současně SoTo se vrací do tábora.', who: 'Anička, SoTo', cls: 'twist' },
+  { time: '06:00', what: 'Tomáš Kellner přiváží maso, zastihne ranní chaos. SoTo vyjíždí znovu do Blanska.', who: 'Kellner, SoTo' },
+  { time: '06:30', what: 'Záchranka odveze Marka do FN Brno. SoTo u notářky v Blansku předává dodatek.', who: 'záchranka, SoTo' },
+  { time: '07:30', what: 'SoTo se vrací do tábora — mlčí o noční misi (Marek je v bezvědomí, nemůže ho zeptat)', who: 'SoTo' },
+  { time: '07:45', what: 'Mimořádný nástup. Karel oznámí dětem. Začíná vyšetřování.', who: 'všichni' },
+  { time: 'Den 4', what: 'Adriana zmíní Santanu na jiném místě → SoTo se stává HLAVNÍ rudou stopou', who: 'Adriana, SoTo' },
+  { time: 'Den 6', what: 'Aniččina klíčová výpověď: silueta v 01:10 utíkala špatným směrem na latrýnu = vnitřní pomocník (Aleš)', who: 'Anička', cls: 'twist' },
+  { time: 'Den 7', what: 'Markův vzkaz z FN Brno: „Byl to Vladimír Stehlík… vyšetřujte také Aleše… a Tomáši, můžeš to říct." SoTo začne mluvit.', who: 'Marek (vzkaz), SoTo', cls: 'twist' },
+  { time: 'Den 8', what: 'Notářka v Blansku potvrdí SoTův příchod 12. 7. v 6:30 = DEFINITIVNÍ ELIMINACE SoTa. Motiv Stehlíka odhalen.', who: 'Růžičková', cls: 'twist' },
+  { time: 'Den 9', what: 'Konfrontace Stehlíka v lipovém altánu. Aleš se zhroutí, přizná. Stehlík utíká do lesa.', who: 'Stehlík, Aleš', cls: 'twist' },
+  { time: 'Den 10', what: 'Policie z Blanska zachytí Stehlíka na lesní cestě. Tom Buchta vyleze do dutiny buku — NÁLEZ PRAVÉ ZÁVĚTI.', who: 'policie, Tom', cls: 'twist' },
+  { time: 'Den 11', what: 'FINÁLE: Marek (= Karel v kostýmu) čte závěť. Veřejná omluva SoTem. 45 dědických listů. Aleš odpuštěn, jmenován do Rady tábora.', who: 'Marek, všichni', cls: 'finale' }
+];
+
+// =====================================
+// RENDERING (safe DOM, žádný innerHTML)
+// =====================================
+
+function renderCharacters() {
+  const grid = document.getElementById('character-grid');
+  grid.replaceChildren();
+  for (const c of characters) {
+    const filterTag = c.tag.toLowerCase().includes('vinný') || c.tag.toLowerCase().includes('pachatel') || c.tag.toLowerCase().includes('pomocník') ? 'vinny' :
+                       c.tag.toLowerCase().includes('rudá stopa') ? 'rudastopa' : '';
+    const card = el('div', { class: 'card character-card', data: { cat: c.cat, tag: filterTag } });
+    card.appendChild(el('span', { class: 'role-band ' + c.tagClass }, c.tag));
+    card.appendChild(el('div', { class: 'avatar' }, c.avatar));
+    card.appendChild(el('h3', null, c.name));
+    card.appendChild(el('div', { class: 'meta' }, (c.age > 0 ? c.age + ' let · ' : '') + c.role));
+    card.appendChild(el('p', { class: 'charakter' }, rt(c.charakter)));
+    if (c.detail) {
+      const detail = el('div', { class: 'character-detail' });
+      for (const [k, v] of Object.entries(c.detail)) {
+        detail.appendChild(el('h4', null, k));
+        if (Array.isArray(v)) {
+          const ul = el('ul');
+          for (const item of v) ul.appendChild(el('li', null, rt(item)));
+          detail.appendChild(ul);
+        } else {
+          detail.appendChild(el('p', null, rt(v)));
+        }
+      }
+      card.appendChild(detail);
+      card.appendChild(el('div', { class: 'show-more' }, 'Klikni pro detail ▾'));
+      card.addEventListener('click', () => card.classList.toggle('expanded'));
+    }
+    grid.appendChild(card);
+  }
+  // Filter handlers
+  document.querySelectorAll('#character-filters .filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('#character-filters .filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const f = btn.dataset.filter;
+      grid.querySelectorAll('.character-card').forEach(card => {
+        if (f === 'all') card.style.display = '';
+        else if (f === 'vinny' || f === 'rudastopa') card.style.display = card.dataset.tag === f ? '' : 'none';
+        else card.style.display = card.dataset.cat === f ? '' : 'none';
+      });
+    });
+  });
+}
+
+function renderTimeline() {
+  const tl = document.getElementById('story-timeline');
+  tl.replaceChildren();
+  for (const it of timelineItems) {
+    const li = el('li', { class: 'timeline-item ' + (it.cls || '') });
+    li.appendChild(el('div', { class: 'time' }, it.time));
+    li.appendChild(el('div', { class: 'what' }, it.what));
+    li.appendChild(el('div', { class: 'who' }, it.who));
+    tl.appendChild(li);
+  }
+}
+
+function renderEvidence() {
+  const tbody = document.querySelector('#evidence-table tbody');
+  tbody.replaceChildren();
+  for (const e of evidence) {
+    let badgeClass = 'badge-other';
+    let targetText = e.target;
+    if (e.target === 'stehlik') { badgeClass = 'badge-stehlik'; targetText = '→ Stehlík'; }
+    else if (e.target === 'ales') { badgeClass = 'badge-ales'; targetText = '→ Aleš'; }
+    else if (e.target === 'soto') { badgeClass = 'badge-soto'; targetText = '⬜ rudá stopa SoTo'; }
+    else if (e.target === 'motiv') { badgeClass = 'badge-motive'; targetText = '🟨 motiv'; }
+    else if (e.target === 'stehlik+ales') { badgeClass = 'badge-stehlik'; targetText = '→ Stehlík + Aleš'; }
+    const tr = el('tr', { data: { type: e.type, target: e.target } });
+    tr.appendChild(el('td', null, el('span', { class: 'evidence-code code-' + e.type }, e.code)));
+    tr.appendChild(el('td', null, e.name));
+    tr.appendChild(el('td', null, 'Den ' + e.day));
+    tr.appendChild(el('td', null, el('span', { class: 'badge ' + badgeClass }, targetText)));
+    tr.appendChild(el('td', null, e.value));
+    tbody.appendChild(tr);
+  }
+  document.querySelectorAll('#evidence-filters .filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('#evidence-filters .filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const f = btn.dataset.filter;
+      tbody.querySelectorAll('tr').forEach(tr => {
+        if (f === 'all') tr.style.display = '';
+        else if (['F','S','R','D'].includes(f)) tr.style.display = tr.dataset.type === f ? '' : 'none';
+        else if (f === 'proti-stehlikovi') tr.style.display = (tr.dataset.target === 'stehlik' || tr.dataset.target === 'stehlik+ales') ? '' : 'none';
+        else if (f === 'proti-alesovi') tr.style.display = (tr.dataset.target === 'ales' || tr.dataset.target === 'stehlik+ales') ? '' : 'none';
+        else if (f === 'proti-sotovi') tr.style.display = tr.dataset.target === 'soto' ? '' : 'none';
+      });
+    });
+  });
+}
+
+function renderDays() {
+  const list = document.getElementById('days-list');
+  list.replaceChildren();
+  for (const d of days) {
+    const card = el('div', { class: 'day-card', data: { day: String(d.num) } });
+    const header = el('div', { class: 'day-header' });
+    const headerLeft = el('div');
+    headerLeft.appendChild(el('div', { class: 'day-num' }, 'DEN ' + d.num + ' · ' + d.date));
+    headerLeft.appendChild(el('h3', null, d.title));
+    header.appendChild(headerLeft);
+    header.appendChild(el('span', { class: 'toggle' }, '▾'));
+    card.appendChild(header);
+
+    const content = el('div', { class: 'day-content' });
+    content.appendChild(el('div', { class: 'day-motto' }, d.motto));
+
+    const ttSection = el('div', { class: 'day-section' });
+    ttSection.appendChild(el('h4', null, 'Časová osa'));
+    const tt = el('table', { class: 'timetable' });
+    for (const [t, what] of d.timetable) {
+      const row = el('tr');
+      row.appendChild(el('td', null, t));
+      row.appendChild(el('td', null, what));
+      tt.appendChild(row);
+    }
+    ttSection.appendChild(tt);
+    content.appendChild(ttSection);
+
+    if (d.indicie.length) {
+      const indSection = el('div', { class: 'day-section' });
+      indSection.appendChild(el('h4', null, 'Indicie odhalené tento den'));
+      const list2 = el('div', { class: 'indicie-list' });
+      for (const code of d.indicie) list2.appendChild(el('span', { class: 'indicie-tag' }, code));
+      indSection.appendChild(list2);
+      content.appendChild(indSection);
+    }
+
+    const vedSection = el('div', { class: 'day-section' });
+    vedSection.appendChild(el('h4', null, 'Pro vedoucí'));
+    vedSection.appendChild(el('p', { style: 'font-size: 14px; color: var(--color-muted);' }, d.vedouci));
+    content.appendChild(vedSection);
+
+    card.appendChild(content);
+    header.addEventListener('click', () => card.classList.toggle('open'));
+    list.appendChild(card);
+  }
+}
+
+function updateNavActive() {
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('nav.sticky a');
+  let current = 'uvod';
+  sections.forEach(s => {
+    const top = s.getBoundingClientRect().top;
+    if (top < 120) current = s.id;
+  });
+  navLinks.forEach(a => {
+    a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+  });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  renderCharacters();
+  renderTimeline();
+  renderEvidence();
+  renderDays();
+  window.addEventListener('scroll', updateNavActive);
+  updateNavActive();
+});
+</script>
+
+</body>
+</html>

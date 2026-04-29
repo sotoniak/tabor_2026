@@ -26,8 +26,8 @@
 
 Ráno **Karel** představí týmům **podezřelé z personálu**. Jeden po druhém je popíše:
 
-1. **Karel Malík** (44, hlavní vedoucí) — vede vyšetřování, ale technicky je i podezřelý. Bude se vyslýchat sám. **Alibi**: byl se SoTou v Šéfce na poradě 23:30–00:15, pak spal. SoTo to potvrdí.
-2. **Tomáš „Tony" Sotoniak** (42, zástupce) — pomáhá vést vyšetřování. **Alibi**: porada s Karlem do 00:15. **Slabé místo**: po poradě „srovnával papíry v Šéfce", spát šel pozdě, spal krátce. Ráno se vrátil do tábora **Santanou** v 7:30, **mlčí o tom, kde byl**. Když se ho děti zeptají, odpoví: *„Nemůžu o tom teď mluvit. Vyřídím to."* — **otevírá silnou rudou stopu**.
+1. **Karel Malík** (44, hlavní vedoucí) — vede vyšetřování, ale technicky je i podezřelý. Bude se vyslýchat sám. **Alibi**: byl se SoTem v Šéfce na poradě 23:30–00:15, pak spal. SoTo to potvrdí.
+2. **Tomáš „SoTo" Sotoniak** (42, zástupce) — pomáhá vést vyšetřování. **Alibi**: porada s Karlem do 00:15. **Slabé místo**: po poradě „srovnával papíry v Šéfce", spát šel pozdě, spal krátce. Ráno se vrátil do tábora **Santanou** v 7:30, **mlčí o tom, kde byl**. Když se ho děti zeptají, odpoví: *„Nemůžu o tom teď mluvit. Vyřídím to."* — **otevírá silnou rudou stopu**.
 3. **Anička Kellnerová** (35+, šéfkuchařka) — ráno objevila Marka v lese. **Alibi**: v noci dělala v polní kuchyni těsto a chystala kávu pro Marka, který si o ni požádal. **Důležité**: z polní kuchyně **vidí na Šéfku**. Něco viděla, ale **dnes to ještě neřekne** — promluví den 6.
 4. **Anežka Kellnerová** (35+, sous-chef, ml. sestra Aničky) — **alibi**: pomáhala Aničce s těstem do 23:30, pak šla spát. Spala tvrdě, **nic neviděla, nic neslyšela**. Krátká výpověď.
 5. **Magda Hamanová** (25, zdravotnice) — **alibi**: v zdravotce psala lékařský deník (papírový, datovaný, s časovými údaji). Ráno první ošetřovala Marka. Slabé místo: zatím **nepředkládá deník** (povinnost ochrany lékařských zápisů — den 7 ho ukáže Karlovi pro vyloučení). **Klíčový dnešek**: na otázku o rodinných vazbách Marka **zmíní**: *„Marek má vzdáleného synovce — Tomáš Sotoniak. Marek ho zaučoval do tábora už od jeho dvaceti."* **Bomba pro děti.**
@@ -88,7 +88,7 @@ NÁŠ ZÁVĚR: PODEZŘELÝ / VYLOUČENÝ / NEDOSTATEK INFORMACÍ
 
 #### Karel Malík (hlavní vedoucí)
 **Stálá fakta**:
-- 23:30–00:15 byl se SoTou v Šéfce na poradě (plánování dalšího dne, oba to potvrdí).
+- 23:30–00:15 byl se SoTem v Šéfce na poradě (plánování dalšího dne, oba to potvrdí).
 - 00:15 šel do svého stanu, spal.
 - 05:45 ho vzbudila Anička s nálezem.
 - Volal záchranku ze satelitního telefonu.
@@ -96,7 +96,7 @@ NÁŠ ZÁVĚR: PODEZŘELÝ / VYLOUČENÝ / NEDOSTATEK INFORMACÍ
 
 **Slabé místo (děti by měly přijít)**: Po poradě byl sám ve stanu — žádný svědek od 00:15 do 05:45.
 
-#### Tomáš „Tony" Sotoniak (zástupce hl. vedoucího) — KLÍČOVÝ VÝSLECH
+#### Tomáš „SoTo" Sotoniak (zástupce hl. vedoucího) — KLÍČOVÝ VÝSLECH
 **Stálá fakta (které řekne):**
 - 23:30–00:15 byl s Karlem v Šéfce.
 - Po 00:15 zůstal v Šéfce „srovnat papíry".
@@ -264,7 +264,7 @@ Děti zatím **NEMAJÍ**:
 | S07 | Magda — píše deník, ale nepředkládá                        | Výslech Magdy        | Slabé alibi do dne 7                     |
 | S08 | Jenda + Adriana — slyšeli motor v 0:45 (mysleli Stehlíka)  | Výslech Jendy + Adriany | Otevírá rudou stopu motorem            |
 | **S12** | **Magda zmíní krevní pouto SoTa s Markem (synovec)**    | Výslech Magdy        | **Hlavní rudá stopa — R01**              |
-| **S22** | **Klárka pamatuje vážný rozhovor Marka se SoTou den 1** | Vyhodnocení večer    | Posiluje rudou stopu R06                 |
+| **S22** | **Klárka pamatuje vážný rozhovor Marka se SoTem den 1** | Vyhodnocení večer    | Posiluje rudou stopu R06                 |
 | Aleš slabé alibi | Aleš sám u ohně + latrýna                          | Výslech Aleše        | Důležitý kus pro pozdější odhalení       |
 
 ---

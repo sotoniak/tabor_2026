@@ -18,7 +18,7 @@ timeline
     title Indicie po dnech (11.–22. 7. 2026)
     Den 1 (11.7.) — zahájení : Marek uloží červenou složku do truhly v Šéfce : Marek soukromě pověřuje SoTa noční misí do Brna : Aleš v noci rozváže rohy plachty : SoTo v 0:45 odjíždí Santanou do Brna : Stehlík přichází lesem ze samoty : 01:00 konfrontace, Marek padá v lese o kořen
     Den 2 (12.7.) — objev : F01 padělek bez notářské pečetě : F02 originál chybí : F03 otisk u truhly : F04 otisk kožené boty 44 v rose : F05 2 páry stop v rose : F06 fotky z mobilu : F07 rozvázané rohy plachty Šéfky : Tomáš Kellner přiveze maso : Páter Lacina modlitba odpoledne : SoTo se vrací v 7:30 a mlčí
-    Den 3 (13.7.) — výslechy : S02 Karel a SoTo — porada (alibi) : SoTo vyhýbavé odpovědi : R01 Magda zmíní krevní pouto SoTa s Markem : S22 Klárka pamatuje Marka mluvícího vážně se SoTou : S04 Aleš — latrýna (slabé alibi) : S07 Magda — lékařský deník : S08 Jenda + Adriana alibi
+    Den 3 (13.7.) — výslechy : S02 Karel a SoTo — porada (alibi) : SoTo vyhýbavé odpovědi : R01 Magda zmíní krevní pouto SoTa s Markem : S22 Klárka pamatuje Marka mluvícího vážně se SoTem : S04 Aleš — latrýna (slabé alibi) : S07 Magda — lékařský deník : S08 Jenda + Adriana alibi
     Den 4 (14.7.) — forenzika : F08 lab. otisku odpovídá CIZÍ osobě : F09 stopa pneumatiky pickupu : F10 vlákno z kožené rukavice : F12 popel z dýmky v rohu Šéfky : R02 Adriana — Santana stojí ráno na jiném místě : S24 Jeník — turistická stopa pneumatiky : R07 Preclík přizná koláč (komická eliminace) : D01 Caesar +3 — KLÍČE NIKDO NEMĚL POMOHL VLASTNÍ
     Den 5 (15.7.) — návštěvy : F11 mezera v Alešově hlídce ohniště : Stehlík přijíždí jako gratulant — boty 44 pickup dýmka : S09 JUDr. Růžičková — závěť má dodatek : S10 Stehlík alibi (samota) : S17 Jenda + Adriana stopy pneu pickupu : S23 Lucka R. otisk 44 nikomu z personálu nesedí
     Den 6 (16.7.) — klid + zlom : S01 Anička — baterka v Šéfce 00:30 silueta v 01:10 : S12 Magda vysvětlí — krevní pouto NENÍ motiv : S19 Tomáš Kellner viděl Santanu v 5:30 : D02 substituce SVĚTLO — PODÍVEJTE SE NA HLÍDKU : Eliminace Hájka Konečného
@@ -155,7 +155,7 @@ Děti několik dnů sledují **rudé stopy**, které je svedou na špatnou cestu
 ```mermaid
 flowchart LR
     subgraph DEN3["Den 3"]
-        E_KAREL["✅ Karel Malík<br/>alibi: porada se SoTou"]
+        E_KAREL["✅ Karel Malík<br/>alibi: porada se SoTem"]
         E_ANEZKA["✅ Anežka<br/>spala tvrdě"]
         E_SOTO_1["⚠️ SoTo<br/>(podezřelý — krevní pouto, vyhýbavý)"]
     end
@@ -206,7 +206,7 @@ flowchart LR
 | 2 | **F07** | Rozvázané rohy plachty Šéfky | → vnitřní pomocník | 🟧 zlomová |
 | 3 | S02 | Alibi Karel + SoTo | Karel eliminován | ⬜ |
 | 3 | **R01** | Magda zmíní krevní pouto SoTa s Markem | hlavní rudá stopa | ⬜ |
-| 3 | **S22** | Klárka pamatuje rozhovor Marka se SoTou | posiluje rudou stopu | ⬜ |
+| 3 | **S22** | Klárka pamatuje rozhovor Marka se SoTem | posiluje rudou stopu | ⬜ |
 | 3 | S04 | Alešova „latrýna" | slabé alibi | 🟧 |
 | 3 | S06 | Anežka — spala tvrdě | eliminace | ⬜ |
 | 3 | S07 | Magda — deník | rudá stopa | ⬜ |

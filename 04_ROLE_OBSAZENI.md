@@ -46,7 +46,7 @@ Tento soubor je **návod pro obsazování**. Personál tábora hraje **sám sebe
 
 ---
 
-### A2. Tomáš „Tony" Sotoniak — zástupce hlavního vedoucího (42) — KLÍČOVÁ RUDÁ STOPA
+### A2. Tomáš „SoTo" Sotoniak — zástupce hlavního vedoucího (42) — KLÍČOVÁ RUDÁ STOPA
 
 **Hraje:** **skutečný zástupce hl. vedoucího — SoTo** (42, intelektuál, suchý ironický humor)
 
@@ -603,7 +603,7 @@ Karel **přečte nahlas** papírový dopis „od Marka" dětem v jídelně. Kare
 | Role                      | Hraje          | Den příchodu                    | Den odhalení / eliminace                    |
 | ------------------------- | -------------- | ------------------------------- | ------------------------------------------- |
 | Karel Malík               | hl. vedoucí    | každý den                       | (nevinný)                                   |
-| **Tomáš „Tony" Sotoniak** | zástupce       | každý den                       | **den 8 (notářka v Blansku potvrdí)**       |
+| **Tomáš „SoTo" Sotoniak** | zástupce       | každý den                       | **den 8 (notářka v Blansku potvrdí)**       |
 | **Aleš Tomek**            | údržbář        | každý den                       | **den 9 (přiznání)**                        |
 | Anička Kellnerová         | šéfkuchařka    | každý den                       | den 4 (svědkyně)                            |
 | Anežka Kellnerová         | sous-chef      | každý den                       | den 3                                       |

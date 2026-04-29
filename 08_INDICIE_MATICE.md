@@ -56,7 +56,7 @@ Tento soubor obsahuje **všechny indicie**, které děti během hry sbírají, p
 | Kód | Svědectví | Den | Kdo |
 |---|---|---|---|
 | S01 | **Anička viděla baterku v Šéfce kolem 00:30 + siluetu utíkající od Šéfky kolem 01:10** (až den 6!) | 6 | Anička |
-| S02 | Karel: alibi (porada se SoTou 23:30–00:15) | 3 | Karel |
+| S02 | Karel: alibi (porada se SoTem 23:30–00:15) | 3 | Karel |
 | S03 | **Adriana**: postřeh o Santanu na jiném místě ráno (R02) | 4 | Adriana |
 | S04 | Aleš: alibi („u ohniště, pak na latrýnu") — slabé, sám | 3 | Aleš |
 | S05 | Anička: ráno našla Marka, ukazuje místo | 2 | Anička |
@@ -76,7 +76,7 @@ Tento soubor obsahuje **všechny indicie**, které děti během hry sbírají, p
 | S19 | **Tomáš Kellner**: cestou v 5:30 míjel Santanu směrem k Jedovnicím (potvrdí SoTův příběh) | 6 | Tomáš Kellner |
 | S20 | **Páter Lacina**: cestou v 3:30 míjel Santanu na Olomoucké ulici v Brně směrem od Brna (potvrdí SoTův příběh) | 7 | Páter Lacina |
 | S21 | **Růžičková (notářka) potvrdí**, že SoTo k ní přišel 12. 7. v 6:30 s podepsaným dodatkem | 8 | Růžičková |
-| S22 | **Klárka pamatuje** Marka mluvícího vážně se SoTou den 1 odpoledne (= R06) | 3 | Klárka |
+| S22 | **Klárka pamatuje** Marka mluvícího vážně se SoTem den 1 odpoledne (= R06) | 3 | Klárka |
 | S23 | **Lucka R. analýza otisku 44**: nikdo z personálu (Aleš 43 pohorky, Tom 42, Jenda 45 ale gumovky, ostatní menší) — **pachatel cizí** | 5 | Lucka R. |
 | S24 | **Jeník — turistika ráno**: čerstvý otisk pneumatiky pickupu na lesní cestě (potvrzuje F09) | 4 | Jeník |
 | S25 | Preclík přizná noční nájezd na koláč (komická eliminace R07) | 4 | Preclík |
@@ -180,7 +180,7 @@ Tabulka ukazuje, **jakou indicií je každý podezřelý dotčen**. **Tučně** 
 | F17 (30 000 Kč u Aleše) | tým, který s Karlem den 9 dělá domovní prohlídku přístřešku | 9 |
 | **R01 (krevní pouto SoTa)** | tým, který den 3 mluví s Magdou o Markovi | 3 |
 | **S03 (Adriana — Santana)** | tým, který den 4 dělá ranní mapování okolí Šéfky | 4 |
-| **S22 (Klárka pamatuje Marka se SoTou)** | tým Jestřábi (Klárka je jejich vedoucí) | 3 |
+| **S22 (Klárka pamatuje Marka se SoTem)** | tým Jestřábi (Klárka je jejich vedoucí) | 3 |
 | **S23 (Lucka R. — analýza otisku)** | tým Vlci (Lucka R. je jejich asistentka) | 5 |
 | **S24 (Jeník — turistická stopa pneumatiky)** | tým Lišky (Jeník je jejich asistent) | 4 |
 | **S19 (Tomáš Kellner — Santana 5:30)** | tým, který den 6 mluví s Tomášem Kellnerem | 6 |
@@ -249,7 +249,7 @@ Vedoucí v 9. den **udělají s týmy reflexi**: *„Máme XY stop. Co z nich pl
 
 Hra obsahuje **5 záměrných rudých stop**, které děti zavedou na špatnou cestu:
 
-### 1. Tomáš „Tony" Sotoniak — zástupce hl. vedoucího (HLAVNÍ rudá stopa, dny 3–8)
+### 1. Tomáš „SoTo" Sotoniak — zástupce hl. vedoucího (HLAVNÍ rudá stopa, dny 3–8)
 
 **Zdá se:** vzdálený synovec Marka, klíče od všeho, zmizelá Santana v noci, vyhýbavé odpovědi, drsná persona. **Realita:** Marek ho v noci poslal do Brna pro kopii dodatku smlouvy s podpisem; SoTo plnil přání mlčet. **Eliminace den 8** (notářka v Blansku potvrdí). Den 11 finále: **veřejná omluva před dětmi**.
 

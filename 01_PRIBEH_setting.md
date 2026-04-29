@@ -78,11 +78,11 @@ V Rakoveckém údolí jsou letos **tři další tábory**:
 
 - **Charakter:** jak v reálu — autoritativní, ale přístupný, organizátor.
 - **Rodina:** otec dvou dospívajících dcer (Klárka a Lucka Malíkovy, obě 18, instruktorky). S Pavlem „Preclíkem" Malíkem (vedoucí oddílu) sdílí pouze příjmení — žádný příbuzenský vztah.
-- **Ve hře:** **NEvinný**. V noci 11. → 12. má **alibi** (po slavnostním zahájení byl se SoTou v Šéfce na poradě, plánovali další den; pak spal ve svém stanu). Alibi částečně potvrzuje Anička.
+- **Ve hře:** **NEvinný**. V noci 11. → 12. má **alibi** (po slavnostním zahájení byl se SoTem v Šéfce na poradě, plánovali další den; pak spal ve svém stanu). Alibi částečně potvrzuje Anička.
 - **V první polovině hry** je **podezřelý** — jakožto budoucí potenciální správce tábora by mohl mít motiv. Účastníci ho prošetří.
 - **Klíčový spojenec účastníků** od dne 5 dále — koordinuje vyšetřování, svolává nástupy, komunikuje s policií.
 
-### Tomáš „Tony" Sotoniak — zástupce hlavního vedoucího (42, HLAVNÍ rudá stopa)
+### Tomáš „SoTo" Sotoniak — zástupce hlavního vedoucího (42, HLAVNÍ rudá stopa)
 
 **Hraje:** **skutečný zástupce SoTo**, hraje sám sebe.
 

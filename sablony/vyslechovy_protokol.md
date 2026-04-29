@@ -181,7 +181,7 @@ Datum uložení:  ____ . ____ . 2026
 
 **Personál a vedení (9 osob):**
 1. Karel Malík — hlavní vedoucí
-2. Tomáš „Tony" Sotoniak — zástupce hlavního vedoucího (vzdálený synovec Marka)
+2. Tomáš „SoTo" Sotoniak — zástupce hlavního vedoucího (vzdálený synovec Marka)
 3. Aleš Tomek — mladý správce/údržbář
 4. Anička Kellnerová — šéfkuchařka
 5. Anežka Kellnerová — sous-chef (mladší sestra Aničky)

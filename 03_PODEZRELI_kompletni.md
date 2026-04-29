@@ -41,7 +41,7 @@ Marek je Karlovi **nejbližší kolega 20+ let**. Po Markově zranění **bere o
 
 ---
 
-## 2. Tomáš „Tony" SOTONIAK — zástupce hlavního vedoucího (KLÍČOVÁ ROLE — HLAVNÍ RUDÁ STOPA)
+## 2. Tomáš „SoTo" SOTONIAK — zástupce hlavního vedoucího (KLÍČOVÁ ROLE — HLAVNÍ RUDÁ STOPA)
 
 > **NEVINNÝ** | věk 42 | vzdálený synovec Marka Stanislava | hraje sám sebe + drsnější vrstvu
 
@@ -455,8 +455,8 @@ Den 5–6 si týmy **vzpomenou**, že před lety (kolem 2018) Konečný navrhl M
 
 | # | Jméno | Věk | Vinný? | Den eliminace / odhalení |
 |---|---|---|---|---|
-| 1 | Karel Malík | 44 | ne | den 4 (alibi se SoTou) |
-| 2 | **Tomáš „Tony" Sotoniak** | 42 | **ne (HLAVNÍ rudá stopa)** | **den 8 (notářka v Blansku potvrdí)** |
+| 1 | Karel Malík | 44 | ne | den 4 (alibi se SoTem) |
+| 2 | **Tomáš „SoTo" Sotoniak** | 42 | **ne (HLAVNÍ rudá stopa)** | **den 8 (notářka v Blansku potvrdí)** |
 | 3 | **Aleš Tomek** | 19 | **ANO (pomocník)** | **den 9 (přiznání)** |
 | 4 | Anička Kellnerová | 35+ | ne (svědkyně) | den 4 |
 | 5 | Anežka Kellnerová | 35+ | ne (minimální zapojení) | den 3 |
