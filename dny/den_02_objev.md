@@ -6,29 +6,29 @@
 
 ## Stručná osnova (timetable)
 
-| Čas | Co se děje | Kdo vede |
-|---|---|---|
-| 05:30 – 05:45 | **Anička jde ke studánce pro vodu — najde Marka v lese** | Anička |
-| 05:45 – 06:00 | Anička volá Karla. Karel volá záchranku **satelitním telefonem** | Karel |
-| 06:00 – 06:30 | **Magda Hamanová** ošetřuje Marka do příjezdu záchranky | Magda |
-| 06:00 – 06:10 | **Tomáš Kellner** přiváží objednané maso, zastihne ranní chaos. Krátké objetí sester (Anička, Anežka), odjíždí dál do Boskovic. | Tomáš Kellner |
-| 06:30 – 06:45 | Záchranka odvezena Marek do **FN Brno** (~50 km) | — |
-| 07:00 – 07:30 | Karel + personál otevřou truhlu v Šéfce — **padělek!** Volají notářku | Karel |
-| 07:30 – 07:45 | **SoTo se vrací do tábora** Santanou ze své noční mise. Vidí ranní chaos. **Mlčí** o své nepřítomnosti — Marek je v bezvědomí, nemůže ho zeptat. | SoTo |
-| 07:45 – 08:00 | **MIMOŘÁDNÝ NÁSTUP** — Karel oznámí situaci dětem | Karel, SoTo |
-| 08:00 – 08:45 | Snídaně, Karel se SoTou rozdávají vyšetřovací materiály | Vedoucí týmů |
-| 08:45 – 09:15 | Krátká návštěva 2 policistů z Blanska — sepíšou protokol, nechají vyšetřování dětem | kpt. Polák, por. Brázdová |
-| 09:15 – 12:00 | **ETAPOVÁ HRA č. 1: Místo činu** (4 stanoviště × 6 týmů, rotace) | Vedoucí týmů |
-| 12:00 – 13:00 | Oběd | Anička + Anežka |
-| 13:00 – 14:00 | Klid v stanech | — |
-| 14:00 – 14:30 | **Páter Lacina** přijíždí z Jedovnic, krátká modlitba za Marka v jídelně | Páter Lacina |
-| 14:30 – 16:30 | Koupání u studánky, klidné aktivity | Magda, Alča |
-| 16:30 – 17:30 | Týmy zaznamenávají do deníků, kreslí náčrty | Vedoucí týmů |
-| 17:30 – 18:00 | Volný čas | — |
-| 18:00 – 19:00 | Večeře | — |
-| 19:30 – 21:00 | **Workshop šifer** (volitelně) — příprava na den 3 | Lucka R. |
-| 21:00 – 22:00 | Klid u ohně, vyprávění detektivních příběhů | — |
-| 22:00 | Večerka | — |
+| Čas           | Co se děje                                                                                                                                       | Kdo vede                  |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------- |
+| 05:30 – 05:45 | **Anička jde ke studánce pro vodu — najde Marka v lese**                                                                                         | Anička                    |
+| 05:45 – 06:00 | Anička volá Karla. Karel volá záchranku **satelitním telefonem**                                                                                 | Karel                     |
+| 06:00 – 06:30 | **Magda Hamanová** ošetřuje Marka do příjezdu záchranky                                                                                          | Magda                     |
+| 06:00 – 06:10 | **Tomáš Kellner** přiváží objednané maso, zastihne ranní chaos. Krátké objetí sester (Anička, Anežka), odjíždí dál do Boskovic.                  | Tomáš Kellner             |
+| 06:30 – 06:45 | Záchranka odvezena Marek do **FN Brno** (~50 km)                                                                                                 | —                         |
+| 07:00 – 07:30 | Karel + personál otevřou truhlu v Šéfce — **padělek!** Volají notářku                                                                            | Karel                     |
+| 07:30 – 07:45 | **SoTo se vrací do tábora** Santanou ze své noční mise. Vidí ranní chaos. **Mlčí** o své nepřítomnosti — Marek je v bezvědomí, nemůže ho zeptat. | SoTo                      |
+| 07:45 – 08:00 | **MIMOŘÁDNÝ NÁSTUP** — Karel oznámí situaci dětem                                                                                                | Karel, SoTo               |
+| 08:00 – 08:45 | Snídaně, Karel se SoTou rozdávají vyšetřovací materiály                                                                                          | Vedoucí týmů              |
+| 08:45 – 09:15 | Krátká návštěva 2 policistů z Blanska — sepíšou protokol, nechají vyšetřování dětem                                                              | kpt. Polák, por. Brázdová |
+| 09:15 – 12:00 | **ETAPOVÁ HRA č. 1: Místo činu** (4 stanoviště × 6 týmů, rotace)                                                                                 | Vedoucí týmů              |
+| 12:00 – 13:00 | Oběd                                                                                                                                             | Anička + Anežka           |
+| 13:00 – 14:00 | Klid v stanech                                                                                                                                   | —                         |
+| 14:00 – 14:30 | **Páter Lacina** přijíždí z Jedovnic, krátká modlitba za Marka v jídelně                                                                         | Páter Lacina              |
+| 14:30 – 16:30 | Koupání u studánky, klidné aktivity                                                                                                              | Magda, Alča               |
+| 16:30 – 17:30 | Týmy zaznamenávají do deníků, kreslí náčrty                                                                                                      | Vedoucí týmů              |
+| 17:30 – 18:00 | Volný čas                                                                                                                                        | —                         |
+| 18:00 – 19:00 | Večeře                                                                                                                                           | —                         |
+| 19:30 – 21:00 | **Workshop šifer** (volitelně) — příprava na den 3                                                                                               | Lucka R.                  |
+| 21:00 – 22:00 | Klid u ohně, vyprávění detektivních příběhů                                                                                                      | —                         |
+| 22:00         | Večerka                                                                                                                                          | —                         |
 
 ---
 
