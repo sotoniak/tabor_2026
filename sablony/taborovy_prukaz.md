@@ -14,7 +14,7 @@
 │        TÁBOR SVĚTLO — 30 LET             │
 │              1997 — 2026                 │
 │                                          │
-│   ◆ VYŠETŘOVATELSKÝ PRŮKAZ ◆            │
+│   ◆ PRŮKAZ VYŠETŘOVATELE ◆              │
 │                                          │
 │  ┌────────────┐                          │
 │  │            │   Jméno: ________________│
