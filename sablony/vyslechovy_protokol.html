@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Výslechový protokol — Tábor Světlo 2026</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.protokol h2 {
+  text-align: center;
+  font-size: 16pt; margin: 0 0 2mm;
+  letter-spacing: 2px; font-weight: 700;
+  color: var(--color-primary);
+}
+.protokol .doc-subtitle {
+  text-align: center; font-size: 10pt; color: var(--color-muted);
+  margin-bottom: 8mm; font-style: italic;
+  border-bottom: 2px solid var(--color-primary);
+  padding-bottom: 4mm;
+}
+.protokol .meta-row {
+  display: flex; gap: 14px; margin: 4mm 0;
+  flex-wrap: wrap;
+}
+.protokol .meta-row .form-row { flex: 1; min-width: 60mm; }
+.protokol .question-box {
+  margin: 6mm 0;
+  page-break-inside: avoid;
+}
+.protokol .q-num {
+  font-weight: 700; color: var(--color-primary);
+  font-size: 11pt; margin-right: 4px;
+}
+.protokol .q-text { font-weight: 600; font-size: 11pt; }
+.protokol .q-required {
+  font-size: 9pt; color: var(--color-accent);
+  font-weight: 700; letter-spacing: 0.3px;
+  margin-left: 4px;
+}
+.protokol .obs-options {
+  display: flex; flex-wrap: wrap; gap: 4mm 8mm;
+  margin: 3mm 0;
+  font-size: 10pt;
+}
+.protokol .obs-options span { white-space: nowrap; }
+.protokol .conclusion {
+  display: grid; grid-template-columns: 1fr; gap: 2mm;
+  margin: 4mm 0;
+}
+.protokol .conclusion .checkbox-row {
+  font-size: 10.5pt;
+  padding: 2px 0;
+}
+.protokol .conclusion .checkbox-row strong { font-weight: 700; }
+.protokol .signature-area {
+  margin-top: 6mm;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 6mm;
+}
+</style>
+</head>
+<body>
+
+<div class="toolbar no-print">
+  <a class="home" href="../pruvodce.html#sablony">← Průvodce hrou</a>
+  <span class="title">📋 Výslechový protokol</span>
+  <span class="meta">A4 · oboustranně · 80 ks</span>
+  <button class="print-btn" onclick="window.print()">🖨️ Tisk</button>
+</div>
+
+<!-- STRANA 1 — IDENTIFIKACE -->
+<article class="page-a4 protokol">
+  <h2>VÝSLECHOVÝ PROTOKOL</h2>
+  <p class="doc-subtitle">Tábor Světlo · 30. ročník · 2026 · Vyšetřovací tým</p>
+
+  <div class="meta-row">
+    <div class="form-row"><label>Protokol č.:</label><span class="form-line"></span></div>
+    <div class="form-row"><label>Datum:</label><span class="form-line short"></span><span>. 7. 2026</span></div>
+  </div>
+
+  <div class="field-block">
+    <div class="field-label">Vyšetřovací tým</div>
+    <div class="form-row"><label>Jméno týmu:</label><span class="form-line"></span></div>
+    <div class="form-row"><label>Vyslýchatel:</label><span class="form-line"></span></div>
+    <div class="form-row"><label>Zapisovatel:</label><span class="form-line"></span></div>
+    <div class="form-row"><label>Pozorovatelé:</label><span class="form-line"></span></div>
+  </div>
+
+  <div class="field-block">
+    <div class="field-label">Podezřelý / vyslýchaný</div>
+    <div class="form-row"><label>Jméno a příjmení:</label><span class="form-line"></span></div>
+    <div class="form-row"><label>Funkce v táboře (vztah):</label><span class="form-line"></span></div>
+    <div class="meta-row">
+      <div class="form-row"><label>Věk:</label><span class="form-line short"></span></div>
+      <div class="form-row"><label>Bydliště:</label><span class="form-line"></span></div>
+    </div>
+  </div>
+
+  <div class="field-block">
+    <div class="field-label">Čas a místo výslechu</div>
+    <div class="form-row">
+      <label>Datum a čas:</label>
+      <span class="form-line short"></span><span>. 7. 2026</span>
+      <label>od</label><span class="form-line short" style="min-width:18mm;"></span>
+      <label>do</label><span class="form-line short" style="min-width:18mm;"></span>
+    </div>
+    <div class="form-row"><label>Místo:</label><span class="form-line"></span></div>
+  </div>
+
+  <div class="field-block">
+    <div class="field-label">Před výslechem (vyplnit před začátkem)</div>
+    <p style="margin:2mm 0; font-weight:600;">Co o této osobě již víme:</p>
+    <div class="form-row"><label>1.</label><span class="form-line full"></span></div>
+    <div class="form-row"><label>2.</label><span class="form-line full"></span></div>
+    <div class="form-row"><label>3.</label><span class="form-line full"></span></div>
+
+    <p style="margin:6mm 0 2mm; font-weight:600;">Naše hypotéza o ní:</p>
+    <div class="checkbox-row"><span class="checkbox"></span> PODEZŘELÝ</div>
+    <div class="checkbox-row"><span class="checkbox"></span> NEUTRÁLNÍ</div>
+    <div class="checkbox-row"><span class="checkbox"></span> PRAVDĚPODOBNĚ NEVINNÝ</div>
+    <div class="form-row" style="margin-top:3mm;"><label>Stručné odůvodnění:</label><span class="form-line full"></span></div>
+  </div>
+
+  <div class="note-box">
+    <strong>Tip pro tým:</strong> klíčové fráze podezřelého <strong>zapisujte doslovně</strong>, ne parafráze. Ulehčí to porovnávání mezi protokoly. Body za protokol: max. 45 b.
+  </div>
+</article>
+
+<!-- STRANA 2 — VÝSLECH -->
+<article class="page-a4 protokol">
+  <h2>OTÁZKY A ODPOVĚDI</h2>
+  <p class="doc-subtitle">Strana 2 — výslech</p>
+
+  <div class="question-box">
+    <p><span class="q-num">Q1</span><span class="q-text">Kde jste byl/a v noci 11. července 2026 mezi 22:00 a 06:00? Popište podrobně.</span><span class="q-required">povinná</span></p>
+    <div class="write-lines lines-3"></div>
+  </div>
+
+  <div class="question-box">
+    <p><span class="q-num">Q2</span><span class="q-text">Kdo to může potvrdit (svědci, záznamy, alibi)?</span><span class="q-required">povinná</span></p>
+    <div class="write-lines lines-2"></div>
+  </div>
+
+  <div class="question-box">
+    <p><span class="q-num">Q3</span><span class="q-text">Slyšel/a jste tu noc něco neobvyklého?</span><span class="q-required">povinná</span></p>
+    <div class="write-lines lines-2"></div>
+  </div>
+
+  <div class="question-box">
+    <p><span class="q-num">Q4</span><span class="q-text">Měl/a jste přístup do Šéfky nebo k truhle s mapami, kde byla uložena závěť?</span><span class="q-required">povinná</span></p>
+    <div class="write-lines lines-2"></div>
+  </div>
+
+  <div class="question-box">
+    <p><span class="q-num">Q5</span><span class="q-text">Jaký je váš vztah k panu Markovi Stanislavovi?</span><span class="q-required">povinná</span></p>
+    <div class="write-lines lines-2"></div>
+  </div>
+
+  <div class="field-block">
+    <div class="field-label">Vlastní otázky týmu (1–3)</div>
+    <div class="form-row"><label>Q6:</label><span class="form-line full"></span></div>
+    <div class="write-lines lines-2"></div>
+    <div class="form-row" style="margin-top:3mm;"><label>Q7:</label><span class="form-line full"></span></div>
+    <div class="write-lines lines-2"></div>
+    <div class="form-row" style="margin-top:3mm;"><label>Q8 (volitelné):</label><span class="form-line full"></span></div>
+    <div class="write-lines lines-2"></div>
+  </div>
+
+  <div class="field-block">
+    <div class="field-label">Pozorování týmu (chování, řeč těla, nervozita)</div>
+    <p style="margin:2mm 0; font-weight:600;">Mluvil/a:</p>
+    <div class="obs-options">
+      <span><span class="checkbox"></span>klidně</span>
+      <span><span class="checkbox"></span>nervózně</span>
+      <span><span class="checkbox"></span>vyhýbavě</span>
+      <span><span class="checkbox"></span>agresivně</span>
+    </div>
+    <p style="margin:3mm 0 2mm; font-weight:600;">Známky lži:</p>
+    <div class="obs-options">
+      <span><span class="checkbox"></span>vyhýbá oč. kontaktu</span>
+      <span><span class="checkbox"></span>pauza před odpovědí</span>
+      <span><span class="checkbox"></span>protichůdné výpovědi</span>
+      <span><span class="checkbox"></span>pocení</span>
+      <span><span class="checkbox"></span>bez známek</span>
+    </div>
+    <p style="margin:3mm 0 1mm; font-weight:600;">Detailní pozorování:</p>
+    <div class="write-lines lines-3"></div>
+  </div>
+
+  <div class="field-block">
+    <div class="field-label">Závěr týmu</div>
+    <p style="margin:2mm 0; font-size:10.5pt;">Po výslechu hodnotíme tuto osobu jako:</p>
+    <div class="conclusion">
+      <div class="checkbox-row"><span class="checkbox"></span> <strong>PRAVDĚPODOBNĚ VINEN</strong> — máme silné důkazy</div>
+      <div class="checkbox-row"><span class="checkbox"></span> <strong>PODEZŘELÝ</strong> — musíme dále vyšetřovat</div>
+      <div class="checkbox-row"><span class="checkbox"></span> <strong>NEUTRÁLNÍ</strong> — nedostatek informací</div>
+      <div class="checkbox-row"><span class="checkbox"></span> <strong>PRAVDĚPODOBNĚ NEVINEN</strong> — alibi je věrohodné</div>
+      <div class="checkbox-row"><span class="checkbox"></span> <strong>VYLOUČEN</strong> — máme spolehlivý důkaz neviny</div>
+    </div>
+    <p style="margin:3mm 0 1mm; font-weight:600;">Odůvodnění:</p>
+    <div class="write-lines lines-3"></div>
+  </div>
+
+  <div class="signature-area">
+    <div>
+      <div class="doc-sig-line"></div>
+      <div class="doc-sig-name">Vyslýchatel</div>
+    </div>
+    <div>
+      <div class="doc-sig-line"></div>
+      <div class="doc-sig-name">Zapisovatel</div>
+    </div>
+  </div>
+
+  <div class="form-row" style="margin-top:6mm;">
+    <label>Protokol uložen do týmového deníku dne:</label>
+    <span class="form-line short"></span><span>. 7. 2026</span>
+  </div>
+</article>
+
+</body>
+</html>

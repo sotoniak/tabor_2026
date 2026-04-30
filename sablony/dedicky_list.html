@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dědický list — Tábor Světlo 2026</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.dedicky {
+  font-family: "Georgia", serif;
+  font-size: 11pt;
+  line-height: 1.6;
+}
+.dedicky .border-frame {
+  border: 4px double var(--color-primary);
+  padding: 14mm 12mm;
+  min-height: 257mm;
+  position: relative;
+}
+.dedicky .border-frame::before {
+  content: "";
+  position: absolute; inset: 4mm;
+  border: 1px solid var(--color-paper-edge);
+  pointer-events: none;
+}
+.dedicky .header {
+  text-align: center;
+  padding-bottom: 6mm;
+  border-bottom: 2px solid var(--color-primary);
+}
+.dedicky .header .star { font-size: 14pt; letter-spacing: 6px; color: #ca8a04; }
+.dedicky .header h1 {
+  font-size: 26pt; margin: 4mm 0 2mm;
+  letter-spacing: 8px; color: var(--color-primary);
+  font-weight: 700;
+}
+.dedicky .header .brand {
+  font-size: 14pt;
+  letter-spacing: 6px; font-weight: 700;
+  color: var(--color-primary);
+  margin: 4mm 0 1mm;
+}
+.dedicky .header .year {
+  font-size: 11pt; letter-spacing: 3px;
+  color: var(--color-muted);
+}
+.dedicky .preamble {
+  text-align: center;
+  margin: 14mm 0 8mm;
+  font-style: italic;
+  font-size: 11pt; line-height: 1.7;
+}
+.dedicky .name-area {
+  text-align: center;
+  margin: 6mm 0 12mm;
+}
+.dedicky .name-area .name-line {
+  border-bottom: 2px solid var(--color-line);
+  width: 130mm; margin: 0 auto 2mm;
+  height: 14mm;
+}
+.dedicky .name-area .name-label {
+  font-size: 9pt; color: var(--color-muted);
+  font-style: italic; letter-spacing: 1px;
+}
+.dedicky .declaration {
+  text-align: center;
+  font-size: 14pt; font-weight: 700;
+  letter-spacing: 2.5px;
+  color: var(--color-accent);
+  padding: 4mm 0;
+  margin-bottom: 10mm;
+}
+.dedicky h3 {
+  font-size: 11pt; font-weight: 700;
+  letter-spacing: 1.5px;
+  color: var(--color-primary);
+  margin: 6mm 0 2mm;
+}
+.dedicky p { text-align: justify; margin: 2mm 0; }
+.dedicky ul {
+  list-style: none; padding-left: 6mm;
+  margin: 2mm 0 4mm;
+}
+.dedicky ul li { margin-bottom: 1.5mm; }
+.dedicky ul li::before {
+  content: "◆ "; color: #ca8a04; font-weight: 700;
+  margin-right: 4px;
+}
+.dedicky .signature-row {
+  margin-top: 8mm;
+  display: flex; gap: 6mm; align-items: flex-end;
+}
+.dedicky .signature-row .child-line {
+  flex: 1;
+}
+.dedicky .signature-row .child-line .line {
+  border-bottom: 1.5px solid var(--color-line);
+  height: 8mm;
+}
+.dedicky .signature-row .child-line .lbl {
+  font-size: 9pt; color: var(--color-muted);
+  font-style: italic;
+}
+.dedicky .signature-row .meta {
+  flex: 0 0 70mm;
+  font-size: 10pt;
+  text-align: left;
+}
+.dedicky .signature-row .meta div { margin: 1.5mm 0; }
+.dedicky .signature-row .meta .lbl {
+  display: inline-block; min-width: 18mm; font-weight: 600;
+}
+
+.dedicky .footer-block {
+  margin-top: 10mm;
+  border-top: 2px solid var(--color-primary);
+  padding-top: 8mm;
+}
+.dedicky .footer-block .signs {
+  display: flex; gap: 8mm; align-items: flex-start;
+  justify-content: space-between;
+}
+.dedicky .footer-block .sig-block {
+  flex: 1;
+  text-align: center;
+}
+.dedicky .footer-block .sig-block .line {
+  border-top: 1px solid var(--color-line);
+  width: 60mm; margin: 14mm auto 1mm;
+}
+.dedicky .footer-block .sig-block .name {
+  font-weight: 600; font-size: 10.5pt;
+}
+.dedicky .footer-block .sig-block .role {
+  font-size: 9pt; color: var(--color-muted);
+  font-style: italic;
+}
+.dedicky .footer-block .seal {
+  flex: 0 0 35mm;
+  text-align: center;
+}
+.dedicky .footer-block .seal .seal-circle {
+  width: 30mm; height: 30mm; border: 2px solid var(--color-accent);
+  border-radius: 50%;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  font-size: 7pt; color: var(--color-accent);
+  text-align: center; padding: 2mm; font-weight: 600;
+  margin: 0 auto;
+  transform: rotate(-7deg);
+}
+
+.dedicky .quote {
+  text-align: center;
+  margin-top: 10mm; padding: 6mm;
+  border-top: 3px double var(--color-paper-edge);
+  font-style: italic; font-size: 11pt;
+  color: var(--color-primary); line-height: 1.6;
+}
+.dedicky .quote .author {
+  font-size: 9pt; color: var(--color-muted); margin-top: 2mm;
+}
+</style>
+</head>
+<body>
+
+<div class="toolbar no-print">
+  <a class="home" href="../pruvodce.html#sablony">← Průvodce hrou</a>
+  <span class="title">🎓 Dědický list — pro každé dítě</span>
+  <span class="meta">A4 · ozdobný papír 120–160 g · 60 ks</span>
+  <button class="print-btn" onclick="window.print()">🖨️ Tisk</button>
+</div>
+
+<article class="page-a4 dedicky">
+  <div class="border-frame">
+
+    <div class="header">
+      <div class="star">◆ ◆ ◆</div>
+      <h1>DĚDICKÝ LIST</h1>
+      <div class="brand">TÁBOR SVĚTLO</div>
+      <div class="year">30. ROČNÍK · 1997 — 2026</div>
+    </div>
+
+    <p class="preamble">
+      Já, <strong>Marek Stanislav</strong>, zakladatel Tábora Světlo,<br>
+      v souladu s § 4 a § 5 mé poslední vůle ze dne 12. června 2026,<br>
+      tímto stvrzuji a slavnostně prohlašuji,<br>
+      že
+    </p>
+
+    <div class="name-area">
+      <div class="name-line"></div>
+      <div class="name-label">(jméno dítěte)</div>
+    </div>
+
+    <div class="declaration">
+      JE SYMBOLICKÝM DĚDICEM TÁBORA SVĚTLO
+    </div>
+
+    <h3>§ 1 — Právo na tradici</h3>
+    <p>Touto listinou Ti svěřuji část odkazu, který jsem budoval třicet let. <strong>Tábor je teď i tvůj.</strong></p>
+
+    <h3>§ 2 — Povinnosti dědice</h3>
+    <p>Jako dědic tábora se zavazuješ:</p>
+    <ul>
+      <li>pamatovat tábor po celý život;</li>
+      <li>vrátit se sem znovu, jako táborník nebo vedoucí;</li>
+      <li>chránit přírodu kolem;</li>
+      <li>pomáhat slabším;</li>
+      <li>hledat pravdu, i když je nepříjemná;</li>
+      <li>věřit v to, že každý člověk má své dobré místo, i ten, kdo občas zakopne;</li>
+      <li>jednoho dne to předat svým dětem.</li>
+    </ul>
+
+    <h3>§ 3 — Tvoje jméno</h3>
+    <p>Tvoje jméno je nyní zapsáno v <strong>Knize 30 let Tábora Světlo</strong>. Patří Ti.</p>
+
+    <h3>§ 4 — Tvůj podpis</h3>
+    <p>Tato listina nabývá plné platnosti tvým vlastním podpisem. Tím přijímáš dědictví.</p>
+
+    <div class="signature-row">
+      <div class="child-line">
+        <div class="line"></div>
+        <div class="lbl">Tvůj podpis</div>
+      </div>
+      <div class="meta">
+        <div><span class="lbl">Datum:</span> 21. července 2026</div>
+        <div><span class="lbl">Místo:</span> Tábor Světlo, Rakovecké údolí</div>
+      </div>
+    </div>
+
+    <div class="footer-block">
+      <p style="text-align:center; font-style:italic; font-size:10pt; color: var(--color-muted); margin: 0 0 6mm;">
+        Slavnostně předáno dne 21. července 2026 ve 30. ročníku Tábora Světlo.
+      </p>
+
+      <div class="signs">
+        <div class="sig-block">
+          <div class="line"></div>
+          <div class="name">Marek Stanislav</div>
+          <div class="role">zakladatel Tábora Světlo · [vlastní podpis]</div>
+        </div>
+        <div class="seal">
+          <div class="seal-circle">
+            PEČEŤ<br>TÁBORA<br>SVĚTLO<br><br>30 LET
+          </div>
+        </div>
+        <div class="sig-block">
+          <div class="line"></div>
+          <div class="name">JUDr. Magdaléna Růžičková</div>
+          <div class="role">notářka — svědek aktu</div>
+        </div>
+      </div>
+    </div>
+
+    <blockquote class="quote">
+      „Tábor patří všem.<br>
+      Tobě. I mně. I těm, kdo přijdou po nás.<br>
+      Po dalších třicet let."
+      <div class="author">— Marek Stanislav, 21. 7. 2026</div>
+    </blockquote>
+
+  </div>
+</article>
+
+</body>
+</html>

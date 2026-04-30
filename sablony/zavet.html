@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Závěť Marka Stanislava — pravá &amp; padělaná · Tábor Světlo 2026</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.zavet {
+  font-family: "Georgia", serif;
+  font-size: 11pt;
+  line-height: 1.65;
+}
+.zavet .doc-header h1 { letter-spacing: 8px; font-size: 18pt; }
+.zavet .doc-header .name {
+  font-size: 13pt; margin: 6mm 0 2mm; font-weight: 700; letter-spacing: 1px;
+}
+.zavet .doc-header .role {
+  font-size: 10pt; font-style: italic; color: var(--color-muted); margin: 0;
+}
+.zavet .doc-header .place {
+  font-size: 10pt; margin-top: 6mm; font-style: italic;
+}
+
+.zavet .preamble {
+  text-align: justify;
+  margin: 6mm 0 8mm;
+  font-style: italic;
+}
+
+.zavet .section {
+  margin: 6mm 0;
+  page-break-inside: avoid;
+}
+.zavet .section h2 {
+  font-size: 11pt; font-weight: 700;
+  letter-spacing: 1.5px;
+  margin: 0 0 2mm;
+  color: var(--color-primary);
+}
+.zavet .section.fake-paragraph h2 {
+  color: var(--color-accent);
+}
+.zavet .section.true-key h2 {
+  color: #15803d;
+}
+.zavet .section p {
+  text-align: justify;
+  margin: 2mm 0;
+}
+.zavet .rada-list {
+  list-style: none; padding-left: 8mm;
+  margin: 3mm 0;
+  counter-reset: radalist;
+}
+.zavet .rada-list li {
+  counter-increment: radalist;
+  margin-bottom: 1.5mm;
+}
+.zavet .rada-list li::before {
+  content: counter(radalist) ". ";
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.zavet .signature-block {
+  margin-top: 12mm;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 12mm;
+}
+.zavet .sig-cell .line {
+  border-top: 1px solid var(--color-line);
+  width: 70mm; margin-bottom: 1mm;
+}
+.zavet .sig-cell .name { font-size: 10.5pt; font-weight: 600; }
+.zavet .sig-cell .role { font-size: 9pt; color: var(--color-muted); font-style: italic; }
+.zavet .sig-note {
+  font-size: 8.5pt; color: var(--color-muted); font-style: italic;
+  margin-top: 1mm;
+}
+
+.zavet .seal-row {
+  margin-top: 8mm; display: flex; gap: 14mm; align-items: flex-start;
+}
+.zavet .seal-row .seal-circle {
+  width: 30mm; height: 30mm; border: 2px solid var(--color-accent);
+  border-radius: 50%;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  font-size: 7pt; color: var(--color-accent);
+  text-align: center; padding: 2mm; font-weight: 600;
+  transform: rotate(-6deg);
+  flex-shrink: 0;
+}
+.zavet .seal-row .notar-block {
+  flex: 1;
+}
+.zavet .seal-row .notar-block .line {
+  border-top: 1px solid var(--color-line);
+  width: 70mm; margin: 5mm 0 1mm;
+}
+
+.zavet .witness-section {
+  margin-top: 8mm;
+  font-size: 10pt;
+}
+.zavet .witness-section ol { padding-left: 6mm; }
+.zavet .witness-section ol li { margin-bottom: 3mm; }
+.zavet .witness-section .line {
+  display: inline-block;
+  border-bottom: 1px solid var(--color-line);
+  min-width: 50mm; height: 5mm; vertical-align: bottom;
+}
+
+.zavet .end-stamp {
+  text-align: center;
+  margin-top: 10mm; padding-top: 4mm;
+  font-size: 9pt; color: var(--color-muted);
+  letter-spacing: 2px;
+  border-top: 3px double var(--color-paper-edge);
+}
+
+/* Padělek extra: chybí § 4, papír mírně žlutější, chybí pečeť */
+.page-fake {
+  background: #f7eed8;
+}
+.page-true .doc-badge { right: 14mm; }
+
+.fake-marker {
+  display: inline-block; padding: 1px 6px;
+  background: #fee2e2; color: #b91c1c;
+  font-size: 8pt; font-weight: 700; letter-spacing: 0.5px;
+  border-radius: 3px;
+  vertical-align: middle; margin-left: 6px;
+}
+
+.missing-paragraph {
+  background: repeating-linear-gradient(45deg, transparent, transparent 6px, rgba(220, 38, 38, 0.08) 6px, rgba(220, 38, 38, 0.08) 12px);
+  border: 1.5px dashed #b91c1c;
+  padding: 6mm; margin: 4mm 0;
+  font-style: italic; color: #b91c1c;
+  font-size: 10pt; text-align: center;
+}
+
+.no-seal-marker {
+  display: inline-block;
+  padding: 6mm 8mm;
+  border: 2px dashed #b91c1c;
+  color: #b91c1c;
+  font-style: italic; font-weight: 600;
+  font-size: 9pt; text-align: center;
+  border-radius: 4px;
+}
+</style>
+</head>
+<body>
+
+<div class="toolbar no-print">
+  <a class="home" href="../pruvodce.html#sablony">← Průvodce hrou</a>
+  <span class="title">📜 Závěť Marka Stanislava — pravá &amp; padělaná</span>
+  <span class="meta">2 dokumenty · A4 · ozdobný papír 120 g</span>
+  <button class="print-btn" onclick="window.print()">🖨️ Tisk</button>
+</div>
+
+<!-- ╔═══════════════ PADĚLANÁ ZÁVĚŤ ═══════════════╗ -->
+<article class="page-a4 page-fake zavet">
+  <div class="doc-badge fake">Padělek<span class="small">do truhly v Šéfce</span></div>
+
+  <div class="doc-header">
+    <h1>Z Á V Ě Ť</h1>
+    <div class="name">Marek Stanislav</div>
+    <p class="role">zakladatel Tábora Světlo</p>
+    <p class="place">Sepsáno v Brně dne 12. června 2026</p>
+  </div>
+
+  <p class="preamble">
+    Já, Marek Stanislav, zakladatel Tábora Světlo, v plném vědomí a při zdravém rozumu, bez nátlaku a vlivu třetích osob, sepisuji tuto svou poslední vůli.
+  </p>
+
+  <section class="section">
+    <h2>§ 1 — Pokračování tábora</h2>
+    <p>Tábor Světlo má pokračovat. Pozemky propůjčené Mendelovou univerzitou v Brně mají být na základě připojeného dodatku prodlouženy o dalších 30 let, propůjčení od rodiny Stehlíkových (loučka u centrální plochy) zůstává v platnosti dle stávající smlouvy.</p>
+  </section>
+
+  <section class="section">
+    <h2>§ 2 — Vedení tábora</h2>
+    <p>Vedení tábora přebírají v dosavadní funkci Karel Malík (hlavní vedoucí) a SoTo (zástupce), spolu s celým stávajícím personálem. Tábor se má řídit duchem, ve kterém vznikl: dobrovolnost, příroda, společenství, žádný zisk.</p>
+  </section>
+
+  <section class="section fake-paragraph">
+    <h2>§ 3 — Správa pozemku <span class="fake-marker">PADĚLEK</span></h2>
+    <p>Vzhledem k mému zdravotnímu stavu a v zájmu zachování ekosystému okolního lesa je majetek tábora předán do správy <strong>Vladimírovi Stehlíkovi</strong>, soukromému hospodáři ze sousedství, který bude pozemek dále spravovat ve prospěch obce a místního ekosystému.</p>
+    <p>Pan Stehlík je tímto ustanoven jediným správcem propůjčené plochy a zástupcem ve věci jednání s Mendelovou univerzitou o budoucím využití pozemku.</p>
+  </section>
+
+  <div class="missing-paragraph">
+    § 4 ZDE CHYBÍ &nbsp;·&nbsp; v originále je „Dědicové tábora" (symbolické dědictví všech táborníků). Padělek § 4 vynechává.
+  </div>
+
+  <section class="section">
+    <h2>§ 5 — Vykonavatel</h2>
+    <p>Vykonavatelem této závěti jmenuji JUDr. Magdalénu Růžičkovou, notářku v Blansku.</p>
+  </section>
+
+  <p style="margin-top: 10mm; font-style: italic;">V Brně dne 12. června 2026</p>
+
+  <div class="signature-block">
+    <div class="sig-cell">
+      <div class="line"></div>
+      <div class="name">Marek Stanislav</div>
+      <div class="role">zakladatel Tábora Světlo</div>
+      <div class="sig-note">[podpis vypadá podobný originálu, ale chybí notářská pečeť]</div>
+    </div>
+    <div class="sig-cell">
+      <div class="no-seal-marker">
+        BEZ ČERVENÉ NOTÁŘSKÉ PEČETI<br>
+        (jen obyčejné kulaté razítko)
+      </div>
+    </div>
+  </div>
+
+  <div class="end-stamp">— Konec dokumentu —</div>
+</article>
+
+<!-- Pomocná stránka mezi dokumenty (jen na obrazovce) -->
+<div class="no-print" style="margin: 32px auto; max-width: 210mm; padding: 0 24px; color: #475569; text-align: center; font-size: 14px;">
+  ──────  PRAVÁ ZÁVĚŤ  ──────
+</div>
+
+<!-- ╔═══════════════ PRAVÁ ZÁVĚŤ ═══════════════╗ -->
+<article class="page-a4 page-true zavet">
+  <div class="doc-badge true">Originál<span class="small">do dutiny buku</span></div>
+
+  <div class="doc-header">
+    <h1>Z Á V Ě Ť</h1>
+    <div class="name">Marek Stanislav</div>
+    <p class="role">zakladatel Tábora Světlo</p>
+    <p class="place">Sepsáno v Brně dne 12. června 2026 · Vlastnoruční dopis. Pevnou rukou.</p>
+  </div>
+
+  <p class="preamble">
+    Já, Marek Stanislav, zakladatel Tábora Světlo, v plné svobodě své vůle a v plném zdraví, bez nátlaku a vlivu třetích osob, ustanovuji následující:
+  </p>
+
+  <section class="section">
+    <h2>§ 1 — Pokračování tábora</h2>
+    <p>Tábor Světlo má pokračovat. Pozemky propůjčené Mendelovou univerzitou v Brně mají být na základě připojeného dodatku prodlouženy o dalších 30 let, propůjčení od rodiny Stehlíkových (loučka u centrální plochy) zůstává v platnosti dle stávající smlouvy.</p>
+  </section>
+
+  <section class="section">
+    <h2>§ 2 — Vedení tábora</h2>
+    <p>Vedení tábora přebírají v dosavadní funkci Karel Malík (hlavní vedoucí) a SoTo (zástupce), spolu s celým stávajícím personálem. Tábor se má řídit duchem, ve kterém vznikl: dobrovolnost, příroda, společenství, žádný zisk.</p>
+  </section>
+
+  <section class="section">
+    <h2>§ 3 — Rada tábora</h2>
+    <p>Pro budoucí rozhodování zřizuji Radu tábora, do níž jmenuji:</p>
+    <ol class="rada-list">
+      <li>Karla Malíka, hlavního vedoucího.</li>
+      <li>Tomáše Sotoniaka, zástupce hlavního vedoucího.</li>
+      <li>Aničku Kellnerovou, starší kuchařku.</li>
+      <li>Magdalénu Hamanovou, zdravotnici.</li>
+      <li>Jendu, zásobovače.</li>
+      <li>Adrianu, pomocnou vedoucí.</li>
+      <li>Aleše Tomka, údržbáře.</li>
+    </ol>
+    <p>Rada má každoročně rozhodovat o směřování tábora a přijímat nové členy.</p>
+  </section>
+
+  <section class="section true-key">
+    <h2>§ 4 — Dědicové tábora ◆</h2>
+    <p style="text-align: center; font-size: 12pt; font-weight: 600; margin: 6mm 0;">
+      Skutečnými dědici tábora — v duchu, ne v právu — prohlašuji každého táborníka, který kdy táborem prošel a kdo jím projde.
+    </p>
+    <p style="text-align: center; font-style: italic;">
+      Tábor patří jim, ne mně.<br>
+      Já jsem byl jen ten, kdo otevřel dveře.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>§ 5 — Dědické listy</h2>
+    <p>Každému současnému účastníkovi i členovi personálu nechť je vystaven dědický list, který stvrzuje jeho symbolické místo v rodině tábora.</p>
+  </section>
+
+  <p style="margin-top: 8mm; font-style: italic;">V Brně dne 12. června 2026</p>
+
+  <div class="signature-block">
+    <div class="sig-cell">
+      <div class="line"></div>
+      <div class="name">Marek Stanislav, m. p.</div>
+      <div class="role">zakladatel Tábora Světlo</div>
+      <div class="sig-note">[vlastní podpis]</div>
+    </div>
+    <div class="sig-cell">
+      <div class="seal-row">
+        <div class="seal-circle">
+          ČERVENÁ<br>NOTÁŘSKÁ<br>PEČEŤ<br><br>JUDr. M.R.<br>Blansko
+        </div>
+        <div class="notar-block">
+          <div class="line"></div>
+          <div class="name" style="font-size:10pt;">JUDr. Magdaléna Růžičková</div>
+          <div class="role">notářka v Blansku</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="witness-section">
+    <strong style="color: var(--color-primary);">Svědci podpisu</strong> (skutečně viděli pana Stanislava podepsat):
+    <ol>
+      <li>Jiří Stanislav (bratr Marka) <span class="line"></span></li>
+      <li>SoTo (zástupce hl. vedoucího) <span class="line"></span></li>
+    </ol>
+  </div>
+
+  <div class="end-stamp">═══ Konec závěti ═══</div>
+</article>
+
+<!-- Vysvětlivky pro vedoucí — neviditelné při tisku -->
+<section class="no-print" style="max-width: 210mm; margin: 24px auto; padding: 24px; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+  <h2 style="margin-top:0; color: #1e3a5f;">Klíčové znaky pro děti k odhalení</h2>
+  <table style="width:100%; border-collapse:collapse; font-size:14px;">
+    <thead style="background: #1e3a5f; color: white;">
+      <tr><th style="text-align:left; padding:10px;">Znak</th><th style="text-align:left; padding:10px;">Padělek</th><th style="text-align:left; padding:10px;">Originál</th></tr>
+    </thead>
+    <tbody>
+      <tr><td style="padding:8px; border-top:1px solid #e2e8f0;"><strong>Notářská pečeť</strong></td><td style="padding:8px; border-top:1px solid #e2e8f0; color:#b91c1c;">CHYBÍ (jen obyč. razítko)</td><td style="padding:8px; border-top:1px solid #e2e8f0; color:#15803d;">Červený pečetní vosk</td></tr>
+      <tr style="background:#f8fafc;"><td style="padding:8px;"><strong>§ 4</strong></td><td style="padding:8px; color:#b91c1c;">CHYBÍ úplně</td><td style="padding:8px; color:#15803d;">„Dědicové tábora" — symbolické dědictví</td></tr>
+      <tr><td style="padding:8px; border-top:1px solid #e2e8f0;"><strong>§ 3</strong></td><td style="padding:8px; border-top:1px solid #e2e8f0; color:#b91c1c;">Stehlík = jediný správce pozemku</td><td style="padding:8px; border-top:1px solid #e2e8f0; color:#15803d;">Rada tábora (7 jmen)</td></tr>
+      <tr style="background:#f8fafc;"><td style="padding:8px;"><strong>Podpis Marka</strong></td><td style="padding:8px; color:#b91c1c;">Podobný, ne identický</td><td style="padding:8px; color:#15803d;">Vlastnoruční, kvalitní</td></tr>
+      <tr><td style="padding:8px; border-top:1px solid #e2e8f0;"><strong>Datum</strong></td><td style="padding:8px; border-top:1px solid #e2e8f0;">12. 6. 2026</td><td style="padding:8px; border-top:1px solid #e2e8f0;">12. 6. 2026 (= obě stejné — to je past!)</td></tr>
+    </tbody>
+  </table>
+  <p style="margin-top:12px; font-size:13px; color:#64748b;">
+    <strong>Notářka Růžičková</strong> potvrdí: „Originál byl s pečetí. Tohle je padělek." — toto je hlavní rozpoznávací znak.<br>
+    <strong>SoTo</strong> originál opravdu podepsal jako svědek — jeho podpis budou děti znát z výslechových protokolů.
+  </p>
+</section>
+
+</body>
+</html>

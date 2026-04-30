@@ -1,0 +1,13 @@
+.DS_Store
+.playwright-mcp/
+
+# Test screenshots z Playwrightu (ne součástí repa)
+/day-*.png
+/dedicky-list.png
+/diagram-*.png
+/mapa.png
+/obsazeni*.png
+/protokol.png
+/prukaz.png
+/sablony-section.png
+/zavet-*.png

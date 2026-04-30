@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Den 4 — Mapa tábora a forenziku · Tábor Světlo 2026</title>
+<style>
+:root {
+  --color-primary: #1e3a5f;
+  --color-primary-light: #2c5282;
+  --color-accent: #d63031;
+  --color-accent-bg: #fadbd8;
+  --color-helper: #e67e22;
+  --color-success: #27ae60;
+  --color-success-bg: #d5f5e3;
+  --color-bg: #f8fafc;
+  --color-card: #ffffff;
+  --color-text: #1e293b;
+  --color-muted: #64748b;
+  --color-border: #e2e8f0;
+  --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.04);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", Roboto, sans-serif;
+  line-height: 1.7; color: var(--color-text); background: var(--color-bg);
+  margin: 0; padding: 0;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+
+header.day-hero {
+  background: linear-gradient(135deg, #1e3a5f 0%, #2c5282 100%);
+  color: white; padding: 56px 0 40px;
+}
+.day-hero .pill {
+  display: inline-block; padding: 4px 12px; background: rgba(255,255,255,0.18);
+  border-radius: 16px; font-size: 13px; margin-bottom: 12px; letter-spacing: 0.3px;
+}
+.day-hero h1 { font-size: 36px; margin: 0 0 8px; font-weight: 700; line-height: 1.2; }
+.day-hero .subtitle { font-size: 17px; opacity: 0.92; margin: 0; }
+
+nav.day-nav {
+  position: sticky; top: 0; z-index: 50;
+  background: #1e3a5f; color: #f1f5f9;
+  border-bottom: 1px solid #2c5282; box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+nav.day-nav .container {
+  display: flex; gap: 8px; align-items: center; flex-wrap: wrap;
+  padding: 10px 24px;
+}
+nav.day-nav a {
+  color: #f1f5f9; text-decoration: none; padding: 8px 14px;
+  font-size: 14px; font-weight: 500; border-radius: 6px;
+  transition: background 0.15s;
+}
+nav.day-nav a:hover { background: rgba(255,255,255,0.10); }
+nav.day-nav a.home { background: #fbbf24; color: #1e3a5f; font-weight: 600; }
+nav.day-nav a.home:hover { background: #fcd34d; }
+nav.day-nav .spacer { flex: 1; }
+nav.day-nav .disabled { opacity: 0.4; pointer-events: none; }
+
+main.day-content { padding: 40px 0 64px; }
+main.day-content .container {
+  background: var(--color-card); padding: 40px 56px;
+  border-radius: 12px; box-shadow: var(--shadow); margin-top: -24px;
+}
+
+main.day-content h1 { display: none; }
+main.day-content h2 {
+  color: var(--color-primary); font-size: 24px; font-weight: 700;
+  margin: 36px 0 16px; padding-bottom: 8px;
+  border-bottom: 2px solid var(--color-border);
+}
+main.day-content h2:first-child { margin-top: 0; }
+main.day-content h3 {
+  color: var(--color-primary-light); font-size: 19px; font-weight: 600;
+  margin: 28px 0 12px;
+}
+main.day-content h4 {
+  color: var(--color-text); font-size: 16px; font-weight: 600;
+  margin: 20px 0 8px;
+  text-transform: uppercase; letter-spacing: 0.4px;
+}
+main.day-content p { margin: 12px 0; }
+main.day-content ul, main.day-content ol { padding-left: 24px; margin: 12px 0; }
+main.day-content li { margin-bottom: 6px; }
+main.day-content strong { color: var(--color-primary); font-weight: 600; }
+main.day-content em { color: var(--color-muted); }
+main.day-content hr {
+  border: 0; border-top: 1px solid var(--color-border); margin: 32px 0;
+}
+
+main.day-content blockquote {
+  margin: 16px 0; padding: 12px 20px;
+  background: #f8fafc; border-left: 4px solid var(--color-primary-light);
+  border-radius: 0 8px 8px 0; color: var(--color-text);
+}
+main.day-content blockquote p { margin: 6px 0; }
+main.day-content blockquote strong { color: var(--color-primary); }
+
+main.day-content table {
+  width: 100%; border-collapse: collapse; margin: 16px 0;
+  font-size: 14px; box-shadow: var(--shadow); border-radius: 6px; overflow: hidden;
+  table-layout: auto;
+}
+main.day-content table th {
+  background: var(--color-primary); color: white; text-align: left;
+  padding: 10px 12px; font-weight: 600;
+  vertical-align: top; word-break: break-word;
+}
+main.day-content table td {
+  padding: 8px 12px; border-top: 1px solid var(--color-border);
+  vertical-align: top; word-break: break-word; overflow-wrap: anywhere;
+}
+main.day-content table tr:nth-child(even) td { background: #f8fafc; }
+main.day-content table td:first-child {
+  color: var(--color-primary);
+  font-family: "JetBrains Mono", "Courier New", monospace;
+  font-size: 13px;
+}
+/* Časy ve formátu HH:MM lze ponechat bez lámání — krátké stringy */
+main.day-content table td:first-child:is(.time, [data-time]) {
+  white-space: nowrap;
+}
+
+main.day-content code {
+  font-family: "JetBrains Mono", "Courier New", monospace;
+  background: var(--color-bg); border: 1px solid var(--color-border);
+  padding: 1px 6px; border-radius: 4px; font-size: 0.92em;
+}
+
+footer.day-footer {
+  background: #1e3a5f; color: #cbd5e1;
+  padding: 28px 0; text-align: center; font-size: 14px;
+}
+footer.day-footer a { color: #fbbf24; text-decoration: none; font-weight: 600; }
+footer.day-footer a:hover { text-decoration: underline; }
+footer.day-footer .footer-nav { margin-top: 12px; }
+footer.day-footer .footer-nav a { margin: 0 12px; }
+
+@media (max-width: 768px) {
+  .day-hero h1 { font-size: 26px; }
+  .day-hero .subtitle { font-size: 15px; }
+  main.day-content .container { padding: 24px; margin-top: -16px; }
+  main.day-content h2 { font-size: 20px; }
+  main.day-content h3 { font-size: 17px; }
+  main.day-content table { font-size: 13px; }
+  main.day-content table td, main.day-content table th { padding: 6px 8px; }
+  nav.day-nav .container { padding: 8px 12px; }
+  nav.day-nav a { padding: 6px 10px; font-size: 13px; }
+}
+@media print {
+  nav.day-nav, footer.day-footer { display: none; }
+  main.day-content .container { box-shadow: none; padding: 0; }
+}
+</style>
+</head>
+<body>
+
+<header class="day-hero">
+  <div class="container">
+    <span class="pill">Den 4 · 14. 7. (úterý)</span>
+    <h1>Mapa tábora a forenziku</h1>
+    <p class="subtitle">Detailní program a příběh dne</p>
+  </div>
+</header>
+
+<nav class="day-nav">
+  <div class="container">
+    <a class="home" href="../pruvodce.html#dny">← Průvodce hrou</a>
+    <span class="spacer"></span>
+    <a href="den_03.html">← Den 3</a>
+    <a href="den_05.html">Den 5 →</a>
+  </div>
+</nav>
+
+<main class="day-content">
+  <div class="container">
+    <h1>DEN 4 — Úterý 14. 7. 2026: Mapa tábora a forenziku</h1>
+<blockquote>
+<p><strong>Motto dne</strong>: „Stopy mluví. Ale jen tomu, kdo je umí číst."</p>
+</blockquote>
+<hr />
+<h2>Stručná osnova (timetable)</h2>
+<table>
+<thead>
+<tr>
+<th>Čas</th>
+<th>Co se děje</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>07:30 – 08:30</td>
+<td>Snídaně</td>
+</tr>
+<tr>
+<td>08:30 – 08:45</td>
+<td><strong>Adriana zmíní postřeh o Santanu SoTa</strong> (R02) → silně rudá stopa proti SoTovi</td>
+</tr>
+<tr>
+<td>08:45 – 12:00</td>
+<td><strong>ETAPOVÁ HRA č. 3: Mapa tábora + Forenziku</strong> (rotace stanovišť)</td>
+</tr>
+<tr>
+<td>12:00 – 13:00</td>
+<td>Oběd</td>
+</tr>
+<tr>
+<td>13:00 – 14:00</td>
+<td>Klid ve stanech</td>
+</tr>
+<tr>
+<td>14:00 – 16:00</td>
+<td><strong>Velký orientační běh „Stopy v lese"</strong> (sport + herní linka)</td>
+</tr>
+<tr>
+<td>16:00 – 16:30</td>
+<td><strong>Komická drobnost: Preclík a koláč</strong> (R07)</td>
+</tr>
+<tr>
+<td>16:30 – 17:00</td>
+<td><strong>Bombshell č. 1: SoTo má klíče od všeho</strong> (souhrn rudých stop proti SoTovi)</td>
+</tr>
+<tr>
+<td>17:00 – 17:30</td>
+<td><strong>Bombshell č. 2: anonymní dopis D01</strong> (Caesar +3)</td>
+</tr>
+<tr>
+<td>17:30 – 18:00</td>
+<td>Týmy analyzují, dopisují deníky</td>
+</tr>
+<tr>
+<td>18:00 – 19:00</td>
+<td>Večeře</td>
+</tr>
+<tr>
+<td>19:30 – 21:00</td>
+<td>Volný čas / štafetové hry u ohniště</td>
+</tr>
+<tr>
+<td>21:00 – 22:00</td>
+<td>Klid u ohně, vyprávění</td>
+</tr>
+<tr>
+<td>22:00</td>
+<td>Večerka</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Příběh dne (z pohledu dětí)</h2>
+<p>Třetí ráno v táboře, druhé ráno vyšetřování. Týmy se probudí — v deníku už mají hodně informací. Karel s nimi ráno <strong>probere stav vyšetřování</strong>:</p>
+<blockquote>
+<p>„Týmy, dělali jste skvěle. Karla, Anežku a Preclíka jste eliminovali. Aničku hodnotíte jako klíčovou svědkyni. Magda slíbila, že den 7 doloží svůj lékařský deník. Jenda a Adriana nemají svědky, ale ani motiv. <strong>Aleš má slabé alibi a tichou nervozitu</strong>. <strong>A SoTo — Tomáš Sotoniak — je vzdálený synovec pana Marka, má klíče od všeho a vyhýbavě odpovídá na otázku, kde byl ráno</strong>. Ten nás dnes zajímá nejvíc.
+Dnes nás čeká <strong>dvojí úkol</strong>: nakreslit mapu tábora se všemi stopami a projít <strong>šest forenzních stanovišť</strong>. Po obědě půjdeme všichni na orientační běh do okolního lesa — bude to zároveň kontrola, jestli si pamatujete, kde které stopy byly."</p>
+</blockquote>
+<p><strong>Adriana</strong> přidá: <em>„Ještě jedna věc, kterou jsem si všimla. Santana Tomáše stála </em><em>včera večer u stromu</em><em> u lesní cesty. </em><em>Dnes ráno stojí o pět metrů blíž k cestě</em><em>. Někdo s ní v noci jezdil. Já jsem si toho všimla — z autosalonu, kde tati pracoval. Auta si pamatuju, kde stojí."</em> — <strong>klíčová rudá stopa R02</strong>.</p>
+<p>SoTo, který stojí vedle Karla, <strong>mlčí</strong>. Děti se na něj dívají. Někdo se zeptá: <em>„Kde jsi byl, Tomáši?"</em> SoTo: <em>„Nemůžu o tom mluvit."</em> Děti to do deníku zapisují <strong>velkými písmeny</strong>.</p>
+<hr />
+<h2>Etapová hra č. 3: Mapa tábora + Forenziku</h2>
+<h3>Část A: Mapa tábora (90 min, rotace v 6 stanovištích)</h3>
+<p>Každý tým dostane:
+- <strong>Velký podklad A2</strong> (šedá síť, prázdná mapa)
+- <strong>Sadu fixů</strong>
+- <strong>Legendu</strong>: stany = obdélníky, stromy = trojúhelníky, místa činu = červená X, stopy = zelený puntík
+- Šablona „mapa tábora" (viz <code>sablony/mapa_tabora_sablona.md</code>)</p>
+<p>Týmy procházejí 6 lokací:
+1. <strong>Šéfka</strong> (velitelský stan, dřevěná truhla s mapami, místo činu — kořen smrku 15 m za Šéfkou)
+2. <strong>Stany účastníků + stany personálu</strong> (rozmístění oddílů, stan Aleše, stan Magdy)
+3. <strong>Polní kuchyně + jídelní plachta</strong> (Aničkin výhled na Šéfku)
+4. <strong>Stan zdravotky + ohniště + sklad</strong> (stan Jendy a Adriany)
+5. <strong>Studánka, altán, potok, starý buk u potoka</strong> (NEVCHÁZET do dutiny — chráněný strom!)
+6. <strong>Lesní cesta směrem k samotě Stehlíkových</strong> (cca 1 km lesem) + <strong>parkoviště s Santanou SoTa</strong></p>
+<p>Na každé lokaci stojí <strong>vedoucí v roli „průvodce po místě"</strong>, který popíše <strong>pohled svědka</strong>:
+- Co se zde stalo nebo děje?
+- Kdo zde byl 11. → 12. 7. v noci?
+- Co lze zde najít?</p>
+<p>Týmy zaznamenávají <strong>na mapu</strong> všechny stopy + důležité body. Mapa zůstává v deníku do konce tábora a každý den se aktualizuje.</p>
+<blockquote>
+<p><strong>Důležité</strong>: stanoviště č. 5 (starý buk u potoka) — vedoucí zdůrazní, že se jedná o <strong>chráněný strom</strong> a do dutiny se <strong>nesahá</strong>. Ve skutečnosti je tam už uložená pravá závěť, ale to děti neví. Buk se na mapě <strong>vyznačí</strong>, ale <strong>nezkoumá</strong>.</p>
+</blockquote>
+<h3>Část B: Forenzní stanoviště (90 min, rotace v 6 stanovištích)</h3>
+<p>Vedoucí mají k dispozici 6 stanovišť (viz <code>10_FORENZNI_STANOVISTE.md</code>):</p>
+<table>
+<thead>
+<tr>
+<th>Stanoviště</th>
+<th>Co se dělá</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Daktyloskopie</td>
+<td>Sběr otisků prstů, porovnání s otisky personálu</td>
+</tr>
+<tr>
+<td>2. Stopy bot</td>
+<td>Měření, identifikace velikosti, typu podrážky</td>
+</tr>
+<tr>
+<td>3. Vlasy a vlákna</td>
+<td>Pozorování pod lupou, porovnání s vzorky</td>
+</tr>
+<tr>
+<td>4. Identikit</td>
+<td>Skládání podezřelého z rysů (na základě výpovědi Aničky — silueta)</td>
+</tr>
+<tr>
+<td>5. Grafologie</td>
+<td>Porovnávání rukopisu — kdo psal padělek závěti?</td>
+</tr>
+<tr>
+<td>6. Fotodokumentace + popel</td>
+<td>Foto stop + analýza popela z dýmky (zápach, barva)</td>
+</tr>
+</tbody>
+</table>
+<p>Každý tým 15 min na stanovišti × 6 = 90 min.</p>
+<h3>Klíčová zjištění z forenziku</h3>
+<table>
+<thead>
+<tr>
+<th>Stanoviště</th>
+<th>Co děti zjistí</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Daktyloskopie</td>
+<td>F03 (otisk dlaně u truhly s mapami) <strong>NEPATŘÍ nikomu z personálu</strong>. Otisk je <strong>neúplný</strong>, jako by ho někdo udělal v rukavici. „<strong>Pachatel byl zvenku</strong> — nebo měl rukavice."</td>
+</tr>
+<tr>
+<td>Stopy bot</td>
+<td><strong>F04</strong>: otisk <strong>kožené boty velikosti 44</strong> v rose před Šéfkou. <strong>Personál nosí pohorky/gumovky</strong> (ověřeno). <strong>Aleš má 43, Tom Buchta 42, Jenda 45 ale gumovky, SoTo 41 polobotky, Karel 43 gumovky, ostatní menší.</strong> Kožené boty 44 NEMÁ nikdo z personálu.</td>
+</tr>
+<tr>
+<td>Vlasy a vlákna</td>
+<td><strong>F10</strong>: na rohu truhly s mapami zachycen krátký vlas + drobné vlákno <strong>z kožené rukavice</strong>. Personál kožené rukavice nenosí. „<strong>Pachatel měl kožené rukavice — neobvyklé v červencovém lese.</strong>"</td>
+</tr>
+<tr>
+<td>Identikit</td>
+<td>Týmy skládají z rysů obličej. Mají k dispozici <strong>Aničkin popis siluety</strong> (ne tváře!) — vyšší, vousatá silueta s baterkou. <strong>SoTo NEODPOVÍDÁ</strong> (je hladce oholený, štíhlý). Zatím <strong>nikdo z personálu neodpovídá</strong> plně. <strong>Vedoucí cizí?</strong></td>
+</tr>
+<tr>
+<td>Grafologie</td>
+<td>Padělek závěti porovnán s rukopisy personálu — <strong>rukopis NEPATŘÍ nikomu z personálu</strong>. Dospějí k závěru: pachatel je outsider, padělek vyrobil někdo třetí.</td>
+</tr>
+<tr>
+<td>Popel z dýmky (F12)</td>
+<td>V rohu Šéfky byl nalezen <strong>popel z dýmky se zvláštní směsí</strong> (nasládlá vůně, šedý odstín). Personál: Aleš nekouří, Karel nekouří, <strong>SoTo kouří jen cigarety</strong>, Magda nekouří, Jenda nekouří, Anička nekouří, Anežka nekouří, Preclík nekouří. <strong>Pachatel je dýmkař.</strong> Cizí.</td>
+</tr>
+</tbody>
+</table>
+<h3>Stopa F09 — pneumatika pickupu</h3>
+<p>Jenda + Adriana dnes ukáží týmům něco, co si dnes ráno všimli na lesní cestě, asi 300 m od tábora směrem k samotě:</p>
+<blockquote>
+<p>Jenda: „Týmy, ráno jsem cestou na poštu zahlédl <strong>stopu pneumatiky</strong> v měkké hlíně lesní cesty. Stopa není od našeho auta — naše auto je <strong>terénní dodávka</strong>, jezdí denně, znám její vzorek. <strong>Tahle stopa je z pickupu</strong> — širší, hrubší vzorek. <strong>Žádný takový pickup tady letos neměl co dělat.</strong>"</p>
+<p>Adriana: „A není to taky Santana Tomáše — Santana má užší silniční pneu, jen osobní auto."</p>
+</blockquote>
+<p>Týmy stopu zaměří, vyfotí, otisknou (sádra). <strong>F09 — pickup, ne osobní auto.</strong> Děti si zaznamenávají do deníku. <strong>Důležitý detail</strong>: pickup ≠ Santana, takže <strong>noční motor v 0:45 nebyl vždy SoTo</strong> — ale obojí může být v noci přítomné. Děti budou nuceny rozlišit dvě nezávislé skutečnosti.</p>
+<h3>Drobná turistická stopa od Jeníka (S24)</h3>
+<p>Jeník (asistent týmu Lišky), který <strong>ráno chodí na lesní výlet</strong> sám, přinese týmu Lišky postřeh: <em>„Hele, na lesní cestě k samotě jsou ráno čerstvé otisky bot 44 — kožené, ne pohorky. A vede tam i ten otisk pneumatiky. Asi by se to hodilo."</em> — <strong>potvrzuje F09 a F04 v terénu</strong>.</p>
+<hr />
+<h2>Klíčový moment dne 1: Komická drobnost — Preclík a koláč (R07)</h2>
+<p>Po orientačním běhu (16:00) tým Sojek u polní kuchyně objeví <strong>otisky velkých rukou na pekáči</strong>, <strong>drobky pod stolem</strong> a <strong>chybějící koláč</strong> (Anička stěžuje: „mně někdo včera v noci ukradl jeden z těch výborných koláčů!"). Forenzní expert tým otiskne otisky → odpovídají Preclíkovi.</p>
+<p><strong>Konfrontace:</strong> Preclík se zubí, červená se: <em>„Hele... no... já si v noci zašel do kuchyně, měl jsem na ten koláč chuť, no. Odsoudíte mě? Vím, že jsem to neměl. Aničko, promiň. </em><em>Až bude soud, prosím, nepošli na mě paní Magdu s injekcí.</em><em>"</em></p>
+<p>Děti se hlasitě zasmějí. Anička: <em>„Preclíku, příště si řekni, </em><em>dám ti dva</em><em>."</em> <strong>Komická drobná stopa eliminována</strong> v té samé minutě.</p>
+<hr />
+<h2>Klíčový moment dne 2: Souhrn rudých stop proti SoTovi (16:30)</h2>
+<p>Karel svolá tábor:</p>
+<blockquote>
+<p>„Týmy, máme tady <strong>silnou rudou stopu</strong>. Pojďme to dát dohromady:
+1. <strong>SoTo je vzdálený synovec pana Marka</strong> — krevní pouto.
+2. <strong>SoTo má klíče od všeho</strong> — Šéfky, kufru, skladu, dodávky.
+3. <strong>Santana stála ráno na jiném místě než večer</strong> — někdo s ní jezdil.
+4. <strong>Jenda a Adriana slyšeli motor v 0:45</strong> — mohlo to být tedy SoTův.
+5. <strong>Klárka pamatuje, jak Marek se SoTem mluvili vážně den 1 odpoledne</strong> — o čem?
+6. <strong>SoTo odpovídá vyhýbavě</strong> na všechny otázky o noci.</p>
+<p><strong>Tomáš zatím tedy zůstává podezřelým č. 1.</strong>"</p>
+</blockquote>
+<p>SoTo, opřený o sloup plachty, nezvedne hlavu od mapy: <em>„Karle, vyšetřujte, prosím vás. Vyřídím to, jen ne dnes. Nebudu si dnes vymýšlet, jen abych vás uklidnil."</em> Drsná odpověď. Děti to <strong>přijmou jako přiznání</strong>.</p>
+<blockquote>
+<p><strong>Důležité — SoTo je RUDÁ STOPA</strong>: Děti budou možná pět dní přesvědčené, že je pachatel. <strong>Ve skutečnosti SoTo plnil tajné Markovo přání</strong> — vyzvedl v noci dodatek smlouvy v Brně. To se objasní <strong>až den 7</strong> Markovým vzkazem a <strong>definitivně den 8</strong> notářkou v Blansku.</p>
+</blockquote>
+<hr />
+<h2>Klíčový moment dne 3: Anonymní dopis D01 (17:00) — Caesar +3</h2>
+<p>Při návratu z orientačního běhu <strong>najde tým Sojek</strong> za Šéfkou pod kamenem <strong>přeložený list papíru</strong>. Žádný podpis. Text:</p>
+<pre><code>NORLPH QLNGR QHPHO — SRPRKO YODVWQL
+</code></pre>
+<p>Karel požádá týmy, aby zprávu <strong>rozluštily</strong>. Šifra: <strong>Caesarova posunutá +3</strong> (klíč mohou týmy najít v týdenním plánu — symbol „+3" v rohu).</p>
+<p><strong>Rozluštění</strong>: </p>
+<blockquote>
+<p><strong>„KLÍČE NIKDO NEMĚL — POMOHL VLASTNÍ"</strong></p>
+<p><strong>Karel</strong>: „Co to znamená? Tábor nemá zámky — Šéfka má jen plachtu. Truhla má jen víko. <strong>Pisatel mluví v metafoře</strong>: KLÍČE = přístup do Šéfky. NIKDO ZVENKU NEMĚL přístup — POMOHL někdo VLASTNÍ. <strong>Někdo z personálu pachateli pomohl.</strong>"</p>
+</blockquote>
+<p>Děti začnou tlačit na Aleše, na Magdu a hlavně na <strong>SoTa</strong>. Magda slibuje den 7 deník. <strong>Aleš mlčí. SoTo mlčí.</strong></p>
+<blockquote>
+<p><strong>Pisatel D01 je vedoucí v roli — anonymně.</strong> Typicky <strong>Karel</strong> (chce postrčit vyšetřování). Identita pisatele se v rámci hry <strong>nikdy oficiálně neodhalí</strong> — je to herní mechanismus.</p>
+</blockquote>
+<hr />
+<h2>Etapová hra č. 4: Orientační běh „Stopy v lese" (14:00 – 16:00)</h2>
+<blockquote>
+<p><strong>Spojení sportu a herní linky.</strong></p>
+</blockquote>
+<h3>Trasa</h3>
+<p>2,5 km lesem kolem tábora, 12 stanovišť. Mapy připravené (vycházející z táborové mapy, obohacené o lesní cesty), <strong>buzola v každém týmu</strong>.</p>
+<h3>Stanoviště (12)</h3>
+<ol>
+<li><strong>Stopy bot</strong> — najdi otisk a změř ho</li>
+<li><strong>Šifra Caesar</strong> — dešifruj zprávu (= POMOC)</li>
+<li><strong>Pozorování</strong> — kolik žaludů je na tomto dubu?</li>
+<li><strong>Mapa</strong> — najdi v terénu místo z mapy</li>
+<li><strong>Indicie</strong> — najdi zalepený obal s otázkou</li>
+<li><strong>Foto</strong> — vyfoť tým s pamětním kamenem (kámen u zatáčky lesní cesty s vyrytým letopočtem 1997)</li>
+<li><strong>Identifikace</strong> — najdi a popiš <strong>otisk pneumatiky pickupu</strong> (= F09 v terénu)</li>
+<li><strong>Logika</strong> — řešení detektivního puzzle</li>
+<li><strong>Šifra Morseovka</strong> — dekóduj signály</li>
+<li><strong>Týmová spolupráce</strong> — překážka (přechod přes kládu nad potůčkem)</li>
+<li><strong>Otázka pro tým</strong>: kdo bydlí na nejbližší samotě 1 km od tábora? (Žádné jméno zatím nepadne — odpověď „rodina hospodářů Stehlíkových" je v matrice tábora 1997, kterou týmy najdou v Šéfce na nástěnce s historií. Bonus pro tým, který si toho všimne.)</li>
+<li><strong>Cílová pamětní cedule „Tábor Světlo, 30 let"</strong> — týmy podepíší svým týmovým razítkem</li>
+</ol>
+<h3>Body</h3>
+<ul>
+<li>Čas: 1.–6. místo body od 30 do 5</li>
+<li>Správnost odpovědí: 1–20 b.</li>
+<li>Stanoviště 11 — <strong>první tým, který napíše „Stehlíkovi"</strong> dostane bonus 30 b. (Většina týmů zatím jméno neuvidí — je to <strong>rudá nit pro děti, které dobře čtou nástěnky</strong>.)</li>
+</ul>
+<hr />
+<h2>Materiál pro den 4</h2>
+<ul>
+<li><strong>6 mapových podkladů A2</strong> (šedá síť) + sady fixů</li>
+<li><strong>Forenzní vybavení</strong> (viz 10_FORENZNI_STANOVISTE.md): polštářky na otisky, papíry, lupy, sádra na stopy bot/pneumatik, mikroskop nebo silná lupa pro vlasy</li>
+<li><strong>Otisky podezřelých</strong> (předem připravené karty s otisky personálu pro porovnání) — včetně otisků Preclíka pro komickou stopu R07</li>
+<li><strong>Vzorky vlasů a vláken</strong> personálu (sběr ze stanů, hřebenů — předem)</li>
+<li><strong>Vzorek vlákna z kožené rukavice</strong> (předem připravený — tmavá hovězí kůže)</li>
+<li><strong>Identikit</strong> — listy s rysy, skládací (vlasy, oči, nos, ústa, vousy)</li>
+<li><strong>Vzorky rukopisu</strong> všech členů personálu</li>
+<li><strong>Padělek závěti</strong> (kopie vyrobená vedoucími — bez pečetě)</li>
+<li><strong>Fotoaparát / dva mobily</strong> v tábořišti</li>
+<li><strong>Vzorek popela z dýmky F12</strong></li>
+<li><strong>Sádrový otisk pneumatiky pickupu F09</strong></li>
+<li><strong>Anonymní dopis D01</strong> Caesar +3</li>
+<li><strong>Komická rekvizita R07</strong>: chybějící koláč, drobky, otisky velkých rukou na pekáči</li>
+<li><strong>Orientační běh</strong>: stanoviště, šifry, kontrolky, krátké provazové překážky</li>
+</ul>
+<hr />
+<h2>Indicie předané dnes</h2>
+<table>
+<thead>
+<tr>
+<th>Kód</th>
+<th>Indicie</th>
+<th>Co znamená</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>F03 (analyzována)</td>
+<td>Otisk u truhly NEPATŘÍ nikomu z personálu — neúplný, přes rukavici</td>
+<td><strong>Pachatel je outsider + nosil rukavice</strong></td>
+</tr>
+<tr>
+<td>F04 (analyzována)</td>
+<td>Otisk kožené boty velikosti 44 v rose před Šéfkou — neodpovídá personálu</td>
+<td><strong>Pachatel je outsider</strong></td>
+</tr>
+<tr>
+<td>F10 (analyzována)</td>
+<td>Vlas + vlákno z kožené rukavice na rohu truhly</td>
+<td><strong>Pachatel měl kožené rukavice</strong></td>
+</tr>
+<tr>
+<td>F09</td>
+<td>Stopa pneumatiky pickupu na lesní cestě k samotě</td>
+<td><strong>V noci tudy projel pickup</strong></td>
+</tr>
+<tr>
+<td>F12 (objevena)</td>
+<td>Popel z dýmky se zvláštní směsí v rohu Šéfky</td>
+<td><strong>Pachatel je dýmkař — cizí</strong></td>
+</tr>
+<tr>
+<td>Grafologie</td>
+<td>Rukopis padělku není od nikoho z personálu</td>
+<td><strong>Pachatel je outsider</strong></td>
+</tr>
+<tr>
+<td>Identikit</td>
+<td>Aničkina silueta — vyšší, vousatá, s baterkou — <strong>NESEDÍ na SoTa</strong></td>
+<td><strong>Pachatel je outsider, vousatý</strong></td>
+</tr>
+<tr>
+<td><strong>R02</strong></td>
+<td>Adriana — Santana stojí ráno na jiném místě</td>
+<td><strong>Posiluje rudou stopu proti SoTovi</strong></td>
+</tr>
+<tr>
+<td><strong>R07</strong></td>
+<td>Preclík přizná noční nájezd na koláč — komická eliminace</td>
+<td>Drobné odlehčení napětí</td>
+</tr>
+<tr>
+<td>S24 (Jeník)</td>
+<td>Turistická stopa pneumatiky pickupu na lesní cestě</td>
+<td>Potvrzuje F09</td>
+</tr>
+<tr>
+<td>D01</td>
+<td>Anonymní dopis Caesar +3: „KLÍČE NIKDO NEMĚL — POMOHL VLASTNÍ"</td>
+<td><strong>Někdo z personálu pomohl pachateli zvenku</strong></td>
+</tr>
+<tr>
+<td>Mapa</td>
+<td>Týmová mapa tábora</td>
+<td>Pracovní artefakt do konce tábora</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Obsazení dne 4</h2>
+<table>
+<thead>
+<tr>
+<th>Postava</th>
+<th>Aktivita</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Karel Malík</td>
+<td>Koordinuje, oznámení rudých stop proti SoTovi</td>
+</tr>
+<tr>
+<td>SoTo</td>
+<td>Forenziku (drsně), anonymní dopis (skrytě? alternativa Karel)</td>
+</tr>
+<tr>
+<td>Adriana</td>
+<td><strong>Klíčový postřeh ráno o Santanu</strong> — R02</td>
+</tr>
+<tr>
+<td>Anička Kellnerová</td>
+<td>Klidná, polní kuchyně, dnes nemluví o noci</td>
+</tr>
+<tr>
+<td>Anežka Kellnerová</td>
+<td>Polní kuchyně, vede stanoviště mapy</td>
+</tr>
+<tr>
+<td>Magda Hamanová</td>
+<td>Stanoviště mapy (vede zdravotku)</td>
+</tr>
+<tr>
+<td>Jenda + Adriana</td>
+<td>Společně zmíní stopu pneumatiky (F09)</td>
+</tr>
+<tr>
+<td>Aleš Tomek</td>
+<td>Stanoviště mapy (vede přístřešek údržby) — chová se klidně, jen v očích jemná nervozita</td>
+</tr>
+<tr>
+<td>Preclík</td>
+<td><strong>Komická scéna s koláčem (R07)</strong></td>
+</tr>
+<tr>
+<td>Jeník</td>
+<td>Turistický postřeh (S24) — předá týmu Lišky</td>
+</tr>
+<tr>
+<td>Tom Buchta</td>
+<td>Vedení Sojek na orientačním běhu</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Tipy pro vedoucí</h2>
+<ol>
+<li><strong>Forenziku je magická pro děti</strong> — opravdu se snažte mít kvalitní pomůcky. Razítkový polštářek + papír na otisky funguje skvěle. Pokud máte rozpočet, fingerprinting kit z dětského obchodu = zlato. Sádrový odlitek pneumatiky stojí pět minut a působí na děti silně.</li>
+<li><strong>Mapu nakreslit pomalu, pečlivě</strong> — to je zápas trpělivosti pro děti. Vedoucí mohou pomoci s kompozicí. Mapa <strong>bude artefakt do konce tábora</strong>.</li>
+<li><strong>Bombshell o SoTovi</strong> musí být dramatický, ale <strong>ne odsuzující</strong>. SoTo zůstává zástupce, drží svůj důvod mlčet. Děti budou mít tendenci ho vyšetřovat ostře, vedoucí by je měli <strong>vést k důslednosti, ne k hrubosti</strong>.</li>
+<li><strong>Komická scéna s Preclíkem</strong> je kratičký moment odlehčení — nepřetáhnout, 3 minuty stačí.</li>
+<li><strong>Anonymní dopis D01</strong>: připravený dopředu, položený pod kamenem za Šéfkou před orientačním během. Tým, který ho najde, dostane 20 b. Klíč „+3" mají týmy v týdenním plánu — kdo si všimne, dostane bonus.</li>
+<li><strong>Identikit</strong>: pokud máte rozpočet, kupte sadu předtištěných rysů. Pokud ne, použijte tištěné papírové elementy (z internetu — obličejové generátory). <strong>Důležité</strong>: Aničkin popis je <strong>silueta, ne tvář</strong> — týmy mají ZATÍM volné ruce. Kdo „uhodne" vousatého, vyššího muže se zatáhnutou čepicí, <strong>netrefí se zatím přesně na nikoho známého</strong> (Stehlík přijede až den 5). <strong>Klíčově: SoTo je hladce oholený, štíhlý — silueta NESEDÍ na něj</strong>, což je první kámen v jeho budoucí eliminaci.</li>
+<li><strong>Po orientačním běhu pauza</strong> — děti budou unavené.</li>
+<li><strong>F12 popel z dýmky</strong>: vedoucí může pro autentičnost přinést skutečný popel z dýmkové směsi (požádat někoho z rodičů). Vůně je důležitá pro identifikaci.</li>
+</ol>
+<hr />
+<h2>Co se stane zítra</h2>
+<p>Den 5: <strong>Hosté přijíždějí</strong> — JUDr. Magdaléna Růžičková (notářka z Blanska, přiváží informace o závěti), Bohumil Hájek (starosta Jedovnic), <strong>Vladimír Stehlík</strong> (soused-hospodář ze samoty 1 km od tábora, oficiálně přijíždí jako gratulant k 30. výročí). Volitelně <strong>Pavel Konečný</strong> (vedoucí skautského tábora Borovice). Některý tým si všimne: <strong>Stehlíkovy kožené boty 44 odpovídají F04. Stehlíkův pickup odpovídá F09.</strong> Stehlík tvrdí: „byl jsem doma na samotě, můžu to dokázat." Děti jsou zaskočené. <strong>SoTo zůstává hlavní rudá stopa.</strong></p>
+  </div>
+</main>
+
+<footer class="day-footer">
+  <div class="container">
+    <div>Tábor Světlo 2026 — Případ ztracené závěti · Den 4</div>
+    <div class="footer-nav">
+      <a href="../pruvodce.html#dny">Průvodce hrou</a>
+      <a href="../pribeh.html">Příběh jako kniha</a>
+      <a href="../den_04_mapa_forenzika.md">Zdrojový MD</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

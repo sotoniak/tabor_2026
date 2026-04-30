@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Den 9 — Konfrontace, přiznání, útěk · Tábor Světlo 2026</title>
+<style>
+:root {
+  --color-primary: #1e3a5f;
+  --color-primary-light: #2c5282;
+  --color-accent: #d63031;
+  --color-accent-bg: #fadbd8;
+  --color-helper: #e67e22;
+  --color-success: #27ae60;
+  --color-success-bg: #d5f5e3;
+  --color-bg: #f8fafc;
+  --color-card: #ffffff;
+  --color-text: #1e293b;
+  --color-muted: #64748b;
+  --color-border: #e2e8f0;
+  --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.04);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", Roboto, sans-serif;
+  line-height: 1.7; color: var(--color-text); background: var(--color-bg);
+  margin: 0; padding: 0;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+
+header.day-hero {
+  background: linear-gradient(135deg, #1e3a5f 0%, #2c5282 100%);
+  color: white; padding: 56px 0 40px;
+}
+.day-hero .pill {
+  display: inline-block; padding: 4px 12px; background: rgba(255,255,255,0.18);
+  border-radius: 16px; font-size: 13px; margin-bottom: 12px; letter-spacing: 0.3px;
+}
+.day-hero h1 { font-size: 36px; margin: 0 0 8px; font-weight: 700; line-height: 1.2; }
+.day-hero .subtitle { font-size: 17px; opacity: 0.92; margin: 0; }
+
+nav.day-nav {
+  position: sticky; top: 0; z-index: 50;
+  background: #1e3a5f; color: #f1f5f9;
+  border-bottom: 1px solid #2c5282; box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+nav.day-nav .container {
+  display: flex; gap: 8px; align-items: center; flex-wrap: wrap;
+  padding: 10px 24px;
+}
+nav.day-nav a {
+  color: #f1f5f9; text-decoration: none; padding: 8px 14px;
+  font-size: 14px; font-weight: 500; border-radius: 6px;
+  transition: background 0.15s;
+}
+nav.day-nav a:hover { background: rgba(255,255,255,0.10); }
+nav.day-nav a.home { background: #fbbf24; color: #1e3a5f; font-weight: 600; }
+nav.day-nav a.home:hover { background: #fcd34d; }
+nav.day-nav .spacer { flex: 1; }
+nav.day-nav .disabled { opacity: 0.4; pointer-events: none; }
+
+main.day-content { padding: 40px 0 64px; }
+main.day-content .container {
+  background: var(--color-card); padding: 40px 56px;
+  border-radius: 12px; box-shadow: var(--shadow); margin-top: -24px;
+}
+
+main.day-content h1 { display: none; }
+main.day-content h2 {
+  color: var(--color-primary); font-size: 24px; font-weight: 700;
+  margin: 36px 0 16px; padding-bottom: 8px;
+  border-bottom: 2px solid var(--color-border);
+}
+main.day-content h2:first-child { margin-top: 0; }
+main.day-content h3 {
+  color: var(--color-primary-light); font-size: 19px; font-weight: 600;
+  margin: 28px 0 12px;
+}
+main.day-content h4 {
+  color: var(--color-text); font-size: 16px; font-weight: 600;
+  margin: 20px 0 8px;
+  text-transform: uppercase; letter-spacing: 0.4px;
+}
+main.day-content p { margin: 12px 0; }
+main.day-content ul, main.day-content ol { padding-left: 24px; margin: 12px 0; }
+main.day-content li { margin-bottom: 6px; }
+main.day-content strong { color: var(--color-primary); font-weight: 600; }
+main.day-content em { color: var(--color-muted); }
+main.day-content hr {
+  border: 0; border-top: 1px solid var(--color-border); margin: 32px 0;
+}
+
+main.day-content blockquote {
+  margin: 16px 0; padding: 12px 20px;
+  background: #f8fafc; border-left: 4px solid var(--color-primary-light);
+  border-radius: 0 8px 8px 0; color: var(--color-text);
+}
+main.day-content blockquote p { margin: 6px 0; }
+main.day-content blockquote strong { color: var(--color-primary); }
+
+main.day-content table {
+  width: 100%; border-collapse: collapse; margin: 16px 0;
+  font-size: 14px; box-shadow: var(--shadow); border-radius: 6px; overflow: hidden;
+  table-layout: auto;
+}
+main.day-content table th {
+  background: var(--color-primary); color: white; text-align: left;
+  padding: 10px 12px; font-weight: 600;
+  vertical-align: top; word-break: break-word;
+}
+main.day-content table td {
+  padding: 8px 12px; border-top: 1px solid var(--color-border);
+  vertical-align: top; word-break: break-word; overflow-wrap: anywhere;
+}
+main.day-content table tr:nth-child(even) td { background: #f8fafc; }
+main.day-content table td:first-child {
+  color: var(--color-primary);
+  font-family: "JetBrains Mono", "Courier New", monospace;
+  font-size: 13px;
+}
+/* Časy ve formátu HH:MM lze ponechat bez lámání — krátké stringy */
+main.day-content table td:first-child:is(.time, [data-time]) {
+  white-space: nowrap;
+}
+
+main.day-content code {
+  font-family: "JetBrains Mono", "Courier New", monospace;
+  background: var(--color-bg); border: 1px solid var(--color-border);
+  padding: 1px 6px; border-radius: 4px; font-size: 0.92em;
+}
+
+footer.day-footer {
+  background: #1e3a5f; color: #cbd5e1;
+  padding: 28px 0; text-align: center; font-size: 14px;
+}
+footer.day-footer a { color: #fbbf24; text-decoration: none; font-weight: 600; }
+footer.day-footer a:hover { text-decoration: underline; }
+footer.day-footer .footer-nav { margin-top: 12px; }
+footer.day-footer .footer-nav a { margin: 0 12px; }
+
+@media (max-width: 768px) {
+  .day-hero h1 { font-size: 26px; }
+  .day-hero .subtitle { font-size: 15px; }
+  main.day-content .container { padding: 24px; margin-top: -16px; }
+  main.day-content h2 { font-size: 20px; }
+  main.day-content h3 { font-size: 17px; }
+  main.day-content table { font-size: 13px; }
+  main.day-content table td, main.day-content table th { padding: 6px 8px; }
+  nav.day-nav .container { padding: 8px 12px; }
+  nav.day-nav a { padding: 6px 10px; font-size: 13px; }
+}
+@media print {
+  nav.day-nav, footer.day-footer { display: none; }
+  main.day-content .container { box-shadow: none; padding: 0; }
+}
+</style>
+</head>
+<body>
+
+<header class="day-hero">
+  <div class="container">
+    <span class="pill">Den 9 · 19. 7. (neděle)</span>
+    <h1>Konfrontace, přiznání, útěk</h1>
+    <p class="subtitle">Detailní program a příběh dne</p>
+  </div>
+</header>
+
+<nav class="day-nav">
+  <div class="container">
+    <a class="home" href="../pruvodce.html#dny">← Průvodce hrou</a>
+    <span class="spacer"></span>
+    <a href="den_08.html">← Den 8</a>
+    <a href="den_10.html">Den 10 →</a>
+  </div>
+</nav>
+
+<main class="day-content">
+  <div class="container">
+    <h1>DEN 9 — Neděle 19. 7. 2026: Konfrontace, přiznání, útěk</h1>
+<blockquote>
+<p><strong>Motto dne</strong>: „Pravda nakonec vyjde najevo. Ale co teď udělá vinen?"</p>
+</blockquote>
+<hr />
+<h2>Stručná osnova (timetable)</h2>
+<table>
+<thead>
+<tr>
+<th>Čas</th>
+<th>Co se děje</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>07:30 – 08:30</td>
+<td>Snídaně</td>
+</tr>
+<tr>
+<td>08:30 – 11:00</td>
+<td><strong>Příprava konfrontace</strong> — týmy zapisují seznam důkazů, hierarchizují</td>
+</tr>
+<tr>
+<td>11:00 – 12:00</td>
+<td>Lukostřelba / pétanque (volnější aktivita pro snížení napětí)</td>
+</tr>
+<tr>
+<td>12:00 – 13:00</td>
+<td>Oběd</td>
+</tr>
+<tr>
+<td>13:00 – 14:00</td>
+<td>Klid — <strong>strategická schůzka vedoucích</strong></td>
+</tr>
+<tr>
+<td>14:00 – 15:30</td>
+<td><strong>VELKÁ KONFRONTACE STEHLÍKA</strong> v lipovém altánu</td>
+</tr>
+<tr>
+<td>15:30 – 16:00</td>
+<td>Přestávka</td>
+</tr>
+<tr>
+<td>16:00 – 17:00</td>
+<td><strong>KONFRONTACE ALEŠE</strong> + Alešovo přiznání</td>
+</tr>
+<tr>
+<td>17:00 – 17:30</td>
+<td><strong>STEHLÍK UTÍKÁ DO LESA</strong></td>
+</tr>
+<tr>
+<td>17:30 – 18:00</td>
+<td>Krizový brífink — Karel volá policii z Blanska, plán zítřejšího honu</td>
+</tr>
+<tr>
+<td>18:00 – 19:00</td>
+<td>Večeře</td>
+</tr>
+<tr>
+<td>19:30 – 21:30</td>
+<td><strong>Stezka odvahy</strong> (večerní hra — BEZ napojení na herní linku!)</td>
+</tr>
+<tr>
+<td>22:00</td>
+<td>Večerka</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Příběh dne (z pohledu dětí)</h2>
+<p>Týmy se ráno schází u svých stanů. Mají před sebou <strong>karty důkazů</strong>. Karel s nimi dělá brífink:</p>
+<blockquote>
+<p>„Týmy. Dnes ve 14 hodin v lipovém altánu <strong>Vladimír Stehlík stane před nás všemi</strong>. Já mu předestřu důkazy. <strong>Vy budete ti, kteří mu budou klást otázky.</strong> Každý tým zvolí jednoho mluvčího. Ten řekne <strong>klíčový důkaz</strong> a <strong>otázku</strong> Stehlíkovi. Po něm přijdou ostatní. Pamatujte: <strong>mluvíte za pravdu, ne proti člověku</strong>. I Stehlík má svou důstojnost. <strong>Bez křiku, bez pomstychtivosti. Ptejte se a poslouchejte.</strong>"</p>
+</blockquote>
+<hr />
+<h2>Velká konfrontace Stehlíka (14:00–15:30)</h2>
+<h3>Příprava</h3>
+<ul>
+<li><strong>Lipový altán</strong> u centrální plochy (= dřevěný přístřešek, slouží i k schůzkám). Lavičky uspořádány do velkého <strong>U</strong> kolem středu. Stehlík sedí na lavici uprostřed. Vedle něj <strong>Aleš</strong>, <strong>Karel</strong>, <strong>SoTo</strong>, <strong>JUDr. Růžičková</strong> (přijela autem z Blanska speciálně). Týmy v U kolem.</li>
+<li>Atmosféra je <strong>tichá, vážná</strong>. Žádné zvonění, žádný humor.</li>
+<li><strong>Lipový altán</strong> se hodí, protože nemá zdi — všichni vidí všechny, je tam dost vzduchu, ne klaustrofobie.</li>
+</ul>
+<h3>Skript konfrontace</h3>
+<p><strong>Karel</strong> (zahájí): „Pane Vladimíre Stehlíku. Děti vyšetřovaly 9 dní. Mají pro vás otázky. Připraven?"</p>
+<p><strong>Stehlík</strong> (klidný, ale sevřený): „Připraven."</p>
+<p><strong>Tým 1 (Sojky) — mluvčí</strong>: „Pane Stehlíku. Vaše kožené boty velikosti 44 přesně pasují na <strong>stopu boty v rose před Šéfkou</strong> v noci 11. → 12. 7. <strong>Otisky stejných bot jsme našli i v měkké hlíně u potoka — vedoucí směrem k buku a zase zpátky k samotě.</strong> Můžete to vysvětlit?"</p>
+<p><strong>Stehlík</strong>: „Botky 44 jsou nejběžnější velikost mužských bot. Stopy mohou být ze dne. Já tudy chodím každý den lesem."</p>
+<p><strong>Tým 2 (Vlci) — mluvčí</strong>: „<strong>Pane Stehlíku, v rohu Šéfky byl nalezen popel z dýmky.</strong> Porovnali jsme ho s vaší dýmkovou směsí — kterou jste den 5 sám popsal jako ‚dovozovou z Brna'. <strong>Popel se shoduje. Vy kouříte tu směs. Personál ne. Cizí kuřáci v táboře nebyli. Vy jste byl v Šéfce.</strong>"</p>
+<p><strong>Stehlík</strong> (chvíli mlčí): „... popel může být starý. Mohl jsem si u Šéfky odpočinout, když jsem den 5 přijel s medem a brambory."</p>
+<p><strong>Tým 3 (Lišky) — mluvčí</strong>: „<strong>Pane Stehlíku, na botách Aleše Tomka jsme našli specifický šedavý jíl.</strong> Tento jíl roste <strong>na vaší louce</strong> u samoty. <strong>Aleš v noci 11. → 12. 7. byl u vás na louce. Proč?</strong>"</p>
+<p><em>(Stehlík se podívá na Aleše. Aleš svěsí hlavu.)</em></p>
+<p><strong>Stehlík</strong>: „... Aleš si dělá sousedské služby. Mohl být na mé louce kdykoliv."</p>
+<p><strong>Tým 4 (Medvědi) — mluvčí</strong>: „<strong>Pane Stehlíku, my máme</strong> <strong>dodatek smlouvy s Mendelovou univerzitou v Brně</strong>, který pan Marek připravil. Dodatek prodlužuje propůjčení pozemku tábora o dalších 30 let. <strong>Bez něj smlouva 2027 vyprší a univerzita pronajme pozemek vám.</strong> <strong>A na Mendelově univerzitě nám potvrdili: vy jste o tu plochu žádal v dubnu 2026 pro myslivecký revír. Měl jste neformální dohodu s lesníkem Bártou.</strong> Pokud zničíte dodatek + závěť, <strong>dostanete pozemek</strong>. <strong>Toto je váš motiv. Je to pravda?</strong>"</p>
+<p><em>(Karel ukáže kopii dodatku a kopii Bártova rozhovoru. Stehlík je vidí. Mlčí 10 vteřin. Pak vážně, tiše:)</em></p>
+<p><strong>Stehlík</strong>: „... Ano."</p>
+<p><em>(Děti zatají dech.)</em></p>
+<p><strong>Stehlík</strong> (pomalu, klidně, bez hysterie):</p>
+<blockquote>
+<p>„Děti, povím vám pravdu. Já jsem chtěl tu louku. <strong>Pro myslivecký revír.</strong> Tábor mi ‚kazil' zvěř — hluk, lidi v lese, pach. Měli jsme s panem Bártou neformální slovo, že kdyby tábor odešel, dostanu plochu já. Pak jsem se v květnu dověděl, <strong>že Marek chystá dodatek o prodloužení</strong>. Padl mi svět. <strong>Bez dodatku byl tábor v 2027 pryč. S dodatkem zůstával dalších 30 let. Já jsem to nemohl unést.</strong></p>
+<p><em>(Pauza.)</em></p>
+<p><strong>Ano. Byl jsem v Šéfce.</strong> Aleš mi rozvázal plachtu. Vzal jsem závěť. Schoval jsem ji <strong>u potoka, v dutině buku — abych si pro ni přišel později, až se prach usadí</strong>. Pak jsem se vracel domů.</p>
+<p><em>(Hlas se třese.)</em></p>
+<p>Marek se vzbudil. Slyšel mě. Vyšel ven. <strong>Já jsem nechtěl ublížit.</strong> <strong>Strčil jsem ho stranou — jen abych mohl utéct, ne aby ho zranil.</strong> Vyběhl za mnou. Klopýtl o kořen smrku. Padl. Já jsem se otočil... viděl jsem ho ležet... <strong>a utekl jsem dál</strong>. Místo abych pomohl. <strong>To je moje největší vina. Ne ta krádež. To, že jsem ho neopustil — odběhl jsem.</strong></p>
+<p><em>(Slzy v očích, ale klid.)</em></p>
+<p>Marek je můj soused od dětství. Padesát let. <strong>Já jsem mu ublížil pro pár hektarů lesa.</strong> Stydím se."</p>
+<p><strong>Karel</strong> (vážně, tiše): „<strong>Pane Vladimíre Stehlíku. Přiznáváte se, že jste 11. → 12. července 2026 v noci vstoupil do Šéfky tábora Světlo, vyměnil pravou závěť za padělek a způsobil pádu pana Marka Stanislava?</strong>"</p>
+</blockquote>
+<p><strong>Stehlík</strong> (tiše): „<strong>Ano. Přiznávám.</strong>"</p>
+<blockquote>
+<p><strong>Děti jsou v šoku — i když to čekaly. Reálnost přiznání je drtivá. Ale Stehlíkův klid a smutek dělá scénu spíše tragickou než triumfální.</strong></p>
+</blockquote>
+<p><strong>Karel</strong>: „A Aleš? Jak vám pomohl?"</p>
+<p><strong>Stehlík</strong> (podívá se na Aleše): „... <strong>Aleš mi rozvázal zadní plachtu Šéfky. Předtím — den předtím — mi ukázal, kde Marek závěť uložil. Slíbil jsem mu peníze. 30 000 Kč. Na dluhy. Vydíral jsem ho — měl starou nehodu z 90. let, kdy poražený strom dopadl na kůlnu mého otce. Otec to zatajil, ale Aleš mu zůstal zavázaný. Já jsem na ten závazek udeřil. Aleš to udělal pod tlakem. Není to jeho vina, je to moje.</strong>"</p>
+<hr />
+<h2>Konfrontace Aleše (16:00–17:00)</h2>
+<p>Po krátké přestávce Karel svolá zase. Aleš sedí teď na lavici ve středu altánu.</p>
+<p><strong>Karel</strong>: „Aleši. Co řekneš?"</p>
+<p><strong>Aleš</strong> (hluboký vzdech, slzy v očích, ruce se třesou):</p>
+<blockquote>
+<p>„<strong>Já... ano. Já jsem Vladimírovi rozvázal plachtu. Já jsem mu ukázal, kde Marek tu složku uložil.</strong></p>
+<p>Před třemi týdny mi Vladimír zavolal. Říkal: ‚Aleši, vzpomeň si na ten strom v 90. letech. Otec se ho ujal, ale ty mi dlužíš. Je čas mi to vrátit. Marek nikdy nebude mít vědomost, že jsi mi pomohl. Nikomu se nic nestane. Jen mě pustíš v noci k Šéfce.' <strong>Já jsem se bál. Ne vězení — bál jsem se ostudy. Padesát let jsem to v sobě nosil.</strong></p>
+<p>Pak mi nabídl 30 000 Kč. <strong>Na dluhy.</strong> Já mám dluhy z lékárny — manželka má cukrovku, léky jsou drahé. <strong>Já jsem ty peníze přijal. Mám je v plechové bedně pod nářadím v přístřešku. Vraťte je Vladimírovi. Já je nechci.</strong></p>
+<p><em>(Slzy.)</em></p>
+<p>Ale <strong>Marek se vzbudil. Spadl. Já jsem to slyšel — slyšel jsem sten. Šel jsem se podívat. Viděl jsem ho ležet. A místo abych zavolal Karla, místo abych zavolal Magdalénu, </strong>utekl jsem do svého stanu<strong>. Do rána jsem nespal. </strong>To je moje vina. Větší než ta plachta.**</p>
+<p><em>(Pláče.)</em></p>
+<p>Marek byl pro mě jako otec, když mi umřel táta. <strong>A já jsem ho zradil pro 30 000 Kč a strach o matku.</strong> Nezasloužím si tady být. Nezasloužím si v tomhle táboře už dýchat."</p>
+<p><strong>Děti jsou znovu v šoku. Aleš je tragický. Ne zlosyn — slabý člověk, který se bál.</strong></p>
+</blockquote>
+<p><strong>Karel</strong> vstane, položí Alešovi ruku na rameno: „<strong>Aleši, dnes jste řekl pravdu. Pravda je krok první. O zbytku rozhodne pan Marek a pak soud. Ale dnes — vy nás neopouštíte. Sedněte si tam v rohu. Vyřešíme to spolu.</strong>"</p>
+<blockquote>
+<p><strong>Tato scéna je emocionální vrchol — déťi se musí naučit, že </strong>viník není totéž co zlosyn**. Aleš je obě i oběť (vydíraný), i pachatel (souhlasil s úplatkem).</p>
+</blockquote>
+<p>Tým, který hledal v přístřešku, doloží <strong>F17 — 30 000 Kč v plechové bedně pod nářadím</strong>, v třech svazcích po deseti tisících. Aleš peníze vrátí, vedoucí je předá policii zítra.</p>
+<hr />
+<h2>Stehlík utíká (17:00–17:30)</h2>
+<p>Po přestávce, kdy se Aleš odebere k Magdě (= je v šoku, zhroutí), <strong>Stehlík v lipovém altánu náhle vstane</strong>.</p>
+<blockquote>
+<p><strong>Stehlík</strong>: „<strong>Já potřebuji vzduch. Půjdu se projít k samotě. Vrátím se za hodinu.</strong>"</p>
+</blockquote>
+<p><strong>Karel</strong>: „Pane Stehlíku, prosím zůstaňte..."</p>
+<p><strong>Stehlík</strong> vyběhne z altánu. Doběhne k pickupu na lesní cestě, ale <strong>klíčky má SoTo</strong> (SoTo je Stehlíkovi den 5 nenápadně vzal — preventivně).</p>
+<p><strong>Stehlík</strong> zoufale <strong>utíká do lesa</strong>, lesní cestou směrem k samotě.</p>
+<blockquote>
+<p><strong>Důležité scénografické rozhodnutí</strong>: Stehlík neuteče autem. Chce, ale klíče má SoTo. <strong>Utíká pěšky lesní cestou. Snaží se dostat domů na samotu — možná se schovat, možná uklidit dodatek smlouvy, který si den předtím odnesl od Aleše domů.</strong></p>
+</blockquote>
+<p>Karel svolá tábor:</p>
+<blockquote>
+<p>„<strong>Vladimír Stehlík utekl pěšky lesem směrem k samotě. Nemůže opustit oblast snadno — auto má v parkovišti. Pravděpodobně se snaží dostat domů. Volíme policii do Blanska.</strong> Zítra ráno zorganizujeme společný hon spolu s policisty. <strong>Dnes večer NIKDO nesmí jít do lesa.</strong> Stezka odvahy se koná, ale je to <strong>samostatná hra bez napojení na vyšetřování</strong>."</p>
+</blockquote>
+<p>Karel jde s Pavlem na lesní cestu „U lípy" (signál), volá <strong>kpt. Marka Poláka a por. Lucii Brázdovou z Blanska</strong>. Domluveno: policie přijede ráno v 6:30, společně se zorganizuje hon.</p>
+<hr />
+<h2>Stezka odvahy (večer)</h2>
+<blockquote>
+<p><strong>Tematické varování</strong>: Stezka odvahy v tu večerní hodinu by mohla být napojena na drama (Stehlík v lese), ale <strong>NESMÍ být</strong> — to by bylo pro mladší děti děsivé. <strong>Stezka odvahy je samostatná hra</strong>, <strong>bez tematického napojení</strong>.</p>
+</blockquote>
+<p>Klasická forma: vedoucí udělají trasu se svíčkami a překážkami <strong>na bezpečné, dříve prozkoumané pěšině</strong> (= ne směrem k samotě!). Děti procházejí ve dvojicích. <strong>Žádné spojení s herní linkou.</strong></p>
+<blockquote>
+<p><strong>Vedoucí výslovně dětem řekne</strong>: „<strong>Stehlík je na druhé straně lesa. My jsme tady, na bezpečné pěšině. Toto je hra.</strong>"</p>
+</blockquote>
+<hr />
+<h2>Indicie a důkazy předané dnes</h2>
+<p>Žádné nové <strong>fyzické indicie zvenku</strong> — den 9 je o <strong>přiznání</strong>. Ale:</p>
+<table>
+<thead>
+<tr>
+<th>Co</th>
+<th>Hodnota</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Stehlíkovo přiznání</td>
+<td>Definitivní</td>
+</tr>
+<tr>
+<td>Alešovo přiznání</td>
+<td>Definitivní</td>
+</tr>
+<tr>
+<td><strong>F17</strong>: 30 000 Kč v plechové bedně pod Alešovým nářadím</td>
+<td>Materiální důkaz úplatku</td>
+</tr>
+<tr>
+<td>Stehlík utíká</td>
+<td>Nový dramatický úkol pro den 10</td>
+</tr>
+<tr>
+<td>Pravá závěť stále u potoka v dutině buku</td>
+<td><strong>Nesahá se dnes večer</strong> — bezpečnostní důvod, plus Stehlík by ji teoreticky mohl získat</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Klíčové body bodování dne 9</h2>
+<ul>
+<li>Tým, který položil <strong>rozhodující otázku</strong> (Tým 4 / Medvědi v příkladu — motiv ze smlouvy): <strong>bonus 50 b.</strong></li>
+<li>Týmy, které <strong>měly připraveny skvělé důkazy</strong>: 1–30 b. každý</li>
+<li>Týmy, které <strong>se chovaly s důstojností</strong> (neposmívaly se Alešovi, neoslavovaly veřejně Stehlíkovo zlo): <strong>bonus 20 b. — Etika vyšetřování</strong></li>
+</ul>
+<blockquote>
+<p><strong>Kniha 30 let</strong>: každý tým si dnes večer připraví <strong>stránku s reflexí</strong> — „Co jsme se naučili o vyšetřování pravdy?" To je důležitá lekce.</p>
+</blockquote>
+<hr />
+<h2>Obsazení dne 9</h2>
+<table>
+<thead>
+<tr>
+<th>Postava</th>
+<th>Aktivita</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Vladimír Stehlík</strong></td>
+<td>Konfrontace, přiznání, útěk — <strong>emocionální vrchol</strong></td>
+</tr>
+<tr>
+<td><strong>Aleš Tomek</strong></td>
+<td>Přiznání — <strong>tragický bod hry</strong></td>
+</tr>
+<tr>
+<td>Karel Malík</td>
+<td>Vede konfrontaci, pevná ruka</td>
+</tr>
+<tr>
+<td>SoTo</td>
+<td>Drží klíče od pickupu, organizuje</td>
+</tr>
+<tr>
+<td>JUDr. Růžičková</td>
+<td>Přijela z Blanska k konfrontaci, byla u toho</td>
+</tr>
+<tr>
+<td>Magda Hamanová</td>
+<td>Po Alešově přiznání ho vezme do zdravotky, posedí s ním</td>
+</tr>
+<tr>
+<td>Anička</td>
+<td>V kuchyni, přiznáním šokována, nakonec přinese Alešovi čaj</td>
+</tr>
+<tr>
+<td>Anežka, Adriana, Hájek</td>
+<td>Pozorují, podporují</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Materiál pro den 9</h2>
+<ul>
+<li><strong>Lipový altán</strong> — uspořádané lavičky do U</li>
+<li><strong>Tištěné kopie důkazů</strong> (papíry, fotky, otisky, kopie dodatku smlouvy, kopie Bártova rozhovoru) — týmy si přinesou své kartotéky</li>
+<li><strong>Klíčky od pickupu</strong> — SoTo je má (preventivně den 5 vzal)</li>
+<li><strong>30 000 Kč</strong> v plechové bedně Aleše (rekvizita — bankovky kopie nebo simulace)</li>
+<li><strong>Stezka odvahy materiál</strong>: svíčky v zavařovacích sklenicích (proti větru), překážky, lano, dlouhé bílé prostěradlo (rekvizita pro mlhu, ale nepoužívat strašáky!)</li>
+</ul>
+<hr />
+<h2>Tipy pro vedoucí</h2>
+<ol>
+<li><strong>Konfrontace je herecky náročná</strong>. Vedoucí, kteří hrají Stehlíka a Aleše, <strong>musí umět hrát emocionálně</strong>. Pokud Aleš je skutečný personál (= sám sebe), pak je hloubka přirozená — ale i tak <strong>scénář může být pomalý</strong>, <strong>emoce přijdou samy</strong>.</li>
+<li><strong>Alešovo přiznání</strong>: jeho slzy musí být <strong>opravdové</strong>. Ne hrané. Pokud vedoucí cítí, že to neumí, <strong>scénář může být kratší a tišší</strong> (Aleš mlčí, dvě věty, slzy). To je morálně silnější než dlouhý projev.</li>
+<li><strong>Stehlík musí být klidný, NE hysterický</strong>. Jeho přiznání je <strong>smutek</strong>, ne křik. <strong>Klíčový tón: tragický hospodář, ne kriminálník.</strong> Děti by měly cítit lítost, ne triumf.</li>
+<li><strong>Útěk Stehlíka</strong>: je <strong>dramatický, ale ne nebezpečný</strong>. Stehlík běží lesní cestou, <strong>vedoucí v rozestavěných pozicích pro bezpečnost</strong>. <strong>Nikdo se za ním nepouští</strong>. Vedoucí dohlížejí, aby se neztratil mimo bezpečnou zónu.</li>
+<li><strong>Po útěku Stehlíka dejte dětem chvíli</strong> — nesmí se pouštět do lesa za ním. Vyložte to jako „policejní záležitost zítra".</li>
+<li><strong>Aleš po přiznání</strong>: zůstává v táboře pod neformálním dohledem. <strong>Magda ho vezme do zdravotky</strong>, donese mu čaj, sedí s ním. Vedoucí, který Aleše hraje (= sám Aleš), by se měl po skončení scény <strong>ukázat dětem</strong>, <strong>že je v pořádku</strong>. „Děkuji, že jste mě poslouchali. Rád vás vidím." Tím se ulehčí mladším dětem (= nejmladším účastníkům, které mohou být zděšené).</li>
+<li><strong>Stezka odvahy se NESMÍ napojit na příběh</strong>. Žádné stínové postavy, žádné „Stehlík je v lese". Pokud děti spojí, vedoucí jasně řekne: „<strong>Toto je hra. Stehlík je daleko od trasy stezky. My jsme bezpečně.</strong>"</li>
+<li><strong>Volání policie z Blanska</strong>: Karel volá z lesní cesty „U lípy" (signál). Pokud chcete autenticky, vedoucí ve roli kpt. Poláka <strong>odpoví</strong> telefonem (= druhý vedoucí čeká připravený s telefonem ve stanu, předem domluveno). Děti to neuslyší přímo, jen se Karel vrátí a oznámí, že <strong>policie přijde ráno v 6:30</strong>.</li>
+</ol>
+<hr />
+<h2>Co se stane zítra</h2>
+<p>Den 10: <strong>VELKÝ HON</strong>. 6:30 brzká snídaně. Brífink <strong>2 policistů z Blanska</strong> (kpt. Marek Polák, por. Lucie Brázdová) — rozdělení lesa do 6 kvadrantů. Týmy jdou s policisty. <strong>Stehlík dopaden na lesní cestě</strong> mezi samotou a táborem (vyčerpaný, smířený, bez odporu). Slavnostní průvod <strong>k buku u potoka</strong>. <strong>Tým s nejmladším kadetem</strong> sahá do dutiny — vyndá nepromokavý sáček s <strong>pravou závětí</strong>. Triumfální moment. Aleš zůstává v táboře pod neformálním dohledem, <strong>přijde na finále zítra</strong>.</p>
+  </div>
+</main>
+
+<footer class="day-footer">
+  <div class="container">
+    <div>Tábor Světlo 2026 — Případ ztracené závěti · Den 9</div>
+    <div class="footer-nav">
+      <a href="../pruvodce.html#dny">Průvodce hrou</a>
+      <a href="../pribeh.html">Příběh jako kniha</a>
+      <a href="../den_09_konfrontace.md">Zdrojový MD</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

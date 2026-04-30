@@ -1,0 +1,251 @@
+/* Sdílené styly pro tiskové šablony Tábora Světlo 2026 */
+
+:root {
+  --color-primary: #1e3a5f;
+  --color-accent: #d63031;
+  --color-paper: #faf6ec;
+  --color-paper-edge: #d4c5a8;
+  --color-text: #1e293b;
+  --color-muted: #64748b;
+  --color-line: #1e293b;
+  --color-border: #94a3b8;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body {
+  font-family: "Georgia", "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif;
+  margin: 0; padding: 0;
+  background: #e2e8f0;
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+/* Obrazovková lišta — neviditelná při tisku */
+.toolbar {
+  position: sticky; top: 0; z-index: 100;
+  background: #1e3a5f; color: white;
+  padding: 12px 24px;
+  display: flex; gap: 12px; align-items: center; flex-wrap: wrap;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+.toolbar a, .toolbar button {
+  color: white; text-decoration: none;
+  padding: 8px 14px; border-radius: 6px;
+  font-size: 14px; font-weight: 600; font-family: inherit;
+  border: none; cursor: pointer; background: rgba(255,255,255,0.10);
+  transition: background 0.15s;
+}
+.toolbar a:hover, .toolbar button:hover { background: rgba(255,255,255,0.18); }
+.toolbar .home { background: #fbbf24; color: #1e3a5f; }
+.toolbar .home:hover { background: #fcd34d; }
+.toolbar .print-btn { background: #fbbf24; color: #1e3a5f; }
+.toolbar .print-btn:hover { background: #fcd34d; }
+.toolbar .title { flex: 1; font-weight: 700; font-size: 15px; padding-left: 10px; }
+.toolbar .meta {
+  font-size: 12px; opacity: 0.85; margin-left: auto;
+  font-weight: 500;
+}
+
+/* Stránka A4 */
+.page-a4 {
+  width: 210mm; min-height: 297mm;
+  background: var(--color-paper);
+  margin: 24px auto;
+  padding: 20mm 18mm;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  position: relative;
+  border: 1px solid var(--color-paper-edge);
+}
+.page-a4 + .page-a4 { margin-top: 24px; }
+
+/* Stránka A6 (průkaz) */
+.page-a6 {
+  width: 105mm; min-height: 148mm;
+  background: var(--color-paper);
+  padding: 6mm 7mm;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  border: 1px solid var(--color-paper-edge);
+  position: relative;
+}
+
+/* Sheet pro 4 průkazy na A4 */
+.sheet-4up {
+  width: 210mm; height: 297mm;
+  background: white;
+  margin: 24px auto;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  position: relative;
+}
+.sheet-4up .page-a6 {
+  width: 105mm; height: 148.5mm;
+  border: 1px dashed #cbd5e1;
+  box-shadow: none;
+  margin: 0;
+}
+
+/* Společná tisková pravidla */
+@page { margin: 15mm; }
+@media print {
+  body { background: white; }
+  .toolbar, .no-print { display: none !important; }
+  .page-a4 {
+    width: auto; min-height: auto;
+    margin: 0; padding: 0;
+    box-shadow: none; border: none;
+    page-break-after: always;
+  }
+  .page-a4:last-of-type { page-break-after: auto; }
+  .sheet-4up {
+    width: auto; height: auto;
+    margin: 0; box-shadow: none;
+    page-break-after: always;
+  }
+  .sheet-4up:last-of-type { page-break-after: auto; }
+  .page-a6 { box-shadow: none; }
+}
+
+/* Form-style elements */
+.form-line {
+  display: inline-block;
+  border-bottom: 1px solid var(--color-line);
+  min-width: 60mm;
+  height: 7mm;
+  vertical-align: bottom;
+  margin: 0 2px;
+}
+.form-line.short { min-width: 30mm; }
+.form-line.long  { min-width: 100mm; }
+.form-line.full  { display: block; min-width: 100%; height: 8mm; margin-top: 4px; }
+
+.form-row {
+  display: flex; align-items: baseline; gap: 8px;
+  margin: 6px 0;
+}
+.form-row label { font-weight: 600; flex-shrink: 0; }
+.form-row .form-line { flex: 1; }
+
+.field-block {
+  margin: 14px 0;
+}
+.field-block .field-label {
+  font-weight: 600; color: var(--color-primary);
+  font-size: 13px; text-transform: uppercase; letter-spacing: 0.4px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 3px;
+}
+
+.write-lines {
+  background-image: linear-gradient(transparent calc(8mm - 1px), var(--color-line) calc(8mm - 1px), var(--color-line) 8mm, transparent 8mm);
+  background-size: 100% 8mm;
+  background-position: 0 1mm;
+  min-height: 24mm;
+  margin-top: 4px;
+}
+.write-lines.lines-2 { min-height: 16mm; }
+.write-lines.lines-3 { min-height: 24mm; }
+.write-lines.lines-4 { min-height: 32mm; }
+.write-lines.lines-6 { min-height: 48mm; }
+
+.checkbox {
+  display: inline-block; width: 12px; height: 12px;
+  border: 1.5px solid var(--color-line);
+  margin-right: 6px; vertical-align: -1px;
+}
+.checkbox-row { margin: 4px 0; font-size: 14px; }
+
+/* Klasické dokumentové styly */
+.doc-header {
+  text-align: center;
+  margin-bottom: 16mm;
+  padding-bottom: 8mm;
+  border-bottom: 3px double var(--color-line);
+}
+.doc-header h1 {
+  font-size: 22pt; margin: 0 0 4mm; letter-spacing: 4px;
+  font-weight: 400;
+}
+.doc-header .subtitle {
+  font-style: italic; font-size: 12pt; color: var(--color-muted); margin: 0;
+}
+
+.doc-paragraph {
+  margin: 6mm 0;
+  text-align: justify;
+}
+
+.doc-section-title {
+  font-size: 12pt; font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-top: 8mm; margin-bottom: 3mm;
+  text-align: center;
+  color: var(--color-primary);
+}
+
+.doc-signature {
+  margin-top: 12mm;
+}
+.doc-sig-line {
+  border-top: 1px solid var(--color-line);
+  width: 80mm;
+  margin: 8mm 0 1mm;
+}
+.doc-sig-name { font-size: 11pt; }
+.doc-sig-role { font-size: 10pt; color: var(--color-muted); font-style: italic; }
+.doc-seal {
+  display: inline-block;
+  margin-top: 6mm;
+  width: 35mm; height: 35mm;
+  border: 2px solid var(--color-accent);
+  border-radius: 50%;
+  text-align: center;
+  font-size: 9pt;
+  padding-top: 12mm;
+  color: var(--color-accent);
+  font-weight: 600;
+  transform: rotate(-8deg);
+}
+
+/* Watermark badge for FAKE / TRUE */
+.doc-badge {
+  position: absolute;
+  top: 14mm; right: 14mm;
+  padding: 6px 14px;
+  font-size: 10pt; font-weight: 700;
+  letter-spacing: 1.5px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+.doc-badge.fake {
+  background: #fee2e2; color: #b91c1c;
+  border: 1.5px solid #b91c1c;
+}
+.doc-badge.true {
+  background: #dcfce7; color: #15803d;
+  border: 1.5px solid #15803d;
+}
+.doc-badge .small { display: block; font-size: 7pt; opacity: 0.85; font-weight: 500; letter-spacing: 0.5px; }
+
+.note-box {
+  background: #fef9c3;
+  border-left: 4px solid #ca8a04;
+  padding: 8px 14px; margin: 10mm 0;
+  font-size: 10pt;
+  border-radius: 0 4px 4px 0;
+}
+.note-box strong { color: #854d0e; }
+
+/* Print-friendly tweaks */
+@media print {
+  .page-a4 {
+    background: white;
+    border: none;
+  }
+  .doc-badge { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+}

@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Den 8 — Výjezd do Blanska · Tábor Světlo 2026</title>
+<style>
+:root {
+  --color-primary: #1e3a5f;
+  --color-primary-light: #2c5282;
+  --color-accent: #d63031;
+  --color-accent-bg: #fadbd8;
+  --color-helper: #e67e22;
+  --color-success: #27ae60;
+  --color-success-bg: #d5f5e3;
+  --color-bg: #f8fafc;
+  --color-card: #ffffff;
+  --color-text: #1e293b;
+  --color-muted: #64748b;
+  --color-border: #e2e8f0;
+  --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.04);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", Roboto, sans-serif;
+  line-height: 1.7; color: var(--color-text); background: var(--color-bg);
+  margin: 0; padding: 0;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+
+header.day-hero {
+  background: linear-gradient(135deg, #1e3a5f 0%, #2c5282 100%);
+  color: white; padding: 56px 0 40px;
+}
+.day-hero .pill {
+  display: inline-block; padding: 4px 12px; background: rgba(255,255,255,0.18);
+  border-radius: 16px; font-size: 13px; margin-bottom: 12px; letter-spacing: 0.3px;
+}
+.day-hero h1 { font-size: 36px; margin: 0 0 8px; font-weight: 700; line-height: 1.2; }
+.day-hero .subtitle { font-size: 17px; opacity: 0.92; margin: 0; }
+
+nav.day-nav {
+  position: sticky; top: 0; z-index: 50;
+  background: #1e3a5f; color: #f1f5f9;
+  border-bottom: 1px solid #2c5282; box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+nav.day-nav .container {
+  display: flex; gap: 8px; align-items: center; flex-wrap: wrap;
+  padding: 10px 24px;
+}
+nav.day-nav a {
+  color: #f1f5f9; text-decoration: none; padding: 8px 14px;
+  font-size: 14px; font-weight: 500; border-radius: 6px;
+  transition: background 0.15s;
+}
+nav.day-nav a:hover { background: rgba(255,255,255,0.10); }
+nav.day-nav a.home { background: #fbbf24; color: #1e3a5f; font-weight: 600; }
+nav.day-nav a.home:hover { background: #fcd34d; }
+nav.day-nav .spacer { flex: 1; }
+nav.day-nav .disabled { opacity: 0.4; pointer-events: none; }
+
+main.day-content { padding: 40px 0 64px; }
+main.day-content .container {
+  background: var(--color-card); padding: 40px 56px;
+  border-radius: 12px; box-shadow: var(--shadow); margin-top: -24px;
+}
+
+main.day-content h1 { display: none; }
+main.day-content h2 {
+  color: var(--color-primary); font-size: 24px; font-weight: 700;
+  margin: 36px 0 16px; padding-bottom: 8px;
+  border-bottom: 2px solid var(--color-border);
+}
+main.day-content h2:first-child { margin-top: 0; }
+main.day-content h3 {
+  color: var(--color-primary-light); font-size: 19px; font-weight: 600;
+  margin: 28px 0 12px;
+}
+main.day-content h4 {
+  color: var(--color-text); font-size: 16px; font-weight: 600;
+  margin: 20px 0 8px;
+  text-transform: uppercase; letter-spacing: 0.4px;
+}
+main.day-content p { margin: 12px 0; }
+main.day-content ul, main.day-content ol { padding-left: 24px; margin: 12px 0; }
+main.day-content li { margin-bottom: 6px; }
+main.day-content strong { color: var(--color-primary); font-weight: 600; }
+main.day-content em { color: var(--color-muted); }
+main.day-content hr {
+  border: 0; border-top: 1px solid var(--color-border); margin: 32px 0;
+}
+
+main.day-content blockquote {
+  margin: 16px 0; padding: 12px 20px;
+  background: #f8fafc; border-left: 4px solid var(--color-primary-light);
+  border-radius: 0 8px 8px 0; color: var(--color-text);
+}
+main.day-content blockquote p { margin: 6px 0; }
+main.day-content blockquote strong { color: var(--color-primary); }
+
+main.day-content table {
+  width: 100%; border-collapse: collapse; margin: 16px 0;
+  font-size: 14px; box-shadow: var(--shadow); border-radius: 6px; overflow: hidden;
+  table-layout: auto;
+}
+main.day-content table th {
+  background: var(--color-primary); color: white; text-align: left;
+  padding: 10px 12px; font-weight: 600;
+  vertical-align: top; word-break: break-word;
+}
+main.day-content table td {
+  padding: 8px 12px; border-top: 1px solid var(--color-border);
+  vertical-align: top; word-break: break-word; overflow-wrap: anywhere;
+}
+main.day-content table tr:nth-child(even) td { background: #f8fafc; }
+main.day-content table td:first-child {
+  color: var(--color-primary);
+  font-family: "JetBrains Mono", "Courier New", monospace;
+  font-size: 13px;
+}
+/* Časy ve formátu HH:MM lze ponechat bez lámání — krátké stringy */
+main.day-content table td:first-child:is(.time, [data-time]) {
+  white-space: nowrap;
+}
+
+main.day-content code {
+  font-family: "JetBrains Mono", "Courier New", monospace;
+  background: var(--color-bg); border: 1px solid var(--color-border);
+  padding: 1px 6px; border-radius: 4px; font-size: 0.92em;
+}
+
+footer.day-footer {
+  background: #1e3a5f; color: #cbd5e1;
+  padding: 28px 0; text-align: center; font-size: 14px;
+}
+footer.day-footer a { color: #fbbf24; text-decoration: none; font-weight: 600; }
+footer.day-footer a:hover { text-decoration: underline; }
+footer.day-footer .footer-nav { margin-top: 12px; }
+footer.day-footer .footer-nav a { margin: 0 12px; }
+
+@media (max-width: 768px) {
+  .day-hero h1 { font-size: 26px; }
+  .day-hero .subtitle { font-size: 15px; }
+  main.day-content .container { padding: 24px; margin-top: -16px; }
+  main.day-content h2 { font-size: 20px; }
+  main.day-content h3 { font-size: 17px; }
+  main.day-content table { font-size: 13px; }
+  main.day-content table td, main.day-content table th { padding: 6px 8px; }
+  nav.day-nav .container { padding: 8px 12px; }
+  nav.day-nav a { padding: 6px 10px; font-size: 13px; }
+}
+@media print {
+  nav.day-nav, footer.day-footer { display: none; }
+  main.day-content .container { box-shadow: none; padding: 0; }
+}
+</style>
+</head>
+<body>
+
+<header class="day-hero">
+  <div class="container">
+    <span class="pill">Den 8 · 18. 7. (sobota)</span>
+    <h1>Výjezd do Blanska</h1>
+    <p class="subtitle">Detailní program a příběh dne</p>
+  </div>
+</header>
+
+<nav class="day-nav">
+  <div class="container">
+    <a class="home" href="../pruvodce.html#dny">← Průvodce hrou</a>
+    <span class="spacer"></span>
+    <a href="den_07.html">← Den 7</a>
+    <a href="den_09.html">Den 9 →</a>
+  </div>
+</nav>
+
+<main class="day-content">
+  <div class="container">
+    <h1>DEN 8 — Sobota 18. 7. 2026: Výjezd do Blanska</h1>
+<blockquote>
+<p><strong>Motto dne</strong>: „Někde mezi notářkou a univerzitou je motiv. Najdeme ho."</p>
+</blockquote>
+<hr />
+<h2>Stručná osnova (timetable)</h2>
+<table>
+<thead>
+<tr>
+<th>Čas</th>
+<th>Co se děje</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>06:30 – 07:00</td>
+<td>Brzká snídaně pro <strong>výjezdovou skupinu</strong></td>
+</tr>
+<tr>
+<td>07:00 – 07:30</td>
+<td><strong>Odjezd výjezdové skupiny</strong> (mikrobus, 6 dětí + 2 vedoucí) — z parkoviště u lesní cesty</td>
+</tr>
+<tr>
+<td>08:00 – 09:00</td>
+<td>Snídaně pro zbylé děti (cca 39 dětí)</td>
+</tr>
+<tr>
+<td>09:00 – 12:00</td>
+<td><strong>PROGRAM V TÁBORĚ</strong> (zbylé děti) — hlavolamy + hledání + sport</td>
+</tr>
+<tr>
+<td>09:30 – 11:00</td>
+<td><strong>Notářka Růžičková v Blansku</strong> (výjezd) — <strong>definitivní eliminace SoTa</strong></td>
+</tr>
+<tr>
+<td>11:30 – 13:00</td>
+<td><strong>Mendelova univerzita v Brně — Lesnická a dřevařská fakulta, ŠLP Křtiny</strong> (bonus: 2–3 nejstarší kadeti)</td>
+</tr>
+<tr>
+<td>12:00 – 13:00</td>
+<td>Oběd v táboře</td>
+</tr>
+<tr>
+<td>13:00 – 14:00</td>
+<td>Klid v táboře</td>
+</tr>
+<tr>
+<td>14:00 – 16:00</td>
+<td><strong>Fotbalový turnaj — finále</strong> + ostatní aktivity</td>
+</tr>
+<tr>
+<td>14:30 – 16:30</td>
+<td><strong>Návrat výjezdové skupiny</strong> (cesta zpět do tábora)</td>
+</tr>
+<tr>
+<td>16:30 – 17:30</td>
+<td><strong>Výjezdová skupina prezentuje</strong>, co zjistila</td>
+</tr>
+<tr>
+<td>17:30 – 18:00</td>
+<td><strong>Plánování konfrontace Stehlíka a Aleše zítra</strong></td>
+</tr>
+<tr>
+<td>18:00 – 19:00</td>
+<td>Večeře</td>
+</tr>
+<tr>
+<td>19:30 – 21:30</td>
+<td>Volný čas, dopisování deníků, příprava důkazního shrnutí</td>
+</tr>
+<tr>
+<td>21:30 – 22:00</td>
+<td>Klid u ohně</td>
+</tr>
+<tr>
+<td>22:00</td>
+<td>Večerka</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Příběh dne (z pohledu dětí)</h2>
+<h3>Výjezdová skupina (6 dětí + 2 vedoucí + bonus 2–3 nejstarší kadeti)</h3>
+<p>Skupina se vybere takto: <strong>z každého ze 6 týmů 1 dítě</strong> (= které tým zvolí — kandidát) + 2 vedoucí jako řidiči/doprovod. Dohromady 8 lidí v mikrobusu. <strong>Bonus</strong>: <strong>2–3 nejstarší kadeti</strong> (K3) z různých týmů jedou navíc — pokračují z Blanska do Brna na Mendelovu univerzitu.</p>
+<blockquote>
+<p><strong>Důležité</strong>: Výjezd je <strong>odměna za výkony</strong> — týmy s body navrch mají právo zvolit kvalitního zástupce. Děti to vnímají jako <strong>zodpovědnost a čest</strong>.</p>
+</blockquote>
+<h4>09:30 — Notářka v Blansku</h4>
+<p>Skupina dorazí do kanceláře JUDr. Magdalény Růžičkové v Blansku (cca 20 km, pohotovost a notářské kanceláře jsou v Blansku, nejbližší okresní město). Magdaléna je tam, čeká.</p>
+<blockquote>
+<p><strong>Magdaléna</strong>: „Děti, dobrý den. Mám pro vás <strong>tři podstatné věci</strong>:</p>
+</blockquote>
+<h5>Věc nultá: Eliminace Tomáše Sotoniaka (S21)</h5>
+<blockquote>
+<p><em>(První věc, kterou paní Růžičková řekne — okamžitě, jak děti vejdou.)</em></p>
+<p>„Předem než přejdeme k závěti, jednu věc uzavřu. <strong>Tomáš Sotoniak ke mně přišel ráno 12. července v 6:30</strong> — zaparkoval Santanu před kanceláří, počkal na otevření, předal <strong>dodatek smlouvy s podpisem pana Marka</strong>. Já jsem mu napsala krátké potvrzení o předání. Tady je kopie." <em>(Vyndá list se svým podpisem a razítkem, datum 12. 7. 2026, čas 6:30.)</em></p>
+<p>„Tomáš plnil přání pana Marka. Ráno mi to potvrdil i pan Marek telefonicky z nemocnice — den 7 odpoledne. <strong>Tomáš tedy NENÍ pachatel ani pomocník. Plně eliminován.</strong>"</p>
+</blockquote>
+<p>Děti <strong>přijmou</strong> definitivní eliminaci SoTa. Některé si uvědomí, <strong>jak mu křivdily</strong>, a rozhodnou se mu <strong>omluvit</strong> po návratu.</p>
+<h5>Věc první: Fragment závěti (§§ 1–2)</h5>
+<blockquote>
+<p><em>(Vyndá list — kopie. Razítko notářské kanceláře.)</em></p>
+<p>„<strong>§ 1. Tábor Světlo má pokračovat. Pozemky propůjčené Mendelovou univerzitou v Brně mají být na základě připojeného dodatku prodlouženy o dalších 30 let, a propůjčení od rodiny hospodářů Stehlíkových (loučka u centrální plochy) zůstává v platnosti dle stávající smlouvy.</strong></p>
+<p><strong>§ 2. Vedení tábora přebírají v dosavadní funkci Karel Malík (hlavní vedoucí) a SoTo (zástupce), spolu s celým stávajícím personálem. Tábor se má řídit duchem, ve kterém vznikl: dobrovolnost, příroda, společenství, žádný zisk.</strong>"</p>
+<p><strong>Magdaléna</strong>: „<strong>§ 3, § 4 a § 5 obsahuje plný originál závěti.</strong> Pan Marek si je přeje zveřejnit osobně — to bylo jeho výslovné přání. Já vám je dnes neukážu. Ale věřte: jsou tam <strong>velmi krásná překvapení</strong>."</p>
+</blockquote>
+<h5>Věc druhá: Dodatek smlouvy s Mendelovou univerzitou (D04 — F13 v matrici)</h5>
+<blockquote>
+<p><em>(Vyndá další list — kopie smluvního dodatku.)</em></p>
+<p>„<strong>Toto je dodatek smlouvy mezi Tábor Světlo (zastoupeným Markem Stanislavem) a Mendelovou univerzitou v Brně (Lesnická a dřevařská fakulta, Školní lesní podnik Křtiny).</strong> Dodatek <strong>prodlužuje propůjčení pozemku o dalších 30 let</strong>, počítáno od 1. 1. 2027. <strong>Bez tohoto dodatku stávající smlouva 31. 12. 2027 vyprší</strong> a univerzita podle své politiky pronajme plochu jinému zájemci.</p>
+<p>Podpisy stran se měly připojit den 11. července večer při slavnostním zahájení. Marek si dodatek přivezl s sebou — měl ho v červené složce vedle závěti. <strong>Dodatek je tedy s vysokou pravděpodobností u toho, kdo má závěť.</strong>"</p>
+<p><strong>MASIVNÍ MOTIV ODHALEN</strong>: Pokud někdo zničí dodatek <strong>a závěť</strong> + zařídí, aby Marek nepodepsal, <strong>smlouva 2027 vyprší a univerzita pronajme plochu</strong>. <strong>Komu?</strong> To přijde na Mendelově univerzitě.</p>
+</blockquote>
+<h4>11:30 — Mendelova univerzita, Brno (bonus pro 2–3 nejstarší kadety + 1 vedoucí)</h4>
+<p>Skupina pokračuje <strong>do Brna</strong> (cca 50 km) na <strong>Lesnickou a dřevařskou fakultu Mendelovy univerzity, oddělení Školní lesní podnik Křtiny</strong> (správce lesa, kde tábor stojí). Mladší děti se z Blanska vrátí do tábora; starší pokračují s vedoucím.</p>
+<p>V kanceláři ŠLP přijme děti <strong>lesnický inženýr Ing. Tomáš Bárta</strong> (vedoucí v roli — kostým, košile s logem MENDELU, dokumenty). Krátké vyptávání:</p>
+<blockquote>
+<p><strong>Ing. Bárta</strong>: „Děti, dobrý den. Pana Marka znám 30 let — uzavřeli jsme s ním smlouvu o propůjčení pozemku 1997. Jsem rád, že přijdete. <strong>Mám tu pár dokumentů, které vás budou zajímat.</strong></p>
+<p><em>(Ukáže dokumenty:)</em></p>
+<ol>
+<li>
+<p><strong>Stávající smlouva</strong> o propůjčení (1997–2027). Jasná, podepsaná. Příprava dodatku — viděl jsem ho letos v květnu, připraven k podpisu 11. července.</p>
+</li>
+<li>
+<p><strong>A teď nejdůležitější</strong>: V dubnu 2026 mě zastavil <strong>Vladimír Stehlík</strong>. Soused, hospodář, znám ho. Říkal: ‚Tomáši, kdyby tábor odešel, já bych měl o tu plochu zájem. Pro myslivecký revír. Prodloužil by ses se mnou?' <strong>Já jsem mu řekl, že to záleží na rozhodnutí univerzity, ale že </strong>jeho zájem evidujeme<strong> jako alternativní pronájem, kdyby smlouva s táborem nepokračovala. </strong>Neformální dohoda. Žádný papír.<strong> Ale </strong>Stehlík se to dověděl** — a od té doby měl naději."</p>
+</li>
+</ol>
+<p><strong>D14 — F14 v matrici</strong>: <strong>Dokument o Stehlíkově neformální dohodě s lesníkem o převzetí pozemku</strong>, pokud smlouva tábora vyprší. = motiv potvrzen.</p>
+<p><strong>Ing. Bárta</strong>: „<strong>Kdybych věděl, co Vladimír chystá, nikdy bych s ním nemluvil. Mrzí mě to.</strong>"</p>
+</blockquote>
+<p>Bárta dá dětem <strong>kopii zápisu rozhovoru</strong> (písemný záznam, který si tehdy poznamenal) — důkaz pro konfrontaci.</p>
+<blockquote>
+<p><strong>Pro vedoucí</strong>: Pokud reálně nelze cestovat až do Brna, scéna se simuluje v jiné místnosti tábora (vedoucí v roli Bárty). Děti se vracejí mikrobusem zpět.</p>
+</blockquote>
+<hr />
+<h3>Program v táboře (cca 39 dětí, kteří zůstali)</h3>
+<p>Pro zbylé děti (39):</p>
+<h4>09:00 – 12:00: Hlavolamy a velké hledání kolem tábora</h4>
+<ul>
+<li><strong>Velký hlavolamový rally</strong>: 8 stanovišť v táboře, na každém šifra nebo logická úloha. Týmy soutěží.</li>
+<li>Šifry navazují na <strong>detektivní téma</strong>: substituce SVĚTLO, Caesar, Morseovka, ale i logické úlohy (Sudoku, hádanky o rodinných vztazích).</li>
+<li><strong>Klíčový úkol pro zbylé týmy</strong>: Procházet znovu <strong>Alešovy boty</strong> (při převlékání ve sprchách u studánky — Aleš si tam ponechá své pracovní gumovky). <strong>F15 plně</strong>: tým najde na podrážce <strong>šedavý jíl specifický pro Stehlíkovu louku</strong> — porovná se vzorky, které vedoucí v lese připravil. <strong>Aleš tedy v noci 11.→12. 7. byl na Stehlíkově louce.</strong> Direktivní stopa.</li>
+</ul>
+<h4>14:00 – 16:00: Fotbalový turnaj — finále</h4>
+<ul>
+<li>Semifinále bylo den 3. Finále dnes.</li>
+<li>
+<ol>
+<li>a 2. místo: <strong>finálový zápas</strong>.</li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>a 4. místo: <strong>bronzový zápas</strong>.</li>
+</ol>
+</li>
+<li>Body do celotáborové soutěže.</li>
+</ul>
+<hr />
+<h2>Klíčový moment dne 8: Návrat výjezdové skupiny (16:30)</h2>
+<p>Výjezdová skupina se vrátí. <strong>Všichni se sejdou v jídelní plachtě.</strong></p>
+<p>Karel oznamuje:</p>
+<blockquote>
+<p>„Týmy. Výjezdová skupina přivezla <strong>tři vážné věci</strong>:</p>
+<ol>
+<li>
+<p><strong>Magdaléna Růžičková nám ukázala fragment závěti (§§ 1–2)</strong>. Pan Marek si přeje, aby celý text přečetl sám. Ale <strong>§ 1 už víme: Tábor Světlo má pokračovat. Pozemek se má prodloužit o 30 let.</strong></p>
+</li>
+<li>
+<p><strong>Magdaléna nám dala kopii dodatku smlouvy s Mendelovou univerzitou</strong> o prodloužení propůjčení o 30 let. <strong>Bez něj smlouva 2027 vyprší.</strong></p>
+</li>
+<li>
+<p><strong>A v Brně na Mendelově univerzitě nám potvrdili: Vladimír Stehlík už v dubnu 2026 řekl lesníkovi, že má zájem o ten pozemek pro myslivecký revír.</strong> Neformální dohoda. <strong>Stehlík to věděl.</strong></p>
+</li>
+</ol>
+<p>A v táboře jste vy mezitím našli na Alešových botách <strong>šedavý jíl ze Stehlíkovy louky</strong>. <strong>Aleš tam v noci byl. Stehlík ho tam zavolal.</strong>"</p>
+</blockquote>
+<p>Karel dále:</p>
+<blockquote>
+<p>„<strong>Stehlík je pachatel. Aleš je pomocník. Důkazy jsou pevné. Motiv je jasný — pozemek pro myslivecký revír. Zítra ve 14 hodin svoláme konfrontaci. Přijmeme Stehlíka v lipovém altánu u centrální plochy. Pak Aleše.</strong> Odpoledne mu předestřeme všechny důkazy. <strong>Pak budeme jednat.</strong>"</p>
+</blockquote>
+<hr />
+<h2>Indicie předané dnes</h2>
+<table>
+<thead>
+<tr>
+<th>Kód</th>
+<th>Indicie</th>
+<th>Co znamená</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>S21</strong></td>
+<td>Notářka potvrdí SoTův příchod 12. 7. v 6:30</td>
+<td><strong>DEFINITIVNÍ eliminace SoTa</strong></td>
+</tr>
+<tr>
+<td><strong>§§ 1–2 (kopie závěti)</strong></td>
+<td>Tábor pokračuje + pozemek se prodlužuje o 30 let</td>
+<td><strong>Pravá závěť obsahuje dodatek</strong></td>
+</tr>
+<tr>
+<td><strong>F13 (= D04 dodatek)</strong></td>
+<td>Kopie dodatku smlouvy s Mendelovou univerzitou</td>
+<td><strong>Bez dodatku smlouva 2027 vyprší</strong></td>
+</tr>
+<tr>
+<td><strong>F14 (= D04b)</strong></td>
+<td>Záznam rozhovoru Bárty se Stehlíkem</td>
+<td><strong>MOTIV PEVNÝ — Stehlík chce pozemek pro revír</strong></td>
+</tr>
+<tr>
+<td><strong>F15</strong></td>
+<td>Šedavý jíl ze Stehlíkovy louky na Alešových gumovkách</td>
+<td><strong>Aleš v noci byl na Stehlíkově louce</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Obsazení dne 8</h2>
+<table>
+<thead>
+<tr>
+<th>Postava</th>
+<th>Aktivita</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>JUDr. Magdaléna Růžičková</strong></td>
+<td>V kanceláři Blansko — ukáže fragment závěti + dodatek smlouvy</td>
+</tr>
+<tr>
+<td><strong>Ing. Tomáš Bárta</strong> (vedoucí v roli)</td>
+<td>Mendelova univerzita Brno — potvrdí Stehlíkův zájem</td>
+</tr>
+<tr>
+<td>Karel Malík</td>
+<td>V táboře koordinuje, vede prezentaci výjezdu</td>
+</tr>
+<tr>
+<td><strong>SoTo</strong></td>
+<td><strong>NEjede do Blanska</strong> — zůstává v táboře (aby ho děti nekonfrontovaly v notářské kanceláři). Pomáhá s programem v táboře. <strong>Definitivní eliminaci přijímá s drobnou poznámkou</strong>: <em>„Doufám, že jste se to naučili — i drsný strejda může být na vaší straně."</em></td>
+</tr>
+<tr>
+<td>Vedoucí výjezdu (2 jiní)</td>
+<td>S 6 dětmi v mikrobusu, doprovází 2–3 starší kadety do Brna</td>
+</tr>
+<tr>
+<td>Aleš Tomek</td>
+<td>V táboře, <strong>pod stále silnějším tlakem</strong>. Šedavý jíl na botách ho začíná dostávat.</td>
+</tr>
+<tr>
+<td>Stehlík</td>
+<td><strong>Přijde ještě jednou odpoledne</strong> (cca 16:00) — Karel ho pozve „na pohovor zítra ve 14:00 v lipovém altánu". Stehlík souhlasí klidně, nevypadá nervózní. <strong>Naoko klidný — uvnitř už začíná tušit.</strong></td>
+</tr>
+<tr>
+<td>Magda, Anička, Anežka, Jenda, Adriana</td>
+<td>Normální aktivity, podpora dětí</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Materiál pro den 8</h2>
+<ul>
+<li><strong>Mikrobus</strong> (8–10 míst — 6–9 dětí + 2 vedoucí)</li>
+<li><strong>Stagione (kanceláře)</strong> v Blansku a Brně: nemusíte skutečně cestovat — můžete to <strong>simulovat</strong> v jiném prostoru (např. místní obecní úřad v Jedovnicích, knihovna, klubovna). <strong>Pokud reálně cestujete do Blanska</strong>, je to autentičtější.</li>
+<li>Notářka v jednom místě (kostým, kufřík, brýle)</li>
+<li>Ing. Bárta v jiném (košile s logem MENDELU, dokumenty)</li>
+<li><strong>Kopie §§ 1–2</strong> (papír s razítkem notářské kanceláře, podpis)</li>
+<li><strong>Kopie dodatku smlouvy s Mendelovou univerzitou</strong> (papír s razítkem MENDELU, podpis lesníka)</li>
+<li><strong>Záznam rozhovoru Bárty se Stehlíkem</strong> (rukopis, datum „duben 2026")</li>
+<li><strong>Vzorek šedavého jílu z Stehlíkovy louky</strong> (vedoucí připravil ze skutečné lokality nebo simuluje hlínu z jiné lokality jako rozdíl)</li>
+</ul>
+<hr />
+<h2>Tipy pro vedoucí</h2>
+<ol>
+<li><strong>Výjezd je obrovský zážitek pro vybrané děti</strong> — vyberte je odpovědně. Doporučuji <strong>rotaci</strong> (= zástupce týmu, ne stále stejné dítě).</li>
+<li><strong>Je-li skutečné cestování problém</strong>: simulujte. <strong>Zhuštění času</strong> se v hře daří dobře. Jeden vedoucí v kostýmu notářky v jiné místnosti tábora — funguje. Druhý jako lesník MENDELU. Ale autentičtější je skutečný výlet <strong>do Blanska</strong> (20 km, 30 min).</li>
+<li><strong>Magdaléna musí dramaticky vyklopit</strong> dodatek smlouvy — to je <strong>pointová past</strong>. Děti zjistí, že <strong>bez dodatku tábor přijde o pozemek 2027</strong>.</li>
+<li><strong>Bárta</strong>: vedoucí v roli musí dát najevo, že <strong>prozradil víc, než měl</strong> (neformální dohoda se Stehlíkem ho mrzí). Lidský moment — i lesník udělal chybu.</li>
+<li><strong>Po návratu výjezdu je den 8 emocionální vrchol před den 9 (konfrontace)</strong> — dejte dětem dech, nehrajte víc dramatických scén.</li>
+<li><strong>Aleš dnes</strong>: drží se, ale <strong>šedavý jíl na botách ho usvědčuje</strong>. Vedoucí, který Aleše hraje, by měl <strong>najednou zmlknout</strong> (žádné slovní obhajoby — jen mlčení s pochmurným výrazem). To silně buduje napětí pro zítřejší konfrontaci.</li>
+<li><strong>Stehlík přijde odpoledne</strong>: Karel ho přijme zdvořile, oznámí mu pohovor zítra. Stehlík klidně přitaká: „Bez problému. <strong>Já jsem rád, že vyšetřujete. Pravda musí vyjít najevo.</strong>" Lež. Ale <strong>neagresivní</strong> — Stehlík je herecky <strong>klidný hospodář</strong>, ne padouch.</li>
+</ol>
+<hr />
+<h2>Co se stane zítra</h2>
+<p>Den 9: <strong>KONFRONTACE STEHLÍKA</strong> ve 14:00 v lipovém altánu. Týmy předestřou důkazy: otisk boty 44, popel z dýmky, lesní bahno specifické pro jeho louku, dodatek smlouvy = motiv. Stehlík nejprve lže („byl jsem doma"), pak při předložení dodatku smlouvy ZTICHNE. <strong>Postupné přiznání</strong> (klid, ne hysterie). 16:00 <strong>konfrontace Aleše</strong> — zhroutí se, přizná vydírání, 30 000 Kč. <strong>V chaosu Stehlík utíká do lesa směrem k samotě.</strong> Karel volá policii do Blanska. Večer <strong>stezka odvahy</strong> — bez napojení na herní linku (bezpečnostní pravidlo).</p>
+  </div>
+</main>
+
+<footer class="day-footer">
+  <div class="container">
+    <div>Tábor Světlo 2026 — Případ ztracené závěti · Den 8</div>
+    <div class="footer-nav">
+      <a href="../pruvodce.html#dny">Průvodce hrou</a>
+      <a href="../pribeh.html">Příběh jako kniha</a>
+      <a href="../den_08_vyjezd.md">Zdrojový MD</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

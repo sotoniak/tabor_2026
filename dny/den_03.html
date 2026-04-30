@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Den 3 — Výslechy personálu · Tábor Světlo 2026</title>
+<style>
+:root {
+  --color-primary: #1e3a5f;
+  --color-primary-light: #2c5282;
+  --color-accent: #d63031;
+  --color-accent-bg: #fadbd8;
+  --color-helper: #e67e22;
+  --color-success: #27ae60;
+  --color-success-bg: #d5f5e3;
+  --color-bg: #f8fafc;
+  --color-card: #ffffff;
+  --color-text: #1e293b;
+  --color-muted: #64748b;
+  --color-border: #e2e8f0;
+  --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.04);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", Roboto, sans-serif;
+  line-height: 1.7; color: var(--color-text); background: var(--color-bg);
+  margin: 0; padding: 0;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+
+header.day-hero {
+  background: linear-gradient(135deg, #1e3a5f 0%, #2c5282 100%);
+  color: white; padding: 56px 0 40px;
+}
+.day-hero .pill {
+  display: inline-block; padding: 4px 12px; background: rgba(255,255,255,0.18);
+  border-radius: 16px; font-size: 13px; margin-bottom: 12px; letter-spacing: 0.3px;
+}
+.day-hero h1 { font-size: 36px; margin: 0 0 8px; font-weight: 700; line-height: 1.2; }
+.day-hero .subtitle { font-size: 17px; opacity: 0.92; margin: 0; }
+
+nav.day-nav {
+  position: sticky; top: 0; z-index: 50;
+  background: #1e3a5f; color: #f1f5f9;
+  border-bottom: 1px solid #2c5282; box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+nav.day-nav .container {
+  display: flex; gap: 8px; align-items: center; flex-wrap: wrap;
+  padding: 10px 24px;
+}
+nav.day-nav a {
+  color: #f1f5f9; text-decoration: none; padding: 8px 14px;
+  font-size: 14px; font-weight: 500; border-radius: 6px;
+  transition: background 0.15s;
+}
+nav.day-nav a:hover { background: rgba(255,255,255,0.10); }
+nav.day-nav a.home { background: #fbbf24; color: #1e3a5f; font-weight: 600; }
+nav.day-nav a.home:hover { background: #fcd34d; }
+nav.day-nav .spacer { flex: 1; }
+nav.day-nav .disabled { opacity: 0.4; pointer-events: none; }
+
+main.day-content { padding: 40px 0 64px; }
+main.day-content .container {
+  background: var(--color-card); padding: 40px 56px;
+  border-radius: 12px; box-shadow: var(--shadow); margin-top: -24px;
+}
+
+main.day-content h1 { display: none; }
+main.day-content h2 {
+  color: var(--color-primary); font-size: 24px; font-weight: 700;
+  margin: 36px 0 16px; padding-bottom: 8px;
+  border-bottom: 2px solid var(--color-border);
+}
+main.day-content h2:first-child { margin-top: 0; }
+main.day-content h3 {
+  color: var(--color-primary-light); font-size: 19px; font-weight: 600;
+  margin: 28px 0 12px;
+}
+main.day-content h4 {
+  color: var(--color-text); font-size: 16px; font-weight: 600;
+  margin: 20px 0 8px;
+  text-transform: uppercase; letter-spacing: 0.4px;
+}
+main.day-content p { margin: 12px 0; }
+main.day-content ul, main.day-content ol { padding-left: 24px; margin: 12px 0; }
+main.day-content li { margin-bottom: 6px; }
+main.day-content strong { color: var(--color-primary); font-weight: 600; }
+main.day-content em { color: var(--color-muted); }
+main.day-content hr {
+  border: 0; border-top: 1px solid var(--color-border); margin: 32px 0;
+}
+
+main.day-content blockquote {
+  margin: 16px 0; padding: 12px 20px;
+  background: #f8fafc; border-left: 4px solid var(--color-primary-light);
+  border-radius: 0 8px 8px 0; color: var(--color-text);
+}
+main.day-content blockquote p { margin: 6px 0; }
+main.day-content blockquote strong { color: var(--color-primary); }
+
+main.day-content table {
+  width: 100%; border-collapse: collapse; margin: 16px 0;
+  font-size: 14px; box-shadow: var(--shadow); border-radius: 6px; overflow: hidden;
+  table-layout: auto;
+}
+main.day-content table th {
+  background: var(--color-primary); color: white; text-align: left;
+  padding: 10px 12px; font-weight: 600;
+  vertical-align: top; word-break: break-word;
+}
+main.day-content table td {
+  padding: 8px 12px; border-top: 1px solid var(--color-border);
+  vertical-align: top; word-break: break-word; overflow-wrap: anywhere;
+}
+main.day-content table tr:nth-child(even) td { background: #f8fafc; }
+main.day-content table td:first-child {
+  color: var(--color-primary);
+  font-family: "JetBrains Mono", "Courier New", monospace;
+  font-size: 13px;
+}
+/* Časy ve formátu HH:MM lze ponechat bez lámání — krátké stringy */
+main.day-content table td:first-child:is(.time, [data-time]) {
+  white-space: nowrap;
+}
+
+main.day-content code {
+  font-family: "JetBrains Mono", "Courier New", monospace;
+  background: var(--color-bg); border: 1px solid var(--color-border);
+  padding: 1px 6px; border-radius: 4px; font-size: 0.92em;
+}
+
+footer.day-footer {
+  background: #1e3a5f; color: #cbd5e1;
+  padding: 28px 0; text-align: center; font-size: 14px;
+}
+footer.day-footer a { color: #fbbf24; text-decoration: none; font-weight: 600; }
+footer.day-footer a:hover { text-decoration: underline; }
+footer.day-footer .footer-nav { margin-top: 12px; }
+footer.day-footer .footer-nav a { margin: 0 12px; }
+
+@media (max-width: 768px) {
+  .day-hero h1 { font-size: 26px; }
+  .day-hero .subtitle { font-size: 15px; }
+  main.day-content .container { padding: 24px; margin-top: -16px; }
+  main.day-content h2 { font-size: 20px; }
+  main.day-content h3 { font-size: 17px; }
+  main.day-content table { font-size: 13px; }
+  main.day-content table td, main.day-content table th { padding: 6px 8px; }
+  nav.day-nav .container { padding: 8px 12px; }
+  nav.day-nav a { padding: 6px 10px; font-size: 13px; }
+}
+@media print {
+  nav.day-nav, footer.day-footer { display: none; }
+  main.day-content .container { box-shadow: none; padding: 0; }
+}
+</style>
+</head>
+<body>
+
+<header class="day-hero">
+  <div class="container">
+    <span class="pill">Den 3 · 13. 7. (pondělí)</span>
+    <h1>Výslechy personálu</h1>
+    <p class="subtitle">Detailní program a příběh dne</p>
+  </div>
+</header>
+
+<nav class="day-nav">
+  <div class="container">
+    <a class="home" href="../pruvodce.html#dny">← Průvodce hrou</a>
+    <span class="spacer"></span>
+    <a href="den_02.html">← Den 2</a>
+    <a href="den_04.html">Den 4 →</a>
+  </div>
+</nav>
+
+<main class="day-content">
+  <div class="container">
+    <h1>DEN 3 — Pondělí 13. 7. 2026: Výslechy personálu</h1>
+<blockquote>
+<p><strong>Motto dne</strong>: „Každý v táboře má svou pravdu. A někdo má jednu nevyřčenou větu. Najděte ji."</p>
+</blockquote>
+<hr />
+<h2>Stručná osnova (timetable)</h2>
+<table>
+<thead>
+<tr>
+<th>Čas</th>
+<th>Co se děje</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>07:30 – 08:30</td>
+<td>Snídaně</td>
+</tr>
+<tr>
+<td>08:30 – 09:00</td>
+<td>Ranní brífink — Karel představí 9 podezřelých z personálu, rozdá výslechové protokoly</td>
+</tr>
+<tr>
+<td>09:00 – 12:00</td>
+<td><strong>ETAPOVÁ HRA č. 2: Výslechy</strong> — týmy rotují mezi 9 vyslýchanými</td>
+</tr>
+<tr>
+<td>12:00 – 13:00</td>
+<td>Oběd</td>
+</tr>
+<tr>
+<td>13:00 – 14:00</td>
+<td>Klid v stanech</td>
+</tr>
+<tr>
+<td>14:00 – 17:00</td>
+<td><strong>Fotbalový turnaj — semifinále</strong> (4 týmy hrají, 2 mají odpočinek + dopisují deníky)</td>
+</tr>
+<tr>
+<td>17:00 – 18:00</td>
+<td>Dopisování deníků</td>
+</tr>
+<tr>
+<td>18:00 – 19:00</td>
+<td>Večeře</td>
+</tr>
+<tr>
+<td>19:30 – 20:30</td>
+<td><strong>Vyhodnocení výslechů</strong> — Karel s týmy procházejí, co kdo zjistil</td>
+</tr>
+<tr>
+<td>20:30 – 21:30</td>
+<td>Volný čas / společenské hry pod plachtou</td>
+</tr>
+<tr>
+<td>22:00</td>
+<td>Večerka</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Příběh dne (z pohledu dětí)</h2>
+<p>Ráno <strong>Karel</strong> představí týmům <strong>podezřelé z personálu</strong>. Jeden po druhém je popíše:</p>
+<ol>
+<li><strong>Karel Malík</strong> (44, hlavní vedoucí) — vede vyšetřování, ale technicky je i podezřelý. Bude se vyslýchat sám. <strong>Alibi</strong>: byl se SoTem v Šéfce na poradě 23:30–00:15, pak spal. SoTo to potvrdí.</li>
+<li><strong>Tomáš „SoTo" Sotoniak</strong> (42, zástupce) — pomáhá vést vyšetřování. <strong>Alibi</strong>: porada s Karlem do 00:15. <strong>Slabé místo</strong>: po poradě „srovnával papíry v Šéfce", spát šel pozdě, spal krátce. Ráno se vrátil do tábora <strong>Santanou</strong> v 7:30, <strong>mlčí o tom, kde byl</strong>. Když se ho děti zeptají, odpoví: <em>„Nemůžu o tom teď mluvit. Vyřídím to."</em> — <strong>otevírá silnou rudou stopu</strong>.</li>
+<li><strong>Anička Kellnerová</strong> (35+, šéfkuchařka) — ráno objevila Marka v lese. <strong>Alibi</strong>: v noci dělala v polní kuchyni těsto a chystala kávu pro Marka, který si o ni požádal. <strong>Důležité</strong>: z polní kuchyně <strong>vidí na Šéfku</strong>. Něco viděla, ale <strong>dnes to ještě neřekne</strong> — promluví den 6.</li>
+<li><strong>Anežka Kellnerová</strong> (35+, sous-chef, ml. sestra Aničky) — <strong>alibi</strong>: pomáhala Aničce s těstem do 23:30, pak šla spát. Spala tvrdě, <strong>nic neviděla, nic neslyšela</strong>. Krátká výpověď.</li>
+<li><strong>Magda Hamanová</strong> (25, zdravotnice) — <strong>alibi</strong>: v zdravotce psala lékařský deník (papírový, datovaný, s časovými údaji). Ráno první ošetřovala Marka. Slabé místo: zatím <strong>nepředkládá deník</strong> (povinnost ochrany lékařských zápisů — den 7 ho ukáže Karlovi pro vyloučení). <strong>Klíčový dnešek</strong>: na otázku o rodinných vazbách Marka <strong>zmíní</strong>: <em>„Marek má vzdáleného synovce — Tomáš Sotoniak. Marek ho zaučoval do tábora už od jeho dvaceti."</em> <strong>Bomba pro děti.</strong></li>
+<li><strong>Jenda</strong> (44, zásobovač) — <strong>alibi</strong>: spal ve svém stanu s Adrianou, žádní jiní svědci. <strong>Slabé místo</strong>: každý den jezdí do Jedovnic. <strong>Něco viděl</strong> v noci — zaslechl motor kolem 0:45, myslel, že je to lesník nebo Stehlík. <strong>Něco viděl i den 11. 7. večer</strong> — stopy pickupu na lesní cestě. <strong>Dnes to ještě nedá k dobru</strong> — řekne to den 5.</li>
+<li><strong>Adriana</strong> (30, partnerka Jendy) — <strong>alibi</strong>: spala s Jendou. <strong>Slabé místo</strong>: také slyšela motor v 0:45. <strong>Klíčový postřeh</strong> — řekne den 4 ráno na poradě: <em>„Santana Tomáše Sotoniaka stojí ráno o 5 metrů blíže k cestě než večer."</em></li>
+<li><strong>Aleš Tomek</strong> (19, mladý správce) — <strong>alibi</strong>: byl u ohniště, „šlo na latrýnu" kolem 01:00, vrátil se, šel spát. <strong>Bez svědků</strong>. Slabé alibi. Aleš mluví klidně, ale v očích <strong>nervozita</strong>.</li>
+<li><strong>Pavel „Preclík" Malík</strong> (28, vedoucí oddílu, <strong>shoda příjmení s Karlem</strong>) — <strong>alibi</strong>: spal po celodenní práci s dětmi. Nikdo ho v noci neviděl. Krátká výpověď, žádné slabé místo (zatím — drobná stopa s koláčem přijde den 4).</li>
+</ol>
+<hr />
+<h2>Etapová hra č. 2: Výslechy (09:00–12:00)</h2>
+<h3>Cíl</h3>
+<p>6 týmů × 9 výslechů = mnoho. Týmy rotují, každý tým vyslýchá většinu z personálu (některé krátké, některé delší).</p>
+<h3>Struktura</h3>
+<ul>
+<li>
+<p><strong>9 výslechových míst</strong> (různé části tábora):
+  1. Šéfka — Karel
+  2. Stůl pod altánem u studánky — <strong>SoTo</strong> (drsné, vyhýbavé výslechy)
+  3. Polní kuchyně — Anička
+  4. Pomocná lavice u kuchyně — Anežka (krátký výslech)
+  5. Stan zdravotnice — Magda
+  6. Skladový stan — Jenda + Adriana
+  7. Přístřešek údržby — Aleš
+  8. Stůl pod plachtou jídelny — Preclík (krátký výslech)
+  9. Lavice u ohniště — alternativa pro doplnění (volné)</p>
+</li>
+<li>
+<p><strong>Každý tým má 15 min</strong> s každým hlavním podezřelým (Karel, SoTo, Anička, Magda, Jenda, Aleš) a <strong>5–10 min</strong> s vedlejšími (Anežka, Adriana, Preclík). Celkem cca 90–120 min + přestávky.</p>
+</li>
+<li><strong>Vyslýchá týmová role „vyslýchatel"</strong>, ostatní zapisují.</li>
+</ul>
+<h3>Výslechový protokol (formulář)</h3>
+<p>Každý tým má pro každého podezřelého formulář (viz <code>sablony/vyslechovy_protokol.md</code>):</p>
+<pre><code>PODEZŘELÝ: ________________________________
+TÝM: ______________________________________
+DATUM A ČAS VÝSLECHU: ______________________
+
+1. Kde jste byl/a v noci 11.→12. 7. (cca 22:00–06:00)?
+2. Kdo to může potvrdit?
+3. Slyšel/a jste nebo viděl/a něco neobvyklého?
+4. Měl/a jste přístup k Šéfce a truhle s mapami?
+5. Jaký je váš vztah k panu Markovi Stanislavovi?
+6. Vlastní otázka týmu (1–3 vlastní otázky):
+   ________________________________________
+   ________________________________________
+
+POZOROVÁNÍ TÝMU:
+- Mluvil/a klidně? Nervózně? Nervózní detail?
+- Něco neuhrálo s ostatními výpověďmi?
+
+NÁŠ ZÁVĚR: PODEZŘELÝ / VYLOUČENÝ / NEDOSTATEK INFORMACÍ
+</code></pre>
+<h3>Skripty výslechů (pro hrající personál)</h3>
+<blockquote>
+<p><strong>Důležité</strong>: Každý hrající čte tyto skripty jako šablonu, ale odpovídá v duchu. Klíčové informace musí být sděleny všem 6 týmům <strong>stejně</strong>.</p>
+</blockquote>
+<h4>Karel Malík (hlavní vedoucí)</h4>
+<p><strong>Stálá fakta</strong>:
+- 23:30–00:15 byl se SoTem v Šéfce na poradě (plánování dalšího dne, oba to potvrdí).
+- 00:15 šel do svého stanu, spal.
+- 05:45 ho vzbudila Anička s nálezem.
+- Volal záchranku ze satelitního telefonu.
+- Nemá důvod ublížit Markovi — je to jeho mentor 20 let.</p>
+<p><strong>Slabé místo (děti by měly přijít)</strong>: Po poradě byl sám ve stanu — žádný svědek od 00:15 do 05:45.</p>
+<h4>Tomáš „SoTo" Sotoniak (zástupce hl. vedoucího) — KLÍČOVÝ VÝSLECH</h4>
+<p><strong>Stálá fakta (které řekne):</strong>
+- 23:30–00:15 byl s Karlem v Šéfce.
+- Po 00:15 zůstal v Šéfce „srovnat papíry".
+- Spát šel pozdě, krátce.
+- Ráno se vrátil do tábora, <strong>nepřesnídá KDE byl</strong>.</p>
+<p><strong>Stálá fakta (která NEŘEKNE — drží Markovo přání):</strong>
+- 00:45 odjel Santanou do Brna pro dodatek smlouvy s podpisem (na Markovu žádost).
+- 5:00 se vrátil.
+- Marek mu kladl mlčet, dokud neřekne jinak.</p>
+<p><strong>Klíčové fráze:</strong>
+- <em>„Nemůžu o tom teď mluvit."</em>
+- <em>„Vyřídím to. Jen ne dnes."</em>
+- <em>„Karle, prosím tě, nech mě to dotáhnout."</em> (pokud Karel přitlačí)
+- <em>„Můžete mě podezírat, klidně. Já se z toho nezhroutím."</em>
+- (Suchá poznámka na nehoráznou otázku:) <em>„Vám to opravdu zní jako přiznání?"</em></p>
+<p><strong>Slabá místa, která děti vidí:</strong>
+- Vyhýbavé odpovědi
+- Drsná persona
+- Vrátil se ráno z neznámé jízdy
+- <strong>Vzdálený synovec Marka</strong> (zmíní Magda)
+- Klíče od všeho
+- Santana ráno na jiném místě (zmíní Adriana den 4)
+- Klárka pamatuje vážný rozhovor s Markem den 1 odpoledne</p>
+<blockquote>
+<p><strong>Pravda SoTa</strong>: viz výše. <strong>Den 7 začne mluvit</strong> po Markově vzkazu. <strong>Den 8 plně eliminován</strong> notářkou v Blansku.</p>
+</blockquote>
+<h4>Anička Kellnerová (šéfkuchařka, objevitelka)</h4>
+<p><strong>Stálá fakta</strong>:
+- 22:00–02:30 v polní kuchyni dělala těsto na ranní chleba a chystala kávu pro Marka (požádal si ji o ni večer). Anežka pomáhala do 23:30.
+- Po 02:30 si lehla v zadní části kuchyně na lavici.
+- 05:30 vstala, šla ke studánce pro vodu — našla Marka.
+- Nic neobvyklého neslyšela.
+- O Markovi mluví s úctou — dělá pro něj kuchyni 10+ let.</p>
+<p><strong>Slabé místo (děti zatím neodhalí)</strong>: Z polní kuchyně <strong>vidí na Šéfku</strong>. <strong>Něco viděla</strong>, ale dnes to neřekne — chce mít jistotu, není si jistá, <strong>bojí se zbytečně někoho obvinit</strong>. Vyklopí to <strong>až den 6 dopoledne</strong>.</p>
+<blockquote>
+<p><strong>Pravda Aničky</strong>: Kolem <strong>00:30 viděla baterku v Šéfce</strong> (myslela, že je to Marek nebo Karel). Kolem <strong>01:10 viděla siluetu utíkající od Šéfky směrem k lesu</strong> (myslela, že to je Aleš na latrýnu — jenže latrýna je opačným směrem).</p>
+</blockquote>
+<h4>Anežka Kellnerová (sous-chef, ml. sestra Aničky)</h4>
+<p><strong>Stálá fakta</strong>:
+- 22:00–23:30 pomáhala Aničce s těstem.
+- 23:30 šla spát do svého stanu vedle skladu. Spala tvrdě.
+- 06:00 ji vzbudil zmatek, viděla bratra Tomáše Kellnera přivážet maso.
+- <strong>Nic neviděla, nic neslyšela.</strong>
+- Marka zná dlouho, vážila si ho.</p>
+<p><strong>Slabé místo</strong>: Žádné. <strong>Krátký výslech</strong> — nemá co podstatného říct.</p>
+<blockquote>
+<p><strong>Tip</strong>: vedoucí Anežku vede <strong>stručně</strong>. Pokud děti tlačí, Anežka odpoví: <em>„Děti, já jsem celou noc spala. Říkat, co jsem neviděla, nemůžu."</em> Krátké, hotovo.</p>
+</blockquote>
+<h4>Magda Hamanová (zdravotnice)</h4>
+<p><strong>Stálá fakta</strong>:
+- 22:00–01:15 ve své zdravotce, <strong>psala lékařský deník</strong> (povinný papírový zápis za den).
+- 22:30 dala Markovi večerní dávku léků na tlak.
+- 01:15 šla spát ve stanu zdravotnice.
+- 05:35 ji vzbudila Anička s tím, že <strong>Marek leží v lese</strong>. Magda okamžitě běžela s kufříkem, ošetřila ho do příjezdu záchranky.
+- Marka zná 5 let.</p>
+<p><strong>Klíčový dnešní moment</strong> — Magda v jednom z výslechů zmíní rodinné vazby:</p>
+<blockquote>
+<p><em>„Marek má hodně rodiny po světě. Mám tady jen jednoho příbuzného, kterého znám osobně — vzdáleného synovce </em><em>Tomáše Sotoniaka</em><em>. Jeho matka byla Markova mladší sestřenice. Marek ho zaučoval do tábora už od jeho dvaceti."</em></p>
+</blockquote>
+<p>Tým, který tuto informaci uslyší, <strong>přinese ji ostatním</strong> na večerní vyhodnocení. <strong>Otevírá hlavní rudou stopu R01.</strong></p>
+<p><strong>Slabé místo</strong>: <strong>Zatím nepředkládá deník</strong>. Děti budou pochybovat. Zná Markovy zdravotní problémy (chronické, diskrétní), má přístup k lékům.</p>
+<p><strong>Drobnost o Magdě</strong>: pokud se ptají na její rodinný stav, Magda s úsměvem: <em>„Vdávám se za tři měsíce. Po šesti letech. Takže ano, jsem oficiálně </em><em>kmet</em><em>, jak já jsem dřív říkala starším kolegyním. Karma je svinka."</em></p>
+<h4>Jenda + Adriana (zásobovač + partnerka)</h4>
+<p><strong>Stálá fakta</strong>:
+- 22:30 šli oba do svého stanu, spali.
+- Žádné jiné svědky.
+- 06:30 vstali, řídili dovoz.
+- Marka znají, vážili si ho.</p>
+<p><strong>Drobnost (kterou dnes řeknou):</strong>
+- Oba <strong>slyšeli motor kolem 0:45</strong> — Jenda si myslel, že je to Stehlík nebo lesník. Nešli se podívat. <em>(Klíčový kus rudé stopy proti SoTovi pro děti, které si to všimnou.)</em></p>
+<p><strong>Slabé místo</strong>: Žádné svědky, ale dva navzájem.</p>
+<blockquote>
+<p><strong>Pravda Jendy + Adriany</strong>: Den 5 přidá informaci, že <strong>viděli na lesní cestě stopy pickupu</strong>, které tam nemají co dělat. Adriana den 4 zmíní postřeh o Santanu.</p>
+</blockquote>
+<h4>Aleš Tomek (mladý správce, 19)</h4>
+<p><strong>Stálá fakta</strong>:
+- 22:00–00:30 hlídal dohořívající ohniště (= výmluva — opravdu byl venku).
+- 00:30 si „šel na latrýnu", vrátil se kolem 01:30, šel do svého stanu.
+- Žádné svědky.
+- 06:00 ho vzbudil zmatek v táboře, šel pomoci.
+- Marka zná „od dětství". Otec byl lesní dělník u Stehlíků.</p>
+<p><strong>Slabé místo</strong>: Žádné svědky. <strong>Mluví klidně, ale občas se zarazí, polkne, podívá stranou.</strong> Vedoucí, který Aleše hraje, <strong>NESMÍ to přehánět</strong> — jemné nervozní detaily, <strong>ne křečovité hraní</strong>.</p>
+<blockquote>
+<p><strong>Pravda Aleše</strong>: Rozvázal plachtu Šéfky kolem 00:15. Stehlík přišel kolem 00:30. Aleš šel na latrýnu pro alibi. Vrátil se, slyšel sten, viděl Marka v bezvědomí, <strong>v panice odešel do stanu</strong>. <strong>Demaskování: den 9, kombinací stop + Aničkin svědek + Markův videovzkaz.</strong></p>
+</blockquote>
+<h4>Pavel „Preclík" Malík (vedoucí oddílu, 28)</h4>
+<p><strong>Stálá fakta</strong>:
+- 22:00 šel spát do svého stanu.
+- Žádné svědky, ale spal jako špalek po celodenní práci s dětmi.
+- 06:30 ho vzbudil zmatek, šel pomáhat.
+- Marka zná z táborů — chodil sem od 13 let jako kadet, pak vedoucí. K rodině pana Marka nemá žádný vztah.</p>
+<p><strong>Slabé místo</strong>: Bez svědků. <strong>Krátký výslech</strong>. (Drobná stopa s koláčem přijde den 4.)</p>
+<hr />
+<h3>Bodování výslechů (viz 13_BODOVANI.md)</h3>
+<ul>
+<li><strong>Vlastní otázky týmu</strong>: 1–10 b. (kreativní, odhalují slabosti)</li>
+<li><strong>Pozorování</strong>: 1–10 b. (zaznamenají detail v chování)</li>
+<li><strong>Závěr</strong>: 1–10 b. (logický závěr na základě výpovědi)</li>
+</ul>
+<hr />
+<h2>Klíčový moment dne: Eliminace Karla, Anežky, Preclíka (večer 19:30)</h2>
+<p>Po vyhodnocení výslechů <strong>Karel</strong> spustí:</p>
+<blockquote>
+<p>„Týmy, máme první vyhodnocení. <strong>Já a SoTo jsme měli vzájemné alibi do 00:15</strong> — porada v Šéfce. Anička z polní kuchyně potvrzuje, že nás viděla v Šéfce — světlo svítilo, slyšela hlasy. <strong>Po 00:15 jsem byl ve stanu</strong>, žádné svědky <strong>— ale nemám motiv, navíc závěť mě potvrzuje ve funkci, motiv pro krádež nemám.</strong> Považujte mě za <strong>eliminovaného</strong>.
+<strong>Anežka</strong> spala od 23:30, <strong>Aničku potvrzujeme</strong> (Anička má klíčové místo svědka, ale je s Anežkou stejný stan kuchyně, takže to potvrzuje). Anežka také eliminována.
+<strong>Preclík</strong> spal jako špalek, žádné svědky, <strong>ale bez motivu</strong>. Eliminován <strong>podmíněně</strong> — pokud nepřibude důkaz."</p>
+</blockquote>
+<p>Týmy si v kartotéce <strong>přeškrtnou</strong> Karla, Anežku a Preclíka. Z 9 podezřelých zbývá <strong>6: SoTo, Anička, Magda, Jenda, Adriana, Aleš</strong>.</p>
+<blockquote>
+<p><strong>Důležité</strong>: SoTo zůstává podezřelý — vlastně <strong>nejhlavnější</strong>: krevní pouto, vyhýbavé odpovědi, klíče od všeho, ranní návrat z neznámé jízdy.</p>
+</blockquote>
+<hr />
+<h2>Klárčin postřeh (S22)</h2>
+<p>Při vyhodnocení <strong>Klárka Malíková</strong> (instruktorka Jestřábů) přidá: <em>„Já jsem ještě den 1 viděla, jak strýček Tomáš mluví s panem Markem stranou, někde ke 4 hodině odpoledne. Zdálo se mi, že je to vážné."</em> — <strong>podporuje rudou stopu proti SoTovi</strong>.</p>
+<hr />
+<h2>Co se zatím nikdo neví</h2>
+<p>Děti zatím <strong>NEMAJÍ</strong>:
+- Identitu pachatele zvenku (= Vladimír Stehlík, soused — přijede „oficiálně" den 5)
+- Adrianin postřeh o Santanu (= den 4 ráno)
+- Jendovo info o stopách pickupu (= den 5)
+- Aničkin nález siluety (= den 6)
+- Magdin deník (= den 7)
+- Markův vzkaz (= den 7)
+- SoTův příběh o Brně (= den 7 po Markově vzkazu)</p>
+<hr />
+<h2>Materiál pro den 3</h2>
+<ul>
+<li><strong>9 výslechových míst</strong> připravených (židle, stoly)</li>
+<li><strong>Výslechové protokoly</strong> (× 6 týmů × 9 podezřelých)</li>
+<li><strong>Skripty pro vyslýchaný personál</strong> (zalaminované, u každého)</li>
+<li><strong>Kartotéka podezřelých</strong> (aktualizace po výsleších)</li>
+</ul>
+<hr />
+<h2>Indicie předané dnes</h2>
+<table>
+<thead>
+<tr>
+<th>Kód</th>
+<th>Indicie</th>
+<th>Zdroj</th>
+<th>Co znamená</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S02</td>
+<td>Karel + SoTo — vzájemné alibi (porada 23:30–00:15)</td>
+<td>Výslech Karla, SoTa</td>
+<td>Porada doložena, ale SoTo dál podezřelý</td>
+</tr>
+<tr>
+<td>S04</td>
+<td>Aleš byl u ohně + latrýna, sám</td>
+<td>Výslech Aleše</td>
+<td><strong>Slabé alibi, jemně nervozní</strong></td>
+</tr>
+<tr>
+<td>S06</td>
+<td>Anežka — krátká výpověď, spala tvrdě</td>
+<td>Výslech Anežky</td>
+<td>Bez stop, eliminace</td>
+</tr>
+<tr>
+<td>S07</td>
+<td>Magda — píše deník, ale nepředkládá</td>
+<td>Výslech Magdy</td>
+<td>Slabé alibi do dne 7</td>
+</tr>
+<tr>
+<td>S08</td>
+<td>Jenda + Adriana — slyšeli motor v 0:45 (mysleli Stehlíka)</td>
+<td>Výslech Jendy + Adriany</td>
+<td>Otevírá rudou stopu motorem</td>
+</tr>
+<tr>
+<td><strong>S12</strong></td>
+<td><strong>Magda zmíní krevní pouto SoTa s Markem (synovec)</strong></td>
+<td>Výslech Magdy</td>
+<td><strong>Hlavní rudá stopa — R01</strong></td>
+</tr>
+<tr>
+<td><strong>S22</strong></td>
+<td><strong>Klárka pamatuje vážný rozhovor Marka se SoTem den 1</strong></td>
+<td>Vyhodnocení večer</td>
+<td>Posiluje rudou stopu R06</td>
+</tr>
+<tr>
+<td>Aleš slabé alibi</td>
+<td>Aleš sám u ohně + latrýna</td>
+<td>Výslech Aleše</td>
+<td>Důležitý kus pro pozdější odhalení</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Obsazení dne 3</h2>
+<table>
+<thead>
+<tr>
+<th>Postava</th>
+<th>Aktivita</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Karel</td>
+<td>Vede ranní brífink, výslech — vlastní výpověď</td>
+</tr>
+<tr>
+<td>SoTo</td>
+<td>Koordinuje, výslech — drsný, vyhýbavý</td>
+</tr>
+<tr>
+<td>Anička, Anežka, Magda, Jenda, Adriana, Aleš, Preclík</td>
+<td>Výslechy</td>
+</tr>
+<tr>
+<td>Aleš</td>
+<td>Po obědě má opravu zástěny u latrýn</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Tipy pro vedoucí</h2>
+<ol>
+<li><strong>Karel a SoTo musí být ochotni být vyslýcháni dětmi</strong> — to je krásná lekce. Děti vidí, že <strong>dospělí jsou též pod ohněm pravdy</strong>.</li>
+<li><strong>Skripty hrajte věrně, ale nedejte všechno najevo</strong>. Děti nesmí vidět, že někdo „herničí". <strong>Aleš</strong> hraje obyčejného klidného člověka — žádné křečové tiky, jen jemnou, lidskou nervozitu. <strong>SoTo</strong> drsnou, mlčenlivou autoritu — ne padouchovsky, ale jako někdo, kdo má informace a ví, že je nemůže říct.</li>
+<li><strong>Magdin moment se synovcem (S12) je klíčový</strong> — musí ho zmínit alespoň 2 týmům, aby se to <strong>rozlilo</strong> večer.</li>
+<li><strong>Anička</strong>: pokud se jí zeptají „opravdu jste nic neviděla?", má odpovědět: „<strong>Nejsem si jistá. Bylo tma.</strong>" Tato menší nervozita je správná — sklízí pochybnost.</li>
+<li><strong>Eliminace Karla + Anežky + Preclíka v 19:30 je důležitá</strong>: Děti vidí, že <strong>vyšetřování opravdu funguje</strong>. To je motivační moment a uzavírá první kruh.</li>
+<li><strong>Po dlouhém vyšetřování dejte dětem úlevu</strong>: fotbalový turnaj odpoledne je perfektní — fyzická aktivita po hlavolamech.</li>
+</ol>
+<hr />
+<h2>Co se stane zítra</h2>
+<p>Den 4: Týmy začnou kreslit <strong>mapu tábora</strong> a procházejí <strong>forenzní stanoviště</strong> (otisky, vlasy, identikit, stopy bot/pneumatik, grafologie, fotodokumentace). Forenziku odhalí: otisk u truhly <strong>NEPATŘÍ nikomu z personálu</strong>, vlas nalezený na rukavici je z <strong>kožené rukavice</strong> (mimo personál), pneumatika = <strong>pickup</strong>. <strong>Adriana ráno zmíní Santanu</strong> — silně rudá stopa proti SoTovi. <strong>Preclík přizná noční nájezd na koláč</strong>. <strong>D01 anonymní dopis Caesar +3</strong>.</p>
+  </div>
+</main>
+
+<footer class="day-footer">
+  <div class="container">
+    <div>Tábor Světlo 2026 — Případ ztracené závěti · Den 3</div>
+    <div class="footer-nav">
+      <a href="../pruvodce.html#dny">Průvodce hrou</a>
+      <a href="../pribeh.html">Příběh jako kniha</a>
+      <a href="../den_03_vyslechy.md">Zdrojový MD</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

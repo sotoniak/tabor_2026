@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Den 6 — Den klidu, údržby a Aniččina výpověď · Tábor Světlo 2026</title>
+<style>
+:root {
+  --color-primary: #1e3a5f;
+  --color-primary-light: #2c5282;
+  --color-accent: #d63031;
+  --color-accent-bg: #fadbd8;
+  --color-helper: #e67e22;
+  --color-success: #27ae60;
+  --color-success-bg: #d5f5e3;
+  --color-bg: #f8fafc;
+  --color-card: #ffffff;
+  --color-text: #1e293b;
+  --color-muted: #64748b;
+  --color-border: #e2e8f0;
+  --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.04);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", Roboto, sans-serif;
+  line-height: 1.7; color: var(--color-text); background: var(--color-bg);
+  margin: 0; padding: 0;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+
+header.day-hero {
+  background: linear-gradient(135deg, #1e3a5f 0%, #2c5282 100%);
+  color: white; padding: 56px 0 40px;
+}
+.day-hero .pill {
+  display: inline-block; padding: 4px 12px; background: rgba(255,255,255,0.18);
+  border-radius: 16px; font-size: 13px; margin-bottom: 12px; letter-spacing: 0.3px;
+}
+.day-hero h1 { font-size: 36px; margin: 0 0 8px; font-weight: 700; line-height: 1.2; }
+.day-hero .subtitle { font-size: 17px; opacity: 0.92; margin: 0; }
+
+nav.day-nav {
+  position: sticky; top: 0; z-index: 50;
+  background: #1e3a5f; color: #f1f5f9;
+  border-bottom: 1px solid #2c5282; box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+nav.day-nav .container {
+  display: flex; gap: 8px; align-items: center; flex-wrap: wrap;
+  padding: 10px 24px;
+}
+nav.day-nav a {
+  color: #f1f5f9; text-decoration: none; padding: 8px 14px;
+  font-size: 14px; font-weight: 500; border-radius: 6px;
+  transition: background 0.15s;
+}
+nav.day-nav a:hover { background: rgba(255,255,255,0.10); }
+nav.day-nav a.home { background: #fbbf24; color: #1e3a5f; font-weight: 600; }
+nav.day-nav a.home:hover { background: #fcd34d; }
+nav.day-nav .spacer { flex: 1; }
+nav.day-nav .disabled { opacity: 0.4; pointer-events: none; }
+
+main.day-content { padding: 40px 0 64px; }
+main.day-content .container {
+  background: var(--color-card); padding: 40px 56px;
+  border-radius: 12px; box-shadow: var(--shadow); margin-top: -24px;
+}
+
+main.day-content h1 { display: none; }
+main.day-content h2 {
+  color: var(--color-primary); font-size: 24px; font-weight: 700;
+  margin: 36px 0 16px; padding-bottom: 8px;
+  border-bottom: 2px solid var(--color-border);
+}
+main.day-content h2:first-child { margin-top: 0; }
+main.day-content h3 {
+  color: var(--color-primary-light); font-size: 19px; font-weight: 600;
+  margin: 28px 0 12px;
+}
+main.day-content h4 {
+  color: var(--color-text); font-size: 16px; font-weight: 600;
+  margin: 20px 0 8px;
+  text-transform: uppercase; letter-spacing: 0.4px;
+}
+main.day-content p { margin: 12px 0; }
+main.day-content ul, main.day-content ol { padding-left: 24px; margin: 12px 0; }
+main.day-content li { margin-bottom: 6px; }
+main.day-content strong { color: var(--color-primary); font-weight: 600; }
+main.day-content em { color: var(--color-muted); }
+main.day-content hr {
+  border: 0; border-top: 1px solid var(--color-border); margin: 32px 0;
+}
+
+main.day-content blockquote {
+  margin: 16px 0; padding: 12px 20px;
+  background: #f8fafc; border-left: 4px solid var(--color-primary-light);
+  border-radius: 0 8px 8px 0; color: var(--color-text);
+}
+main.day-content blockquote p { margin: 6px 0; }
+main.day-content blockquote strong { color: var(--color-primary); }
+
+main.day-content table {
+  width: 100%; border-collapse: collapse; margin: 16px 0;
+  font-size: 14px; box-shadow: var(--shadow); border-radius: 6px; overflow: hidden;
+  table-layout: auto;
+}
+main.day-content table th {
+  background: var(--color-primary); color: white; text-align: left;
+  padding: 10px 12px; font-weight: 600;
+  vertical-align: top; word-break: break-word;
+}
+main.day-content table td {
+  padding: 8px 12px; border-top: 1px solid var(--color-border);
+  vertical-align: top; word-break: break-word; overflow-wrap: anywhere;
+}
+main.day-content table tr:nth-child(even) td { background: #f8fafc; }
+main.day-content table td:first-child {
+  color: var(--color-primary);
+  font-family: "JetBrains Mono", "Courier New", monospace;
+  font-size: 13px;
+}
+/* Časy ve formátu HH:MM lze ponechat bez lámání — krátké stringy */
+main.day-content table td:first-child:is(.time, [data-time]) {
+  white-space: nowrap;
+}
+
+main.day-content code {
+  font-family: "JetBrains Mono", "Courier New", monospace;
+  background: var(--color-bg); border: 1px solid var(--color-border);
+  padding: 1px 6px; border-radius: 4px; font-size: 0.92em;
+}
+
+footer.day-footer {
+  background: #1e3a5f; color: #cbd5e1;
+  padding: 28px 0; text-align: center; font-size: 14px;
+}
+footer.day-footer a { color: #fbbf24; text-decoration: none; font-weight: 600; }
+footer.day-footer a:hover { text-decoration: underline; }
+footer.day-footer .footer-nav { margin-top: 12px; }
+footer.day-footer .footer-nav a { margin: 0 12px; }
+
+@media (max-width: 768px) {
+  .day-hero h1 { font-size: 26px; }
+  .day-hero .subtitle { font-size: 15px; }
+  main.day-content .container { padding: 24px; margin-top: -16px; }
+  main.day-content h2 { font-size: 20px; }
+  main.day-content h3 { font-size: 17px; }
+  main.day-content table { font-size: 13px; }
+  main.day-content table td, main.day-content table th { padding: 6px 8px; }
+  nav.day-nav .container { padding: 8px 12px; }
+  nav.day-nav a { padding: 6px 10px; font-size: 13px; }
+}
+@media print {
+  nav.day-nav, footer.day-footer { display: none; }
+  main.day-content .container { box-shadow: none; padding: 0; }
+}
+</style>
+</head>
+<body>
+
+<header class="day-hero">
+  <div class="container">
+    <span class="pill">Den 6 · 16. 7. (čtvrtek)</span>
+    <h1>Den klidu, údržby a Aniččina výpověď</h1>
+    <p class="subtitle">Detailní program a příběh dne</p>
+  </div>
+</header>
+
+<nav class="day-nav">
+  <div class="container">
+    <a class="home" href="../pruvodce.html#dny">← Průvodce hrou</a>
+    <span class="spacer"></span>
+    <a href="den_05.html">← Den 5</a>
+    <a href="den_07.html">Den 7 →</a>
+  </div>
+</nav>
+
+<main class="day-content">
+  <div class="container">
+    <h1>DEN 6 — Čtvrtek 16. 7. 2026: Den klidu, údržby a Aniččina výpověď</h1>
+<blockquote>
+<p><strong>Motto dne</strong>: „Ticho. Ale i ticho mluví. Anička se konečně odhodlá."</p>
+</blockquote>
+<hr />
+<h2>Stručná osnova (timetable)</h2>
+<table>
+<thead>
+<tr>
+<th>Čas</th>
+<th>Co se děje</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>08:30 – 09:30</td>
+<td><strong>Pomalá snídaně</strong> — žádný spěch, pozdní budíček</td>
+</tr>
+<tr>
+<td>09:30 – 11:00</td>
+<td><strong>Aniččina výpověď</strong> — klíčový moment dne</td>
+</tr>
+<tr>
+<td>11:00 – 12:00</td>
+<td>Volný čas — koupání u studánky, deníky, šachy, lisování bylin</td>
+</tr>
+<tr>
+<td>12:00 – 13:00</td>
+<td>Oběd</td>
+</tr>
+<tr>
+<td>13:00 – 14:00</td>
+<td>Velký klid (povinné)</td>
+</tr>
+<tr>
+<td>14:00 – 14:30</td>
+<td><strong>Tomáš Kellner se vrací</strong> s dotázanou vepřovou plecí; krátká drobná stopa o Santanu v 5:30 (S19)</td>
+</tr>
+<tr>
+<td>14:30 – 16:00</td>
+<td><strong>Příprava talentové show</strong> + <strong>Strom 30 let</strong></td>
+</tr>
+<tr>
+<td>16:00 – 16:30</td>
+<td><strong>Bombshell: anonymní dopis D02</strong> (substituční šifra, klíč SVĚTLO)</td>
+</tr>
+<tr>
+<td>16:30 – 17:30</td>
+<td><strong>Magda vysvětlí krevní pouto SoTa</strong> (S12) + <strong>eliminace Hájka, Konečného</strong></td>
+</tr>
+<tr>
+<td>17:30 – 18:00</td>
+<td>Workshop první pomoci (dobrovolné — Magda)</td>
+</tr>
+<tr>
+<td>18:00 – 19:00</td>
+<td>Slavnostní večeře</td>
+</tr>
+<tr>
+<td>19:30 – 21:30</td>
+<td><strong>TALENTOVÁ SHOW</strong></td>
+</tr>
+<tr>
+<td>21:30 – 22:00</td>
+<td>Volný čas u ohně</td>
+</tr>
+<tr>
+<td>22:00</td>
+<td>Večerka</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Příběh dne (z pohledu dětí)</h2>
+<p>Po pěti dnech intenzivního vyšetřování přichází <strong>den klidu</strong>. Děti to potřebují. Vedoucí to potřebují. Tábor potřebuje <strong>dýchat</strong>.</p>
+<p>Ráno je pomalá snídaně. Vedoucí nepřinášejí žádné drama. <strong>Žádný nástup</strong>.</p>
+<p>V 09:30 ale Karel svolá týmy do <strong>teepee</strong> (společný stan pro deštivé dny — dnes je trochu zataženo). Vedle něj stojí <strong>Anička</strong>, která má v očích slzy a v rukou utěrku.</p>
+<blockquote>
+<p><strong>Karel</strong>: „Týmy, něco důležitého. Anička chce promluvit."</p>
+<p><strong>Anička</strong> (pomalu, s pauzami):
+„Děti, omlouvám se vám. Měla jsem to říct dřív. <strong>V noci 11. 7. jsem byla v polní kuchyni do hluboké noci</strong> — dělala jsem těsto na ranní chleba, chystala kávu pro pana Marka, který si o ni odpoledne požádal. Z polní kuchyně <strong>vidím přes plachtu na Šéfku</strong>. Anežka mi pomáhala do půl dvanácté, pak šla spát. Já jsem zůstala sama.</p>
+<p><em>(Otře si oči.)</em></p>
+<p><strong>Kolem půl jedné v noci jsem viděla v Šéfce baterku.</strong> Krátká světla, jako by někdo něco hledal v truhle. Já jsem si v tu chvíli říkala — to bude pan Marek, nemůže spát, dochází se podívat na závěť. To se stává.</p>
+<p>A potom <strong>kolem deseti minut po jedné</strong> — jsem viděla <strong>siluetu utíkající od Šéfky směrem k lesu</strong>. Velikost? Vyšší. <strong>Já jsem si v tu chvíli myslela, že to je Aleš, který jde na latrýnu</strong>. Aleš tam přes noc chodí pravidelně, často přes les. Takže jsem si nezalekla. Šla jsem zase k těstu.</p>
+<p><em>(Pomlka.)</em></p>
+<p>Ale <strong>teď, když si to malujeme s tou hrou — silueta byla jiná. Byla větší než Aleš. A spěchala. Aleš nikdy nespěchá. Aleš se vleče.</strong></p>
+<p>A ještě něco. <strong>Latrýna je opačným směrem.</strong> Aleš by tam neutíkal — ten šel naopak. <strong>Tahle silueta byla cizí.</strong></p>
+<p>Bála jsem se to říct hned. Bála jsem se, že obviním někoho neprávem. Aleš je můj kolega — i když mladý, mám ho ráda. <strong>Ale teď to říct musím.</strong>"</p>
+</blockquote>
+<p>Děti zůstanou bez dechu. <strong>V Šéfce v noci byla baterka. A někdo utíkal směrem k lesu — vyšší než Aleš, opačným směrem než latrýna.</strong></p>
+<blockquote>
+<p><strong>Karel</strong>: „Děkujeme, Aničko. <strong>Vaše svědectví je klíčové.</strong> Týmy: máme <strong>silnější stopu</strong>. V Šéfce v noci NĚKDO byl. Někdo cizí — vyšší a rychlejší než Aleš. To dnes všechno řešíme s důstojností. Aleš je tady, zůstává v týmu, ale <strong>vy ho budete dnes pečlivě vyslýchat ohledně té latríny</strong>: byl tam, neviděl něco?"</p>
+</blockquote>
+<p><strong>Aleš stojí opodál.</strong> Na otázku odpovídá tlumeně:</p>
+<blockquote>
+<p><strong>Aleš</strong>: „Šel jsem na latrýnu kolem jedné. Vrátil jsem se. <strong>Nic jsem neviděl.</strong> Cesta k latrýně je za stany, ne přes Šéfku."</p>
+</blockquote>
+<p>Některé děti se ptají: „Slyšel jsi něco?" Aleš: „Slyšel jsem... vlastně sten. Z lesa za Šéfkou. Já jsem si myslel, že je to nějaký zvíře. Pak jsem šel spát."</p>
+<blockquote>
+<p><strong>Důležité</strong>: Aleš <strong>přiznává jenom kousek</strong> — slyšel sten, ale nic víc. Děti budou hodnotit — proč nešel zkontrolovat? <strong>První konkrétní stopa proti Alešovi.</strong> Ale děti jeho výpověď zatím nedotáhnou — Aleš drží.</p>
+</blockquote>
+<hr />
+<h2>Klíčový moment dne 1b: Tomáš Kellner se vrací (14:00) — drobná stopa S19</h2>
+<p>Po klidu <strong>Tomáš Kellner</strong> (Aniččin a Anežčin bratr) přijde znovu — přiveze <strong>dotázanou vepřovou plec</strong>, kterou si Anička vyžádala v 7:00 ráno cestou. Krátká scéna v polní kuchyni. Děti ho mohou krátce dotazovat.</p>
+<p>Tým, který se ho zeptá <em>„viděl jste tu noc něco neobvyklého?"</em>, dostane odpověď:</p>
+<blockquote>
+<p><strong>Tomáš Kellner</strong>: „Hele, já jsem <strong>toho rána, co jsem sem vezl maso, v 5:30 míjel na silnici k Jedovnicům Santanu Tomáše Sotoniaka</strong>. Jel směrem k tábořišti odsud. Nic jsem si nemyslel — Tomáše znám, na cestě je často. Až dnes, když mi Anička vyprávěla, jak na něj děti tlačí, jsem si vzpomněl. <strong>Jenom to říkám, ať to víte.</strong>"</p>
+<p><strong>Důležité — S19</strong>: <strong>Toto je klíčový kus, který později (den 8) podpoří SoTův příběh</strong> (notářka v Blansku potvrdí, že SoTo k ní přišel v 6:30, takže Santana v 5:30 mířila ne k Jedovnicům, ale <strong>z</strong> Brna <strong>přes</strong> Jedovnice ke kanceláři notářky). Tým si to zapíše do deníku.</p>
+</blockquote>
+<hr />
+<h2>Klíčový moment dne 2: Anonymní dopis D02 (16:00) — Substituce, klíč SVĚTLO</h2>
+<p>Při přípravě talentové show <strong>najde tým Lišek</strong> v pytli na rekvizity <strong>přeložený list papíru</strong>. Žádný podpis. Text:</p>
+<pre><code>NLOSDR XL DJ ECTHUDC
+</code></pre>
+<p>Šifra je <strong>substituční</strong> — klíčové slovo schované v nástěnce historie tábora: <strong>SVĚTLO</strong> (název tábora). Substituční abeceda začíná klíčovým slovem (S, V, E, T, L, O), pak doplňuje zbytek abecedy s vyloučením těchto písmen.</p>
+<p>Pokud týmy klíč rozluští (vedoucí týmu pomáhá nasměrovat k nástěnce):</p>
+<blockquote>
+<p><strong>„PODÍVEJTE SE NA HLÍDKU"</strong></p>
+<p><strong>Karel</strong>: „Co to znamená? V táboře nemáme noční hlídku v pravém slova smyslu. Ale Aleš v noci ‚hlídal ohniště' — sám to říkal. <strong>Pisatel nás směruje na Aleše.</strong> Týmy, <strong>ohniště má knihu hlídky</strong> — papír, kam se zapisují časové úseky a kdo má službu. <strong>Najděte ji.</strong>"</p>
+</blockquote>
+<p>Tým Vlci najde <strong>knihu hlídky ohniště</strong> v přístřešku údržby. Obrátí stránku 11. → 12. července. Mezi <strong>00:30 a 01:30 chybí zápis</strong>. Aleš měl zapsat každých 30 min, kdo udržuje oheň. <strong>Mezera.</strong></p>
+<blockquote>
+<p><strong>F11 (objevena)</strong>: <strong>Mezera v záznamu Alešovy hlídky ohniště mezi 00:30 a 01:30.</strong></p>
+<p><strong>Karel</strong>: „Tohle je důležité. Aleš <strong>v této době nebyl u ohniště</strong>. Říkal, že byl na latrýně. Latrýna trvá 5 minut — ne hodinu. <strong>Co dělal Aleš mezi 00:30 a 01:30?</strong>"</p>
+</blockquote>
+<p>Aleš mlčí. <strong>Děti tlačí.</strong> Aleš: „Šel jsem se trochu projít. Bolelo mě v zádech. Nemohu být celou noc u ohně."</p>
+<blockquote>
+<p><strong>Pisatel D02 je vedoucí v roli — anonymně.</strong> Stejně jako D01 — pravděpodobně Karel. Identita pisatele se v hře oficiálně neodhalí.</p>
+</blockquote>
+<hr />
+<h2>Klíčový moment dne 3: Magda vysvětlí krevní pouto SoTa (S12) + Eliminace Hájka, Konečného (16:30)</h2>
+<p>Karel s Magdou svolá týmy:</p>
+<blockquote>
+<p><strong>Karel</strong>: „Týmy, máme novinky.
+1. <strong>JUDr. Růžičková</strong> mi včera večer telefonem potvrdila něco důležitého. Magdo, prosím, vysvětli rodinné poměry."</p>
+<p><strong>Magda</strong>: „Děti, tady jsem si vzpomněla, jak jsem den 3 zmínila, že <strong>Tomáš Sotoniak je vzdálený synovec pana Marka</strong>. Vy jste si toho hned všimli. Ale chtěla jsem to <strong>upřesnit</strong>. Notářka Růžičková ráno potvrdila: <strong>závěť pana Marka jde MIMO RODINU</strong>. Tedy i kdyby Tomáš měl 'dědit', nedědí — tak to Marek napsal. <strong>Krevní pouto NENÍ motiv</strong> — ne v této závěti.</p>
+<p>Já vím, <strong>Tomáš se chová podivně, mlčí, vyhýbá se otázkám</strong>. Ale to je něco jiného. <strong>Krevní pouto z něj automaticky nedělá pachatele.</strong></p>
+<p>Děti — <strong>buďte spravedlivé, ale buďte i pevné</strong>. Kdyby měl alibi, tak už by ho dal. Kdyby neměl co skrývat, neuhýbá. <strong>Ale neházejte na něj dopředu, čeho se nedopustil.</strong>"</p>
+<p><strong>Karel</strong> pokračuje: „
+2. <strong>Pan Hájek</strong> byl 11. 7. večer doložitelně na schůzi obecního zastupitelstva v Jedovnicích. Zápis je na obecním úřadě k nahlédnutí. <strong>Vyloučen.</strong>
+3. <strong>Pavel Konečný (Borovice)</strong>: měl 11. 7. večer slavnostní zahájení svého tábora — viděno 70 dětmi. 12. 7. ráno měl poradu s Janou Sotníkovou (Údolí). <strong>Vyloučen.</strong>"</p>
+<p>Z širšího okruhu zbývají <strong>Aleš Tomek</strong> + <strong>SoTo (rudá stopa)</strong> + <strong>Vladimír Stehlík</strong> (zatím slabě podezřelý). Magda doloží deník den 7. Jenda + Adriana nemají motiv.</p>
+</blockquote>
+<p>Děti si v hlavě dělají počty:
+- <strong>Vladimír Stehlík</strong> — boty 44, pickup, dýmka, žádné svědky. <strong>Pravděpodobně VINEN</strong>.
+- <strong>Aleš Tomek</strong> — slabé alibi, mezera v hlídce, Anička viděla siluetu „vyšší než Aleš" (utíkala = pachatel zvenku?), ale Aleš sám má co skrývat. <strong>Pravděpodobně POMOCNÍK</strong>.
+- <strong>SoTo</strong> — pořád rudá stopa. Krevní pouto není motiv (Magda potvrdila), ale pořád zmizel v noci a mlčí.</p>
+<p>Karel: „<strong>Důkazy zatím nejsou pevné.</strong> Stehlíkova přítomnost v noci je hypotéza — Anička viděla siluetu, neviděla tvář. Aleš nemá nic přímo. SoTo… SoTo zítra dostane šanci říct, <strong>co skrývá</strong>. <strong>Potřebujeme další důkazy.</strong>"</p>
+<hr />
+<h2>Etapová hra dne 6 — žádná v klasickém smyslu</h2>
+<p>Dnes není <strong>soutěžní etapová hra</strong>. Místo ní:</p>
+<h3>Aktivita: „Strom 30 let" (14:30–16:00)</h3>
+<p>Velká silueta stromu na kartonu (3 × 2 m) — <strong>silueta starého buku Stařík</strong> (ten, co stojí u potoka). Každé dítě <strong>dostane lísteček ve tvaru bukového listu</strong> (papírový, různé barvy podzimu). Napíše/nakreslí na něj odpověď:</p>
+<blockquote>
+<p>„<strong>Co je pro mě tábor Světlo?</strong>"</p>
+</blockquote>
+<p>Lísteček nalepí na strom. Strom bude pak <strong>odhalen v finále</strong> (den 11) jako symbol pokračování.</p>
+<h3>Aktivita: Příprava do Knihy 30 let</h3>
+<p>Každý tým připraví <strong>dvojstránku</strong> do slavnostní táborové kroniky:
+- Tým, jména, foto týmu
+- Krátký text: jak vyšetřovali, co zjistili, co se naučili
+- Motto týmu</p>
+<p>Tato strana se finalizuje v den 11 dopoledne.</p>
+<h3>Aktivita: Lisování bylin (volitelné, pro klidnější děti)</h3>
+<p>Magda v zdravotce ukáže, jak lisovat <strong>bukové listy, mateřídoušku, jitrocel</strong> mezi knihy. Hotové listy se mohou vlepit do Knihy 30 let nebo do osobního deníku.</p>
+<hr />
+<h2>Talentová show (večer 19:30 – 21:30)</h2>
+<p>Každý tým připraví krátké vystoupení (5–10 min):
+- Tanec
+- Scénka
+- Hudba (kytara, zpěv)
+- Kouzla
+- „Detektivní rapový song" (pokud má někdo nadání)</p>
+<p>Porota = <strong>personál</strong> (Karel, SoTo, Anička, Magda, Jenda, Anežka, Preclík), ale <strong>vyhrávají všichni</strong>. Bonusy do celotáborové soutěže (5–15 b.) za originalitu.</p>
+<p><strong>Tip:</strong> Tom Buchta může mít sólo vystoupení s houslemi — ochutnávka pro finále den 11.</p>
+<hr />
+<h2>Indicie předané dnes</h2>
+<table>
+<thead>
+<tr>
+<th>Kód</th>
+<th>Indicie</th>
+<th>Co znamená</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S01</td>
+<td>Anička viděla baterku v Šéfce 00:30 + siluetu utíkající 01:10 (vyšší než Aleš, opačně od latríny)</td>
+<td><strong>V Šéfce v noci byl někdo cizí + vnitřní pomocník</strong></td>
+</tr>
+<tr>
+<td>F11</td>
+<td>Mezera v záznamu Alešovy hlídky 00:30–01:30</td>
+<td><strong>Aleš v té době nebyl u ohně — ale ani na latrýně celou hodinu</strong></td>
+</tr>
+<tr>
+<td>D02</td>
+<td>Anonymní dopis substituce, klíč SVĚTLO: „PODÍVEJTE SE NA HLÍDKU"</td>
+<td>Pisatel směruje na Aleše</td>
+</tr>
+<tr>
+<td><strong>S12</strong></td>
+<td>Magda vysvětlí: krevní pouto SoTa s Markem <strong>NENÍ motiv</strong> (závěť jde mimo rodinu)</td>
+<td>Slabší rudá stopa, ale stále otevřená</td>
+</tr>
+<tr>
+<td><strong>S19</strong></td>
+<td>Tomáš Kellner viděl Santanu v 5:30</td>
+<td>Drobnost — den 8 se ukáže jako podpora SoTova příběhu</td>
+</tr>
+<tr>
+<td>S16a</td>
+<td>Hájek vyloučen (zastupitelstvo)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>S16b</td>
+<td>Konečný vyloučen (slavnost Borovic + porada)</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Obsazení dne 6</h2>
+<table>
+<thead>
+<tr>
+<th>Postava</th>
+<th>Aktivita</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Anička Kellnerová</strong></td>
+<td><strong>Klíčová výpověď ráno</strong></td>
+</tr>
+<tr>
+<td>Karel Malík</td>
+<td>Vede výpověď, oznamuje eliminace</td>
+</tr>
+<tr>
+<td>SoTo</td>
+<td>Drsná, mlčenlivá persona — pod tlakem otázek; <strong>Magda mu vlije naději</strong>: že krevní pouto není motiv</td>
+</tr>
+<tr>
+<td>Magda Hamanová</td>
+<td>Vysvětlí krevní pouto SoTa (S12), workshop první pomoci, lisování bylin</td>
+</tr>
+<tr>
+<td>Jenda + Adriana</td>
+<td>Údržba, klid</td>
+</tr>
+<tr>
+<td><strong>Aleš Tomek</strong></td>
+<td><strong>Pod tlakem, ale drží se</strong>. „Šel jsem se trochu projít, bolela mě záda."</td>
+</tr>
+<tr>
+<td>Anežka Kellnerová</td>
+<td>Pomáhá Aničce, klid</td>
+</tr>
+<tr>
+<td>Preclík + Tom Buchta</td>
+<td>Vedení oddílů, příprava talentové show</td>
+</tr>
+<tr>
+<td>Mladí instruktoři</td>
+<td>Příprava show, klid</td>
+</tr>
+<tr>
+<td><strong>Tomáš Kellner</strong></td>
+<td>14:00 — přiveze plec; krátká drobná stopa S19</td>
+</tr>
+<tr>
+<td>Vladimír Stehlík</td>
+<td><strong>Není v táboře dnes</strong> (vrátil se na samotu, slíbil ještě jednu návštěvu)</td>
+</tr>
+<tr>
+<td>Hájek</td>
+<td>Krátká návštěva — přiveze kopii zápisu obecního zastupitelstva</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Tipy pro vedoucí</h2>
+<ol>
+<li><strong>Den klidu je nezbytný</strong>. Neplňte ho aktivitou — naopak, dejte dětem dýchat. Tábor je pak silnější.</li>
+<li><strong>Aniččina výpověď je vrchol dramatu — zatím</strong>. Hrejte ji silně. Skutečná Anička <strong>opravdu mluví ze srdce</strong> — proto je tato scéna tak silná. Vedoucí, který Aničku hraje (= sama Anička), nemusí přehánět, <strong>stačí být upřímná</strong>.</li>
+<li><strong>Hra na talentové show</strong>: bezstarostná, hodně smíchu. Po vážnostech rána je to úleva.</li>
+<li><strong>Aleš pod tlakem</strong>: vedoucí, který Aleše hraje (= sám Aleš), musí být <strong>klidný, lehce nervózní, mlčenlivý</strong>. Žádné křečové tiky. <strong>Profesionál.</strong> Děti budou frustrované, že se z něj nic nedostane. To je správně. <strong>Den 9 přizná.</strong></li>
+<li><strong>SoTo pod tlakem</strong>: drsně, mlčenlivě. Když Magda dnes vysvětlí krevní pouto, SoTo dá krátkou poznámku: <em>„Děkuji, Magdo. Byla jsi v tom férová."</em> — drobné lidské uvolnění napětí.</li>
+<li><strong>Údržba a úklid</strong>: Jenda s Adrianou a vedoucími dnes dělají reálné údržbové práce — opravu plachty, úklid jídelní plachty, vyklizení skladu. <strong>Děti pomáhají dobrovolně</strong> za body do týmové soutěže.</li>
+<li><strong>Strom 30 let</strong>: silueta buku připravená dopředu. Pokud máte více času, zapojte děti do jeho výroby — siluetu nakreslete spolu, listy si vyrobí. <strong>Bude to artefakt v finále</strong>.</li>
+<li><strong>D02 šifra substituce s klíčem SVĚTLO</strong>: zapeklitější než Caesar — dejte dětem nápovědu (klíč je <strong>šestipísmenné slovo, název tábora</strong>). Bonus 30 b. týmu, který ho rozluští první.</li>
+<li><strong>Tomáš Kellner jako drobnost</strong> — krátká, lidská scéna. Nechte ho <strong>odejít po 5 minutách</strong>, ať nezdržuje.</li>
+</ol>
+<hr />
+<h2>Materiál pro den 6</h2>
+<ul>
+<li><strong>Velký karton 3 × 2 m</strong> + náčrt stromu (silueta buku)</li>
+<li><strong>Listy papíru ve tvaru bukového listu</strong> (50 ks, různé barvy)</li>
+<li><strong>Kniha 30 let</strong> (kožená, A4, prázdná)</li>
+<li><strong>Materiál pro talentovou show</strong> (kytara, případně malý reproduktor na baterky — žádná elektřina v táboře!)</li>
+<li><strong>Workshop první pomoci</strong>: figurína KPR, obvazy, návody</li>
+<li><strong>Anonymní dopis D02</strong> (substituční šifra) — předem připravený, vložený do pytle s rekvizitami</li>
+<li><strong>Kniha hlídky ohniště</strong> — předem připravená (s mezerou 00:30–01:30 dne 11. → 12. 7.)</li>
+<li><strong>Lisovací prkna a starší knihy</strong> na lisování bylin</li>
+<li><strong>Letáček role</strong> pro Tomáše Kellnera (2. návštěva)</li>
+</ul>
+<hr />
+<h2>Co se stane zítra</h2>
+<p>Den 7: <strong>Magda Hamanová ráno přinese dopis/vzkaz pana Marka z FN Brno</strong>. Marek se probral, otřes mozku zvládá. Vzkaz: „Pamatuji si... slyšel jsem hluk z Šéfky... vstal jsem... viděl jsem ho s červenou složkou v ruce. Vladimíra Stehlíka, souseda. Padl jsem v lese. Buďte trpěliví. Vyšetřujte také Aleše — měl tu noc hlídku, opustil ji. <strong>A Tomáš Sotoniak: Tomáši, můžeš to říct.</strong> Děkuji vám, děti." <strong>Kritický zlom</strong>: Marek přímo jmenuje Stehlíka i Aleše + povoluje SoTovi mluvit. <strong>SoTo začne vysvětlovat misi do Brna.</strong> <strong>Páter Lacina potvrdí Santanu v 3:30 v Brně. Eliminace Magdy</strong> (lékařský deník s časovými údaji). <strong>Eliminace Jendy a Adriany</strong> (svědci, žádný motiv).</p>
+  </div>
+</main>
+
+<footer class="day-footer">
+  <div class="container">
+    <div>Tábor Světlo 2026 — Případ ztracené závěti · Den 6</div>
+    <div class="footer-nav">
+      <a href="../pruvodce.html#dny">Průvodce hrou</a>
+      <a href="../pribeh.html">Příběh jako kniha</a>
+      <a href="../den_06_klid_udrzba.md">Zdrojový MD</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

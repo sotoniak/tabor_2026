@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Den 11 — FINÁLE — čtení závěti a dědictví · Tábor Světlo 2026</title>
+<style>
+:root {
+  --color-primary: #1e3a5f;
+  --color-primary-light: #2c5282;
+  --color-accent: #d63031;
+  --color-accent-bg: #fadbd8;
+  --color-helper: #e67e22;
+  --color-success: #27ae60;
+  --color-success-bg: #d5f5e3;
+  --color-bg: #f8fafc;
+  --color-card: #ffffff;
+  --color-text: #1e293b;
+  --color-muted: #64748b;
+  --color-border: #e2e8f0;
+  --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.04);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", Roboto, sans-serif;
+  line-height: 1.7; color: var(--color-text); background: var(--color-bg);
+  margin: 0; padding: 0;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+
+header.day-hero {
+  background: linear-gradient(135deg, #1e3a5f 0%, #2c5282 100%);
+  color: white; padding: 56px 0 40px;
+}
+.day-hero .pill {
+  display: inline-block; padding: 4px 12px; background: rgba(255,255,255,0.18);
+  border-radius: 16px; font-size: 13px; margin-bottom: 12px; letter-spacing: 0.3px;
+}
+.day-hero h1 { font-size: 36px; margin: 0 0 8px; font-weight: 700; line-height: 1.2; }
+.day-hero .subtitle { font-size: 17px; opacity: 0.92; margin: 0; }
+
+nav.day-nav {
+  position: sticky; top: 0; z-index: 50;
+  background: #1e3a5f; color: #f1f5f9;
+  border-bottom: 1px solid #2c5282; box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+nav.day-nav .container {
+  display: flex; gap: 8px; align-items: center; flex-wrap: wrap;
+  padding: 10px 24px;
+}
+nav.day-nav a {
+  color: #f1f5f9; text-decoration: none; padding: 8px 14px;
+  font-size: 14px; font-weight: 500; border-radius: 6px;
+  transition: background 0.15s;
+}
+nav.day-nav a:hover { background: rgba(255,255,255,0.10); }
+nav.day-nav a.home { background: #fbbf24; color: #1e3a5f; font-weight: 600; }
+nav.day-nav a.home:hover { background: #fcd34d; }
+nav.day-nav .spacer { flex: 1; }
+nav.day-nav .disabled { opacity: 0.4; pointer-events: none; }
+
+main.day-content { padding: 40px 0 64px; }
+main.day-content .container {
+  background: var(--color-card); padding: 40px 56px;
+  border-radius: 12px; box-shadow: var(--shadow); margin-top: -24px;
+}
+
+main.day-content h1 { display: none; }
+main.day-content h2 {
+  color: var(--color-primary); font-size: 24px; font-weight: 700;
+  margin: 36px 0 16px; padding-bottom: 8px;
+  border-bottom: 2px solid var(--color-border);
+}
+main.day-content h2:first-child { margin-top: 0; }
+main.day-content h3 {
+  color: var(--color-primary-light); font-size: 19px; font-weight: 600;
+  margin: 28px 0 12px;
+}
+main.day-content h4 {
+  color: var(--color-text); font-size: 16px; font-weight: 600;
+  margin: 20px 0 8px;
+  text-transform: uppercase; letter-spacing: 0.4px;
+}
+main.day-content p { margin: 12px 0; }
+main.day-content ul, main.day-content ol { padding-left: 24px; margin: 12px 0; }
+main.day-content li { margin-bottom: 6px; }
+main.day-content strong { color: var(--color-primary); font-weight: 600; }
+main.day-content em { color: var(--color-muted); }
+main.day-content hr {
+  border: 0; border-top: 1px solid var(--color-border); margin: 32px 0;
+}
+
+main.day-content blockquote {
+  margin: 16px 0; padding: 12px 20px;
+  background: #f8fafc; border-left: 4px solid var(--color-primary-light);
+  border-radius: 0 8px 8px 0; color: var(--color-text);
+}
+main.day-content blockquote p { margin: 6px 0; }
+main.day-content blockquote strong { color: var(--color-primary); }
+
+main.day-content table {
+  width: 100%; border-collapse: collapse; margin: 16px 0;
+  font-size: 14px; box-shadow: var(--shadow); border-radius: 6px; overflow: hidden;
+  table-layout: auto;
+}
+main.day-content table th {
+  background: var(--color-primary); color: white; text-align: left;
+  padding: 10px 12px; font-weight: 600;
+  vertical-align: top; word-break: break-word;
+}
+main.day-content table td {
+  padding: 8px 12px; border-top: 1px solid var(--color-border);
+  vertical-align: top; word-break: break-word; overflow-wrap: anywhere;
+}
+main.day-content table tr:nth-child(even) td { background: #f8fafc; }
+main.day-content table td:first-child {
+  color: var(--color-primary);
+  font-family: "JetBrains Mono", "Courier New", monospace;
+  font-size: 13px;
+}
+/* Časy ve formátu HH:MM lze ponechat bez lámání — krátké stringy */
+main.day-content table td:first-child:is(.time, [data-time]) {
+  white-space: nowrap;
+}
+
+main.day-content code {
+  font-family: "JetBrains Mono", "Courier New", monospace;
+  background: var(--color-bg); border: 1px solid var(--color-border);
+  padding: 1px 6px; border-radius: 4px; font-size: 0.92em;
+}
+
+footer.day-footer {
+  background: #1e3a5f; color: #cbd5e1;
+  padding: 28px 0; text-align: center; font-size: 14px;
+}
+footer.day-footer a { color: #fbbf24; text-decoration: none; font-weight: 600; }
+footer.day-footer a:hover { text-decoration: underline; }
+footer.day-footer .footer-nav { margin-top: 12px; }
+footer.day-footer .footer-nav a { margin: 0 12px; }
+
+@media (max-width: 768px) {
+  .day-hero h1 { font-size: 26px; }
+  .day-hero .subtitle { font-size: 15px; }
+  main.day-content .container { padding: 24px; margin-top: -16px; }
+  main.day-content h2 { font-size: 20px; }
+  main.day-content h3 { font-size: 17px; }
+  main.day-content table { font-size: 13px; }
+  main.day-content table td, main.day-content table th { padding: 6px 8px; }
+  nav.day-nav .container { padding: 8px 12px; }
+  nav.day-nav a { padding: 6px 10px; font-size: 13px; }
+}
+@media print {
+  nav.day-nav, footer.day-footer { display: none; }
+  main.day-content .container { box-shadow: none; padding: 0; }
+}
+</style>
+</head>
+<body>
+
+<header class="day-hero">
+  <div class="container">
+    <span class="pill">Den 11 · 21. 7. (úterý)</span>
+    <h1>FINÁLE — čtení závěti a dědictví</h1>
+    <p class="subtitle">Detailní program a příběh dne</p>
+  </div>
+</header>
+
+<nav class="day-nav">
+  <div class="container">
+    <a class="home" href="../pruvodce.html#dny">← Průvodce hrou</a>
+    <span class="spacer"></span>
+    <a href="den_10.html">← Den 10</a>
+    <a href="den_12.html">Den 12 →</a>
+  </div>
+</nav>
+
+<main class="day-content">
+  <div class="container">
+    <h1>DEN 11 — Úterý 21. 7. 2026: FINÁLE — Čtení závěti a dědictví</h1>
+<blockquote>
+<p><strong>Motto dne</strong>: „Tábor patří všem. Tobě. I mně. Po dalších 30 let."</p>
+<p><strong>Toto je vrchol celé hry. Číst v souvislosti s <code>12_FINALE_skript.md</code>, kde je detailní skript.</strong></p>
+</blockquote>
+<hr />
+<h2>Stručná osnova (timetable)</h2>
+<table>
+<thead>
+<tr>
+<th>Čas</th>
+<th>Co se děje</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>08:00 – 09:00</td>
+<td>Snídaně</td>
+</tr>
+<tr>
+<td>09:00 – 11:00</td>
+<td><strong>Příprava tábora na slavnost</strong> — všichni se zapojují</td>
+</tr>
+<tr>
+<td>11:00 – 12:00</td>
+<td><strong>Dokončení Knihy 30 let</strong>, <strong>Stromu 30 let</strong>, slavnostní stoly</td>
+</tr>
+<tr>
+<td>12:00 – 13:00</td>
+<td>Oběd (slavnostnější)</td>
+</tr>
+<tr>
+<td>13:00 – 14:00</td>
+<td><strong>Klid + převléknutí do svátečního</strong> (čisté tričko, čisté kalhoty)</td>
+</tr>
+<tr>
+<td>14:00 – 14:30</td>
+<td><strong>NÁSTUP NA SLAVNOSTNÍ ČTENÍ</strong> v lipovém altánu</td>
+</tr>
+<tr>
+<td>14:30 – 15:00</td>
+<td><strong>PŘÍJEZD MARKA STANISLAVA Z FN BRNO</strong></td>
+</tr>
+<tr>
+<td>15:00 – 16:30</td>
+<td><strong>ČTENÍ ZÁVĚTI</strong> — §§ 1, 2, 3, <strong>4 (= bombshell), 5</strong></td>
+</tr>
+<tr>
+<td>16:30 – 17:00</td>
+<td><strong>Alešova chvíle</strong> — Markovo slovní odpuštění</td>
+</tr>
+<tr>
+<td>17:00 – 18:00</td>
+<td><strong>PŘEDÁNÍ DĚDICKÝCH LISTŮ + PAMĚTNÍCH MINCÍ</strong> každému dítěti</td>
+</tr>
+<tr>
+<td>18:00 – 18:30</td>
+<td><strong>Odhalení Stromu 30 let + zápisy do Knihy</strong></td>
+</tr>
+<tr>
+<td>18:30 – 19:30</td>
+<td>Slavnostní večeře (Anička s Anežkou přichystaly speciální menu)</td>
+</tr>
+<tr>
+<td>19:30 – 23:00</td>
+<td><strong>VELKÝ TÁBOROVÝ OHEŇ</strong> — písně, vzpomínky, dort se 30 svíčkami</td>
+</tr>
+<tr>
+<td>23:00 – 23:30</td>
+<td>Závěrečná chvíle u ohně, objetí, slzy, smích</td>
+</tr>
+<tr>
+<td>23:30</td>
+<td>Konec slavnosti, večerka (povolen pozdější čas)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Příběh dne (z pohledu dětí)</h2>
+<h3>Ráno (08:00 – 12:00)</h3>
+<p>Děti se probudí s vědomím, že <strong>dnes je velký den</strong>. Tábor se chystá. Vedoucí rozdělí úkoly:</p>
+<ul>
+<li><strong>Tým 1 (Sojky)</strong>: výzdoba lipového altánu — věnce z lipových květů a větviček, vlajky tábora, transparent „<strong>30 LET TÁBORA SVĚTLO</strong>"</li>
+<li><strong>Tým 2 (Vlci)</strong>: stoly slavnostně — bílé ubrusy, svíčky v zavařovacích sklenicích, lavice ozdobené</li>
+<li><strong>Tým 3 (Lišky)</strong>: Strom 30 let — finalizace, doplnění lístků</li>
+<li><strong>Tým 4 (Medvědi)</strong>: Kniha 30 let — finalizace stránek</li>
+<li><strong>Tým 5 (Jezevci)</strong>: zvuková aparatura — žádný projektor (nemáme elektřinu), ale plynová lampa pro večerní část a megafon na baterky pro venkovní akustiku</li>
+<li><strong>Tým 6 (Jestřábi)</strong>: hudba a zpěv — nacvičení slavnostní písně + táborové hymny</li>
+</ul>
+<p>V 11:00 jsou všechny přípravy hotové. Anička s Anežkou vařejí slavnostní oběd (= guláš s knedlíkem nebo čeho je tábor zvyklý — recept Anička). Jenda kontroluje techniku a logistiku (parkování auta z FN Brno, příjezdovou cestu). Magda je v zdravotce připravená — bude doprovázet Marka.</p>
+<h3>Odpoledne — Příjezd Marka (14:30)</h3>
+<blockquote>
+<p>⚠️ <strong>POZOR — KOSTÝMOVÁ ZMĚNA Karel → Marek.</strong> Karel hraje obě postavy. <strong>Detailní scénář kostýmové změny viz <code>04_ROLE_OBSAZENI.md</code> sekce „Logistika dvojí role Karel/Marek" (Scéna 3).</strong></p>
+</blockquote>
+<p>Děti čekají v lipovém altánu, <strong>krásně oblečené</strong>. Atmosféra je sváteční, ale klidná.</p>
+<p><strong>14:00</strong>: Karel oznámí dětem: <em>„Pan Marek se vrací z FN Brno. Já jdu pro něj na parkoviště."</em> Karel jde k autu na parkovišti (200 m). <strong>Předem připraveno v autě:</strong> kostým Marka (sako, čepice, hůl, šedavé vousy, lepidlo, zrcadlo). <strong>Magda je v autě s Karlem</strong> a pomáhá s kostýmovou změnou.</p>
+<p><strong>14:00–14:25 — PŘEMOSTĚNÍ</strong> (~25 min): Vedoucí týmů zatím vedou poslední přípravy v lipovém altánu (zpívání táborových písní, kontrola dědických listů). <strong>Tom Buchta hraje na housle úvodní skladbu</strong> (decentní, krátká). Děti čekají.</p>
+<p><strong>14:25</strong>: Z lesní cesty zazní <strong>zvuk auta</strong> (= alibi, že Marek právě dorazil). Karel-jako-Marek, již v kostýmu, vystoupí z auta. <strong>Magda doprovází Marka pěšky</strong> těch posledních 200 m k centrální ploše. Marek se opírá o <strong>hůl</strong>, drží se zpříma.</p>
+<p><strong>14:30</strong>: Marek vchází do altánu — <strong>tlesknutí. Někteří pláčou.</strong></p>
+<blockquote>
+<p>Marek: „<strong>Děti. Přátelé. Jsem tu.</strong>"</p>
+</blockquote>
+<p>Děti tleskají. Marek jde na <strong>vyhrazené místo</strong> ve středu altánu. Vedle něho stojí Karel, SoTo, JUDr. Růžičková, Anička, Anežka, Magda, Jenda, Adriana. <strong>Aleš stojí stranou</strong> — Marek si ho hledá pohledem, kývne mu, pak pokračuje. <strong>Stehlík tam NENÍ — odjel den 10 do Blanska v péči policie.</strong></p>
+<p>Předtím, než Marek otevře pečeť, <strong>podívá se na SoTa</strong>:</p>
+<blockquote>
+<p><strong>Marek</strong>: „Tomáši, pojď ke mně blíž. <strong>Vy, děti, jste Tomášovi sedm dní strašlivě křivdili. To je v dobrém vyšetřování v pořádku — pochybnost je nutná. Ale teď je čas říct nahlas: Tomáš plnil mé přání. Tajně, mlčel — protože jsem ho o to požádal. A vydržel pod tlakem, který by mnohé zlomil.</strong></p>
+<p><em>(Marek se obrátí přímo k dětem.)</em></p>
+<p><strong>Omluva je stejně důležitá jako odhalení. Děti, podívejte se Tomášovi do očí a řekněte mu <em>Promiň</em>.</strong>"</p>
+</blockquote>
+<p>Děti <strong>postupně</strong>, v tichu, jdou k SoTovi a krátce mu podají ruku. SoTo přijímá s drobným kývnutím, suchou poznámkou: <em>„V pořádku. Bylo to dobré vyšetřování."</em> — moment, který kandidáty plnoletosti učí, <strong>že omluva je odvaha, ne slabost</strong>.</p>
+<hr />
+<h2>Čtení závěti — KLÍČOVÝ MOMENT (15:00 – 16:30)</h2>
+<blockquote>
+<p><strong>Detail viz <code>12_FINALE_skript.md</code></strong>. Zde shrnutí.</p>
+</blockquote>
+<p><strong>JUDr. Růžičková</strong> otevře dřevěnou truhlu s mapami (právě teď symbolicky znovu sloužící svému poslání), vyndá závěť. <strong>Marek</strong> ji vezme do rukou. Pomalu, slavnostně <strong>otevírá pečeť</strong>:</p>
+<blockquote>
+<p>„Já, Marek Stanislav, narozen 19xx, zakladatel tábora Světlo, v plné svobodě své vůle a v plném zdraví, ustanovuji následující:</p>
+<p><strong>§ 1.</strong> Tábor Světlo má pokračovat. Pozemky propůjčené Mendelovou univerzitou v Brně mají být na základě připojeného <strong>dodatku prodlouženy o dalších 30 let</strong>, a propůjčení od rodiny hospodářů Stehlíkových (loučka u centrální plochy) zůstává v platnosti dle stávající smlouvy.</p>
+<p><em>(Marek se zarazí. Hlas se třese. Pokračuje.)</em></p>
+<p><strong>§ 2.</strong> Vedení tábora přebírají v dosavadní funkci <strong>Karel Malík</strong> (hlavní vedoucí) a <strong>SoTo</strong> (zástupce), spolu s celým stávajícím personálem. Tábor se má řídit duchem, ve kterém vznikl: <strong>dobrovolnost, příroda, společenství, žádný zisk</strong>.</p>
+<p><strong>§ 3.</strong> Pro budoucí rozhodování zřizuji <strong>Radu tábora</strong>, do níž jmenuji:
+1. <strong>Karla Malíka</strong>
+2. <strong>Tomáše Sotoniaka</strong>
+3. <strong>Aničku Kellnerovou</strong>
+4. <strong>Magdu Hamanovou</strong>
+5. <strong>Jendu</strong> a <strong>Adrianu</strong>
+6. <strong>Aleše Tomka</strong></p>
+<p><em>(Marek se na chvíli zastaví. Děti zatají dech. Aleš stojí stranou — najednou si všimne svého jména. Hlava klesne. Slzy.)</em></p>
+<p><em>(Marek pokračuje, přečte další paragraf, k Alešovi se vrátí za chvíli.)</em></p>
+<p><strong>§ 4.</strong> Skutečnými dědici tábora — v duchu, ne v právu — prohlašuji <strong>každého táborníka, který kdy táborem prošel a kdo jím projde</strong>. Tábor patří jim, ne mně. Já jsem byl jen ten, kdo otevřel dveře.</p>
+<p><em>(Marek nezadržuje slzy.)</em></p>
+<p>Vy jste <strong>dědicové. Vy všichni. A ti, kteří přijdou po vás.</strong></p>
+<p><strong>§ 5.</strong> Každému současnému účastníkovi i členovi personálu nechť je vystaven <strong>dědický list</strong>, který stvrzuje jeho symbolické místo v rodině tábora.</p>
+<p>V Brně dne X. června 2026.</p>
+<p>Marek Stanislav, m. p."</p>
+</blockquote>
+<hr />
+<h3>Alešova chvíle (16:30 – 17:00)</h3>
+<p>Marek <strong>zavře závěť</strong>. Podívá se na Aleše, který stojí stranou se svěšenou hlavou. Marek se opře o hůl, vstane.</p>
+<blockquote>
+<p><strong>Marek</strong>: „Aleši. Pojď ke mně."</p>
+</blockquote>
+<p><em>(Aleš pomalu přijde. Slzy.)</em></p>
+<blockquote>
+<p><strong>Marek</strong> (tiše, ale jasně, aby všichni slyšeli):</p>
+<p>„Aleši, vstaň. Ta první chyba nebyla tvoje — byla tvého otce, ty jsi ji zdědil jako břemeno. Tu druhou jsi udělal minulý týden, ze strachu o matku. Já tě znám od dětství. <strong>Důvěra se zaslouží i návratem. Sedneš si vedle mě?</strong></p>
+<p><em>(Pauza.)</em></p>
+<p><strong>Pravda je v dobré výchově: chybu lze vykoupit. Slabost lze pochopit. Tábor je o lidech, ne o dokonalosti.</strong></p>
+<p><em>(Aleš se zhroutí, slzy. Marek mu položí ruku na rameno.)</em></p>
+<p>Karle, Tomáši: připravte mu židli vedle mě. Aleš zůstává v Radě tábora. <strong>A zítra půjde k policii sám — bez doprovodu. To bude jeho první důkaz, že se vrátil.</strong>"</p>
+<p>Děti tomu rozumí. Mladší pláčou. Starší kývají. <strong>Toto je morální vrchol hry</strong>. Aleš si sedne vedle Marka. Anička přejde k Alešovi a stiskne mu ruku.</p>
+</blockquote>
+<hr />
+<h3>Předávání dědických listů (17:00 – 18:00)</h3>
+<blockquote>
+<p><strong>Toto je nejjasnější a nejradostnější moment hry</strong>.</p>
+</blockquote>
+<p>JUDr. Růžičková a Anička přijdou se zlatou krabicí. Vyndají <strong>45 dědických listů</strong> (= jeden pro každé dítě) + <strong>listy pro všechny vedoucí týmů</strong> + <strong>listy pro každého z personálu</strong> (včetně Aleše).</p>
+<p>Marek <strong>postupně předává</strong>:</p>
+<blockquote>
+<p><em>(Marek drží papír, podívá se na dítě, oslovuje jménem:)</em></p>
+<p>„<strong>Jan Novák</strong>. Tábor 2026. <strong>Ty jsi dědicem tábora Světlo. Tvé jméno je v knize. Jednoho dne tě tábor pošle dál.</strong>"</p>
+<p><em>(Předá papír. Dítě dostává <strong>dědický list</strong> s pečetí + <strong>pamětní minci</strong> s logem „30 let — Tábor Světlo, 1997–2026". Tlesknutí.)</em></p>
+<p>„<strong>Marie Svobodová</strong>. Tábor 2026. <strong>Ty jsi dědicem...</strong>"</p>
+</blockquote>
+<p>A tak <strong>45 dětí, jedno po druhém</strong>, dostává svůj list. <strong>Trvá to skoro hodinu</strong>, ale je to <strong>nejdůležitější hodina celého tábora</strong>.</p>
+<blockquote>
+<p>Vedoucí stojí vedle a fotografují. Někteří rodiče, pokud jsou na finálním dni — pokud ne, fotky se pošlou později.</p>
+</blockquote>
+<p>Když přijde řada na <strong>Aleše</strong> (jako součást personálu):</p>
+<blockquote>
+<p><strong>Marek</strong>: „<strong>Aleši Tomku, údržbáři, kterého znám od dětství. Dnes ti nepředávám dědický list jako oddělení od tábora. Předávám ti ho jako stvrzení návratu. Tábor je o lidech, ne o dokonalosti. Pokračujeme spolu.</strong>"</p>
+</blockquote>
+<p>Aleš si list bere se slzami.</p>
+<hr />
+<h3>Strom a Kniha (18:00 – 18:30)</h3>
+<p><strong>Strom 30 let</strong> se odhaluje — vystavený v lipovém altánu. Děti vidí svůj lísteček. Karel přečte několik nahlas:</p>
+<blockquote>
+<p>„‚Tábor je pro mě domov.' — Tereza, 12 let.
+‚Tady jsem se naučil plavat ve studánce.' — Lukáš, 9 let.
+‚Tábor je rodina.' — Bára, 14 let."</p>
+</blockquote>
+<p><strong>Kniha 30 let</strong> je rovněž odhalena. Děti listují, vidí stránky všech 30 ročníků (dohromady — staré z minulých let + nové letošní).</p>
+<hr />
+<h3>Markův odjezd zpět do FN Brno (16:30)</h3>
+<blockquote>
+<p>⚠️ <strong>Po posledním dědickém listu Marek odjede zpět</strong> — Karel nemůže hrát Marka 4 hodiny v kuse u večerního ohně.</p>
+</blockquote>
+<p>Po Alešově odpustném momentu a předání 45 dědických listů Marek slovně rozloučí:</p>
+<blockquote>
+<p><strong>Marek</strong>: <em>„Děti, lékaři ve FN Brno mě potřebují zpátky na poslední dovyšetření. Jdu se rozloučit. </em><em>Vrátím se za rok.</em><em> Tábor zůstává v rukou, do kterých patří — Karla a Tomáše. Spěchejte k ohni dnes večer, ten patří vám."</em></p>
+</blockquote>
+<p>Marek odejde s Magdou pěšky 200 m zpět k autu na parkovišti. <strong>Za zatáčkou</strong> se Karel v autě (s Magdinou pomocí) převlékne zpět. <strong>Mezitím</strong> Karel oznámí ostatním vedoucím v zákulisí: <em>„Pán Marek odjel. Já jsem ho vyprovodil k autu. Pokračujme."</em> — alibi pro fyzickou nepřítomnost ~20 min.</p>
+<p><strong>16:50:</strong> Karel se vrátí do tábora <strong>jako sám sebe</strong>.</p>
+<h3>Slavnostní táborový oheň (19:30 – 23:00)</h3>
+<p>Po slavnostní večeři tábor jde k ohništi. <strong>Velký táborák</strong> — největší za celý tábor. Děti zpívají. Vedoucí vyprávějí historky z 30 let. <strong>Marek u ohně NENÍ</strong> — odjel odpoledne zpět do FN Brno doléčit. <strong>Karel vede oheň sám za sebe.</strong> <strong>Aleš sedí blízko Karla</strong> — Karel mu občas sáhne na rameno, gesto kolegiality.</p>
+<h4>Bod 1: Hymna tábora (19:45)</h4>
+<p>Všichni stojí, zpívají hymnu (5 slok).</p>
+<h4>Bod 2: Vyhlášení vítězů soutěží (20:00)</h4>
+<ul>
+<li><strong>Celotáborová detektivní soutěž</strong>: Zlato, stříbro, bronz. <strong>První místo dostává Putovní pohár</strong> (= putovní cena s gravírováním „První detektivní tým 2026"). Ale: <strong>každý tým dostává plaketu</strong> za detektivní výkon.</li>
+<li><strong>Sportovní soutěže</strong>: vyhlášení vítězů jednotlivých.</li>
+<li><strong>Talentová show</strong>: vyhlášení.</li>
+</ul>
+<h4>Bod 3: Markův závěrečný vzkaz (20:30) — Karel přečte papírový dopis</h4>
+<p>Karel u ohně <strong>vyndá obálku</strong>: <em>„Děti, pan Marek mi v autě dal ještě tento dopis. Říkal: ‚Dej jim ho u večerního ohně.' Tak ho čtu nahlas."</em> Krátký proslov (1–2 min) — slova vděku, slibu návratu, motivace pro další ročníky. Detail viz <code>12_FINALE_skript.md</code>.</p>
+<h4>Bod 4: Vzpomínání (21:00 – 23:00)</h4>
+<ul>
+<li>Vedoucí vyprávějí historky z 30 let (Karel, SoTo, Anička — která dělá kuchyni 10+ let).</li>
+<li>Děti se ptají Karla na otázky o panu Markovi („Jak ho znáš dlouho? Co to byl za člověka?") — Karel odpovídá za sebe i za vzpomínky.</li>
+<li>Zpívání u ohně.</li>
+<li><strong>Dort se 30 svíčkami</strong> (recept Anička — pamětní). Všichni mají kousek.</li>
+</ul>
+<h4>Bod 5: Závěrečné slovo (23:00)</h4>
+<p>Karel: „<strong>Děti. Děkujeme vám. Bez vás by se závěť nikdy nenašla. Pan Marek bude každého z vás 30 let pamatovat. A vy taky pamatujte. Tábor je váš.</strong>"</p>
+<h4>Bod 6: Tichá chvíle (23:15)</h4>
+<p>Všichni se obejmou. Někdo pláče. <strong>Děti i vedoucí.</strong> Žádné dětské hry — jen lidská blízkost.</p>
+<h4>Bod 7: Závěrečné požehnání (23:30)</h4>
+<p>Karel: „<strong>Vy jste dědicové. A já jdu klidně spát. Zítra ráno odjedete domů. Ale tábor odjede s vámi.</strong>"</p>
+<p>Všichni se rozejdou. Konec slavnosti.</p>
+<hr />
+<h2>Materiál pro den 11</h2>
+<ul>
+<li><strong>45 dědických listů</strong> (A4, ozdobný papír 120 g, <strong>s jménem každého dítěte</strong>) — viz <code>sablony/dedicky_list.md</code></li>
+<li><strong>45 + listy pro vedoucí + listy pro personál (cca 60 ks)</strong> s pečetním voskem</li>
+<li><strong>Pamětní mince</strong> (60–70 ks) s logem „30 let — Tábor Světlo, 1997–2026"</li>
+<li><strong>Stuhy + pečetní vosk</strong> (každý dědický list zapečetit slavnostním razítkem)</li>
+<li><strong>Kniha 30 let</strong> (kožená, finalizovaná stránkami všech 30 ročníků)</li>
+<li><strong>Strom 30 let</strong> (silueta buku + lístky)</li>
+<li><strong>Slavnostní výzdoba</strong>: vlajky tábora, věnce z lipových květů, transparent</li>
+<li><strong>Dort se 30 svíčkami</strong> (recept Anička)</li>
+<li><strong>Putovní pohár</strong> s gravírováním</li>
+<li><strong>Hůl pro Marka</strong> (pohodlná, s gumovou špičkou)</li>
+<li><strong>Plynové lampy</strong> pro večerní část, svíčky v zavařovacích sklenicích</li>
+</ul>
+<hr />
+<h2>Markův proslov u ohně (skript)</h2>
+<blockquote>
+<p><em>(Karel sedí u ohně, deku přes ramena, tichý hlas:)</em></p>
+<p>„Děti, vedoucí, přátelé.</p>
+<p>Před třiceti lety jsem v tomto údolí postavil první stan. Říkal jsem si: nech tady vyroste místo, <strong>kam budou děti rády chodit</strong>. Místo, kde si zapamatují léto.</p>
+<p><em>(Pauza.)</em></p>
+<p>Dnes vidím, že to nezáleží na mně. <strong>Tábor jste vy. Vaše smích, vaše slzy, vaše vyšetřování posledního týdne.</strong> Drahé, nejdrahší, <strong>co jsem vám mohl předat — předal jsem.</strong> Tábor je váš.</p>
+<p><em>(Slzy.)</em></p>
+<p>Vy jste <strong>dědicové. Ne kvůli paragrafu na papíře — ale protože tábor je v každém z vás.</strong></p>
+<p><em>(Pauza.)</em></p>
+<p>Pan Marek vám děkuje a odjel do Brna. A za 30 let — někteří z vás se sem vrátí. Jako vedoucí. Jako rodiče. Jako prarodiče.</p>
+<p><strong>Tábor patří všem. Tobě. I mně.</strong>"</p>
+</blockquote>
+<hr />
+<h2>Tipy pro vedoucí</h2>
+<ol>
+<li><strong>Předávání dědických listů musí být osobní</strong>. Marek <strong>musí znát jména</strong> všech 45 dětí (= připravený seznam, vedoucí týmů mu pomohou s výslovností). Pokud někdo má těžké jméno, <strong>vedoucí týmu vstoupí a jméno řekne</strong> — Marek pak přečte list.</li>
+<li><strong>Pamětní mince</strong>: pokud nemáte kovové mince, mohou být <strong>dřevěné kotouče</strong> (= laser-cutting nebo ručně vypálené) s logem. Levnější, hezčí, autentičtější (lesní téma tábora).</li>
+<li><strong>Markův příjezd musí být klidný, dramatický</strong>. Auto zaparkuje na parkovišti pod lesní cestou (auta nesmí dál do tábora). <strong>Magda ho doprovází pěšky</strong> těch posledních 200 m. Děti vidí, že Marek <strong>opravdu přichází</strong> — nepřilétl helikoptérou, nepřivez jej autobus. <strong>Lidská chůze.</strong></li>
+<li><strong>Alešův odpustný moment</strong> je morální vrchol. Marek <strong>NEDělá soud</strong> — odpouští, ale <strong>Aleš jde sám zítra k policii</strong>. <strong>Odpuštění není beztrestnost.</strong></li>
+<li><strong>Dlouhá slavnost</strong> (do 23:30) je výjimka. <strong>Nejmladší kadeti mohou jít spát dřív</strong> (po předání dědických listů, po zpěvu u ohně), pokud chtějí. <strong>Předem rodičům řekněte</strong>, že tento večer bude pozdější.</li>
+<li><strong>Příprava 45 dědických listů</strong>: každý s <strong>rukou napsaným jménem</strong>. Toto je práce na 4 hodiny pro 1 osobu. <strong>Připravte si 1–2 dny předem</strong> (= den 9 a den 10 vedoucí, kteří nehrají v konfrontaci).</li>
+<li><strong>Stehlík NENÍ na finále</strong>. Pokud děti se ptají, kde je: „Vladimír Stehlík je v péči policie v Blansku. Pan Marek mu odpustí, až bude chtít — to je jejich věc, ne naše. <strong>Naše věc je tábor.</strong>"</li>
+<li><strong>Marek nesmí být v roli zranitelný k dětem</strong>. Je opřen o hůl, ale <strong>mluví pevně, klidně, vážně</strong>. Žádné „chudák Marek". <strong>Důstojnost.</strong></li>
+</ol>
+<hr />
+<h2>Bodování dne 11</h2>
+<blockquote>
+<p><strong>Žádné soutěžní bodování dne 11.</strong> Den je <strong>slavnost</strong>, ne soutěž. Vyhlašování vítězů celotáborových soutěží probíhá u ohně.</p>
+</blockquote>
+<hr />
+<h2>Co se stane zítra</h2>
+<p>Den 12: <strong>Odjezd</strong>. Tichý, smutný, ale plný lásky. Vedoucí dokončí balení, rozloučí se s dětmi a tábor se vrací do běžného režimu.</p>
+  </div>
+</main>
+
+<footer class="day-footer">
+  <div class="container">
+    <div>Tábor Světlo 2026 — Případ ztracené závěti · Den 11</div>
+    <div class="footer-nav">
+      <a href="../pruvodce.html#dny">Průvodce hrou</a>
+      <a href="../pribeh.html">Příběh jako kniha</a>
+      <a href="../den_11_finale.md">Zdrojový MD</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

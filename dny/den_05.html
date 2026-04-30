@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Den 5 — Příjezd hostů · Tábor Světlo 2026</title>
+<style>
+:root {
+  --color-primary: #1e3a5f;
+  --color-primary-light: #2c5282;
+  --color-accent: #d63031;
+  --color-accent-bg: #fadbd8;
+  --color-helper: #e67e22;
+  --color-success: #27ae60;
+  --color-success-bg: #d5f5e3;
+  --color-bg: #f8fafc;
+  --color-card: #ffffff;
+  --color-text: #1e293b;
+  --color-muted: #64748b;
+  --color-border: #e2e8f0;
+  --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.04);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", Roboto, sans-serif;
+  line-height: 1.7; color: var(--color-text); background: var(--color-bg);
+  margin: 0; padding: 0;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+
+header.day-hero {
+  background: linear-gradient(135deg, #1e3a5f 0%, #2c5282 100%);
+  color: white; padding: 56px 0 40px;
+}
+.day-hero .pill {
+  display: inline-block; padding: 4px 12px; background: rgba(255,255,255,0.18);
+  border-radius: 16px; font-size: 13px; margin-bottom: 12px; letter-spacing: 0.3px;
+}
+.day-hero h1 { font-size: 36px; margin: 0 0 8px; font-weight: 700; line-height: 1.2; }
+.day-hero .subtitle { font-size: 17px; opacity: 0.92; margin: 0; }
+
+nav.day-nav {
+  position: sticky; top: 0; z-index: 50;
+  background: #1e3a5f; color: #f1f5f9;
+  border-bottom: 1px solid #2c5282; box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+nav.day-nav .container {
+  display: flex; gap: 8px; align-items: center; flex-wrap: wrap;
+  padding: 10px 24px;
+}
+nav.day-nav a {
+  color: #f1f5f9; text-decoration: none; padding: 8px 14px;
+  font-size: 14px; font-weight: 500; border-radius: 6px;
+  transition: background 0.15s;
+}
+nav.day-nav a:hover { background: rgba(255,255,255,0.10); }
+nav.day-nav a.home { background: #fbbf24; color: #1e3a5f; font-weight: 600; }
+nav.day-nav a.home:hover { background: #fcd34d; }
+nav.day-nav .spacer { flex: 1; }
+nav.day-nav .disabled { opacity: 0.4; pointer-events: none; }
+
+main.day-content { padding: 40px 0 64px; }
+main.day-content .container {
+  background: var(--color-card); padding: 40px 56px;
+  border-radius: 12px; box-shadow: var(--shadow); margin-top: -24px;
+}
+
+main.day-content h1 { display: none; }
+main.day-content h2 {
+  color: var(--color-primary); font-size: 24px; font-weight: 700;
+  margin: 36px 0 16px; padding-bottom: 8px;
+  border-bottom: 2px solid var(--color-border);
+}
+main.day-content h2:first-child { margin-top: 0; }
+main.day-content h3 {
+  color: var(--color-primary-light); font-size: 19px; font-weight: 600;
+  margin: 28px 0 12px;
+}
+main.day-content h4 {
+  color: var(--color-text); font-size: 16px; font-weight: 600;
+  margin: 20px 0 8px;
+  text-transform: uppercase; letter-spacing: 0.4px;
+}
+main.day-content p { margin: 12px 0; }
+main.day-content ul, main.day-content ol { padding-left: 24px; margin: 12px 0; }
+main.day-content li { margin-bottom: 6px; }
+main.day-content strong { color: var(--color-primary); font-weight: 600; }
+main.day-content em { color: var(--color-muted); }
+main.day-content hr {
+  border: 0; border-top: 1px solid var(--color-border); margin: 32px 0;
+}
+
+main.day-content blockquote {
+  margin: 16px 0; padding: 12px 20px;
+  background: #f8fafc; border-left: 4px solid var(--color-primary-light);
+  border-radius: 0 8px 8px 0; color: var(--color-text);
+}
+main.day-content blockquote p { margin: 6px 0; }
+main.day-content blockquote strong { color: var(--color-primary); }
+
+main.day-content table {
+  width: 100%; border-collapse: collapse; margin: 16px 0;
+  font-size: 14px; box-shadow: var(--shadow); border-radius: 6px; overflow: hidden;
+  table-layout: auto;
+}
+main.day-content table th {
+  background: var(--color-primary); color: white; text-align: left;
+  padding: 10px 12px; font-weight: 600;
+  vertical-align: top; word-break: break-word;
+}
+main.day-content table td {
+  padding: 8px 12px; border-top: 1px solid var(--color-border);
+  vertical-align: top; word-break: break-word; overflow-wrap: anywhere;
+}
+main.day-content table tr:nth-child(even) td { background: #f8fafc; }
+main.day-content table td:first-child {
+  color: var(--color-primary);
+  font-family: "JetBrains Mono", "Courier New", monospace;
+  font-size: 13px;
+}
+/* Časy ve formátu HH:MM lze ponechat bez lámání — krátké stringy */
+main.day-content table td:first-child:is(.time, [data-time]) {
+  white-space: nowrap;
+}
+
+main.day-content code {
+  font-family: "JetBrains Mono", "Courier New", monospace;
+  background: var(--color-bg); border: 1px solid var(--color-border);
+  padding: 1px 6px; border-radius: 4px; font-size: 0.92em;
+}
+
+footer.day-footer {
+  background: #1e3a5f; color: #cbd5e1;
+  padding: 28px 0; text-align: center; font-size: 14px;
+}
+footer.day-footer a { color: #fbbf24; text-decoration: none; font-weight: 600; }
+footer.day-footer a:hover { text-decoration: underline; }
+footer.day-footer .footer-nav { margin-top: 12px; }
+footer.day-footer .footer-nav a { margin: 0 12px; }
+
+@media (max-width: 768px) {
+  .day-hero h1 { font-size: 26px; }
+  .day-hero .subtitle { font-size: 15px; }
+  main.day-content .container { padding: 24px; margin-top: -16px; }
+  main.day-content h2 { font-size: 20px; }
+  main.day-content h3 { font-size: 17px; }
+  main.day-content table { font-size: 13px; }
+  main.day-content table td, main.day-content table th { padding: 6px 8px; }
+  nav.day-nav .container { padding: 8px 12px; }
+  nav.day-nav a { padding: 6px 10px; font-size: 13px; }
+}
+@media print {
+  nav.day-nav, footer.day-footer { display: none; }
+  main.day-content .container { box-shadow: none; padding: 0; }
+}
+</style>
+</head>
+<body>
+
+<header class="day-hero">
+  <div class="container">
+    <span class="pill">Den 5 · 15. 7. (středa)</span>
+    <h1>Příjezd hostů</h1>
+    <p class="subtitle">Detailní program a příběh dne</p>
+  </div>
+</header>
+
+<nav class="day-nav">
+  <div class="container">
+    <a class="home" href="../pruvodce.html#dny">← Průvodce hrou</a>
+    <span class="spacer"></span>
+    <a href="den_04.html">← Den 4</a>
+    <a href="den_06.html">Den 6 →</a>
+  </div>
+</nav>
+
+<main class="day-content">
+  <div class="container">
+    <h1>DEN 5 — Středa 15. 7. 2026: Příjezd hostů</h1>
+<blockquote>
+<p><strong>Motto dne</strong>: „Tři hosté přijdou ze světa za lesem. Jeden z nich přivedl s sebou popel."</p>
+</blockquote>
+<hr />
+<h2>Stručná osnova (timetable)</h2>
+<table>
+<thead>
+<tr>
+<th>Čas</th>
+<th>Co se děje</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>07:30 – 08:30</td>
+<td>Snídaně</td>
+</tr>
+<tr>
+<td>08:30 – 09:00</td>
+<td>Ranní brífink — Karel oznámí příjezd hostů</td>
+</tr>
+<tr>
+<td>09:30 – 10:30</td>
+<td><strong>Příjezd JUDr. Magdalény Růžičkové</strong> (notářka z Blanska)</td>
+</tr>
+<tr>
+<td>11:00 – 12:00</td>
+<td><strong>Příjezd Bohumila Hájka</strong> (starosta Jedovnic)</td>
+</tr>
+<tr>
+<td>12:00 – 13:00</td>
+<td>Oběd</td>
+</tr>
+<tr>
+<td>13:00 – 14:00</td>
+<td>Klid ve stanech</td>
+</tr>
+<tr>
+<td>14:00 – 14:30</td>
+<td><strong>Příjezd Vladimíra Stehlíka</strong> (soused-hospodář, „gratulant")</td>
+</tr>
+<tr>
+<td>14:30 – 15:00</td>
+<td>Volitelně: <strong>Příjezd Pavla Konečného</strong> (vedoucí skautů Borovice)</td>
+</tr>
+<tr>
+<td>15:00 – 17:30</td>
+<td><strong>ETAPOVÁ HRA č. 5: Výslechy hostů</strong> (rotace)</td>
+</tr>
+<tr>
+<td>17:30 – 18:00</td>
+<td><strong>Bombshell</strong>: Stehlíkovy boty 44 + jeho pickup</td>
+</tr>
+<tr>
+<td>18:00 – 19:00</td>
+<td>Večeře</td>
+</tr>
+<tr>
+<td>19:30 – 20:30</td>
+<td><strong>Detektivní kvíz</strong> (večerní hra — opakování)</td>
+</tr>
+<tr>
+<td>20:30 – 21:30</td>
+<td>Volný čas u ohně</td>
+</tr>
+<tr>
+<td>22:00</td>
+<td>Večerka</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Příběh dne (z pohledu dětí)</h2>
+<p>Ráno <strong>Karel Malík</strong> ohlásí: „Týmy, dnes nám přijíždějí <strong>tři návštěvníci</strong>, možná čtyři:</p>
+<ol>
+<li><strong>JUDr. Magdaléna Růžičková</strong> — notářka pana Marka Stanislava z <strong>Blanska</strong>. Sepisovala s ním závěť před měsícem. Měla přijet už den 2 na zveřejnění, ale po incidentu ji policie požádala, ať počká. Teď přijíždí pomoci vyšetřování. <strong>Má v kanceláři kopii závěti.</strong></li>
+<li><strong>Bohumil Hájek</strong> — starosta <strong>Jedovnic</strong>, sousední obce. Dlouholetý přítel pana Marka. Přijíždí pogratulovat k 30. ročníku.</li>
+<li><strong>Vladimír Stehlík</strong> — soused, hospodář ze <strong>samoty asi 1 km od tábora</strong>, lesní cestou. Oficiálně přijíždí jako <strong>gratulant</strong> — dlouholetý soused, syn rodiny, která tábor nechala postavit na své loučce. Přiveze trochu medu a brambor.</li>
+<li><strong>Volitelně Pavel Konečný</strong> — vedoucí skautského tábora <strong>Borovice</strong>, který je v údolí o pár set metrů dál. Také slíbil zastavit se a popřát.</li>
+</ol>
+<p>Všichni budou dnes <strong>vyslýcháni</strong>. Pamatujte: <strong>kdokoli z nich může být pachatel</strong>. Nebo nikdo z nich. Nebo někdo, koho zatím neznáme."</p>
+<hr />
+<h2>Klíčový moment dne 1: Magdaléna Růžičková (cca 09:30)</h2>
+<p>Magdaléna přijede <strong>služební Škodou Santanou</strong> ze směru od Jedovnic. Vystoupí v kostýmu, kufřík v ruce, brýle. Děti ji vítají v půlkruhu u centrální plochy.</p>
+<blockquote>
+<p><strong>Magdaléna</strong>: „Dobrý den, dětí, dobrý den. Jsem advokátka pana Marka Stanislava z Blanska. <strong>Měla jsem tu být už den po incidentu</strong>, ale policie požádala, abychom počkali. Pan Marek je teď ve fakultní nemocnici v Brně, lékaři ho dnes ráno převedli ze sledování na běžné oddělení. <strong>Vede se mu lépe.</strong> Sepisovala jsem s ním v červnu závěť. Kopii mám v kanceláři v Blansku, ale <strong>plný text musí přečíst pan Marek osobně</strong> — to bylo jeho výslovné přání. Dnes vám potvrdím něco, co je důležité: <strong>závěť obsahuje dodatek o pokračování smlouvy s Mendelovou univerzitou v Brně</strong> — pozemek tábora se má prodloužit o dalších 30 let. <strong>Bez tohoto dodatku stávající smlouva 2027 vyprší.</strong> To je první důležitá zpráva. Detail (přesný text dodatku) přivezu vám den 8, pokud přijedete do mé kanceláře."</p>
+<p><strong>Magdaléna je INFORMÁTORKA, NE PACHATELKA</strong>. Pomáhá. Vyšetřování není do hloubky bez ní možné.</p>
+<p><strong>Klíčová informace pro vyšetřovatele</strong>: existuje <strong>dodatek</strong>. Něco se s ním děje. Stačí komusi, aby ho zničil — a tábor v 2027 přijde o pozemek. Kdo by chtěl, aby tábor o pozemek přišel?</p>
+</blockquote>
+<hr />
+<h2>Klíčový moment dne 2: Bohumil Hájek (cca 11:00)</h2>
+<p>Bohumil Hájek, 60letý starosta Jedovnic. Sympatický, vesnický typ. Přijede svým osobním autem. Tričko, kalhoty, vesta s logem obce, čepice.</p>
+<blockquote>
+<p><strong>Hájek</strong>: „Děti, srdečně zdravím. Pan Marek mi je 30 let dobrým přítelem. Tábor je perla našeho údolí. <strong>Přijel jsem popřát k jubileu, i když je to teď s tím vyšetřováním kalná radost.</strong> Mohu vám pomoct, jak je v mé moci: zavolat policii do Blanska, požádat lesníka o spolupráci, zařídit kontakty na úřadě v Jedovnicích. <strong>Stojím za vámi.</strong>"</p>
+<p><strong>Hájek je INFORMÁTOR, ne pachatel</strong>. Pomůže s den 8 (kontakty v Blansku) a den 10 (mobilizace policie).</p>
+</blockquote>
+<hr />
+<h2>Klíčový moment dne 3: Vladimír Stehlík (cca 14:00) — POZOR</h2>
+<p>Po obědě přijede <strong>Vladimír Stehlík</strong> svým <strong>starším pickupem</strong> (Mitsubishi L200 s dřevěnou korbou). Vystoupí — kostkovaná košile, kalhoty s laclem, <strong>kožené boty velikosti 44</strong>, vousy. V korbě má <strong>košík s mladými brambory a sklenice medu</strong>.</p>
+<blockquote>
+<p><strong>Stehlík</strong> (klidně, s pomalým hlasem): „Dobrý den, děti. Já jsem Vladimír Stehlík, hospodářím na samotě tady kousek. <strong>Jsem syn těch, kteří vám tuhle loučku nechali postavit tábor.</strong> Letos je třicet let — chtěl jsem pogratulovat. Přivezl jsem trochu medu a první brambory. Pan Marek byl můj soused od dětství. <strong>Slyšel jsem, co se stalo.</strong> Doufám, že je v pořádku. Jsem tu, kdyby vás něco napadlo, na co se můžete zeptat — bydlím tady celý život, znám les jako vlastní kapsu."</p>
+</blockquote>
+<p>Karel ho přivítá zdvořile. Anička přijme med a brambory s úsměvem. <strong>Děti zatím nic netuší.</strong></p>
+<blockquote>
+<p><strong>Pro vedoucí — co se v tu chvíli má všimnout obecenstvo (= vedoucí týmů, ne děti)</strong>:
+- <strong>Stehlíkovy boty velikost 44</strong>, kožené (F04 stopa odpovídá!)
+- <strong>Pickup s dřevěnou korbou</strong> stojí na cestě k tábořišti — pneumatiky vypadají jako F09
+- Stehlík v košili kapsu na <strong>dýmku</strong> (F12 popel?)
+- Na pravé ruce má <strong>kožený pásek na hodinky</strong>, ale rukavice nemá viditelně</p>
+</blockquote>
+<hr />
+<h2>Klíčový moment dne 4: Pavel Konečný — volitelně (cca 14:30)</h2>
+<p>Pavel Konečný, 45 let, vedoucí skautského tábora <strong>Borovice</strong> v údolí. Šedovousý, sympatický, krojované tričko se skautským znakem. Přijde pěšky lesem (cca 800 m).</p>
+<blockquote>
+<p><strong>Konečný</strong>: „Marku, Karle, Pavle, srdečně zdravím. Jenom na chvíli — zaskočil jsem popřát k 30. výročí. Marek mi sepsal kdysi, jak založil tábor. Jeho přístup mě inspiroval. <strong>A jsem otřesen tím, co se stalo.</strong> Pokud my ze skautů můžeme být užiteční, řekněte si — máme týmy připravené."</p>
+<p><strong>Pro vedoucí</strong>: Konečný je <strong>rudá stopa pro 1 den</strong>. Vedoucí týmů si vzpomenou, že kdysi (před lety) <strong>Konečný navrhoval Markovi sloučení táborů</strong>, Marek odmítl. Některý tým to objeví v Markových starých dopisech v knihovně Šéfky. <strong>Je to motiv?</strong> Konečný má ale <strong>alibi den 6</strong> (porada s vedoucím Údolí). <strong>Eliminace den 6.</strong></p>
+</blockquote>
+<hr />
+<h2>Etapová hra č. 5: Výslechy hostů (15:00–17:30)</h2>
+<h3>Stanoviště</h3>
+<p>3–4 výslechová místa (jeden tým = jeden host, rotace 30 min):
+- <strong>Šéfka</strong> — Magdaléna Růžičková
+- <strong>Stůl pod jídelní plachtou</strong> — Bohumil Hájek
+- <strong>Lavice u ohniště</strong> — Vladimír Stehlík
+- (Volitelně) <strong>Stůl u altánu studánky</strong> — Pavel Konečný</p>
+<h3>Skripty výslechů</h3>
+<h4>JUDr. Magdaléna Růžičková</h4>
+<p><strong>Stálá fakta</strong>:
+- Notářka v Blansku, pana Marka zná 20 let.
+- Sepisovala závěť <strong>v červnu 2026</strong> v Brně. Marek si zachoval <strong>obsah závěti pro sebe</strong> — chtěl ji přečíst osobně den 11. července večer při slavnosti.
+- <strong>Závěť obsahuje dodatek</strong> o <strong>prodloužení smlouvy s Mendelovou univerzitou v Brně</strong> o dalších 30 let. Univerzita pozemek tábora propůjčuje. <strong>Bez dodatku stávající smlouva 2027 vyprší</strong> a univerzita pronajme plochu jinému zájemci.
+- 11. 7. večer byla v Blansku, doma s manželem. Telefonát s Karlem v 22:30 (= ověřitelné).
+- Cíl: <strong>najít originál závěti</strong> a umožnit Markovi její přečtení.</p>
+<p><strong>Není podezřelá</strong> — má alibi, motivačně neutrální (notářka neúčastní se obsahu), profesionálka.</p>
+<p><strong>Nabídka</strong>: „Pokud přijedete den 8 do mé kanceláře v Blansku, ukážu vám <strong>fragment závěti (§§ 1–2)</strong> + <strong>dodatek smlouvy s univerzitou</strong>. Plný text musí přečíst pan Marek osobně."</p>
+<h4>Bohumil Hájek</h4>
+<p><strong>Stálá fakta</strong>:
+- Starosta Jedovnic 12 let.
+- Pana Marka zná 30 let — sám pomáhal, když Marek tábor zakládal (1997).
+- 11. 7. večer byl na <strong>obecním zasedání zastupitelstva v Jedovnicích</strong> (zápis ze zasedání ověřitelný — tým si ho může vyžádat).
+- Od 22:30 doma. Manželka potvrdí.
+- O zranění Marka se dozvěděl ráno 12. 7. od Karla (telefonát z lesní cesty „U lípy", kde je signál).</p>
+<p><strong>Není podezřelý</strong> — má alibi, motivačně neutrální. Pomáhá.</p>
+<h4>Vladimír Stehlík — KLÍČOVÝ VÝSLECH (i když děti to ještě neví)</h4>
+<p><strong>Stálá fakta</strong>:
+- Hospodář na samotě 1 km od tábora, lesní cestou.
+- Marka zná od dětství (sousedé). Vyrůstal s Alešem.
+- 11. 7. večer <strong>„byl doma na samotě, sám"</strong>. Žádné svědky (manželka u sestry v Brně, syn na vojně). <strong>TVRDÍ to, ale je to LEŽ</strong>.
+- Hospodářství: koně, malé hospodářství, <strong>myslivecký zájem</strong> (povolenku k lovu v okolním revíru má).
+- Pickup: starší <strong>Mitsubishi L200</strong> s dřevěnou korbou.
+- Vztah k Markovi: „Soused. Měli jsme svoje sousedské drobnosti, ale dobrý vztah. Kdo by chtěl Markovi ublížit?"
+- Na otázku „nosíte rukavice?": „V lese pravidelně. Mám kožené pracovní rukavice. Kdo by je v lese nenosil?"
+- Na otázku „kouříte?": „<strong>Dýmku. Mám zvláštní směs z Brna — dovozové.</strong> Kuřácká úchylka, vím."</p>
+<p><strong>Slabé místo (děti budou hledat — nebo nezjistí v této fázi sami, vedoucí jim pomůže):
+- </strong>Boty velikost 44<strong> kožené — pasují na F04
+- </strong>Pickup<strong> s pneumatikami — pasují na F09
+- </strong>Dýmkovou směs<strong> kouří — pasuje na F12 popel
+- </strong>Žádné svědky pro 11. 7.**</p>
+<p><strong>Pokud děti tlačí</strong> ohledně bot, auta a dýmky:
+- Stehlík: „Botky 44 mají miliony lidí. Pickupů jsou tisíce. Dýmkařů je málo, to mám pravdu, ale <strong>co to dokazuje? Já jsem byl doma. Ptejte se kohokoliv, kdo viděl světlo z mé samoty.</strong>"</p>
+<p><strong>Pevně tvrdí</strong>: „<strong>Byl jsem doma na samotě, můžu to dokázat.</strong>"</p>
+<blockquote>
+<p><strong>Pravda Stehlíka</strong>: Lže. <strong>Skutečně přišel pěšky lesem do tábora 12. 7. v 00:30.</strong> Pickup nikam tu noc neřídil — proto si myslí, že stopa F09 neexistuje. Neví, že <strong>přes den před zločinem dovezl Alešovi do tábora pickupem materiál na opravu</strong> (banální logistika), a tehdy zanechal stopu pneumatiky na lesní cestě, kterou Jenda našel ráno 13. 7. To se mu vrátí. <strong>Demaskování: den 8 (motiv ze smlouvy) + den 9 (konfrontace).</strong></p>
+</blockquote>
+<h4>Pavel Konečný — volitelně</h4>
+<p><strong>Stálá fakta</strong>:
+- Vedoucí Borovic 8 let.
+- 11. 7. večer byl v Borovicích — slavnostní zahájení vlastního tábora. <strong>Cca 70 dětí ho viděno.</strong>
+- 12. 7. ráno měl <strong>poradu s Janou Sotníkovou (Údolí)</strong> v 09:00.
+- Vztah k Markovi: „Mentor. Kdysi jsem mu navrhoval sloučení táborů, <strong>on odmítl s úsměvem</strong> — řekl ‚každý tábor má svůj duch.' Já jsem to přijal. <strong>Žádné staré křivdy.</strong>"</p>
+<p><strong>Není podezřelý</strong> — má silné alibi (70 dětí + porada s Údolím). <strong>Eliminace den 6.</strong></p>
+<hr />
+<h2>Klíčový moment dne 5: Bombshell o Stehlíkových botách (17:30)</h2>
+<p>Po výsleších, kdy Stehlík odjede zpět na samotu, <strong>Karel svolá tábor</strong>:</p>
+<blockquote>
+<p>„Týmy, jeden detail. <strong>Vladimír Stehlík nosil dnes kožené boty velikosti 44 a pickup, který právě odjel.</strong> Naše stopy F04 a F09 odpovídají. Navíc kouří <strong>zvláštní dýmkovou směs</strong> — F12 popel z dýmky. <strong>Stehlík tvrdí, že byl 11. 7. doma na samotě.</strong> Žádné svědky. <strong>Nemáme zatím nic, co by ho jednoznačně usvědčilo.</strong> Ale <strong>stopa je silná</strong>. Zítra to nesmíme prozradit, kdyby se vrátil. Pokračujeme tiše."</p>
+</blockquote>
+<p>Děti zaznamenávají do kartotéky. Stehlík se nyní stává <strong>podezřelým č. 8</strong>. Spojení: <strong>silné, ale ne pevné.</strong></p>
+<blockquote>
+<p><strong>Důležité — vedoucí tlumí přehnaná obvinění.</strong> Stehlík je <strong>podezřelý, ne odsouzený</strong>. Pevné důkazy přijdou den 8 (motiv) a den 9 (konfrontace).</p>
+</blockquote>
+<hr />
+<h2>Bodování dne 5</h2>
+<ul>
+<li>Týmy hodnocené za <strong>vlastní otázky</strong> + <strong>logické závěry</strong> (kdo je podle nich nejvíc podezřelý a proč).</li>
+<li>Bonus 30 b. týmu, který <strong>správně identifikuje Stehlíka jako pachatele</strong> (zatím jen na základě indicií — F04 boty, F09 pickup, F12 dýmka, žádné alibi). To některé týmy udělají — zlato hra.</li>
+<li>Body se <strong>nezveřejňují</strong> — uloží se a vyhodnotí v finále.</li>
+</ul>
+<hr />
+<h2>Indicie předané dnes</h2>
+<table>
+<thead>
+<tr>
+<th>Kód</th>
+<th>Indicie</th>
+<th>Co znamená</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>F08</td>
+<td>Stehlík má boty 44</td>
+<td>Boty pasují na F04</td>
+</tr>
+<tr>
+<td>F09 (potvrzeno)</td>
+<td>Stehlík má pickup s odpovídajícím vzorkem</td>
+<td>Pasuje na stopu pneumatiky</td>
+</tr>
+<tr>
+<td>F12 (potvrzeno)</td>
+<td>Stehlík kouří zvláštní dýmkovou směs</td>
+<td>Pasuje na popel v Šéfce</td>
+</tr>
+<tr>
+<td>S09</td>
+<td>Stehlík nemá svědky pro 11. 7.</td>
+<td>Slabé alibi</td>
+</tr>
+<tr>
+<td>S10</td>
+<td>Růžičková má alibi (manžel + telefon Karla)</td>
+<td>Vyloučena</td>
+</tr>
+<tr>
+<td>S11</td>
+<td>Hájek má alibi (zastupitelstvo + manželka)</td>
+<td>Vyloučen</td>
+</tr>
+<tr>
+<td><strong>Klíčové</strong></td>
+<td>Závěť obsahuje <strong>dodatek smlouvy s univerzitou</strong> o 30 let</td>
+<td>Naznačuje motiv pro toho, kdo by chtěl pozemek tábora</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Obsazení dne 5</h2>
+<table>
+<thead>
+<tr>
+<th>Postava</th>
+<th>Aktivita</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Vladimír Stehlík</strong></td>
+<td>Poprvé přijíždí jako oficiální host, ale je TAJNÝ pachatel</td>
+</tr>
+<tr>
+<td><strong>Magdaléna Růžičková</strong></td>
+<td>Informátorka</td>
+</tr>
+<tr>
+<td><strong>Bohumil Hájek</strong></td>
+<td>Informátor + alibi pro budoucí výjezd</td>
+</tr>
+<tr>
+<td><strong>Pavel Konečný</strong> (volitelně)</td>
+<td>Návštěva, krátká rudá stopa</td>
+</tr>
+<tr>
+<td>Karel Malík, SoTo</td>
+<td>Koordinace, výslechy</td>
+</tr>
+<tr>
+<td>Aleš Tomek</td>
+<td>Klidný, <strong>stále nepodezřelý plně</strong> (= pomocník zločinu — drží roli)</td>
+</tr>
+<tr>
+<td>Anička, Anežka, Magda, Jenda + Adriana</td>
+<td>Normální táborové aktivity, kuchyně, údržba</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Tipy pro vedoucí</h2>
+<ol>
+<li><strong>Stehlíkova role je herecky náročná</strong> — vedoucí, který ho hraje, musí být přesvědčivý. <strong>Klid, hospodář, sympatický pomalý muž</strong>. Bez podezřelého chování. Dětem se musí líbit, <strong>i když jim něco šeptá v duši, že není v pořádku</strong>. Doporučujeme někoho, kdo není dětem dobře známý jako vedoucí (kamarád hl. vedoucího, dospělý dobrovolník na 3 dny).</li>
+<li><strong>Magdaléna a Hájek = informátoři</strong> — jejich role je dobrá, pokud z nich dělají autoritu (notářka v kostýmu, starosta s odznakem). Děti je zatím podezírají, ale <strong>rychle se vyloučí</strong>.</li>
+<li><strong>Konečný = rudá stopa</strong>: pokud nemáte vedoucího navíc, lze ho vynechat. Jeho funkce v ději je marginální — je tu jen pro <strong>rozšíření obzoru</strong> dětem (sousední tábory existují).</li>
+<li><strong>Bombshell o Stehlíkových botách</strong>: dejte týmu, který si všimne <strong>shody Stehlíkova outfitu se stopami</strong> ještě <strong>před Karlovým oznámením</strong>, <strong>bonus 50 b.</strong> za pozorovatelský úspěch. (Některý tým si všimne — zaznamená v deníku.)</li>
+<li><strong>Detektivní kvíz večer</strong>: lehká hra (20 otázek z dosavadního průběhu — kdo má jaké alibi, jaká je velikost stopy boty atd.). Týmy soutěží, body do tabulky.</li>
+</ol>
+<hr />
+<h2>Materiál pro den 5</h2>
+<ul>
+<li><strong>Kostým Stehlíka</strong>: kostkovaná košile, kalhoty s laclem, <strong>kožené boty velikosti 44</strong>, vousy (lepené nebo skutečné), <strong>dýmka</strong> (rekvizita, neplnit doopravdy), kapsa na košili s tabákem, <strong>kožené pracovní rukavice</strong> (v kapse — ukáže pokud se zeptají)</li>
+<li><strong>Pickup</strong> Mitsubishi L200 nebo Toyota Hilux (vedoucí, který hraje Stehlíka, jím přijede). Pokud auto není k dispozici, vedoucí přijde pěšky lesem a tvrdí, že pickup nechal u samoty.</li>
+<li><strong>Košík s brambory + 2 sklenice medu</strong> — rekvizita, kterou Stehlík dá Aničce (skutečná konzumovatelná)</li>
+<li><strong>Kostým Magdalény</strong>: business kostýmek, aktovka, brýle, kufřík</li>
+<li><strong>Kostým Hájka</strong>: tričko, vesta s logem obce, čepice</li>
+<li><strong>Kostým Konečného (volitelně)</strong>: skautské tričko/krojový šátek</li>
+</ul>
+<hr />
+<h2>Co se stane zítra</h2>
+<p>Den 6: <strong>Den klidu</strong>. Pozdní budíček, koupání u studánky, údržba, lisování bylin, talentová show. <strong>Anička přijde za Karlem dopoledne</strong>: „Karle, něco jsem viděla v noci..." — popíše baterku v Šéfce kolem 00:30 a siluetu utíkající kolem 01:10. <strong>První konkrétní stopa proti Alešovi</strong> (myslela, že to byl on na latrýnu — ale silueta byla větší). <strong>D02 anonymní dopis substituce klíč SVĚTLO</strong>. <strong>Eliminace Kláry, Hájka, Konečného.</strong></p>
+  </div>
+</main>
+
+<footer class="day-footer">
+  <div class="container">
+    <div>Tábor Světlo 2026 — Případ ztracené závěti · Den 5</div>
+    <div class="footer-nav">
+      <a href="../pruvodce.html#dny">Průvodce hrou</a>
+      <a href="../pribeh.html">Příběh jako kniha</a>
+      <a href="../den_05_navstevy.md">Zdrojový MD</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

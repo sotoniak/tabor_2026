@@ -254,6 +254,138 @@ tr:hover td { background: #f8fafc; }
   background: var(--color-bg); border: 1px solid var(--color-border);
 }
 
+.day-detail-link {
+  display: inline-flex; align-items: center; gap: 8px;
+  margin-top: 16px;
+  padding: 10px 18px;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+  color: white; text-decoration: none; border-radius: 8px;
+  font-weight: 600; font-size: 14px;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.day-detail-link:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(30,58,95,0.25);
+}
+.day-detail-link .arrow { transition: transform 0.15s; }
+.day-detail-link:hover .arrow { transform: translateX(3px); }
+
+.day-card .day-quickview {
+  display: flex; gap: 12px; flex-wrap: wrap; padding: 0 24px 16px;
+  background: linear-gradient(180deg, rgba(30,58,95,0.04) 0%, transparent 100%);
+}
+.day-card .day-quickview .pill-info {
+  font-size: 12px; padding: 3px 10px; border-radius: 12px;
+  background: var(--color-bg); border: 1px solid var(--color-border);
+  color: var(--color-muted);
+}
+.day-card .day-quickview .pill-info strong { color: var(--color-primary); font-weight: 600; }
+
+/* Diagram důkazů */
+.diagram-legend {
+  display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 28px;
+  padding: 14px 18px; background: white;
+  border: 1px solid var(--color-border); border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+.diagram-legend .leg {
+  display: inline-flex; align-items: center; gap: 8px; font-size: 14px;
+}
+.diagram-legend .leg .evidence-code { margin-right: 0; }
+
+.hub-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px; margin-bottom: 32px;
+}
+.hub-card {
+  background: white; border: 1px solid var(--color-border);
+  border-radius: 12px; padding: 20px 22px; box-shadow: var(--shadow);
+  border-top: 4px solid var(--color-primary);
+  display: flex; flex-direction: column;
+}
+.hub-card.hub-stehlik { border-top-color: var(--color-accent); }
+.hub-card.hub-ales { border-top-color: var(--color-helper); }
+.hub-card.hub-soto { border-top-color: var(--color-redherring); }
+.hub-card.hub-motiv { border-top-color: var(--color-motive); }
+.hub-card.hub-other { border-top-color: var(--color-support); }
+
+.hub-card h3 {
+  margin: 0 0 4px; font-size: 18px; color: var(--color-primary);
+  display: flex; align-items: center; gap: 8px;
+}
+.hub-card .hub-role {
+  font-size: 12px; text-transform: uppercase; letter-spacing: 0.4px;
+  color: var(--color-muted); margin-bottom: 10px; font-weight: 600;
+}
+.hub-card .hub-desc {
+  font-size: 13px; color: var(--color-muted); margin: 0 0 14px;
+  font-style: italic;
+}
+.hub-card .hub-line {
+  display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0;
+  padding-top: 8px; border-top: 1px dashed var(--color-border);
+}
+.hub-card .hub-line:first-of-type { border-top: none; padding-top: 0; }
+.hub-card .hub-line-label {
+  font-size: 11px; text-transform: uppercase; letter-spacing: 0.3px;
+  font-weight: 600; color: var(--color-muted);
+  width: 100%; margin-bottom: 2px;
+}
+.hub-card .hub-summary {
+  margin-top: auto; padding-top: 14px;
+  font-size: 13px; font-weight: 600; color: var(--color-primary);
+  border-top: 2px solid var(--color-bg);
+  display: flex; justify-content: space-between; align-items: center;
+}
+.hub-card .hub-summary .count {
+  background: var(--color-primary); color: white;
+  padding: 3px 10px; border-radius: 12px; font-family: "JetBrains Mono", monospace;
+  font-size: 12px;
+}
+.hub-card.hub-stehlik .hub-summary .count { background: var(--color-accent); }
+.hub-card.hub-ales .hub-summary .count { background: var(--color-helper); }
+.hub-card.hub-soto .hub-summary .count { background: var(--color-redherring); color: #1e293b; }
+.hub-card.hub-motiv .hub-summary .count { background: var(--color-motive); }
+.hub-card.hub-other .hub-summary .count { background: var(--color-support); }
+
+/* Phase flow */
+.phase-flow {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 0;
+  margin-top: 28px; position: relative;
+  background: white; border: 1px solid var(--color-border);
+  border-radius: 12px; overflow: hidden; box-shadow: var(--shadow);
+}
+.phase-col {
+  padding: 20px 22px; border-right: 1px solid var(--color-border);
+  position: relative;
+}
+.phase-col:last-child { border-right: none; }
+.phase-col h4 {
+  margin: 0 0 4px; font-size: 15px; color: var(--color-primary);
+  text-transform: uppercase; letter-spacing: 0.5px;
+}
+.phase-col .phase-days {
+  font-size: 12px; color: var(--color-muted); margin-bottom: 12px;
+  font-weight: 600;
+}
+.phase-col .phase-mood {
+  font-style: italic; font-size: 13px; color: var(--color-muted);
+  margin-bottom: 14px; padding: 6px 10px;
+  background: var(--color-bg); border-radius: 4px;
+  border-left: 3px solid var(--color-primary-light);
+}
+.phase-col ul { margin: 0; padding-left: 18px; font-size: 13px; }
+.phase-col ul li { margin-bottom: 4px; }
+.phase-col ul li strong { color: var(--color-primary); }
+.phase-1 { background: linear-gradient(180deg, #fef5e7 0%, transparent 50%); }
+.phase-2 { background: linear-gradient(180deg, #d6eaf8 0%, transparent 50%); }
+.phase-3 { background: linear-gradient(180deg, #d5f5e3 0%, transparent 50%); }
+@media (max-width: 768px) {
+  .phase-flow { grid-template-columns: 1fr; }
+  .phase-col { border-right: none; border-bottom: 1px solid var(--color-border); }
+  .phase-col:last-child { border-bottom: none; }
+}
+
 .role-tip {
   background: white; border: 1px solid var(--color-border);
   border-left: 4px solid var(--color-primary);
@@ -287,6 +419,53 @@ tr:hover td { background: #f8fafc; }
   font-size: 12px; line-height: 1.4;
   overflow-x: auto; white-space: pre;
 }
+
+/* Šablony k tisku */
+.sablona-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px;
+}
+.sablona-card {
+  background: white; border: 1px solid var(--color-border);
+  border-radius: 12px; padding: 22px;
+  box-shadow: var(--shadow);
+  display: flex; flex-direction: column;
+  transition: transform 0.15s, box-shadow 0.15s;
+  text-decoration: none; color: inherit;
+}
+.sablona-card:hover {
+  transform: translateY(-2px); box-shadow: var(--shadow-hover);
+  border-color: var(--color-primary-light);
+}
+.sablona-card .icon {
+  font-size: 32px; line-height: 1; margin-bottom: 8px;
+}
+.sablona-card h3 {
+  margin: 0 0 4px; font-size: 17px; color: var(--color-primary);
+  font-weight: 600;
+}
+.sablona-card .desc {
+  font-size: 13px; color: var(--color-muted); margin: 0 0 14px;
+  line-height: 1.5;
+}
+.sablona-card .specs {
+  display: flex; flex-wrap: wrap; gap: 6px;
+  margin-top: auto;
+  padding-top: 12px; border-top: 1px solid var(--color-border);
+}
+.sablona-card .specs .pill {
+  font-size: 11px; padding: 3px 8px; border-radius: 10px;
+  background: var(--color-bg); color: var(--color-muted);
+  font-weight: 500;
+}
+.sablona-card .open-cta {
+  margin-top: 10px; font-size: 13px; font-weight: 600;
+  color: var(--color-primary); display: flex;
+  align-items: center; gap: 4px;
+}
+.sablona-card .open-cta .arrow { transition: transform 0.15s; }
+.sablona-card:hover .open-cta .arrow { transform: translateX(3px); }
+.sablona-card.featured { border-top: 4px solid var(--color-accent); }
 
 footer {
   background: #1e3a5f; color: #cbd5e1;
@@ -335,10 +514,12 @@ footer a { color: #fbbf24; }
     <a href="#postavy">Postavy</a>
     <a href="#pribeh">Příběh</a>
     <a href="#dukazy">Důkazy</a>
+    <a href="#diagram">Diagram</a>
     <a href="#dny">Dny hry</a>
     <a href="#vedouci">Pro vedoucí</a>
     <a href="#sifry">Šifry</a>
     <a href="#forenziku">Forenziku</a>
+    <a href="#sablony">Šablony</a>
     <a href="#mapa">Mapa</a>
     <a href="pribeh_kratce.html" style="margin-left: auto; color: #fbbf24; font-weight: 600;">⚡ Shrnutí</a>
     <a href="pribeh.html" style="color: #fbbf24; font-weight: 600;">📖 Kniha</a>
@@ -498,10 +679,63 @@ footer a { color: #fbbf24; }
   </div>
 </section>
 
+<section id="diagram">
+  <div class="container">
+    <h2 class="section-title">Diagram důkazů — kam co míří</h2>
+    <p class="section-subtitle">Vizuální mapa všech ~50 indicií. Vidíš, jak se důkazy sbíhají k pachateli, pomocníkovi, rudé stopě a motivu.</p>
+
+    <div class="diagram-legend">
+      <span class="leg"><span class="evidence-code code-F">F</span> Forenzní (fyzické stopy)</span>
+      <span class="leg"><span class="evidence-code code-S">S</span> Svědectví</span>
+      <span class="leg"><span class="evidence-code code-R">R</span> Rudé stopy (klamné)</span>
+      <span class="leg"><span class="evidence-code code-D">D</span> Dopisy / šifry</span>
+    </div>
+
+    <div class="hub-grid" id="hub-grid"></div>
+
+    <h3 style="margin-top: 40px; color: var(--color-primary);">Tok hry — 3 fáze, jak se důkazy postupně sbíhají</h3>
+    <div class="phase-flow">
+      <div class="phase-col phase-1">
+        <h4>Fáze 1 — Rozsah a chaos</h4>
+        <div class="phase-days">Dny 1–4</div>
+        <div class="phase-mood">Hlavní pocit: chaos, „kdo to udělal?"</div>
+        <ul>
+          <li>Místo činu — sbíráme <strong>F01–F12</strong></li>
+          <li>Výslechy personálu — <strong>S01–S08</strong></li>
+          <li>Forenzní stanoviště, rudá stopa <strong>SoTo (R01–R07)</strong></li>
+          <li>Dopis <strong>D01</strong> (Caesar) — první nápověda na vnitřního pomocníka</li>
+        </ul>
+      </div>
+      <div class="phase-col phase-2">
+        <h4>Fáze 2 — Stahování smyčky</h4>
+        <div class="phase-days">Dny 5–8</div>
+        <div class="phase-mood">Hlavní pocit: šachy, promyšlenost</div>
+        <ul>
+          <li>Hosté přijíždějí — <strong>Stehlík</strong> bota 44 + pickup ⇒ pachatel zvenčí</li>
+          <li>Aniččina výpověď — silueta špatným směrem ⇒ vnitřní pomocník</li>
+          <li>Markův vzkaz <strong>D03</strong> — jmenuje Stehlíka i Aleše</li>
+          <li>Notářka <strong>S21</strong> — definitivní eliminace SoTa</li>
+        </ul>
+      </div>
+      <div class="phase-col phase-3">
+        <h4>Fáze 3 — Konfrontace a smíření</h4>
+        <div class="phase-days">Dny 9–11</div>
+        <div class="phase-mood">Hlavní pocit: drama, pak emocionální závěr</div>
+        <ul>
+          <li>Konfrontace Stehlíka, přiznání Aleše <strong>S15</strong></li>
+          <li>Hon na pachatele, dopadení <strong>S16</strong></li>
+          <li>Nález pravé závěti v dutině buku</li>
+          <li>FINÁLE — čtení závěti, omluva SoTem, dědické listy</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="dny">
   <div class="container">
-    <h2 class="section-title">Dny hry</h2>
-    <p class="section-subtitle">Co se který den děje, kdo přijíždí, jaké indicie se odhalí. Klikni na kartu dne pro detail.</p>
+    <h2 class="section-title">Dny hry — detailní program</h2>
+    <p class="section-subtitle">Všech 12 dní. Každá karta nabízí stručný náhled — pro <strong>kompletně detailní program (atmosféra, dialogy, role, scénář)</strong> klikni na <em>„Otevřít detail dne →"</em>.</p>
     <div id="days-list"></div>
   </div>
 </section>
@@ -694,6 +928,82 @@ S V E T L O A B C D F G H I J K M N P Q R U W X Y Z   ← šifra</pre>
         <p><strong>Klíčový výstup:</strong> F12 — popel ze zvláštní směsi „Kapitán Černý" (Stehlík kouří dýmku, identifikovatelné).</p>
       </div>
     </div>
+  </div>
+</section>
+
+<section id="sablony">
+  <div class="container">
+    <h2 class="section-title">Šablony k tisku</h2>
+    <p class="section-subtitle">Hotové dokumenty pro tisk — výslechové protokoly, vyšetřovatelské průkazy, závěť (pravá i padělaná), dědické listy a týmové mapy. Klikni na kartu pro otevření, pak <strong>🖨️ Tisk</strong> v horní liště.</p>
+
+    <div class="sablona-grid">
+      <a class="sablona-card" href="sablony/vyslechovy_protokol.html">
+        <div class="icon">📋</div>
+        <h3>Výslechový protokol</h3>
+        <p class="desc">Formulář pro týmy. Vyplňuje vyslýchatel + zapisovatel. Použití den 3 (personál), den 5 (hosté), případně dále.</p>
+        <div class="specs">
+          <span class="pill">A4</span>
+          <span class="pill">oboustranně</span>
+          <span class="pill">~80 ks</span>
+          <span class="pill">max 45 b./ks</span>
+        </div>
+        <div class="open-cta">Otevřít a tisknout <span class="arrow">→</span></div>
+      </a>
+
+      <a class="sablona-card" href="sablony/prukaz.html">
+        <div class="icon">🪪</div>
+        <h3>Vyšetřovatelský průkaz</h3>
+        <p class="desc">Identifikační karta s pravidly vyšetřování pro každé dítě i vedoucího. 4 ks na A4 — laminovat, propíchnout, na šňůrku.</p>
+        <div class="specs">
+          <span class="pill">A6</span>
+          <span class="pill">4 ks na A4</span>
+          <span class="pill">oboustranný</span>
+          <span class="pill">50 ks</span>
+        </div>
+        <div class="open-cta">Otevřít a tisknout <span class="arrow">→</span></div>
+      </a>
+
+      <a class="sablona-card featured" href="sablony/zavet.html">
+        <div class="icon">📜</div>
+        <h3>Závěť — pravá i padělaná</h3>
+        <p class="desc">Klíčový artefakt hry. <strong>Padělek</strong> (do truhly v Šéfce, bez § 4 a bez pečeti) + <strong>originál</strong> (do dutiny buku, kompletní s pečetí). Děti je porovnávají.</p>
+        <div class="specs">
+          <span class="pill">A4 × 2</span>
+          <span class="pill">papír 120 g</span>
+          <span class="pill">vosková pečeť</span>
+        </div>
+        <div class="open-cta">Otevřít a tisknout <span class="arrow">→</span></div>
+      </a>
+
+      <a class="sablona-card featured" href="sablony/dedicky_list.html">
+        <div class="icon">🎓</div>
+        <h3>Dědický list</h3>
+        <p class="desc">Nejdůležitější výtvor tábora. Každé dítě dostane vlastní list s vlastním jménem, slavnostně předaný Markem ve finále den 11.</p>
+        <div class="specs">
+          <span class="pill">A4</span>
+          <span class="pill">papír 120–160 g</span>
+          <span class="pill">60 ks</span>
+          <span class="pill">stuha + pečeť</span>
+        </div>
+        <div class="open-cta">Otevřít a tisknout <span class="arrow">→</span></div>
+      </a>
+
+      <a class="sablona-card" href="sablony/mapa_sablona.html">
+        <div class="icon">🗺️</div>
+        <h3>Týmová mapa tábora</h3>
+        <p class="desc">Pracovní mapa s mřížkou 5 × 5 m, kompasem a legendou. Týmy do ní zaznamenávají stopy, trasy a místa činu od dne 4.</p>
+        <div class="specs">
+          <span class="pill">A4 landscape</span>
+          <span class="pill">lze zvětšit na A2</span>
+          <span class="pill">8 ks (6 týmů + 2)</span>
+        </div>
+        <div class="open-cta">Otevřít a tisknout <span class="arrow">→</span></div>
+      </a>
+    </div>
+
+    <p style="margin-top: 24px; font-size: 14px; color: var(--color-muted);">
+      Pro detailní pokyny k výrobě (papír, pečeť, kaligrafie, časová náročnost a náklady) viz původní zdrojové <code style="font-size: 12px; padding: 2px 6px; background: var(--color-bg); border-radius: 4px;">sablony/*.md</code> soubory v repozitáři.
+    </p>
   </div>
 </section>
 
@@ -1412,6 +1722,7 @@ function renderDays() {
   const list = document.getElementById('days-list');
   list.replaceChildren();
   for (const d of days) {
+    const slug = 'dny/den_' + String(d.num).padStart(2, '0') + '.html';
     const card = el('div', { class: 'day-card', data: { day: String(d.num) } });
     const header = el('div', { class: 'day-header' });
     const headerLeft = el('div');
@@ -1421,11 +1732,20 @@ function renderDays() {
     header.appendChild(el('span', { class: 'toggle' }, '▾'));
     card.appendChild(header);
 
+    const quick = el('div', { class: 'day-quickview' });
+    quick.appendChild(el('span', { class: 'pill-info' }, el('strong', null, d.timetable.length + ' bloků')));
+    quick.appendChild(el('span', { class: 'pill-info' }, el('strong', null, d.indicie.length + ' indicií')));
+    if (d.indicie.length) {
+      const types = new Set(d.indicie.map(c => c[0]));
+      quick.appendChild(el('span', { class: 'pill-info' }, 'Typy: ' + Array.from(types).join(', ')));
+    }
+    card.appendChild(quick);
+
     const content = el('div', { class: 'day-content' });
     content.appendChild(el('div', { class: 'day-motto' }, d.motto));
 
     const ttSection = el('div', { class: 'day-section' });
-    ttSection.appendChild(el('h4', null, 'Časová osa'));
+    ttSection.appendChild(el('h4', null, 'Časová osa (přehledně)'));
     const tt = el('table', { class: 'timetable' });
     for (const [t, what] of d.timetable) {
       const row = el('tr');
@@ -1450,9 +1770,69 @@ function renderDays() {
     vedSection.appendChild(el('p', { style: 'font-size: 14px; color: var(--color-muted);' }, d.vedouci));
     content.appendChild(vedSection);
 
+    const detailLink = el('a', { class: 'day-detail-link', href: slug });
+    detailLink.appendChild(el('span', null, '📖 Otevřít detailní program dne ' + d.num));
+    detailLink.appendChild(el('span', { class: 'arrow' }, '→'));
+    content.appendChild(detailLink);
+
     card.appendChild(content);
     header.addEventListener('click', () => card.classList.toggle('open'));
     list.appendChild(card);
+  }
+}
+
+function renderHub() {
+  const grid = document.getElementById('hub-grid');
+  if (!grid) return;
+  grid.replaceChildren();
+
+  const hubs = [
+    { key: 'stehlik', title: 'Vladimír Stehlík',  emoji: '🟥', role: 'Pachatel — krádež a útok',
+      desc: 'Soused-konkurent. Boty 44, pickup, dýmka. Krade závěť, strčí Marka, schová ji v dutině buku. Stopy „outsider" = Stehlík.',
+      filter: e => ['stehlik','stehlik+ales','outsider','krádež'].includes(e.target) },
+    { key: 'ales',    title: 'Aleš Krátký',       emoji: '🟧', role: 'Vnitřní pomocník',
+      desc: '17 let, instruktor s nočními hlídkami. Naverbován Stehlíkem za 30 000 Kč. Rozvázal plachtu Šéfky, falešné alibi.',
+      filter: e => ['ales','stehlik+ales'].includes(e.target) },
+    { key: 'soto',    title: 'SoTo (Tomáš Sotoniak)', emoji: '⬜', role: 'Rudá stopa — eliminace',
+      desc: 'Zástupce hl. vedoucího. Markem pověřen tajnou misí do Brna pro dodatek závěti. Mlčí dokud Marek neoznámí. NENÍ vinen.',
+      filter: e => e.target === 'soto' },
+    { key: 'motiv',   title: 'Motiv',             emoji: '🟨', role: 'Proč to udělali',
+      desc: 'Stehlík chce zablokovat tradici 30 let / získat tábor. Závěť obsahuje § o nedotknutelnosti — proto ji ukrást.',
+      filter: e => e.target === 'motiv' },
+    { key: 'other',   title: 'Kontext & komika', emoji: '⬜', role: 'Atmosféra a barva hry',
+      desc: 'Preclík a koláč v noci, Hájek/obec, Konečný/skauti, Magda/lékařský deník, archivní vodítka — vyrovnávají temný tón.',
+      filter: e => ['preclik','hajek','konecny','magda','karel','archív','kontext','finale'].includes(e.target) }
+  ];
+
+  for (const h of hubs) {
+    const items = evidence.filter(h.filter);
+    const card = el('div', { class: 'hub-card hub-' + h.key });
+    const ttl = el('h3', null);
+    ttl.appendChild(document.createTextNode(h.emoji + ' ' + h.title));
+    card.appendChild(ttl);
+    card.appendChild(el('div', { class: 'hub-role' }, h.role));
+    card.appendChild(el('p', { class: 'hub-desc' }, h.desc));
+
+    const byType = { F: [], S: [], R: [], D: [] };
+    for (const it of items) byType[it.type].push(it);
+
+    for (const tp of ['F','S','R','D']) {
+      if (byType[tp].length === 0) continue;
+      const line = el('div', { class: 'hub-line' });
+      const labels = { F: 'Forenzní', S: 'Svědectví', R: 'Rudé stopy', D: 'Dopisy/šifry' };
+      line.appendChild(el('div', { class: 'hub-line-label' }, labels[tp]));
+      for (const it of byType[tp]) {
+        const code = el('span', { class: 'evidence-code code-' + tp, title: it.name }, it.code);
+        line.appendChild(code);
+      }
+      card.appendChild(line);
+    }
+
+    const summary = el('div', { class: 'hub-summary' });
+    summary.appendChild(el('span', null, 'Celkem důkazů'));
+    summary.appendChild(el('span', { class: 'count' }, String(items.length)));
+    card.appendChild(summary);
+    grid.appendChild(card);
   }
 }
 
@@ -1473,6 +1853,7 @@ document.addEventListener('DOMContentLoaded', () => {
   renderCharacters();
   renderTimeline();
   renderEvidence();
+  renderHub();
   renderDays();
   window.addEventListener('scroll', updateNavActive);
   updateNavActive();

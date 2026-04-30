@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vyšetřovatelský průkaz — Tábor Světlo 2026</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.prukaz-front {
+  display: flex; flex-direction: column;
+  text-align: center;
+  font-family: "Georgia", serif;
+}
+.prukaz-front .brand-top {
+  font-size: 8pt; letter-spacing: 1.5px;
+  color: var(--color-muted); margin-bottom: 1mm;
+}
+.prukaz-front .brand-main {
+  font-size: 12pt; font-weight: 700;
+  color: var(--color-primary); letter-spacing: 1px;
+  margin-bottom: 0.5mm;
+}
+.prukaz-front .brand-years {
+  font-size: 9pt; color: var(--color-muted); margin-bottom: 3mm;
+}
+.prukaz-front .badge-title {
+  font-size: 11pt; font-weight: 700;
+  color: var(--color-accent);
+  letter-spacing: 1.5px;
+  padding: 1.5mm 3mm;
+  border: 2px solid var(--color-accent);
+  border-radius: 3mm;
+  display: inline-block;
+  margin-bottom: 4mm;
+}
+.prukaz-front .photo-and-fields {
+  display: flex; gap: 3mm; align-items: flex-start;
+  margin-bottom: 3mm;
+  text-align: left;
+}
+.prukaz-front .photo-box {
+  width: 28mm; height: 35mm;
+  border: 1.5px solid var(--color-line);
+  background: white;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 7.5pt; color: var(--color-muted);
+  flex-shrink: 0;
+}
+.prukaz-front .fields {
+  flex: 1; font-size: 9pt;
+}
+.prukaz-front .fields .field { margin-bottom: 3mm; }
+.prukaz-front .fields .label {
+  font-weight: 600; font-size: 8pt;
+  color: var(--color-muted); display: block;
+  margin-bottom: 0.5mm;
+}
+.prukaz-front .fields .line {
+  border-bottom: 1px solid var(--color-line);
+  height: 4.5mm;
+}
+.prukaz-front .footer {
+  margin-top: auto; text-align: left;
+  font-size: 8.5pt; padding-top: 2mm;
+  border-top: 1px solid var(--color-paper-edge);
+}
+.prukaz-front .footer .row {
+  display: flex; justify-content: space-between; gap: 4mm;
+  margin-top: 1mm;
+}
+.prukaz-front .id-num {
+  font-family: "JetBrains Mono", "Courier New", monospace;
+  font-weight: 700; color: var(--color-accent);
+  font-size: 9pt;
+}
+
+.prukaz-back {
+  display: flex; flex-direction: column;
+  text-align: center;
+  font-family: "Georgia", serif;
+}
+.prukaz-back .header {
+  font-size: 11pt; font-weight: 700;
+  color: var(--color-accent);
+  letter-spacing: 1.5px;
+  padding-bottom: 2mm; margin-bottom: 3mm;
+  border-bottom: 2px double var(--color-paper-edge);
+}
+.prukaz-back ol {
+  text-align: left; padding-left: 5mm; margin: 0 0 3mm 0;
+  font-size: 8.5pt; line-height: 1.45;
+}
+.prukaz-back ol li { margin-bottom: 1.8mm; }
+.prukaz-back ol li strong { color: var(--color-primary); }
+.prukaz-back .leaders {
+  text-align: left;
+  font-size: 8pt; line-height: 1.5;
+  padding-top: 2mm; margin-top: auto;
+  border-top: 1px solid var(--color-paper-edge);
+}
+.prukaz-back .footer-brand {
+  text-align: center;
+  margin-top: 2mm; padding-top: 1mm;
+  font-size: 8pt; color: var(--color-muted);
+  letter-spacing: 1px; font-weight: 600;
+}
+</style>
+</head>
+<body>
+
+<div class="toolbar no-print">
+  <a class="home" href="../pruvodce.html#sablony">← Průvodce hrou</a>
+  <span class="title">🪪 Vyšetřovatelský průkaz</span>
+  <span class="meta">A6 · 4 ks na A4 · oboustranný · 50 ks → tisk 13 listů</span>
+  <button class="print-btn" onclick="window.print()">🖨️ Tisk</button>
+</div>
+
+<!-- LIST 1 — PŘEDNÍ STRANY (4 ks) -->
+<section class="sheet-4up">
+  <article class="page-a6 prukaz-front">
+    <div class="brand-top">◆ TÁBOR SVĚTLO ◆</div>
+    <div class="brand-main">30. ROČNÍK</div>
+    <div class="brand-years">1997 — 2026</div>
+    <div class="badge-title">VYŠETŘOVATELSKÝ PRŮKAZ</div>
+    <div class="photo-and-fields">
+      <div class="photo-box">FOTO<br>(volitelně)</div>
+      <div class="fields">
+        <div class="field"><span class="label">Jméno</span><div class="line"></div></div>
+        <div class="field"><span class="label">Tým</span><div class="line"></div></div>
+        <div class="field"><span class="label">Role v týmu</span><div class="line"></div></div>
+      </div>
+    </div>
+    <div class="footer">
+      Datum vystavení: <strong>12. 7. 2026</strong>
+      <div class="row">
+        <span>Podpis hl. vyšetřovatele:<br><strong>Karel Malík</strong></span>
+        <span class="id-num">Č. <span style="border-bottom:1px solid var(--color-line); display:inline-block; min-width:14mm;">&nbsp;</span></span>
+      </div>
+    </div>
+  </article>
+  <article class="page-a6 prukaz-front">
+    <div class="brand-top">◆ TÁBOR SVĚTLO ◆</div>
+    <div class="brand-main">30. ROČNÍK</div>
+    <div class="brand-years">1997 — 2026</div>
+    <div class="badge-title">VYŠETŘOVATELSKÝ PRŮKAZ</div>
+    <div class="photo-and-fields">
+      <div class="photo-box">FOTO<br>(volitelně)</div>
+      <div class="fields">
+        <div class="field"><span class="label">Jméno</span><div class="line"></div></div>
+        <div class="field"><span class="label">Tým</span><div class="line"></div></div>
+        <div class="field"><span class="label">Role v týmu</span><div class="line"></div></div>
+      </div>
+    </div>
+    <div class="footer">
+      Datum vystavení: <strong>12. 7. 2026</strong>
+      <div class="row">
+        <span>Podpis hl. vyšetřovatele:<br><strong>Karel Malík</strong></span>
+        <span class="id-num">Č. <span style="border-bottom:1px solid var(--color-line); display:inline-block; min-width:14mm;">&nbsp;</span></span>
+      </div>
+    </div>
+  </article>
+  <article class="page-a6 prukaz-front">
+    <div class="brand-top">◆ TÁBOR SVĚTLO ◆</div>
+    <div class="brand-main">30. ROČNÍK</div>
+    <div class="brand-years">1997 — 2026</div>
+    <div class="badge-title">VYŠETŘOVATELSKÝ PRŮKAZ</div>
+    <div class="photo-and-fields">
+      <div class="photo-box">FOTO<br>(volitelně)</div>
+      <div class="fields">
+        <div class="field"><span class="label">Jméno</span><div class="line"></div></div>
+        <div class="field"><span class="label">Tým</span><div class="line"></div></div>
+        <div class="field"><span class="label">Role v týmu</span><div class="line"></div></div>
+      </div>
+    </div>
+    <div class="footer">
+      Datum vystavení: <strong>12. 7. 2026</strong>
+      <div class="row">
+        <span>Podpis hl. vyšetřovatele:<br><strong>Karel Malík</strong></span>
+        <span class="id-num">Č. <span style="border-bottom:1px solid var(--color-line); display:inline-block; min-width:14mm;">&nbsp;</span></span>
+      </div>
+    </div>
+  </article>
+  <article class="page-a6 prukaz-front">
+    <div class="brand-top">◆ TÁBOR SVĚTLO ◆</div>
+    <div class="brand-main">30. ROČNÍK</div>
+    <div class="brand-years">1997 — 2026</div>
+    <div class="badge-title">VYŠETŘOVATELSKÝ PRŮKAZ</div>
+    <div class="photo-and-fields">
+      <div class="photo-box">FOTO<br>(volitelně)</div>
+      <div class="fields">
+        <div class="field"><span class="label">Jméno</span><div class="line"></div></div>
+        <div class="field"><span class="label">Tým</span><div class="line"></div></div>
+        <div class="field"><span class="label">Role v týmu</span><div class="line"></div></div>
+      </div>
+    </div>
+    <div class="footer">
+      Datum vystavení: <strong>12. 7. 2026</strong>
+      <div class="row">
+        <span>Podpis hl. vyšetřovatele:<br><strong>Karel Malík</strong></span>
+        <span class="id-num">Č. <span style="border-bottom:1px solid var(--color-line); display:inline-block; min-width:14mm;">&nbsp;</span></span>
+      </div>
+    </div>
+  </article>
+</section>
+
+<!-- LIST 2 — ZADNÍ STRANY (4 ks) -->
+<section class="sheet-4up">
+  <article class="page-a6 prukaz-back">
+    <div class="header">◆ PRAVIDLA VYŠETŘOVÁNÍ ◆</div>
+    <ol>
+      <li><strong>Nikdy nevyslýchám sám/sama</strong> — vždy ve dvou nebo třech.</li>
+      <li><strong>Vše zapisuji</strong> do týmového deníku. I to, co se zdá zbytečné.</li>
+      <li><strong>Podezírat mohu kohokoli</strong> — i vedoucí. Ale s úctou.</li>
+      <li><strong>Nikdy nelžu</strong> ve výpovědi a nikdy si nevymýšlím stopy.</li>
+      <li><strong>V noci se nepohybuji sám/sama</strong> mimo stan.</li>
+      <li>Pokud něco zjistím, <strong>hlásím vedoucímu týmu</strong>.</li>
+    </ol>
+    <div class="leaders">
+      <strong>Hl. vedoucí:</strong> Karel Malík<br>
+      <strong>Zástupce:</strong> SoTo (T. Sotoniak)<br>
+      <strong>Notářka:</strong> JUDr. M. Růžičková
+    </div>
+    <div class="footer-brand">TÁBOR 2026 — 30 LET</div>
+  </article>
+  <article class="page-a6 prukaz-back">
+    <div class="header">◆ PRAVIDLA VYŠETŘOVÁNÍ ◆</div>
+    <ol>
+      <li><strong>Nikdy nevyslýchám sám/sama</strong> — vždy ve dvou nebo třech.</li>
+      <li><strong>Vše zapisuji</strong> do týmového deníku. I to, co se zdá zbytečné.</li>
+      <li><strong>Podezírat mohu kohokoli</strong> — i vedoucí. Ale s úctou.</li>
+      <li><strong>Nikdy nelžu</strong> ve výpovědi a nikdy si nevymýšlím stopy.</li>
+      <li><strong>V noci se nepohybuji sám/sama</strong> mimo stan.</li>
+      <li>Pokud něco zjistím, <strong>hlásím vedoucímu týmu</strong>.</li>
+    </ol>
+    <div class="leaders">
+      <strong>Hl. vedoucí:</strong> Karel Malík<br>
+      <strong>Zástupce:</strong> SoTo (T. Sotoniak)<br>
+      <strong>Notářka:</strong> JUDr. M. Růžičková
+    </div>
+    <div class="footer-brand">TÁBOR 2026 — 30 LET</div>
+  </article>
+  <article class="page-a6 prukaz-back">
+    <div class="header">◆ PRAVIDLA VYŠETŘOVÁNÍ ◆</div>
+    <ol>
+      <li><strong>Nikdy nevyslýchám sám/sama</strong> — vždy ve dvou nebo třech.</li>
+      <li><strong>Vše zapisuji</strong> do týmového deníku. I to, co se zdá zbytečné.</li>
+      <li><strong>Podezírat mohu kohokoli</strong> — i vedoucí. Ale s úctou.</li>
+      <li><strong>Nikdy nelžu</strong> ve výpovědi a nikdy si nevymýšlím stopy.</li>
+      <li><strong>V noci se nepohybuji sám/sama</strong> mimo stan.</li>
+      <li>Pokud něco zjistím, <strong>hlásím vedoucímu týmu</strong>.</li>
+    </ol>
+    <div class="leaders">
+      <strong>Hl. vedoucí:</strong> Karel Malík<br>
+      <strong>Zástupce:</strong> SoTo (T. Sotoniak)<br>
+      <strong>Notářka:</strong> JUDr. M. Růžičková
+    </div>
+    <div class="footer-brand">TÁBOR 2026 — 30 LET</div>
+  </article>
+  <article class="page-a6 prukaz-back">
+    <div class="header">◆ PRAVIDLA VYŠETŘOVÁNÍ ◆</div>
+    <ol>
+      <li><strong>Nikdy nevyslýchám sám/sama</strong> — vždy ve dvou nebo třech.</li>
+      <li><strong>Vše zapisuji</strong> do týmového deníku. I to, co se zdá zbytečné.</li>
+      <li><strong>Podezírat mohu kohokoli</strong> — i vedoucí. Ale s úctou.</li>
+      <li><strong>Nikdy nelžu</strong> ve výpovědi a nikdy si nevymýšlím stopy.</li>
+      <li><strong>V noci se nepohybuji sám/sama</strong> mimo stan.</li>
+      <li>Pokud něco zjistím, <strong>hlásím vedoucímu týmu</strong>.</li>
+    </ol>
+    <div class="leaders">
+      <strong>Hl. vedoucí:</strong> Karel Malík<br>
+      <strong>Zástupce:</strong> SoTo (T. Sotoniak)<br>
+      <strong>Notářka:</strong> JUDr. M. Růžičková
+    </div>
+    <div class="footer-brand">TÁBOR 2026 — 30 LET</div>
+  </article>
+</section>
+
+<div class="no-print" style="text-align:center; padding: 24px; color:#475569; font-size:14px;">
+  <p><strong>Tip:</strong> tiskněte oboustranně. Po výtisku přední/zadní strany rozstříhněte na 4 průkazy A6, propíchněte otvor a navlékněte na šňůrku.</p>
+</div>
+
+</body>
+</html>

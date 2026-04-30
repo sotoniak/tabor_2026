@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Týmová mapa tábora — šablona · Tábor Světlo 2026</title>
+<link rel="stylesheet" href="style.css">
+<style>
+/* Mapa se tiskne na A2, ale musíme nabídnout i tisk přes A4 / A4 landscape.
+   Default tisk: A4 landscape. Pro A2 stačí scale na tiskárně. */
+
+@page mapa { size: A4 landscape; margin: 10mm; }
+
+.mapa-page {
+  width: 297mm; min-height: 210mm;
+  background: #faf6ec;
+  margin: 24px auto;
+  padding: 8mm;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  border: 1px solid var(--color-paper-edge);
+  position: relative;
+  display: flex; flex-direction: column;
+  page: mapa;
+}
+.mapa-page .header-row {
+  display: flex; justify-content: space-between; align-items: center;
+  gap: 8mm; padding-bottom: 4mm;
+  border-bottom: 2px solid var(--color-primary);
+}
+.mapa-page .header-row .brand {
+  font-family: "Georgia", serif; font-weight: 700;
+  font-size: 14pt; letter-spacing: 1.5px;
+  color: var(--color-primary);
+}
+.mapa-page .header-row .brand .small {
+  display: block; font-size: 9pt; color: var(--color-muted); letter-spacing: 0.5px; font-weight: 500;
+}
+.mapa-page .header-row .meta {
+  display: flex; gap: 6mm; font-size: 10pt;
+  align-items: center;
+}
+.mapa-page .header-row .meta .form-row { gap: 4px; }
+.mapa-page .header-row .meta .form-line {
+  height: 5mm; min-width: 50mm;
+}
+
+.mapa-grid-area {
+  flex: 1; position: relative;
+  margin: 5mm 0;
+  border: 1.5px solid var(--color-line);
+  background-color: #faf6ec;
+  background-image:
+    linear-gradient(to right, rgba(100,116,139,0.18) 0.5px, transparent 0.5px),
+    linear-gradient(to bottom, rgba(100,116,139,0.18) 0.5px, transparent 0.5px),
+    linear-gradient(to right, rgba(100,116,139,0.40) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(100,116,139,0.40) 1px, transparent 1px);
+  background-size:
+    5mm 5mm,
+    5mm 5mm,
+    20mm 20mm,
+    20mm 20mm;
+  min-height: 130mm;
+}
+.mapa-grid-area .compass {
+  position: absolute;
+  top: 4mm; right: 4mm;
+  width: 24mm; height: 24mm;
+  border: 1.5px solid var(--color-line);
+  border-radius: 50%;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  background: rgba(255,255,255,0.7);
+  font-family: "Georgia", serif;
+  font-weight: 700;
+}
+.mapa-grid-area .compass .arrow {
+  font-size: 16pt; color: var(--color-accent); line-height: 1;
+}
+.mapa-grid-area .compass .label {
+  font-size: 10pt; margin-top: 1mm;
+}
+.mapa-grid-area .scale-info {
+  position: absolute; bottom: 3mm; right: 4mm;
+  background: rgba(255,255,255,0.85);
+  padding: 1.5mm 3mm; font-size: 8.5pt;
+  border: 1px solid var(--color-paper-edge);
+  border-radius: 3px;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.legend-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 6mm;
+  margin-top: 3mm;
+}
+.legend-box {
+  border: 1.5px solid var(--color-line);
+  padding: 3mm 4mm; background: rgba(255,255,255,0.4);
+  font-size: 9pt;
+}
+.legend-box h3 {
+  font-size: 10pt; font-weight: 700;
+  letter-spacing: 1px; margin: 0 0 2mm;
+  color: var(--color-primary);
+  text-transform: uppercase;
+}
+.legend-box .items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5mm 4mm;
+  font-size: 8.5pt;
+}
+.legend-box .items div { white-space: nowrap; }
+.legend-box .items .sym {
+  display: inline-block; width: 6mm;
+  text-align: center; font-weight: 700;
+  margin-right: 1mm;
+  color: var(--color-accent);
+}
+
+.team-info {
+  border: 1.5px solid var(--color-line);
+  padding: 3mm 4mm; background: rgba(255,255,255,0.4);
+  font-size: 9pt; line-height: 1.4;
+}
+.team-info h3 {
+  font-size: 10pt; font-weight: 700;
+  letter-spacing: 1px; margin: 0 0 2mm;
+  color: var(--color-primary);
+  text-transform: uppercase;
+}
+.team-info ul {
+  margin: 0; padding-left: 4mm; font-size: 8.5pt;
+}
+.team-info ul li { margin-bottom: 1mm; }
+
+@media print {
+  .mapa-page {
+    width: auto; min-height: auto;
+    margin: 0; padding: 0;
+    box-shadow: none; border: none;
+    page-break-after: always;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="toolbar no-print">
+  <a class="home" href="../pruvodce.html#sablony">← Průvodce hrou</a>
+  <span class="title">🗺️ Týmová mapa tábora — šablona</span>
+  <span class="meta">A4 landscape (lze zvětšit na A2) · 8 ks (6 týmů + 2 rezerva)</span>
+  <button class="print-btn" onclick="window.print()">🖨️ Tisk</button>
+</div>
+
+<article class="mapa-page">
+
+  <header class="header-row">
+    <div class="brand">
+      TÝMOVÁ MAPA TÁBORA SVĚTLO
+      <span class="small">30. ročník · Rakovecké údolí · 11.–22. 7. 2026</span>
+    </div>
+    <div class="meta">
+      <div class="form-row"><label>Tým:</label><span class="form-line"></span></div>
+      <div class="form-row"><label>Datum:</label><span class="form-line short"></span><span style="font-size:10pt;">. 7. 2026</span></div>
+    </div>
+  </header>
+
+  <div class="mapa-grid-area">
+    <div class="compass">
+      <div class="arrow">↑</div>
+      <div class="label">SEVER</div>
+    </div>
+    <div class="scale-info">1 čtvereček = 5 m</div>
+  </div>
+
+  <div class="legend-row">
+    <div class="legend-box">
+      <h3>Legenda</h3>
+      <div class="items">
+        <div><span class="sym">▢</span>Stan/objekt</div>
+        <div><span class="sym">△</span>Strom</div>
+        <div><span class="sym">✕</span>Místo činu</div>
+        <div><span class="sym">●</span>Stopa</div>
+        <div><span class="sym">━━</span>Cesta</div>
+        <div><span class="sym">┄┄</span>Trasa podezř.</div>
+        <div><span class="sym">Ⓜ</span>Výslech</div>
+        <div><span class="sym">✦</span>Klíčové místo</div>
+        <div><span class="sym">≈</span>Voda</div>
+        <div><span class="sym">⌂</span>Šéfka</div>
+        <div><span class="sym">⌹</span>Latrýna</div>
+        <div><span class="sym">★</span>Nález</div>
+      </div>
+    </div>
+
+    <div class="team-info">
+      <h3>Co zaznamenat</h3>
+      <ul>
+        <li>Stany, kuchyni, jídelnu, Šéfku, latrýny, studánku, altán, ohniště</li>
+        <li>Starý buk u potoka (✦ klíčové místo)</li>
+        <li>Lesní cestu k samotě Stehlíkových (1 km)</li>
+        <li>Místa činu (✕), stopy (●), trasy podezřelých (┄┄)</li>
+      </ul>
+    </div>
+  </div>
+
+</article>
+
+<section class="no-print" style="max-width: 297mm; margin: 24px auto; padding: 24px; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); font-size: 14px;">
+  <h2 style="margin-top:0; color: #1e3a5f;">Pokyny k použití</h2>
+  <ul>
+    <li><strong>Mapa roste s vyšetřováním</strong> — den 4 prázdná, den 11 plná.</li>
+    <li>Tým ji <strong>nesdílí s jinými týmy</strong>, podporuje to týmovou identitu.</li>
+    <li><strong>Hodnocení dne 6</strong> (úplnost, měřítko, legenda, aktuálnost, estetika — 50 b.) a <strong>dne 11</strong> (kompletní přehled, trasy, klíčová místa, slavnostní zpracování — 60 b.).</li>
+    <li>K mapě patří <strong>buzola, pásmo 5 m, tužka, fixy, pravítko</strong>.</li>
+    <li>Konečná verze (den 11) se vlepí do <strong>Knihy 30 let Tábora Světlo</strong>.</li>
+    <li>Pro fyzický výtisk A2 dejte v tiskárně <strong>scale 200 %</strong> z A4 landscape, nebo tiskněte přímo A2.</li>
+  </ul>
+</section>
+
+</body>
+</html>

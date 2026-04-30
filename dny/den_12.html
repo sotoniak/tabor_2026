@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Den 12 — Odjezd · Tábor Světlo 2026</title>
+<style>
+:root {
+  --color-primary: #1e3a5f;
+  --color-primary-light: #2c5282;
+  --color-accent: #d63031;
+  --color-accent-bg: #fadbd8;
+  --color-helper: #e67e22;
+  --color-success: #27ae60;
+  --color-success-bg: #d5f5e3;
+  --color-bg: #f8fafc;
+  --color-card: #ffffff;
+  --color-text: #1e293b;
+  --color-muted: #64748b;
+  --color-border: #e2e8f0;
+  --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.04);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", Roboto, sans-serif;
+  line-height: 1.7; color: var(--color-text); background: var(--color-bg);
+  margin: 0; padding: 0;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+
+header.day-hero {
+  background: linear-gradient(135deg, #1e3a5f 0%, #2c5282 100%);
+  color: white; padding: 56px 0 40px;
+}
+.day-hero .pill {
+  display: inline-block; padding: 4px 12px; background: rgba(255,255,255,0.18);
+  border-radius: 16px; font-size: 13px; margin-bottom: 12px; letter-spacing: 0.3px;
+}
+.day-hero h1 { font-size: 36px; margin: 0 0 8px; font-weight: 700; line-height: 1.2; }
+.day-hero .subtitle { font-size: 17px; opacity: 0.92; margin: 0; }
+
+nav.day-nav {
+  position: sticky; top: 0; z-index: 50;
+  background: #1e3a5f; color: #f1f5f9;
+  border-bottom: 1px solid #2c5282; box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+nav.day-nav .container {
+  display: flex; gap: 8px; align-items: center; flex-wrap: wrap;
+  padding: 10px 24px;
+}
+nav.day-nav a {
+  color: #f1f5f9; text-decoration: none; padding: 8px 14px;
+  font-size: 14px; font-weight: 500; border-radius: 6px;
+  transition: background 0.15s;
+}
+nav.day-nav a:hover { background: rgba(255,255,255,0.10); }
+nav.day-nav a.home { background: #fbbf24; color: #1e3a5f; font-weight: 600; }
+nav.day-nav a.home:hover { background: #fcd34d; }
+nav.day-nav .spacer { flex: 1; }
+nav.day-nav .disabled { opacity: 0.4; pointer-events: none; }
+
+main.day-content { padding: 40px 0 64px; }
+main.day-content .container {
+  background: var(--color-card); padding: 40px 56px;
+  border-radius: 12px; box-shadow: var(--shadow); margin-top: -24px;
+}
+
+main.day-content h1 { display: none; }
+main.day-content h2 {
+  color: var(--color-primary); font-size: 24px; font-weight: 700;
+  margin: 36px 0 16px; padding-bottom: 8px;
+  border-bottom: 2px solid var(--color-border);
+}
+main.day-content h2:first-child { margin-top: 0; }
+main.day-content h3 {
+  color: var(--color-primary-light); font-size: 19px; font-weight: 600;
+  margin: 28px 0 12px;
+}
+main.day-content h4 {
+  color: var(--color-text); font-size: 16px; font-weight: 600;
+  margin: 20px 0 8px;
+  text-transform: uppercase; letter-spacing: 0.4px;
+}
+main.day-content p { margin: 12px 0; }
+main.day-content ul, main.day-content ol { padding-left: 24px; margin: 12px 0; }
+main.day-content li { margin-bottom: 6px; }
+main.day-content strong { color: var(--color-primary); font-weight: 600; }
+main.day-content em { color: var(--color-muted); }
+main.day-content hr {
+  border: 0; border-top: 1px solid var(--color-border); margin: 32px 0;
+}
+
+main.day-content blockquote {
+  margin: 16px 0; padding: 12px 20px;
+  background: #f8fafc; border-left: 4px solid var(--color-primary-light);
+  border-radius: 0 8px 8px 0; color: var(--color-text);
+}
+main.day-content blockquote p { margin: 6px 0; }
+main.day-content blockquote strong { color: var(--color-primary); }
+
+main.day-content table {
+  width: 100%; border-collapse: collapse; margin: 16px 0;
+  font-size: 14px; box-shadow: var(--shadow); border-radius: 6px; overflow: hidden;
+  table-layout: auto;
+}
+main.day-content table th {
+  background: var(--color-primary); color: white; text-align: left;
+  padding: 10px 12px; font-weight: 600;
+  vertical-align: top; word-break: break-word;
+}
+main.day-content table td {
+  padding: 8px 12px; border-top: 1px solid var(--color-border);
+  vertical-align: top; word-break: break-word; overflow-wrap: anywhere;
+}
+main.day-content table tr:nth-child(even) td { background: #f8fafc; }
+main.day-content table td:first-child {
+  color: var(--color-primary);
+  font-family: "JetBrains Mono", "Courier New", monospace;
+  font-size: 13px;
+}
+/* Časy ve formátu HH:MM lze ponechat bez lámání — krátké stringy */
+main.day-content table td:first-child:is(.time, [data-time]) {
+  white-space: nowrap;
+}
+
+main.day-content code {
+  font-family: "JetBrains Mono", "Courier New", monospace;
+  background: var(--color-bg); border: 1px solid var(--color-border);
+  padding: 1px 6px; border-radius: 4px; font-size: 0.92em;
+}
+
+footer.day-footer {
+  background: #1e3a5f; color: #cbd5e1;
+  padding: 28px 0; text-align: center; font-size: 14px;
+}
+footer.day-footer a { color: #fbbf24; text-decoration: none; font-weight: 600; }
+footer.day-footer a:hover { text-decoration: underline; }
+footer.day-footer .footer-nav { margin-top: 12px; }
+footer.day-footer .footer-nav a { margin: 0 12px; }
+
+@media (max-width: 768px) {
+  .day-hero h1 { font-size: 26px; }
+  .day-hero .subtitle { font-size: 15px; }
+  main.day-content .container { padding: 24px; margin-top: -16px; }
+  main.day-content h2 { font-size: 20px; }
+  main.day-content h3 { font-size: 17px; }
+  main.day-content table { font-size: 13px; }
+  main.day-content table td, main.day-content table th { padding: 6px 8px; }
+  nav.day-nav .container { padding: 8px 12px; }
+  nav.day-nav a { padding: 6px 10px; font-size: 13px; }
+}
+@media print {
+  nav.day-nav, footer.day-footer { display: none; }
+  main.day-content .container { box-shadow: none; padding: 0; }
+}
+</style>
+</head>
+<body>
+
+<header class="day-hero">
+  <div class="container">
+    <span class="pill">Den 12 · 22. 7. (středa)</span>
+    <h1>Odjezd</h1>
+    <p class="subtitle">Detailní program a příběh dne</p>
+  </div>
+</header>
+
+<nav class="day-nav">
+  <div class="container">
+    <a class="home" href="../pruvodce.html#dny">← Průvodce hrou</a>
+    <span class="spacer"></span>
+    <a href="den_11.html">← Den 11</a>
+    <a class="disabled">Den →</a>
+  </div>
+</nav>
+
+<main class="day-content">
+  <div class="container">
+    <h1>DEN 12 — Středa 22. 7. 2026: Odjezd</h1>
+<blockquote>
+<p><strong>Motto dne</strong>: „Odjíždíme. Ale tábor odjíždí v nás."</p>
+</blockquote>
+<hr />
+<h2>Stručná osnova (timetable)</h2>
+<table>
+<thead>
+<tr>
+<th>Čas</th>
+<th>Co se děje</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>08:00 – 09:00</td>
+<td><strong>Slavnostní snídaně</strong> (Anička přichystala)</td>
+</tr>
+<tr>
+<td>09:00 – 10:30</td>
+<td><strong>Balení stanů a osobních věcí</strong> — vedoucí týmů pomáhají</td>
+</tr>
+<tr>
+<td>10:30 – 11:00</td>
+<td>Velký úklid centrální plochy</td>
+</tr>
+<tr>
+<td>11:00 – 12:00</td>
+<td><strong>POSLEDNÍ NÁSTUP — slavnostní rozloučení</strong></td>
+</tr>
+<tr>
+<td>12:00 – 13:00</td>
+<td>Oběd s rodiči (pokud přijíždějí)</td>
+</tr>
+<tr>
+<td>13:00 – 15:00</td>
+<td><strong>Odjezd dětí</strong> (rodiče si pro ně přijíždějí, autobus do Jedovnic)</td>
+</tr>
+<tr>
+<td>15:00 – 17:00</td>
+<td>Vedoucí balí materiál, předávají si Knihu 30 let, fotografují</td>
+</tr>
+<tr>
+<td>17:00</td>
+<td><strong>Konec tábora 2026</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Příběh dne (z pohledu dětí)</h2>
+<h3>Snídaně (08:00)</h3>
+<p>Anička ráno chystá speciální snídani — <strong>kakao, koláče, palačinky</strong>. Anežka pomáhá. Aleš, který po skončení tábora pojede na policii, je v kuchyni s nimi (= jeho gesto: chce naposled pomáhat). Děti jsou unavené (slavnost končila ve 23:30), ale <strong>šťastné</strong>. Mezi dětmi vlají rozhovory:</p>
+<blockquote>
+<p>„Pamatuješ, jak jsme našli tu dýmkovou popel?"
+„A jak Aleš přiznal s těmi 30 000 Kč?"
+„A Markovo odpuštění — to mě dostalo až ke slzám."
+„A § 4. Ten paragraf nikdy nezapomenu."</p>
+</blockquote>
+<h3>Balení (09:00 – 10:30)</h3>
+<p>Vedoucí týmů pomáhají dětem balit. <strong>Důležité — každé dítě má svůj dědický list a pamětní minci</strong>. Vedoucí kontrolují, že se nic neztratí. Listy se rolují do <strong>dřevěných tubusů</strong> (které jsou součástí balíčku). Pamětní mince jdou do <strong>látkového sáčku</strong> se znakem tábora.</p>
+<p>Stany se pomalu skládají. Půda zametená, žádný odpad. <strong>Tábor odchází jako přišel — čistý, jen v paměti hlubší.</strong></p>
+<h3>Velký úklid (10:30 – 11:00)</h3>
+<p>Vedoucí + děti uklízejí centrální plochu, polní kuchyni, jídelní plachtu. <strong>Tábor odchází jako přišel — čistý</strong>. Anička si bere svou utěrku, Magda balí lékárničku, Jenda nakládá do dodávky první sklady na cestu zpět.</p>
+<h3>Slavnostní rozloučení (11:00)</h3>
+<p>Naposled na centrální ploše. <strong>Nejen táborový rituál, ale slavnostní moment</strong>. Karel promluví:</p>
+<blockquote>
+<p>„<strong>Děti. Skončil tábor 2026. Třicátý ročník tábora Světlo. Vy jste byli první generace, která dostala závěť. Pamatujte, čeho jste byli součástí. Vy jste teď nositelé tradice.</strong></p>
+<p><em>(Pauza.)</em></p>
+<p>Pan Marek je už zpátky ve FN Brno na poslední dovyšetření, ale vzkazuje vám — <em>(Karel vyndá lísteček)</em> — ‚Děti, děkuji vám. Tábor je v rukou, do kterých patří. Vrátím se za rok.'</p>
+<p><em>(Karel se rozhlédne.)</em></p>
+<p>Na shledanou za rok. <strong>A přivezte své kamarády.</strong>"</p>
+</blockquote>
+<p><strong>Karel vztyčí pěst</strong> = táborový pozdrav. Děti odpoví. Vlajka tábora se snáší. <strong>Tábor 2026 je oficiálně skončen.</strong></p>
+<h3>Slavnostní oběd (12:00)</h3>
+<p>Pokud rodiče přijíždějí, sedí se k oslavnému obědu pod jídelní plachtu — chutný, jednoduchý. <strong>Děti vyprávějí rodičům o vyšetřování</strong>. Rodiče vidí dědický list. Pamětní minci.</p>
+<blockquote>
+<p><strong>Dojem rodičů</strong>: „<strong>Co jste tady prožili?</strong>" Děti vysvětlují. <strong>Hra se stává historií.</strong></p>
+</blockquote>
+<h3>Odjezd (13:00 – 15:00)</h3>
+<p>Auta přijíždějí na parkoviště pod lesní cestou. Autobus do Jedovnic odveze ostatní (kteří pojedou pak vlakem). <strong>Děti se objímají</strong> s vedoucími, mezi sebou. <strong>Pláč. Smích. Sliby.</strong> „<strong>Příští rok se uvidíme.</strong>"</p>
+<p>V 15:00 odjíždí poslední auto. <strong>Tábor je téměř prázdný</strong>. Vedoucí stojí na parkovišti a mávají, dokud poslední auto nezmizí za zatáčkou lesní cesty.</p>
+<hr />
+<h2>Vedoucí (15:00 – 17:00)</h2>
+<p>Vedoucí balí materiál:
+- <strong>Kniha 30 let</strong> se uloží do dřevěné truhly s mapami v Šéfce. <strong>Bude zde čekat na další generaci.</strong> (Šéfka se přes zimu uzavře, ale truhla zůstává v ní.)
+- <strong>Strom 30 let</strong> se sundá ze stanu lipového altánu, <strong>zarámuje</strong> (= úkol pro Jendu po táboře). Bude pověšen na nejstarší lípu v centrální ploše každý rok.
+- <strong>Pamětní mince</strong> — zbylé jdou do truhly pro budoucnost.
+- <strong>Materiály detektivní hry</strong> — uskladnění (pro budoucí ročníky? — možná opakování v jiné variaci, ale <strong>ne za 5 let, aby se nezdevalvovala emocionální váha</strong>).
+- <strong>Závěť</strong> — originál s pečetí předá JUDr. Růžičková Markovi do FN Brno (Marek si ji odveze domů). Kopie zůstává v notářské kanceláři v Blansku.</p>
+<blockquote>
+<p><strong>Symbolický akt</strong>: Vzkaz pro budoucnost už <strong>JE v dutině</strong> (Aleš vložil v 15:00). To je dnes hotovo.</p>
+</blockquote>
+<hr />
+<h2>Tipy pro vedoucí</h2>
+<ol>
+<li><strong>Den 12 je o lásce, ne o programu</strong>. Žádné soutěže, žádné hry. Jen <strong>rozloučení a odjezd</strong>.</li>
+<li><strong>Dědický list musí každé dítě domů odvézt</strong> — zkontrolovat. Pokud se ztratí, <strong>vyrobit duplikát</strong> (mít rezervu 5 ks).</li>
+<li><strong>Pamětní mince</strong> jdou do dlaně. Hmotný předmět, <strong>dlouhotrvající</strong>.</li>
+<li><strong>Rodičům lze poslat e-mailem fotky a krátké video</strong> ze finále. To je dárek, který se nevyprovodí.</li>
+<li><strong>Vedoucí mají právo na slzy</strong> — to je tábor, kde to bylo opravdu emocionální. Přiznání. Zradu. Odpuštění. Vyšetřování. Třicet let. <strong>Smutek z konce je krásný.</strong></li>
+<li><strong>Vložení vzkazu do dutiny buku</strong>: tradice, kterou založíte. <strong>Za 10 let</strong> (= 2036, <strong>40. výročí</strong>) se vzkaz vyndá. <strong>To bude obrovský moment.</strong></li>
+<li><strong>Aleš odjíždí po skončení tábora</strong>. Karel ho doprovází jen do Blanska, formálně ho předá kpt. Polákovi. Aleš se má vrátit do tábora <strong>příští rok</strong> jako údržbář — pokud ho soud nepošle za mříže (drobnější trest se očekává: účast na trestném činu jako pomocník, polehčující okolnosti = vydírání + spolupráce při vyšetřování). To zůstává otevřené pro hru.</li>
+</ol>
+<hr />
+<h2>Symbolika dne 12</h2>
+<p>Tábor končí. Děti se rozjíždějí domů. Ale <strong>každé dítě nese</strong>:
+- <strong>Dědický list</strong> — papír s pečetí, s svým jménem, s slovy „<strong>Ty jsi dědicem tábora Světlo</strong>".
+- <strong>Pamětní minci</strong> — kovový/dřevěný kotouč, který si bude opatrovat 30 let.
+- <strong>Týmový deník</strong> — záznamy, kresby, hypotézy.
+- <strong>Vzpomínky</strong> — konfrontace, přiznání, hon, nález závěti, čtení § 4, Markovo odpuštění Alešovi.</p>
+<blockquote>
+<p><strong>Hra skončila.</strong> Ale <strong>tábor pokračuje</strong>. Děti budou vyprávět rodičům, sourozencům, kamarádům. <strong>Přivedou další generaci.</strong></p>
+</blockquote>
+<hr />
+<h2>Symbolický odkaz pro budoucnost</h2>
+<p>V dutině buku Staříka odpočívá <strong>vzkaz pro 2036</strong> (40. výročí). V tom roce <strong>další generace</strong> dětí najde tento vzkaz a uvědomí si, že <strong>30 let zpátky děti vyšetřovaly případ ztracené závěti</strong>. Tradice se drží.</p>
+<blockquote>
+<p><strong>A bude se opakovat.</strong> Tábor Světlo nezahyne. <strong>§ 4 platí stále.</strong></p>
+</blockquote>
+<hr />
+<h2>Konec hry</h2>
+<p>Tato hra neměla protagonistu. Nezvítězil jeden tým. <strong>Vyhráli všichni.</strong> Třicet let tábora Světlo se zachovalo. Děti se naučily:
+- <strong>Pravdu lze najít, ale potřebuje to trpělivost.</strong>
+- <strong>Lež pojde na světlo.</strong>
+- <strong>Slabý člověk se může vrátit, pokud se přizná.</strong>
+- <strong>Tábor je dědictví — a každý ho nese.</strong>
+- <strong>Důvěra se zaslouží i návratem.</strong></p>
+<blockquote>
+<p><strong>Tábor 2026: 30 let — Tábor Světlo — Případ ztracené závěti</strong> je u konce. Děti odjíždí jako <strong>dědicové</strong> ne pouhého papíru, ale tradice.</p>
+</blockquote>
+<p><strong>Příběh je dokončen.</strong></p>
+  </div>
+</main>
+
+<footer class="day-footer">
+  <div class="container">
+    <div>Tábor Světlo 2026 — Případ ztracené závěti · Den 12</div>
+    <div class="footer-nav">
+      <a href="../pruvodce.html#dny">Průvodce hrou</a>
+      <a href="../pribeh.html">Příběh jako kniha</a>
+      <a href="../den_12_odjezd.md">Zdrojový MD</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

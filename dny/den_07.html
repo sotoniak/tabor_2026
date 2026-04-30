@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Den 7 — Zlom — Markův vzkaz z FN Brno · Tábor Světlo 2026</title>
+<style>
+:root {
+  --color-primary: #1e3a5f;
+  --color-primary-light: #2c5282;
+  --color-accent: #d63031;
+  --color-accent-bg: #fadbd8;
+  --color-helper: #e67e22;
+  --color-success: #27ae60;
+  --color-success-bg: #d5f5e3;
+  --color-bg: #f8fafc;
+  --color-card: #ffffff;
+  --color-text: #1e293b;
+  --color-muted: #64748b;
+  --color-border: #e2e8f0;
+  --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.04);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", Roboto, sans-serif;
+  line-height: 1.7; color: var(--color-text); background: var(--color-bg);
+  margin: 0; padding: 0;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+
+header.day-hero {
+  background: linear-gradient(135deg, #1e3a5f 0%, #2c5282 100%);
+  color: white; padding: 56px 0 40px;
+}
+.day-hero .pill {
+  display: inline-block; padding: 4px 12px; background: rgba(255,255,255,0.18);
+  border-radius: 16px; font-size: 13px; margin-bottom: 12px; letter-spacing: 0.3px;
+}
+.day-hero h1 { font-size: 36px; margin: 0 0 8px; font-weight: 700; line-height: 1.2; }
+.day-hero .subtitle { font-size: 17px; opacity: 0.92; margin: 0; }
+
+nav.day-nav {
+  position: sticky; top: 0; z-index: 50;
+  background: #1e3a5f; color: #f1f5f9;
+  border-bottom: 1px solid #2c5282; box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+nav.day-nav .container {
+  display: flex; gap: 8px; align-items: center; flex-wrap: wrap;
+  padding: 10px 24px;
+}
+nav.day-nav a {
+  color: #f1f5f9; text-decoration: none; padding: 8px 14px;
+  font-size: 14px; font-weight: 500; border-radius: 6px;
+  transition: background 0.15s;
+}
+nav.day-nav a:hover { background: rgba(255,255,255,0.10); }
+nav.day-nav a.home { background: #fbbf24; color: #1e3a5f; font-weight: 600; }
+nav.day-nav a.home:hover { background: #fcd34d; }
+nav.day-nav .spacer { flex: 1; }
+nav.day-nav .disabled { opacity: 0.4; pointer-events: none; }
+
+main.day-content { padding: 40px 0 64px; }
+main.day-content .container {
+  background: var(--color-card); padding: 40px 56px;
+  border-radius: 12px; box-shadow: var(--shadow); margin-top: -24px;
+}
+
+main.day-content h1 { display: none; }
+main.day-content h2 {
+  color: var(--color-primary); font-size: 24px; font-weight: 700;
+  margin: 36px 0 16px; padding-bottom: 8px;
+  border-bottom: 2px solid var(--color-border);
+}
+main.day-content h2:first-child { margin-top: 0; }
+main.day-content h3 {
+  color: var(--color-primary-light); font-size: 19px; font-weight: 600;
+  margin: 28px 0 12px;
+}
+main.day-content h4 {
+  color: var(--color-text); font-size: 16px; font-weight: 600;
+  margin: 20px 0 8px;
+  text-transform: uppercase; letter-spacing: 0.4px;
+}
+main.day-content p { margin: 12px 0; }
+main.day-content ul, main.day-content ol { padding-left: 24px; margin: 12px 0; }
+main.day-content li { margin-bottom: 6px; }
+main.day-content strong { color: var(--color-primary); font-weight: 600; }
+main.day-content em { color: var(--color-muted); }
+main.day-content hr {
+  border: 0; border-top: 1px solid var(--color-border); margin: 32px 0;
+}
+
+main.day-content blockquote {
+  margin: 16px 0; padding: 12px 20px;
+  background: #f8fafc; border-left: 4px solid var(--color-primary-light);
+  border-radius: 0 8px 8px 0; color: var(--color-text);
+}
+main.day-content blockquote p { margin: 6px 0; }
+main.day-content blockquote strong { color: var(--color-primary); }
+
+main.day-content table {
+  width: 100%; border-collapse: collapse; margin: 16px 0;
+  font-size: 14px; box-shadow: var(--shadow); border-radius: 6px; overflow: hidden;
+  table-layout: auto;
+}
+main.day-content table th {
+  background: var(--color-primary); color: white; text-align: left;
+  padding: 10px 12px; font-weight: 600;
+  vertical-align: top; word-break: break-word;
+}
+main.day-content table td {
+  padding: 8px 12px; border-top: 1px solid var(--color-border);
+  vertical-align: top; word-break: break-word; overflow-wrap: anywhere;
+}
+main.day-content table tr:nth-child(even) td { background: #f8fafc; }
+main.day-content table td:first-child {
+  color: var(--color-primary);
+  font-family: "JetBrains Mono", "Courier New", monospace;
+  font-size: 13px;
+}
+/* Časy ve formátu HH:MM lze ponechat bez lámání — krátké stringy */
+main.day-content table td:first-child:is(.time, [data-time]) {
+  white-space: nowrap;
+}
+
+main.day-content code {
+  font-family: "JetBrains Mono", "Courier New", monospace;
+  background: var(--color-bg); border: 1px solid var(--color-border);
+  padding: 1px 6px; border-radius: 4px; font-size: 0.92em;
+}
+
+footer.day-footer {
+  background: #1e3a5f; color: #cbd5e1;
+  padding: 28px 0; text-align: center; font-size: 14px;
+}
+footer.day-footer a { color: #fbbf24; text-decoration: none; font-weight: 600; }
+footer.day-footer a:hover { text-decoration: underline; }
+footer.day-footer .footer-nav { margin-top: 12px; }
+footer.day-footer .footer-nav a { margin: 0 12px; }
+
+@media (max-width: 768px) {
+  .day-hero h1 { font-size: 26px; }
+  .day-hero .subtitle { font-size: 15px; }
+  main.day-content .container { padding: 24px; margin-top: -16px; }
+  main.day-content h2 { font-size: 20px; }
+  main.day-content h3 { font-size: 17px; }
+  main.day-content table { font-size: 13px; }
+  main.day-content table td, main.day-content table th { padding: 6px 8px; }
+  nav.day-nav .container { padding: 8px 12px; }
+  nav.day-nav a { padding: 6px 10px; font-size: 13px; }
+}
+@media print {
+  nav.day-nav, footer.day-footer { display: none; }
+  main.day-content .container { box-shadow: none; padding: 0; }
+}
+</style>
+</head>
+<body>
+
+<header class="day-hero">
+  <div class="container">
+    <span class="pill">Den 7 · 17. 7. (pátek)</span>
+    <h1>Zlom — Markův vzkaz z FN Brno</h1>
+    <p class="subtitle">Detailní program a příběh dne</p>
+  </div>
+</header>
+
+<nav class="day-nav">
+  <div class="container">
+    <a class="home" href="../pruvodce.html#dny">← Průvodce hrou</a>
+    <span class="spacer"></span>
+    <a href="den_06.html">← Den 6</a>
+    <a href="den_08.html">Den 8 →</a>
+  </div>
+</nav>
+
+<main class="day-content">
+  <div class="container">
+    <h1>DEN 7 — Pátek 17. 7. 2026: Zlom — Markův vzkaz z FN Brno</h1>
+<blockquote>
+<p><strong>Motto dne</strong>: „Pan Marek se probudil. A má pro nás vzkaz."</p>
+</blockquote>
+<hr />
+<h2>Stručná osnova (timetable)</h2>
+<table>
+<thead>
+<tr>
+<th>Čas</th>
+<th>Co se děje</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>07:30 – 08:30</td>
+<td>Snídaně</td>
+</tr>
+<tr>
+<td>08:30 – 09:00</td>
+<td><strong>Mimořádný nástup</strong> — Magda oznámí: pan Marek se probudil!</td>
+</tr>
+<tr>
+<td>09:00 – 10:00</td>
+<td><strong>VZKAZ OD MARKA</strong> (přečtení / poslechnutí / promítnutí)</td>
+</tr>
+<tr>
+<td>10:00 – 11:00</td>
+<td>Týmy diskutují vzkaz, plánují další kroky</td>
+</tr>
+<tr>
+<td>11:00 – 11:30</td>
+<td><strong>Eliminace Magdy + Jendy + Adriany</strong></td>
+</tr>
+<tr>
+<td>11:30 – 12:00</td>
+<td><strong>SoTo začne mluvit</strong> — vysvětlí noční misi do Brna (S13). Páter Lacina potvrdí Santanu v 3:30 (S20).</td>
+</tr>
+<tr>
+<td>12:00 – 13:00</td>
+<td>Oběd</td>
+</tr>
+<tr>
+<td>13:00 – 14:00</td>
+<td>Klid ve stanech</td>
+</tr>
+<tr>
+<td>14:00 – 16:30</td>
+<td><strong>ETAPOVÁ HRA č. 6: Velké hledání ukrytých indicií</strong> (po celém táboře a okolí)</td>
+</tr>
+<tr>
+<td>16:30 – 18:00</td>
+<td><strong>Lukostřelba / vzduchovka v lesní mýtině</strong> (sport, uvolnění)</td>
+</tr>
+<tr>
+<td>18:00 – 19:00</td>
+<td>Večeře</td>
+</tr>
+<tr>
+<td>19:30 – 21:30</td>
+<td><strong>Detektivní filmový večer</strong> (audio dramatizace u ohně, žádné elektřiny — vyprávění)</td>
+</tr>
+<tr>
+<td>21:30 – 22:00</td>
+<td>Volný čas</td>
+</tr>
+<tr>
+<td>22:00</td>
+<td>Večerka</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Příběh dne (z pohledu dětí)</h2>
+<p>Ráno <strong>Magda Hamanová</strong> přijde z lesní cesty „U lípy" (kde má signál) a na nástupišti zazáří:</p>
+<blockquote>
+<p>„Týmy! Mám pro vás úžasnou zprávu. <strong>Pan Marek se v noci probudil!</strong> Lékaři ve FN Brno říkají, že je v pořádku — paměť má, mluví, jí. Otřes mozku zvládá. Bude tam ještě 4 dny, než se zotaví zcela. <strong>A natočil pro vás vzkaz</strong>. Přivezla mi ho na flashce zdravotní sestra ráno z Brna. Sledujte."</p>
+</blockquote>
+<p><strong>Karel přečte Markův vzkaz nahlas dětem</strong> (papírový dopis přivezený autem ráno z FN Brno). Karel vystupuje <strong>jako sám sebe</strong> — bez kostýmu Marka. Děti to přijmou: „Karel nám čte, co napsal pan Marek." Volitelně: krátká audio nahrávka Markova hlasu (Karel se nahraje předem v jiné intonaci) přes přenosný reproduktor na baterky. Doporučená varianta — <strong>papírový dopis čtený Karlem</strong> — je v hře plně dostatečná a emocionálně silnější.</p>
+<hr />
+<h3>Skript Markova vzkazu</h3>
+<blockquote>
+<p><em>(Markův hlas, lehce unavený, klidný, přerušovaný:)</em></p>
+<p>„Drahé děti, drazí vedoucí, drazí přátelé tábora Světlo.</p>
+<p>Dnes ráno mě tady ve fakultní nemocnici v Brně lékaři přesunuli z monitorovaného oddělení na běžné. <strong>Jsem v pořádku.</strong> Bolí mě hlava, ale myšlení mám čisté. Pamatuji si <strong>téměř všechno</strong>.</p>
+<p><em>(Zhluboka se nadechne.)</em></p>
+<p>V noci 11. července, někdy okolo jedné, jsem se probudil. Měl jsem zlý sen o tábořišti, asi prvotřídní obavy zakladatele. Vstal jsem, vzal baterku, šel ke Šéfce. <strong>Ze Šéfky bylo slyšet šustění papíru.</strong></p>
+<p>Vstoupil jsem dovnitř — a tam stál <strong>muž s červenou složkou v ruce. Otevřená truhla. On mě uviděl, já uviděl jeho.</strong> Já jsem ho oslovil jménem. <strong>Byl to Vladimír Stehlík.</strong> Soused od dětství. Moje srdce se zastavilo: ne ze strachu o mě, ale ze žalu pro něj.</p>
+<p>Řekl jsem mu, ať to položí. <strong>Vladimír zpanikařil. Strčil mě stranou</strong> — ne s úmyslem ublížit, jen aby utekl. Vyběhl ven se závětí. Já jsem za ním vyběhl do tmy. <strong>Asi 15 metrů za Šéfkou jsem klopýtl o kořen smrku. Spadl jsem na kámen.</strong> Pak už si nepamatuji nic — jen probuzení v sanitce.</p>
+<p><em>(Pauza.)</em></p>
+<p>Děti, <strong>Vladimír mě nezbil</strong>. <strong>Já jsem upadl.</strong> Toto je důležité. <strong>Vladimír mě nechtěl zranit, on jen chtěl tu závěť.</strong> Ale na druhou stranu — měl tam být. A vzal něco, co mu nepatřilo.</p>
+<p><em>(Pauza.)</em></p>
+<p>A ještě jedna věc: <strong>vyšetřujte také Aleše Tomka.</strong> Aleš měl té noci ‚hlídat ohniště'. Na latrýnu si zašel ve chvíli, kdy Vladimír přicházel. <strong>Já mám tušení, že Aleš věděl. Že mu Vladimír něco slíbil.</strong> Aleš je kluk, kterého znám od dětství — od chvíle, kdy mu zemřel otec. <strong>Ale jeho hlídka té noci nemá záznamy.</strong> Zeptejte se Aleše. <strong>Žádný hněv — jen pravdu.</strong></p>
+<p><em>(Pauza.)</em></p>
+<p>Závěť <strong>má Vladimír</strong>. Nebo ji někde schoval. Vladimír neměl odvahu si ji nechat doma — věděl by, že po něm budou pátrat. <strong>Schoval ji někde po cestě domů.</strong> Lesní cesta vede ze Šéfky kolem <strong>potoka, kolem starého buku</strong>, k samotě. <strong>Hledejte u toho, co je tam staré. U toho, co stálo, když jsem v 1997 postavil první stan.</strong></p>
+<p>A ještě jeden zvláštní vzkaz, prosím vás. <strong>Pro Tomáše Sotoniaka.</strong> Tomáši — <strong>můžeš to říct</strong>. Já ti to dovoluji. Já to ráno všem vysvětlím sám, ale teď je čas. <strong>Promluv s nimi.</strong> Vy, děti, <strong>se Tomáše ptejte. On vám odpoví.</strong> Křivdili jste mu — nebylo to vaše vina, ale teď je to napravené.</p>
+<p>A poslední: <strong>moje závěť obsahuje překvapení</strong>. § 4 a § 5. Až ji najdete — <strong>přečtu vám ji sám</strong>. Den 21. července, jestli mě ještě budete chtít.</p>
+<p>Děkuji vám, děti. Pomáháte tábor. Pomáháte mně. <strong>Buďte trpěliví. Pravda chce čas. A láska chce odpuštění.</strong></p>
+<p><em>(Mlčení.)</em></p>
+<p>Váš Marek Stanislav."</p>
+</blockquote>
+<hr />
+<p>Po vzkazu je <strong>ticho</strong>. Některé děti pláčou. Vedoucí je objímají.</p>
+<blockquote>
+<p><strong>Klíčová zpráva</strong>: Pachatel je <strong>Vladimír Stehlík</strong>. <strong>Aleš mu pomohl.</strong> Závěť je <strong>u něčeho starého u potoka</strong> — <strong>buk!</strong></p>
+<p><strong>Druhá klíčová zpráva</strong>: Marek <strong>nemluví o vraždě</strong> ani útoku. Klopýtl o kořen. <strong>Stehlík ho strčil v panice, ne s úmyslem.</strong> Tato lidská perspektiva má pro děti morální váhu.</p>
+</blockquote>
+<hr />
+<h2>Klíčový moment dne 1: Eliminace Magdy Hamanové (11:00)</h2>
+<p>Po vzkazu Karel oznámí:</p>
+<blockquote>
+<p>„Týmy, <strong>Magda Hamanová</strong> mi dnes ráno doložila svůj <strong>lékařský deník</strong> — papírový, s časovými údaji. Záznam z 11. 7. zaplnila ručně mezi 22:30 a 00:55: pět zápisů, každý s časem, popisem zdravotního stavu dětí (alergii Tomáše K1, drobnou tržnou ránu Anny K2 atd.). Datace je věrná, nepřepisovaná. <strong>Magdaléna celou noc psala v zdravotce.</strong> <strong>Vyloučena.</strong>"</p>
+<p>Děti vidí, že <strong>Magda nelhala</strong> — jen chránila zákonem chráněné lékařské zápisy a nechtěla deník otevírat publikem. Den 7 je doložila tedy v zužených podmínkách (Karel + SoTo + Růžičková telefonem).</p>
+</blockquote>
+<hr />
+<h2>Klíčový moment dne 2: Eliminace Jendy + Adriany (11:15)</h2>
+<p>Karel pokračuje:</p>
+<blockquote>
+<p>„<strong>Jenda + Adriana</strong> — zásobovači. Den 4 nám ukázali <strong>stopu pneumatiky pickupu</strong> na lesní cestě. Teď víme, že to byl <strong>Stehlíkův pickup z noci 11.→12. 7.</strong> (Markovo svědectví potvrzuje). <strong>Spali společně ve stanu</strong> — vzájemná alibi. Žádný motiv. <strong>Oba vyloučeni.</strong>"</p>
+</blockquote>
+<h2>Klíčový moment dne 2b: SoTo konečně mluví (11:30)</h2>
+<p>Karel se obrátí k SoTovi:</p>
+<blockquote>
+<p><strong>Karel</strong>: „Tomáši, slyšel jsi Marka. ‚Můžeš to říct.' Tak nám to řekni."</p>
+<p><strong>SoTo</strong> (zhluboka se nadechne): „Děti. Marek mě den 1 odpoledne, krátce před zahájením, vzal stranou. <strong>Požádal mě, abych mu v noci tajně dovezl z jeho pracovny v Brně kopii dodatku smlouvy s Mendelovou univerzitou — s podpisem.</strong> Notářka Růžičková ji potřebovala pro archiv. Marek mi kladl mlčet, dokud ji nemá v rukou.
+<strong>Vyrazil jsem v 0:45 Santanou</strong>. V Brně jsem byl ve 2:30. Vyzvedl dodatek z Markova bytu (klíče mám). Vrátil jsem se v 5:00. <strong>Auto stálo na jiném místě</strong>, protože jsem přejížděl, abych nevyrušil Adrianu a Jendu. Ráno přicházím — a Marek leží v lese, závěť zmizela. <strong>Nemohl jsem ho zeptat, jestli můžu mluvit. Tak jsem mlčel. Vám se to musí jevit jako přiznání. Mně se to po těch dnech jevilo jako vězení.</strong> Dnes Marek řekl: ‚Můžeš to říct.' <strong>Tak vám to říkám.</strong>"</p>
+<p><strong>SoTo dále:</strong> „<strong>Dodatek mám v Santanu v aktovce.</strong> Můžete ho vidět. Notářka v Blansku ho má od ráno 12. 7. <strong>Pokud nevěříte mně, věřte jí — den 8 ji navštívíte a ona to potvrdí.</strong>"</p>
+</blockquote>
+<p>Některé děti <strong>prohledají Santana</strong> s SoTovou pomocí. <strong>Najdou aktovku s dokumentem</strong> — ofotí, opíší. <strong>Klíčový důkaz S13.</strong></p>
+<h2>Klíčový moment dne 2c: Páter Lacina potvrdí (11:45)</h2>
+<p>V téže chvíli <strong>Páter Lacina</strong> (telefonem ze své farnosti — odpoledne 12. 7. byl v táboře, dnes telefonuje):</p>
+<blockquote>
+<p><strong>Páter Lacina</strong>: „Karle, já to ještě připomenu, vy ráno o tom nevíte. <strong>Já jsem v noci z 11. na 12. 7. jel z Jedovnic do Vyškova na pohřební obřad. Cestou v Brně, na Olomoucké ulici, asi v 3:30, mě míjela Santana s českou poznávačkou. Já jsem si všiml, protože jsem viděl Tomáše Sotoniaka za volantem — známe se ze sboru, pozdravili jsme se očima. Šel směrem od Brna</strong>. Říkám to teď, když mi to Karel ráno vysvětlil."</p>
+<p><strong>S20</strong> zaznamenáno: <strong>Páter potvrdil Santanu ve směru z Brna v 3:30 ráno</strong>. Poslední puzzle před kompletní eliminací den 8.</p>
+<p><strong>Děti reagují různě:</strong> některé okamžitě SoTovi věří, jiné ho dál podezírají („pořád to může být lež, jen lépe vyprávěná"). <strong>Karel říká:</strong> „Definitivní eliminace přijde <strong>až den 8 v Blansku</strong>, kdy paní notářka osobně potvrdí. <strong>Do té doby Tomáš zůstává v širším okruhu, ale s vážně oslabeným podezřením.</strong>"</p>
+</blockquote>
+<p>Z širšího okruhu zbývají <strong>Aleš Tomek + Vladimír Stehlík</strong>. Stehlík je teď z Markova vzkazu <strong>přímo jmenovaný pachatel</strong>. Aleš je <strong>přímo jmenovaný pomocník</strong> (i když „mám tušení" — ne přiznání).</p>
+<blockquote>
+<p><strong>Bilance po dnu 7</strong>: Pachatel = <strong>Vladimír Stehlík</strong> (Markem osobně potvrzen). Pomocník = <strong>Aleš Tomek</strong> (Markem zmíněn jako podezření). <strong>Důkazy proti Stehlíkovi: F04 boty, F09 pickup, F10 vlákno z rukavice, F12 popel z dýmky, Markovo svědectví, Aniččina silueta. Ale chybí MOTIV.</strong> Den 8 přijde motiv (smlouva s univerzitou).</p>
+</blockquote>
+<hr />
+<h2>Klíčový moment dne 3: Hypotéza o buku</h2>
+<p>Karel vyhlásí:</p>
+<blockquote>
+<p>„Pan Marek řekl: ‚Hledejte u toho, co je tam staré. U toho, co stálo, když jsem v 1997 postavil první stan.' <strong>Co je u potoka staré?</strong>"</p>
+</blockquote>
+<p>Děti křičí: „<strong>Stařík! Starý buk!</strong>"</p>
+<blockquote>
+<p>Karel: „<strong>Správně. Ale nepůjdeme tam dnes.</strong> Stehlík <strong>se bude vracet</strong> — možná dnes, možná zítra. Pokud je to on, <strong>mohl by se tam vrátit pro závěť</strong>. Připravíme <strong>past</strong>. Půjdeme tam <strong>až po jeho dopadení</strong>. Den 10."</p>
+</blockquote>
+<hr />
+<h2>Etapová hra č. 6: Velké hledání indicií (14:00–16:30)</h2>
+<blockquote>
+<p><strong>Tematika</strong>: Markův vzkaz pomohl, ale potřebujeme <strong>další stopy</strong>, abychom Stehlíka usvědčili pevně. Týmy hledají ve <strong>všech dříve neprozkoumaných koutech</strong> tábora.</p>
+</blockquote>
+<h3>Stanoviště (10 lokací × 6 týmů — rotace v dvojicích)</h3>
+<ol>
+<li><strong>Skladový stan</strong> (kde pracuje Jenda). Tým hledá:
+   - <strong>Záznam o dovozu materiálu</strong> od Stehlíka 11. 7. ráno (vyjasňuje stopu pneumatiky). <strong>Aleš dovoz potvrdí.</strong> Toto je <strong>alibi pro F09</strong> — ALE Stehlík mohl být v noci pěšky.</li>
+<li><strong>Přístřešek údržby Aleše</strong> (s jeho povolením, tým ho doprovází). Tým hledá:
+   - <strong>F15a (předzvěst)</strong>: na Alešových pracovních botách (gumovky) — <strong>šedavý jíl, neobvyklý odstín</strong>. Aleš sám vysvětluje: „chodím všude po lese, různé bahno." Tým si vzorek odebere. Skutečný význam vyjde najevo den 8 (porovnání se Stehlíkovou loukou).</li>
+<li><strong>Stan zakladatele vedle Šéfky</strong> (s povolením Karla). Tým hledá:
+   - <strong>Markův osobní deník z červnového pobytu</strong> (Marek si zapisoval dojmy). V deníku zápis z 28. 6. 2026: „<strong>Vladimír mě dnes potkal u plotu samoty. Mluvil o louce. Říkal, že kdyby tábor odešel, on by ji měl. Něco se mu nezdá.</strong>" — <strong>MOTIV — POPRVÉ VYŘČEN</strong>.</li>
+<li><strong>Knihovna Šéfky / nástěnka historie</strong>: tým hledá rodokmen Stanislavových (uložený v matrice 1997). <strong>Marek</strong>: zakladatel, žije sám, žádní přímí dědicové. SoTo je vzdálený synovec (krevní pouto, ale závěť jde mimo rodinu — eliminace pokračuje den 8). <strong>Žádný osobní motiv u rodiny.</strong></li>
+<li><strong>Místo „U lípy" na lesní cestě</strong> (300 m od tábora, kde je signál mobilu). Tým hledá:
+   - <strong>F09 (rozšíření)</strong>: druhý otisk pneumatiky pickupu, ale tentokrát <strong>menší, slabší</strong> — možná z jiné jízdy nebo ze stejné. Tým fotí, měří.</li>
+<li><strong>Ohniště + okolí</strong>: tým hledá vyhořelé větvičky a zbytek. Najde <strong>kousek hořící dýmky</strong> — opálený, ne ze Šéfky. <strong>Stehlík tedy dýmkoval i venku?</strong> Pravděpodobně předevčírem při návštěvě (= 14:00–16:00 den 5). Falešná stopa, ale děti ji zaznamenají.</li>
+<li><strong>Místo u potoka</strong> (NIKOLI dutina v buku — ta je tabu): tým hledá <strong>otisky bot 44 v měkké hlíně poblíž</strong>. <strong>Najdou — silně, čerstvě</strong>. Otisk vede směrem k buku a zase zpět směrem k samotě. <strong>Stehlík tudy šel v noci 11.→12. 7.</strong></li>
+<li><strong>Místo za zadní stranou Šéfky</strong> (15 m): tým prozkoumá místo pádu Marka. <strong>Najde</strong> zbytky kořene smrku, kámen s drobnou stopou krve (= simulace, např. červené barvy nebo hlína), Markovu baterku odhozenou stranou. Vše potvrzuje <strong>pád, ne útok</strong>.</li>
+<li><strong>Pod přístřeškem Aleše — věci v cestovním vaku</strong>: s dovolením Aleše (Aleš nechce, tým mu to vyloží jako „rutinní"). Tým hledá: pod ručníky <strong>bankovku — 1 000 Kč</strong>. Aleš: „...soukromý úspora." Děti pochybují. <strong>F17 (předzvěst)</strong>: skutečný 30 000 Kč úplatek <strong>najdou až den 9</strong>, dnes jen drobnost — buduje napětí.</li>
+<li><strong>U samoty Stehlíkových (1 km, doprovod 2 vedoucích)</strong>: tým <strong>NEVCHÁZÍ</strong> na pozemek (etika), ale prochází lesní cestou kolem. <strong>Najde otisky pickupu</strong> + <strong>šátek/kapesník</strong> zachycený na trnové větvi (pravděpodobně Stehlíkův — světle modrý, s monogramem „V. S."). Tým ho ofotí, vedoucí ho ponechá na místě (důkaz pro zítra).</li>
+</ol>
+<blockquote>
+<p><strong>POZOR — F17 (skutečné peníze 30 000 Kč) je riziko: pokud Aleš peníze schoval moc dobře, děti je nemusí najít. Vedoucí připravil rekvizitu tak, aby byly nalezitelné</strong> (např. v plechové bedně pod nářadím, jen lehce zakryté). <strong>Den 9</strong> je hlavní moment nálezu.</p>
+</blockquote>
+<hr />
+<h2>Bilance po dnu 7</h2>
+<table>
+<thead>
+<tr>
+<th>Důkaz proti Stehlíkovi</th>
+<th>Důkaz proti Alešovi</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Boty 44 = F04</td>
+<td>F11: mezera v hlídce 00:30–01:30</td>
+</tr>
+<tr>
+<td>Pickup = F09</td>
+<td>F15a: šedavý jíl na gumovkách (vyjasní se den 8)</td>
+</tr>
+<tr>
+<td>Vlákno z kožené rukavice = F10</td>
+<td>Aničkina silueta byla <strong>vyšší než Aleš</strong> = ne Aleš v lese, ale Aleš <strong>někoho pustil</strong></td>
+</tr>
+<tr>
+<td>Popel z dýmky = F12</td>
+<td>Markovo svědectví: „Aleš měl té noci hlídku, opustil ji"</td>
+</tr>
+<tr>
+<td>Markovo svědectví: „byl to Vladimír Stehlík"</td>
+<td>Markovo tušení: „Vladimír mu něco slíbil"</td>
+</tr>
+<tr>
+<td>Otisky bot 44 v měkké hlíně u potoka</td>
+<td>Drobný hotovostní obnos pod ručníky (předzvěst)</td>
+</tr>
+<tr>
+<td>Šátek s monogramem V. S. na lesní cestě</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Markův deníkový zápis 28. 6.: motiv — louka</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Shrnutí</strong>: <strong>Stehlík je téměř jistý pachatel. Aleš je téměř jistý pomocník.</strong> Ale <strong>chybí pevný motiv pro Stehlíka</strong> (proč ta louka? jaký zájem?) — to přijde <strong>den 8 v Blansku</strong> (dodatek smlouvy s univerzitou).</p>
+<hr />
+<h2>Materiál pro den 7</h2>
+<ul>
+<li><strong>Markův dopis</strong> (papír, podpis) — vytištěný, případně vlastnoručně psaný</li>
+<li><strong>Krátká audio nahrávka Markova hlasu</strong> (volitelné — pokud máte mp3 přehrávač na baterky). Pokud ne, <strong>Karel přečte nahlas s emocemi</strong>.</li>
+<li><strong>Markův osobní deník</strong> s zápisem 28. 6. (rekvizita předem připravená)</li>
+<li><strong>Šátek s monogramem V. S.</strong> (pověšený na trnové větvi u samoty)</li>
+<li><strong>Drobná bankovka 1 000 Kč</strong> v Alešově vaku (rekvizita — nepoužívat skutečné peníze, vystačí kopie)</li>
+<li><strong>Otisky bot 44</strong> v měkké hlíně u potoka (vedoucí připravil ráno)</li>
+<li><strong>Kámen u kořene smrku</strong> (15 m za Šéfkou) — drobné stopy „krve"</li>
+<li><strong>Kniha hlídky ohniště</strong> (objevena už den 6)</li>
+<li><strong>Lukostřelba / vzduchovka vybavení</strong> (volitelné — alternativa: pétanque, frisbee)</li>
+</ul>
+<hr />
+<h2>Etapová hra č. 6 — bodování</h2>
+<table>
+<thead>
+<tr>
+<th>Tým</th>
+<th>Maximum bodů</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Najde Markův deníkový zápis (motiv — louka)</td>
+<td>50 b.</td>
+</tr>
+<tr>
+<td>Najde otisky bot 44 u potoka</td>
+<td>30 b.</td>
+</tr>
+<tr>
+<td>Najde šátek s monogramem V. S.</td>
+<td>30 b.</td>
+</tr>
+<tr>
+<td>Najde šedavý jíl na Alešových gumovkách</td>
+<td>20 b.</td>
+</tr>
+<tr>
+<td>Spojí Markovo svědectví + důkazy → Stehlík je pachatel</td>
+<td>50 b.</td>
+</tr>
+<tr>
+<td>Spojí mezeru v hlídce + ticho Aleše → Aleš je pomocník</td>
+<td>50 b.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Indicie předané dnes</h2>
+<table>
+<thead>
+<tr>
+<th>Kód</th>
+<th>Indicie</th>
+<th>Co znamená</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>VZKAZ</strong></td>
+<td>Markův dopis/audio z FN Brno</td>
+<td><strong>Pachatel je Vladimír Stehlík + Aleš mu pomohl</strong></td>
+</tr>
+<tr>
+<td><strong>MOTIV (předzvěst)</strong></td>
+<td>Markův deníkový zápis 28. 6.: „Vladimír mluvil o louce"</td>
+<td>Motiv naznačen — pozemek</td>
+</tr>
+<tr>
+<td>F15a</td>
+<td>Šedavý jíl na Alešových gumovkách</td>
+<td><strong>Aleš byl v lese na nějaké specifické louce</strong> (vyjasní se den 8)</td>
+</tr>
+<tr>
+<td>Otisky bot 44 u potoka</td>
+<td>Stehlík tudy šel</td>
+<td>Trasa zločinu potvrzena</td>
+</tr>
+<tr>
+<td>Šátek V. S.</td>
+<td>Stehlíkův kapesník na trnové větvi</td>
+<td>Stehlík tudy šel pěšky</td>
+</tr>
+<tr>
+<td>Magda eliminována</td>
+<td>Lékařský deník</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Jenda + Adriana eliminováni</td>
+<td>Vzájemná alibi, žádný motiv</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>S13</strong></td>
+<td>SoTův příběh o noční misi do Brna</td>
+<td>Hlavní rudá stopa značně oslabena</td>
+</tr>
+<tr>
+<td><strong>S20</strong></td>
+<td>Páter Lacina viděl Santanu v 3:30 v Brně</td>
+<td>Podpora SoTova příběhu</td>
+</tr>
+<tr>
+<td><strong>Dodatek smlouvy v Santanu</strong></td>
+<td>Hmotný důkaz SoTova příběhu</td>
+<td>Připravuje eliminaci den 8</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Obsazení dne 7</h2>
+<table>
+<thead>
+<tr>
+<th>Postava</th>
+<th>Aktivita</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Marek Stanislav</strong></td>
+<td><strong>Ve vzkazu</strong> — předem natočeno (audio) nebo přečteno Karlem</td>
+</tr>
+<tr>
+<td>Karel Malík</td>
+<td>Vedení dne, oznámení o vzkazu</td>
+</tr>
+<tr>
+<td><strong>SoTo</strong></td>
+<td><strong>Konečně mluví o noční misi</strong> — emocionální moment uvolnění</td>
+</tr>
+<tr>
+<td>Magda</td>
+<td>Doloží lékařský deník — eliminována</td>
+</tr>
+<tr>
+<td>Anička, Anežka</td>
+<td>V kuchyni, slyšely vzkaz, dojaté</td>
+</tr>
+<tr>
+<td><strong>Aleš Tomek</strong></td>
+<td><strong>Tlak silný</strong> — drží se. „Bolela mě záda, šel jsem se projít." Děti vidí, že je nervózní.</td>
+</tr>
+<tr>
+<td>Jenda + Adriana</td>
+<td>Vyloučeni — vzájemná alibi</td>
+</tr>
+<tr>
+<td>Preclík, Tom Buchta, instruktoři</td>
+<td>Vedení oddílů, podpora vyšetřování</td>
+</tr>
+<tr>
+<td><strong>Páter Lacina</strong></td>
+<td>Telefonát s potvrzením Santany v 3:30</td>
+</tr>
+<tr>
+<td>Stehlík</td>
+<td><strong>Není v táboře</strong> — na samotě, „pracuje doma." Děti vědí, že je hlavní podezřelý, ale nesmí mu to dát najevo</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Tipy pro vedoucí</h2>
+<ol>
+<li><strong>Markův vzkaz musí být kvalitní</strong>. Pokud máte technické možnosti, nahrajte audio předem v klidu, několikrát. Pokud ne, <strong>Karel ho přečte nahlas s emocemi</strong> — papírový dopis je v hře plně dostatečný a v jistém smyslu i autentičtější (žádná elektřina). Toto je <strong>emoční jádro celé hry</strong>.</li>
+<li><strong>Aleš pod tlakem</strong>: drží se. Ale začíná <strong>mlčet více, sedět víc stranou</strong>. Děti to musí cítit, ale nesmí zatím přiznat. <strong>Lidská tvář, ne karikatura zlosyna.</strong></li>
+<li><strong>Stehlík dnes není v táboře</strong> — to je důležité. Pokud by byl, mohl by uvážlivě reagovat. <strong>Den 9</strong> je den konfrontace.</li>
+<li><strong>Detektivní filmový večer</strong>: po vážném dnu lehká zábava. Bez elektřiny — tedy <strong>vyprávění u ohně</strong>. Vedoucí může vyprávět příběh slavného fiktivního detektiva (Sherlock Holmes, Nick Carter), nebo si ho může tým připravit.</li>
+<li><strong>Lukostřelba / vzduchovka v lesní mýtině</strong>: pokud máte vybavení a vedoucí s zbrojním průkazem, ideální. Alternativa: pétanque, vrh oštěpem (vážné, ale bezpečné).</li>
+<li><strong>F15a šedavý jíl</strong>: vedoucí připraví vzorek šedavého jílu (= specifický odstín, který se vyskytuje na Stehlíkově louce — vedoucí si ho předem připraví ze skutečné lokality). Den 8 se ukáže, že <strong>stejný jíl je na Stehlíkově louce</strong>.</li>
+</ol>
+<hr />
+<h2>Co se stane zítra</h2>
+<p>Den 8: <strong>Výjezd vybraných dětí do Blanska</strong> (notářka). Magdaléna Růžičková ukáže <strong>fragment závěti (§§ 1–2)</strong> + <strong>dodatek o prodloužení smlouvy s Mendelovou univerzitou v Brně o 30 let</strong> = <strong>MOTIV STEHLÍKA ODHALEN</strong>. Bonus pro 2–3 nejstarší kadety: výjezd do Brna na <strong>Mendelovu univerzitu</strong> pro potvrzení dohody Stehlíka s lesníkem. Mezitím v táboře: <strong>Aleš má na botách specifické bahno ze Stehlíkovy louky</strong> (F15 plně). Stehlík <strong>přijede ještě jednou</strong> odpoledne — pod tlakem, ale klidný.</p>
+  </div>
+</main>
+
+<footer class="day-footer">
+  <div class="container">
+    <div>Tábor Světlo 2026 — Případ ztracené závěti · Den 7</div>
+    <div class="footer-nav">
+      <a href="../pruvodce.html#dny">Průvodce hrou</a>
+      <a href="../pribeh.html">Příběh jako kniha</a>
+      <a href="../den_07_zlom.md">Zdrojový MD</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

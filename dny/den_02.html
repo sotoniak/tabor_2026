@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Den 2 — Objev a místo činu · Tábor Světlo 2026</title>
+<style>
+:root {
+  --color-primary: #1e3a5f;
+  --color-primary-light: #2c5282;
+  --color-accent: #d63031;
+  --color-accent-bg: #fadbd8;
+  --color-helper: #e67e22;
+  --color-success: #27ae60;
+  --color-success-bg: #d5f5e3;
+  --color-bg: #f8fafc;
+  --color-card: #ffffff;
+  --color-text: #1e293b;
+  --color-muted: #64748b;
+  --color-border: #e2e8f0;
+  --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.04);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", Roboto, sans-serif;
+  line-height: 1.7; color: var(--color-text); background: var(--color-bg);
+  margin: 0; padding: 0;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+
+header.day-hero {
+  background: linear-gradient(135deg, #1e3a5f 0%, #2c5282 100%);
+  color: white; padding: 56px 0 40px;
+}
+.day-hero .pill {
+  display: inline-block; padding: 4px 12px; background: rgba(255,255,255,0.18);
+  border-radius: 16px; font-size: 13px; margin-bottom: 12px; letter-spacing: 0.3px;
+}
+.day-hero h1 { font-size: 36px; margin: 0 0 8px; font-weight: 700; line-height: 1.2; }
+.day-hero .subtitle { font-size: 17px; opacity: 0.92; margin: 0; }
+
+nav.day-nav {
+  position: sticky; top: 0; z-index: 50;
+  background: #1e3a5f; color: #f1f5f9;
+  border-bottom: 1px solid #2c5282; box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+nav.day-nav .container {
+  display: flex; gap: 8px; align-items: center; flex-wrap: wrap;
+  padding: 10px 24px;
+}
+nav.day-nav a {
+  color: #f1f5f9; text-decoration: none; padding: 8px 14px;
+  font-size: 14px; font-weight: 500; border-radius: 6px;
+  transition: background 0.15s;
+}
+nav.day-nav a:hover { background: rgba(255,255,255,0.10); }
+nav.day-nav a.home { background: #fbbf24; color: #1e3a5f; font-weight: 600; }
+nav.day-nav a.home:hover { background: #fcd34d; }
+nav.day-nav .spacer { flex: 1; }
+nav.day-nav .disabled { opacity: 0.4; pointer-events: none; }
+
+main.day-content { padding: 40px 0 64px; }
+main.day-content .container {
+  background: var(--color-card); padding: 40px 56px;
+  border-radius: 12px; box-shadow: var(--shadow); margin-top: -24px;
+}
+
+main.day-content h1 { display: none; }
+main.day-content h2 {
+  color: var(--color-primary); font-size: 24px; font-weight: 700;
+  margin: 36px 0 16px; padding-bottom: 8px;
+  border-bottom: 2px solid var(--color-border);
+}
+main.day-content h2:first-child { margin-top: 0; }
+main.day-content h3 {
+  color: var(--color-primary-light); font-size: 19px; font-weight: 600;
+  margin: 28px 0 12px;
+}
+main.day-content h4 {
+  color: var(--color-text); font-size: 16px; font-weight: 600;
+  margin: 20px 0 8px;
+  text-transform: uppercase; letter-spacing: 0.4px;
+}
+main.day-content p { margin: 12px 0; }
+main.day-content ul, main.day-content ol { padding-left: 24px; margin: 12px 0; }
+main.day-content li { margin-bottom: 6px; }
+main.day-content strong { color: var(--color-primary); font-weight: 600; }
+main.day-content em { color: var(--color-muted); }
+main.day-content hr {
+  border: 0; border-top: 1px solid var(--color-border); margin: 32px 0;
+}
+
+main.day-content blockquote {
+  margin: 16px 0; padding: 12px 20px;
+  background: #f8fafc; border-left: 4px solid var(--color-primary-light);
+  border-radius: 0 8px 8px 0; color: var(--color-text);
+}
+main.day-content blockquote p { margin: 6px 0; }
+main.day-content blockquote strong { color: var(--color-primary); }
+
+main.day-content table {
+  width: 100%; border-collapse: collapse; margin: 16px 0;
+  font-size: 14px; box-shadow: var(--shadow); border-radius: 6px; overflow: hidden;
+  table-layout: auto;
+}
+main.day-content table th {
+  background: var(--color-primary); color: white; text-align: left;
+  padding: 10px 12px; font-weight: 600;
+  vertical-align: top; word-break: break-word;
+}
+main.day-content table td {
+  padding: 8px 12px; border-top: 1px solid var(--color-border);
+  vertical-align: top; word-break: break-word; overflow-wrap: anywhere;
+}
+main.day-content table tr:nth-child(even) td { background: #f8fafc; }
+main.day-content table td:first-child {
+  color: var(--color-primary);
+  font-family: "JetBrains Mono", "Courier New", monospace;
+  font-size: 13px;
+}
+/* Časy ve formátu HH:MM lze ponechat bez lámání — krátké stringy */
+main.day-content table td:first-child:is(.time, [data-time]) {
+  white-space: nowrap;
+}
+
+main.day-content code {
+  font-family: "JetBrains Mono", "Courier New", monospace;
+  background: var(--color-bg); border: 1px solid var(--color-border);
+  padding: 1px 6px; border-radius: 4px; font-size: 0.92em;
+}
+
+footer.day-footer {
+  background: #1e3a5f; color: #cbd5e1;
+  padding: 28px 0; text-align: center; font-size: 14px;
+}
+footer.day-footer a { color: #fbbf24; text-decoration: none; font-weight: 600; }
+footer.day-footer a:hover { text-decoration: underline; }
+footer.day-footer .footer-nav { margin-top: 12px; }
+footer.day-footer .footer-nav a { margin: 0 12px; }
+
+@media (max-width: 768px) {
+  .day-hero h1 { font-size: 26px; }
+  .day-hero .subtitle { font-size: 15px; }
+  main.day-content .container { padding: 24px; margin-top: -16px; }
+  main.day-content h2 { font-size: 20px; }
+  main.day-content h3 { font-size: 17px; }
+  main.day-content table { font-size: 13px; }
+  main.day-content table td, main.day-content table th { padding: 6px 8px; }
+  nav.day-nav .container { padding: 8px 12px; }
+  nav.day-nav a { padding: 6px 10px; font-size: 13px; }
+}
+@media print {
+  nav.day-nav, footer.day-footer { display: none; }
+  main.day-content .container { box-shadow: none; padding: 0; }
+}
+</style>
+</head>
+<body>
+
+<header class="day-hero">
+  <div class="container">
+    <span class="pill">Den 2 · 12. 7. (neděle)</span>
+    <h1>Objev a místo činu</h1>
+    <p class="subtitle">Detailní program a příběh dne</p>
+  </div>
+</header>
+
+<nav class="day-nav">
+  <div class="container">
+    <a class="home" href="../pruvodce.html#dny">← Průvodce hrou</a>
+    <span class="spacer"></span>
+    <a href="den_01.html">← Den 1</a>
+    <a href="den_03.html">Den 3 →</a>
+  </div>
+</nav>
+
+<main class="day-content">
+  <div class="container">
+    <h1>DEN 2 — Neděle 12. 7. 2026: Objev a místo činu</h1>
+<blockquote>
+<p><strong>Motto dne</strong>: „Něco se stalo. Marek je v nemocnici. Závěť zmizela. A my musíme zjistit, kdo to udělal."</p>
+</blockquote>
+<hr />
+<h2>Stručná osnova (timetable)</h2>
+<table>
+<thead>
+<tr>
+<th>Čas</th>
+<th>Co se děje</th>
+<th>Kdo vede</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>05:30 – 05:45</td>
+<td><strong>Anička jde ke studánce pro vodu — najde Marka v lese</strong></td>
+<td>Anička</td>
+</tr>
+<tr>
+<td>05:45 – 06:00</td>
+<td>Anička volá Karla. Karel volá záchranku <strong>satelitním telefonem</strong></td>
+<td>Karel</td>
+</tr>
+<tr>
+<td>06:00 – 06:30</td>
+<td><strong>Magda Hamanová</strong> ošetřuje Marka do příjezdu záchranky</td>
+<td>Magda</td>
+</tr>
+<tr>
+<td>06:00 – 06:10</td>
+<td><strong>Tomáš Kellner</strong> přiváží objednané maso, zastihne ranní chaos. Krátké objetí sester (Anička, Anežka), odjíždí dál do Boskovic.</td>
+<td>Tomáš Kellner</td>
+</tr>
+<tr>
+<td>06:30 – 06:45</td>
+<td>Záchranka odvezena Marek do <strong>FN Brno</strong> (~50 km)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>07:00 – 07:30</td>
+<td>Karel + personál otevřou truhlu v Šéfce — <strong>padělek!</strong> Volají notářku</td>
+<td>Karel</td>
+</tr>
+<tr>
+<td>07:30 – 07:45</td>
+<td><strong>SoTo se vrací do tábora</strong> Santanou ze své noční mise. Vidí ranní chaos. <strong>Mlčí</strong> o své nepřítomnosti — Marek je v bezvědomí, nemůže ho zeptat.</td>
+<td>SoTo</td>
+</tr>
+<tr>
+<td>07:45 – 08:00</td>
+<td><strong>MIMOŘÁDNÝ NÁSTUP</strong> — Karel oznámí situaci dětem</td>
+<td>Karel, SoTo</td>
+</tr>
+<tr>
+<td>08:00 – 08:45</td>
+<td>Snídaně, Karel se SoTem rozdávají vyšetřovací materiály</td>
+<td>Vedoucí týmů</td>
+</tr>
+<tr>
+<td>08:45 – 09:15</td>
+<td>Krátká návštěva 2 policistů z Blanska — sepíšou protokol, nechají vyšetřování dětem</td>
+<td>kpt. Polák, por. Brázdová</td>
+</tr>
+<tr>
+<td>09:15 – 12:00</td>
+<td><strong>ETAPOVÁ HRA č. 1: Místo činu</strong> (4 stanoviště × 6 týmů, rotace)</td>
+<td>Vedoucí týmů</td>
+</tr>
+<tr>
+<td>12:00 – 13:00</td>
+<td>Oběd</td>
+<td>Anička + Anežka</td>
+</tr>
+<tr>
+<td>13:00 – 14:00</td>
+<td>Klid v stanech</td>
+<td>—</td>
+</tr>
+<tr>
+<td>14:00 – 14:30</td>
+<td><strong>Páter Lacina</strong> přijíždí z Jedovnic, krátká modlitba za Marka v jídelně</td>
+<td>Páter Lacina</td>
+</tr>
+<tr>
+<td>14:30 – 16:30</td>
+<td>Koupání u studánky, klidné aktivity</td>
+<td>Magda, Alča</td>
+</tr>
+<tr>
+<td>16:30 – 17:30</td>
+<td>Týmy zaznamenávají do deníků, kreslí náčrty</td>
+<td>Vedoucí týmů</td>
+</tr>
+<tr>
+<td>17:30 – 18:00</td>
+<td>Volný čas</td>
+<td>—</td>
+</tr>
+<tr>
+<td>18:00 – 19:00</td>
+<td>Večeře</td>
+<td>—</td>
+</tr>
+<tr>
+<td>19:30 – 21:00</td>
+<td><strong>Workshop šifer</strong> (volitelně) — příprava na den 3</td>
+<td>Lucka R.</td>
+</tr>
+<tr>
+<td>21:00 – 22:00</td>
+<td>Klid u ohně, vyprávění detektivních příběhů</td>
+<td>—</td>
+</tr>
+<tr>
+<td>22:00</td>
+<td>Večerka</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Příběh dne (z pohledu dětí)</h2>
+<p>V <strong>5:30</strong> Anička jde od polní kuchyně k studánce pro vodu na ranní čaj. Cestou přes lesík <strong>uvidí postavu ležící v listí 15 m od Šéfky</strong>. Dojde blíž — je to <strong>pan Marek</strong>. Krev v rose, nehybný.</p>
+<p>Anička zařve „<strong>Karle!</strong>" — utíká do tábora, budí Karla. Karel <strong>vezme satelitní telefon</strong> (jediný v táboře, používá se jen pro krize) a volá záchranku. Magda Hamanová běží k Markovi se zdravotnickým kufříkem, kontroluje pulz, zorničky — žije, je v hlubokém bezvědomí, zranění hlavy.</p>
+<p>V <strong>6:00</strong> přiváží <strong>Tomáš Kellner</strong> (Aniččin bratr, řezník z Jedovnic) objednané maso — měl objednanou dodávku týden dopředu. Zastihne ho ranní chaos. <em>„Sestro, co se děje? Marek?? — Já tu složím maso a hned jedu, nezdržuju vás. Drž se."</em> Krátce obejme Aničku a Anežku, odjíždí dál do Boskovic (další zastávka jeho rozvozu).</p>
+<p>V <strong>6:30</strong> dorazí záchranka po lesní cestě (~500 m od centrální plochy). Marek je odvezen do <strong>Fakultní nemocnice Brno</strong> (cca 50 km, podle dispečinku otřes mozku, předpokládaná hospitalizace několik dnů).</p>
+<p>V <strong>7:00</strong> se Karel s Magdou a Aničkou jdou podívat <strong>do Šéfky</strong> otevřít truhlu. Truhla <strong>není vylomená</strong> — víko je jen zaklapnuté. Karel rozvinul červenou složku.</p>
+<blockquote>
+<p>Karel: „Magdo, tahle závěť mi nesedí. Měla mít notářskou pečeť — má jen razítko a podpis."</p>
+</blockquote>
+<p>Volají <strong>JUDr. Magdaléně Růžičkové</strong> do Blanska. Notářka přes telefon potvrzuje:</p>
+<blockquote>
+<p><strong>Magdaléna Růžičková</strong>: „Karle, originál byl s pečetí. Tohle je padělek."</p>
+</blockquote>
+<p><strong>Krádež je potvrzená.</strong></p>
+<p>V <strong>7:30</strong> přijíždí <strong>Tomáš Sotoniak Santanou</strong> z lesní cesty — viditelně unavený, kruhy pod očima. Mlčky pomáhá Karlovi nakládat papíry pro policii. Karel se ho ptá: <em>„Kde jsi byl? Santana stála jinde."</em> SoTo: <em>„Tom_, ne teď. Vyřídím to, jen ne teď."</em> Karel si toho všimne, ale <strong>nepřesnídá</strong> — věří svému zástupci. <strong>Děti to slyší přes plachtu jídelny</strong> (klíčový moment, který si některé z nich později vzpomene).</p>
+<p>Děti se mezitím vzbudily, jdou na snídani. Atmosféra je divná. Vedoucí jsou zachmuření, šeptají si. Anička má červené oči (plakala). Pan Marek není vidět. <strong>SoTo má drsný, mlčenlivý výraz.</strong></p>
+<p>Před snídaní Karel svolá <strong>mimořádný nástup</strong>:</p>
+<blockquote>
+<p><strong>Karel</strong>: „Děti, musím vám oznámit něco vážného. Dnes ráno v půl šesté našla paní Anička pana Marka v lese za Šéfkou — <strong>zraněného, v bezvědomí</strong>. Záchranka ho odvezla do Fakultní nemocnice v Brně. Lékaři nám řekli, že je <strong>stabilní</strong>, že má zranění hlavy a otřes mozku, ale <strong>není v ohrožení života</strong>. Bude pár dní v nemocnici, dokud se neprobudí.
+A ještě jedna věc: <strong>truhla v Šéfce, kam pan Marek včera večer uložil závěť, byla otevřena. Závěť, kterou nám měl pan Marek za pár dní představit, byla nahrazena padělkem. Pravá závěť zmizela.</strong>
+Volali jsme policii do Blanska. Přijdou dnes dopoledne, sepíšou protokol — ale řekli nám, že vyšetřování v lese, mezi vámi a personálem, <strong>mohou nejlépe vést ti, kdo tady jsou každý den</strong>. To jsme my. <strong>A vy. Vy znáte tábor, vidíte detaily, slyšíte věci, které my dospělí přehlédneme.</strong>
+<strong>Stojíme dnes před jednou z nejtěžších výzev v historii tábora Světlo. A budeme to zvládat společně.</strong>"</p>
+</blockquote>
+<p>Karel představí <strong>SoTa</strong> jako <strong>technického koordinátora vyšetřování</strong>.</p>
+<p>V <strong>8:45</strong> přijíždí krátce <strong>kpt. Mgr. Marek Polák</strong> a <strong>por. Bc. Lucie Brázdová</strong> z policie v Blansku. Sepíšou protokol, ohlédnou místo činu, <strong>fotografují</strong>, odvezou padělek závěti k expertize a slíbí, že se vrátí podle potřeby. Děti <strong>nevyslýchají</strong> — to bude práce týmů a Karla.</p>
+<p>Děti dostávají:
+- <strong>Vyšetřovací průkaz</strong> (laminovaný, na šňůrce)
+- <strong>Týmový deník</strong>
+- <strong>Mapu tábora</strong> (zatím prázdná A2)
+- <strong>Složku stop</strong>
+- <strong>Kartotéku 12 podezřelých</strong> (12 prázdných karet — vyplní se postupně)</p>
+<p>SoTo všem řekne pravidla vyšetřování:</p>
+<blockquote>
+<ol>
+<li><strong>Nikdy nevyslýchejte sami</strong> — vždy ve dvou nebo třech.</li>
+<li><strong>Všechno zapisujte</strong> do deníku.</li>
+<li><strong>Podezírat můžete každého</strong> — i mě, i Karla, i kuchařky, i hosty. <em>(Suchá poznámka SoTa po krátké pauze: „Klidně i mě začněte. Bude to pro vás dobrá příležitost."  — některé děti se zasmějí, jiné se zarazí.)</em></li>
+<li><strong>Nikdy nelžete</strong> ve výpovědi a nikdy si nevymýšlejte stopy.</li>
+<li><strong>V noci se nepohybujete sami</strong> mimo stan.</li>
+<li><strong>Pokud něco zjistíte, hlásíte to vedoucímu týmu</strong>.</li>
+</ol>
+</blockquote>
+<p>Pak začíná <strong>etapová hra č. 1</strong>.</p>
+<p>V <strong>14:00</strong> přijíždí <strong>Páter Lacina</strong> (kněz z Jedovnic) — krátká scéna v jídelně: <em>„Karel mi to ráno volal. Přijel jsem se za pana Marka pomodlit, je to dlouholetý kamarád. Nezdržím vás dlouho — jen jednu minutku."</em> Tichá modlitba (3 min, decentní), krátké pozdravy s personálem, odjíždí.</p>
+<hr />
+<h2>Etapová hra č. 1: Místo činu (09:15 – 12:00)</h2>
+<h3>Cíl</h3>
+<p>Týmy procházejí 4 stanoviště místa činu. Sbírají stopy, kreslí náčrty, kladou otázky. 6 týmů × 4 stanoviště = rotace v dvojicích (dva týmy na stanovišti). Každé stanoviště 30 min.</p>
+<h3>Stanoviště</h3>
+<h4>Stanoviště A: Šéfka (truhla a padělek)</h4>
+<ul>
+<li><strong>Vedoucí stanoviště</strong>: SoTo (Tomáš Sotoniak)</li>
+<li><strong>Co děti vidí</strong>:</li>
+<li>Otevřená truhla s mapami, <strong>padělek závěti uvnitř</strong> (papír s razítkem, <strong>bez pečeti</strong>)</li>
+<li><strong>Rozvázané rohy plachty</strong> na zadní straně Šéfky (F07)</li>
+<li>V rohu na zemi <strong>popel z dýmky</strong> (zvláštní směs — F12)</li>
+<li><strong>Úkoly týmu</strong>:</li>
+<li>Najděte indicii F01 (padělek), opište text, zaznamenejte <strong>chybějící pečeť</strong></li>
+<li>Najděte F03 (otisk dlaně u truhly — nepřípadný k personálu)</li>
+<li>Vyfoťte / nakreslete rozvázané rohy plachty</li>
+<li>Sběr popela z dýmky do sáčku</li>
+</ul>
+<p><strong>Pozor na SoTa jako vedoucího:</strong> SoTo působí drsně, na otázky odpovídá stručně. Když se ho dítě zeptá <em>„A vy jste tu byl v noci?"</em>, SoTo odpoví: <em>„O tom teď nebudu mluvit. Soustřeďte se na stopu."</em> — <strong>klíčový moment, který otevírá rudou stopu</strong>. Některé týmy si toho všimnou, jiné ne.</p>
+<h4>Stanoviště B: Místo, kde ležel Marek (15 m od Šéfky)</h4>
+<ul>
+<li><strong>Vedoucí stanoviště</strong>: Alča (vedoucí týmu Lišky)</li>
+<li><strong>Co děti vidí</strong>:</li>
+<li>V rose <strong>dva páry stop</strong> vedoucí ze Šéfky do lesa (F05) — Markovy + cizí</li>
+<li>Cizí stopa = <strong>kožená bota velikosti 44</strong> (F04)</li>
+<li><strong>Kořen smrku</strong>, přes který Marek klopýtl</li>
+<li><strong>Kámen</strong> s lehkou stopou (vedoucí nahradil rekvizitou — žádná viditelná krev pro děti)</li>
+<li><strong>Úkoly týmu</strong>:</li>
+<li>Vyfotografujte / nakreslete stopu boty</li>
+<li>Změřte velikost (porovnání s nohou některého z týmu)</li>
+<li>Spočítejte páry stop (= dva lidé)</li>
+<li>Hledejte další stopy v okruhu 5 m</li>
+</ul>
+<h4>Stanoviště C: Lesní cesta směrem k samotě Stehlíkových (asi 300 m od tábora)</h4>
+<ul>
+<li><strong>Vedoucí stanoviště</strong>: Jenda + Adriana (zásobovači — chodí tudy s autem do Jedovnic)</li>
+<li><strong>Co děti vidí</strong>:</li>
+<li>V měkké hlíně <strong>stopa pneumatiky pickupu</strong> (širší, terénní, F09)</li>
+<li><strong>Otisky bot 44</strong> vedoucí směrem k táboru a zpět od tábora</li>
+<li>Cesta vede k samotě hospodářů (asi 1 km dál) — vedoucí <strong>NEPROZRADÍ</strong> komu</li>
+<li><strong>Úkoly týmu</strong>:</li>
+<li>Změřte rozteč pneumatik</li>
+<li>Spočítejte, kolikrát se otisk boty objevuje (= jeden člověk, tam i zpět)</li>
+<li>Zaznamenejte směr</li>
+<li><strong>Drobnost:</strong> Adriana pošeptá týmu: <em>„Ráno jsem si všimla, že </em><em>Santana Tomáše stojí o pár metrů jinde</em><em> než včera večer. Asi nic. Ale zaznamenejte si to do deníku."</em> — <strong>otevírá rudou stopu proti SoTovi pro den 4</strong>.</li>
+</ul>
+<h4>Stanoviště D: Studánka, potok a starý buk</h4>
+<ul>
+<li><strong>Vedoucí stanoviště</strong>: Lucka M. (vedoucí týmu Vlci)</li>
+<li><strong>Co děti vidí</strong>:</li>
+<li>U studánky stopy pracovních bot (Anička — odpovídá ranní cestě pro vodu)</li>
+<li>Cestou k potoku stezka, na pěšině místy lesní bahno</li>
+<li>Starý buk u potoka — dutina, ale <strong>vedoucí důsledně zakáže sahat dovnitř</strong> (chráněný strom)</li>
+<li><strong>Úkoly týmu</strong>:</li>
+<li>Pozorujte buk, zaznamenejte přibližnou výšku, obvod, rozměry dutiny</li>
+<li><strong>Nehrabejte v dutině</strong> (vedoucí stanoviště to zakáže s odůvodněním „je to chráněný strom — zatím žádná výpověď tu není")</li>
+</ul>
+<blockquote>
+<p><strong>Důležité pro vedoucí</strong>: Děti by se neměly snažit zalézt do dutiny. Pokud někdo bude tlačit, vedoucí řekne: „Dutina je hluboká a tam by se musela rukou až po loket. <strong>Zatím nemáme žádnou stopu, která by nás vedla zrovna sem. Forenziku rezervujeme až bude nutná.</strong>" Den 10 to povolení dostanou.</p>
+</blockquote>
+<h3>Pravidla rotace</h3>
+<ul>
+<li>4 stanoviště, 6 týmů — rotace v dvojicích (dva týmy na stanovišti). Každé stanoviště 30 min.</li>
+<li>Po stanovišti si týmy v deníku vyplňují <strong>kartu indicie</strong> (kde, co, popis, kdo nasvědčuje?).</li>
+</ul>
+<h3>Bodování (viz 13_BODOVANI.md)</h3>
+<ul>
+<li>1–10 b. za úplnost zápisu</li>
+<li>1–10 b. za přesnost popisu</li>
+<li>1–10 b. za originalitu pozorování (něco, co ostatní přehlédli)</li>
+</ul>
+<hr />
+<h2>Indicie předané dnes</h2>
+<table>
+<thead>
+<tr>
+<th>Kód</th>
+<th>Indicie</th>
+<th>Stanoviště</th>
+<th>Co znamená</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>F01</td>
+<td>Padělek závěti v truhle (chybí pečeť)</td>
+<td>A</td>
+<td>Někdo vyměnil závěť</td>
+</tr>
+<tr>
+<td>F02</td>
+<td>Originál chybí</td>
+<td>A</td>
+<td>Pachatel ji vzal</td>
+</tr>
+<tr>
+<td>F03</td>
+<td>Otisk dlaně u truhly (přes rukavici, neidentifikovatelný jako personál)</td>
+<td>A</td>
+<td>Pachatel se dotkl truhly</td>
+</tr>
+<tr>
+<td>F04</td>
+<td>Stopa kožené boty velikosti 44 v rose před Šéfkou</td>
+<td>A/B</td>
+<td>Pachatel byl venku Šéfky</td>
+</tr>
+<tr>
+<td>F05</td>
+<td>Dva páry stop v rose vedoucí 15 m do lesa</td>
+<td>B</td>
+<td>Marek pronásledoval pachatele</td>
+</tr>
+<tr>
+<td>F06</td>
+<td>Fotky z mobilu (Karel ráno)</td>
+<td>A/B/C/D</td>
+<td>Dokumentace ráno</td>
+</tr>
+<tr>
+<td>F07</td>
+<td>Rozvázané rohy plachty na zadní straně Šéfky</td>
+<td>A</td>
+<td><strong>Někdo zevnitř</strong> umožnil tichý vstup (= pomocník!)</td>
+</tr>
+<tr>
+<td>F09</td>
+<td>Stopa pneumatiky pickupu na lesní cestě k samotě</td>
+<td>C</td>
+<td>Pachatel přijel/odešel touto cestou</td>
+</tr>
+<tr>
+<td>F12</td>
+<td>Popel z dýmky (zvláštní směs) v rohu Šéfky</td>
+<td>A</td>
+<td>Pachatel kouřil dýmku</td>
+</tr>
+<tr>
+<td><strong>R02</strong> (drobnost)</td>
+<td>Adriana zmíní, že <strong>Santana stojí jinde</strong></td>
+<td>C</td>
+<td>Otevře rudou stopu proti SoTovi pro den 4</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Rozvázaná plachta (F07)</strong> je <strong>klíčová stopa</strong> — naznačuje, že někdo z personálu pomohl. Děti by si toho měly všimnout a do deníku poznamenat <strong>„někdo z tábora to umožnil zevnitř"</strong>.</p>
+</blockquote>
+<hr />
+<h2>Co se zatím nikdo neví</h2>
+<p>Děti <strong>nemají</strong> spojení s konkrétní osobou. <strong>Stehlík není v táboře</strong> (přijde oficiálně až den 5). Jméno <strong>Vladimír Stehlík</strong> dnes <strong>nepadne</strong>. Děti mají k dispozici:
+- popis pachatele (mužský, <strong>velikost bot 44</strong>, kuřák dýmky, jezdí pickupem)
+- popis pomocníka (někdo z personálu, kdo měl přístup k zadní straně Šéfky)
+- <strong>drobnost</strong> o SoTově Santanu — pro pozdější rozvinutí</p>
+<hr />
+<h2>Materiál pro den 2</h2>
+<ul>
+<li><strong>Truhla s padělkem závěti</strong> v Šéfce (po noci)</li>
+<li><strong>Rozvázaná plachta</strong> Šéfky (zezadu)</li>
+<li><strong>Otisk boty 44</strong> v rose / měkké hlíně (rekvizita — vedoucí udělal v noci)</li>
+<li><strong>Stopy pneumatiky pickupu</strong> na lesní cestě (vedoucí udělal autem nebo razítkem)</li>
+<li><strong>Popel z dýmky</strong> v sáčku v rohu Šéfky</li>
+<li><strong>Figurína Marka</strong> — odstraněna před nástupem dětí (je „v sanitce")</li>
+<li><strong>Vyšetřovací průkazy</strong> (× 45 dětí)</li>
+<li><strong>Týmové deníky</strong> (× 6)</li>
+<li><strong>Mapy A2 prázdné</strong> (× 6)</li>
+<li><strong>Kartotéky podezřelých</strong> (12 prázdných karet × 6 týmů)</li>
+<li><strong>Kostýmy 2 policistů</strong> z Blanska — kpt. Polák, por. Brázdová</li>
+<li><strong>Letáček role</strong> pro Tomáše Kellnera (krátká návštěva 6:00) a Pátera Lacinu (modlitba 14:00)</li>
+<li><strong>Santana SoTa</strong> přesunutá z předchozího večera (mírně blíž k cestě)</li>
+</ul>
+<hr />
+<h2>Obsazení dne 2</h2>
+<table>
+<thead>
+<tr>
+<th>Postava</th>
+<th>Aktivita</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Karel Malík</strong></td>
+<td>Vedení mimořádného nástupu, koordinace, satelitní telefon</td>
+</tr>
+<tr>
+<td><strong>Tomáš „SoTo" Sotoniak</strong></td>
+<td>Vrací se z noční mise v 7:30, mlčí o cestě. Stanoviště A — drsná, vyhýbavá persona. <strong>Klíčový den pro otevření rudé stopy.</strong></td>
+</tr>
+<tr>
+<td><strong>Anička Kellnerová</strong></td>
+<td>Ráno <strong>objevitelka</strong> — viditelně otřesena, ale udržuje provoz kuchyně. Klíčový moment dne.</td>
+</tr>
+<tr>
+<td><strong>Anežka Kellnerová</strong></td>
+<td>Polní kuchyně — vaří s Aničkou, drobně dojatá z Markova zranění</td>
+</tr>
+<tr>
+<td><strong>Magda Hamanová</strong></td>
+<td>Ošetřovala Marka do příjezdu záchranky, nyní zdravotnická služba pro děti, koupání odpoledne</td>
+</tr>
+<tr>
+<td><strong>Jenda + Adriana</strong></td>
+<td>Stanoviště C (lesní cesta). <strong>Adriana zmíní</strong> drobnost o SoTově Santanu.</td>
+</tr>
+<tr>
+<td><strong>Aleš Tomek</strong></td>
+<td><strong>Hraje normálně</strong> — chodí kolem, dělá svou práci v přístřešku. <strong>Nesmí být podezřelý víc než ostatní</strong>.</td>
+</tr>
+<tr>
+<td><strong>Preclík</strong></td>
+<td>Klidná podpora oddílu, ranní snídaně</td>
+</tr>
+<tr>
+<td><strong>Tom Buchta</strong></td>
+<td>Klidná podpora oddílu</td>
+</tr>
+<tr>
+<td><strong>Mladí instruktoři</strong></td>
+<td>Vedení týmů, rámování hry mladším</td>
+</tr>
+<tr>
+<td><strong>kpt. Polák, por. Brázdová</strong></td>
+<td>Krátká návštěva 8:45–9:15, sepíšou protokol, odejdou</td>
+</tr>
+<tr>
+<td><strong>Tomáš Kellner</strong></td>
+<td>6:00 — přiveze maso, krátké objetí sester, odjíždí</td>
+</tr>
+<tr>
+<td><strong>Páter Lacina</strong></td>
+<td>14:00 — krátká modlitba v jídelně</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Tipy pro vedoucí</h2>
+<ol>
+<li><strong>Mimořádný nástup je klíčový</strong> — Karel musí mluvit autenticky, vážně. Děti budou reagovat různě, některé i emocionálně. Vedoucí týmů u nich stojí, drží je.</li>
+<li><strong>Zranění Marka vysvětlovat opatrně</strong>: Pokud má dítě otázky („Umře?"), odpovědět: „Ne, lékaři nám řekli, že je v pořádku, jen má otřes mozku a spí. Probere se za pár dní."</li>
+<li><strong>Děti jsou TÝM, ne hyeny</strong> — vedoucí pravidelně připomínají, že vyšetřování je o <strong>pomoci panu Markovi a tábor</strong>u, ne o tom, vystrkovat někoho na pranýř.</li>
+<li><strong>Kuchařky Anička a Anežka</strong>: děti je vidí, ale <strong>nesmí je dnes vyslýchat</strong>. Výslechy začínají den 3.</li>
+<li><strong>Aleš a SoTo</strong>: dnes se chovají odlišně. Aleš <strong>úplně normálně</strong> — žádné podezřelé chování. SoTo <strong>drsně, vyhýbavě, mlčí o noční cestě</strong> — to už otevírá rudou stopu.</li>
+<li><strong>Místo činu po hře uzavřít</strong>: po etapové hře vedoucí žluto-černou páskou označí, že místo činu je „uzamčeno" — děti tam nesmí. Místo bude k dispozici znovu jen pro forenziku den 4.</li>
+<li><strong>Klidové aktivity odpoledne</strong>: Po ránu plném drama nutně potřebujete odpočinkové aktivity. Modlitba s páterem (3 min), pak koupání u studánky, klid, deníky.</li>
+<li><strong>Plachta Šéfky</strong> — stopu <strong>F07 (rozvázané rohy)</strong> dětem nepředkládejte explicitně jako „důkaz personálu". Nechejte je k tomu <strong>dospět samostatně</strong> přes výslechy den 3.</li>
+<li><strong>Tomáš Kellner a Páter Lacina</strong> jsou drobné role — <strong>nesmí narušit hlavní vyšetřovací linku</strong>. Krátké, lidské, srdečné scény. Pokud děti chtějí Tomáše vyslýchat, krátce odpoví: <em>„Jel jsem od Jedovnic, dělal jsem rozvoz, nic víc."</em></li>
+</ol>
+<hr />
+<h2>Co se stane zítra</h2>
+<p>Den 3: Začátek <strong>výslechů personálu</strong>. Týmy se rozdělí, vyslýchají Karla, SoTa, Aničku, Anežku, Magdu, Jendu, Adrianu, Aleše, Preclíka. <strong>Karel a SoTo</strong> mají vzájemné alibi (porada do 00:15). <strong>SoTo se začíná stávat hlavním podezřelým</strong> — Magda zmíní krevní pouto se Markem, Klárka pamatuje vážný rozhovor Marka se SoTem den 1 odpoledne. <strong>Aleš</strong> má slabé alibi (latrýna, sám).</p>
+  </div>
+</main>
+
+<footer class="day-footer">
+  <div class="container">
+    <div>Tábor Světlo 2026 — Případ ztracené závěti · Den 2</div>
+    <div class="footer-nav">
+      <a href="../pruvodce.html#dny">Průvodce hrou</a>
+      <a href="../pribeh.html">Příběh jako kniha</a>
+      <a href="../den_02_objev.md">Zdrojový MD</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

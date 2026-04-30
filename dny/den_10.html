@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Den 10 — Hon na pachatele a nález závěti · Tábor Světlo 2026</title>
+<style>
+:root {
+  --color-primary: #1e3a5f;
+  --color-primary-light: #2c5282;
+  --color-accent: #d63031;
+  --color-accent-bg: #fadbd8;
+  --color-helper: #e67e22;
+  --color-success: #27ae60;
+  --color-success-bg: #d5f5e3;
+  --color-bg: #f8fafc;
+  --color-card: #ffffff;
+  --color-text: #1e293b;
+  --color-muted: #64748b;
+  --color-border: #e2e8f0;
+  --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.04);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", Roboto, sans-serif;
+  line-height: 1.7; color: var(--color-text); background: var(--color-bg);
+  margin: 0; padding: 0;
+}
+.container { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+
+header.day-hero {
+  background: linear-gradient(135deg, #1e3a5f 0%, #2c5282 100%);
+  color: white; padding: 56px 0 40px;
+}
+.day-hero .pill {
+  display: inline-block; padding: 4px 12px; background: rgba(255,255,255,0.18);
+  border-radius: 16px; font-size: 13px; margin-bottom: 12px; letter-spacing: 0.3px;
+}
+.day-hero h1 { font-size: 36px; margin: 0 0 8px; font-weight: 700; line-height: 1.2; }
+.day-hero .subtitle { font-size: 17px; opacity: 0.92; margin: 0; }
+
+nav.day-nav {
+  position: sticky; top: 0; z-index: 50;
+  background: #1e3a5f; color: #f1f5f9;
+  border-bottom: 1px solid #2c5282; box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+nav.day-nav .container {
+  display: flex; gap: 8px; align-items: center; flex-wrap: wrap;
+  padding: 10px 24px;
+}
+nav.day-nav a {
+  color: #f1f5f9; text-decoration: none; padding: 8px 14px;
+  font-size: 14px; font-weight: 500; border-radius: 6px;
+  transition: background 0.15s;
+}
+nav.day-nav a:hover { background: rgba(255,255,255,0.10); }
+nav.day-nav a.home { background: #fbbf24; color: #1e3a5f; font-weight: 600; }
+nav.day-nav a.home:hover { background: #fcd34d; }
+nav.day-nav .spacer { flex: 1; }
+nav.day-nav .disabled { opacity: 0.4; pointer-events: none; }
+
+main.day-content { padding: 40px 0 64px; }
+main.day-content .container {
+  background: var(--color-card); padding: 40px 56px;
+  border-radius: 12px; box-shadow: var(--shadow); margin-top: -24px;
+}
+
+main.day-content h1 { display: none; }
+main.day-content h2 {
+  color: var(--color-primary); font-size: 24px; font-weight: 700;
+  margin: 36px 0 16px; padding-bottom: 8px;
+  border-bottom: 2px solid var(--color-border);
+}
+main.day-content h2:first-child { margin-top: 0; }
+main.day-content h3 {
+  color: var(--color-primary-light); font-size: 19px; font-weight: 600;
+  margin: 28px 0 12px;
+}
+main.day-content h4 {
+  color: var(--color-text); font-size: 16px; font-weight: 600;
+  margin: 20px 0 8px;
+  text-transform: uppercase; letter-spacing: 0.4px;
+}
+main.day-content p { margin: 12px 0; }
+main.day-content ul, main.day-content ol { padding-left: 24px; margin: 12px 0; }
+main.day-content li { margin-bottom: 6px; }
+main.day-content strong { color: var(--color-primary); font-weight: 600; }
+main.day-content em { color: var(--color-muted); }
+main.day-content hr {
+  border: 0; border-top: 1px solid var(--color-border); margin: 32px 0;
+}
+
+main.day-content blockquote {
+  margin: 16px 0; padding: 12px 20px;
+  background: #f8fafc; border-left: 4px solid var(--color-primary-light);
+  border-radius: 0 8px 8px 0; color: var(--color-text);
+}
+main.day-content blockquote p { margin: 6px 0; }
+main.day-content blockquote strong { color: var(--color-primary); }
+
+main.day-content table {
+  width: 100%; border-collapse: collapse; margin: 16px 0;
+  font-size: 14px; box-shadow: var(--shadow); border-radius: 6px; overflow: hidden;
+  table-layout: auto;
+}
+main.day-content table th {
+  background: var(--color-primary); color: white; text-align: left;
+  padding: 10px 12px; font-weight: 600;
+  vertical-align: top; word-break: break-word;
+}
+main.day-content table td {
+  padding: 8px 12px; border-top: 1px solid var(--color-border);
+  vertical-align: top; word-break: break-word; overflow-wrap: anywhere;
+}
+main.day-content table tr:nth-child(even) td { background: #f8fafc; }
+main.day-content table td:first-child {
+  color: var(--color-primary);
+  font-family: "JetBrains Mono", "Courier New", monospace;
+  font-size: 13px;
+}
+/* Časy ve formátu HH:MM lze ponechat bez lámání — krátké stringy */
+main.day-content table td:first-child:is(.time, [data-time]) {
+  white-space: nowrap;
+}
+
+main.day-content code {
+  font-family: "JetBrains Mono", "Courier New", monospace;
+  background: var(--color-bg); border: 1px solid var(--color-border);
+  padding: 1px 6px; border-radius: 4px; font-size: 0.92em;
+}
+
+footer.day-footer {
+  background: #1e3a5f; color: #cbd5e1;
+  padding: 28px 0; text-align: center; font-size: 14px;
+}
+footer.day-footer a { color: #fbbf24; text-decoration: none; font-weight: 600; }
+footer.day-footer a:hover { text-decoration: underline; }
+footer.day-footer .footer-nav { margin-top: 12px; }
+footer.day-footer .footer-nav a { margin: 0 12px; }
+
+@media (max-width: 768px) {
+  .day-hero h1 { font-size: 26px; }
+  .day-hero .subtitle { font-size: 15px; }
+  main.day-content .container { padding: 24px; margin-top: -16px; }
+  main.day-content h2 { font-size: 20px; }
+  main.day-content h3 { font-size: 17px; }
+  main.day-content table { font-size: 13px; }
+  main.day-content table td, main.day-content table th { padding: 6px 8px; }
+  nav.day-nav .container { padding: 8px 12px; }
+  nav.day-nav a { padding: 6px 10px; font-size: 13px; }
+}
+@media print {
+  nav.day-nav, footer.day-footer { display: none; }
+  main.day-content .container { box-shadow: none; padding: 0; }
+}
+</style>
+</head>
+<body>
+
+<header class="day-hero">
+  <div class="container">
+    <span class="pill">Den 10 · 20. 7. (pondělí)</span>
+    <h1>Hon na pachatele a nález závěti</h1>
+    <p class="subtitle">Detailní program a příběh dne</p>
+  </div>
+</header>
+
+<nav class="day-nav">
+  <div class="container">
+    <a class="home" href="../pruvodce.html#dny">← Průvodce hrou</a>
+    <span class="spacer"></span>
+    <a href="den_09.html">← Den 9</a>
+    <a href="den_11.html">Den 11 →</a>
+  </div>
+</nav>
+
+<main class="day-content">
+  <div class="container">
+    <h1>DEN 10 — Pondělí 20. 7. 2026: Hon na pachatele a nález závěti</h1>
+<blockquote>
+<p><strong>Motto dne</strong>: „Najdeme ho. A najdeme i to, co skryl."</p>
+</blockquote>
+<hr />
+<h2>Stručná osnova (timetable)</h2>
+<table>
+<thead>
+<tr>
+<th>Čas</th>
+<th>Co se děje</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>06:30 – 07:00</td>
+<td>Brzká snídaně</td>
+</tr>
+<tr>
+<td>07:00 – 07:30</td>
+<td><strong>Příjezd 2 policistů z Blanska</strong> (kpt. Polák, por. Brázdová)</td>
+</tr>
+<tr>
+<td>07:30 – 08:30</td>
+<td><strong>Brífink hon</strong> — Karel + 2 policisté představí plán a kvadranty</td>
+</tr>
+<tr>
+<td>08:30 – 11:00</td>
+<td><strong>VELKÝ HON V LESE</strong> — týmy spolu s policisty prohledávají kvadranty</td>
+</tr>
+<tr>
+<td>11:00 – 11:30</td>
+<td><strong>DOPADENÍ STEHLÍKA</strong> + převoz</td>
+</tr>
+<tr>
+<td>11:30 – 12:00</td>
+<td>Návrat tábora, klid</td>
+</tr>
+<tr>
+<td>12:00 – 13:00</td>
+<td>Oběd (atmosféra — úleva, ale ještě ne radost)</td>
+</tr>
+<tr>
+<td>13:00 – 14:00</td>
+<td>Klid ve stanech</td>
+</tr>
+<tr>
+<td>14:00 – 15:30</td>
+<td><strong>NÁLEZ ZÁVĚTI V DUTINĚ BUKU U POTOKA</strong> (slavnostní moment)</td>
+</tr>
+<tr>
+<td>15:30 – 16:30</td>
+<td><strong>Závěť se nečte</strong> — JUDr. Růžičková ji potvrdí jako pravou, uloží do dřevěné truhly</td>
+</tr>
+<tr>
+<td>16:30 – 18:00</td>
+<td><strong>Příprava na finále zítra</strong> — týmy dokončují Knihu 30 let, Strom 30 let</td>
+</tr>
+<tr>
+<td>18:00 – 19:00</td>
+<td>Slavnostní večeře</td>
+</tr>
+<tr>
+<td>19:30 – 21:30</td>
+<td><strong>Pohádkový večer u ohně</strong> (vyprávění, klid)</td>
+</tr>
+<tr>
+<td>21:30 – 22:00</td>
+<td>Klid u ohně</td>
+</tr>
+<tr>
+<td>22:00</td>
+<td>Večerka</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Příběh dne (z pohledu dětí)</h2>
+<h3>Brífink (07:30 – 08:30)</h3>
+<p>V centrální ploše stojí Karel + dva muži a žena v uniformě — <strong>policisté z Blanska</strong> (= vedoucí v rolích, mají kostýmy: tmavomodré kalhoty, košile s odznakem Policie ČR, čepice). <strong>Kpt. Mgr. Marek Polák</strong> a <strong>por. Bc. Lucie Brázdová</strong>. Mají s sebou <strong>kufřík s formuláři, vysílačky, mapu okolí v měřítku 1:5 000</strong>.</p>
+<blockquote>
+<p><strong>Kpt. Polák</strong>: „Děti, dobrý den. Včera večer jsme dostali hlášení od Karla Malíka o útěku pana Vladimíra Stehlíka. <strong>Strávili jsme s vedoucími tábora ráno přípravou plánu</strong>. Rozdělili jsme okolní les <strong>do 6 kvadrantů</strong>. <strong>Každý tým bude prohledávat jeden kvadrant</strong> spolu s policistou nebo vedoucím.</p>
+<p><strong>Pravidla</strong>:
+1. <strong>Nikdo nesmí jít sám</strong> — vždy v týmu, s vedoucím a ideálně s policistou nebo vysílačkou.
+2. <strong>Nemluvte hlasitě</strong> — Stehlík by se mohl schovat.
+3. <strong>Pokud někoho uvidíte — NEZASAHUJTE. Volejte vysílačkou (nebo voláním na zvláštní píšťalku, kterou každý tým dostane).</strong>
+4. <strong>Nedotýkejte se ničeho, co najdete</strong> — vědeckého důkazu.
+5. <strong>Po dvou hodinách se všichni vracíme do tábora</strong>, ať už něco najdeme nebo ne. <strong>Bezpečí má přednost.</strong></p>
+<p>Začínáme za 30 min. Přibalte si baterky (les je hluboký, místy málo světla), pití, svačinu. <strong>Půjdeme do 11:00, kdy se vrátíme na oběd.</strong>"</p>
+<p><strong>Por. Brázdová</strong> dodá: „Pamatujte: <strong>pan Stehlík už se přiznal</strong>. Není to nebezpečný zločinec, není ozbrojen. Pravděpodobně je vyčerpaný a chce domů na samotu. <strong>Nenásilný</strong>."</p>
+</blockquote>
+<hr />
+<h3>Hon (08:30 – 11:00)</h3>
+<h4>Kvadranty</h4>
+<p>6 týmů, 6 kvadrantů (cca 250 × 250 m každý):
+1. <strong>Sever — kolem potoka a buku Staříka</strong> → tým <strong>Lišky</strong> (s por. Brázdovou)
+2. <strong>Severovýchod — lesní cesta směrem k samotě</strong> → tým <strong>Vlci</strong> (s kpt. Polákem) — <strong>klíčový kvadrant</strong>
+3. <strong>Východ — hlubší les za samotou</strong> → tým <strong>Sojky</strong> (s vedoucím)
+4. <strong>Jih — louka u tábora a její okolí</strong> → tým <strong>Jezevci</strong> (s vedoucím)
+5. <strong>Západ — okolí studánky a lesní pěšina k Jedovnicím</strong> → tým <strong>Medvědi</strong> (s vedoucím)
+6. <strong>Severozápad — okolo „U lípy" (signální místo)</strong> → tým <strong>Jestřábi</strong> (s vedoucím)</p>
+<h4>Co najdou</h4>
+<ul>
+<li>5 týmů: nic. Ale doplňují mapu, fotí stopy, zaznamenávají do deníku. <strong>Tým Lišky u buku</strong> <strong>nesáhne do dutiny</strong> — to je tabu, vedoucí jim řekne „<strong>na to ještě dojde po obědě, slavnostně</strong>".</li>
+<li>1 tým — <strong>Vlci</strong> — najde Stehlíka <strong>na lesní cestě mezi samotou a táborem, asi 400 m od samoty</strong>, schouleného u stromu, vyčerpaného, smířeného. Spal v lese. Měl s sebou jenom <strong>plátěnou tašku s kopií dodatku smlouvy</strong> (neoriginální — kopii, kterou si den 8 vzal od Aleše domů, plánoval ji zničit; nezničil).</li>
+</ul>
+<blockquote>
+<p><strong>Stehlík</strong> (vedoucí, který ho hraje): „<strong>Nezasáhněte. Já se nevzpouzím. Jsem unavený. Dovedete mě zpět.</strong>"</p>
+</blockquote>
+<p>Tým signalizuje <strong>kpt. Polákovi</strong> (krátkým křikem nebo vysílačkou — pokud vysílačky funguji v lese; pokud ne, předem domluvený signál hlasem). Polák přijde, položí Stehlíkovi ruku na rameno, <strong>klidně</strong> říká:</p>
+<blockquote>
+<p><strong>Polák</strong>: „<strong>Pane Stehlíku, jste zatčen pro krádež listiny a způsobení újmy na zdraví z nedbalosti. Pojďte s námi.</strong>"</p>
+<p><strong>Důležité</strong>: Stehlík <strong>NEKLADE odpor</strong>. Žádná akční scéna. Toto je hra pro děti, ne thriller. Stehlík je <strong>vyčerpaný a smířený</strong>. To je morálně silnější.</p>
+</blockquote>
+<hr />
+<h3>Dopadení (11:00 – 11:30)</h3>
+<p>Policisté Stehlíka <strong>odvedou</strong> zpět do tábora. <strong>Por. Brázdová</strong> ho vezme do služebního auta zaparkovaného na lesní cestě a odveze do Blanska. <strong>Kpt. Polák</strong> zůstane v táboře a domluví se s Karlem o převzetí Aleše večer (Aleš zůstává v táboře do finále zítra, pak se sám dostaví k policii).</p>
+<p><strong>Karel</strong> svolá tábor:</p>
+<blockquote>
+<p>„Týmy. <strong>Vladimír Stehlík je v rukou policie</strong>. Bude vyšetřován formálně. <strong>Aleš Tomek</strong> zůstává s námi do zítřejšího finále, jak se domluvil s policií — pan Marek si přeje, aby Aleš slyšel závěť osobně. Pak se Aleš sám dostaví k policii v Blansku k formálnímu výslechu.</p>
+<p>A teď, <strong>přátelé, zbývá jediná věc</strong>: <strong>najít pravou závěť</strong>."</p>
+</blockquote>
+<hr />
+<h2>Etapová hra č. 7: Nález závěti (14:00 – 15:30)</h2>
+<p>Po obědě tábor svolá <strong>slavnostní průvod k potoku</strong>. Všichni jdou — vedoucí, děti, kuchařky, Magda, JUDr. Růžičková. Anička nese Knihu 30 let. <strong>Aleš jde také</strong> — Karel ho vezme s sebou (bezpečné, pod neformálním dohledem; navíc to je gesto: Aleš patří k tomuto okamžiku).</p>
+<p>U starého <strong>buku Staříka</strong> Karel slavnostně vyhlásí:</p>
+<blockquote>
+<p><strong>Karel</strong>: „Pan Marek nám ve vzkazu řekl: ‚Hledejte u toho, co je tam staré. U toho, co stálo, když jsem postavil první stan.' <strong>Stařík stojí 200 let. Vladimír Stehlík ho navštívil 11. → 12. 7. v noci. Schoval do něj naši pravou závěť. Pojďme ji najít.</strong>"</p>
+</blockquote>
+<p>Karel se obrátí k <strong>týmu s nejmladším kadetem</strong> (předem domluveno):</p>
+<blockquote>
+<p><strong>Karel</strong>: „<strong>Tým Sojek, váš nejmladší — Petřík (8 let) — bude první, kdo sáhne do dutiny. Protože pan Marek řekl, že tábor patří všem generacím — a vy jste nejmladší zástupce této generace.</strong>"</p>
+<p><strong>Důležité</strong>: Vedoucí <strong>už předem prověřil</strong> den 1, že závěť je <strong>v nepromokavém sáčku v dutině</strong> (uložena tam vedoucím v noci před slavnostním zahájením, před zločinem). Ale <strong>dělá to jako autentický nález</strong>.</p>
+</blockquote>
+<p>Nejmladší kadet (s pomocí staršího ze svého týmu, aby dosáhl) <strong>sahá rukou do dutiny</strong> — pomalu, opatrně. <strong>Vyndá nepromokavý sáček. Uvnitř je papírová tuba. V tubě je červená složka s pečetí.</strong></p>
+<blockquote>
+<p><strong>Karel</strong> (slavnostně): „<strong>Tato listina je pravá závěť pana Marka Stanislava.</strong> Před vámi <strong>leží to, co Vladimír Stehlík ukradl 9 dní zpátky</strong>. <strong>Tábor je zpět ve své pravé podobě.</strong>"</p>
+</blockquote>
+<p>Děti <strong>tleskají, pláčou</strong>. Někteří objímají vedoucí. Aleš stojí stranou, slzy v očích. Anička jde k němu, položí mu ruku na rameno.</p>
+<blockquote>
+<p><strong>JUDr. Růžičková</strong> přejde závěť: „<strong>Závěť je pravá. Pečeť je celá. Můj podpis je celý. Dodatek smlouvy s Mendelovou univerzitou je přiložen. Vše je v pořádku.</strong>"</p>
+</blockquote>
+<p>Karel se obrátí k dětem:</p>
+<blockquote>
+<p><strong>Karel</strong>: „<strong>Závěť dnes nebudeme číst.</strong> Pan Marek slíbil, že ji přečte sám — a jeho slovo platí. <strong>Zítra po obědě přijde z FN Brno. Závěť přečte on osobně.</strong>"</p>
+</blockquote>
+<p>Karel vloží závěť do <strong>dřevěné truhly s mapami v Šéfce</strong> (ta samá, ze které byla ukradena — symbolicky vrácena do svého místa). Truhla zůstává <strong>bez zámku</strong> (jako vždy), ale <strong>vedoucí týmů se střídají v hlídce u Šéfky</strong> do rána.</p>
+<hr />
+<h2>Etapová hra č. 8: Příprava finále (16:30 – 18:00)</h2>
+<p>Týmy dokončují <strong>Knihu 30 let</strong>:
+- <strong>Stránka týmu</strong>: foto, jména, motto, krátká reflexe (200 slov)
+- <strong>Společná stránka</strong>: všichni vedoucí + děti
+- <strong>Strom 30 let</strong>: poslední lísty se přilepují (děti, které dosud nenapsaly nebo chtějí dopsat)</p>
+<p>Jenda s Klárou <strong>připraví slavnostní stůl</strong> v jídelní plachtě:
+- Na stůl: <strong>Kniha 30 let</strong>, <strong>Pamětní mince</strong> (50 ks), <strong>Dřevěná truhla s pravou závětí</strong>, <strong>Dědické listy</strong> (zatím ukryté, ale připravené)
+- Lavice ozdobené, slavnostní svíčky v zavařovacích sklenicích (tábor nemá elektřinu)</p>
+<blockquote>
+<p><strong>Děti vědí, že zítra je velký den. Ale neví, co přesně bude. § 4 a § 5 jsou pro ně </strong>stále tajemstvím**.</p>
+</blockquote>
+<hr />
+<h2>Indicie a důkazy</h2>
+<p>Žádné <strong>nové fyzické důkazy</strong> — den 10 je o <strong>dopadení a nálezu</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Co</th>
+<th>Hodnota</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>F16</strong></td>
+<td>Pravá závěť v dutině buku — nalezená</td>
+</tr>
+<tr>
+<td>Stehlík dopaden</td>
+<td>Definitivní</td>
+</tr>
+<tr>
+<td>Kopie dodatku smlouvy v Stehlíkově plátěné tašce</td>
+<td>Stehlík ji nezničil — důkaz pro policii</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Materiál pro den 10</h2>
+<ul>
+<li><strong>Kostýmy 2 policistů</strong> (tmavomodré kalhoty, modrá košile, odznak Policie ČR — lze koupit kostýmový set nebo si ho vyrobit z papíru s logem)</li>
+<li><strong>Vysílačky</strong> (rekvizita — mohou být i hračky, nebo skutečné vysílačky, pokud má kdo)</li>
+<li><strong>Píšťalky</strong> (pro signalizaci v lese — každý tým 1 ks)</li>
+<li><strong>Mapa okolí v měřítku 1:5 000</strong> s vyznačenými 6 kvadranty</li>
+<li><strong>Pravá závěť</strong> (uložená v dutině buku — <strong>vedoucí ji tam musel umístit den 1 v nepromokavém sáčku!</strong>)</li>
+<li><strong>Dřevěná truhla s mapami</strong> v Šéfce (ta samá z počátku — symbolický návrat)</li>
+<li><strong>Materiál pro Knihu 30 let</strong>: papíry, lepidlo, fotky, fixy</li>
+<li><strong>Plátěná taška Stehlíka</strong> s kopií dodatku smlouvy (rekvizita pro scénu dopadení)</li>
+<li><strong>Slavnostní stůl</strong>: ubrusy, svíčky v zavařovacích sklenicích (proti větru), vidlice, lavice ozdobené</li>
+</ul>
+<hr />
+<h2>Bodování dne 10</h2>
+<table>
+<thead>
+<tr>
+<th>Co</th>
+<th>Body</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tým, který Stehlíka najde (Vlci)</td>
+<td>50 b.</td>
+</tr>
+<tr>
+<td>Mapování kvadrantu (úplnost)</td>
+<td>1–30 b. každý tým</td>
+</tr>
+<tr>
+<td>Etika dopadení (klidně, bez agrese)</td>
+<td>1–20 b.</td>
+</tr>
+<tr>
+<td>Aktivní podíl na nálezu závěti</td>
+<td>30 b. (rovnoměrně rozděleno mezi všechny týmy, protože je to společný triumf)</td>
+</tr>
+<tr>
+<td>Příprava stránky do Knihy 30 let</td>
+<td>1–30 b.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Obsazení dne 10</h2>
+<table>
+<thead>
+<tr>
+<th>Postava</th>
+<th>Aktivita</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Vladimír Stehlík</strong></td>
+<td>V kvadrantu lesa — herecky vyčerpaný, klidně se nechá zatknout</td>
+</tr>
+<tr>
+<td><strong>Kpt. Marek Polák</strong> (vedoucí v roli)</td>
+<td>Vedení honu, dopadení, převzetí</td>
+</tr>
+<tr>
+<td><strong>Por. Lucie Brázdová</strong> (vedoucí v roli)</td>
+<td>Spolupráce v honu, doprovod ze samoty do Blanska</td>
+</tr>
+<tr>
+<td>Karel Malík</td>
+<td>Velký dirigent dne</td>
+</tr>
+<tr>
+<td>SoTo</td>
+<td>Koordinace tábora, hlídka u Šéfky</td>
+</tr>
+<tr>
+<td>JUDr. Růžičková</td>
+<td>Slavnostní moment u buku, potvrdí pravost závěti</td>
+</tr>
+<tr>
+<td>Anička</td>
+<td>Nese Knihu 30 let, slavnostní příprava</td>
+</tr>
+<tr>
+<td><strong>Aleš Tomek</strong></td>
+<td><strong>Zůstává v táboře pod neformálním dohledem</strong>. Účastní se nálezu závěti, slzy v očích. <strong>Přijde na finále zítra.</strong> Pak se sám dostaví k policii.</td>
+</tr>
+<tr>
+<td>Magda</td>
+<td>V zdravotce, sleduje Aleše</td>
+</tr>
+<tr>
+<td>Anežka, Jenda + Adriana</td>
+<td>Slavnostní příprava</td>
+</tr>
+<tr>
+<td>Hájek</td>
+<td>Pomáhá s organizací honu, mobilizoval policii (telefonicky včera)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Tipy pro vedoucí</h2>
+<ol>
+<li><strong>Bezpečnost honu — absolutní priorita</strong>. Děti <strong>nesmí</strong> opustit svého vedoucího ani na minutu. Kvadranty <strong>musí být bezpečné</strong> (žádné srázy, hluboká voda, divoká zvěř). Tým s policistou má vždy <strong>vedoucího navíc</strong> (= 1 policista + 1 vedoucí + 6–8 dětí).</li>
+<li><strong>Stehlíkovo dopadení musí být klidné</strong>. Žádný hon, žádný útěk při dopadení. Stehlík je vyčerpaný, smířený. Děti se to musí naučit: <strong>konec hry pravdy je vykoupení, ne mstění</strong>.</li>
+<li><strong>Slavnostní nález závěti</strong> je <strong>emoční vrchol</strong> den 10. Vedoucí musí mít předem připravený sáček v dutině — pokud se „nepodaří" najít hned, vedoucí stanoviště pomůže rukou nebo nasměruje pohled.</li>
+<li><strong>JUDr. Růžičková NEČTE závěť</strong> — to je klíčové. Pokud ji někdo tlačí, řekne: „<strong>Pan Marek si to přeje sám. Respektujme jeho přání.</strong>"</li>
+<li><strong>Aleš zůstává v táboře</strong>: tichý a důstojný. <strong>Žádné dramatické scény</strong>. Vedoucí, který Aleše hraje (= sám Aleš), by měl ukázat dětem, <strong>že hra pokračuje pro něj klidně</strong>. Anička, Magda a Karel jsou s ním v běžném kontaktu — nejsou na něj zlí, ale ani nepředstírají, že nic nebylo.</li>
+<li><strong>Pohádkový večer u ohně</strong>: lehký, bez detektivního napojení. Klasické pohádky vyprávěné nahlas, písničky u ohně, případně vyprávění o historii tábora. Děti potřebují uvolnění před zítřejším vrcholem.</li>
+<li><strong>Volitelně, pokud máte vedoucí navíc</strong>: jeden vedoucí v roli <strong>kpt. Poláka zůstává v táboře přes oběd</strong> a jí s dětmi (= autentičnost — policejní práce se prolíná s životem). Děti vidí, že <strong>policista je obyčejný člověk, ne strašák</strong>.</li>
+</ol>
+<hr />
+<h2>Co se stane zítra</h2>
+<p><strong>FINÁLE</strong>. Marek Stanislav přijíždí z FN Brno (auto, opřený o hůl, doprovod Magdy Hamanové). <strong>Slavnostní shromáždění</strong> v lipovém altánu nebo pod nejstarší lípou v údolí. JUDr. Růžičková otevírá akt. <strong>Marek čte závěť</strong>: § 1 dodatek smlouvy o 30 let, § 2 vedení Karel + SoTo + personál, § 3 <strong>Rada tábora</strong> (Karel, SoTo, Anička, Magda, Jenda, Adriana, <strong>Aleš Tomek</strong>) — Aleš se zhroutí, <strong>Marek mu odpustí slovně</strong>, § 4 dědicové = <strong>každý táborník</strong>. § 5 dědický list. <strong>Předání 45 dědických listů + pamětních mincí</strong> každému dítěti (Marek osobně, oslovuje jménem). Slavnostní oběd. <strong>Slavnostní táborák</strong> večer. <strong>Stehlík NENÍ na finále</strong> (v péči policie z Blanska). <strong>Marek také před dětmi rehabilituje SoTa.</strong> Tom Buchta hraje na housle.</p>
+  </div>
+</main>
+
+<footer class="day-footer">
+  <div class="container">
+    <div>Tábor Světlo 2026 — Případ ztracené závěti · Den 10</div>
+    <div class="footer-nav">
+      <a href="../pruvodce.html#dny">Průvodce hrou</a>
+      <a href="../pribeh.html">Příběh jako kniha</a>
+      <a href="../den_10_honicka.md">Zdrojový MD</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
