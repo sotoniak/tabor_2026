@@ -293,4 +293,4 @@ Děti zatím **NEMAJÍ**:
 
 ## Co se stane zítra
 
-Den 4: Týmy začnou kreslit **mapu tábora** a procházejí **forenzní stanoviště** (otisky, vlasy, identikit, stopy bot/pneumatik, grafologie, fotodokumentace). Forenziku odhalí: otisk u truhly **NEPATŘÍ nikomu z personálu**, vlas nalezený na rukavici je z **kožené rukavice** (mimo personál), pneumatika = **pickup**. **Adriana ráno zmíní Santanu** — silně rudá stopa proti SoTovi. **Preclík přizná noční nájezd na koláč**. **D01 anonymní dopis Caesar +3**.
+Den 4: Týmy začnou kreslit **mapu tábora** a procházejí **forenzní stanoviště** (otisky, vlasy, identikit, stopy bot/pneumatik, grafologie, fotodokumentace). Forenzika odhalí: otisk u truhly **NEPATŘÍ nikomu z personálu**, vlas nalezený na rukavici je z **kožené rukavice** (mimo personál), pneumatika = **pickup**. **Adriana ráno zmíní Santanu** — silně rudá stopa proti SoTovi. **Preclík přizná noční nájezd na koláč**. **D01 anonymní dopis Caesar +3**.

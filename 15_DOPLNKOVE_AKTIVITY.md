@@ -70,7 +70,7 @@ Vedle hlavní detektivní linky probíhají standardní táborové aktivity. Ten
 - Každý den 1 stránka „Co jsme dnes zjistili"
 - Volitelné: kresby, fotografie, lisované listy
 
-### B4. Identikit pachatele (den 4 odpoledne — forenziku)
+### B4. Identikit pachatele (den 4 odpoledne — forenzika)
 - Děti skládají z hotových rysů obličej podezřelého (kostkovaná košile, vousy, kalhoty s laclem)
 - Soutěž: kdo se nejvíce přiblíží Vladimíru Stehlíkovi (odhalí se den 5)
 - **Body**: nejpřesnější identikit = 20 b.
@@ -142,7 +142,7 @@ Vedle hlavní detektivní linky probíhají standardní táborové aktivity. Ten
 - Učí se: Caesar, Morseovka, substituce s klíčem SVĚTLO
 - **Propojení s linkou**: děti pak umí dešifrovat zprávy
 
-### E2. Workshop: Forenziku z domácích pomůcek (den 4 dopoledne)
+### E2. Workshop: Forenzika z domácích pomůcek (den 4 dopoledne)
 - Otisky prstů z grafitu a lepicí pásky
 - Lupa + porovnávání
 - **Propojení s linkou**: forenzní stanoviště
@@ -182,7 +182,7 @@ V případě deštivého dne se ETAPOVÁ HRA nepřesouvá — vyšetřování po
 | 1 (11.7. so) | příjezd | 🎨 vlajky týmů | 🔍 zahájení + zločin |
 | 2 (12.7. ne) | 🔍 místo činu | ⚽ koupání u studánky | 🎲 Hádej kdo je kdo |
 | 3 (13.7. po) | 🔍 výslechy | ⚽ fotbal (semi) | 🎨 deníky |
-| 4 (14.7. út) | 🔍 mapa + forenziku | ⚽ orienťák | 💤 |
+| 4 (14.7. út) | 🔍 mapa + forenzika | ⚽ orienťák | 💤 |
 | 5 (15.7. st) | 🔍 hosté přijeli | ⚽ vybíjená | 🎲 detektivní kvíz |
 | 6 (16.7. čt) | 💤 klid + Aniččino svědectví | 🎨 talentová show pří­prava | 🎲 talent show |
 | 7 (17.7. pá) | 🔍 zlom (vzkaz Marka) | ⚽ vodní bitva v lese | 🎲 vyprávění / film |

@@ -147,7 +147,7 @@ Kompletní seznam materiálu pro celotáborovou hru "30 let: Případ ztracené 
 - Vlajky týmů (látka + fixy textil) — den 1 odpoledne
 - Mapa tábora (A2) — den 4
 - Týmové denníky (zápis a kresba průběžně)
-- Identikit pachatele (den 4 forenziku)
+- Identikit pachatele (den 4 forenzika)
 - Stránka do Knihy 30 let (každý tým podepíše + obrázek) — den 11
 
 ---

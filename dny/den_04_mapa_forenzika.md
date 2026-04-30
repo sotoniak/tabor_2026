@@ -1,4 +1,4 @@
-# DEN 4 — Úterý 14. 7. 2026: Mapa tábora a forenziku
+# DEN 4 — Úterý 14. 7. 2026: Mapa tábora a forenzika
 
 > **Motto dne**: „Stopy mluví. Ale jen tomu, kdo je umí číst."
 
@@ -10,7 +10,7 @@
 |---|---|
 | 07:30 – 08:30 | Snídaně |
 | 08:30 – 08:45 | **Adriana zmíní postřeh o Santanu SoTa** (R02) → silně rudá stopa proti SoTovi |
-| 08:45 – 12:00 | **ETAPOVÁ HRA č. 3: Mapa tábora + Forenziku** (rotace stanovišť) |
+| 08:45 – 12:00 | **ETAPOVÁ HRA č. 3: Mapa tábora + Forenzika** (rotace stanovišť) |
 | 12:00 – 13:00 | Oběd |
 | 13:00 – 14:00 | Klid ve stanech |
 | 14:00 – 16:00 | **Velký orientační běh „Stopy v lese"** (sport + herní linka) |
@@ -38,7 +38,7 @@ SoTo, který stojí vedle Karla, **mlčí**. Děti se na něj dívají. Někdo s
 
 ---
 
-## Etapová hra č. 3: Mapa tábora + Forenziku
+## Etapová hra č. 3: Mapa tábora + Forenzika
 
 ### Část A: Mapa tábora (90 min, rotace v 6 stanovištích)
 
@@ -80,7 +80,7 @@ Vedoucí mají k dispozici 6 stanovišť (viz `10_FORENZNI_STANOVISTE.md`):
 
 Každý tým 15 min na stanovišti × 6 = 90 min.
 
-### Klíčová zjištění z forenziku
+### Klíčová zjištění z forenziky
 
 | Stanoviště | Co děti zjistí |
 |---|---|
@@ -244,7 +244,7 @@ Děti začnou tlačit na Aleše, na Magdu a hlavně na **SoTa**. Magda slibuje d
 
 ## Tipy pro vedoucí
 
-1. **Forenziku je magická pro děti** — opravdu se snažte mít kvalitní pomůcky. Razítkový polštářek + papír na otisky funguje skvěle. Pokud máte rozpočet, fingerprinting kit z dětského obchodu = zlato. Sádrový odlitek pneumatiky stojí pět minut a působí na děti silně.
+1. **Forenzika je magická pro děti** — opravdu se snažte mít kvalitní pomůcky. Razítkový polštářek + papír na otisky funguje skvěle. Pokud máte rozpočet, fingerprinting kit z dětského obchodu = zlato. Sádrový odlitek pneumatiky stojí pět minut a působí na děti silně.
 2. **Mapu nakreslit pomalu, pečlivě** — to je zápas trpělivosti pro děti. Vedoucí mohou pomoci s kompozicí. Mapa **bude artefakt do konce tábora**.
 3. **Bombshell o SoTovi** musí být dramatický, ale **ne odsuzující**. SoTo zůstává zástupce, drží svůj důvod mlčet. Děti budou mít tendenci ho vyšetřovat ostře, vedoucí by je měli **vést k důslednosti, ne k hrubosti**.
 4. **Komická scéna s Preclíkem** je kratičký moment odlehčení — nepřetáhnout, 3 minuty stačí.
