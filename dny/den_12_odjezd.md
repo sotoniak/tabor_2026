@@ -14,8 +14,7 @@
 | 11:00 – 12:00 | **POSLEDNÍ NÁSTUP — slavnostní rozloučení** |
 | 12:00 – 13:00 | Oběd s rodiči (pokud přijíždějí) |
 | 13:00 – 15:00 | **Odjezd dětí** (rodiče si pro ně přijíždějí, autobus do Jedovnic) |
-| 15:00 – 16:00 | **Vložení vzkazu do dutiny buku** (Karel + Aleš + vybraný vedoucí) — tradice § 6 |
-| 16:00 – 17:00 | Vedoucí balí materiál, předávají si Knihu 30 let, fotografují |
+| 15:00 – 17:00 | Vedoucí balí materiál, předávají si Knihu 30 let, fotografují |
 | 17:00 | **Konec tábora 2026** |
 
 ---
@@ -24,7 +23,7 @@
 
 ### Snídaně (08:00)
 
-Anička ráno chystá speciální snídani — **kakao, koláče, palačinky**. Anežka pomáhá. Aleš, který dnes po obědě odjíždí na policii, je v kuchyni s nimi (= jeho gesto: chce naposled pomáhat). Děti jsou unavené (slavnost končila ve 23:30), ale **šťastné**. Mezi dětmi vlají rozhovory:
+Anička ráno chystá speciální snídani — **kakao, koláče, palačinky**. Anežka pomáhá. Aleš, který po skončení tábora pojede na policii, je v kuchyni s nimi (= jeho gesto: chce naposled pomáhat). Děti jsou unavené (slavnost končila ve 23:30), ale **šťastné**. Mezi dětmi vlají rozhovory:
 
 > „Pamatuješ, jak jsme našli tu dýmkovou popel?"
 > „A jak Aleš přiznal s těmi 30 000 Kč?"
@@ -71,34 +70,6 @@ V 15:00 odjíždí poslední auto. **Tábor je téměř prázdný**. Vedoucí st
 
 ---
 
-## Vložení vzkazu do dutiny buku (15:00 – 16:00)
-
-> **Tradice § 6 závěti — bonus, lze zachovat z původní hry.**
-
-**Karel + Aleš + jeden vybraný vedoucí** (SoTo) jdou pěšky k buku Staříkovi u potoka. Nesou **list pergamenu** s vzkazem pro budoucí generaci. Před vložením list nahlas přečtou:
-
-> „**Tábor Světlo, 30. ročník — léto 2026.**
->
-> V noci 11. → 12. července se v Šéfce stalo to, co se nemělo stát. Soused Vladimír Stehlík vzal naši závěť. Marek Stanislav padl v lese. Údržbář Aleš Tomek pomohl pod vydíráním.
->
-> Děti — 45 jich bylo, ze šesti týmů — vyšetřovaly devět dní. Stopovaly v rose, četly Caesarovu šifru, rozluštily substituci s klíčem SVĚTLO. Vyslechly hosty. Jely do Blanska za notářkou. Slyšely Markův vzkaz z FN Brno. Konfrontovaly Stehlíka pod lipovým altánem. Slyšely Alešovo přiznání.
->
-> Marek se vrátil. Závěť přečetl. **Každý táborník je dědicem.** Aleš zůstává v Radě tábora. Stehlík je v péči policie z Blanska.
->
-> Náš tábor přečkal. Tradice pokračuje.
->
-> Vy, kteří najdete tento vzkaz za 10 let — pamatujte: **tábor patří lidem, ne dokonalosti.** Důvěra se zaslouží i návratem.
->
-> Děti tábora 2026"
-
-Aleš (jako gesto návratu) **vloží sám list do nepromokavého sáčku a do dutiny**. Karel a SoTo sledují. Klid. **Tichý moment.**
-
-> **Aleš** (tiše): „Děkuji."
-
-Pak se vrátí do tábora. **Aleš si bere svou tašku, sedne si do dodávky s Karlem** (Karel ho odveze do Blanska na policii). **Aleš odjíždí sám, dobrovolně, smířený.**
-
----
-
 ## Vedoucí (15:00 – 17:00)
 
 Vedoucí balí materiál:
@@ -120,7 +91,7 @@ Vedoucí balí materiál:
 4. **Rodičům lze poslat e-mailem fotky a krátké video** ze finále. To je dárek, který se nevyprovodí.
 5. **Vedoucí mají právo na slzy** — to je tábor, kde to bylo opravdu emocionální. Přiznání. Zradu. Odpuštění. Vyšetřování. Třicet let. **Smutek z konce je krásný.**
 6. **Vložení vzkazu do dutiny buku**: tradice, kterou založíte. **Za 10 let** (= 2036, **40. výročí**) se vzkaz vyndá. **To bude obrovský moment.**
-7. **Aleš odjíždí sám**. Karel ho doprovází jen do Blanska, formálně ho předá kpt. Polákovi. Aleš se má vrátit do tábora **příští rok** jako údržbář — pokud ho soud nepošle za mříže (drobnější trest se očekává: účast na trestném činu jako pomocník, polehčující okolnosti = vydírání + spolupráce při vyšetřování). To zůstává otevřené pro hru.
+7. **Aleš odjíždí po skončení tábora**. Karel ho doprovází jen do Blanska, formálně ho předá kpt. Polákovi. Aleš se má vrátit do tábora **příští rok** jako údržbář — pokud ho soud nepošle za mříže (drobnější trest se očekává: účast na trestném činu jako pomocník, polehčující okolnosti = vydírání + spolupráce při vyšetřování). To zůstává otevřené pro hru.
 
 ---
 

@@ -57,7 +57,7 @@ Ráno **Magda Hamanová** přijde z lesní cesty „U lípy" (kde má signál) a
 >
 > _(Pauza.)_
 >
-> A ještě jedna věc: **vyšetřujte také Aleše Tomka.** Aleš měl té noci ‚hlídat ohniště'. Na latrýnu si zašel ve chvíli, kdy Vladimír přicházel. **Já mám tušení, že Aleš věděl. Že mu Vladimír něco slíbil.** Aleš je můj přítel padesát let. **Ale jeho hlídka té noci nemá záznamy.** Zeptejte se Aleše. **Žádný hněv — jen pravdu.**
+> A ještě jedna věc: **vyšetřujte také Aleše Tomka.** Aleš měl té noci ‚hlídat ohniště'. Na latrýnu si zašel ve chvíli, kdy Vladimír přicházel. **Já mám tušení, že Aleš věděl. Že mu Vladimír něco slíbil.** Aleš je kluk, kterého znám od dětství — od chvíle, kdy mu zemřel otec. **Ale jeho hlídka té noci nemá záznamy.** Zeptejte se Aleše. **Žádný hněv — jen pravdu.**
 >
 > _(Pauza.)_
 >

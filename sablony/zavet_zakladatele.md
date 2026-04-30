@@ -144,11 +144,12 @@ Pro budoucí rozhodování zřizuji Radu tábora, do níž
 jmenuji:
 
    1. Karla Malíka, hlavního vedoucího.
-   2. Pavla Malíka, zástupce hlavního vedoucího.
+   2. Tomáše Sotoniaka, zástupce hlavního vedoucího.
    3. Aničku Kellnerovou, starší kuchařku.
    4. Magdalénu Hamanovou, zdravotnici.
    5. Jendu, zásobovače.
-   6. Aleše Tomka, údržbáře.
+   6. Adrianu, pomocnou vedoucí.
+   7. Aleše Tomka, údržbáře.
 
 Rada má každoročně rozhodovat o směřování tábora a
 přijímat nové členy.
@@ -207,7 +208,7 @@ podepsat):
 
 - **Notářská pečeť** — červený pečetní vosk s odtiskem razítka Magdalény Růžičkové. **Hlavní rozdíl proti padělku.**
 - **§ 4 — Dědicové tábora** — symbolické dědictví všech táborníků, kteří kdy táborem prošli. Tento paragraf v padělku úplně chybí.
-- **§ 3 — Rada tábora** — Marek jmenuje šest jmen (včetně Aleše Tomka, který se zatím přiznal k pomoci pachateli — **morálně klíčový moment finále**).
+- **§ 3 — Rada tábora** — Marek jmenuje sedm jmen (Karel, SoTo, Anička, Magda, Jenda, Adriana, Aleš); Alešův návrat do Rady je **morálně klíčový moment finále**.
 - **Svědci skuteční** — SoTo ji opravdu **podepsal** (= jeho podpis budou děti znát z výslechových protokolů).
 
 ---

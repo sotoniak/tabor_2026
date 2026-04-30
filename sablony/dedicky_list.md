@@ -152,7 +152,7 @@ podpisem. Tím přijímáš dědictví.
 
 Ve finále den 11 (17:00 – 18:00):
 
-1. **Marek Stanislav sedí ve středu jídelny** v křesle.
+1. **Marek Stanislav sedí ve středu altánu** pod nejstarší lípou v křesle.
 2. Vedle něho **stolek** se zlatou krabicí. V krabici jsou všechny dědické listy (rolované, převázané) **podle abecedy**.
 3. **Vedoucí týmu Sojky** asistuje, podává Markovi list po listu.
 4. **Marek** vezme list, **pohlédne na dítě**, **osloví je jménem**:
@@ -175,7 +175,7 @@ Ve finále den 11 (17:00 – 18:00):
 - Personál: Karel Malík, SoTo, Anička Kellnerová, Anežka Kellnerová, Magda Hamanová, Jenda, Aleš Tomek (7 ks).
 - Celkem: 45 + 6 + 7 = **58 listů** předáno za cca 60 min.
 
-> **Poznámka k Aleši Tomkovi:** v tuto chvíli (den 11) se již přiznal a je v rukou policie. Jeho dědický list mu Marek osobně předá samostatně po návratu z policejní stanice — viz `01_PRIBEH_setting.md`, scéna § 3 závěti („Aleši, do Rady patříš. Důvěra se zaslouží i návratem.").
+> **Poznámka k Aleši Tomkovi:** v tuto chvíli (den 11) je přítomen ve finále. Jeho dědický list dostane osobně při slavnostním předání a k policii odjede až po skončení tábora — viz `01_PRIBEH_setting.md`, scéna § 3 závěti („Aleši, do Rady patříš. Důvěra se zaslouží i návratem.").
 
 ---
 

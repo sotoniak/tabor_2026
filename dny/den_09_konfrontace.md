@@ -116,7 +116,7 @@ Po krátké přestávce Karel svolá zase. Aleš sedí teď na lavici ve středu
 >
 > _(Pláče.)_
 >
-> Marka znám padesát let. **A já jsem ho zradil pro 30 000 Kč a strach ze stínu mladí.** Nezasloužím si tady být. Nezasloužím si v tomhle táboře už dýchat."
+> Marek byl pro mě jako otec, když mi umřel táta. **A já jsem ho zradil pro 30 000 Kč a strach o matku.** Nezasloužím si tady být. Nezasloužím si v tomhle táboře už dýchat."
 
 > **Děti jsou znovu v šoku. Aleš je tragický. Ne zlosyn — slabý člověk, který se bál.**
 

@@ -34,8 +34,8 @@ DEN  DATUM    NÁZEV                              HRA   ETAPA
 
 | Čas | Akce | Pozn. |
 |---|---|---|
-| 10:00 | Příjezd dětí, ubytování ve stanech | běžné |
-| 13:00 | Oběd, prohlídka tábora | běžné |
+| 13:00 | Příprava tábora, příjezd vedoucích | běžné |
+| 14:00 | Příjezd dětí, ubytování ve stanech | běžné |
 | 14:30 | **Sestavení vyšetřovacích týmů** | hra začíná |
 | 16:00 | Týmové aktivity — vyrobení vlajky, šátky | hra |
 | 18:00 | Večeře | běžné |
@@ -93,7 +93,7 @@ DEN  DATUM    NÁZEV                              HRA   ETAPA
 | 12:30 | Oběd |
 | 14:00 | Pokračování výslechů |
 | 16:30 | **Etapa 2: "Křížová kontrola alibi"** |
-| 17:00 | **Eliminace Karla a Pavla Malíka** (porada v Šéfce — vzájemné alibi, potvrzeno Aničkou) |
+| 17:00 | **Potvrzení alibi Karla a SoTa** (porada v Šéfce — vzájemné alibi, potvrzeno Aničkou) |
 | 18:30 | Večeře |
 | 19:30 | Porada |
 | 20:30 | Volný večer |
@@ -110,8 +110,8 @@ DEN  DATUM    NÁZEV                              HRA   ETAPA
 | 12:30 | Oběd |
 | 14:00 | **Etapa 3: "Mapa tábora"** — týmy doplňují své mapy |
 | 16:30 | **Anonymní dopis #1 (Caesar +3)** v týmovém deníku |
-| 17:00 | **Tým objevuje vzdálenou rodinnou linku — Anežka Kellnerová** (rudá stopa) |
-| 17:30 | **Eliminace Pavla Malíka** (jeho ranní jízda v 5:45 vysvětlena: jel hledat signál pro pohotovost) |
+| 17:00 | **Adriana zmíní postřeh o Santanu na jiném místě** (R02) → silně rudá stopa proti SoTovi |
+| 17:30 | **Komická drobnost: Preclík a koláč** (R07) — eliminace v té samé minutě |
 | 18:30 | Večeře |
 | 19:30 | Porada |
 | 20:30 | Sport, hry |
@@ -236,16 +236,16 @@ DEN  DATUM    NÁZEV                              HRA   ETAPA
 |---|---|
 | 07:30 | Slavnostní budíček |
 | 08:30 | Snídaně |
-| 10:00 | **Příjezd Marka Stanislava z FN Brno** (slavnostně, doprovod) |
-| 10:30 | **Slavnostní shromáždění** u ohniště / pod plachtou jídelny |
-| 11:00 | **ČTENÍ ZÁVĚTI** Markem Stanislavem |
-| 11:20 | § 3 — Aleš jmenován do Rady tábora — citlivý moment, Aleš zhroucený, Marek mu podává ruku |
-| 11:30 | **Předání dědických listů** každému kadetovi |
-| 12:30 | Slavnostní oběd |
-| 14:00 | Volný čas, fotky |
-| 16:00 | **Etapa 10: "Vyhlášení vítězů"** |
-| 17:00 | **Předání týmových odměn** + Stan Deluxe |
-| 18:30 | **Slavnostní večeře** (špalíček, dezerty) |
+| 14:30 | **Příjezd Marka Stanislava z FN Brno** (slavnostně, doprovod) |
+| 15:00 | **Slavnostní shromáždění** u ohniště / pod plachtou jídelny |
+| 15:15 | **ČTENÍ ZÁVĚTI** Markem Stanislavem |
+| 15:45 | § 3 — Aleš jmenován do Rady tábora — citlivý moment, Aleš zhroucený, Marek mu podává ruku |
+| 16:00 | **Předání dědických listů** každému kadetovi |
+| 17:00 | Slavnostní oběd |
+| 18:00 | Volný čas, fotky |
+| 18:30 | **Etapa 10: "Vyhlášení vítězů"** |
+| 19:00 | **Předání týmových odměn** + Stan Deluxe |
+| 19:30 | **Slavnostní večeře** (špalíček, dezerty) |
 | 20:00 | **Závěrečný táborák** — vyprávění, písně |
 | 22:30 | Večerka (později) |
 

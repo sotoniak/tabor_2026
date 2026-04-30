@@ -93,7 +93,7 @@ V Rakoveckém údolí jsou letos **tři další tábory**:
 - **Eliminace den 8** — notářka Růžičková v Blansku potvrdí, že SoTo k ní přišel ráno 12. 7. v 6:30 s podepsaným dodatkem (S21).
 - **Den 11 finále:** Marek osobně řekne dětem: *„Tomáši, omluv se mi. Tomáši, ti se omluv. Křivdili jste mu — to se v dobrém vyšetřování stává."*
 
-### Jenda — zásobovač (cca 50+)
+### Jenda — zásobovač (44)
 
 **Hraje:** **skutečný zásobovač** tábora.
 
@@ -101,20 +101,22 @@ V Rakoveckém údolí jsou letos **tři další tábory**:
 - **Ve hře:** **NEvinný**. Klíčový **svědek pohybu po cestě** — viděl v noci na lesní cestě **stopy auta**, které tam nemělo co dělat (Stehlíkův pickup), ale zmíní to až **den 5** (dlouho mu to nedávalo smysl).
 - **Eliminace den 5–6.**
 
-### Anička Kellnerová — starší kuchařka (cca 50+)
+### Anička Kellnerová — šéfkuchařka (35+)
 
-**Hraje:** **skutečná starší kuchařka**.
+**Hraje:** **skutečná šéfkuchařka** (starší ze sourozenců Kellnerových — Anežka je sous-chef, Tomáš Kellner je řezník v Jedovnicích).
 
 - **Charakter:** přísná, ale srdečná. Pevná autorita kuchyně. Vidí všechno z polní kuchyně a z plachty u jídelny.
 - **Ve hře:** **NEvinná**, ale **klíčová svědkyně**. V noci 11. → 12. byla v kuchyni pozdě (dělala těsto na ráno + chystala kávu pro Marka, který jí o ni požádal). Z polní kuchyně **vidí** směrem na Šéfku. **Viděla baterku v Šéfce kolem 00:30** (myslela, že to je Marek). **Viděla siluetu utíkající od Šéfky směrem k lesu kolem 01:10** (myslela, že to je Aleš na latrýnu). Tu informaci dá až **den 4–5**, protože „nechtěla zbytečně někoho obvinit, baterka tam přece **mohla** být Markova".
 
-### Mladší kuchařka (jméno k doplnění)
+### Anežka Kellnerová — mladší sestra Aničky (35+)
 
-> ⚠️ **Vyžaduje upřesnění:** v původní verzi figurovala mladší kuchařka jako „rudá stopa" (vzdálená příbuzná zakladatele). Pro 45 dětí je druhá kuchařka prakticky nutná, ale konkrétní jméno a funkci v příběhu **prosím doplnit** (nebo potvrdit, že se postava škrtá).
->
-> Pokud zachováme: navrhuji ji udělat **NEvinnou rudou stopu** (například má příjmení blízké Stanislavovi, účastníci to chvíli interpretují jako motiv). Eliminace den 6.
+**Hraje:** **skutečná sous-chef** Anežka. Je to **NEvinná**, minimálně zapojená kuchařka, ne rudá stopa.
 
-### Magda Hamanová — zdravotnice (50 let)
+- **Charakter:** klidná, vlídná, pracovitá. Drží kuchyni a atmosféru tábora.
+- **Ve hře:** pomáhá Aničce v polní kuchyni, spí tvrdě, nic nevidí, nic neslyší. Děti ji mohou krátce vyslechnout pro úplnost, ale nenese žádnou tajemnou linku.
+- **Funkce:** kotva pro mladší děti a zázemí kuchyně.
+
+### Magda Hamanová — zdravotnice (25 let)
 
 **Hraje:** **skutečná zdravotnice** tábora.
 
@@ -125,11 +127,11 @@ V Rakoveckém údolí jsou letos **tři další tábory**:
   3. má přístup k lékům (mohla by zinscenovat zranění).
 - **Alibi:** v noci 11. → 12. byla **na svojí zdravotce** — psala lékařský deník (skutečný papírový deník zdravotnice, povinnost). Eliminaci poskytne **doložka deníkového záznamu** (zápisy s časovými údaji). **Eliminace den 7.**
 
-### Aleš Tomek — údržbář (cca 50+)
+### Aleš Tomek — údržbář (19)
 
 **Hraje:** **skutečný údržbář / správce tábora**.
 
-- **Charakter:** introvertní, manuálně zručný, „muž od všeho". Zná les jako vlastní kapsu — žije v okolí celý život.
+- **Charakter:** introvertní, manuálně zručný, „kluk od všeho". Zná les jako vlastní kapsu — žije v Jedovnicích.
 - **Ve hře:** ⚠️ **POMOCNÍK ZLOČINU** (klíčová role!).
   - Vyrostl s rodinou Stehlíkových (samota 1 km od tábora). **Vladimír Stehlík** ho zná od dětství. Ví o Alešovi něco, co by Aleš nechtěl, aby vyšlo najevo (viz „Pomocník: motiv" níže).
   - Stehlík ho **vydíral + zaplatil** (méně nežli velká částka — třeba 30 000 Kč „na dluhy", aby to bylo lidsky pochopitelné, ne chamtivost).
@@ -139,7 +141,7 @@ V Rakoveckém údolí jsou letos **tři další tábory**:
 
 ### Pomocník: motiv (Aleš Tomek)
 
-Aleš v mládí (kolem roku 1995, ještě než tábor vznikl) **při lesní práci způsobil nehodu** — porazený strom dopadl na cizí kůlnu, hospodář (otec Vladimíra Stehlíka) škodu zatajil, ale Aleš mu zůstal **„zavázán"** — drobné výpomoci, mlčení o věcech, které Stehlíkovi prováděli (drobné krádeže dřeva apod.). Vladimír Stehlík to ví a po celá léta s tím **lehce manipuluje**. Když se objevila příležitost (závěť), Stehlík přitvrdil: *„Aleši, je čas mi to vrátit. Nestane se nic, jen mě pustíš v noci k Šéfce. Markovi neublížíme."* Aleš se nedokázal vzepřít. **Když Marek skutečně padl, Aleš to nese těžce.**
+Alešův otec v roce **2010** při lesní práci neúmyslně poškodil kůlnu Stehlíkových. Otec Vladimíra Stehlíka to neohlásil úřadům, ale nechal podepsat papír o dluhu. Když otec Aleše v roce **2018** zemřel, Stehlík začal ten starý papír používat jako tlak na Aleše a v květnu 2026 ho dotlačil k tomu, aby pomohl s nočním vstupem do Šéfky. Aleš nejedná ze zloby, ale ze strachu, dluhu a slabosti.
 
 > **Pro vedoucího hrajícího Aleše:** scéna přiznání den 9 je **citlivá**. Aleš **není zlosyn** — je **slabý člověk**, který si celý život nosil starou chybu a v rozhodující chvíli selhal. **Ve scéně je smutek, ne zlost.**
 
@@ -249,7 +251,7 @@ Volají notářce. Magdaléna potvrzuje: *„Karle, originál byl s pečetí. To
 
 (Detail viz `sablony/zavet_zakladatele.md`.)
 
-**Ironie § 3:** Aleš Tomek, který je v té chvíli **už pomocníkem zločinu**, byl Markem jmenován do Rady tábora. To je **morálně klíčový moment finále** — Aleš to slyší (přiznal se den předtím), **zhroutí se**, hluboce dojatý odprošuje. Marek (přítomný osobně) mu řekne: *„Aleši, jednu chybu jsi udělal před třiceti lety a další minulý týden. Ale toho prvního ses dopustil jako kluk. Toho druhého jako slabý člověk. Já tě znám padesát let — a tohle z tebe nedělá padoucha. Pokud tě soudce odsoudí, ponesu to s tebou. Ale do Rady patříš. Důvěra se zaslouží i návratem."*
+**Ironie § 3:** Aleš Tomek, který je v té chvíli **už pomocníkem zločinu**, byl Markem jmenován do Rady tábora. To je **morálně klíčový moment finále** — Aleš to slyší (přiznal se den předtím), **zhroutí se**, hluboce dojatý odprošuje. Marek (přítomný osobně) mu řekne: *„Aleši, ta první chyba nebyla tvoje — byla tvého otce, ty jsi ji zdědil. Tu druhou jsi udělal minulý týden, ze strachu o matku. Já tě znám od dětství — a tohle z tebe nedělá padoucha. Pokud tě soudce odsoudí, ponesu to s tebou. Ale do Rady patříš. Důvěra se zaslouží i návratem."*
 
 > Tato scéna je **citlivá** a vyžaduje pevnou ruku hlavního vedoucího při režii. Cílem je **ne odpouštění bez následků** (Aleš jde k policii), ale **lidská perspektiva** — i ten, kdo udělal chybu, není odepsán.
 

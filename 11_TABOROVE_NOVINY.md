@@ -122,11 +122,10 @@ V táboře vycházejí **denní noviny „Lipový list"**. Vydává je **redakč
 
    Stále nejasné jsou alibi některých
    členů personálu. Zástupce SoTo
-   ráno po incidentu odjel terénní dodávkou
-   v 5:45 do Jedovnic „pro chleba", ale
-   odmítl říci, kam přesně a proč.
-   („Bavili jsme se o zdravotním stavu
-    pana Stanislava," uvedl jen.)
+   ráno po incidentu odmítl vysvětlit,
+   kde byl po půlnoci. Na otázky
+   o noci odpovídá: „Nemůžu o tom
+   teď mluvit. Vyřídím to."
 
    Údržbář Aleš Tomek tvrdí, že seděl
    u svého stanu a hlídal ohniště, pak
@@ -587,12 +586,13 @@ V táboře vycházejí **denní noviny „Lipový list"**. Vydává je **redakč
    přerušil čtení, šel k němu, položil
    mu ruku na rameno:
 
-   „Aleši, vstaň. Jednu chybu jsi udělal
-    před třiceti lety, druhou minulý
-    týden. Té první jsi jako kluk, té
-    druhé jako slabý člověk. Já tě
-    znám padesát let. Důvěra se zaslouží
-    i návratem. Sedneš si vedle mě?"
+   „Aleši, vstaň. Ta první chyba
+    nebyla tvoje — byla tvého otce,
+    ty jsi ji zdědil. Tu druhou jsi
+    udělal minulý týden, ze strachu
+    o matku. Já tě znám od dětství.
+    Důvěra se zaslouží i návratem.
+    Sedneš si vedle mě?"
 
    Aleš si sedl. Tichý moment lásky.
 

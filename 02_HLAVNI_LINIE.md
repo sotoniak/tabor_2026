@@ -35,7 +35,7 @@ Děti se rozdělují do **6 vyšetřovacích týmů**. Devět dní pátrají, vy
 | **12. 7. — 01:15** | Stehlík asi 200 m od tábora **schová červenou složku v dutině starého buku u potoka** (plánuje si pro ni přijít později — nemůže ji mít doma). Pak pěšky zpátky k pickupu u zatáčky, **nasedne a odjíždí pickupem na samotu** lesní cestou. **(Tím vznikají dvě stopy F09: příjezd 00:25 + odjezd 01:20.)** | Stehlík |
 | **12. 7. — 01:30** | Aleš se vrací z latrýny, slyší tichý sten z lesa za Šéfkou, jde tam, vidí Marka v bezvědomí. **V panice se otočí a jde do svého stanu** | Aleš |
 | **12. 7. — 02:30** | SoTo míjí v Brně Konečného hřbitov, parkuje u Markova bytu. Vyzvedne dodatek s podpisem ze Markovy pracovny (Marek mu nechal klíče). | SoTo |
-| **12. 7. — 03:30** | SoTo vyjíždí z Brna zpět. Cestou v Olomoucké ulici míjí ho **Páter Lacina** v opačném směru (kněz jede z Jedovnic do Vyškova na pohřební obřad — pamatuje si registraci). | SoTo, Páter |
+| **12. 7. — 03:30** | SoTo vyjíždí z Brna zpět. Cestou v Olomoucké ulici míjí ho **Páter Lacina** v opačném směru (kněz jede z Jedovnic přes Brno na ranní obřad — pamatuje si registraci). | SoTo, Páter |
 | **12. 7. — 05:30** | SoTo parkuje Santanu pod tábořištěm. Cestou ho na silnici k Jedovnicům míjí **Tomáš Kellner** v dodávce s masem (později svědectví S19). Adriana ráno všimne, že **Santana stojí na jiném místě** než večer. SoTo zajde do svého stanu — krátký odpočinek 20 min, neusne. | SoTo, Adriana |
 | **12. 7. — 05:30** | **Anička Kellnerová** cestou ke studánce pro vodu **najde Marka**. Volá Karla | Anička |
 | **12. 7. — 05:45** | Karel volá záchranku ze satelitního telefonu (jediný v táboře pro krize) — auto z Blanska za 35 minut | Karel |

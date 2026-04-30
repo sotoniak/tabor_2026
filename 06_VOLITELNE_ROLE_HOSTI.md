@@ -51,7 +51,7 @@ Některé role jsou **pevně součástí příběhu** (Vladimír Stehlík, JUDr.
 **Role pro hosta (letáček):**
 
 > *„Vy jste Páter Lacina, kněz z Jedovnic. Ráno 12. 7. vám Karel volal, že je pan Marek v nemocnici. **Přijdete ve 14:00 do tábora** se pomodlit za Marka. Krátká scéna v jídelně — tichá modlitba (3 min, decentní, NE jako misionář — jen tichá podpora). Krátké pozdravy s personálem, odjíždíte.*
-> *Den 7 odpoledne (telefonicky) potvrdíte: ‚Já jsem v noci z 11. na 12. 7. jel z Jedovnic do Vyškova na pohřební obřad. Cestou v Brně, na Olomoucké ulici, asi v 3:30, mě míjela Santana s českou poznávačkou. Já jsem si všiml, protože jsem viděl Tomáše Sotoniaka za volantem — známe se ze sboru, pozdravili jsme se očima. Šel směrem od Brna.'*
+> *Den 7 odpoledne (telefonicky) potvrdíte: ‚Já jsem v noci z 11. na 12. 7. jel z Jedovnic do Brna na ranní bohoslužbu k bratrovi (= farář v jedné z brněnských farností). Na Olomoucké ulici, asi v 3:30, mě míjela Santana s českou poznávačkou. Já jsem si všiml, protože jsem viděl Tomáše Sotoniaka za volantem — známe se ze sboru, pozdravili jsme se očima. Šel směrem od Brna.'*
 > *Nikdy: moralizovat, vyšetřovat za děti, mluvit o pachateli."*
 
 **Doba:** den 2 cca 15 min návštěva, den 7 telefonát

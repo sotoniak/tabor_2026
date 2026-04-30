@@ -30,7 +30,7 @@
 
 Tábor Světlo, Rakovecké údolí, sobota 11. července 2026. Děti přijíždějí na 12denní stanový tábor — některé poprvé, jiné už poněkolikáté. Slunce, vůně lesa, smích. Nad centrální plochou visí jeden velký transparent: „**TÁBOR SVĚTLO — 30. ROČNÍK**".
 
-**Hlavní vedoucí Karel Malík** přivítá rodiče u parkoviště pod lesní cestou (auta nesmí dál do tábora), převezme děti, předá zdravotní lístky **Magdě Hamanové**. Děti se ubytovávají ve stanech rozmístěných v půlkruhu kolem ohniště, podle oddílů. Zástupce **Tomáš „SoTo" Sotoniak** chodí po táboře s blokem a kontroluje, jestli někomu nechybí spacák nebo karimatka. Jeho dcery Klárka a Lucka Malíkové (instruktorky) pomáhají u stanů menším dětem.
+**Hlavní vedoucí Karel Malík** přivítá rodiče u parkoviště pod lesní cestou (auta nesmí dál do tábora), převezme děti, předá zdravotní lístky **Magdě Hamanové**. Děti se ubytovávají ve stanech rozmístěných v půlkruhu kolem ohniště, podle oddílů. Zástupce **Tomáš „SoTo" Sotoniak** chodí po táboře s blokem a kontroluje, jestli někomu nechybí spacák nebo karimatka. Karlovy dcery **Klárka a Lucka Malíkové** (instruktorky) pomáhají u stanů menším dětem.
 
 V 16 hodin začíná **prohlídka tábora**. Vedoucí týmů (Klárka, Lucka M., Alča, Martin, Preclík, Tom Buchta) provedou děti po centrální ploše: ukážou **Šéfku** (velitelský stan, kde je stůl s mapami a kufry), **stan zakladatele** vedle Šéfky, **polní kuchyni pod plachtou**, **dlouhé jídelní stoly pod plachtou**, **stan zdravotnice**, **skladový stan** (vedle něj stan Jendy a Adriany), **přístřešek údržby**, **kopané latrýny** (s dřevěnou zástěnou), **studánku** (asi 80 m od tábora, voda na mytí) a **dřevěný altán** u studánky.
 

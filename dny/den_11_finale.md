@@ -17,7 +17,7 @@
 | 13:00 – 14:00 | **Klid + převléknutí do svátečního** (čisté tričko, čisté kalhoty) |
 | 14:00 – 14:30 | **NÁSTUP NA SLAVNOSTNÍ ČTENÍ** v lipovém altánu |
 | 14:30 – 15:00 | **PŘÍJEZD MARKA STANISLAVA Z FN BRNO** |
-| 15:00 – 16:30 | **ČTENÍ ZÁVĚTI** — §§ 1, 2, 3, **4 (= bombshell), 5, 6** |
+| 15:00 – 16:30 | **ČTENÍ ZÁVĚTI** — §§ 1, 2, 3, **4 (= bombshell), 5** |
 | 16:30 – 17:00 | **Alešova chvíle** — Markovo slovní odpuštění |
 | 17:00 – 18:00 | **PŘEDÁNÍ DĚDICKÝCH LISTŮ + PAMĚTNÍCH MINCÍ** každému dítěti |
 | 18:00 – 18:30 | **Odhalení Stromu 30 let + zápisy do Knihy** |
@@ -107,8 +107,6 @@ Děti **postupně**, v tichu, jdou k SoTovi a krátce mu podají ruku. SoTo při
 >
 > **§ 5.** Každému současnému účastníkovi i členovi personálu nechť je vystaven **dědický list**, který stvrzuje jeho symbolické místo v rodině tábora.
 >
-> **§ 6.** **Klíč k bukové dutině.** _(Děti se usmějí — někdo nechápe.)_ Strom Stařík u potoka stojí 200 let. Pamatuje si víc než my. Nech naše vnoučata si ho také vážit. **Před každým 10. ročníkem tábora má vedoucí vložit do dutiny vzkaz pro budoucí generaci.** Toto je rituál, který zakládám. **První takový vzkaz vložte vy zítra při odjezdu.**
->
 > V Brně dne X. června 2026.
 >
 > Marek Stanislav, m. p."
@@ -125,7 +123,7 @@ _(Aleš pomalu přijde. Slzy.)_
 
 > **Marek** (tiše, ale jasně, aby všichni slyšeli):
 >
-> „Aleši, vstaň. Jednu chybu jsi udělal před třiceti lety, druhou minulý týden. Toho prvního ses dopustil jako kluk, toho druhého jako slabý člověk. Já tě znám padesát let. **Důvěra se zaslouží i návratem. Sedneš si vedle mě?**
+> „Aleši, vstaň. Ta první chyba nebyla tvoje — byla tvého otce, ty jsi ji zdědil jako břemeno. Tu druhou jsi udělal minulý týden, ze strachu o matku. Já tě znám od dětství. **Důvěra se zaslouží i návratem. Sedneš si vedle mě?**
 >
 > _(Pauza.)_
 >
@@ -161,7 +159,7 @@ A tak **45 dětí, jedno po druhém**, dostává svůj list. **Trvá to skoro ho
 
 Když přijde řada na **Aleše** (jako součást personálu):
 
-> **Marek**: „**Aleši Tomku, údržbáři, kterého znám padesát let. Dnes ti nepředávám dědický list jako oddělení od tábora. Předávám ti ho jako stvrzení návratu. Tábor je o lidech, ne o dokonalosti. Pokračujeme spolu.**"
+> **Marek**: „**Aleši Tomku, údržbáři, kterého znám od dětství. Dnes ti nepředávám dědický list jako oddělení od tábora. Předávám ti ho jako stvrzení návratu. Tábor je o lidech, ne o dokonalosti. Pokračujeme spolu.**"
 
 Aleš si list bere se slzami.
 
@@ -219,7 +217,7 @@ Karel: „**Děti. Děkujeme vám. Bez vás by se závěť nikdy nenašla. Pan M
 Všichni se obejmou. Někdo pláče. **Děti i vedoucí.** Žádné dětské hry — jen lidská blízkost.
 
 #### Bod 7: Závěrečné požehnání (23:30)
-Marek: „**Vy jste dědicové. A já jdu klidně spát. Zítra ráno odjedete domů. Ale tábor odjede s vámi.**"
+Karel: „**Vy jste dědicové. A já jdu klidně spát. Zítra ráno odjedete domů. Ale tábor odjede s vámi.**"
 
 Všichni se rozejdou. Konec slavnosti.
 
@@ -243,7 +241,7 @@ Všichni se rozejdou. Konec slavnosti.
 
 ## Markův proslov u ohně (skript)
 
-> _(Marek sedí u ohně, deku přes ramena, tichý hlas:)_
+> _(Karel sedí u ohně, deku přes ramena, tichý hlas:)_
 >
 > „Děti, vedoucí, přátelé.
 >
@@ -259,7 +257,7 @@ Všichni se rozejdou. Konec slavnosti.
 >
 > _(Pauza.)_
 >
-> A za 30 let — někteří z vás se sem vrátí. Jako vedoucí. Jako rodiče. Jako prarodiče. **A v dutině buku najdete vzkaz, který zítra vložíte. To je nový rituál.**
+> Pan Marek vám děkuje a odjel do Brna. A za 30 let — někteří z vás se sem vrátí. Jako vedoucí. Jako rodiče. Jako prarodiče.
 >
 > **Tábor patří všem. Tobě. I mně.**"
 
@@ -286,4 +284,4 @@ Všichni se rozejdou. Konec slavnosti.
 
 ## Co se stane zítra
 
-Den 12: **Odjezd**. Tichý, smutný, ale plný lásky. **Vedoucí (Karel a Aleš) vloží do dutiny buku první vzkaz pro budoucí generaci** (tradice § 6 závěti). Vzkaz: „Tábor 2026: 30. ročník. Děti vyšetřovaly případ ztracené závěti. § 4 byl přečten. Aleš se vrátil k Radě. Naděje pokračuje."
+Den 12: **Odjezd**. Tichý, smutný, ale plný lásky. Vedoucí dokončí balení, rozloučí se s dětmi a tábor se vrací do běžného režimu.

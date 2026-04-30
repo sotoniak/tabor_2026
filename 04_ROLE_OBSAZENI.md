@@ -575,7 +575,7 @@ Karel **přečte nahlas** papírový dopis „od Marka" dětem v jídelně. Kare
 **Reálný úkol:**
 - **Den 2 (12. 7.) odpoledne kolem 14:00:** přijíždí z Jedovnic — chtěl by se **pomodlit za Marka** (ke 30. ročníku tábora měl požehnat zahájení, ale neměl čas; teď přijíždí, aby alespoň podpořil)
 - Krátká scéna v jídelně: **modlitba za Marka a tábor** (3 min, decentní, **ne jako misionář** — jen tichá podpora)
-- **Drobná stopa (volitelná):** Páter cestou ve 5:00 ráno (jel z Jedovnic do Vyškova na pohřební obřad) **viděl Santanu s českou poznávačkou míjet** — přesný čas potvrdí dětem den 7. **Podpoří eliminaci SoTa** (potvrdí, že auto bylo na cestě v 5:00, kdy SoTo říká, že byl).
+- **Drobná stopa (volitelná):** Páter cestou ve 3:30 ráno (jel z Jedovnic na ranní bohoslužbu k bratrovi do brněnské farnosti) **na Olomoucké ulici v Brně viděl Santanu s českou poznávačkou míjet ve směru z Brna** — přesný čas potvrdí dětem den 7. **Podpoří eliminaci SoTa** (potvrdí, že auto bylo na cestě z Brna ve 3:30, kdy SoTo říká, že byl).
 - Není podezřelý
 
 **Kostým:** vlastní (kolárek, černé košilové oblečení) — jen drobné označení duchovního stavu
