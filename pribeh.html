@@ -290,6 +290,17 @@ hr::after {
 }
 #to-top:hover { opacity: 1; }
 
+/* === Colophon === */
+.colophon {
+  margin-top: 60px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+}
+.colophon a:hover {
+  border-bottom-style: solid !important;
+  color: var(--accent-soft) !important;
+}
+
 /* === Print === */
 @media print {
   body { background: white; color: black; font-size: 12pt; }
@@ -318,6 +329,7 @@ hr::after {
 <div class="controls">
   <button class="control-btn" onclick="document.documentElement.dataset.theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark'">🌓 Téma</button>
   <button class="control-btn" onclick="window.print()">🖨️ Tisk</button>
+  <a class="control-btn" href="https://github.com/sotoniak/tabor_2026" target="_blank" rel="noopener" style="text-decoration:none;" title="Zdrojový repozitář">⌥ GitHub</a>
 </div>
 
 <button id="to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Nahoru">↑</button>
@@ -2723,6 +2735,13 @@ Světlo. Vladimír Stehlík odmítl rozhovor.</em></p>
 <p><em>Některé scény jsou rekonstrukce. Většina je pravda.</em></p>
 <p><em>Tábor Světlo, 1997 → 2026 → ∞</em></p>
 
+<div class="colophon">
+  <p style="text-align:center; color: var(--text-muted); font-size: 14px; margin-bottom: 8px;">Zdrojový text, scénář a všechny soubory hry</p>
+  <p style="text-align:center; margin: 0;">
+    <a href="https://github.com/sotoniak/tabor_2026" target="_blank" rel="noopener" style="color: var(--accent); text-decoration:none; border-bottom:1px dashed var(--border); padding-bottom:1px; margin: 0 10px;">⌥ github.com/sotoniak/tabor_2026</a>
+    <a href="https://github.com/sotoniak/tabor_2026/archive/refs/heads/main.zip" style="color: var(--accent); text-decoration:none; border-bottom:1px dashed var(--border); padding-bottom:1px; margin: 0 10px;">⬇ Stáhnout ZIP</a>
+  </p>
+</div>
 
 </div>
 

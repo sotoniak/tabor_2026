@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Případ ztracené závěti — krátké shrnutí · Tábor Světlo 2026</title>
+<style>
+:root {
+  --bg: #f4ede0;
+  --bg-paper: #faf6ec;
+  --text: #2a2419;
+  --text-muted: #6b5f4a;
+  --accent: #8b4513;
+  --accent-soft: #b07350;
+  --border: #d4c5a8;
+  --quote-bg: #ede2c8;
+  --shadow: 0 1px 3px rgba(80, 60, 30, 0.1);
+
+  --bg-dark: #1a1612;
+  --bg-paper-dark: #25201a;
+  --text-dark: #e8dfc8;
+  --text-muted-dark: #a89880;
+  --accent-dark: #d4a574;
+  --border-dark: #3d342a;
+  --quote-bg-dark: #2d2820;
+}
+
+[data-theme="dark"] {
+  --bg: var(--bg-dark);
+  --bg-paper: var(--bg-paper-dark);
+  --text: var(--text-dark);
+  --text-muted: var(--text-muted-dark);
+  --accent: var(--accent-dark);
+  --accent-soft: var(--accent-dark);
+  --border: var(--border-dark);
+  --quote-bg: var(--quote-bg-dark);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: "Georgia", "Iowan Old Style", "Palatino Linotype", "Times New Roman", serif;
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--text);
+  background: var(--bg);
+  margin: 0;
+  padding: 0;
+  transition: background 0.3s, color 0.3s;
+}
+
+.page {
+  max-width: 720px;
+  margin: 0 auto;
+  background: var(--bg-paper);
+  padding: 56px 64px 72px;
+  box-shadow: var(--shadow);
+  min-height: 100vh;
+}
+
+/* === Cover === */
+.cover {
+  text-align: center;
+  padding: 32px 20px 28px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 36px;
+}
+.cover h1 {
+  font-family: "Georgia", serif;
+  font-size: 34px;
+  font-weight: 400;
+  margin: 0 0 10px;
+  letter-spacing: -0.4px;
+  color: var(--accent);
+}
+.cover .subtitle {
+  font-style: italic;
+  font-size: 16px;
+  color: var(--text-muted);
+  margin: 0;
+}
+.cover .ornament {
+  font-size: 18px;
+  color: var(--accent-soft);
+  letter-spacing: 8px;
+  margin: 14px 0;
+}
+
+p {
+  margin: 0 0 16px;
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
+p.lead {
+  font-size: 18px;
+}
+
+p.lead::first-letter {
+  font-family: "Georgia", serif;
+  font-size: 3.4em;
+  line-height: 0.85;
+  float: left;
+  margin: 4px 8px 0 0;
+  color: var(--accent);
+  font-weight: 400;
+}
+
+strong, b { font-weight: 700; color: var(--text); }
+em, i { font-style: italic; }
+
+blockquote {
+  margin: 18px 0;
+  padding: 12px 20px;
+  background: var(--quote-bg);
+  border-left: 4px solid var(--accent-soft);
+  border-radius: 0 6px 6px 0;
+  font-style: italic;
+  color: var(--text-muted);
+  font-size: 16px;
+}
+blockquote p:last-child { margin-bottom: 0; }
+
+.day-line {
+  margin: 0 0 10px;
+  padding-left: 14px;
+  border-left: 2px solid var(--border);
+}
+.day-line strong:first-child {
+  color: var(--accent);
+}
+
+hr {
+  border: none;
+  text-align: center;
+  margin: 32px 0;
+}
+hr::after {
+  content: "❦  ❦  ❦";
+  font-size: 16px;
+  color: var(--accent-soft);
+  letter-spacing: 14px;
+}
+
+.lesson {
+  margin-top: 28px;
+  padding: 18px 24px;
+  background: var(--quote-bg);
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  font-size: 16px;
+}
+.lesson strong { color: var(--accent); }
+
+/* === Controls === */
+.controls {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 100;
+  display: flex;
+  gap: 8px;
+}
+.control-btn {
+  background: var(--bg-paper);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 7px 11px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 13px;
+  box-shadow: var(--shadow);
+  transition: all 0.2s;
+  text-decoration: none;
+}
+.control-btn:hover {
+  background: var(--quote-bg);
+  border-color: var(--accent-soft);
+}
+
+/* === Footer nav === */
+.footer-nav {
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  font-size: 14px;
+}
+.footer-nav a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px dashed var(--border);
+  padding-bottom: 1px;
+}
+.footer-nav a:hover {
+  color: var(--accent-soft);
+  border-bottom-style: solid;
+}
+
+/* === Print: jedna A4 === */
+@media print {
+  body { background: white; color: black; font-size: 10.5pt; line-height: 1.42; }
+  .page { max-width: 100%; box-shadow: none; padding: 0; margin: 0; }
+  .controls, .footer-nav { display: none; }
+  .cover { padding: 0 0 14px; margin-bottom: 16px; }
+  .cover h1 { font-size: 22pt; margin-bottom: 4px; }
+  .cover .subtitle { font-size: 10pt; }
+  .cover .ornament { display: none; }
+  p { margin: 0 0 7pt; }
+  p.lead::first-letter { font-size: 2.6em; }
+  blockquote { margin: 8pt 0; padding: 6pt 10pt; font-size: 9.5pt; }
+  hr { margin: 14pt 0; }
+  hr::after { font-size: 11pt; letter-spacing: 10px; }
+  .lesson { margin-top: 12pt; padding: 8pt 12pt; font-size: 9.5pt; }
+  .day-line { margin: 0 0 4pt; }
+  @page { margin: 14mm 16mm; }
+}
+
+/* === Mobile === */
+@media (max-width: 768px) {
+  body { font-size: 16px; }
+  .page { padding: 32px 22px 48px; }
+  .cover h1 { font-size: 26px; }
+  .controls { top: 8px; right: 8px; }
+}
+</style>
+</head>
+<body>
+
+<div class="controls">
+  <button class="control-btn" onclick="document.documentElement.dataset.theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark'">🌓 Téma</button>
+  <button class="control-btn" onclick="window.print()">🖨️ Tisk</button>
+</div>
+
+<div class="page">
+
+<div class="cover">
+  <div class="ornament">❦</div>
+  <h1>Případ ztracené závěti</h1>
+  <p class="subtitle">krátké shrnutí — 1 strana</p>
+  <p class="subtitle" style="font-size:13px; margin-top:8px; font-style:normal; letter-spacing:0.5px; text-transform:uppercase;">Tábor Světlo · Rakovecké údolí · červenec 2026 · 30. ročník · 45 dětí 7–15 let</p>
+</div>
+
+<p class="lead"><strong>Tábor Světlo</strong> slaví třicáté výročí. Zakladatel <strong>Marek Stanislav</strong> přijíždí v sobotu 11. července přečíst slavnostní závěť — chce, aby tábor pokračoval dalších třicet let. Den předtím si k němu domluvil <strong>dodatek smlouvy s Mendelovou univerzitou</strong> o prodloužení propůjčení pozemku. To slyší od neopatrného úředníka <strong>Vladimír Stehlík</strong> — soused-hospodář ze samoty 1 km od tábora — a panikne. Pokud dodatek projde, jeho neformální dohoda s lesníkem o převzetí plochy pro myslivecký revír padne. Stehlík za chvíli dělá rozhodnutí, které ho dovede do tmy.</p>
+
+<p>Vydírá mladého <strong>Aleše Tomka</strong> (19), správce tábora, starým otcovým dluhem z roku 2010. Slibuje 30 000 Kč na exekuce Alešovy matky. Aleš souhlasí — ze strachu, ne ze zlé vůle.</p>
+
+<p>V noci z 11. na 12. července se odehraje <strong>zločin</strong>. Aleš rozváže zadní plachtu Šéfky (velitelského stanu). Stehlík přichází lesem od pickupu zaparkovaného u zatáčky, vyměňuje pravou závěť za padělek. Marek se ale probudí, slyší šustění, jde do Šéfky a překvapí ho. Stehlík ho strčí, vyběhne. Marek běží za ním a klopýtne přes kořen smrku — pád, otřes mozku, bezvědomí. Stehlík schová závěť v dutině starého buku u potoka a vrací se domů. Aleš najde Marka v lese, ale ze strachu odejde do stanu.</p>
+
+<p>Ráno <strong>Anička Kellnerová</strong> (šéfkuchařka) najde Marka při cestě ke studánce. Záchranka odveze Marka do FN Brno. Karel otevře truhlu — <strong>padělek</strong>. Závěť zmizela.</p>
+
+<p>Devět dní pak <strong>šest vyšetřovacích týmů dětí</strong> pátrá. Vyslýchají personál, mapují místo činu, sbírají forenzní stopy. Hlavní rudou stopou se stává <strong>Tomáš „SoTo“ Sotoniak</strong> (42, zástupce hlavního vedoucího, vzdálený synovec Marka). SoTo mlčí o své noční nepřítomnosti — Marek ho totiž v den 1 odpoledne soukromě požádal o tajnou misi do Brna pro kopii dodatku, a SoTo plní slib. Děti tedy sedm dní podezírají nesprávného člověka.</p>
+
+<hr>
+
+<p class="day-line"><strong>Den 6.</strong> Anička přizná, že v noci viděla z polní kuchyně siluetu utíkající od Šéfky špatným směrem na latrínu — někdo cizí + vnitřní pomocník.</p>
+
+<p class="day-line"><strong>Den 7.</strong> Marek se v nemocnici probere a posílá vzkaz: <em>„Byl to Vladimír Stehlík. Vyšetřujte také Aleše. A Tomáši, můžeš to říct.“</em> SoTo začne mluvit.</p>
+
+<p class="day-line"><strong>Den 8.</strong> Notářka v Blansku potvrdí SoTův příběh — definitivní eliminace.</p>
+
+<p class="day-line"><strong>Den 9.</strong> Konfrontace Stehlíka v lipovém altánu. Lže, pak je zaskočen kopií dodatku smlouvy. Aleš se zhroutí a přizná. Stehlík uteče do lesa.</p>
+
+<p class="day-line"><strong>Den 10.</strong> Policie z Blanska zachytí Stehlíka. Děti najdou pravou závěť v dutině starého buku.</p>
+
+<p class="day-line"><strong>Den 11 — finále.</strong> Marek se vrací z nemocnice a přečte závěť. Před dětmi se omluví SoTovi za týden křivdy. Vyhlásí, že <strong>dědicem tábora je každý táborník, který kdy táborem prošel a projde</strong>. Každé dítě dostane personalizovaný dědický list. Aleš je jmenován do <strong>Rady tábora</strong> — <em>„Ta první chyba nebyla tvoje, byla tvého otce. Ta druhá byla ze strachu o matku. Důvěra se zaslouží i návratem.“</em></p>
+
+<p class="day-line"><strong>Den 12.</strong> Tábor odjíždí. Aleš sám dobrovolně do Blanska na policii. Stehlík čeká soud. Marek se zotavuje.</p>
+
+<div class="lesson">
+<strong>Hra učí:</strong> podezření je nutné, ale <strong>omluva je odvaha</strong>. Pachatel je člověk s historií, ne karikatura. Slabost se odpouští, když přijde pravda. <strong>Tábor patří lidem. I těm, kteří chybují.</strong>
+</div>
+
+<div class="footer-nav">
+  <a href="pruvodce.html">← Průvodce hrou</a>
+  <a href="pribeh.html">Číst příběh jako knihu →</a>
+</div>
+
+</div>
+
+</body>
+</html>
